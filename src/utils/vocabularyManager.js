@@ -88,6 +88,24 @@ export const VOCABULARIES = [
       stars: 5,
       label: '雅思8.0+'
     }
+  },
+  {
+    id: 'ielts-core-bundle-sample',
+    name: 'IELTS Core Draft',
+    description: 'Context bundle 草案词库，仅用于实验验证',
+    size: 498,
+    level: 'ielts-core-sample',
+    category: 'IELTS',
+    file: '/data/ielts-core-500-generated-draft.json',
+    icon: '🧪',
+    color: '#6366f1',
+    isBundle: true,
+    difficulty: {
+      cefr: ['B2', 'C1'],
+      vocabRange: '6000-8000',
+      stars: 3,
+      label: 'IELTS Core'
+    }
   }
 ]
 

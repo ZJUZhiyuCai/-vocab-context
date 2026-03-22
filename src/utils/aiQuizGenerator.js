@@ -1,3 +1,5 @@
+import { createOpenRouterChatCompletion } from './openRouterClient.js';
+
 /**
  * AI 智能测验生成器
  * 使用硅基流动 API 生成智能选择题
@@ -16,26 +18,12 @@ export async function generateQuiz({ apiKey, word, otherWords, userLevel = 'B2' 
   const prompt = buildQuizPrompt(word, otherWords, userLevel);
 
   try {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'Qwen/Qwen2.5-72B-Instruct',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.7,
-        max_tokens: 800
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.7,
+      maxTokens: 800
     });
-
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      throw new Error(errorData.message || `API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
     return parseQuizResponse(data, word);
   } catch (error) {
     console.error('生成测验失败:', error);
@@ -207,25 +195,12 @@ export async function generateFillBlankQuestion({ apiKey, word, userLevel = 'B2'
 只返回JSON，不要其他内容。`;
 
   try {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'Qwen/Qwen2.5-72B-Instruct',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.7,
-        max_tokens: 600
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.7,
+      maxTokens: 600
     });
-
-    if (!response.ok) {
-      throw new Error(`API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
     const content = data.choices[0].message.content;
 
     const jsonMatch = content.match(/```json\s*([\s\S]*?)\s*```/) ||

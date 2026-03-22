@@ -1,3 +1,5 @@
+import { createOpenRouterChatCompletion } from './openRouterClient.js';
+
 /**
  * 词根词缀API服务
  * 调用AI获取单词的词根词缀信息
@@ -13,32 +15,18 @@
 export async function getEtymology({ apiKey, word }) {
   const prompt = buildPrompt(word)
 
-  const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${apiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      model: 'Qwen/Qwen2.5-72B-Instruct',
-      messages: [
-        {
-          role: 'user',
-          content: prompt
-        }
-      ],
-      temperature: 0.3,
-      max_tokens: 800,
-      top_p: 0.7
-    })
+  const data = await createOpenRouterChatCompletion({
+    apiKey,
+    messages: [
+      {
+        role: 'user',
+        content: prompt
+      }
+    ],
+    temperature: 0.3,
+    maxTokens: 800,
+    topP: 0.7
   })
-
-  if (!response.ok) {
-    const errorData = await response.json().catch(() => ({}))
-    throw new Error(errorData.message || `API调用失败: ${response.status}`)
-  }
-
-  const data = await response.json()
   return parseResponse(data)
 }
 

@@ -25,7 +25,8 @@
         
         <!-- Word Card (Left/Center) -->
         <template v-if="!isLoading && currentWord">
-             <PremiumWordCard
+             <component
+               :is="currentWord?.isBundle ? BundleWordCard : PremiumWordCard"
                :word="currentWord"
                :reviewing="false"
                :generating="generatingWordId === currentWord.id"
@@ -225,8 +226,9 @@
             <h3 :class="['text-sm font-bold uppercase tracking-wider', isDark ? 'text-gray-400' : 'text-gray-600']">AI功能</h3>
           </div>
           <div class="mb-4">
-            <label :class="['block text-sm font-medium mb-2', isDark ? 'text-gray-400' : 'text-gray-600']">硅基流动 API 密钥</label>
-            <input type="password" v-model="settingsForm.apiKey" placeholder="sk-..." :class="['w-full rounded-xl px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none', isDark ? 'bg-slate-800 border-gray-700 text-white' : 'bg-gray-50 border-gray-300 text-gray-800 border']">
+            <label :class="['block text-sm font-medium mb-2', isDark ? 'text-gray-400' : 'text-gray-600']">OpenRouter API 密钥</label>
+            <input type="password" v-model="settingsForm.apiKey" placeholder="sk-or-v1-..." :class="['w-full rounded-xl px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none', isDark ? 'bg-slate-800 border-gray-700 text-white' : 'bg-gray-50 border-gray-300 text-gray-800 border']">
+            <p :class="['mt-2 text-xs', isDark ? 'text-gray-500' : 'text-gray-500']">仅保存在当前浏览器，不会同步到云端。</p>
           </div>
         </div>
 
@@ -301,6 +303,7 @@ import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
 import { user } from './utils/authService.js'
 import { syncService } from './utils/syncService.js'
 import PremiumLayout from './layouts/PremiumLayout.vue'
+import BundleWordCard from './components/BundleWordCard.vue'
 import PremiumWordCard from './components/PremiumWordCard.vue'
 import PremiumStats from './components/PremiumStats.vue'
 
@@ -327,6 +330,7 @@ import {
 import { getStudyHistory, saveStudyHistory } from './utils/studyHistory.js'
 import { getUnlockedAchievements, saveUnlockedAchievements } from './utils/achievements.js'
 import { getVocabularyLoader } from './utils/vocabularyLoader.js'
+import { getBundleLoader } from './utils/bundleLoader.js'
 import {
   createWordReviewState,
   needsReview,
@@ -743,7 +747,9 @@ const loadData = async () => {
   isLoading.value = true;
   try {
     currentVocab.value = loadCurrentVocabulary();
-    const loader = getVocabularyLoader(currentVocab.value.file);
+    const loader = currentVocab.value.isBundle
+      ? getBundleLoader(currentVocab.value.file)
+      : getVocabularyLoader(currentVocab.value.file);
     const allWords = await loader.getWordsRange(0, await loader.getTotalCount());
     
     // Load progress
@@ -854,7 +860,8 @@ const saveSettings = () => {
     apiKey: settingsForm.value.apiKey.trim(),
     interests: [...settingsForm.value.interests],
     dailyGoal: settingsForm.value.dailyGoal,
-    studyMode: settingsForm.value.studyMode
+    studyMode: settingsForm.value.studyMode,
+    purpose: settingsForm.value.purpose
   };
   saveSettingsToStorage(userSettings.value);
   if (settingsForm.value.githubToken) {
@@ -1046,13 +1053,23 @@ watch(user, async (newUser, oldUser) => {
 
       // 1. 同步设置
       if (cloudSettings) {
-        // 合并设置，保留本地 API Key 如果云端没有
-        userSettings.value = { 
-          ...userSettings.value, 
-          ...cloudSettings,
-          apiKey: cloudSettings.api_key || userSettings.value.apiKey 
+        const mergedSettings = {
+          ...userSettings.value,
+          dailyGoal: cloudSettings.daily_goal ?? userSettings.value.dailyGoal,
+          studyMode: cloudSettings.study_mode ?? userSettings.value.studyMode,
+          purpose: cloudSettings.purpose ?? userSettings.value.purpose
         };
-        saveSettingsToStorage(userSettings.value);
+
+        userSettings.value = mergedSettings;
+        saveSettingsToStorage(mergedSettings);
+
+        if (cloudSettings.purpose) {
+          userProfile.value = {
+            ...userProfile.value,
+            purpose: cloudSettings.purpose
+          };
+          saveUserProfile(userProfile.value);
+        }
       }
 
       // 2. 同步词库进度

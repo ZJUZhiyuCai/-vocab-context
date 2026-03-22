@@ -1,6 +1,6 @@
 ﻿/**
  * AI服务工具
- * 封装硅基流动API调用，提供多种AI功能
+ * 封装 OpenRouter API 调用，提供多种AI功能
  * - AI个性化例句生成
  * - AI智能测验生成
  * - AI错题分析与学习建议
@@ -10,6 +10,7 @@
 import { generateQuiz, generateFillBlankQuestion } from './aiQuizGenerator.js';
 import { analyzeErrors, analyzeWordError, generateStudyPlan } from './aiErrorAnalyzer.js';
 import { generateMemoryHooks, generateWordNetwork, generateScenarioExamples, generateLearningPath } from './aiMemoryHooks.js';
+import { createOpenRouterChatCompletion, sanitizeApiKey } from './openRouterClient.js';
 
 // localStorage keys
 const CACHE_KEY_PREFIX = 'vocabcontext_ai_';
@@ -27,8 +28,7 @@ const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24小时缓存
  * @returns {Promise<{sentence: string, translation: string}>} AI生成的例句
  */
 export async function generateAIExample({ apiKey, word, meaning, purpose }) {
-  // 清理 API key，移除非 ASCII 字符和多余空格
-  const cleanedApiKey = String(apiKey || '').trim().replace(/[^\x00-\x7F]/g, '');
+  const cleanedApiKey = sanitizeApiKey(apiKey);
 
   if (!cleanedApiKey) {
     throw new Error('API密钥无效');
@@ -154,8 +154,7 @@ function cleanOldCache() {
  * @returns {Promise<{sentence: string, translation: string}>} AI生成的例句
  */
 async function generateAIExampleWithoutCache({ apiKey, word, meaning, purpose }) {
-  // 清理 API key，移除非 ASCII 字符和多余空格
-  const cleanedApiKey = String(apiKey).trim().replace(/[^\x00-\x7F]/g, '');
+  const cleanedApiKey = sanitizeApiKey(apiKey);
 
   if (!cleanedApiKey) {
     throw new Error('API密钥无效');
@@ -163,32 +162,18 @@ async function generateAIExampleWithoutCache({ apiKey, word, meaning, purpose })
 
   const prompt = buildPrompt(word, meaning, purpose);
 
-  const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${cleanedApiKey}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      model: 'deepseek-ai/DeepSeek-V3.2',
-      messages: [
-        {
-          role: 'user',
-          content: prompt
-        }
-      ],
-      temperature: 0.7,
-      max_tokens: 500,
-      top_p: 0.7
-    })
+  const data = await createOpenRouterChatCompletion({
+    apiKey: cleanedApiKey,
+    messages: [
+      {
+        role: 'user',
+        content: prompt
+      }
+    ],
+    temperature: 0.7,
+    maxTokens: 500,
+    topP: 0.7
   });
-
-  if (!response.ok) {
-    const errorData = await response.json().catch(() => ({}));
-    throw new Error(errorData.message || `API调用失败: ${response.status}`);
-  }
-
-  const data = await response.json();
   return parseResponse(data);
 }
 
@@ -411,9 +396,28 @@ const DEFAULT_SETTINGS = {
     memoryHooks: true   // AI记忆辅助
   },
   userLevel: 'B2',
+  aiUserLevel: 'B2',
   cacheEnabled: true,
+  aiCacheEnabled: true,
   learningPurpose: 'exam' // exam, career, hobby, daily
 };
+
+function normalizeAISettings(settings = {}) {
+  const userLevel = settings.aiUserLevel || settings.userLevel || DEFAULT_SETTINGS.userLevel;
+  const cacheEnabled = settings.aiCacheEnabled ?? settings.cacheEnabled ?? DEFAULT_SETTINGS.cacheEnabled;
+  const learningPurpose = settings.learningPurpose || settings.purpose || DEFAULT_SETTINGS.learningPurpose;
+
+  return {
+    ...DEFAULT_SETTINGS,
+    ...settings,
+    apiKey: settings.apiKey || '',
+    userLevel,
+    aiUserLevel: userLevel,
+    cacheEnabled,
+    aiCacheEnabled: cacheEnabled,
+    learningPurpose
+  };
+}
 
 /**
  * 加载 AI 设置
@@ -423,12 +427,12 @@ export function loadAISettings() {
     const saved = localStorage.getItem(SETTINGS_KEY);
     if (saved) {
       const parsed = JSON.parse(saved);
-      return { apiKey: parsed.apiKey || '' };
+      return normalizeAISettings(parsed);
     }
   } catch (error) {
     console.error('加载AI设置失败:', error);
   }
-  return { apiKey: '' };
+  return normalizeAISettings();
 }
 
 /**
@@ -436,7 +440,8 @@ export function loadAISettings() {
  */
 export function saveAISettings(settings) {
   try {
-    localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+    const normalizedSettings = normalizeAISettings(settings);
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify(normalizedSettings));
     return true;
   } catch (error) {
     console.error('保存AI设置失败:', error);
@@ -449,27 +454,19 @@ export function saveAISettings(settings) {
  */
 export async function validateApiKey(apiKey) {
   try {
-    // 清理 API key
-    const cleanedApiKey = String(apiKey).trim().replace(/[^\x00-\x7F]/g, '');
+    const cleanedApiKey = sanitizeApiKey(apiKey);
 
     if (!cleanedApiKey) {
       return false;
     }
 
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${cleanedApiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'deepseek-ai/DeepSeek-V3.2',
-        messages: [{ role: 'user', content: 'Hello' }],
-        max_tokens: 10
-      })
+    await createOpenRouterChatCompletion({
+      apiKey: cleanedApiKey,
+      messages: [{ role: 'user', content: 'Hello' }],
+      maxTokens: 10
     });
 
-    return response.ok;
+    return true;
   } catch (error) {
     console.error('验证API密钥失败:', error);
     return false;
@@ -570,8 +567,7 @@ export class AIService {
    * @private
    */
   getCleanedApiKey() {
-    const apiKey = this.settings.apiKey || '';
-    return String(apiKey).trim().replace(/[^\x00-\x7F]/g, '');
+    return sanitizeApiKey(this.settings.apiKey);
   }
 
   /**
@@ -586,7 +582,7 @@ export class AIService {
    * 检查特定功能是否可用（简化版，暂时不使用）
    */
   isFeatureEnabled(feature) {
-    return true;
+    return this.settings.features?.[feature] !== false;
   }
 
   // ==================== AI例句功能 ====================
@@ -601,7 +597,8 @@ export class AIService {
       throw new Error('请先配置API密钥');
     }
 
-    const cacheKey = getCacheKey(word, purpose || 'exam');
+    const targetPurpose = purpose || this.settings.learningPurpose || 'exam';
+    const cacheKey = getCacheKey(word, targetPurpose);
 
     const cached = getCachedData(cacheKey);
     if (cached) {
@@ -612,7 +609,7 @@ export class AIService {
       apiKey: this.getCleanedApiKey(),
       word,
       meaning,
-      purpose: purpose || 'exam'
+      purpose: targetPurpose
     });
 
     setCachedData(cacheKey, result);

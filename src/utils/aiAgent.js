@@ -9,6 +9,7 @@
  */
 
 import { loadAISettings } from './aiService.js';
+import { createOpenRouterChatCompletion, getCompletionText, sanitizeApiKey } from './openRouterClient.js';
 
 // localStorage keys
 const CONVERSATION_KEY = 'vocabcontext_agent_conversations';
@@ -58,6 +59,10 @@ export class AIAgent {
     this.settings = this.loadSettings();
     this.conversations = this.loadConversations();
     this.currentConversationId = null;
+    this.apiSettings = loadAISettings();
+  }
+
+  reloadApiSettings() {
     this.apiSettings = loadAISettings();
   }
 
@@ -128,8 +133,8 @@ export class AIAgent {
    * @private
    */
   getCleanedApiKey() {
-    const apiKey = this.apiSettings.apiKey || '';
-    return String(apiKey).trim().replace(/[^\x00-\x7F]/g, '');
+    this.reloadApiSettings();
+    return sanitizeApiKey(this.apiSettings.apiKey);
   }
 
   /**
@@ -528,33 +533,20 @@ ${weakWords.slice(0, 10).map(w => `- ${w.word}: ${w.meaning}`).join('\n')}
    * @private
    */
   async callAI(prompt, options = {}) {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${this.getCleanedApiKey()}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'deepseek-ai/DeepSeek-V3.2',
-        messages: [
-          {
-            role: 'user',
-            content: prompt
-          }
-        ],
-        temperature: options.temperature || 0.7,
-        max_tokens: options.maxTokens || 1000,
-        top_p: options.topP || 0.7
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey: this.getCleanedApiKey(),
+      messages: [
+        {
+          role: 'user',
+          content: prompt
+        }
+      ],
+      temperature: options.temperature || 0.7,
+      maxTokens: options.maxTokens || 1000,
+      topP: options.topP || 0.7
     });
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      throw new Error(errorData.message || `API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
-    return data.choices[0].message.content;
+    return getCompletionText(data);
   }
 
   /**
@@ -562,28 +554,15 @@ ${weakWords.slice(0, 10).map(w => `- ${w.word}: ${w.meaning}`).join('\n')}
    * @private
    */
   async callAIChat(messages, options = {}) {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${this.getCleanedApiKey()}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'deepseek-ai/DeepSeek-V3.2',
-        messages: messages,
-        temperature: options.temperature || 0.7,
-        max_tokens: options.maxTokens || 1000,
-        top_p: options.topP || 0.7
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey: this.getCleanedApiKey(),
+      messages,
+      temperature: options.temperature || 0.7,
+      maxTokens: options.maxTokens || 1000,
+      topP: options.topP || 0.7
     });
 
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      throw new Error(errorData.message || `API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
-    return data.choices[0].message.content;
+    return getCompletionText(data);
   }
 
   /**

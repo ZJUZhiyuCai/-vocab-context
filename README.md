@@ -20,7 +20,7 @@
 
 ### 🚀 v1.5.0 更新回顾
 - 🆕 **免费真人发音** - 集成 Free Dictionary API，无需 API Key 即可获得高质量真人发音
-- 🆙 **AI 模型升级** - 基座模型升级为 deepseek-ai/DeepSeek-V3.2
+- 🆙 **AI 模型升级** - 基座模型切换为 OpenRouter 提供的 `stepfun/step-3.5-flash:free`
 - ✅ 修复卡片滑动后位置偏移问题
 - ✅ 拼写复习支持键盘快捷键（Space/Enter进入下一个）
 - ✅ 复习列表新增英文例句显示
@@ -48,7 +48,7 @@
 ## 技术栈
 
 - **前端**: Vue 3 + Vite + Tailwind CSS
-- **AI服务**: 硅基流动 API (DeepSeek-V3 / Qwen)
+- **AI服务**: OpenRouter API (`stepfun/step-3.5-flash:free`)
 - **存储方案**: LocalStorage + Supabase
 - **部署平台**: Netlify
 
@@ -98,9 +98,10 @@ npm run build
 
 ### AI 功能
 
-1. 注册 [硅基流动](https://docs.siliconflow.cn/cn/userguide/quickstart) 获取免费API密钥
+1. 注册 [OpenRouter](https://openrouter.ai/) 获取 API 密钥
 2. 在设置中输入API密钥
-3. 选择学习目的（备考/职场/兴趣/日常）
+3. 使用 `stepfun/step-3.5-flash:free` 模型进行 AI 功能调用
+4. 选择学习目的（备考/职场/兴趣/日常）
 
 ### 学习模式
 
@@ -159,7 +160,7 @@ vocab/
   - 新增项目页脚致谢
 - **v1.5.0** (2026-01-17) - 免费真人发音、AI模型升级
   - 集成 Free Dictionary API 提供免费真人发音
-  - AI 基座模型升级为 DeepSeek-V3.2
+  - AI 基座模型升级为 OpenRouter `stepfun/step-3.5-flash:free`
 - **v1.4.0** (2025-01-13) - Bug修复、AI英文释义、优化水平测试算法
   - 修复卡片滑动后位置偏移问题
   - 优化移动端触摸反馈
@@ -178,7 +179,7 @@ vocab/
 ## 常见问题
 
 **Q: AI功能收费吗？**
-A: 硅基流动提供免费额度，足够日常学习使用。
+A: OpenRouter 提供可选的免费模型路由，本项目默认使用 `stepfun/step-3.5-flash:free`。
 
 **Q: 数据会丢失吗？**
 A: 数据保存在浏览器本地，建议开启云端同步备份。

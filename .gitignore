@@ -40,6 +40,12 @@ Thumbs.db
 # Downloaded data files (too large for git)
 data/*.json
 !data/books.json
+!data/ielts-core-500-reviewed.json
+!data/ielts-core-expansion-candidates.json
+!data/ielts-core-expansion-reviewed.json
+!data/ielts-core-expansion-cleaned.json
+!data/ielts-expansion-quality-audit.json
+data/*.csv
 
 # Temp files
 *.tmp

@@ -1,3 +1,5 @@
+import { createOpenRouterChatCompletion } from './openRouterClient.js';
+
 /**
  * AI 错题分析与学习建议
  * 分析用户的学习数据，提供个性化建议
@@ -25,26 +27,12 @@ export async function analyzeErrors({ apiKey, mistakes, stats, userLevel = 'B2' 
   const prompt = buildAnalysisPrompt(mistakes, stats, userLevel);
 
   try {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'Qwen/Qwen2.5-72B-Instruct',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.6,
-        max_tokens: 1500
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.6,
+      maxTokens: 1500
     });
-
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      throw new Error(errorData.message || `API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
     return parseAnalysisResponse(data);
   } catch (error) {
     console.error('分析错题失败:', error);
@@ -193,25 +181,12 @@ export async function analyzeWordError({ apiKey, word, userAnswer, correctAnswer
 只返回JSON，不要其他内容。`;
 
   try {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'Qwen/Qwen2.5-72B-Instruct',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.6,
-        max_tokens: 800
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.6,
+      maxTokens: 800
     });
-
-    if (!response.ok) {
-      throw new Error(`API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
     const content = data.choices[0].message.content;
 
     const jsonMatch = content.match(/```json\s*([\s\S]*?)\s*```/) ||
@@ -292,25 +267,12 @@ ${weakAreas.map(area => `- ${area}`).join('\n')}
 只返回JSON，不要其他内容。`;
 
   try {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'Qwen/Qwen2.5-72B-Instruct',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.7,
-        max_tokens: 2000
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.7,
+      maxTokens: 2000
     });
-
-    if (!response.ok) {
-      throw new Error(`API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
     const content = data.choices[0].message.content;
 
     const jsonMatch = content.match(/```json\s*([\s\S]*?)\s*```/) ||

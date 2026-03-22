@@ -1,3 +1,5 @@
+import { createOpenRouterChatCompletion } from './openRouterClient.js';
+
 /**
  * AI 词汇关联记忆助手
  * 生成记忆法、词根词缀、联想记忆等内容
@@ -15,26 +17,12 @@ export async function generateMemoryHooks({ apiKey, word, userLevel = 'B2' }) {
   const prompt = buildMemoryPrompt(word, userLevel);
 
   try {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'Qwen/Qwen2.5-72B-Instruct',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.7,
-        max_tokens: 1200
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.7,
+      maxTokens: 1200
     });
-
-    if (!response.ok) {
-      const errorData = await response.json().catch(() => ({}));
-      throw new Error(errorData.message || `API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
     return parseMemoryResponse(data, word);
   } catch (error) {
     console.error('生成记忆辅助失败:', error);
@@ -194,25 +182,12 @@ export async function generateWordNetwork({ apiKey, word, userLevel = 'B2' }) {
 只返回JSON，不要其他内容。`;
 
   try {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'Qwen/Qwen2.5-72B-Instruct',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.6,
-        max_tokens: 1500
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.6,
+      maxTokens: 1500
     });
-
-    if (!response.ok) {
-      throw new Error(`API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
     const content = data.choices[0].message.content;
 
     const jsonMatch = content.match(/```json\s*([\s\S]*?)\s*```/) ||
@@ -282,25 +257,12 @@ ${targetScenarios.map((s, i) => `${i + 1}. ${s}`).join('\n')}
 只返回JSON，不要其他内容。`;
 
   try {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'Qwen/Qwen2.5-72B-Instruct',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.7,
-        max_tokens: 1500
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.7,
+      maxTokens: 1500
     });
-
-    if (!response.ok) {
-      throw new Error(`API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
     const content = data.choices[0].message.content;
 
     const jsonMatch = content.match(/```json\s*([\s\S]*?)\s*```/) ||
@@ -369,25 +331,12 @@ export async function generateLearningPath({ apiKey, words, goal = 'master', use
 只返回JSON，不要其他内容。`;
 
   try {
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'Qwen/Qwen2.5-72B-Instruct',
-        messages: [{ role: 'user', content: prompt }],
-        temperature: 0.6,
-        max_tokens: 1800
-      })
+    const data = await createOpenRouterChatCompletion({
+      apiKey,
+      messages: [{ role: 'user', content: prompt }],
+      temperature: 0.6,
+      maxTokens: 1800
     });
-
-    if (!response.ok) {
-      throw new Error(`API调用失败: ${response.status}`);
-    }
-
-    const data = await response.json();
     const content = data.choices[0].message.content;
 
     const jsonMatch = content.match(/```json\s*([\s\S]*?)\s*```/) ||

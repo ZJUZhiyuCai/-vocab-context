@@ -15,7 +15,8 @@ export const syncService = {
                 study_mode: settings.studyMode,
                 purpose: settings.purpose,
                 theme: settings.theme,
-                api_key: settings.apiKey,
+                // API key is local-only; overwrite any previously synced value.
+                api_key: '',
                 updated_at: new Date().toISOString()
             }, { onConflict: 'user_id' })
         return { data, error }

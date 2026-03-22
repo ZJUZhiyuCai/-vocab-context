@@ -1,7 +1,8 @@
+@import './theme.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './theme.css';
 
 /* 基础样式重置 */
 @layer base {

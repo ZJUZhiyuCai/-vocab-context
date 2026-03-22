@@ -4,10 +4,18 @@
   "description": "语境词汇学习工具 - 基于CEFR分级的雅思词汇学习系统",
   "type": "module",
   "scripts": {
+    "audit:ielts": "node scripts/audit-ielts-candidates.js",
+    "audit:real": "node scripts/real-audit.cjs",
     "convert": "node scripts/convert-data.js",
+    "generate:ielts": "node scripts/generate-core-bundles.js",
+    "generate:ielts:draft": "node scripts/generate-core-bundles.js --draft",
+    "generate:ielts:topics": "node scripts/generate-topic-pack-drafts.js",
+    "finalize:quality": "node scripts/finalize-core-quality.js",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "qa:ielts": "node scripts/qa-validate-bundles.js",
+    "score:ielts": "node scripts/score-ielts-candidates.js"
   },
   "keywords": [
     "vocabulary",
