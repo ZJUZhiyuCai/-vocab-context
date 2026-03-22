@@ -1,0 +1,2852 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-03-22T14:58:38.250Z",
+  "approvalStatus": "draft",
+  "draft": true,
+  "topic": "technology",
+  "totalBundles": 48,
+  "note": "Draft topic pack generated from approved IELTS Core bundles. Review before learner-facing use.",
+  "bundles": [
+    {
+      "bundleId": "technology_indicate_023",
+      "word": "indicate",
+      "lemma": "indicate",
+      "ipa": "/ˈɪndɪˌket/",
+      "partOfSpeech": "v.",
+      "sense": "show or suggest clearly",
+      "englishDefinition": "to show, point out, or suggest something clearly in data, reports, or discussion",
+      "chineseMeaning": "表明；标示；指示",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "indicate a trend",
+        "indicate that",
+        "survey results indicate",
+        "clearly indicate"
+      ],
+      "paraphrases": [
+        "show",
+        "suggest"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent survey results indicate that online learning is becoming more common in higher education.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The chart indicates a steady rise in spending on digital infrastructure.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "These figures indicate that many people now depend on technology in daily life.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"indicate\" in one IELTS Task 1 sentence describing a trend."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_research_027",
+      "word": "research",
+      "lemma": "research",
+      "ipa": "/rɪˈsɜrtʃ/",
+      "partOfSpeech": "n.",
+      "sense": "careful study that aims to discover facts or test ideas",
+      "englishDefinition": "systematic study carried out to develop knowledge, test ideas, or solve problems",
+      "chineseMeaning": "研究；追究；探讨",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "conduct research",
+        "academic research",
+        "research findings"
+      ],
+      "paraphrases": [
+        "study",
+        "investigation",
+        "inquiry"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent research suggests that digital tools can improve access to education in remote areas.",
+          "translation": "?????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Public research funding should focus on technologies that solve practical environmental problems.",
+          "translation": "??????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I often read research about new technology before deciding whether it is genuinely useful.",
+          "translation": "?????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"research\" in an IELTS sentence about innovation or public funding."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_regulate_047",
+      "word": "regulate",
+      "lemma": "regulate",
+      "ipa": "/ˈrɛɡjəˌlet/",
+      "partOfSpeech": "v.",
+      "sense": "control something through rules or systems",
+      "englishDefinition": "to control an activity or process by using rules or laws",
+      "chineseMeaning": "调节；调整；校准",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "regulate online content",
+        "regulate emissions",
+        "strictly regulate",
+        "regulate the market"
+      ],
+      "paraphrases": [
+        "control",
+        "govern"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Some people argue that governments should regulate social media platforms more carefully.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Stronger laws are needed to regulate industrial emissions in major cities.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I believe authorities should regulate new technologies before they spread too quickly.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Write one IELTS-style sentence about why governments regulate something."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_normal_052",
+      "word": "normal",
+      "lemma": "normal",
+      "ipa": "/ˈnɔrml/",
+      "partOfSpeech": "adj.",
+      "sense": "usual, expected, or functioning in the standard way",
+      "englishDefinition": "usual, expected, or operating in the standard way without unusual problems",
+      "chineseMeaning": "正常的；正规的；标准的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "normal operation",
+        "normal use",
+        "return to normal"
+      ],
+      "paraphrases": [
+        "usual",
+        "standard",
+        "routine"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "After a software update, users expect the device to return to normal operation quickly.",
+          "translation": "??????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Heavy dependence on mobile phones may make constant connectivity seem normal to younger generations.",
+          "translation": "????????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For me, using online services for study and shopping has become a normal part of daily life.",
+          "translation": "?????????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"normal\" in one IELTS-style sentence about technology use, digital habits, or system performance."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_create_054",
+      "word": "create",
+      "lemma": "create",
+      "ipa": "/kriˈet/",
+      "partOfSpeech": "v.",
+      "sense": "make something new happen or exist",
+      "englishDefinition": "to make something new, or to cause a situation or effect to exist",
+      "chineseMeaning": "创造；创作；产生",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "create jobs",
+        "create opportunities",
+        "create problems",
+        "create demand"
+      ],
+      "paraphrases": [
+        "produce",
+        "generate",
+        "bring about"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Digital platforms can create new opportunities for small businesses.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Heavy traffic can create serious problems for people living in city centres.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Technology has created more flexible ways to study and work.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"create\" in one IELTS-style sentence about a social or technological change."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_design_055",
+      "word": "design",
+      "lemma": "design",
+      "ipa": "/dɪˈzaɪn/",
+      "partOfSpeech": "v.",
+      "sense": "to plan or create something for a particular purpose",
+      "englishDefinition": "To plan and create a product, system, course, or solution for a specific purpose.",
+      "chineseMeaning": "& vi.设计；绘制 vt.设计；计划",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "design a system",
+        "design a course",
+        "design solutions",
+        "well-designed product"
+      ],
+      "paraphrases": [
+        "plan",
+        "develop"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Engineers must design devices that use less energy without reducing performance.",
+          "translation": "????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should design policies that encourage innovation in public services.",
+          "translation": "?????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would like to design a study space that helps students concentrate better.",
+          "translation": "????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"design\" in one IELTS-style sentence about improving technology or public services."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_function_057",
+      "word": "function",
+      "lemma": "function",
+      "ipa": "/ˈfʌŋkʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the purpose or role of something",
+      "englishDefinition": "The purpose, role, or practical use of something within a system or process.",
+      "chineseMeaning": "功能；作用；应变量",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "main function",
+        "practical function",
+        "serve a function",
+        "function of the device"
+      ],
+      "paraphrases": [
+        "role",
+        "purpose"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The main function of the software is to organise large amounts of data efficiently.",
+          "translation": "??????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "One function of higher education is to prepare students for changing labour markets.",
+          "translation": "????????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My phone has one useful function that helps me manage my study schedule.",
+          "translation": "????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"function\" in one IELTS-style sentence explaining the purpose of a tool or institution."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_identify_058",
+      "word": "identify",
+      "lemma": "identify",
+      "ipa": "/aɪˈdɛntəˌfaɪ/",
+      "partOfSpeech": "v.",
+      "sense": "recognise or find something important",
+      "englishDefinition": "to recognise, discover, or point out something clearly",
+      "chineseMeaning": "识别；认出；确定",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "identify a problem",
+        "identify the cause",
+        "identify patterns",
+        "identify key factors"
+      ],
+      "paraphrases": [
+        "detect",
+        "recognise"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Researchers can now identify patterns in large amounts of digital data.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy makers must identify the main causes of traffic congestion before taking action.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "It is sometimes hard to identify reliable information online.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"identify\" in a sentence about solving a public problem."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_locate_061",
+      "word": "locate",
+      "lemma": "locate",
+      "ipa": "/ˈloʊkeɪt/",
+      "partOfSpeech": "v.",
+      "sense": "to find the exact position of something",
+      "englishDefinition": "To find or identify the exact position of someone or something.",
+      "chineseMeaning": "位于；说出来源；查找…的地点",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "locate a problem",
+        "locate the source",
+        "easily located",
+        "locate users nearby"
+      ],
+      "paraphrases": [
+        "find",
+        "identify"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Scientists used satellite images to locate areas affected by flooding.",
+          "translation": "????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Sensors can help city authorities locate faults in public infrastructure more quickly.",
+          "translation": "??????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I use a map app to locate new places when I travel to unfamiliar cities.",
+          "translation": "?????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"locate\" in one IELTS-style sentence about maps, data, or modern technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_process_064",
+      "word": "process",
+      "lemma": "process",
+      "ipa": "/ˈproʊses/",
+      "partOfSpeech": "n.",
+      "sense": "a series of actions taken to achieve a result",
+      "englishDefinition": "A series of steps or actions that lead to a particular result.",
+      "chineseMeaning": "过程；工序；做事方法",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "learning process",
+        "decision-making process",
+        "industrial process",
+        "speed up the process"
+      ],
+      "paraphrases": [
+        "procedure",
+        "series of steps"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The diagram shows the process of recycling household waste into new materials.",
+          "translation": "?????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A transparent recruitment process can improve trust in public institutions.",
+          "translation": "????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Learning a language is a gradual process that requires regular practice.",
+          "translation": "???????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"process\" in one IELTS-style sentence describing how something works or changes."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_range_065",
+      "word": "range",
+      "lemma": "range",
+      "ipa": "/rendʒ/",
+      "partOfSpeech": "n.",
+      "sense": "a number of different things of the same general type",
+      "englishDefinition": "A set or variety of things that differ within clear limits.",
+      "chineseMeaning": "范围；射程；类别",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "a wide range of",
+        "price range",
+        "within the range",
+        "range of options"
+      ],
+      "paraphrases": [
+        "variety",
+        "scope"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The website offers a wide range of online courses for adult learners.",
+          "translation": "?????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Cities should invest in a range of transport options rather than relying on cars alone.",
+          "translation": "??????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My university library provides a range of digital resources that students use every day.",
+          "translation": "????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"range\" in one IELTS-style sentence about options, resources, or services."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_require_067",
+      "word": "require",
+      "lemma": "require",
+      "ipa": "/rɪˈkwaɪr/",
+      "partOfSpeech": "v.",
+      "sense": "need something as a condition or necessity",
+      "englishDefinition": "to need something or make it necessary",
+      "chineseMeaning": "要求；需要；想要",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "require investment",
+        "require training",
+        "be required to",
+        "require careful planning"
+      ],
+      "paraphrases": [
+        "need",
+        "demand"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Modern industries require workers to update their skills regularly.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Expanding public transport will require substantial government funding.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Learning to use new software often requires patience.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Write one sentence explaining why a change would require support or funding."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_secure_068",
+      "word": "secure",
+      "lemma": "secure",
+      "ipa": "/səˈkjʊr/",
+      "partOfSpeech": "v.",
+      "sense": "to obtain something important or make something safe",
+      "englishDefinition": "To obtain something important or to make something safe and protected.",
+      "chineseMeaning": "安全的；牢固的；有把握的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "secure funding",
+        "secure data",
+        "secure access",
+        "secure a place"
+      ],
+      "paraphrases": [
+        "obtain",
+        "protect"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Small firms often struggle to secure enough funding for research and development.",
+          "translation": "?????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Universities must secure student data before expanding online services.",
+          "translation": "????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I worked hard to secure a scholarship because tuition fees were expensive.",
+          "translation": "????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"secure\" in one IELTS-style sentence about funding, data, or opportunities."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_transfer_070",
+      "word": "transfer",
+      "lemma": "transfer",
+      "ipa": "/trænsˈfɚ/",
+      "partOfSpeech": "v.",
+      "sense": "to move something from one place, person, or system to another",
+      "englishDefinition": "To move something from one place, person, or system to another",
+      "chineseMeaning": "转移，调任；转让，过户",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "transfer skills",
+        "transfer data",
+        "transfer knowledge"
+      ],
+      "paraphrases": [
+        "move",
+        "shift"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent studies show that organisations and users often transfer skills when dealing with innovation and access.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should transfer data if they want to improve outcomes in technology and digital systems.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think institutions need to transfer knowledge in order to respond effectively to innovation and access.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"transfer\" in one IELTS-style sentence about technology and digital systems."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_invest_088",
+      "word": "invest",
+      "lemma": "invest",
+      "ipa": "/ɪnˈvɛst/",
+      "partOfSpeech": "v.",
+      "sense": "put money, time, or effort into something for future benefit",
+      "englishDefinition": "to spend money, time, or energy on something in order to gain a future benefit",
+      "chineseMeaning": "& vi.投资；花费 vt.授予；使就职",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "invest in infrastructure",
+        "invest heavily",
+        "invest in education",
+        "invest time"
+      ],
+      "paraphrases": [
+        "put money into",
+        "fund",
+        "commit resources to"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many countries invest in digital infrastructure to support economic growth.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should invest more in research if they want to remain competitive.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think families should invest time in helping children develop healthy habits.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"invest\" in one IELTS-style sentence about money, time, or infrastructure."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_layer_089",
+      "word": "layer",
+      "lemma": "layer",
+      "ipa": "/ˈler/",
+      "partOfSpeech": "n.",
+      "sense": "a level or part that covers or forms part of something",
+      "englishDefinition": "A level or part that covers or forms part of something",
+      "chineseMeaning": "层，层次；铺设，分层",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "data layer",
+        "surface layer",
+        "protective layer"
+      ],
+      "paraphrases": [
+        "level",
+        "sheet"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies data layer as a major issue in technology and digital systems.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address surface layer if governments want to improve innovation and access.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, layer is important because it shapes innovation and access.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"layer\" in one IELTS-style sentence about technology and digital systems."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_publish_094",
+      "word": "publish",
+      "lemma": "publish",
+      "ipa": "/ˈpʌblɪʃ/",
+      "partOfSpeech": "v.",
+      "sense": "make information available to the public",
+      "englishDefinition": "to produce and make information, writing, or results available to the public",
+      "chineseMeaning": "& vi.出版；发行；发表",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "publish findings",
+        "publish a report",
+        "publish online",
+        "widely published"
+      ],
+      "paraphrases": [
+        "release",
+        "issue"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Researchers often publish their findings in open-access journals.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Public agencies should publish clearer data on air quality.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "It is now much easier for ordinary people to publish content online.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"publish\" in a sentence about information or research."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_rely_095",
+      "word": "rely",
+      "lemma": "rely",
+      "ipa": "/rɪˈlaɪ/",
+      "partOfSpeech": "v.",
+      "sense": "depend on someone or something",
+      "englishDefinition": "to depend on someone or something for support or success",
+      "chineseMeaning": "依靠；倚赖；仗恃",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "rely on technology",
+        "heavily rely on",
+        "rely on fossil fuels",
+        "cannot rely solely on"
+      ],
+      "paraphrases": [
+        "depend on",
+        "count on"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Modern businesses rely heavily on digital communication tools.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Cities cannot rely solely on private cars to solve transport demand.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Many students rely on online sources when preparing assignments.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Write one sentence explaining why people rely on something."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_derive_099",
+      "word": "derive",
+      "lemma": "derive",
+      "ipa": "/dɪˈraɪv/",
+      "partOfSpeech": "v.",
+      "sense": "to get something from a source or to come from that source",
+      "englishDefinition": "to get something from a particular source, or to come from that source",
+      "chineseMeaning": "& vi.得到；导出；源于",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "derive from",
+        "derive benefit from",
+        "derive meaning from",
+        "derive conclusions from"
+      ],
+      "paraphrases": [
+        "obtain",
+        "come from",
+        "gain"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Much of this evidence is derived from long-term studies of urban life.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Many students derive confidence from regular feedback on their work.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I derive most of my news from online sources rather than printed newspapers.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"derive\" in one IELTS-style sentence about the source of an idea, benefit, or result."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_complex_103",
+      "word": "complex",
+      "lemma": "complex",
+      "ipa": "/kəmˈpleks/",
+      "partOfSpeech": "adj.",
+      "sense": "made of many connected parts and therefore difficult to understand or deal with",
+      "englishDefinition": "made of many connected parts, ideas, or causes, so it is difficult to understand or deal with",
+      "chineseMeaning": "复杂的；难懂的；复合的 n.建筑群",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "complex problem",
+        "complex system",
+        "complex issue",
+        "highly complex"
+      ],
+      "paraphrases": [
+        "complicated",
+        "intricate",
+        "not straightforward"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Climate change is a complex issue with social, economic, and scientific dimensions.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Modern transport systems are becoming more complex as cities expand.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think online privacy has become a more complex problem than it was ten years ago.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"complex\" in one IELTS-style sentence about a modern problem or system."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_potential_113",
+      "word": "potential",
+      "lemma": "potential",
+      "ipa": "/pəˈtɛnʃəl/",
+      "partOfSpeech": "adj.",
+      "sense": "possible when developed or supported",
+      "englishDefinition": "possible to develop, achieve, or become something in the future",
+      "chineseMeaning": "潜在的；有可能的；可能语气的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "potential benefits",
+        "potential risk",
+        "reach potential",
+        "have the potential to"
+      ],
+      "paraphrases": [
+        "possible",
+        "latent"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Artificial intelligence has the potential to improve medical diagnosis.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Online courses have the potential to widen access to education.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "This idea has potential, but it still needs careful planning.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"potential\" in a sentence about a future benefit or risk."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_technical_116",
+      "word": "technical",
+      "lemma": "technical",
+      "ipa": "/ˈtɛknɪkəl/",
+      "partOfSpeech": "adj.",
+      "sense": "related to specialised practical knowledge, especially science or technology",
+      "englishDefinition": "Related to specialised practical knowledge, especially in science, engineering, or technology.",
+      "chineseMeaning": "技术性的；工艺的；学术上的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "technical skills",
+        "technical support",
+        "technical problem",
+        "technical knowledge"
+      ],
+      "paraphrases": [
+        "specialised",
+        "practical"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many employers now expect graduates to combine communication skills with technical knowledge.",
+          "translation": "???????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should expand technical training to prepare workers for automation.",
+          "translation": "???????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would like to improve my technical skills because digital tools are used in almost every job.",
+          "translation": "?????????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"technical\" in one IELTS-style sentence about skills, training, or modern industry."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_data_123",
+      "word": "data",
+      "lemma": "data",
+      "ipa": "/ˈdetə, ˈdætə, ˈdɑtə/",
+      "partOfSpeech": "n.",
+      "sense": "facts or information collected for reference or analysis",
+      "englishDefinition": "facts or pieces of information that are collected and used for study, comparison, or decision-making",
+      "chineseMeaning": "资料；材料；datum的复数",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "collect data",
+        "analyse data",
+        "reliable data",
+        "data protection"
+      ],
+      "paraphrases": [
+        "information",
+        "figures",
+        "evidence"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Researchers collected data from several schools before drawing any conclusions.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments need reliable data to plan transport and energy policy effectively.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I am more likely to trust a report when it uses clear data rather than vague claims.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"data\" in one IELTS-style sentence about research, planning, or digital technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_category_129",
+      "word": "category",
+      "lemma": "category",
+      "ipa": "/ˈkætəgɔri/",
+      "partOfSpeech": "n.",
+      "sense": "a group of things or people with shared features",
+      "englishDefinition": "a type or group of things that share similar features or qualities",
+      "chineseMeaning": "类型；部门；种类",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "main category",
+        "fall into a category",
+        "separate category",
+        "broad category"
+      ],
+      "paraphrases": [
+        "type",
+        "group",
+        "class"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The survey divided online users into age-based categories for comparison.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The largest category of household waste shown in the chart is plastic packaging.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I usually put my expenses into different categories so I can manage my budget better.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"category\" in one IELTS-style sentence about classification, charts, or organised information."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_component_130",
+      "word": "component",
+      "lemma": "component",
+      "ipa": "/kəmˈpoʊnənt/",
+      "partOfSpeech": "n.",
+      "sense": "one of the parts of a larger whole",
+      "englishDefinition": "One of the parts of a larger whole",
+      "chineseMeaning": "组成部分，成分；元件，组件",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "key component",
+        "major component",
+        "essential component"
+      ],
+      "paraphrases": [
+        "part",
+        "element"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies key component as a major issue in technology and digital systems.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address major component if governments want to improve innovation and access.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, component is important because it shapes innovation and access.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"component\" in one IELTS-style sentence about technology and digital systems."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_infrastructure_164",
+      "word": "infrastructure",
+      "lemma": "infrastructure",
+      "ipa": "/ˈɪnfrəˌstrʌktʃɚ/",
+      "partOfSpeech": "n.",
+      "sense": "the basic systems and services a society needs to function",
+      "englishDefinition": "the essential physical and organisational structures such as transport, energy, and digital networks",
+      "chineseMeaning": "基础设施；基础建设",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "public infrastructure",
+        "digital infrastructure",
+        "transport infrastructure"
+      ],
+      "paraphrases": [
+        "basic systems",
+        "public facilities",
+        "foundational networks"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Rural areas need better digital infrastructure if students are to benefit from online learning.",
+          "translation": "??????????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Investment in transport infrastructure can improve productivity and reduce regional inequality.",
+          "translation": "????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Modern infrastructure makes a city more efficient and more attractive to skilled workers.",
+          "translation": "????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"infrastructure\" in one formal sentence about development, transport, or technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_barrier_171",
+      "word": "barrier",
+      "lemma": "barrier",
+      "ipa": "/ˈbæriə/",
+      "partOfSpeech": "n.",
+      "sense": "an obstacle that prevents progress or communication",
+      "englishDefinition": "An obstacle, problem, or difficulty that prevents progress, access, or communication",
+      "chineseMeaning": "障碍，壁垒；阻碍进步或交流的事物",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "language barrier",
+        "major barrier",
+        "remove barriers",
+        "trade barrier"
+      ],
+      "paraphrases": [
+        "obstacle",
+        "hindrance",
+        "block",
+        "impediment"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "High tuition fees can become a major barrier to university access for low-income students.",
+          "translation": "??????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should remove practical barriers that prevent small firms from adopting new technology.",
+          "translation": "?????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In speaking tasks, candidates often mention the language barrier when describing life in another country.",
+          "translation": "????????????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"barrier\" in one IELTS-style sentence about a problem that limits access or progress."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_communication_194",
+      "word": "communication",
+      "lemma": "communication",
+      "ipa": "/kəˌmjunɪˈkeʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the exchange of information, ideas, or feelings",
+      "englishDefinition": "the process of sharing information or ideas between people, groups, or devices",
+      "chineseMeaning": "通讯；通信；交流",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "effective communication",
+        "digital communication",
+        "communication skills",
+        "improve communication"
+      ],
+      "paraphrases": [
+        "interaction",
+        "exchange of information",
+        "contact"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Digital tools have changed the speed and style of communication at work.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Good communication between teachers and parents can improve student outcomes.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Video calls have made communication with relatives abroad much easier.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"communication\" in one IELTS-style sentence about technology, education, or everyday interaction."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_comparatively_195",
+      "word": "comparatively",
+      "lemma": "comparatively",
+      "ipa": "/kəmˈpærətɪvlɪ/",
+      "partOfSpeech": "adv.",
+      "sense": "when compared with something else",
+      "englishDefinition": "when compared with another thing or situation",
+      "chineseMeaning": "对比地；相对地；比较地",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "comparatively low",
+        "comparatively high",
+        "comparatively small",
+        "comparatively easy"
+      ],
+      "paraphrases": [
+        "relatively",
+        "by comparison"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Online learning is comparatively cheap once the system has been built.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Rural housing remains comparatively affordable in some regions.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Public transport is comparatively reliable in my city.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"comparatively\" in a sentence making a comparison."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_electronically_201",
+      "word": "electronically",
+      "lemma": "electronically",
+      "ipa": "/ɪˌlekˈtrɑːnɪkli/",
+      "partOfSpeech": "adv.",
+      "sense": "by using electronic systems, devices, or digital networks",
+      "englishDefinition": "by using electronic systems, devices, or digital networks rather than paper-based or face-to-face methods",
+      "chineseMeaning": "电子地",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "submit electronically",
+        "stored electronically",
+        "transmitted electronically",
+        "pay electronically"
+      ],
+      "paraphrases": [
+        "digitally",
+        "online"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Patient records can be stored electronically to improve access across different departments.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Many applications are now submitted electronically, which reduces paperwork and processing time.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I prefer paying electronically because it is faster and easier to track.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"electronically\" in one IELTS-style sentence about digital services, records, or payments."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_bridge_213",
+      "word": "bridge",
+      "lemma": "bridge",
+      "ipa": "/brɪdʒ/",
+      "partOfSpeech": "v.",
+      "sense": "to connect two groups or reduce the difference between them",
+      "englishDefinition": "to connect two groups, ideas, or systems, or to reduce the gap between them",
+      "chineseMeaning": "桥；桥牌；鼻梁",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "bridge the gap",
+        "bridge differences",
+        "bridge academia and industry",
+        "bridge the divide"
+      ],
+      "paraphrases": [
+        "connect",
+        "link",
+        "close the gap"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Policy makers hope new training schemes will bridge the skills gap between graduates and employers.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Digital tools can help bridge the gap between rural schools and urban educational resources.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, public transport projects should bridge isolated communities with city services.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"bridge\" in one IELTS-style sentence about reducing a gap between people, systems, or opportunities."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_devise_237",
+      "word": "devise",
+      "lemma": "devise",
+      "ipa": "/dɪˈvaɪz/",
+      "partOfSpeech": "v.",
+      "sense": "to plan or invent something carefully",
+      "englishDefinition": "To plan or invent something carefully",
+      "chineseMeaning": "设计，发明；策划，想出",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "devise a plan",
+        "devise solutions",
+        "devise a system"
+      ],
+      "paraphrases": [
+        "design",
+        "create"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent studies show that organisations and users often devise a plan when dealing with innovation and access.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should devise solutions if they want to improve outcomes in technology and digital systems.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think institutions need to devise a system in order to respond effectively to innovation and access.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"devise\" in one IELTS-style sentence about technology and digital systems."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_viable_254",
+      "word": "viable",
+      "lemma": "viable",
+      "ipa": "/ˈvaɪəbəl/",
+      "partOfSpeech": "adj.",
+      "sense": "capable of working successfully in practice",
+      "englishDefinition": "Capable of working successfully in practice",
+      "chineseMeaning": "切实可行的,能养活的,能自行生产发育的,有望实现的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "viable solution",
+        "viable option",
+        "economically viable"
+      ],
+      "paraphrases": [
+        "feasible",
+        "workable"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A viable issue in technology and digital systems is whether policy can improve innovation and access.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "It is viable for governments to support long-term improvements in innovation and access.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think viable changes are needed if society wants better results in technology and digital systems.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"viable\" in one IELTS-style sentence about technology and digital systems."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_integrated_259",
+      "word": "integrated",
+      "lemma": "integrated",
+      "ipa": "/ˈɪntɪɡretɪd/",
+      "partOfSpeech": "adj.",
+      "sense": "combined so that all parts work together effectively",
+      "englishDefinition": "Combined so that all parts work together effectively",
+      "chineseMeaning": "综合的，整合的；一体化的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "integrated system",
+        "integrated approach",
+        "integrated services"
+      ],
+      "paraphrases": [
+        "combined",
+        "coordinated"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The city introduced an integrated transport system that connects buses, trains, and bike-sharing services.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "An integrated approach to urban planning can reduce congestion while improving access to public services.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I prefer integrated apps because they allow people to study, communicate, and organise tasks in one place.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"integrated\" in one IELTS-style sentence about systems, services, or planning that work together effectively."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_advent_267",
+      "word": "advent",
+      "lemma": "advent",
+      "ipa": "/ˈædˌvɛnt/",
+      "partOfSpeech": "n.",
+      "sense": "the arrival or beginning of something important",
+      "englishDefinition": "The arrival or beginning of something important",
+      "chineseMeaning": "出现,到来,基督降临节（圣诞节前的四个星期）",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "advent of AI",
+        "advent of the internet",
+        "the advent of"
+      ],
+      "paraphrases": [
+        "arrival",
+        "emergence"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies advent of AI as a major issue in technology and digital systems.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address advent of the internet if governments want to improve innovation and access.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, advent is important because it shapes innovation and access.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"advent\" in one IELTS-style sentence about technology and digital systems."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_proliferate_380",
+      "word": "proliferate",
+      "lemma": "proliferate",
+      "ipa": "/prəˈlɪfəreɪt/",
+      "partOfSpeech": "v.",
+      "sense": "to increase quickly in number and spread through an area, system, or society",
+      "englishDefinition": "To increase rapidly in number and spread widely through a place, system, or field.",
+      "chineseMeaning": "激增，扩散；在某个地区、系统或领域中迅速增加并广泛传播",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "proliferate rapidly",
+        "proliferate online",
+        "small firms proliferate"
+      ],
+      "paraphrases": [
+        "spread",
+        "multiply",
+        "increase"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Online misinformation can proliferate quickly when users share content without checking the original source.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "If electric vehicles proliferate over the next decade, cities may experience lower urban noise and cleaner air.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my country, digital payment apps have proliferated because they are fast, convenient, and widely accepted.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"proliferate\" in one IELTS-style sentence about something increasing rapidly in society or technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_transform_381",
+      "word": "transform",
+      "lemma": "transform",
+      "ipa": "/tr?ns?f?rm/",
+      "partOfSpeech": "v.",
+      "sense": "to change something completely so that it becomes much better, more modern, or more effective",
+      "englishDefinition": "To change something greatly so that it becomes very different, often more modern, efficient, or effective.",
+      "chineseMeaning": "转变；改造",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "transform education",
+        "transform public services",
+        "transform the economy",
+        "digitally transform"
+      ],
+      "paraphrases": [
+        "change dramatically",
+        "reshape",
+        "modernize"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Affordable internet access can transform education by widening access to online materials.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Public investment in research can transform an economy from resource-based growth to innovation-led growth.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Technology has transformed the way I study because I can organise notes and practise listening on my phone.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"transform\" in one IELTS-style sentence about technology, education, or social change."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_evolve_382",
+      "word": "evolve",
+      "lemma": "evolve",
+      "ipa": "/iˈvɒlv/",
+      "partOfSpeech": "v.",
+      "sense": "演变，发展",
+      "englishDefinition": "To develop or change gradually over time into a more advanced or different form.",
+      "chineseMeaning": "演变；发展",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "evolve over time",
+        "evolve into"
+      ],
+      "paraphrases": [
+        "develop",
+        "progress",
+        "advance"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Communication methods continue to evolve as mobile technology becomes cheaper and more widely available.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Education systems must evolve if they are to prepare students for a labour market shaped by automation.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think public transport apps will evolve further because passengers now expect live updates and digital payment options.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"evolve\" in one IELTS-style sentence about technology, education, or public services changing over time."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_emerge_383",
+      "word": "emerge",
+      "lemma": "emerge",
+      "ipa": "/ɪˈmɜːdʒ/",
+      "partOfSpeech": "v.",
+      "sense": "出现，浮现",
+      "englishDefinition": "To appear or become known, especially after a period of change, growth, or uncertainty.",
+      "chineseMeaning": "出现；浮现",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "emerge as",
+        "new technologies emerge"
+      ],
+      "paraphrases": [
+        "appear",
+        "arise",
+        "surface"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "New privacy concerns often emerge when governments collect more personal data through digital services.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "If new industries emerge in rural regions, fewer young adults may feel forced to move to major cities.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Interesting career options keep emerging in my city as more companies invest in software and green energy.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"emerge\" in one IELTS-style sentence about a new trend, concern, or opportunity appearing."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_automation_386",
+      "word": "automation",
+      "lemma": "automation",
+      "ipa": "/ˌɔːtəˈmeɪʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the use of machines or software to do tasks with little or no direct human control",
+      "englishDefinition": "The use of machines, software, or digital systems to perform tasks automatically with reduced human input.",
+      "chineseMeaning": "自动化；利用机器、软件或数字系统在较少人工干预下完成任务",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "workplace automation",
+        "increased automation"
+      ],
+      "paraphrases": [
+        "mechanization",
+        "computerization"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The spread of automation in factories has increased productivity but reduced demand for some routine jobs.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should prepare workers for automation by funding retraining programmes in digital and technical skills.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I use automation in daily life when apps remind me about bills, appointments, and repeated online tasks.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"automation\" in one IELTS-style sentence about work, industry, or everyday technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_innovation_387",
+      "word": "innovation",
+      "lemma": "innovation",
+      "ipa": "/ˌɪnəˈveɪʃən/",
+      "partOfSpeech": "n.",
+      "sense": "a new idea, method, or product that improves something",
+      "englishDefinition": "A new idea, method, or technology that improves how something is done; the process of introducing such changes",
+      "chineseMeaning": "创新，革新；新方法、新技术或新产品",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "technological innovation",
+        "drive innovation",
+        "foster innovation"
+      ],
+      "paraphrases": [
+        "breakthrough",
+        "advancement",
+        "new development"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Rapid innovation in mobile payment systems has changed how consumers and small businesses operate.",
+          "translation": "???????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Public funding can support innovation, but governments should still regulate the risks created by new technologies.",
+          "translation": "???????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "The most useful innovation in my daily life is cloud storage because it makes study materials easier to access.",
+          "translation": "??????????????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"innovation\" in one IELTS-style sentence about technology, business, or public policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_breakthrough_388",
+      "word": "breakthrough",
+      "lemma": "breakthrough",
+      "ipa": "/ˈbreɪkθruː/",
+      "partOfSpeech": "n.",
+      "sense": "突破",
+      "englishDefinition": "An important discovery or development that leads to major progress in a field.",
+      "chineseMeaning": "突破",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "major breakthrough",
+        "technological breakthrough"
+      ],
+      "paraphrases": [
+        "advance",
+        "discovery",
+        "innovation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A major medical breakthrough can improve life expectancy, but the treatment is often expensive at first.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Technological breakthroughs should be shared fairly so that poorer regions also benefit from scientific progress.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "The most impressive recent breakthrough for me is translation software that makes international study much easier.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"breakthrough\" in one IELTS-style sentence about science, medicine, or technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_connectivity_389",
+      "word": "connectivity",
+      "lemma": "connectivity",
+      "ipa": "/?k?n?k?t?v?ti/",
+      "partOfSpeech": "n.",
+      "sense": "the quality of being connected, especially through transport, communication, or digital networks",
+      "englishDefinition": "The quality of being connected, especially through the internet, mobile systems, transport links, or shared networks.",
+      "chineseMeaning": "连通性",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "digital connectivity",
+        "poor connectivity",
+        "improve connectivity",
+        "rural connectivity"
+      ],
+      "paraphrases": [
+        "connection",
+        "network access",
+        "linked infrastructure"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Poor connectivity in remote areas can limit access to online classes, banking, and medical advice.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Improving rural connectivity should be a priority if governments want economic growth to be more balanced.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Reliable connectivity matters to me because weak mobile data makes studying and paying bills much harder.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"connectivity\" in one IELTS-style sentence about internet access, infrastructure, or regional inequality."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_artificial_390",
+      "word": "artificial",
+      "lemma": "artificial",
+      "ipa": "/ˌɑːtɪˈfɪʃəl/",
+      "partOfSpeech": "adj.",
+      "sense": "人工的",
+      "englishDefinition": "Made by people rather than occurring naturally, or created by technology to copy something natural.",
+      "chineseMeaning": "人工的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "artificial intelligence",
+        "artificial lighting"
+      ],
+      "paraphrases": [
+        "synthetic",
+        "man-made",
+        "unnatural"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Artificial lighting allows factories and offices to operate for longer hours, but it also increases energy use.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Artificial intelligence may improve public services, yet it also raises concerns about privacy and job security.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would like to try a course on artificial intelligence because it is already affecting how people study and work.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"artificial\" in one IELTS-style sentence about intelligence, materials, or lighting."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_digital_391",
+      "word": "digital",
+      "lemma": "digital",
+      "ipa": "/ˈdɪdʒɪtl/",
+      "partOfSpeech": "adj.",
+      "sense": "related to computers, the internet, or electronic technology",
+      "englishDefinition": "Relating to computers, the internet, or electronic technology; involving digital signals or data",
+      "chineseMeaning": "数字的，数码的；与计算机或电子技术相关的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "digital technology",
+        "digital skills",
+        "digital divide",
+        "digital age"
+      ],
+      "paraphrases": [
+        "electronic",
+        "online",
+        "technology-based"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The digital divide remains a serious problem in regions where schools still lack reliable internet access.",
+          "translation": "??????????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Digital services can save time, but governments must ensure that older people are not excluded.",
+          "translation": "??????????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Most students now submit assignments through digital platforms instead of printing everything.",
+          "translation": "????????????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"digital\" in one IELTS-style sentence about technology, services, or education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_virtual_392",
+      "word": "virtual",
+      "lemma": "virtual",
+      "ipa": "/ˈvɜːtʃuəl/",
+      "partOfSpeech": "adj.",
+      "sense": "虚拟的",
+      "englishDefinition": "Existing or happening mainly on computers or online rather than in a physical place.",
+      "chineseMeaning": "虚拟的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "virtual reality",
+        "virtual environment"
+      ],
+      "paraphrases": [
+        "simulated",
+        "digital",
+        "online"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Virtual classrooms helped many universities continue teaching when students could not attend in person.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Virtual meetings reduce travel costs, although they cannot fully replace direct human interaction.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I sometimes prefer virtual events because they save time and make it easier to join from home.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"virtual\" in one IELTS-style sentence about classes, meetings, or online experiences."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_autonomous_393",
+      "word": "autonomous",
+      "lemma": "autonomous",
+      "ipa": "/ɔːˈtɒnəməs/",
+      "partOfSpeech": "adj.",
+      "sense": "自主的",
+      "englishDefinition": "Able to operate independently or with little direct human control.",
+      "chineseMeaning": "自主的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "autonomous vehicles",
+        "fully autonomous"
+      ],
+      "paraphrases": [
+        "self-governing",
+        "independent",
+        "automated"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Autonomous vehicles rely on sensors and software to make driving decisions in real time.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should test autonomous transport carefully before allowing it to spread on public roads.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would be cautious about using an autonomous taxi until the technology becomes more reliable.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"autonomous\" in one IELTS-style sentence about vehicles, machines, or independent systems."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "technology_burgeoning_401",
+      "word": "burgeoning",
+      "lemma": "burgeoning",
+      "ipa": "/ˈbɜːdʒənɪŋ/",
+      "partOfSpeech": "adj.",
+      "sense": "迅速发展的",
+      "englishDefinition": "Growing or developing very quickly.",
+      "chineseMeaning": "迅速发展的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "burgeoning industry",
+        "burgeoning demand"
+      ],
+      "paraphrases": [
+        "growing",
+        "expanding",
+        "flourishing"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The burgeoning market for electric vehicles has encouraged governments to invest in charging infrastructure.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A burgeoning tourism industry can create jobs, but it may also put pressure on local housing and transport.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "There is a burgeoning interest in online courses in my area because flexible learning suits working adults.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"burgeoning\" in one IELTS-style sentence about a rapidly growing market, industry, or trend."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    }
+  ]
+}

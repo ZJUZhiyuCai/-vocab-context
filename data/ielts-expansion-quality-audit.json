@@ -1,0 +1,1405 @@
+{
+  "generatedAt": "2026-03-20T16:38:24.425Z",
+  "summary": {
+    "totalCandidates": 168,
+    "wordsWithIssues": 168,
+    "issuesByType": {
+      "template-context": 167,
+      "marginal-word": 24,
+      "low-value-word": 23,
+      "weak-collocations": 6,
+      "weak-paraphrases": 5
+    },
+    "qualityStats": {
+      "high-value": 87,
+      "acceptable": 34,
+      "marginal": 24,
+      "low-value": 23
+    }
+  },
+  "sampledWords": [
+    {
+      "word": "premise",
+      "topic": "education",
+      "sourceCategory": "AWL Expansion",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "escalate",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "diminish",
+      "topic": "environment",
+      "sourceCategory": "AWL Expansion",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "proliferate",
+      "topic": "technology",
+      "sourceCategory": "AWL Expansion",
+      "quality": "acceptable",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "deterrent",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "consequent",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation",
+      "quality": "marginal",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "contentious",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation",
+      "quality": "acceptable",
+      "issues": [
+        "template-context",
+        "weak-collocations"
+      ]
+    },
+    {
+      "word": "rooted",
+      "topic": "education",
+      "sourceCategory": "Task2 Argumentation",
+      "quality": "acceptable",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "underlying",
+      "topic": "education",
+      "sourceCategory": "Task2 Argumentation",
+      "quality": "acceptable",
+      "issues": [
+        "template-context",
+        "weak-collocations"
+      ]
+    },
+    {
+      "word": "parallel",
+      "topic": "education",
+      "sourceCategory": "Task2 Argumentation",
+      "quality": "acceptable",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "renewable",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment",
+      "quality": "marginal",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "disposable",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment",
+      "quality": "acceptable",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "conservation",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "degradation",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment",
+      "quality": "acceptable",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "sustainable",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment",
+      "quality": "acceptable",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "transparency",
+      "topic": "government",
+      "sourceCategory": "Topic: Government",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "bipartisan",
+      "topic": "government",
+      "sourceCategory": "Topic: Government",
+      "quality": "low-value",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "legislation",
+      "topic": "government",
+      "sourceCategory": "Topic: Government",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "electoral",
+      "topic": "government",
+      "sourceCategory": "Topic: Government",
+      "quality": "low-value",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "accountability",
+      "topic": "government",
+      "sourceCategory": "Topic: Government",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "competency",
+      "topic": "education",
+      "sourceCategory": "Topic: Education",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "numeracy",
+      "topic": "education",
+      "sourceCategory": "Topic: Education",
+      "quality": "marginal",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "proficiency",
+      "topic": "education",
+      "sourceCategory": "Topic: Education",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "remedial",
+      "topic": "education",
+      "sourceCategory": "Topic: Education",
+      "quality": "marginal",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "literacy",
+      "topic": "education",
+      "sourceCategory": "Topic: Education",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "favorable",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "adverse",
+      "topic": "health",
+      "sourceCategory": "Paraphrase Family",
+      "quality": "high-value",
+      "issues": [
+        "template-context",
+        "weak-collocations"
+      ]
+    },
+    {
+      "word": "surge",
+      "topic": "environment",
+      "sourceCategory": "Paraphrase Family",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "valuable",
+      "topic": "education",
+      "sourceCategory": "Paraphrase Family",
+      "quality": "high-value",
+      "issues": [
+        "template-context",
+        "weak-paraphrases"
+      ]
+    },
+    {
+      "word": "productive",
+      "topic": "education",
+      "sourceCategory": "Paraphrase Family",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "obsolescence",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "quality": "low-value",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "surveillance",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "quality": "low-value",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "automation",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "cutting-edge",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "quality": "low-value",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "breakthrough",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "wellbeing",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "immunity",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "quality": "high-value",
+      "issues": [
+        "template-context"
+      ]
+    },
+    {
+      "word": "contagious",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "quality": "low-value",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "sedentary",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "quality": "low-value",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "preventable",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "quality": "low-value",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    }
+  ],
+  "lowValueWords": [
+    {
+      "word": "corroborate",
+      "topic": "education",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "elucidate",
+      "topic": "education",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "jurisdiction",
+      "topic": "government",
+      "sourceCategory": "Topic: Government",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "bipartisan",
+      "topic": "government",
+      "sourceCategory": "Topic: Government",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "legislative",
+      "topic": "government",
+      "sourceCategory": "Topic: Government",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "electoral",
+      "topic": "government",
+      "sourceCategory": "Topic: Government",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "sovereign",
+      "topic": "government",
+      "sourceCategory": "Topic: Government",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "deleterious",
+      "topic": "environment",
+      "sourceCategory": "Paraphrase Family",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "salient",
+      "topic": "education",
+      "sourceCategory": "Paraphrase Family",
+      "issues": [
+        "template-context",
+        "weak-paraphrases",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "obsolescence",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "digitization",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "cybersecurity",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "surveillance",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "cutting-edge",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "obsolete",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "sophisticated",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "morbidity",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "contagious",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "acute",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "preventable",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "sedentary",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "nutritious",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    },
+    {
+      "word": "pernicious",
+      "topic": "health",
+      "sourceCategory": "Paraphrase Family",
+      "issues": [
+        "template-context",
+        "low-value-word"
+      ]
+    }
+  ],
+  "marginalWords": [
+    {
+      "word": "contend",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "substantiate",
+      "topic": "education",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "refute",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "paramount",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "imperative",
+      "topic": "environment",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "rebut",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "indispensable",
+      "topic": "education",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "paradigm",
+      "topic": "education",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "ramification",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "precipitate",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation",
+      "issues": [
+        "template-context",
+        "weak-collocations",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "engender",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "consequent",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "ensuing",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "comparable",
+      "topic": "education",
+      "sourceCategory": "Task2 Argumentation",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "analogous",
+      "topic": "education",
+      "sourceCategory": "Task2 Argumentation",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "numeracy",
+      "topic": "education",
+      "sourceCategory": "Topic: Education",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "vocational",
+      "topic": "education",
+      "sourceCategory": "Topic: Education",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "compulsory",
+      "topic": "education",
+      "sourceCategory": "Topic: Education",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "standardized",
+      "topic": "education",
+      "sourceCategory": "Topic: Education",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "remedial",
+      "topic": "education",
+      "sourceCategory": "Topic: Education",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "renewable",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "non-renewable",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment",
+      "issues": [
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "biodegradable",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    },
+    {
+      "word": "chronic",
+      "topic": "health",
+      "sourceCategory": "Topic: Health",
+      "issues": [
+        "template-context",
+        "marginal-word"
+      ]
+    }
+  ],
+  "highValueWords": [
+    {
+      "word": "underscore",
+      "topic": "environment",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "advocate",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "sustainability",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment"
+    },
+    {
+      "word": "legislation",
+      "topic": "government",
+      "sourceCategory": "Topic: Government"
+    },
+    {
+      "word": "accountability",
+      "topic": "government",
+      "sourceCategory": "Topic: Government"
+    },
+    {
+      "word": "acknowledge",
+      "topic": "education",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "elaborate",
+      "topic": "education",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "fluctuate",
+      "topic": "environment",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "stabilize",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "escalate",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "diminish",
+      "topic": "environment",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "prevail",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "persist",
+      "topic": "environment",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "substantial",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "phenomenon",
+      "topic": "environment",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "premise",
+      "topic": "education",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "implication",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "deterrent",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "incentive",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "precedent",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "spectrum",
+      "topic": "education",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "disparity",
+      "topic": "government",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "consensus",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "controversy",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "stance",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "perspective",
+      "topic": "education",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "stem",
+      "topic": "environment",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "trigger",
+      "topic": "environment",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "outweigh",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "divergent",
+      "topic": "government",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "similarity",
+      "topic": "education",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "differentiation",
+      "topic": "education",
+      "sourceCategory": "Task2 Argumentation"
+    },
+    {
+      "word": "curriculum",
+      "topic": "education",
+      "sourceCategory": "Topic: Education"
+    },
+    {
+      "word": "literacy",
+      "topic": "education",
+      "sourceCategory": "Topic: Education"
+    },
+    {
+      "word": "competency",
+      "topic": "education",
+      "sourceCategory": "Topic: Education"
+    },
+    {
+      "word": "proficiency",
+      "topic": "education",
+      "sourceCategory": "Topic: Education"
+    },
+    {
+      "word": "attainment",
+      "topic": "education",
+      "sourceCategory": "Topic: Education"
+    },
+    {
+      "word": "enrollment",
+      "topic": "education",
+      "sourceCategory": "Topic: Education"
+    },
+    {
+      "word": "emission",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment"
+    },
+    {
+      "word": "conservation",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment"
+    },
+    {
+      "word": "biodiversity",
+      "topic": "environment",
+      "sourceCategory": "Topic: Environment"
+    },
+    {
+      "word": "transparency",
+      "topic": "government",
+      "sourceCategory": "Topic: Government"
+    },
+    {
+      "word": "intervention",
+      "topic": "government",
+      "sourceCategory": "Topic: Government"
+    },
+    {
+      "word": "subsidy",
+      "topic": "government",
+      "sourceCategory": "Topic: Government"
+    },
+    {
+      "word": "surge",
+      "topic": "environment",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "soar",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "amplify",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "mounting",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "rising",
+      "topic": "environment",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "plummet",
+      "topic": "environment",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "dwindle",
+      "topic": "environment",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "subside",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "recede",
+      "topic": "environment",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "waning",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "diminishing",
+      "topic": "environment",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "shrinking",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "favorable",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "constructive",
+      "topic": "education",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "productive",
+      "topic": "education",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "fruitful",
+      "topic": "education",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "valuable",
+      "topic": "education",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "counterproductive",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "undesirable",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "detrimental",
+      "topic": "environment",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "pivotal",
+      "topic": "education",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "decisive",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "influential",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "notable",
+      "topic": "education",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "prominent",
+      "topic": "government",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "transform",
+      "topic": "technology",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "evolve",
+      "topic": "technology",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "emerge",
+      "topic": "technology",
+      "sourceCategory": "AWL Expansion"
+    },
+    {
+      "word": "automation",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology"
+    },
+    {
+      "word": "innovation",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology"
+    },
+    {
+      "word": "breakthrough",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology"
+    },
+    {
+      "word": "connectivity",
+      "topic": "technology",
+      "sourceCategory": "Topic: Technology"
+    },
+    {
+      "word": "wellbeing",
+      "topic": "health",
+      "sourceCategory": "Topic: Health"
+    },
+    {
+      "word": "mortality",
+      "topic": "health",
+      "sourceCategory": "Topic: Health"
+    },
+    {
+      "word": "prevalence",
+      "topic": "health",
+      "sourceCategory": "Topic: Health"
+    },
+    {
+      "word": "outbreak",
+      "topic": "health",
+      "sourceCategory": "Topic: Health"
+    },
+    {
+      "word": "pandemic",
+      "topic": "health",
+      "sourceCategory": "Topic: Health"
+    },
+    {
+      "word": "epidemic",
+      "topic": "health",
+      "sourceCategory": "Topic: Health"
+    },
+    {
+      "word": "vaccination",
+      "topic": "health",
+      "sourceCategory": "Topic: Health"
+    },
+    {
+      "word": "immunity",
+      "topic": "health",
+      "sourceCategory": "Topic: Health"
+    },
+    {
+      "word": "burgeoning",
+      "topic": "technology",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "declining",
+      "topic": "health",
+      "sourceCategory": "Paraphrase Family"
+    },
+    {
+      "word": "adverse",
+      "topic": "health",
+      "sourceCategory": "Paraphrase Family"
+    }
+  ],
+  "recommendations": {
+    "remove": [
+      "corroborate",
+      "elucidate",
+      "jurisdiction",
+      "bipartisan",
+      "legislative",
+      "electoral",
+      "sovereign",
+      "deleterious",
+      "salient",
+      "obsolescence",
+      "digitization",
+      "cybersecurity",
+      "surveillance",
+      "cutting-edge",
+      "obsolete",
+      "sophisticated",
+      "morbidity",
+      "contagious",
+      "acute",
+      "preventable",
+      "sedentary",
+      "nutritious",
+      "pernicious"
+    ],
+    "review": [
+      "contend",
+      "substantiate",
+      "refute",
+      "paramount",
+      "imperative",
+      "rebut",
+      "indispensable",
+      "paradigm",
+      "ramification",
+      "precipitate",
+      "engender",
+      "consequent",
+      "ensuing",
+      "comparable",
+      "analogous",
+      "numeracy",
+      "vocational",
+      "compulsory",
+      "standardized",
+      "remedial",
+      "renewable",
+      "non-renewable",
+      "biodegradable",
+      "chronic"
+    ],
+    "keep": [
+      "underscore",
+      "advocate",
+      "sustainability",
+      "legislation",
+      "accountability",
+      "acknowledge",
+      "elaborate",
+      "fluctuate",
+      "stabilize",
+      "escalate",
+      "diminish",
+      "prevail",
+      "persist",
+      "substantial",
+      "phenomenon",
+      "premise",
+      "implication",
+      "deterrent",
+      "incentive",
+      "precedent",
+      "spectrum",
+      "disparity",
+      "consensus",
+      "controversy",
+      "stance",
+      "perspective",
+      "stem",
+      "trigger",
+      "outweigh",
+      "divergent",
+      "similarity",
+      "differentiation",
+      "curriculum",
+      "literacy",
+      "competency",
+      "proficiency",
+      "attainment",
+      "enrollment",
+      "emission",
+      "conservation",
+      "biodiversity",
+      "transparency",
+      "intervention",
+      "subsidy",
+      "surge",
+      "soar",
+      "amplify",
+      "mounting",
+      "rising",
+      "plummet",
+      "dwindle",
+      "subside",
+      "recede",
+      "waning",
+      "diminishing",
+      "shrinking",
+      "favorable",
+      "constructive",
+      "productive",
+      "fruitful",
+      "valuable",
+      "counterproductive",
+      "undesirable",
+      "detrimental",
+      "pivotal",
+      "decisive",
+      "influential",
+      "notable",
+      "prominent",
+      "transform",
+      "evolve",
+      "emerge",
+      "automation",
+      "innovation",
+      "breakthrough",
+      "connectivity",
+      "wellbeing",
+      "mortality",
+      "prevalence",
+      "outbreak",
+      "pandemic",
+      "epidemic",
+      "vaccination",
+      "immunity",
+      "burgeoning",
+      "declining",
+      "adverse"
+    ]
+  }
+}

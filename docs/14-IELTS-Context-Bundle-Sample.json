@@ -1,0 +1,62 @@
+{
+  "bundleId": "environment_deteriorate_001",
+  "word": "deteriorate",
+  "lemma": "deteriorate",
+  "partOfSpeech": "v.",
+  "sense": "to become worse over time",
+  "englishDefinition": "to become worse in quality, condition, or value",
+  "chineseMeaning": "恶化，变差",
+  "topic": "environment",
+  "taskTypes": [
+    "reading",
+    "writing",
+    "speaking"
+  ],
+  "register": "formal",
+  "collocations": [
+    "deteriorate rapidly",
+    "air quality deteriorates",
+    "conditions deteriorate"
+  ],
+  "paraphrases": [
+    "get worse",
+    "decline",
+    "worsen"
+  ],
+  "confusions": [
+    "change",
+    "shift",
+    "vary"
+  ],
+  "contexts": [
+    {
+      "kind": "reading",
+      "text": "Air quality in large urban areas has deteriorated rapidly over the last decade.",
+      "translation": "大城市地区的空气质量在过去十年中迅速恶化。",
+      "purpose": "core"
+    },
+    {
+      "kind": "writing",
+      "text": "If governments fail to regulate emissions effectively, environmental conditions may deteriorate further.",
+      "translation": "如果政府无法有效监管排放，环境状况可能会进一步恶化。",
+      "purpose": "near-transfer"
+    },
+    {
+      "kind": "speaking",
+      "text": "Public satisfaction usually falls when transport services deteriorate.",
+      "translation": "当交通服务恶化时，公众满意度通常会下降。",
+      "purpose": "far-transfer"
+    }
+  ],
+  "productionPrompt": {
+    "mode": "writing",
+    "instruction": "Write one Task 2 sentence explaining how living conditions can deteriorate when public services are underfunded."
+  },
+  "sourceQuality": {
+    "relevanceScore": 5,
+    "transferabilityScore": 5,
+    "outputUtilityScore": 4,
+    "exampleQualityScore": 4,
+    "decision": "keep"
+  }
+}

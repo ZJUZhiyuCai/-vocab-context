@@ -1,0 +1,3998 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-03-22T14:58:38.248Z",
+  "approvalStatus": "draft",
+  "draft": true,
+  "topic": "environment",
+  "totalBundles": 67,
+  "note": "Draft topic pack generated from approved IELTS Core bundles. Review before learner-facing use.",
+  "bundles": [
+    {
+      "bundleId": "environment_commission_010",
+      "word": "commission",
+      "lemma": "commission",
+      "ipa": "/kəˈmɪʃən/",
+      "partOfSpeech": "n.",
+      "sense": "an official group appointed to study a problem or advise on policy",
+      "englishDefinition": "an official committee or body created to investigate an issue, provide advice, or oversee a public task",
+      "chineseMeaning": "委员会；委员；佣金",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "independent commission",
+        "government commission",
+        "public inquiry commission"
+      ],
+      "paraphrases": [
+        "official committee",
+        "public body",
+        "investigative panel"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An independent commission was asked to examine how pollution targets should be monitored.",
+          "translation": "???????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments can create a commission to review whether environmental laws are being enforced effectively.",
+          "translation": "??????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would trust the findings more if they came from an independent commission rather than a private company.",
+          "translation": "?????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"commission\" in one IELTS-style sentence about public policy, regulation, or environmental oversight."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_factor_011",
+      "word": "factor",
+      "lemma": "factor",
+      "ipa": "/ˈfæktɚ/",
+      "partOfSpeech": "n.",
+      "sense": "an element that influences a result or situation",
+      "englishDefinition": "one of the reasons or causes that helps produce a particular outcome",
+      "chineseMeaning": "因素；因子；代理人 vt.把…因素包括进去",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "key factor",
+        "contributing factor",
+        "risk factor"
+      ],
+      "paraphrases": [
+        "element",
+        "cause",
+        "influence"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Population growth is a major factor behind rising pressure on natural resources.",
+          "translation": "?????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Cost is an important factor when governments decide how to expand public transport.",
+          "translation": "?????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For me, convenience is the main factor when choosing a piece of technology.",
+          "translation": "??????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"factor\" in one sentence explaining the cause of an environmental or social trend."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_consume_032",
+      "word": "consume",
+      "lemma": "consume",
+      "ipa": "/kənˈsum/",
+      "partOfSpeech": "v.",
+      "sense": "use or eat a resource, product, or amount of energy",
+      "englishDefinition": "to use, eat, drink, or spend a resource, product, or amount of energy",
+      "chineseMeaning": "消耗；消费；耗尽",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "consume energy",
+        "consume resources",
+        "consume food",
+        "consume less electricity"
+      ],
+      "paraphrases": [
+        "use",
+        "spend",
+        "take in"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Older buildings often consume more energy than newer, better-insulated ones.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Households that consume less electricity can reduce both costs and emissions.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Many people now consume news through social media rather than newspapers.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"consume\" in one IELTS-style sentence about energy, media, or resources."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_impact_059",
+      "word": "impact",
+      "lemma": "impact",
+      "ipa": "/ˈɪmˌpækt/",
+      "partOfSpeech": "n.",
+      "sense": "a strong effect that something has on a situation",
+      "englishDefinition": "A strong effect or influence that one thing has on another.",
+      "chineseMeaning": "碰撞；冲击；撞击",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "environmental impact",
+        "negative impact",
+        "have an impact on",
+        "long-term impact"
+      ],
+      "paraphrases": [
+        "effect",
+        "influence"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Researchers are measuring the impact of plastic waste on marine ecosystems.",
+          "translation": "????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Public transport can reduce the environmental impact of daily commuting.",
+          "translation": "???????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Social media has had a major impact on how young people get information.",
+          "translation": "???????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"impact\" in one IELTS-style sentence about the environment, education, or technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_construct_077",
+      "word": "construct",
+      "lemma": "construct",
+      "ipa": "/kənˈstrʌkt/",
+      "partOfSpeech": "v.",
+      "sense": "to build or create something",
+      "englishDefinition": "To build, create, or form something carefully, especially a structure or system.",
+      "chineseMeaning": "修建；建造；构成",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "construct a building",
+        "construct infrastructure",
+        "construct an argument",
+        "newly constructed"
+      ],
+      "paraphrases": [
+        "build",
+        "create"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The city plans to construct flood barriers to protect low-lying communities.",
+          "translation": "??????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Authorities should not construct more roads if they want to reduce car dependence.",
+          "translation": "?????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My hometown recently constructed a public park on unused industrial land.",
+          "translation": "????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"construct\" in one IELTS-style sentence about buildings, infrastructure, or public planning."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_cycle_078",
+      "word": "cycle",
+      "lemma": "cycle",
+      "ipa": "/ˈsaɪkəl/",
+      "partOfSpeech": "n.",
+      "sense": "a series of events that repeats in the same order",
+      "englishDefinition": "A series of events that repeats in the same order",
+      "chineseMeaning": "循环，周期；自行车；骑车",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "water cycle",
+        "economic cycle",
+        "carbon cycle"
+      ],
+      "paraphrases": [
+        "pattern",
+        "sequence"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies water cycle as a major issue in environmental policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address economic cycle if governments want to improve pollution and sustainability.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, cycle is important because it shapes pollution and sustainability.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"cycle\" in one IELTS-style sentence about environmental policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_estimate_084",
+      "word": "estimate",
+      "lemma": "estimate",
+      "ipa": "/ˈɛstəˌmet/",
+      "partOfSpeech": "v.",
+      "sense": "roughly calculate or judge the size, cost, or amount of something",
+      "englishDefinition": "to make an approximate calculation or judgment about a number, amount, cost, or value",
+      "chineseMeaning": "估计；预测；报价",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "estimate the cost",
+        "estimated at",
+        "roughly estimate",
+        "official estimates"
+      ],
+      "paraphrases": [
+        "calculate roughly",
+        "assess",
+        "project"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Scientists estimate that sea levels will continue to rise over the coming decades.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The chart can be used to estimate the proportion of households using renewable energy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "It is difficult to estimate how much time people spend on social media each day.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"estimate\" in one IELTS-style sentence about data, cost, or quantity."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_maximum_090",
+      "word": "maximum",
+      "lemma": "maximum",
+      "ipa": "/ˈmæksɪməm/",
+      "partOfSpeech": "adj.",
+      "sense": "the greatest amount, number, or level possible",
+      "englishDefinition": "The highest amount, level, or limit that can be reached or allowed",
+      "chineseMeaning": "最大的，最高的；最大值，上限",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "maximum capacity",
+        "maximum benefit",
+        "reach maximum"
+      ],
+      "paraphrases": [
+        "highest",
+        "greatest",
+        "upper limit"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The chart shows that electricity demand reaches its maximum level during the hottest months of the year.",
+          "translation": "图表显示，用电需求在一年中最炎热的几个月达到最高水平。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Cities should set a maximum limit on vehicle emissions if they want to improve air quality quickly.",
+          "translation": "如果城市想迅速改善空气质量，就应对车辆排放设定最高限值。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I usually study most efficiently when I work for about an hour, because that seems to be my maximum level of concentration.",
+          "translation": "我通常在连续学习大约一小时内效率最高，因为那似乎是我专注力的上限。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"maximum\" in an IELTS-style sentence about limits, capacity, or efficiency."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_occur_091",
+      "word": "occur",
+      "lemma": "occur",
+      "ipa": "/əˈkɚ/",
+      "partOfSpeech": "v.",
+      "sense": "happen or exist in a particular place",
+      "englishDefinition": "to happen or exist, especially in a particular place or situation",
+      "chineseMeaning": "发生；出现；闪现",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "occur naturally",
+        "occur frequently",
+        "occur in cities",
+        "rarely occur"
+      ],
+      "paraphrases": [
+        "happen",
+        "arise"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Water shortages tend to occur more often in regions with rapid population growth.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "These problems often occur when urban planning is poorly managed.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Traffic delays usually occur during the busiest hours of the day.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"occur\" in one sentence about a common social or environmental problem."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_constant_105",
+      "word": "constant",
+      "lemma": "constant",
+      "ipa": "/ˈkɑnstənt/",
+      "partOfSpeech": "adj.",
+      "sense": "continuing all the time without stopping or changing much",
+      "englishDefinition": "continuing all the time, or happening repeatedly over a long period",
+      "chineseMeaning": "不断的；持续的；永恒的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "constant pressure",
+        "constant demand",
+        "constant change",
+        "remain constant"
+      ],
+      "paraphrases": [
+        "continuous",
+        "steady",
+        "ongoing"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Farmers face constant pressure to produce more food with fewer natural resources.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Many city residents experience constant noise from traffic and construction.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Students are under constant pressure if they have to balance study with part-time work.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"constant\" in one IELTS-style sentence about pressure, demand, or change."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_resource_115",
+      "word": "resource",
+      "lemma": "resource",
+      "ipa": "/ˈrisɔrs/",
+      "partOfSpeech": "n.",
+      "sense": "something useful that can be used to achieve a purpose",
+      "englishDefinition": "something such as money, time, materials, or information that can be used for a purpose",
+      "chineseMeaning": "资源；物力；财力",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "natural resources",
+        "limited resources",
+        "educational resources",
+        "allocate resources"
+      ],
+      "paraphrases": [
+        "asset",
+        "supply"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Fresh water is a limited resource in many parts of the world.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Schools in poorer areas often lack basic educational resources.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Public money should be treated as a valuable resource.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Write one sentence about managing a scarce resource."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_alternative_117",
+      "word": "alternative",
+      "lemma": "alternative",
+      "ipa": "/ɔlˈtɜrnətɪv/",
+      "partOfSpeech": "adj.",
+      "sense": "available instead of another option",
+      "englishDefinition": "Available or used instead of another option, method, or choice.",
+      "chineseMeaning": "替代的；备选的；其他的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "alternative energy",
+        "alternative approach",
+        "alternative solution",
+        "alternative route"
+      ],
+      "paraphrases": [
+        "substitute",
+        "other"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many cities are investing in alternative energy to cut carbon emissions.",
+          "translation": "???????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Online learning can be an alternative approach when schools face staff shortages.",
+          "translation": "?????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I usually choose alternative transport such as cycling when the weather is good.",
+          "translation": "?????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"alternative\" in one IELTS-style sentence about energy, transport, or education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_considerable_118",
+      "word": "considerable",
+      "lemma": "considerable",
+      "ipa": "/  kənˈsɪdərəbəl/",
+      "partOfSpeech": "adj.",
+      "sense": "large in size, amount, or degree",
+      "englishDefinition": "Large or important enough to deserve attention.",
+      "chineseMeaning": "相当大或多的；该注意的；应考虑的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "considerable amount",
+        "considerable increase",
+        "considerable pressure",
+        "considerable resources"
+      ],
+      "paraphrases": [
+        "substantial",
+        "significant"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Developing clean energy requires a considerable amount of public investment.",
+          "translation": "?????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "There has been a considerable increase in waste generated by online shopping.",
+          "translation": "??????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Preparing for IELTS takes a considerable amount of time if you work full-time.",
+          "translation": "????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"considerable\" in one IELTS-style sentence describing a large amount, increase, or pressure."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_environment_119",
+      "word": "environment",
+      "lemma": "environment",
+      "ipa": "/ɛnˈvaɪrənmənt, -ˈvaɪən-/",
+      "partOfSpeech": "n.",
+      "sense": "the natural or social conditions around people",
+      "englishDefinition": "the natural world or the conditions in which people live and work",
+      "chineseMeaning": "环境；外界；周围",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "protect the environment",
+        "natural environment",
+        "urban environment",
+        "environmental damage"
+      ],
+      "paraphrases": [
+        "surroundings",
+        "natural world"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many young people are increasingly concerned about the environment.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should invest more in measures that protect the urban environment.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I try to make choices that are less harmful to the environment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"environment\" in one IELTS-style sentence about public responsibility."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_percent_125",
+      "word": "percent",
+      "lemma": "percent",
+      "ipa": "/pɚˈsɛnt/",
+      "partOfSpeech": "n.",
+      "sense": "one part in every hundred",
+      "englishDefinition": "a number or rate expressed as part of every hundred",
+      "chineseMeaning": "百分比；百分数；百分之一 adj.百分之…的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "a small percent",
+        "the percentage rose by ten percent",
+        "percent of the population",
+        "nearly fifty percent"
+      ],
+      "paraphrases": [
+        "percentage",
+        "proportion",
+        "share"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A higher percent of households now recycle regularly than a decade ago.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The chart shows the percent of energy produced from renewable sources.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Only a small percent of my friends travel by bicycle every day.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"percent\" in one IELTS-style sentence about a chart, proportion, or statistical trend."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_response_127",
+      "word": "response",
+      "lemma": "response",
+      "ipa": "/rɪˈspɑns/",
+      "partOfSpeech": "n.",
+      "sense": "a reaction to something that has happened or been said",
+      "englishDefinition": "what someone says or does as a reaction to an event, problem, or suggestion",
+      "chineseMeaning": "反应；回答；答复",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "public response",
+        "immediate response",
+        "response to the crisis",
+        "positive response"
+      ],
+      "paraphrases": [
+        "reaction",
+        "reply",
+        "answer"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The government response to the flood was criticised for being too slow.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A stronger response is needed if cities want to reduce air pollution effectively.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My first response to new technology is usually curiosity rather than fear.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"response\" in one IELTS-style sentence about a reaction to a problem, policy, or event."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_economy_132",
+      "word": "economy",
+      "lemma": "economy",
+      "ipa": "/ɪˈkɑnəmi/",
+      "partOfSpeech": "n.",
+      "sense": "the system by which a country produces, uses, and manages money and resources",
+      "englishDefinition": "the system of trade, industry, and money in a country or region",
+      "chineseMeaning": "节约；经济；理财",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "the national economy",
+        "economic growth",
+        "boost the economy",
+        "the global economy"
+      ],
+      "paraphrases": [
+        "economic system",
+        "market",
+        "financial system"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Tourism plays a major role in the economy of many coastal regions.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Some governments prioritise the economy even when environmental damage is increasing.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "A strong economy usually creates more job opportunities for young people.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"economy\" in one IELTS-style sentence about growth, jobs, policy, or environmental trade-offs."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_region_138",
+      "word": "region",
+      "lemma": "region",
+      "ipa": "/ˈridʒən/",
+      "partOfSpeech": "n.",
+      "sense": "a particular area of a country or the world",
+      "englishDefinition": "a large area of a country or the world that has similar features or conditions",
+      "chineseMeaning": "地区；地域；地带",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "rural region",
+        "coastal region",
+        "in the region",
+        "regional development"
+      ],
+      "paraphrases": [
+        "area",
+        "zone",
+        "part of the world"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Rainfall patterns vary considerably from one region to another.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should invest more in public services in remote regions.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "The food in my region is strongly influenced by the local climate.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"region\" in one IELTS-style sentence about geography, development, or local conditions."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_geographic_153",
+      "word": "geographic",
+      "lemma": "geographic",
+      "ipa": "/ˌdʒiə'ɡræfɪk/",
+      "partOfSpeech": "adj.",
+      "sense": "related to location, physical features, or the spatial distribution of places and populations",
+      "englishDefinition": "Related to where places are, how land is arranged, or how people and services are distributed across regions.",
+      "chineseMeaning": "地理上的；与位置、地形或人口和资源在不同地区的分布有关",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "geographic location",
+        "geographic inequality",
+        "geographic distribution"
+      ],
+      "paraphrases": [
+        "spatial",
+        "regional",
+        "location-based"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Geographic isolation can make it harder for rural communities to reach hospitals and universities.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should reduce geographic inequality by improving transport links to remote areas.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my country, geographic location still affects access to jobs, education, and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"geographic\" in one IELTS-style sentence about location, regional inequality, or access to services."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_recycle_160",
+      "word": "recycle",
+      "lemma": "recycle",
+      "ipa": "/riˈsaɪkəl/",
+      "partOfSpeech": "v.",
+      "sense": "to process used materials so that they can be used again",
+      "englishDefinition": "to collect and treat waste so it can be reused instead of being thrown away",
+      "chineseMeaning": "回收利用；使再循环 vi.重复利用",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "recycle waste",
+        "recycle plastic",
+        "recycle household materials"
+      ],
+      "paraphrases": [
+        "reuse",
+        "process again",
+        "recover"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many cities now recycle household waste to reduce the amount sent to landfill.",
+          "translation": "?????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Authorities should recycle more plastic if they want to cut environmental damage.",
+          "translation": "?????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My neighbourhood makes it easy to recycle paper, glass, and food packaging.",
+          "translation": "?????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"recycle\" in an IELTS-style sentence about reducing waste in cities."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_environmental_162",
+      "word": "environmental",
+      "lemma": "environmental",
+      "ipa": "/ɛnˌvaɪrənˈmɛntl, -ˌvaɪən/",
+      "partOfSpeech": "adj.",
+      "sense": "related to the natural world and the impact of human activity on it",
+      "englishDefinition": "connected with the environment, especially protection of air, water, land, and ecosystems",
+      "chineseMeaning": "个人环境的；由个人环境产生的；周围的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "environmental damage",
+        "environmental policy",
+        "environmental awareness"
+      ],
+      "paraphrases": [
+        "ecological",
+        "green",
+        "related to the environment"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Stricter environmental laws can reduce industrial pollution over the long term.",
+          "translation": "???????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Environmental education should be introduced early so children develop sustainable habits.",
+          "translation": "??????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I try to make environmental choices, such as using public transport more often.",
+          "translation": "??????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"environmental\" in a sentence about policy or personal responsibility."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_settle_169",
+      "word": "settle",
+      "lemma": "settle",
+      "ipa": "/ˈsɛtl/",
+      "partOfSpeech": "v.",
+      "sense": "to resolve something difficult or to become calm, stable, or fixed after movement or change",
+      "englishDefinition": "To resolve a problem, argument, or payment, or to become calm, stable, or fixed after moving or changing.",
+      "chineseMeaning": "解决，处理妥当；也指安定下来、平静下来或沉降固定",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "settle a dispute",
+        "settle into routine",
+        "dust settles",
+        "settle a payment"
+      ],
+      "paraphrases": [
+        "resolve",
+        "stabilise",
+        "calm down"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Air pollution becomes more dangerous when fine particles settle in residential areas near busy roads.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Local authorities should settle disputes over waste facilities through public consultation rather than delay decisions.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "It usually takes first-year students a few months to settle into a new routine away from home.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"settle\" in one IELTS-style sentence about resolving a problem or becoming stable."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_feature_173",
+      "word": "feature",
+      "lemma": "feature",
+      "ipa": "/ˈfitʃɚ/",
+      "partOfSpeech": "v.",
+      "sense": "to include something as an important part, or to present something prominently",
+      "englishDefinition": "To include something as a noticeable or important part, or to present it prominently in media, reports, or plans.",
+      "chineseMeaning": "特征；特点；容貌",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "feature renewable energy",
+        "feature in a report",
+        "feature local history",
+        "feature practical examples"
+      ],
+      "paraphrases": [
+        "include",
+        "highlight",
+        "present"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many sustainability reports feature data on waste reduction and energy use across the year.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "School curricula should feature more practical lessons on digital literacy and financial management.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "The museum in my city features local history, so it is useful for both residents and tourists.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"feature\" in one IELTS-style sentence about including or highlighting something important."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_freight_174",
+      "word": "freight",
+      "lemma": "freight",
+      "ipa": "/fret/",
+      "partOfSpeech": "v.",
+      "sense": "to transport goods in large quantities, especially by road, rail, sea, or air",
+      "englishDefinition": "To transport goods in bulk, especially between cities, regions, or countries.",
+      "chineseMeaning": "货运；货物；运费",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "freight goods by rail",
+        "freight supplies overseas",
+        "freight traffic",
+        "freight costs"
+      ],
+      "paraphrases": [
+        "transport",
+        "ship",
+        "carry"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Shifting more freight from roads to rail could reduce congestion and carbon emissions.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should invest in cleaner ports and rail links to freight goods more efficiently.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my country, a lot of food is freighted over long distances before it reaches supermarkets.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"freight\" in one IELTS-style sentence about transporting goods or improving logistics."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_rail_176",
+      "word": "rail",
+      "lemma": "rail",
+      "ipa": "/rel/",
+      "partOfSpeech": "v.",
+      "sense": "to travel or transport people or goods by railway, or to provide a place with rail connections",
+      "englishDefinition": "To move people or goods by train, or to connect an area through railway transport.",
+      "chineseMeaning": "围栏；轨道；钢轨",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "rail commuters into the city",
+        "rail freight inland",
+        "rail network expansion",
+        "rail passengers"
+      ],
+      "paraphrases": [
+        "transport by train",
+        "connect by rail",
+        "move by railway"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Several European countries rail a high share of commuters into major cities each day.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Cities should rail more passengers rather than relying so heavily on private cars.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I prefer to travel by rail because it is usually more reliable than driving long distances.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"rail\" in one IELTS-style sentence about train travel, passengers, or transport policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_disturbance_184",
+      "word": "disturbance",
+      "lemma": "disturbance",
+      "ipa": "/dɪˈstɜrbəns/",
+      "partOfSpeech": "n.",
+      "sense": "something that interrupts normal life, peace, or order",
+      "englishDefinition": "something that interrupts normal life, causes trouble, or reduces peace and order",
+      "chineseMeaning": "干扰，扰乱；骚乱，动荡",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "cause disturbance",
+        "noise disturbance",
+        "public disturbance",
+        "minimise disturbance"
+      ],
+      "paraphrases": [
+        "disruption",
+        "interruption",
+        "trouble"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Residents complained that night flights were causing serious disturbance in nearby communities.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Construction projects should be managed carefully to minimise noise and disturbance.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would not like to live near a motorway because of the constant disturbance.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"disturbance\" in one IELTS-style sentence about noise, public order, or city life."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_irreversible_186",
+      "word": "irreversible",
+      "lemma": "irreversible",
+      "ipa": "/ˌɪrɪˈvɜrsəbl/",
+      "partOfSpeech": "adj.",
+      "sense": "impossible to change back to an earlier state",
+      "englishDefinition": "impossible to change back, repair fully, or return to an earlier condition",
+      "chineseMeaning": "不可逆的；不能翻转的；不能倒置的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "irreversible damage",
+        "irreversible change",
+        "irreversible decline",
+        "have irreversible consequences"
+      ],
+      "paraphrases": [
+        "permanent",
+        "cannot be undone",
+        "lasting"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Scientists warn that the loss of some habitats could cause irreversible damage to biodiversity.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should act early to avoid irreversible harm to the natural environment.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I worry that some changes in climate patterns may already be irreversible.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"irreversible\" in one IELTS-style sentence about damage, change, or long-term consequences."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_progressive_189",
+      "word": "progressive",
+      "lemma": "progressive",
+      "ipa": "/prəˈɡrɛsɪv/",
+      "partOfSpeech": "adj.",
+      "sense": "developing gradually over time, or supporting gradual social change",
+      "englishDefinition": "developing gradually over time, or supporting gradual social change in a practical way",
+      "chineseMeaning": "不断前进的；进步的；进行的 n.改革论者",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "progressive change",
+        "progressive reduction",
+        "progressive policy",
+        "progressive approach"
+      ],
+      "paraphrases": [
+        "gradual",
+        "forward-looking"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Scientists observed a progressive decline in water quality near heavily industrialised areas.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A progressive reduction in plastic use would be more realistic than an immediate ban.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would describe the policy as progressive because it encourages change without disrupting daily life too suddenly.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"progressive\" in one IELTS-style sentence about gradual change, reform, or environmental policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_controversial_198",
+      "word": "controversial",
+      "lemma": "controversial",
+      "ipa": "/ˌkɑntrəˈvɜrʃl/",
+      "partOfSpeech": "adj.",
+      "sense": "causing a lot of disagreement or public debate",
+      "englishDefinition": "causing disagreement or strong public discussion because people have different opinions about it",
+      "chineseMeaning": "有争议的；引起争议的；被争论的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "controversial policy",
+        "controversial issue",
+        "highly controversial",
+        "controversial proposal"
+      ],
+      "paraphrases": [
+        "disputed",
+        "debated",
+        "contentious"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The article examines a controversial proposal to expand mining in a protected area.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Raising fuel taxes is controversial, but it may reduce unnecessary car use.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Some people think banning private cars from city centres is too controversial to be practical.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"controversial\" in one IELTS-style sentence about a policy, law, or public debate."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_precautionary_206",
+      "word": "precautionary",
+      "lemma": "precautionary",
+      "ipa": "/prɪˈkɔʃəˌnɛri/",
+      "partOfSpeech": "adj.",
+      "sense": "intended to prevent harm before it happens",
+      "englishDefinition": "done in advance to prevent possible harm or danger",
+      "chineseMeaning": "预先警戒的，小心的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "precautionary measure",
+        "precautionary action",
+        "precautionary principle"
+      ],
+      "paraphrases": [
+        "preventive",
+        "protective"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The precautionary principle guides environmental policy in many countries.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Precautionary measures should be taken before introducing new technologies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Precautionary health advice becomes important during disease outbreaks.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"precautionary\" in one IELTS-style sentence about environmental policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_progressively_208",
+      "word": "progressively",
+      "lemma": "progressively",
+      "ipa": "/prəˈɡrɛsɪvlɪ/",
+      "partOfSpeech": "adv.",
+      "sense": "in a gradual way that continues over time",
+      "englishDefinition": "step by step over time, usually showing a gradual increase, decrease, or change",
+      "chineseMeaning": "前进地；日益增加地；逐步",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "progressively worse",
+        "progressively more important",
+        "change progressively",
+        "progressively increase"
+      ],
+      "paraphrases": [
+        "gradually",
+        "step by step",
+        "increasingly"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Some coastal communities are becoming progressively more vulnerable to flooding.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Renewable energy may become progressively cheaper as technology improves.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "People in my city have become progressively more aware of air quality problems.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"progressively\" in one IELTS-style sentence about gradual change over time."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_waste_221",
+      "word": "waste",
+      "lemma": "waste",
+      "ipa": "/west/",
+      "partOfSpeech": "n.",
+      "sense": "unwanted material or the careless use of something valuable",
+      "englishDefinition": "Unwanted material or the careless use of something valuable",
+      "chineseMeaning": "浪费，损耗；废弃物，垃圾",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "household waste",
+        "waste management",
+        "waste resources"
+      ],
+      "paraphrases": [
+        "rubbish",
+        "misuse"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies household waste as a major issue in environmental policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address waste management if governments want to improve pollution and sustainability.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, waste is important because it shapes pollution and sustainability.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"waste\" in one IELTS-style sentence about environmental policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_decline_225",
+      "word": "decline",
+      "lemma": "decline",
+      "ipa": "/dɪˈklaɪn/",
+      "partOfSpeech": "v.",
+      "sense": "to decrease gradually or become worse",
+      "englishDefinition": "To decrease gradually or become worse",
+      "chineseMeaning": "下降，衰退；拒绝，谢绝",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "decline in quality",
+        "decline in biodiversity",
+        "economic decline"
+      ],
+      "paraphrases": [
+        "decrease",
+        "fall"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent studies show that governments and communities often decline in quality when dealing with pollution and sustainability.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should decline in biodiversity if they want to improve outcomes in environmental policy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think institutions need to economic decline in order to respond effectively to pollution and sustainability.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"decline\" in one IELTS-style sentence about environmental policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_flood_230",
+      "word": "flood",
+      "lemma": "flood",
+      "ipa": "/flʌd/",
+      "partOfSpeech": "n.",
+      "sense": "a large amount of water covering land that is usually dry",
+      "englishDefinition": "A large amount of water covering land that is usually dry",
+      "chineseMeaning": "洪水，水灾；大量涌入；淹没",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "flood risk",
+        "flood damage",
+        "flood control"
+      ],
+      "paraphrases": [
+        "overflow",
+        "deluge"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies flood risk as a major issue in environmental policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address flood damage if governments want to improve pollution and sustainability.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, flood is important because it shapes pollution and sustainability.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"flood\" in one IELTS-style sentence about environmental policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_guarded_233",
+      "word": "guarded",
+      "lemma": "guarded",
+      "ipa": "/ˈgɑrdɪd/",
+      "partOfSpeech": "adj.",
+      "sense": "careful and not fully open or enthusiastic",
+      "englishDefinition": "careful, cautious, or deliberately limited in the support, optimism, or information that is shown",
+      "chineseMeaning": "谨慎的；有保留的 v.保护；控制 guard的过去式和过去分词",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "guarded response",
+        "guarded welcome",
+        "guarded optimism",
+        "remain guarded"
+      ],
+      "paraphrases": [
+        "cautious",
+        "reserved",
+        "careful"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Environmental groups gave a guarded response to the government's latest climate proposal.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Although the policy may reduce emissions, experts remain guarded about its long-term impact.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would be guarded about replacing all traditional classes with online learning.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"guarded\" in one IELTS-style sentence about a cautious reaction to a proposal or trend."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_hazard_234",
+      "word": "hazard",
+      "lemma": "hazard",
+      "ipa": "/ˈhæzərd/",
+      "partOfSpeech": "n.",
+      "sense": "something that can cause harm or danger",
+      "englishDefinition": "Something that can cause harm or danger",
+      "chineseMeaning": "危险，危害；冒险，风险",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "health hazard",
+        "environmental hazard",
+        "hazard warning"
+      ],
+      "paraphrases": [
+        "danger",
+        "threat"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies health hazard as a major issue in environmental policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address environmental hazard if governments want to improve pollution and sustainability.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, hazard is important because it shapes pollution and sustainability.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"hazard\" in one IELTS-style sentence about environmental policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_oppose_249",
+      "word": "oppose",
+      "lemma": "oppose",
+      "ipa": "/əˈpoʊz/",
+      "partOfSpeech": "v.",
+      "sense": "disagree with or try to prevent something",
+      "englishDefinition": "to disagree with, resist, or try to stop a plan, idea, or action",
+      "chineseMeaning": "& vi.反对；抗争；使相对",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "strongly oppose",
+        "oppose a plan",
+        "oppose the policy",
+        "publicly oppose"
+      ],
+      "paraphrases": [
+        "object to",
+        "resist",
+        "be against"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many local residents oppose the expansion of factories near protected land.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Some people oppose car-free policies because they worry about convenience.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would oppose any measure that made public transport less affordable.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"oppose\" in one IELTS-style sentence that presents a clear argument."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_underscore_285",
+      "word": "underscore",
+      "lemma": "underscore",
+      "ipa": "/ˈbreɪkθruː/",
+      "partOfSpeech": "v.",
+      "sense": "to emphasize how important something is",
+      "englishDefinition": "to emphasize, highlight, or make the importance of something especially clear",
+      "chineseMeaning": "强调；突显",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "underscore the need",
+        "underscore the importance",
+        "underscore concerns",
+        "clearly underscore"
+      ],
+      "paraphrases": [
+        "highlight",
+        "emphasize",
+        "stress"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent climate reports underscore the need for faster investment in renewable energy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "These statistics underscore how urgently governments must address air pollution in major cities.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In Part 3, I could say that long commuting times underscore the importance of reliable public transport.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"underscore\" in one IELTS-style sentence that emphasizes the importance of an issue."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_sustainability_287",
+      "word": "sustainability",
+      "lemma": "sustainability",
+      "ipa": "/səˌsteɪnəˈbɪləti/",
+      "partOfSpeech": "n.",
+      "sense": "the ability to continue over time without causing long-term harm",
+      "englishDefinition": "The ability to maintain or continue a process or activity over time without depleting resources or causing damage",
+      "chineseMeaning": "可持续性；长期维持而不造成损害的能力",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "environmental sustainability",
+        "long-term sustainability",
+        "promote sustainability"
+      ],
+      "paraphrases": [
+        "long-term viability",
+        "durability",
+        "continuity"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Urban planners increasingly evaluate the sustainability of housing, transport, and energy systems together.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "An effective essay can link economic growth with environmental sustainability rather than treating them as opposites.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When discussing my city, I often mention sustainability because recycling and public transport have become bigger priorities.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"sustainability\" in one IELTS-style sentence about cities, energy, or environmental policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_fluctuate_292",
+      "word": "fluctuate",
+      "lemma": "fluctuate",
+      "ipa": "/ˈflʌktʃueɪt/",
+      "partOfSpeech": "v.",
+      "sense": "to rise and fall irregularly rather than stay stable",
+      "englishDefinition": "to change frequently by moving up and down, often when describing prices, temperatures, or statistics",
+      "chineseMeaning": "波动；起伏",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "prices fluctuate",
+        "temperatures fluctuate",
+        "demand fluctuates",
+        "levels fluctuate seasonally"
+      ],
+      "paraphrases": [
+        "vary",
+        "change irregularly",
+        "rise and fall"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Energy prices often fluctuate because supply, demand, and weather conditions change over time.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In Task 1, candidates may report that carbon emissions fluctuated before falling in the final decade.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I might say that public concern about environmental issues fluctuates after major natural disasters.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"fluctuate\" in one IELTS-style sentence about numbers, prices, or environmental data."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_diminish_295",
+      "word": "diminish",
+      "lemma": "diminish",
+      "ipa": "/dɪˈmɪnɪʃ/",
+      "partOfSpeech": "v.",
+      "sense": "to make something smaller, weaker, or less important",
+      "englishDefinition": "to reduce the size, strength, or importance of something gradually over time",
+      "chineseMeaning": "减少；减弱",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "diminish the impact",
+        "diminish resources",
+        "diminish public trust",
+        "gradually diminish"
+      ],
+      "paraphrases": [
+        "reduce",
+        "lessen",
+        "weaken"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Poor waste management can diminish water quality in rivers near large cities.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should invest in public transport to diminish traffic congestion and air pollution.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would argue that excessive screen time can diminish children's interest in outdoor activities.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"diminish\" in one IELTS-style sentence about reducing a problem or negative effect."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_persist_297",
+      "word": "persist",
+      "lemma": "persist",
+      "ipa": "/pəˈsɪst/",
+      "partOfSpeech": "v.",
+      "sense": "to continue to exist or happen, especially when unwanted",
+      "englishDefinition": "To continue to exist or happen over time, especially when this is difficult or unwanted",
+      "chineseMeaning": "持续存在，坚持；尤指问题难以解决时仍然存在",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "persist in",
+        "problems persist",
+        "persist over time"
+      ],
+      "paraphrases": [
+        "continue",
+        "endure",
+        "remain",
+        "carry on"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Even after stricter regulations were introduced, plastic pollution continued to persist along the coastline.",
+          "translation": "即使出台了更严格的规定，塑料污染仍持续存在于海岸线一带。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "If income inequality persists, more people may be unable to afford environmentally friendly products.",
+          "translation": "如果收入不平等持续存在，更多人可能无力承担环保产品的成本。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my city, traffic congestion still persists despite repeated promises to improve public transport.",
+          "translation": "在我所在的城市，尽管多次承诺改善公共交通，交通拥堵仍然持续存在。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"persist\" in an IELTS-style sentence about a problem that continues over time."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_negligible_298",
+      "word": "negligible",
+      "lemma": "negligible",
+      "ipa": "/ˈneɡlɪdʒəbl/",
+      "partOfSpeech": "adj.",
+      "sense": "so small or unimportant that it can be ignored",
+      "englishDefinition": "too small in size, amount, or effect to be considered important",
+      "chineseMeaning": "微不足道的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "a negligible impact",
+        "negligible amounts",
+        "remain negligible",
+        "a negligible difference"
+      ],
+      "paraphrases": [
+        "insignificant",
+        "minimal",
+        "trivial"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The study found that the policy had a negligible effect on overall carbon emissions.",
+          "translation": "???????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "If public transport is widely available, the environmental benefit of the measure may be negligible.",
+          "translation": "?????????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For many households, the extra cost is negligible compared with the long-term savings.",
+          "translation": "?????????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"negligible\" in one IELTS-style sentence about data, cost, or environmental impact."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_phenomenon_302",
+      "word": "phenomenon",
+      "lemma": "phenomenon",
+      "ipa": "/fəˈnɒmɪnən/",
+      "partOfSpeech": "n.",
+      "sense": "an observable fact, event, or situation that can be studied",
+      "englishDefinition": "An observable event, pattern, or situation that can be studied or explained, especially in science or society",
+      "chineseMeaning": "现象；可观察、可研究的事件或情况",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "a common phenomenon",
+        "natural phenomenon",
+        "social phenomenon"
+      ],
+      "paraphrases": [
+        "occurrence",
+        "event",
+        "trend",
+        "pattern"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Urban heat islands are a phenomenon linked to dense construction and limited green space.",
+          "translation": "???????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Climate migration is a growing phenomenon that governments can no longer ignore.",
+          "translation": "????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I see online learning as a modern phenomenon that has changed how students access education.",
+          "translation": "?????????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"phenomenon\" in one IELTS-style sentence about a social or environmental trend."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_stem_316",
+      "word": "stem",
+      "lemma": "stem",
+      "ipa": "/stem/",
+      "partOfSpeech": "v.",
+      "sense": "to originate or develop from a particular source",
+      "englishDefinition": "To have a particular origin or cause; to come from something",
+      "chineseMeaning": "源于，来自；起源于某事物",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "stem from",
+        "largely stem from",
+        "problems stem from"
+      ],
+      "paraphrases": [
+        "originate",
+        "arise",
+        "derive",
+        "come from"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many water shortages stem from poor planning as well as changing weather patterns.",
+          "translation": "?????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Environmental damage often stems from short-term decisions that ignore long-term costs.",
+          "translation": "????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think a lot of traffic pollution stems from the lack of reliable public transport.",
+          "translation": "?????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"stem from\" in one IELTS-style sentence about the cause of an environmental problem."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_trigger_317",
+      "word": "trigger",
+      "lemma": "trigger",
+      "ipa": "/ˈtrɪɡə/",
+      "partOfSpeech": "v.",
+      "sense": "to cause something to happen, especially suddenly",
+      "englishDefinition": "To cause something to happen, especially a sudden reaction, change, or problem",
+      "chineseMeaning": "引发，触发；导致某事发生",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "trigger a reaction",
+        "trigger a crisis",
+        "may trigger"
+      ],
+      "paraphrases": [
+        "cause",
+        "spark",
+        "initiate",
+        "set off"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A long period of drought can trigger severe pressure on local food supplies.",
+          "translation": "????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Poor waste management may trigger wider environmental damage in coastal areas.",
+          "translation": "??????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my city, heavy rain can trigger serious traffic disruption and flooding.",
+          "translation": "??????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"trigger\" in one IELTS-style sentence about a cause that leads to an environmental effect."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_attributable_318",
+      "word": "attributable",
+      "lemma": "attributable",
+      "ipa": "/??tr?bj?t?b?l/",
+      "partOfSpeech": "adj.",
+      "sense": "able to be explained as caused by something",
+      "englishDefinition": "Able to be explained as the result of a particular cause.",
+      "chineseMeaning": "可归因的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "directly attributable to",
+        "largely attributable to",
+        "partly attributable to",
+        "changes attributable to"
+      ],
+      "paraphrases": [
+        "caused by",
+        "due to",
+        "linked to"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Much of the decline in air quality is attributable to rising traffic in major cities.",
+          "translation": "?????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The increase in household waste is partly attributable to excessive packaging.",
+          "translation": "???????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would say the pressure on water supplies is largely attributable to population growth.",
+          "translation": "???????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"attributable to\" in one IELTS-style sentence about an environmental problem and its cause."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_emission_337",
+      "word": "emission",
+      "lemma": "emission",
+      "ipa": "/ɪˈmɪʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the production and release of gas, heat, light, or other substances into the environment",
+      "englishDefinition": "The act of producing and releasing gases or other substances, especially when discussing pollution or climate policy.",
+      "chineseMeaning": "排放；向空气、水体或环境中释放气体、热量或其他物质",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "carbon emissions",
+        "cut emissions",
+        "vehicle emissions"
+      ],
+      "paraphrases": [
+        "release",
+        "discharge",
+        "polluting output"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Transport remains a major source of carbon emissions in many cities.",
+          "translation": "在许多城市，交通仍然是碳排放的主要来源。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments can reduce emissions by investing in cleaner public transport.",
+          "translation": "政府可以通过投资更清洁的公共交通来减少排放。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "People should think about emissions when choosing how to travel every day.",
+          "translation": "人们在选择日常出行方式时，应考虑排放问题。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"emissions\" in one sentence about transport, energy, or climate policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_contamination_338",
+      "word": "contamination",
+      "lemma": "contamination",
+      "ipa": "/kənˌtæməˈneɪʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the process of making something dirty, polluted, or unsafe by adding harmful substances",
+      "englishDefinition": "The process or state of something becoming polluted or unsafe because harmful substances have entered it.",
+      "chineseMeaning": "污染；因有害物质进入而使空气、水或土壤变得不安全",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "water contamination",
+        "soil contamination",
+        "prevent contamination"
+      ],
+      "paraphrases": [
+        "pollution",
+        "tainting",
+        "unsafe pollution"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Water contamination can spread quickly when industrial waste is not treated properly.",
+          "translation": "如果工业废弃物处理不当，水污染会迅速扩散。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Stricter monitoring is needed to prevent contamination of farmland near factories.",
+          "translation": "需要更严格的监测来防止工厂附近农田受到污染。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "People in my city worry about contamination in local rivers after heavy rain.",
+          "translation": "在我所在的城市，暴雨过后人们会担心当地河流受到污染。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"contamination\" in one sentence about water, soil, food, or public health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_degradation_339",
+      "word": "degradation",
+      "lemma": "degradation",
+      "ipa": "/ˌdeɡrəˈdeɪʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the process of becoming worse in quality or being damaged over time",
+      "englishDefinition": "The process by which land, ecosystems, materials, or conditions become worse or are damaged over time.",
+      "chineseMeaning": "退化；恶化；土地、环境或材料质量逐渐下降的过程",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "environmental degradation",
+        "land degradation",
+        "prevent degradation"
+      ],
+      "paraphrases": [
+        "deterioration",
+        "decline",
+        "damage"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Deforestation is one of the main causes of land degradation in dry regions.",
+          "translation": "在干旱地区，森林砍伐是土地退化的主要原因之一。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Without long-term planning, rapid urban growth can lead to environmental degradation.",
+          "translation": "如果缺乏长期规划，快速城市化可能导致环境恶化。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think people notice environmental degradation when green spaces disappear from their neighbourhood.",
+          "translation": "我认为，当社区中的绿地消失时，人们就会注意到环境退化。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"degradation\" in one sentence about land, ecosystems, or urban growth."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_conservation_340",
+      "word": "conservation",
+      "lemma": "conservation",
+      "ipa": "/ˌkɒnsəˈveɪʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the protection and careful management of natural resources",
+      "englishDefinition": "The protection and careful management of natural resources, wildlife, and the environment",
+      "chineseMeaning": "保护，保存；对自然资源和环境的谨慎管理",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "wildlife conservation",
+        "energy conservation",
+        "conservation efforts"
+      ],
+      "paraphrases": [
+        "preservation",
+        "protection",
+        "safeguarding"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Successful conservation depends on balancing economic growth with the long-term protection of ecosystems.",
+          "translation": "???????????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should invest more in conservation projects because prevention is usually cheaper than environmental repair.",
+          "translation": "?????????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my city, conservation has become a bigger issue as green space is replaced by new housing.",
+          "translation": "???????????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"conservation\" in one IELTS-style sentence about protecting nature or resources."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_biodiversity_341",
+      "word": "biodiversity",
+      "lemma": "biodiversity",
+      "ipa": "/?ba???da??v??s?ti/",
+      "partOfSpeech": "n.",
+      "sense": "the variety of plant and animal life in a place or on Earth",
+      "englishDefinition": "The variety of plant and animal life in a particular area or across the planet.",
+      "chineseMeaning": "生物多样性",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "protect biodiversity",
+        "loss of biodiversity",
+        "marine biodiversity",
+        "biodiversity conservation"
+      ],
+      "paraphrases": [
+        "ecological diversity",
+        "variety of species",
+        "biological variety"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Deforestation can reduce biodiversity by destroying habitats for many species.",
+          "translation": "??????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should invest in national parks to preserve biodiversity.",
+          "translation": "???????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think biodiversity matters because balanced ecosystems support farming and human health.",
+          "translation": "????????????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"biodiversity\" in one IELTS-style sentence about conservation or land use."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_sustainable_342",
+      "word": "sustainable",
+      "lemma": "sustainable",
+      "ipa": "/səˈsteɪnəbl/",
+      "partOfSpeech": "adj.",
+      "sense": "????????????????",
+      "englishDefinition": "Able to continue over time without causing serious environmental, social, or financial harm.",
+      "chineseMeaning": "可持续的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "sustainable development",
+        "sustainable transport",
+        "sustainable lifestyle"
+      ],
+      "paraphrases": [
+        "viable",
+        "long-term",
+        "eco-friendly"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many cities are searching for sustainable transport systems that reduce congestion and air pollution.",
+          "translation": "????????????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A sustainable energy policy should combine investment in renewables with realistic targets for industry.",
+          "translation": "??????????????????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think people are more willing to adopt sustainable habits when the greener option is also convenient.",
+          "translation": "?????????????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"sustainable\" in one IELTS-style sentence about development, transport, or energy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_ecological_343",
+      "word": "ecological",
+      "lemma": "ecological",
+      "ipa": "/?i?k??l?d??k?l/",
+      "partOfSpeech": "adj.",
+      "sense": "related to the environment and the relationship between living things and their surroundings",
+      "englishDefinition": "Related to the natural environment and the relationships between living things and their surroundings.",
+      "chineseMeaning": "生态的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "ecological balance",
+        "ecological damage",
+        "ecological impact",
+        "ecological protection"
+      ],
+      "paraphrases": [
+        "environmental",
+        "green",
+        "ecosystem-related"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Large construction projects can have serious ecological impacts on nearby wetlands.",
+          "translation": "???????????????????????",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy makers should consider the ecological costs of rapid urban expansion.",
+          "translation": "??????????????????????",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I try to buy fewer disposable products because their ecological impact is quite high.",
+          "translation": "????????????????????????",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"ecological\" in one IELTS-style sentence about environmental impact or planning."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_disposable_344",
+      "word": "disposable",
+      "lemma": "disposable",
+      "ipa": "/dɪˈspoʊzəbəl/",
+      "partOfSpeech": "adj.",
+      "sense": "designed to be used once or for a short time and then thrown away",
+      "englishDefinition": "designed to be used once or for a short period before being thrown away",
+      "chineseMeaning": "一次性的，用后即弃的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "disposable products",
+        "disposable plastics",
+        "disposable packaging",
+        "disposable items"
+      ],
+      "paraphrases": [
+        "single-use",
+        "throwaway"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many cities are trying to reduce the use of disposable packaging because it creates unnecessary waste.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should tax disposable items if they want consumers to switch to reusable alternatives.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I try to avoid disposable cups whenever I can because they are used for only a few minutes.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"disposable\" in one IELTS-style sentence about waste, packaging, or consumer habits."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_recyclable_345",
+      "word": "recyclable",
+      "lemma": "recyclable",
+      "ipa": "/ˌriːˈsaɪkləbəl/",
+      "partOfSpeech": "adj.",
+      "sense": "able to be collected and processed so the material can be used again",
+      "englishDefinition": "able to be collected, processed, and used again instead of being thrown away",
+      "chineseMeaning": "可回收利用的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "recyclable materials",
+        "fully recyclable",
+        "recyclable packaging",
+        "recyclable waste"
+      ],
+      "paraphrases": [
+        "reusable",
+        "recoverable",
+        "able to be processed again"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report notes that recyclable materials often end up in landfill because sorting systems are inefficient.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Manufacturers should be required to use recyclable packaging whenever practical.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I am more likely to buy a product if the container is clearly recyclable.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"recyclable\" in one IELTS-style sentence about materials, packaging, or waste policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_catastrophic_346",
+      "word": "catastrophic",
+      "lemma": "catastrophic",
+      "ipa": "/ˌkætəˈstrɑːfɪk/",
+      "partOfSpeech": "adj.",
+      "sense": "causing sudden and very serious damage or suffering",
+      "englishDefinition": "causing sudden, very serious damage, loss, or suffering",
+      "chineseMeaning": "灾难性的，造成严重后果的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "catastrophic consequences",
+        "potentially catastrophic",
+        "catastrophic damage",
+        "catastrophic failure"
+      ],
+      "paraphrases": [
+        "disastrous",
+        "devastating"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Scientists warn that a major crop failure could have catastrophic consequences for food security.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Without early action, climate-related floods may cause catastrophic damage to coastal cities.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think it is difficult for ordinary people to imagine how catastrophic a long power outage could be.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"catastrophic\" in one IELTS-style sentence about a serious environmental, economic, or social risk."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_surge_354",
+      "word": "surge",
+      "lemma": "surge",
+      "ipa": "/sɜːdʒ/",
+      "partOfSpeech": "v.",
+      "sense": "to increase suddenly and strongly",
+      "englishDefinition": "To rise quickly and sharply in amount, level, or intensity, especially when describing demand, prices, pollution, or population pressure.",
+      "chineseMeaning": "激增；数量、水平或强度在短时间内快速上升",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "surge in demand",
+        "prices surge",
+        "emissions surge"
+      ],
+      "paraphrases": [
+        "rise sharply",
+        "increase rapidly",
+        "jump"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Electricity demand can surge during extremely hot weather when more households use air conditioning.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "If cities keep expanding without planning, traffic emissions may surge in the next decade.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Prices tend to surge when a city becomes popular with tourists and investors at the same time.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"surge\" in one IELTS-style sentence about demand, prices, emissions, or urban growth."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_rising_359",
+      "word": "rising",
+      "lemma": "rising",
+      "ipa": "/?ra?z??/",
+      "partOfSpeech": "adj.",
+      "sense": "increasing in level, amount, or importance",
+      "englishDefinition": "Increasing in level, amount, or importance over time.",
+      "chineseMeaning": "上升的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "rising sea levels",
+        "rising demand",
+        "rising costs",
+        "rising temperatures"
+      ],
+      "paraphrases": [
+        "increasing",
+        "growing",
+        "upward"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Rising sea levels threaten coastal housing, farmland, and transport infrastructure.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments must respond to rising energy demand without increasing pollution.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "One major problem in my city is rising living costs, especially for young families.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"rising\" in one IELTS-style sentence about an increasing trend or problem."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_plummet_360",
+      "word": "plummet",
+      "lemma": "plummet",
+      "ipa": "/?pl?m?t/",
+      "partOfSpeech": "v.",
+      "sense": "to fall very quickly and by a large amount",
+      "englishDefinition": "To fall sharply and suddenly in level, price, rate, or amount.",
+      "chineseMeaning": "骤降",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "plummet sharply",
+        "sales plummet",
+        "temperatures plummet",
+        "fish stocks plummet"
+      ],
+      "paraphrases": [
+        "drop sharply",
+        "fall steeply",
+        "decline dramatically"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Fish populations can plummet when rivers are polluted or overused.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Tourism may plummet if a city becomes known for poor air quality and unsafe transport.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My motivation can plummet if I have too many deadlines at the same time.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"plummet\" in one IELTS-style sentence about a sharp fall in numbers, quality, or confidence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_dwindle_361",
+      "word": "dwindle",
+      "lemma": "dwindle",
+      "ipa": "/?dw?ndl/",
+      "partOfSpeech": "v.",
+      "sense": "to become gradually smaller in size, amount, or importance",
+      "englishDefinition": "To become gradually smaller, fewer, or less important over time.",
+      "chineseMeaning": "逐渐减少",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "dwindle over time",
+        "resources dwindle",
+        "savings dwindle",
+        "water supplies dwindle"
+      ],
+      "paraphrases": [
+        "decline gradually",
+        "shrink",
+        "reduce steadily"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Water supplies may dwindle in dry regions if rainfall becomes less predictable.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments cannot wait until public trust dwindles before reforming basic services.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My free time usually dwindles during exam season because I spend longer studying.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"dwindle\" in one IELTS-style sentence about something gradually becoming less."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_recede_363",
+      "word": "recede",
+      "lemma": "recede",
+      "ipa": "/rɪˈsiːd/",
+      "partOfSpeech": "v.",
+      "sense": "to move back or become less strong, less serious, or less noticeable",
+      "englishDefinition": "To move further away or to become weaker, lower, or less serious over time.",
+      "chineseMeaning": "后退；减弱",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "floodwaters recede",
+        "coastline recede",
+        "threat recede"
+      ],
+      "paraphrases": [
+        "retreat",
+        "withdraw",
+        "fade"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In some regions, glaciers are starting to recede as average temperatures continue to rise.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments must support farmers when water supplies recede during longer periods of drought.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "People in my city feel relieved when floodwaters recede, but the damage often remains for months.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"recede\" in one IELTS-style sentence about climate change, flood risk, or a problem becoming weaker."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_diminishing_365",
+      "word": "diminishing",
+      "lemma": "diminishing",
+      "ipa": "/dɪˈmɪnɪʃɪŋ/",
+      "partOfSpeech": "adj.",
+      "sense": "becoming smaller, weaker, or less important over time",
+      "englishDefinition": "Becoming gradually smaller, fewer, weaker, or less important.",
+      "chineseMeaning": "减少的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "diminishing resources",
+        "diminishing returns",
+        "diminishing interest"
+      ],
+      "paraphrases": [
+        "declining",
+        "decreasing",
+        "shrinking"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many coastal communities are struggling with diminishing fish stocks and unstable incomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should respond quickly to diminishing water resources instead of waiting for a severe crisis.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think people become anxious when they see diminishing job security in their area.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"diminishing\" in one IELTS-style sentence about resources, returns, or public interest."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_detrimental_374",
+      "word": "detrimental",
+      "lemma": "detrimental",
+      "ipa": "/ˌdetrɪˈmentəl/",
+      "partOfSpeech": "adj.",
+      "sense": "causing harm or having a damaging effect on something",
+      "englishDefinition": "Causing harm or having a damaging effect on a person, system, or environment.",
+      "chineseMeaning": "有害的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "detrimental effect",
+        "detrimental to health",
+        "environmentally detrimental"
+      ],
+      "paraphrases": [
+        "harmful",
+        "damaging",
+        "adverse"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Heavy plastic use can be detrimental to marine life when waste enters rivers and oceans.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Short-term economic growth should not be prioritised if it is detrimental to public health and air quality.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think excessive screen time can be detrimental to young children if it replaces exercise and sleep.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"detrimental\" in one IELTS-style sentence about harmful effects on health, society, or the environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_renewable_407",
+      "word": "renewable",
+      "lemma": "renewable",
+      "ipa": "/rɪˈnjuːəbl/",
+      "partOfSpeech": "adj.",
+      "sense": "可再生的",
+      "englishDefinition": "able to be naturally replaced or used again without running out quickly",
+      "chineseMeaning": "可再生的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "renewable energy",
+        "renewable resources"
+      ],
+      "paraphrases": [
+        "sustainable",
+        "inexhaustible"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many governments are increasing investment in renewable energy to cut carbon emissions.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In the long term, renewable power is often presented as a cleaner alternative to fossil fuels.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My city should use more renewable energy because air pollution is already a serious issue.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"renewable\" in one IELTS-style sentence about energy, natural resources, or environmental policy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_biodegradable_408",
+      "word": "biodegradable",
+      "lemma": "biodegradable",
+      "ipa": "/ˌbaɪəʊdɪˈɡreɪdəbl/",
+      "partOfSpeech": "adj.",
+      "sense": "可生物降解的",
+      "englishDefinition": "able to break down naturally without causing long-term harm to the environment",
+      "chineseMeaning": "可生物降解的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "biodegradable materials",
+        "fully biodegradable"
+      ],
+      "paraphrases": [
+        "decomposable",
+        "eco-friendly"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Biodegradable packaging can reduce the amount of long-lasting plastic waste in landfills.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments could encourage firms to switch to biodegradable materials through tax incentives.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would pay slightly more for biodegradable products if they were clearly better for the environment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"biodegradable\" in one IELTS-style sentence about packaging, waste, or consumer choices."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    },
+    {
+      "bundleId": "environment_imperative_410",
+      "word": "imperative",
+      "lemma": "imperative",
+      "ipa": "/ɪmˈperətɪv/",
+      "partOfSpeech": "adj.",
+      "sense": "必要的，紧急的",
+      "englishDefinition": "extremely important and needing immediate attention or action",
+      "chineseMeaning": "必要的；紧急的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "it is imperative that",
+        "imperative need"
+      ],
+      "paraphrases": [
+        "essential",
+        "urgent",
+        "critical"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Scientists argue that it is imperative to reduce emissions before climate risks become harder to manage.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "It is imperative for governments to expand public transport if they want to cut urban pollution.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think it is imperative to protect green spaces because cities are becoming too crowded.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"imperative\" in one IELTS-style sentence about urgent action, policy priorities, or environmental protection."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true
+    }
+  ]
+}

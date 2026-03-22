@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IELTS Context Bundle",
+  "type": "object",
+  "required": [
+    "bundleId",
+    "word",
+    "sense",
+    "topic",
+    "taskTypes",
+    "register",
+    "englishDefinition",
+    "chineseMeaning",
+    "collocations",
+    "paraphrases",
+    "contexts",
+    "productionPrompt",
+    "sourceQuality"
+  ],
+  "properties": {
+    "bundleId": {
+      "type": "string"
+    },
+    "word": {
+      "type": "string"
+    },
+    "lemma": {
+      "type": "string"
+    },
+    "partOfSpeech": {
+      "type": "string"
+    },
+    "sense": {
+      "type": "string"
+    },
+    "englishDefinition": {
+      "type": "string"
+    },
+    "chineseMeaning": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string",
+      "enum": [
+        "education",
+        "environment",
+        "technology",
+        "health",
+        "crime",
+        "government",
+        "work",
+        "media",
+        "globalization",
+        "culture",
+        "transport",
+        "city-life"
+      ]
+    },
+    "taskTypes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "reading",
+          "listening",
+          "writing",
+          "speaking"
+        ]
+      },
+      "minItems": 1
+    },
+    "register": {
+      "type": "string",
+      "enum": [
+        "neutral",
+        "formal",
+        "semi-formal"
+      ]
+    },
+    "collocations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 2
+    },
+    "paraphrases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "confusions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contexts": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "kind",
+          "text",
+          "purpose"
+        ],
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "reading",
+              "listening",
+              "writing",
+              "speaking"
+            ]
+          },
+          "text": {
+            "type": "string"
+          },
+          "translation": {
+            "type": "string"
+          },
+          "purpose": {
+            "type": "string",
+            "enum": [
+              "core",
+              "near-transfer",
+              "far-transfer",
+              "output-model"
+            ]
+          }
+        }
+      }
+    },
+    "productionPrompt": {
+      "type": "object",
+      "required": [
+        "mode",
+        "instruction"
+      ],
+      "properties": {
+        "mode": {
+          "type": "string",
+          "enum": [
+            "writing",
+            "speaking"
+          ]
+        },
+        "instruction": {
+          "type": "string"
+        }
+      }
+    },
+    "sourceQuality": {
+      "type": "object",
+      "required": [
+        "relevanceScore",
+        "transferabilityScore",
+        "outputUtilityScore",
+        "exampleQualityScore",
+        "decision"
+      ],
+      "properties": {
+        "relevanceScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "transferabilityScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "outputUtilityScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "exampleQualityScore": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "decision": {
+          "type": "string",
+          "enum": [
+            "keep",
+            "keep_with_review",
+            "hold",
+            "reject"
+          ]
+        }
+      }
+    }
+  }
+}
