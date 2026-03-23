@@ -1725,10 +1725,10 @@
       "rank": 20,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "the ideas, customs, and social behaviour of a particular group of people",
-      "editorEnglishDefinition": "the ideas, customs, and social behaviour shared by a group or society",
-      "editorChineseMeaning": "文化；特定社会或群体的信仰、习俗、艺术和生活方式",
+      "reviewerNotes": "Maintenance enrichment: added explicit noun metadata and IELTS-ready contexts to replace partial inferred source fields.",
+      "editorSense": "the ideas, customs, values, and social behaviour shared by a group or society",
+      "editorEnglishDefinition": "The ideas, customs, and values that shape how a group of people live, behave, and understand the world.",
+      "editorChineseMeaning": "文化；一个群体共享的价值观、习俗和生活方式",
       "editorCollocations": [
         "local culture",
         "cultural values",
@@ -1742,24 +1742,24 @@
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The text presents culture as an important feature of social values and cultural change.",
+          "text": "The article argues that culture influences how people respond to social change and public policy.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Many people see local culture as part of a broader shift in modern society.",
+          "text": "Tourism can support local jobs, but it may also weaken traditional culture if communities lose control of development.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In my view, culture matters because it influences how communities define identity and behaviour.",
+          "text": "I think school trips are useful because they help students understand the culture of different regions.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"culture\" in one IELTS-style sentence about identity, tourism, education, or social change.",
       "key": "culture",
       "word": "culture",
       "partOfSpeech": "v.",
@@ -2089,18 +2089,41 @@
       "rank": 24,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "An example or single occurrence of something",
-      "editorChineseMeaning": "例子，实例；某事物的单个例子或事件",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: replaced blank editor fields with an explicit noun sense and example-led IELTS usage.",
+      "editorSense": "a particular example or single case of something happening",
+      "editorEnglishDefinition": "A particular example or case that shows how something happens or what it is like.",
+      "editorChineseMeaning": "实例；例子；某种情况的具体个案",
+      "editorCollocations": [
+        "for instance",
+        "in some instances",
+        "rare instance"
+      ],
       "editorParaphrases": [
         "example",
         "case",
         "occurrence"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "One instance of rapid urban growth mentioned in the passage is the expansion of commuter towns.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "For instance, governments can reduce traffic by improving bus networks instead of building more roads.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "A good instance of technology improving daily life is mobile payment systems on public transport.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"instance\" or \"for instance\" in one IELTS-style sentence that gives a clear example.",
       "key": "instance",
       "word": "instance",
       "partOfSpeech": "v.",
@@ -2149,7 +2172,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 25,
@@ -2425,18 +2449,41 @@
       "rank": 28,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "The place or thing that something comes from or is obtained from",
-      "editorChineseMeaning": "来源，源头；某事物的起源或获取之处",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: replaced inferred sourcebook-led output with a clear noun sense that fits academic IELTS use.",
+      "editorSense": "the place, person, or thing that information, energy, materials, or problems come from",
+      "editorEnglishDefinition": "The origin of something, or the person, document, or place that provides information or supplies something.",
+      "editorChineseMeaning": "来源；根源；提供信息或资源的人、文件或地方",
+      "editorCollocations": [
+        "energy source",
+        "reliable source",
+        "main source of income"
+      ],
       "editorParaphrases": [
         "origin",
-        "cause",
-        "basis"
+        "basis",
+        "provider"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies traffic as a major source of urban air pollution.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Students should learn how to evaluate whether an online source is reliable before using it in research.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For many families, the internet is now the main source of news and practical information.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"source\" in one IELTS-style sentence about information, pollution, income, or energy.",
       "key": "source",
       "word": "source",
       "partOfSpeech": "v.",
@@ -2485,24 +2532,48 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 29,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "A piece of work or activity that needs to be done",
-      "editorChineseMeaning": "任务，工作；需要完成的一项工作或活动",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: replaced blank editor metadata and noisy taskmaster examples with a direct noun sense.",
+      "editorSense": "a piece of work or duty that someone needs to complete",
+      "editorEnglishDefinition": "A piece of work or activity that has to be done, often as part of a job, study plan, or larger process.",
+      "editorChineseMeaning": "任务；需要完成的一项工作或职责",
+      "editorCollocations": [
+        "complete a task",
+        "challenging task",
+        "assigned task"
+      ],
       "editorParaphrases": [
         "assignment",
         "duty",
         "job"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "The first task in the experiment was to compare how quickly different groups solved the problem.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Household recycling becomes easier when the task is simple and collection systems are convenient.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "The most difficult task for many students is balancing part-time work with exam preparation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"task\" in one IELTS-style sentence about work, study, or solving a problem.",
       "key": "task",
       "word": "task",
       "partOfSpeech": "v.",
@@ -2551,7 +2622,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 30,
@@ -2919,18 +2991,41 @@
       "rank": 34,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "The management of money, especially by governments or large organizations",
-      "editorChineseMeaning": "财政，金融；资金管理，尤指政府或大型机构的",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: replaced blank editor fields with an explicit noun sense for funding and money management.",
+      "editorSense": "the management of money, especially by governments, businesses, or large organisations",
+      "editorEnglishDefinition": "The management of money, funding, and spending, especially in government, business, or public services.",
+      "editorChineseMeaning": "财政；金融；资金管理和筹措",
+      "editorCollocations": [
+        "public finance",
+        "finance sector",
+        "finance education"
+      ],
       "editorParaphrases": [
         "funding",
         "capital",
-        "investment"
+        "money management"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "The passage explains how weak public finance can limit investment in transport and housing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Better financial literacy should be taught at school so that young adults can manage personal finance more responsibly.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think many people avoid discussing finance because they feel embarrassed about debt or budgeting problems.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"finance\" in one IELTS-style sentence about budgets, funding, or economic management.",
       "key": "finance",
       "word": "finance",
       "partOfSpeech": "v.",
@@ -2979,24 +3074,48 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 35,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "Happening at the beginning; first",
-      "editorChineseMeaning": "最初的，开始的；发生在开头的",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: added explicit adjective metadata to replace blank editor fields and preserve the intended beginning-stage sense.",
+      "editorSense": "happening at the beginning of a process, period, or activity",
+      "editorEnglishDefinition": "Occurring at the beginning; first and often used to describe an early stage before later change or development.",
+      "editorChineseMeaning": "最初的；开始阶段的；初步的",
+      "editorCollocations": [
+        "initial stage",
+        "initial reaction",
+        "initial cost"
+      ],
       "editorParaphrases": [
         "first",
-        "beginning",
-        "original"
+        "early",
+        "preliminary"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "The researchers found that the initial response to the policy was positive, but support declined later.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Although the initial cost of renewable energy infrastructure is high, the long-term benefits are considerable.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My initial impression of online classes was negative, but they became more useful once teachers adapted.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"initial\" in one IELTS-style sentence about an early stage, cost, reaction, or impression.",
       "key": "initial",
       "word": "initial",
       "partOfSpeech": "v.",
@@ -3045,7 +3164,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 36,
@@ -3140,18 +3260,41 @@
       "rank": 37,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "Work, especially physical work; workers as a group",
-      "editorChineseMeaning": "劳动，劳动力；工作，尤指体力劳动或工人群体",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: replaced Labour Party-led examples with an explicit noun sense for workforce and employment contexts.",
+      "editorSense": "work, especially physical work, or the workers needed to do that work",
+      "editorEnglishDefinition": "Work, especially physical work, or the supply of workers available for jobs in an economy or industry.",
+      "editorChineseMeaning": "劳动；劳动力；尤指体力工作或某行业所需的工人",
+      "editorCollocations": [
+        "labour market",
+        "skilled labour",
+        "labour shortage"
+      ],
       "editorParaphrases": [
         "workforce",
         "workers",
-        "employment"
+        "manual work"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "The report links rising labour costs to the relocation of factories to smaller cities.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Many farms now depend on seasonal labour because local residents are unwilling to do physically demanding work.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my city, a labour shortage in care services has made it harder for families to find support for older relatives.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"labour\" in one IELTS-style sentence about employment, working conditions, or the labour market.",
       "key": "labour",
       "word": "labour",
       "partOfSpeech": "v.",
@@ -3200,7 +3343,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 38,
@@ -3567,18 +3711,41 @@
       "rank": 42,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "To choose something from a group, especially after careful thought",
-      "editorChineseMeaning": "选择，挑选；从群体中选出某物",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: replaced partial inferred metadata with clear verb usage that transfers to research, policy, and daily decisions.",
+      "editorSense": "to choose someone or something carefully from a group of options",
+      "editorEnglishDefinition": "To choose a person, item, or option from a larger group, often after comparing alternatives.",
+      "editorChineseMeaning": "选择；挑选；从一组对象中慎重选出",
+      "editorCollocations": [
+        "select candidates",
+        "carefully select",
+        "select from a list"
+      ],
       "editorParaphrases": [
         "choose",
         "pick",
-        "opt for"
+        "identify"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "The researchers selected participants from several schools to compare study habits across age groups.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should select transport projects according to long-term public need rather than short-term political gain.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When I buy a phone, I usually select the model that offers good battery life instead of the latest design.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"select\" in one IELTS-style sentence about choosing people, options, or priorities.",
       "key": "select",
       "word": "select",
       "partOfSpeech": "v.",
@@ -3627,24 +3794,48 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 43,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "A series of related things or events in a particular order",
-      "editorChineseMeaning": "顺序，序列；按特定顺序排列的一系列相关事物或事件",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: replaced corrupted sequencer examples with an explicit noun sense that fits process and event description.",
+      "editorSense": "a series of things, events, or steps arranged in a particular order",
+      "editorEnglishDefinition": "A set of related events, stages, or items that happen or are arranged in a specific order.",
+      "editorChineseMeaning": "顺序；序列；按特定次序排列的一组步骤或事件",
+      "editorCollocations": [
+        "sequence of events",
+        "logical sequence",
+        "in sequence"
+      ],
       "editorParaphrases": [
         "order",
         "series",
-        "succession"
+        "progression"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "The passage describes the sequence of events that led to the rapid growth of the city.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Task 1 answers are clearer when the process is explained in a logical sequence from start to finish.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I remember the sequence of steps more easily when a teacher demonstrates the whole process first.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"sequence\" in one IELTS-style sentence about events, stages, or explaining a process.",
       "key": "sequence",
       "word": "sequence",
       "partOfSpeech": "v.",
@@ -3693,7 +3884,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 44,
@@ -4150,18 +4342,41 @@
       "rank": 49,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "To change or be different depending on the situation",
-      "editorChineseMeaning": "变化，不同；根据情况而改变或有差异",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: replaced corrupted non-word examples with explicit verb metadata for describing change and difference.",
+      "editorSense": "to differ or change according to the situation, place, time, or person involved",
+      "editorEnglishDefinition": "To be different in different situations, or to change within a range rather than stay the same.",
+      "editorChineseMeaning": "变化；不同；因时间、地点或情况而有所差异",
+      "editorCollocations": [
+        "vary considerably",
+        "vary according to",
+        "prices vary"
+      ],
       "editorParaphrases": [
         "differ",
         "change",
         "fluctuate"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "The data show that household energy use can vary considerably between urban and rural areas.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The effects of screen time on children may vary according to age, content, and parental supervision.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Food prices in my area vary from season to season, especially for imported fruit.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"vary\" in one IELTS-style sentence about differences across groups, places, or time.",
       "key": "vary",
       "word": "vary",
       "partOfSpeech": "v.",
@@ -4210,7 +4425,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 50,
@@ -6609,18 +6825,41 @@
       "rank": 79,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "The power or right to make decisions or give orders",
-      "editorChineseMeaning": "权威，权力；做决策或发布命令的权力",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: replaced literal source-led collocations with a clearer power-or-institution sense for public policy use.",
+      "editorSense": "the power to make decisions and enforce rules, or an official body that has that power",
+      "editorEnglishDefinition": "The right or power to make decisions and control what happens, or the organisation that holds that power.",
+      "editorChineseMeaning": "权力；权威；拥有管理和决策权的官方机构",
+      "editorCollocations": [
+        "local authority",
+        "public authority",
+        "have the authority to"
+      ],
       "editorParaphrases": [
         "power",
         "control",
-        "influence"
+        "official body"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "The article explains how local authorities are struggling to fund housing and waste collection services.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Schools should have the authority to adapt part of the curriculum to local employment needs.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think city authorities should invest more in safe cycling routes before widening more roads.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"authority\" in one IELTS-style sentence about power, regulation, or public institutions.",
       "key": "authority",
       "word": "authority",
       "partOfSpeech": "n.",
@@ -6670,24 +6909,48 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 80,
       "reviewStatus": "approved",
       "approved": true,
-      "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "Ready to be used or obtained; accessible",
-      "editorChineseMeaning": "可用的，可获得的；准备就绪或可获取的",
-      "editorCollocations": [],
+      "reviewerNotes": "Maintenance enrichment: replaced narrow example-led output with explicit adjective metadata for access and availability.",
+      "editorSense": "ready to be used, obtained, or accessed when needed",
+      "editorEnglishDefinition": "Able to be used, found, or obtained at a particular time, especially when people need it.",
+      "editorChineseMeaning": "可获得的；可使用的；需要时能够取得的",
+      "editorCollocations": [
+        "readily available",
+        "widely available",
+        "resources available"
+      ],
       "editorParaphrases": [
         "accessible",
         "obtainable",
-        "ready"
+        "on hand"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "The passage compares how much clean water is available in different regions during periods of drought.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "University places should be made more widely available to students from low-income families.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Public transport is more useful when reliable services are available late in the evening.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"available\" in one IELTS-style sentence about access to services, resources, or opportunities.",
       "key": "available",
       "word": "available",
       "partOfSpeech": "adj.",
@@ -6736,7 +6999,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 81,

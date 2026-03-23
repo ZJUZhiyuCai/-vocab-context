@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-22T14:58:38.250Z",
+  "generatedAt": "2026-03-23T01:01:23.047Z",
   "approvalStatus": "draft",
   "draft": true,
   "topic": "technology",
@@ -1941,19 +1941,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "A viable issue in technology and digital systems is whether policy can improve innovation and access.",
+          "text": "Researchers are exploring whether electric public transport is a viable solution for rapidly growing cities.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "It is viable for governments to support long-term improvements in innovation and access.",
+          "text": "A policy is only viable if governments can fund it over the long term.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "I think viable changes are needed if society wants better results in technology and digital systems.",
+          "text": "I think online learning is viable for some subjects but not for every type of course.",
           "translation": "",
           "purpose": "far-transfer"
         }

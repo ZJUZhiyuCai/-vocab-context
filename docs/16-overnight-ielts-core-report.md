@@ -935,3 +935,47 @@ candidate: 77
 - Blockers: none
 - Next recommendations: stay in maintenance mode, keep the review gate empty, and only do future edits when a concrete low-risk defect is observed in approved output or new expansion candidates are introduced
 - Current run time: 2026-03-22 21:56:39 +08:00.
+
+## 2026-03-22 23:57 +08:00
+
+- Approved count: 411
+- Rejected count: 218
+- Candidate count: 0
+- Approved this run: none; the review gate remained empty and no new approvals were warranted
+- Rejected this run: none; there were no pending candidates to reject
+- Enriched this run: 6 approved reviewed-source entries updated with explicit editor metadata
+- QA status: passed for `public/data/ielts-core-500.json`, `public/data/ielts-core-500-generated-draft.json`, `public/data/ielts-topic-education-draft.json`, `public/data/ielts-topic-environment-draft.json`, and `public/data/ielts-topic-technology-draft.json`
+- Build status: `npm run build` passed
+- Topic-pack progress: education 115, environment 67, technology 48
+- Notable approved words refined: `culture`, `instance`, `source`, `task`, `finance`, `initial`
+- Notable rejected words: none
+- Notable changes:
+  - Added `scripts/maintenance-ielts-2026-03-22-run8.cjs` and used it to replace inferred reviewed-source metadata with explicit IELTS-ready senses, definitions, collocations, paraphrases, contexts, prompts, and corrected editor part-of-speech values for six approved entries.
+  - Regenerated approved core bundles, generated draft bundles, and all three draft topic packs without changing gated counts.
+  - Reduced approved reviewed-source entries still missing one or more editor fields from 81 to 75 while keeping all published audit metrics at zero defects.
+- Additional quality signal: `node scripts/real-audit.cjs` still reports 0 generic definitions, 0 blank IPA, 0 Chinese meaning issues, 0 weak paraphrases, 0 template contexts, and 0 invalid collocations.
+- Blockers: none
+- Next recommendations: stay in maintenance mode; continue small explicit source-of-truth enrichments from the remaining inferred-field set, with safe candidates including `labour`, `select`, `sequence`, `vary`, `authority`, and `available`.
+- Current run time: 2026-03-22 23:57:24 +08:00.
+
+## 2026-03-23 09:02 +08:00
+
+- Approved count: 411
+- Rejected count: 218
+- Candidate count: 0
+- Approved this run: none; the review gate remained empty and no new approvals were warranted
+- Rejected this run: none; there were no pending candidates to reject
+- Enriched this run: 6 approved reviewed-source entries updated with explicit editor metadata
+- QA status: passed for `public/data/ielts-core-500.json`, `public/data/ielts-core-500-generated-draft.json`, `public/data/ielts-topic-education-draft.json`, `public/data/ielts-topic-environment-draft.json`, and `public/data/ielts-topic-technology-draft.json`
+- Build status: `npm run build` passed
+- Topic-pack progress: education 115, environment 67, technology 48
+- Notable approved words refined: `labour`, `select`, `sequence`, `vary`, `authority`, `available`
+- Notable rejected words: none
+- Notable changes:
+  - Added `scripts/maintenance-ielts-2026-03-23-run9.cjs` and used it to replace noisy inferred reviewed-source metadata with explicit IELTS-ready senses, collocations, contexts, and production prompts for six approved entries.
+  - Corrected two bundle-facing part-of-speech mismatches during the same pass: `labour` now publishes as a noun-led work term and `sequence` now publishes as a noun-led order/process term.
+  - Reduced approved reviewed-source entries still missing one or more editor fields from 75 to 69 while keeping all published audit metrics at zero defects.
+- Additional quality signal: `node scripts/real-audit.cjs` still reports 0 generic definitions, 0 blank IPA, 0 Chinese meaning issues, 0 weak paraphrases, 0 template contexts, and 0 invalid collocations.
+- Blockers: none
+- Next recommendations: stay in maintenance mode; continue another small explicit source-of-truth enrichment pass from the remaining inferred-field set, prioritising high-transfer words such as `injure`, `previous`, `individual`, `subscribe`, `concentrate`, and `stable`.
+- Current run time: 2026-03-23 09:02:15 +08:00.

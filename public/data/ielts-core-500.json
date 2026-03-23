@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-22T15:19:25.235Z",
+  "generatedAt": "2026-03-23T01:01:08.832Z",
   "approvalStatus": "approved",
   "totalBundles": 411,
   "bundles": [
@@ -1143,9 +1143,9 @@
       "lemma": "culture",
       "ipa": "/ˈkʌltʃɚ/",
       "partOfSpeech": "n.",
-      "sense": "the ideas, customs, and social behaviour of a particular group of people",
-      "englishDefinition": "the ideas, customs, and social behaviour shared by a group or society",
-      "chineseMeaning": "文化；特定社会或群体的信仰、习俗、艺术和生活方式",
+      "sense": "the ideas, customs, values, and social behaviour shared by a group or society",
+      "englishDefinition": "The ideas, customs, and values that shape how a group of people live, behave, and understand the world.",
+      "chineseMeaning": "文化；一个群体共享的价值观、习俗和生活方式",
       "topic": "culture",
       "taskTypes": [
         "reading",
@@ -1166,26 +1166,26 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The text presents culture as an important feature of social values and cultural change.",
+          "text": "The article argues that culture influences how people respond to social change and public policy.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Many people see local culture as part of a broader shift in modern society.",
+          "text": "Tourism can support local jobs, but it may also weaken traditional culture if communities lose control of development.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In my view, culture matters because it influences how communities define identity and behaviour.",
+          "text": "I think school trips are useful because they help students understand the culture of different regions.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"culture\" in one IELTS-style sentence about culture."
+        "instruction": "Use \"culture\" in one IELTS-style sentence about identity, tourism, education, or social change."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -1383,10 +1383,10 @@
       "word": "instance",
       "lemma": "instance",
       "ipa": "/ˈɪnstəns/",
-      "partOfSpeech": "v.",
-      "sense": "例子",
-      "englishDefinition": "An example or single occurrence of something",
-      "chineseMeaning": "例子，实例；某事物的单个例子或事件",
+      "partOfSpeech": "n.",
+      "sense": "a particular example or single case of something happening",
+      "englishDefinition": "A particular example or case that shows how something happens or what it is like.",
+      "chineseMeaning": "实例；例子；某种情况的具体个案",
       "topic": "work",
       "taskTypes": [
         "reading",
@@ -1394,10 +1394,9 @@
       ],
       "register": "formal",
       "collocations": [
-        "the instance",
-        "instance of",
-        "unique instance",
-        "instance "
+        "for instance",
+        "in some instances",
+        "rare instance"
       ],
       "paraphrases": [
         "example",
@@ -1408,26 +1407,26 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The rally was organised at the instance of two senior cabinet ministers.",
-          "translation": "集会是应两位资深内阁大臣的要求组织的。",
+          "text": "One instance of rapid urban growth mentioned in the passage is the expansion of commuter towns.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "It is not a unique instance , but has its counterpart.",
-          "translation": "无独有偶.",
+          "text": "For instance, governments can reduce traffic by improving bus networks instead of building more roads.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "There are jobs more dangerous than truck driving; for instance, training lions.",
-          "translation": "有的工作比驾驶卡车更危险, 例如驯狮.",
+          "text": "A good instance of technology improving daily life is mobile payment systems on public transport.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"instance\" in one IELTS-style sentence about work."
+        "instruction": "Use \"instance\" or \"for instance\" in one IELTS-style sentence that gives a clear example."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -1622,10 +1621,10 @@
       "word": "source",
       "lemma": "source",
       "ipa": "/sɔrs/",
-      "partOfSpeech": "v.",
-      "sense": "根源",
-      "englishDefinition": "The place or thing that something comes from or is obtained from",
-      "chineseMeaning": "来源，源头；某事物的起源或获取之处",
+      "partOfSpeech": "n.",
+      "sense": "the place, person, or thing that information, energy, materials, or problems come from",
+      "englishDefinition": "The origin of something, or the person, document, or place that provides information or supplies something.",
+      "chineseMeaning": "来源；根源；提供信息或资源的人、文件或地方",
       "topic": "media",
       "taskTypes": [
         "reading",
@@ -1633,38 +1632,39 @@
       ],
       "register": "formal",
       "collocations": [
-        "source effectively",
-        "source carefully"
+        "energy source",
+        "reliable source",
+        "main source of income"
       ],
       "paraphrases": [
         "origin",
-        "cause",
-        "basis"
+        "basis",
+        "provider"
       ],
       "confusions": [],
       "contexts": [
         {
           "kind": "reading",
-          "text": "It was first mentioned in a 1989 roleplaying game sourcebook.",
-          "translation": "1989的一个角色扮演游戏资料设定集首次提到全息网.",
+          "text": "The report identifies traffic as a major source of urban air pollution.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "This story is expanded in The Truce of Bakura Sourcebook by Kathy Tyers and Eric S.",
-          "translation": "这个故事在KathyTyers和EricS.Trautmann合著的《巴库拉停战资料书》中得到了扩展.",
+          "text": "Students should learn how to evaluate whether an online source is reliable before using it in research.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "A truly unique and inspirational sourcebook for all the design and advertising world.",
-          "translation": "对于设计和广告界的从业人员是一本真正独特的富有创意的参考资料.",
+          "text": "For many families, the internet is now the main source of news and practical information.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"source\" in one IELTS-style sentence about media."
+        "instruction": "Use \"source\" in one IELTS-style sentence about information, pollution, income, or energy."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -1680,10 +1680,10 @@
       "word": "task",
       "lemma": "task",
       "ipa": "/tæsk/",
-      "partOfSpeech": "v.",
-      "sense": "工作",
-      "englishDefinition": "A piece of work or activity that needs to be done",
-      "chineseMeaning": "任务，工作；需要完成的一项工作或活动",
+      "partOfSpeech": "n.",
+      "sense": "a piece of work or duty that someone needs to complete",
+      "englishDefinition": "A piece of work or activity that has to be done, often as part of a job, study plan, or larger process.",
+      "chineseMeaning": "任务；需要完成的一项工作或职责",
       "topic": "work",
       "taskTypes": [
         "reading",
@@ -1691,8 +1691,9 @@
       ],
       "register": "formal",
       "collocations": [
-        "task effectively",
-        "task carefully"
+        "complete a task",
+        "challenging task",
+        "assigned task"
       ],
       "paraphrases": [
         "assignment",
@@ -1703,26 +1704,26 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "She was a hard taskmaster .",
-          "translation": "她是个严厉的工头。",
+          "text": "The first task in the experiment was to compare how quickly different groups solved the problem.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The profession of medicine is a stern taskmaster.",
-          "translation": "医生这个职业总要求其从事者承担繁重的任务.",
+          "text": "Household recycling becomes easier when the task is simple and collection systems are convenient.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "He is a hard taskmaster.",
-          "translation": "他是个严苛的监工.",
+          "text": "The most difficult task for many students is balancing part-time work with exam preparation.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"task\" in one IELTS-style sentence about work."
+        "instruction": "Use \"task\" in one IELTS-style sentence about work, study, or solving a problem."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -1978,10 +1979,10 @@
       "word": "finance",
       "lemma": "finance",
       "ipa": "/fəˈnæns, faɪ-, ˈfaɪˌnæns/",
-      "partOfSpeech": "v.",
-      "sense": "财政",
-      "englishDefinition": "The management of money, especially by governments or large organizations",
-      "chineseMeaning": "财政，金融；资金管理，尤指政府或大型机构的",
+      "partOfSpeech": "n.",
+      "sense": "the management of money, especially by governments, businesses, or large organisations",
+      "englishDefinition": "The management of money, funding, and spending, especially in government, business, or public services.",
+      "chineseMeaning": "财政；金融；资金管理和筹措",
       "topic": "transport",
       "taskTypes": [
         "reading",
@@ -1989,40 +1990,39 @@
       ],
       "register": "formal",
       "collocations": [
-        "The finance",
-        "finance minister",
-        "corn finance",
-        "finance with"
+        "public finance",
+        "finance sector",
+        "finance education"
       ],
       "paraphrases": [
         "funding",
         "capital",
-        "investment"
+        "money management"
       ],
       "confusions": [],
       "contexts": [
         {
           "kind": "reading",
-          "text": "The finance minister will continue to mastermind Poland's economic reform.",
-          "translation": "财政部长将继续策划波兰的经济改革。",
+          "text": "The passage explains how weak public finance can limit investment in transport and housing.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The scheme offers seed corn finance with loans at only 4% interest.",
-          "translation": "该方案提供种子基金融资，其贷款只收取4%的利息。",
+          "text": "Better financial literacy should be taught at school so that young adults can manage personal finance more responsibly.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "Foreign Office officials assisted with transport and finance problems.",
-          "translation": "外交部官员帮助解决运输和经费问题。",
+          "text": "I think many people avoid discussing finance because they feel embarrassed about debt or budgeting problems.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"finance\" in one IELTS-style sentence about transport."
+        "instruction": "Use \"finance\" in one IELTS-style sentence about budgets, funding, or economic management."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -2038,10 +2038,10 @@
       "word": "initial",
       "lemma": "initial",
       "ipa": "/ɪˈnɪʃəl/",
-      "partOfSpeech": "v.",
-      "sense": "最初的",
-      "englishDefinition": "Happening at the beginning; first",
-      "chineseMeaning": "最初的，开始的；发生在开头的",
+      "partOfSpeech": "adj.",
+      "sense": "happening at the beginning of a process, period, or activity",
+      "englishDefinition": "Occurring at the beginning; first and often used to describe an early stage before later change or development.",
+      "chineseMeaning": "最初的；开始阶段的；初步的",
       "topic": "health",
       "taskTypes": [
         "reading",
@@ -2049,40 +2049,39 @@
       ],
       "register": "formal",
       "collocations": [
-        "the initial",
-        "initial market",
-        "The initial",
-        "initial image"
+        "initial stage",
+        "initial reaction",
+        "initial cost"
       ],
       "paraphrases": [
         "first",
-        "beginning",
-        "original"
+        "early",
+        "preliminary"
       ],
       "confusions": [],
       "contexts": [
         {
           "kind": "reading",
-          "text": "They learnt a lot from the initial market testing exercise.",
-          "translation": "他们从最初的市场测试中了解了许多信息。",
+          "text": "The researchers found that the initial response to the policy was positive, but support declined later.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The initial image projected was of a caring, effective president.",
-          "translation": "他最初表现出的是一个充满爱心、办事有效的总统形象。",
+          "text": "Although the initial cost of renewable energy infrastructure is high, the long-term benefits are considerable.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "The aim of this initial meeting is to clarify the issues.",
-          "translation": "本次初步会议的目标是澄清这些问题。",
+          "text": "My initial impression of online classes was negative, but they became more useful once teachers adapted.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"initial\" in one IELTS-style sentence about health."
+        "instruction": "Use \"initial\" in one IELTS-style sentence about an early stage, cost, reaction, or impression."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -2157,10 +2156,10 @@
       "word": "labour",
       "lemma": "labour",
       "ipa": "/ˈlebɚ/",
-      "partOfSpeech": "v.",
-      "sense": "劳动",
-      "englishDefinition": "Work, especially physical work; workers as a group",
-      "chineseMeaning": "劳动，劳动力；工作，尤指体力劳动或工人群体",
+      "partOfSpeech": "n.",
+      "sense": "work, especially physical work, or the workers needed to do that work",
+      "englishDefinition": "Work, especially physical work, or the supply of workers available for jobs in an economy or industry.",
+      "chineseMeaning": "劳动；劳动力；尤指体力工作或某行业所需的工人",
       "topic": "work",
       "taskTypes": [
         "reading",
@@ -2168,40 +2167,39 @@
       ],
       "register": "formal",
       "collocations": [
-        "that Labour",
-        "Labour needed",
-        "the Labour",
-        "Labour Party"
+        "labour market",
+        "skilled labour",
+        "labour shortage"
       ],
       "paraphrases": [
         "workforce",
         "workers",
-        "employment"
+        "manual work"
       ],
       "confusions": [],
       "contexts": [
         {
           "kind": "reading",
-          "text": "It was the uncommitted that Labour needed to reach.",
-          "translation": "工党需要拉拢的是未表态者。",
+          "text": "The report links rising labour costs to the relocation of factories to smaller cities.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "He's been a keen supporter of the Labour Party all his life.",
-          "translation": "他一生都是工党的热情拥护者。",
+          "text": "Many farms now depend on seasonal labour because local residents are unwilling to do physically demanding work.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "The Independent Labour Party was founded in Bradford on January 13, 1893.",
-          "translation": "独立工党1893年1月13日在布拉德福德成立。",
+          "text": "In my city, a labour shortage in care services has made it harder for families to find support for older relatives.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"labour\" in one IELTS-style sentence about work."
+        "instruction": "Use \"labour\" in one IELTS-style sentence about employment, working conditions, or the labour market."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -2458,9 +2456,9 @@
       "lemma": "select",
       "ipa": "/sɪˈlɛkt/",
       "partOfSpeech": "v.",
-      "sense": "选择",
-      "englishDefinition": "To choose something from a group, especially after careful thought",
-      "chineseMeaning": "选择，挑选；从群体中选出某物",
+      "sense": "to choose someone or something carefully from a group of options",
+      "englishDefinition": "To choose a person, item, or option from a larger group, often after comparing alternatives.",
+      "chineseMeaning": "选择；挑选；从一组对象中慎重选出",
       "topic": "health",
       "taskTypes": [
         "reading",
@@ -2468,38 +2466,39 @@
       ],
       "register": "formal",
       "collocations": [
-        "select effectively",
-        "select carefully"
+        "select candidates",
+        "carefully select",
+        "select from a list"
       ],
       "paraphrases": [
         "choose",
         "pick",
-        "opt for"
+        "identify"
       ],
       "confusions": [],
       "contexts": [
         {
           "kind": "reading",
-          "text": "She selected a low gear and started down the track carefully.",
-          "translation": "她选了低速挡小心翼翼地沿小径下行。",
+          "text": "The researchers selected participants from several schools to compare study habits across age groups.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Price quotes on selected product categories will be sent on request.",
-          "translation": "所选产品类别的报价承索即寄。",
+          "text": "Governments should select transport projects according to long-term public need rather than short-term political gain.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "The sample was selected from the medical records of two general practices.",
-          "translation": "样本选自两个全科诊所的病历档案。",
+          "text": "When I buy a phone, I usually select the model that offers good battery life instead of the latest design.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"select\" in one IELTS-style sentence about health."
+        "instruction": "Use \"select\" in one IELTS-style sentence about choosing people, options, or priorities."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -2515,10 +2514,10 @@
       "word": "sequence",
       "lemma": "sequence",
       "ipa": "/ˈsikwəns, -ˌkwɛns/",
-      "partOfSpeech": "v.",
-      "sense": "[数]数列",
-      "englishDefinition": "A series of related things or events in a particular order",
-      "chineseMeaning": "顺序，序列；按特定顺序排列的一系列相关事物或事件",
+      "partOfSpeech": "n.",
+      "sense": "a series of things, events, or steps arranged in a particular order",
+      "englishDefinition": "A set of related events, stages, or items that happen or are arranged in a specific order.",
+      "chineseMeaning": "顺序；序列；按特定次序排列的一组步骤或事件",
       "topic": "media",
       "taskTypes": [
         "reading",
@@ -2526,38 +2525,39 @@
       ],
       "register": "formal",
       "collocations": [
-        "sequence effectively",
-        "sequence carefully"
+        "sequence of events",
+        "logical sequence",
+        "in sequence"
       ],
       "paraphrases": [
         "order",
         "series",
-        "succession"
+        "progression"
       ],
       "confusions": [],
       "contexts": [
         {
           "kind": "reading",
-          "text": "They are only available when playing a MIDI file by external sequencer!",
-          "translation": "他们只用时由外部音序演奏MIDI文件!",
+          "text": "The passage describes the sequence of events that led to the rapid growth of the city.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Full - function 768 ppt sequencer with 16 song and 16 arrangement tracks.",
-          "translation": "全功能768西洋参多糖编曲的16首歌曲和16日安排轨道.",
+          "text": "Task 1 answers are clearer when the process is explained in a logical sequence from start to finish.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In a multimedia system, the sequencer is a computer application.",
-          "translation": "在多媒体系统中, 音序器是一个应用程序.",
+          "text": "I remember the sequence of steps more easily when a teacher demonstrates the whole process first.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"sequence\" in one IELTS-style sentence about media."
+        "instruction": "Use \"sequence\" in one IELTS-style sentence about events, stages, or explaining a process."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -2874,9 +2874,9 @@
       "lemma": "vary",
       "ipa": "/ˈveri/",
       "partOfSpeech": "v.",
-      "sense": "变化",
-      "englishDefinition": "To change or be different depending on the situation",
-      "chineseMeaning": "变化，不同；根据情况而改变或有差异",
+      "sense": "to differ or change according to the situation, place, time, or person involved",
+      "englishDefinition": "To be different in different situations, or to change within a range rather than stay the same.",
+      "chineseMeaning": "变化；不同；因时间、地点或情况而有所差异",
       "topic": "crime",
       "taskTypes": [
         "reading",
@@ -2884,8 +2884,9 @@
       ],
       "register": "formal",
       "collocations": [
-        "vary effectively",
-        "vary carefully"
+        "vary considerably",
+        "vary according to",
+        "prices vary"
       ],
       "paraphrases": [
         "differ",
@@ -2896,26 +2897,26 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The name of the hotel vas \" The Grand Eurasian Hotel. \"",
-          "translation": "旅馆名叫 “ 欧亚大旅社 ”.",
+          "text": "The data show that household energy use can vary considerably between urban and rural areas.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "That was friendship enough in this world, all that vas needed.",
-          "translation": "在这个世界里,这样的友谊也就够了, 最需要的也就是这一点.",
+          "text": "The effects of screen time on children may vary according to age, content, and parental supervision.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "He vas imprisoned for passing forged banknotes.",
-          "translation": "他因使用伪钞而被监禁.",
+          "text": "Food prices in my area vary from season to season, especially for imported fruit.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"vary\" in one IELTS-style sentence about crime."
+        "instruction": "Use \"vary\" in one IELTS-style sentence about differences across groups, places, or time."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -4296,9 +4297,9 @@
       "lemma": "authority",
       "ipa": "/əˈθɔrəti/",
       "partOfSpeech": "n.",
-      "sense": "权威",
-      "englishDefinition": "The power or right to make decisions or give orders",
-      "chineseMeaning": "权威，权力；做决策或发布命令的权力",
+      "sense": "the power to make decisions and enforce rules, or an official body that has that power",
+      "englishDefinition": "The right or power to make decisions and control what happens, or the organisation that holds that power.",
+      "chineseMeaning": "权力；权威；拥有管理和决策权的官方机构",
       "topic": "government",
       "taskTypes": [
         "reading",
@@ -4308,39 +4309,38 @@
       "register": "formal",
       "collocations": [
         "local authority",
-        "authority home",
-        "The authority",
-        "authority must"
+        "public authority",
+        "have the authority to"
       ],
       "paraphrases": [
         "power",
         "control",
-        "influence"
+        "official body"
       ],
       "confusions": [],
       "contexts": [
         {
           "kind": "reading",
-          "text": "Fifteen-year-old Danny is on the run from a local authority home.",
-          "translation": "15岁的丹尼从地方当局的收容所逃跑了。",
+          "text": "The article explains how local authorities are struggling to fund housing and waste collection services.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The authority must make suitable accommodation available to the family.",
-          "translation": "当局必须给这个家庭提供适当的食宿条件。",
+          "text": "Schools should have the authority to adapt part of the curriculum to local employment needs.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "The Advertising Standards Authority accused estate agents of using blatant untruths.",
-          "translation": "广告标准管理局控告房地产代理商使用无耻的谎言。",
+          "text": "I think city authorities should invest more in safe cycling routes before widening more roads.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"authority\" in one IELTS-style sentence about government."
+        "instruction": "Use \"authority\" in one IELTS-style sentence about power, regulation, or public institutions."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -4357,9 +4357,9 @@
       "lemma": "available",
       "ipa": "/əˈveləbəl/",
       "partOfSpeech": "adj.",
-      "sense": "可获得的",
-      "englishDefinition": "Ready to be used or obtained; accessible",
-      "chineseMeaning": "可用的，可获得的；准备就绪或可获取的",
+      "sense": "ready to be used, obtained, or accessed when needed",
+      "englishDefinition": "Able to be used, found, or obtained at a particular time, especially when people need it.",
+      "chineseMeaning": "可获得的；可使用的；需要时能够取得的",
       "topic": "health",
       "taskTypes": [
         "reading",
@@ -4367,40 +4367,39 @@
       ],
       "register": "formal",
       "collocations": [
-        "water available",
-        "commonly available",
-        "available include",
-        "are available"
+        "readily available",
+        "widely available",
+        "resources available"
       ],
       "paraphrases": [
         "accessible",
         "obtainable",
-        "ready"
+        "on hand"
       ],
       "confusions": [],
       "contexts": [
         {
           "kind": "reading",
-          "text": "They have only a vague idea of the amount of water available.",
-          "translation": "他们只是大概知道可用水的总量。",
+          "text": "The passage compares how much clean water is available in different regions during periods of drought.",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Other amenities, less commonly available, include a library and exercise room.",
-          "translation": "还有一些不太常有的设施，包括图书馆和健身房。",
+          "text": "University places should be made more widely available to students from low-income families.",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "Cheap goods are available, but not in sufficient quantities to satisfy demand.",
-          "translation": "有一些廉价的商品，但是数量不足以满足需求。",
+          "text": "Public transport is more useful when reliable services are available late in the evening.",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"available\" in one IELTS-style sentence about health."
+        "instruction": "Use \"available\" in one IELTS-style sentence about access to services, resources, or opportunities."
       },
       "sourceQuality": {
         "relevanceScore": 4,

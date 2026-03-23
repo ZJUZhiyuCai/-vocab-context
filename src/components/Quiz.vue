@@ -47,6 +47,29 @@
           </button>
         </div>
 
+        <!-- Context-first Session 新模式入口 -->
+        <div v-if="learnedCount > 0" :class="['mt-4 p-4 rounded-2xl border', isDark ? 'bg-violet-500/5 border-violet-500/20' : 'bg-violet-50 border-violet-200']">
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-4">
+              <div :class="['w-12 h-12 rounded-xl flex items-center justify-center', isDark ? 'bg-violet-500/20' : 'bg-violet-100']">
+                <svg class="w-6 h-6 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 :class="['font-bold', isDark ? 'text-white' : 'text-slate-900']">语境优先学习</h3>
+                <p :class="['text-sm', isDark ? 'text-gray-400' : 'text-gray-600']">先读语境，再做题，深度理解单词用法</p>
+              </div>
+            </div>
+            <button
+              @click="startContextSession"
+              class="px-6 py-2.5 rounded-xl bg-violet-600 text-white font-semibold shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
+            >
+              开始学习
+            </button>
+          </div>
+        </div>
+
         <!-- 空状态 -->
         <div v-else class="empty-state">
           <div class="flex justify-center mb-6 text-slate-700/50">
@@ -92,6 +115,15 @@
       />
     </div>
 
+    <!-- Context-first Session -->
+    <div v-if="currentMode === 'context'" :class="['session-container', isDark ? 'dark' : 'light']">
+      <ContextSession
+        :bundles="contextBundles"
+        @complete="handleContextComplete"
+        @exit="exitSession"
+      />
+    </div>
+
     <!-- 单词列表弹窗 -->
     <div v-if="showWordList" class="modal-overlay" @click.self="showWordList = false">
       <div :class="['modal-container', isDark ? 'dark' : 'light']">
@@ -110,6 +142,7 @@
 import { ref, computed, onMounted } from 'vue'
 import ReviewSession from './quiz/ReviewSession.vue'
 import ReviewQueuePreview from './ReviewQueuePreview.vue'
+import ContextSession from './context/ContextSession.vue'
 import { useTheme } from '../composables/useTheme.js'
 
 const { isDark } = useTheme()
@@ -195,6 +228,22 @@ const learnedWords = computed(() => {
     })
 })
 
+// Context-first Session: 将单词转换为 bundle 格式
+const contextBundles = computed(() => {
+  return learnedWords.value.slice(0, 5).map(word => ({
+    bundleId: word.id,
+    word: word.word,
+    ipa: word.ipa || '',
+    partOfSpeech: word.partOfSpeech || '',
+    meaning: word.meaning || '',
+    englishDefinition: word.englishDefinition || '',
+    contexts: word.contexts || [],
+    paraphrases: word.paraphrases || [],
+    collocations: word.collocations || [],
+    topic: word.topic || 'general'
+  }))
+})
+
 // 获取单词列表详细数据
 const wordListData = computed(() => {
   return learnedWords.value.map(word => {
@@ -213,6 +262,17 @@ const startSession = (mode) => {
   sessionMode.value = mode
   startIndex.value = 0
   currentMode.value = 'session'
+}
+
+// 开始 Context-first Session
+const startContextSession = () => {
+  currentMode.value = 'context'
+}
+
+// Context Session 完成
+const handleContextComplete = (summary) => {
+  console.log('Context session complete:', summary)
+  currentMode.value = null
 }
 
 // 从列表开始学习

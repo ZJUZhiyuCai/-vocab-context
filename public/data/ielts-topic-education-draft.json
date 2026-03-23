@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-22T14:58:38.237Z",
+  "generatedAt": "2026-03-23T01:01:23.040Z",
   "approvalStatus": "draft",
   "draft": true,
   "topic": "education",
@@ -4503,19 +4503,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "A rewarding issue in education systems is whether policy can improve student learning and access.",
+          "text": "Volunteering can be a rewarding experience because it builds confidence as well as practical skills.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "It is rewarding for governments to support long-term improvements in student learning and access.",
+          "text": "Teaching can be financially difficult but still highly rewarding for people who value social contribution.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "I think rewarding changes are needed if society wants better results in education systems.",
+          "text": "I find language learning rewarding because I can use it in both travel and work.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -4743,19 +4743,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "A diligent issue in education systems is whether policy can improve student learning and access.",
+          "text": "Diligent students often improve steadily because they review feedback carefully and work consistently.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "It is diligent for governments to support long-term improvements in student learning and access.",
+          "text": "Academic success depends not only on talent but also on diligent effort over time.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "I think diligent changes are needed if society wants better results in education systems.",
+          "text": "I would describe my best teachers as diligent because they always prepared lessons thoroughly.",
           "translation": "",
           "purpose": "far-transfer"
         }
