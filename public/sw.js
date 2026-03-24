@@ -1,4 +1,4 @@
-const CACHE_NAME = 'vocab-context-v2026-03-23-release-1';
+const CACHE_NAME = 'vocab-context-v2026-03-24-release-2';
 const APP_SHELL_URLS = [
   '/',
   '/index.html',

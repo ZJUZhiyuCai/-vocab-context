@@ -8,27 +8,18 @@
   <meta http-equiv="Expires" content="0">
   <title>VocabMan - 语境词汇学习</title>
 
-  <!-- PWA Manifest -->
   <link rel="manifest" href="/manifest.json">
-
-  <!-- 主题色 -->
   <meta name="theme-color" content="#5c6b5c">
-
-  <!-- Apple Touch Icon -->
   <link rel="apple-touch-icon" href="/icon-192.png">
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="/icon-192.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/icon-192.png">
 
-  <!-- PWA Meta Tags -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="VocabMan">
   <meta name="application-name" content="VocabMan">
   <meta name="mobile-web-app-capable" content="yes">
 
-  <!-- Windows Tile -->
   <meta name="msapplication-TileColor" content="#5c6b5c">
   <meta name="msapplication-config" content="/browserconfig.xml">
 </head>
@@ -36,23 +27,24 @@
   <div id="app"></div>
   <script type="module" src="/src/main.js"></script>
 
-  <!-- Service Worker 注册 -->
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/sw.js')
           .then(registration => {
             console.log('SW registered: ', registration);
+            registration.update();
 
-            // 检查更新
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+              window.location.reload();
+            });
+
             registration.addEventListener('updatefound', () => {
               const newWorker = registration.installing;
               newWorker.addEventListener('statechange', () => {
                 if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                  // 新的Service Worker可用，提示用户刷新
                   if (confirm('发现新版本，是否立即更新？')) {
                     newWorker.postMessage({ type: 'SKIP_WAITING' });
-                    window.location.reload();
                   }
                 }
               });
