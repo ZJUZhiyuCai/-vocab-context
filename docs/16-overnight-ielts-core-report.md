@@ -979,3 +979,160 @@ candidate: 77
 - Blockers: none
 - Next recommendations: stay in maintenance mode; continue another small explicit source-of-truth enrichment pass from the remaining inferred-field set, prioritising high-transfer words such as `injure`, `previous`, `individual`, `subscribe`, `concentrate`, and `stable`.
 - Current run time: 2026-03-23 09:02:15 +08:00.
+
+## 2026-03-23 10:02 +08:00
+
+- Approved count: 411
+- Rejected count: 218
+- Candidate count: 0
+- Approved this run: none; the review gate remained empty and no new approvals were warranted
+- Rejected this run: none; there were no pending candidates to reject
+- Enriched this run: 6 approved reviewed-source entries updated with explicit editor metadata
+- QA status: passed for `public/data/ielts-core-500.json`, `public/data/ielts-core-500-generated-draft.json`, `public/data/ielts-topic-education-draft.json`, `public/data/ielts-topic-environment-draft.json`, and `public/data/ielts-topic-technology-draft.json`
+- Build status: `npm run build` passed
+- Topic-pack progress: education 115, environment 67, technology 48
+- Notable approved words refined: `injure`, `previous`, `individual`, `subscribe`, `concentrate`, `primary`
+- Notable rejected words: none
+- Notable changes:
+  - Added `scripts/archive/maintenance-ielts-2026-03-23-run10.cjs` and used it to replace weak or incomplete reviewed-source metadata for six approved entries.
+  - Repaired broken source text in `primary` and replaced unsafe generated contexts for `injure`; filled missing senses, collocations, contexts, prompts, and explicit part-of-speech metadata across the full six-word batch.
+  - Regenerated approved core bundles, generated draft bundles, and all three draft topic packs without changing gated counts.
+  - Reduced approved reviewed-source entries still missing one or more substantive editor fields from 69 to 64; the broader raw missing-field count remains higher because many older approvals still lack explicit `editorPartOfSpeech` despite already having acceptable bundle content.
+- Additional quality signal: `node scripts/real-audit.cjs` still reports 0 generic definitions, 0 blank IPA, 0 Chinese meaning issues, 0 weak paraphrases, 0 template contexts, and 0 invalid collocations.
+- Blockers: none
+- Next recommendations: stay in maintenance mode; continue another small explicit source-of-truth enrichment pass from the remaining substantive inferred-field set, with safe candidates including `prowl`, `divulge`, `heartbreaking`, `boycott`, `debrief`, and `discredit` only where IELTS transfer remains clear.
+- Current run time: 2026-03-23 10:02:06 +08:00.
+
+## 2026-03-23 11:01 +08:00
+
+- Approved count: 411
+- Rejected count: 218
+- Candidate count: 0
+- Approved this run: none; the review gate remained empty and no new approvals were warranted
+- Rejected this run: none; there were no pending candidates to reject
+- Enriched this run: 40 approved reviewed-source entries updated with explicit `editorPartOfSpeech` values
+- QA status: passed for `public/data/ielts-core-500.json`, `public/data/ielts-core-500-generated-draft.json`, `public/data/ielts-topic-education-draft.json`, `public/data/ielts-topic-environment-draft.json`, and `public/data/ielts-topic-technology-draft.json`
+- Build status: `npm run build` passed
+- Topic-pack progress: education 115, environment 67, technology 48
+- Notable approved words refined: `maintain`, `assess`, `assist`, `justify`, `analyse`, `affect`, `indicate`, `positive`
+- Notable rejected words: none
+- Notable changes:
+  - Added `scripts/archive/maintenance-ielts-2026-03-23-run11.cjs` and used it to backfill explicit reviewed-source part-of-speech metadata for 40 already-approved entries whose bundle content was already IELTS-safe.
+  - Regenerated approved core bundles, generated draft bundles, and all three draft topic packs without changing gated counts or introducing any new approved items.
+  - Reduced the reviewed-source backlog of approvals missing only `editorPartOfSpeech` from 185 to 145; 91 approved entries still need more substantive editor-field work beyond POS cleanup.
+- Additional quality signal: `node scripts/real-audit.cjs` still reports 0 generic definitions, 0 blank IPA, 0 Chinese meaning issues, 0 weak paraphrases, 0 template contexts, and 0 invalid collocations.
+- Blockers: none
+- Next recommendations: stay in maintenance mode; continue another POS-only cleanup batch from stable high-transfer approvals such as `export`, `interpret`, `obtain`, `relevant`, `appropriate`, and `regulate`, then return to the 91-entry substantive metadata backlog.
+- Current run time: 2026-03-23 11:01:03 +08:00.
+## 2026-03-23 13:11 +08:00
+
+- Approved count: 411
+- Rejected count: 218
+- Candidate count: 0
+- Approved this run: none; the review gate remained empty and no new approvals were warranted
+- Rejected this run: none; there were no pending candidates to reject
+- Enriched this run: 12 approved reviewed-source entries updated; 10 received explicit `editorPartOfSpeech` values and 2 corrupted `editorSense` strings were repaired
+- QA status: passed for `public/data/ielts-core-500.json`, `public/data/ielts-core-500-generated-draft.json`, `public/data/ielts-topic-education-draft.json`, `public/data/ielts-topic-environment-draft.json`, and `public/data/ielts-topic-technology-draft.json`
+- Build status: `npm run build` passed
+- Topic-pack progress: education 115, environment 67, technology 48
+- Notable approved words refined: `conclude`, `construct`, `define`, `distribute`, `ensure`, `establish`, `estimate`, `evaluate`, `imply`, `invest`, `appropriate`, `sustainable`
+- Notable rejected words: none
+- Notable changes:
+  - Added `scripts/archive/maintenance-ielts-2026-03-23-run12.cjs` and used it for a bounded source-of-truth cleanup pass over already-approved entries.
+  - Backfilled explicit reviewed-source part-of-speech metadata for `conclude`, `construct`, `define`, `distribute`, `ensure`, `establish`, `estimate`, `evaluate`, `imply`, and `invest`.
+  - Repaired corrupted reviewed-source senses for `appropriate` and `sustainable`, then regenerated approved core bundles, generated draft bundles, and all three draft topic packs without changing gated counts.
+  - Reduced the reviewed-source backlog of approvals missing only `editorPartOfSpeech` from 172 to 161; the substantive metadata backlog remains 64.
+- Additional quality signal: `node scripts/real-audit.cjs` reports 0 generic definitions, 0 blank IPA, 0 Chinese meaning issues, 0 weak paraphrases, 0 template contexts, and 0 invalid collocations; a targeted scan for question-mark-corrupted approved `editorSense` values now returns 0.
+- Blockers: none
+- Next recommendations: stay in maintenance mode; continue another POS-only cleanup batch from stable high-transfer approvals such as `occur`, `perceive`, `philosophy`, `publish`, `rely`, and `derive`, then revisit the 64-entry substantive metadata backlog for low-risk enrichments.
+- Current run time: 2026-03-23 13:11:28 +08:00.
+
+## 2026-03-23 14:11 +08:00
+
+- Approved count: 411
+- Rejected count: 218
+- Candidate count: 0
+- Approved this run: none; the review gate remained empty and no new approvals were warranted
+- Rejected this run: none; there were no pending candidates to reject
+- Enriched this run: 12 approved reviewed-source entries updated with explicit `editorPartOfSpeech` values
+- QA status: passed for `public/data/ielts-core-500.json`, `public/data/ielts-core-500-generated-draft.json`, `public/data/ielts-topic-education-draft.json`, `public/data/ielts-topic-environment-draft.json`, and `public/data/ielts-topic-technology-draft.json`
+- Build status: `npm run build` passed
+- Topic-pack progress: education 115, environment 67, technology 48
+- Notable approved words refined: `occur`, `perceive`, `philosophy`, `publish`, `rely`, `derive`, `illustrate`, `participate`, `complex`, `concept`, `constant`, `income`
+- Notable rejected words: none
+- Notable changes:
+  - Added `scripts/archive/maintenance-ielts-2026-03-23-run13.cjs` and used it for a bounded POS-only maintenance pass over 12 already-approved entries whose published bundle part-of-speech values were already correct.
+  - Regenerated approved core bundles, generated draft bundles, and refreshed all three draft topic packs without changing gated counts or replacing any legacy IELTS files.
+  - Reduced the reviewed-source backlog of approvals missing only `editorPartOfSpeech` from 161 to 149; the substantive metadata backlog remains 64.
+- Additional quality signal: `npm run audit:real` still reports 0 generic definitions, 0 blank IPA, 0 Chinese meaning issues, 0 weak paraphrases, 0 template contexts, and 0 invalid collocations.
+- Blockers: none
+- Next recommendations: stay in maintenance mode; continue another POS-only cleanup batch from stable high-transfer approvals such as `policy`, `similar`, `context`, `potential`, `resource`, and `analysis`, then return to the 64-entry substantive metadata backlog for low-risk enrichments only.
+- Current run time: 2026-03-23 14:11:58 +08:00.
+
+## 2026-03-23 15:11 +08:00
+
+- Approved count: 411
+- Rejected count: 218
+- Candidate count: 0
+- Approved this run: none; the review gate remained empty and no new approvals were warranted
+- Rejected this run: none; there were no pending candidates to reject
+- Enriched this run: 12 approved reviewed-source entries updated with explicit editor metadata, including repaired contexts and new production prompts
+- QA status: passed for `public/data/ielts-core-500.json`, `public/data/ielts-core-500-generated-draft.json`, `public/data/ielts-topic-education-draft.json`, `public/data/ielts-topic-environment-draft.json`, and `public/data/ielts-topic-technology-draft.json`
+- Build status: `npm run build` passed
+- Topic-pack progress: education 115, environment 67, technology 48
+- Notable approved words refined: `legislation`, `accountability`, `stabilize`, `escalate`, `prevail`, `substantial`, `implication`, `deterrent`, `incentive`, `precedent`, `disparity`, `contentious`
+- Notable rejected words: none
+- Notable changes:
+  - Added [`scripts/archive/maintenance-ielts-2026-03-23-run14.cjs`](/D:/my-projects/vocab-context/scripts/archive/maintenance-ielts-2026-03-23-run14.cjs) and used it for a bounded maintenance pass over 12 already-approved high-transfer entries.
+  - Replaced weak templated reviewed-source contexts such as `stronger financial incentive` and `Governments often stabilize` with explicit IELTS-safe reading, writing, and speaking contexts, and filled the previously blank `editorProductionPrompt` fields for the full batch.
+  - Regenerated approved core bundles, generated draft bundles, and refreshed all three draft topic packs without changing gated counts or replacing any legacy IELTS files.
+  - Reduced the substantive reviewed-source backlog from 64 to 52; within that set, entries missing only a production prompt dropped to 30.
+- Additional quality signal: `npm run audit:real` reports 0 generic definitions, 0 blank IPA, 0 Chinese meaning issues, 0 weak paraphrases, 0 template contexts, and 0 invalid collocations.
+- Blockers: none
+- Next recommendations: stay in maintenance mode; continue another small explicit enrichment pass from the remaining 52-entry substantive backlog, prioritising prompt-only or otherwise clean high-transfer items before attempting noisier words such as `prowl`, `divulge`, or `heartbreaking`.
+- Current run time: 2026-03-23 15:11:26 +08:00.
+
+## 2026-03-23 16:13 +08:00
+
+- Approved count: 411
+- Rejected count: 218
+- Candidate count: 0
+- Approved this run: none; the review gate remained empty and no new approvals were warranted
+- Rejected this run: none; there were no pending candidates to reject
+- Enriched this run: 13 approved reviewed-source entries updated; 12 received explicit `editorPartOfSpeech` values and `date` received repaired contexts, collocations, and a production prompt
+- QA status: passed for `public/data/ielts-core-500.json`, `public/data/ielts-core-500-generated-draft.json`, `public/data/ielts-topic-education-draft.json`, `public/data/ielts-topic-environment-draft.json`, and `public/data/ielts-topic-technology-draft.json`
+- Build status: `npm run build` passed
+- Topic-pack progress: education 115, environment 67, technology 48
+- Notable approved words refined: `policy`, `similar`, `context`, `potential`, `resource`, `analysis`, `legal`, `domestic`, `principle`, `technical`, `alternative`, `considerable`, `date`
+- Notable rejected words: none
+- Notable changes:
+  - Added [`scripts/archive/maintenance-ielts-2026-03-23-run15.cjs`](/D:/my-projects/vocab-context/scripts/archive/maintenance-ielts-2026-03-23-run15.cjs) for a bounded maintenance pass over already-approved high-transfer entries.
+  - Backfilled explicit reviewed-source part-of-speech metadata for 12 stable approvals: `policy`, `similar`, `context`, `potential`, `resource`, `analysis`, `legal`, `domestic`, `principle`, `technical`, `alternative`, and `considerable`.
+  - Repaired the remaining prompt-only approved entry, `date`, by replacing weak generated contexts, removing the audit-triggering collocation `to date`, and adding an explicit IELTS-safe production prompt.
+  - Regenerated approved core bundles, generated draft bundles, and refreshed all three draft topic packs without changing gated counts or replacing any legacy IELTS files.
+- Additional quality signal: `npm run audit:real` reports 0 generic definitions, 0 blank IPA, 0 Chinese meaning issues, 0 weak paraphrases, 0 template contexts, and 0 invalid collocations.
+- Blockers: none
+- Next recommendations: stay in maintenance mode; continue another POS-only cleanup batch from the remaining 188 reviewed-source approvals missing only `editorPartOfSpeech`, then return to the 51-entry substantive backlog for low-risk enrichments only.
+- Current run time: 2026-03-23 16:13:32 +08:00.
+
+## 2026-03-23 22:15 +08:00
+
+- Approved count: 411
+- Rejected count: 218
+- Candidate count: 0
+- Approved this run: none; the review gate remained empty and no new approvals were warranted
+- Rejected this run: none; there were no pending candidates to reject
+- Enriched this run: 12 approved reviewed-source entries updated with explicit `editorPartOfSpeech` values
+- QA status: passed for `public/data/ielts-core-500.json`, `public/data/ielts-core-500-generated-draft.json`, `public/data/ielts-topic-education-draft.json`, `public/data/ielts-topic-environment-draft.json`, and `public/data/ielts-topic-technology-draft.json`
+- Build status: `npm run build` passed
+- Topic-pack progress: education 122, environment 72, technology 49
+- Notable approved words refined: `environment`, `interaction`, `data`, `percent`, `period`, `response`, `role`, `category`, `contrast`, `economy`, `method`, `outcome`
+- Notable rejected words: none
+- Notable changes:
+  - Added [`scripts/archive/maintenance-ielts-2026-03-23-run16.cjs`](/D:/my-projects/vocab-context/scripts/archive/maintenance-ielts-2026-03-23-run16.cjs) for a bounded POS-only maintenance pass over 12 already-approved high-transfer entries whose reviewed metadata was otherwise complete.
+  - Regenerated approved core bundles, generated draft bundles, and refreshed all three draft topic packs without changing gated counts or replacing any legacy IELTS files.
+  - Reduced the reviewed-source backlog of approvals missing only `editorPartOfSpeech` from 188 to 176; the substantive metadata backlog remains 51.
+- Additional quality signal: `npm run audit:real` reports 0 generic definitions, 0 blank IPA, 0 Chinese meaning issues, 0 weak paraphrases, 0 template contexts, and 0 invalid collocations.
+- Blockers: none
+- Next recommendations: stay in maintenance mode; continue another bounded POS-only cleanup batch from the remaining 176 reviewed-source approvals missing only `editorPartOfSpeech`, then resume low-risk enrichment from the 51-entry substantive backlog only where sense/context quality is already strong.
+- Current run time: 2026-03-23 22:15:16 +08:00.

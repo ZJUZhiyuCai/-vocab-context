@@ -63,11 +63,17 @@
           >
             复习
           </button>
-          <button 
+          <button
             @click="$emit('navigate', 'quiz')"
             :class="['px-5 py-2 text-sm font-medium rounded-full shadow-sm transition-all', currentPage === 'quiz' ? 'text-white bg-emerald-600' : (isDark ? 'text-gray-400 hover:text-emerald-400 hover:bg-white/5' : 'text-gray-600 hover:text-emerald-600 hover:bg-black/5')]"
           >
             测验
+          </button>
+          <button
+            @click="$emit('navigate', 'context')"
+            :class="['px-5 py-2 text-sm font-medium rounded-full shadow-sm transition-all', currentPage === 'context' ? 'text-white bg-emerald-600' : (isDark ? 'text-gray-400 hover:text-emerald-400 hover:bg-white/5' : 'text-gray-600 hover:text-emerald-600 hover:bg-black/5')]"
+          >
+            语境
           </button>
           <button 
             @click="$emit('navigate', 'achievements')"

@@ -1,4 +1,4 @@
-import { createOpenRouterChatCompletion } from './openRouterClient.js';
+import { createAIChatCompletion } from './aiClient.js';
 
 /**
  * AI 智能测验生成器
@@ -18,7 +18,7 @@ export async function generateQuiz({ apiKey, word, otherWords, userLevel = 'B2' 
   const prompt = buildQuizPrompt(word, otherWords, userLevel);
 
   try {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey,
       messages: [{ role: 'user', content: prompt }],
       temperature: 0.7,
@@ -195,7 +195,7 @@ export async function generateFillBlankQuestion({ apiKey, word, userLevel = 'B2'
 只返回JSON，不要其他内容。`;
 
   try {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey,
       messages: [{ role: 'user', content: prompt }],
       temperature: 0.7,

@@ -2,7 +2,12 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = process.cwd();
-const CORE_FILE = path.join(ROOT, 'public/data/ielts-core-500.json');
+// Canonical production filename
+const CORE_FILE_CANONICAL = path.join(ROOT, 'public/data/ielts-foundation.json');
+// Legacy compatibility filename (fallback)
+const CORE_FILE_LEGACY = path.join(ROOT, 'public/data/ielts-core-500.json');
+// Prefer canonical, fallback to legacy
+const CORE_FILE = fs.existsSync(CORE_FILE_CANONICAL) ? CORE_FILE_CANONICAL : CORE_FILE_LEGACY;
 
 const weakParaphrases = new Set(['important', 'relevant', 'key term', 'act on', 'carry out']);
 const templatePatterns = [

@@ -1,89 +1,113 @@
-const CACHE_NAME = 'vocab-context-v1.0.0';
-const urlsToCache = [
+const CACHE_NAME = 'vocab-context-v2026-03-23-release-1';
+const APP_SHELL_URLS = [
   '/',
   '/index.html',
-  '/src/main.js',
-  '/src/App.vue',
-  '/src/styles/main.css',
-  '/data/words-data.json',
-  // 添加其他需要缓存的资源
+  '/manifest.json',
+  '/icon-192.png',
+  '/icon-512.png',
+  '/icon.svg'
 ];
 
-// 安装Service Worker
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => {
-        console.log('Opened cache');
-        return cache.addAll(urlsToCache.map(url => new Request(url, { cache: 'reload' })));
-      })
+    caches
+      .open(CACHE_NAME)
+      .then(cache => cache.addAll(APP_SHELL_URLS.map(url => new Request(url, { cache: 'reload' }))))
       .catch(error => {
         console.error('Cache installation failed:', error);
       })
   );
-  self.skipWaiting(); // 立即激活新的Service Worker
+
+  self.skipWaiting();
 });
 
-// 激活Service Worker
 self.addEventListener('activate', event => {
-  const cacheWhitelist = [CACHE_NAME];
   event.waitUntil(
-    caches.keys().then(cacheNames => {
-      return Promise.all(
+    caches.keys().then(cacheNames =>
+      Promise.all(
         cacheNames.map(cacheName => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
+          if (cacheName !== CACHE_NAME) {
             return caches.delete(cacheName);
           }
+          return Promise.resolve();
         })
-      );
-    })
+      )
+    )
   );
-  self.clients.claim(); // 立即控制所有页面
+
+  self.clients.claim();
 });
 
-// 拦截网络请求
 self.addEventListener('fetch', event => {
-  // 只处理 HTTP(S) 协议的请求，忽略 chrome-extension、chrome-search 等协议
-  if (!event.request.url.startsWith('http://') && !event.request.url.startsWith('https://')) {
+  if (event.request.method !== 'GET') return;
+
+  const requestUrl = new URL(event.request.url);
+  if (requestUrl.origin !== self.location.origin) return;
+
+  if (requestUrl.pathname.startsWith('/data/')) {
+    event.respondWith(networkFirst(event.request));
     return;
   }
 
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        // 缓存命中，返回缓存的资源
-        if (response) {
-          return response;
-        }
+  if (event.request.mode === 'navigate') {
+    event.respondWith(navigationRequest(event.request));
+    return;
+  }
 
-        // 缓存未命中，发起网络请求
-        return fetch(event.request).then(response => {
-          // 检查是否是有效响应
-          if (!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
-          }
-
-          // 克隆响应
-          const responseToCache = response.clone();
-
-          // 添加到缓存
-          caches.open(CACHE_NAME)
-            .then(cache => {
-              cache.put(event.request, responseToCache);
-            });
-
-          return response;
-        }).catch(() => {
-          // 网络请求失败，返回离线页面
-          if (event.request.destination === 'document') {
-            return caches.match('/index.html');
-          }
-        });
-      })
-  );
+  if (requestUrl.pathname.startsWith('/assets/') || isStaticAsset(event.request)) {
+    event.respondWith(cacheFirst(event.request));
+  }
 });
 
-// 消息监听
+function isStaticAsset(request) {
+  return ['style', 'script', 'image', 'font'].includes(request.destination);
+}
+
+async function navigationRequest(request) {
+  try {
+    const response = await fetch(request);
+    await cacheResponse(request, response);
+    return response;
+  } catch (error) {
+    return (await caches.match(request)) || caches.match('/index.html');
+  }
+}
+
+async function networkFirst(request) {
+  try {
+    const response = await fetch(request);
+    await cacheResponse(request, response);
+    return response;
+  } catch (error) {
+    const cachedResponse = await caches.match(request);
+    if (cachedResponse) {
+      return cachedResponse;
+    }
+
+    throw error;
+  }
+}
+
+async function cacheFirst(request) {
+  const cachedResponse = await caches.match(request);
+  if (cachedResponse) {
+    return cachedResponse;
+  }
+
+  const response = await fetch(request);
+  await cacheResponse(request, response);
+  return response;
+}
+
+async function cacheResponse(request, response) {
+  if (!response || response.status !== 200 || (response.type !== 'basic' && response.type !== 'cors')) {
+    return;
+  }
+
+  const cache = await caches.open(CACHE_NAME);
+  await cache.put(request, response.clone());
+}
+
 self.addEventListener('message', event => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();

@@ -9,7 +9,7 @@
  */
 
 import { loadAISettings } from './aiService.js';
-import { createOpenRouterChatCompletion, getCompletionText, sanitizeApiKey } from './openRouterClient.js';
+import { createAIChatCompletion, getCompletionText, resolveApiKey } from './aiClient.js';
 
 // localStorage keys
 const CONVERSATION_KEY = 'vocabcontext_agent_conversations';
@@ -134,7 +134,7 @@ export class AIAgent {
    */
   getCleanedApiKey() {
     this.reloadApiSettings();
-    return sanitizeApiKey(this.apiSettings.apiKey);
+    return resolveApiKey(this.apiSettings.apiKey);
   }
 
   /**
@@ -142,7 +142,7 @@ export class AIAgent {
    * @returns {boolean}
    */
   isAvailable() {
-    return !!this.getCleanedApiKey();
+    return true;
   }
 
   /**
@@ -533,7 +533,7 @@ ${weakWords.slice(0, 10).map(w => `- ${w.word}: ${w.meaning}`).join('\n')}
    * @private
    */
   async callAI(prompt, options = {}) {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey: this.getCleanedApiKey(),
       messages: [
         {
@@ -554,7 +554,7 @@ ${weakWords.slice(0, 10).map(w => `- ${w.word}: ${w.meaning}`).join('\n')}
    * @private
    */
   async callAIChat(messages, options = {}) {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey: this.getCleanedApiKey(),
       messages,
       temperature: options.temperature || 0.7,

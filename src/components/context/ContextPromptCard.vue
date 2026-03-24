@@ -28,14 +28,14 @@
         </div>
 
         <!-- Context -->
-        <div :class="['p-6 rounded-2xl border mb-6', isDark ? 'bg-amber-500/5 border-amber-500/10' : 'bg-amber-50 border-amber-200']">
+        <div :class="['p-7 rounded-2xl border mb-6', isDark ? 'bg-amber-500/5 border-amber-500/10' : 'bg-amber-50 border-amber-200']">
           <div class="flex items-center gap-2 mb-4">
             <span class="w-1.5 h-6 rounded-full bg-gradient-to-b from-amber-400 to-orange-500"></span>
             <h3 :class="['text-sm font-bold', isDark ? 'text-amber-400' : 'text-amber-600']">
               语境理解
             </h3>
           </div>
-          <p :class="['text-xl leading-relaxed', isDark ? 'text-amber-100/90' : 'text-amber-900']">
+          <p :class="['text-xl leading-[1.9]', isDark ? 'text-amber-100/90' : 'text-amber-900']">
             {{ context?.text || 'Loading context...' }}
           </p>
           <p v-if="context?.translation" :class="['text-sm mt-3', isDark ? 'text-amber-300/50' : 'text-amber-700/70']">
@@ -46,7 +46,7 @@
         <!-- Hint -->
         <div :class="['p-4 rounded-xl border mb-6', isDark ? 'bg-slate-700/30 border-white/5' : 'bg-gray-50 border-gray-200']">
           <p :class="['text-sm', isDark ? 'text-gray-400' : 'text-gray-600']">
-            💡 阅读语境，猜测单词的含义。接下来将测试你对这个词的理解。
+            先凭语境猜意思，再答题。
           </p>
         </div>
 
@@ -91,6 +91,13 @@ const topicLabel = computed(() => {
     technology: '科技',
     government: '政府',
     health: '健康',
+    society: '社会',
+    economy: '经济',
+    work: '工作',
+    media: '媒体',
+    crime: '犯罪',
+    culture: '文化',
+    transport: '交通',
     general: '通用'
   }
   return labels[props.bundle?.topic] || props.bundle?.topic || '通用'

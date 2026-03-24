@@ -1,4 +1,4 @@
-import { createOpenRouterChatCompletion } from './openRouterClient.js';
+import { createAIChatCompletion } from './aiClient.js';
 
 /**
  * 词根词缀API服务
@@ -15,7 +15,7 @@ import { createOpenRouterChatCompletion } from './openRouterClient.js';
 export async function getEtymology({ apiKey, word }) {
   const prompt = buildPrompt(word)
 
-  const data = await createOpenRouterChatCompletion({
+  const data = await createAIChatCompletion({
     apiKey,
     messages: [
       {

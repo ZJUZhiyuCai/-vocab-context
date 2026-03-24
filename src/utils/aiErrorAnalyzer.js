@@ -1,4 +1,4 @@
-import { createOpenRouterChatCompletion } from './openRouterClient.js';
+import { createAIChatCompletion } from './aiClient.js';
 
 /**
  * AI 错题分析与学习建议
@@ -27,7 +27,7 @@ export async function analyzeErrors({ apiKey, mistakes, stats, userLevel = 'B2' 
   const prompt = buildAnalysisPrompt(mistakes, stats, userLevel);
 
   try {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey,
       messages: [{ role: 'user', content: prompt }],
       temperature: 0.6,
@@ -181,7 +181,7 @@ export async function analyzeWordError({ apiKey, word, userAnswer, correctAnswer
 只返回JSON，不要其他内容。`;
 
   try {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey,
       messages: [{ role: 'user', content: prompt }],
       temperature: 0.6,
@@ -267,7 +267,7 @@ ${weakAreas.map(area => `- ${area}`).join('\n')}
 只返回JSON，不要其他内容。`;
 
   try {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey,
       messages: [{ role: 'user', content: prompt }],
       temperature: 0.7,

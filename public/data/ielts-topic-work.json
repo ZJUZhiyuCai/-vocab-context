@@ -1,0 +1,1928 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-03-23T15:48:29.234Z",
+  "source": "IELTS Foundation",
+  "topic": "work",
+  "name": "IELTS Topic Pack - Work",
+  "totalBundles": 32,
+  "bundles": [
+    {
+      "bundleId": "work_significant_001",
+      "word": "significant",
+      "lemma": "significant",
+      "ipa": "/sɪɡˈnɪfɪkənt/",
+      "partOfSpeech": "adj.",
+      "sense": "important enough to be noticed or to have a clear effect on results or decisions",
+      "englishDefinition": "Important or large enough to be noticed, measured, or to influence a situation in a meaningful way.",
+      "chineseMeaning": "地理上的，与地区位置、范围或分布有关的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "significant effect",
+        "significant increase",
+        "statistically significant"
+      ],
+      "paraphrases": [
+        "substantial",
+        "considerable",
+        "noteworthy",
+        "meaningful"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The researchers found a significant difference in air quality between urban centres and smaller towns.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Public transport investment can have a significant effect on traffic congestion and productivity.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For me, the most significant change in education has been the growth of online learning tools.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"significant\" in one IELTS-style sentence about an important change, difference, or effect."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_proportion_013",
+      "word": "proportion",
+      "lemma": "proportion",
+      "ipa": "/prəˈpɔːʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the amount, share, or percentage of something in relation to the whole",
+      "englishDefinition": "A part, share, or percentage of a total, especially when comparing groups, trends, or categories.",
+      "chineseMeaning": "影响，对人、结果或情况产生作用或变化",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "large proportion",
+        "small proportion",
+        "significant proportion"
+      ],
+      "paraphrases": [
+        "percentage",
+        "share",
+        "fraction"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A high proportion of the population in the study reported difficulty accessing affordable healthcare.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The proportion of household income spent on rent has risen sharply in many major cities.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my area, a growing proportion of students choose online resources instead of printed textbooks.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"proportion\" in one IELTS-style sentence about a percentage, share, or part of a whole."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_benefit_017",
+      "word": "benefit",
+      "lemma": "benefit",
+      "ipa": "/ˈbenɪfɪt/",
+      "partOfSpeech": "n.",
+      "sense": "an advantage or positive effect that improves a person, system, or situation",
+      "englishDefinition": "An advantage or helpful result that makes a person, activity, policy, or system better.",
+      "chineseMeaning": "连接，把……联系起来，说明事物之间存在关联",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "economic benefit",
+        "social benefit",
+        "benefit from"
+      ],
+      "paraphrases": [
+        "advantage",
+        "gain",
+        "positive effect"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "One clear benefit of preventive healthcare is that it can reduce long-term pressure on hospitals.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The main benefit of flexible working is that employees can manage time more efficiently.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think the biggest benefit of studying abroad is learning how to adapt to different cultures.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"benefit\" in one IELTS-style sentence about an advantage of a policy, habit, or technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_instance_024",
+      "word": "instance",
+      "lemma": "instance",
+      "ipa": "/ˈɪnstəns/",
+      "partOfSpeech": "n.",
+      "sense": "a particular example or single case of something happening",
+      "englishDefinition": "A particular example or case that shows how something happens or what it is like.",
+      "chineseMeaning": "实例；例子；某种情况的具体个案",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "for instance",
+        "in some instances",
+        "rare instance"
+      ],
+      "paraphrases": [
+        "example",
+        "case",
+        "occurrence"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "One instance of rapid urban growth mentioned in the passage is the expansion of commuter towns.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "For instance, governments can reduce traffic by improving bus networks instead of building more roads.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "A good instance of technology improving daily life is mobile payment systems on public transport.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"instance\" or \"for instance\" in one IELTS-style sentence that gives a clear example."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_task_029",
+      "word": "task",
+      "lemma": "task",
+      "ipa": "/tæsk/",
+      "partOfSpeech": "n.",
+      "sense": "a piece of work or duty that someone needs to complete",
+      "englishDefinition": "A piece of work or activity that has to be done, often as part of a job, study plan, or larger process.",
+      "chineseMeaning": "任务；需要完成的一项工作或职责",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "complete a task",
+        "challenging task",
+        "assigned task"
+      ],
+      "paraphrases": [
+        "assignment",
+        "duty",
+        "job"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The first task in the experiment was to compare how quickly different groups solved the problem.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Household recycling becomes easier when the task is simple and collection systems are convenient.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "The most difficult task for many students is balancing part-time work with exam preparation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"task\" in one IELTS-style sentence about work, study, or solving a problem."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_labour_037",
+      "word": "labour",
+      "lemma": "labour",
+      "ipa": "/ˈlebɚ/",
+      "partOfSpeech": "n.",
+      "sense": "work, especially physical work, or the workers needed to do that work",
+      "englishDefinition": "Work, especially physical work, or the supply of workers available for jobs in an economy or industry.",
+      "chineseMeaning": "劳动；劳动力；尤指体力工作或某行业所需的工人",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "labour market",
+        "skilled labour",
+        "labour shortage"
+      ],
+      "paraphrases": [
+        "workforce",
+        "workers",
+        "manual work"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report links rising labour costs to the relocation of factories to smaller cities.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Many farms now depend on seasonal labour because local residents are unwilling to do physically demanding work.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my city, a labour shortage in care services has made it harder for families to find support for older relatives.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"labour\" in one IELTS-style sentence about employment, working conditions, or the labour market."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_valid_097",
+      "word": "valid",
+      "lemma": "valid",
+      "ipa": "/ˈvælɪd/",
+      "partOfSpeech": "adj.",
+      "sense": "based on sound reasoning, acceptable evidence, or official acceptance",
+      "englishDefinition": "Reasonable, well supported, or officially acceptable enough to be considered correct or effective.",
+      "chineseMeaning": "有效的，合理的，站得住脚的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "valid argument",
+        "valid reason",
+        "valid data",
+        "remain valid"
+      ],
+      "paraphrases": [
+        "sound",
+        "well founded",
+        "credible",
+        "legitimate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The researchers repeated the experiment to make sure the results were valid.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "This is a valid argument because it considers both the economic costs and the social benefits.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think online qualifications are valid if employers can trust the quality of the training.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"valid\" in one IELTS-style sentence about a reason, argument, result, or qualification."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_heartbreaking_144",
+      "word": "heartbreaking",
+      "lemma": "heartbreaking",
+      "ipa": "/ˈhɑrtˌbrekɪŋ/",
+      "partOfSpeech": "adj.",
+      "sense": "令人心碎的",
+      "englishDefinition": "Causing great sadness or emotional pain",
+      "chineseMeaning": "令人心碎的；引起巨大悲伤或情感痛苦的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "a heartbreaking",
+        "heartbreaking news",
+        "this heartbreaking",
+        "heartbreaking experience"
+      ],
+      "paraphrases": [
+        "devastating",
+        "distressing",
+        "tragic"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "There is a heartbreaking news report about starving children.",
+          "translation": "有一则关于饥饿儿童的令人心碎的新闻报导.",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "After this heartbreaking experience, Thorpe turned to professional sports.",
+          "translation": "在这次令人心碎的经历之后, 索普转向职业运动.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "This year we won't even be able to buy presents for our grandchildren. It's heartbreaking.",
+          "translation": "今年我们甚至无法给自己的孙儿辈买礼物了。这真让人心碎。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"heartbreaking\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_boycott_146",
+      "word": "boycott",
+      "lemma": "boycott",
+      "ipa": "/ˈbɔɪkɑt/",
+      "partOfSpeech": "v.",
+      "sense": "联合抵制",
+      "englishDefinition": "To refuse to buy, use, or take part in something as a protest",
+      "chineseMeaning": "抵制；拒绝购买、使用或参与某事以示抗议",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "a boycott",
+        "boycott of",
+        "Rosie Boycott",
+        "Boycott was"
+      ],
+      "paraphrases": [
+        "avoid",
+        "reject",
+        "refuse"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Opposition leaders had called for a boycott of the vote.",
+          "translation": "反对党领袖已号召人们拒绝投票。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Rosie Boycott was not involved editorially with Virago.",
+          "translation": "罗西·博伊科特不属于维拉戈出版公司的编辑队伍。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "We are asking people to boycott goods from companies that use child labour.",
+          "translation": "我们正呼吁大家抵制雇用童工的公司的产品。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"boycott\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_embark_152",
+      "word": "embark",
+      "lemma": "embark",
+      "ipa": "/ɪmˈbɑrk/",
+      "partOfSpeech": "v.",
+      "sense": "上飞机",
+      "englishDefinition": "To begin a journey or start a new project",
+      "chineseMeaning": "开始，着手；开始旅程或新项目",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "embark on reforms",
+        "embark on a project",
+        "embark on a career"
+      ],
+      "paraphrases": [
+        "begin",
+        "start",
+        "set out on"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Employers often embark when they try to improve performance or reduce costs.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Workplaces should embark more effectively if they want to retain skilled staff.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think managers need to embark earlier when problems begin to affect productivity.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"embark\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_communications_161",
+      "word": "communications",
+      "lemma": "communications",
+      "ipa": "/kəˌmjunɪ'keɪʃənz/",
+      "partOfSpeech": "n.",
+      "sense": "通信",
+      "englishDefinition": "The methods and systems used for exchanging information between people or places",
+      "chineseMeaning": "通讯，通信；人与人或地点之间交换信息的方法和系统",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "in communications",
+        "communications altered",
+        "official communications",
+        "communications was"
+      ],
+      "paraphrases": [
+        "interaction",
+        "exchange",
+        "correspondence"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The advances in communications altered the nature of information processing.",
+          "translation": "通讯技术的进步使信息处理发生了质的改变。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The prose of his official communications was so laboured, pompous and verbose.",
+          "translation": "他笔下的公文矫揉浮华，长篇大论。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Transport is difficult, communications are patchy.",
+          "translation": "交通困难，通信时断时续。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"communications\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 5,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_unprofessional_166",
+      "word": "unprofessional",
+      "lemma": "unprofessional",
+      "ipa": "/ˌʌnprəˈfɛʃənəl/",
+      "partOfSpeech": "adj.",
+      "sense": "非专业化的",
+      "englishDefinition": "Not showing the skills or standards expected of a professional",
+      "chineseMeaning": "不专业的；不符合专业标准或技能要求的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "unprofessional change",
+        "unprofessional impact"
+      ],
+      "paraphrases": [
+        "unskilled",
+        "improper",
+        "inappropriate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The day proved frustratingly unprofitable.",
+          "translation": "今天是劳而无功的一天，令人十分沮丧。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The newspaper is believed to have been unprofitable for at least the past decade.",
+          "translation": "据信这家报纸至少在过去10年中都没有盈利。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "After John found farming unprofitable, he moved to town and turned his hand to carpentry.",
+          "translation": "约翰发现务农无利可图后, 他就搬到城里开始做木匠.",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"unprofessional\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_interpersonal_205",
+      "word": "interpersonal",
+      "lemma": "interpersonal",
+      "ipa": "/ˌɪntərˈpɜrsənl/",
+      "partOfSpeech": "adj.",
+      "sense": "connected with relationships and communication between people",
+      "englishDefinition": "connected with relationships, communication, and interaction between people",
+      "chineseMeaning": "人与人之间的；人际的；人与人之间的关系的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "interpersonal skills",
+        "interpersonal communication",
+        "interpersonal conflict",
+        "interpersonal relationships"
+      ],
+      "paraphrases": [
+        "social",
+        "person-to-person"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Group projects can improve interpersonal skills when students are required to cooperate closely.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers increasingly expect graduates to develop strong interpersonal communication as well as technical ability.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my opinion, interpersonal skills are essential for teamwork in almost any job.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"interpersonal\" in one IELTS-style sentence about teamwork, communication, or education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_professionalism_207",
+      "word": "professionalism",
+      "lemma": "professionalism",
+      "ipa": "/prəˈfɛʃənəˌlɪzəm/",
+      "partOfSpeech": "n.",
+      "sense": "the high standard of behaviour and competence expected in professional work",
+      "englishDefinition": "the high standard of behaviour, skill, and responsibility expected in a professional role",
+      "chineseMeaning": "职业水准或特性；职业化",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "high professionalism",
+        "professionalism at work",
+        "demonstrate professionalism",
+        "lack professionalism"
+      ],
+      "paraphrases": [
+        "professional conduct",
+        "workplace competence"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Employers often value professionalism as much as technical knowledge when recruiting staff.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Customer satisfaction is strongly influenced by the professionalism of frontline employees.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For me, professionalism means being reliable, respectful, and well prepared at work.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"professionalism\" in one IELTS-style sentence about work quality or customer service."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_schedule_220",
+      "word": "schedule",
+      "lemma": "schedule",
+      "ipa": "/ˈskedʒul/",
+      "partOfSpeech": "n.",
+      "sense": "a plan that shows when activities will happen",
+      "englishDefinition": "A plan that shows when activities will happen",
+      "chineseMeaning": "时间表，进度表；安排，计划",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "work schedule",
+        "tight schedule",
+        "class schedule"
+      ],
+      "paraphrases": [
+        "timetable",
+        "plan"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies work schedule as a major issue in work and employment.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address tight schedule if governments want to improve productivity and workplace conditions.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, schedule is important because it shapes productivity and workplace conditions.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"schedule\" in one IELTS-style sentence about work and employment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_dismiss_228",
+      "word": "dismiss",
+      "lemma": "dismiss",
+      "ipa": "/dɪsˈmɪs/",
+      "partOfSpeech": "v.",
+      "sense": "to reject an idea or end someone?s employment",
+      "englishDefinition": "To reject an idea or end someone?s employment",
+      "chineseMeaning": "解雇，免职；驳回，不予理会",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "dismiss concerns",
+        "dismiss criticism",
+        "dismiss workers"
+      ],
+      "paraphrases": [
+        "reject",
+        "ignore"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent studies show that employers and workers often dismiss concerns when dealing with productivity and workplace conditions.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should dismiss criticism if they want to improve outcomes in work and employment.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think institutions need to dismiss workers in order to respond effectively to productivity and workplace conditions.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"dismiss\" in one IELTS-style sentence about work and employment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_alienated_270",
+      "word": "alienated",
+      "lemma": "alienated",
+      "ipa": "/ˈeljənetɪd/",
+      "partOfSpeech": "adj.",
+      "sense": "feeling isolated or disconnected from other people or from society",
+      "englishDefinition": "Feeling isolated or disconnected from other people or from society",
+      "chineseMeaning": "疏远的，被孤立的；异化的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "alienated workers",
+        "feel alienated",
+        "socially alienated"
+      ],
+      "paraphrases": [
+        "isolated",
+        "detached"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Some employees feel alienated when their work is repetitive and they have little control over decisions.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers should improve communication so that remote staff do not become alienated from the rest of the team.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "People can feel alienated in large cities if they do not have a strong social network.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"alienated\" in one IELTS-style sentence about feeling isolated at work or in society."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_comfortably_273",
+      "word": "comfortably",
+      "lemma": "comfortably",
+      "ipa": "/ˈkʌmfərtəbli/",
+      "partOfSpeech": "adv.",
+      "sense": "without difficulty, stress, or lack of resources",
+      "englishDefinition": "Without difficulty, stress, or lack of resources",
+      "chineseMeaning": "舒服地,安乐地,充裕地",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "live comfortably",
+        "comfortably exceed",
+        "sit comfortably"
+      ],
+      "paraphrases": [
+        "easily",
+        "without strain"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Comfortably, recent studies show that productivity and workplace conditions has changed over time.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Comfortably, policymakers should focus on productivity and workplace conditions instead of short-term gains.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Comfortably, people respond better when productivity and workplace conditions is explained clearly.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"comfortably\" in one IELTS-style sentence about work and employment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_experienced_283",
+      "word": "experienced",
+      "lemma": "experienced",
+      "ipa": "/ɪkˈspɪriənst/",
+      "partOfSpeech": "adj.",
+      "sense": "having knowledge or skill gained over time",
+      "englishDefinition": "Having knowledge or skill gained over time",
+      "chineseMeaning": "有经验的，老练的；经验丰富的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "experienced staff",
+        "experienced teacher",
+        "experienced worker"
+      ],
+      "paraphrases": [
+        "skilled",
+        "seasoned"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Hospitals in rural areas often struggle to attract experienced doctors and nurses.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Schools should do more to retain experienced teachers instead of relying heavily on short-term staff.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would trust an experienced tour guide more than an app when travelling somewhere unfamiliar.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"experienced\" in one IELTS-style sentence about skilled workers, teachers, or professionals."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "work_employment_topicexp1_01",
+      "word": "employment",
+      "lemma": "employment",
+      "ipa": "/ɪmˈplɔɪmənt/",
+      "partOfSpeech": "n.",
+      "sense": "the condition of having a job",
+      "englishDefinition": "the state of having paid work; the act of employing someone",
+      "chineseMeaning": "就业；雇佣",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "full employment",
+        "employment opportunities",
+        "employment rate"
+      ],
+      "paraphrases": [
+        "work",
+        "job",
+        "occupation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Research indicates that employment plays a crucial role in workplace dynamics.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers need to consider employment when developing workplace policies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When talking about work topics, employment is useful for describing employment situations.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"employment\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "work_unemployment_topicexp1_01",
+      "word": "unemployment",
+      "lemma": "unemployment",
+      "ipa": "/ˌʌnɪmˈplɔɪmənt/",
+      "partOfSpeech": "n.",
+      "sense": "the condition of being jobless",
+      "englishDefinition": "the state of not having a job despite being willing and able to work",
+      "chineseMeaning": "失业",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "high unemployment",
+        "unemployment rate",
+        "long-term unemployment"
+      ],
+      "paraphrases": [
+        "joblessness",
+        "being out of work",
+        "lack of work"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Research indicates that unemployment plays a crucial role in workplace dynamics.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers need to consider unemployment when developing workplace policies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When talking about work topics, unemployment is useful for describing employment situations.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"unemployment\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "work_recruitment_topicexp1_01",
+      "word": "recruitment",
+      "lemma": "recruitment",
+      "ipa": "/rɪˈkruːtmənt/",
+      "partOfSpeech": "n.",
+      "sense": "the act of hiring new staff",
+      "englishDefinition": "the process of finding and hiring new employees",
+      "chineseMeaning": "招聘；招募",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "recruitment process",
+        "recruitment agency",
+        "staff recruitment"
+      ],
+      "paraphrases": [
+        "hiring",
+        "staffing",
+        "employment process"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Research indicates that recruitment plays a crucial role in workplace dynamics.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers need to consider recruitment when developing workplace policies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When talking about work topics, recruitment is useful for describing employment situations.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"recruitment\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "work_redundancy_topicexp1_01",
+      "word": "redundancy",
+      "lemma": "redundancy",
+      "ipa": "/rɪˈdʌndənsi/",
+      "partOfSpeech": "n.",
+      "sense": "job loss due to restructuring",
+      "englishDefinition": "the state of being no longer needed or wanted; dismissal from work",
+      "chineseMeaning": "裁员；冗余",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "face redundancy",
+        "mass redundancy",
+        "voluntary redundancy"
+      ],
+      "paraphrases": [
+        "layoff",
+        "dismissal",
+        "job cut"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Research indicates that redundancy plays a crucial role in workplace dynamics.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers need to consider redundancy when developing workplace policies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When talking about work topics, redundancy is useful for describing employment situations.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"redundancy\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "work_promotion_topicexp1_01",
+      "word": "promotion",
+      "lemma": "promotion",
+      "ipa": "/prəˈməʊʃən/",
+      "partOfSpeech": "n.",
+      "sense": "moving up in a career",
+      "englishDefinition": "advancement to a higher position or rank in an organization",
+      "chineseMeaning": "晋升；升职",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "career promotion",
+        "get a promotion",
+        "promotion prospects"
+      ],
+      "paraphrases": [
+        "advancement",
+        "elevation",
+        "career progression"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Research indicates that promotion plays a crucial role in workplace dynamics.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers need to consider promotion when developing workplace policies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When talking about work topics, promotion is useful for describing employment situations.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"promotion\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "work_workload_topicexp1_01",
+      "word": "workload",
+      "lemma": "workload",
+      "ipa": "/ˈwɜːkləʊd/",
+      "partOfSpeech": "n.",
+      "sense": "the volume of work assigned",
+      "englishDefinition": "the amount of work to be done by a person or organization",
+      "chineseMeaning": "工作量",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "heavy workload",
+        "manage workload",
+        "increase workload"
+      ],
+      "paraphrases": [
+        "work burden",
+        "task volume",
+        "work amount"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Research indicates that workload plays a crucial role in workplace dynamics.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers need to consider workload when developing workplace policies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When talking about work topics, workload is useful for describing employment situations.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"workload\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "work_flexible_topicexp1_01",
+      "word": "flexible",
+      "lemma": "flexible",
+      "ipa": "/ˈfleksəbl/",
+      "partOfSpeech": "adj.",
+      "sense": "adaptable and adjustable",
+      "englishDefinition": "able to change or adapt to different circumstances; not fixed",
+      "chineseMeaning": "灵活的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "flexible working",
+        "flexible hours",
+        "flexible approach"
+      ],
+      "paraphrases": [
+        "adaptable",
+        "variable",
+        "adjustable"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Research indicates that flexible plays a crucial role in workplace dynamics.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers need to consider flexible when developing workplace policies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When talking about work topics, flexible is useful for describing employment situations.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"flexible\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "work_retirement_topicexp1_01",
+      "word": "retirement",
+      "lemma": "retirement",
+      "ipa": "/rɪˈtaɪəmənt/",
+      "partOfSpeech": "n.",
+      "sense": "leaving work due to age",
+      "englishDefinition": "the action or fact of leaving one's job and stopping work",
+      "chineseMeaning": "退休",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "retirement age",
+        "early retirement",
+        "plan for retirement"
+      ],
+      "paraphrases": [
+        "pensioning off",
+        "leaving work",
+        "ending career"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Research indicates that retirement plays a crucial role in workplace dynamics.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers need to consider retirement when developing workplace policies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When talking about work topics, retirement is useful for describing employment situations.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"retirement\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "work_colleague_topicexp1_01",
+      "word": "colleague",
+      "lemma": "colleague",
+      "ipa": "/ˈkɒliːɡ/",
+      "partOfSpeech": "n.",
+      "sense": "a co-worker",
+      "englishDefinition": "a person with whom one works in a profession or business",
+      "chineseMeaning": "同事",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "work colleague",
+        "fellow colleague",
+        "colleague relationship"
+      ],
+      "paraphrases": [
+        "co-worker",
+        "associate",
+        "teammate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Research indicates that colleague plays a crucial role in workplace dynamics.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers need to consider colleague when developing workplace policies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When talking about work topics, colleague is useful for describing employment situations.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"colleague\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "work_occupation_topicexp1_01",
+      "word": "occupation",
+      "lemma": "occupation",
+      "ipa": "/ˌɒkjʊˈpeɪʃən/",
+      "partOfSpeech": "n.",
+      "sense": "a person's job or career",
+      "englishDefinition": "a job or profession; the way one spends one's time",
+      "chineseMeaning": "职业；工作",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "skilled occupation",
+        "regular occupation",
+        "choose an occupation"
+      ],
+      "paraphrases": [
+        "job",
+        "profession",
+        "career"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Research indicates that occupation plays a crucial role in workplace dynamics.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Employers need to consider occupation when developing workplace policies.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When talking about work topics, occupation is useful for describing employment situations.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"occupation\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "work_productivity_legacy-batch1_01",
+      "word": "productivity",
+      "lemma": "productivity",
+      "ipa": "ˌprɑdʌkˈtɪvəti",
+      "partOfSpeech": "n.",
+      "sense": "the level of efficiency in producing work or output",
+      "englishDefinition": "the rate at which people, systems, or businesses produce useful work or output",
+      "chineseMeaning": "生产率；工作效率",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "boost productivity",
+        "labour productivity",
+        "high productivity"
+      ],
+      "paraphrases": [
+        "efficiency",
+        "output rate",
+        "work rate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The obverse of rising unemployment is continued gains in productivity.",
+          "translation": "失业率上升，相对应的是生产率进一步提高。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The result has been a giant leap in productivity.",
+          "translation": "其结果是生产力的大幅提高。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, \"productivity\" is useful when discussing efficiency, careers, or workplace change.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"productivity\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "work_interruption_legacy-batch3_01",
+      "word": "interruption",
+      "lemma": "interruption",
+      "ipa": "ˌɪntəˈrʌpʃən",
+      "partOfSpeech": "n.",
+      "sense": "a break that stops something from continuing",
+      "englishDefinition": "a break in continuity that stops a process, activity, or piece of work from continuing smoothly",
+      "chineseMeaning": "中断；打断；妨碍正常进行的情况",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "without interruption",
+        "service interruption",
+        "constant interruption"
+      ],
+      "paraphrases": [
+        "disruption",
+        "break",
+        "disturbance"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Frequent interruption reduces productivity because workers lose focus and need time to start again.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Reliable infrastructure is important because even a short power interruption can disrupt local businesses.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Students often struggle to study effectively in homes where there is constant interruption.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"interruption\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch3"
+    },
+    {
+      "bundleId": "work_unfortunate_legacy-batch7_01",
+      "word": "unfortunate",
+      "lemma": "unfortunate",
+      "ipa": "ʌnˈfɔrtʃənət",
+      "partOfSpeech": "adj.",
+      "sense": "involving bad luck or regret",
+      "englishDefinition": "having or marked by bad luck; regrettable",
+      "chineseMeaning": "不幸的；令人遗憾的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "unfortunate situation",
+        "unfortunate consequence",
+        "unfortunate decision"
+      ],
+      "paraphrases": [
+        "regrettable",
+        "unlucky",
+        "unfavorable"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Unfortunately, there is little prospect of seeing these big questions answered.",
+          "translation": "不幸的是，几乎不可能看到这些重大问题得到回复。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Catching colds is unfortunately an occupational hazard in this profession.",
+          "translation": "不幸的是，容易感冒是这个行业的职业性风险。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, \"unfortunate\" is useful when discussing efficiency, careers, or workplace change.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"unfortunate\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch7"
+    }
+  ]
+}

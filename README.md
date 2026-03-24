@@ -1,196 +1,92 @@
-# VocabMan - 智能雅思词汇学习工具
+# VocabMan
 
-> 语境优先 + AI个性化 + 间隔重复的高效学习系统
+Context-first IELTS vocabulary practice with spaced repetition, curated foundation bundles, and lightweight AI support.
 
-**在线体验**: https://vocabman.netlify.app
+Live site: [https://vocabman.netlify.app](https://vocabman.netlify.app)
 
-## ✨ v1.7.0 最新更新 (2026-01-19)
+## What Ships Today
 
-### ☁️ 全新 Supabase 云端同步
-- 🆕 **跨设备无缝同步** - 采用 Supabase 作为后端，支持设置、学习进度、生词本、复习状态 (SRS)、学习历史及成就的全量云端同步。
-- 🆕 **极简登录体验** - 支持 **GitHub** 一键登录及 **邮箱验证码 (Magic Link)** 登录，无需繁琐注册。
-- 🆕 **实时数据备份** - 学习数据实时异步上传，确保多设备间学习状态始终保持一致。
-- 🆕 **离线优先设计** - 即使在断网状态下也能正常学习，恢复网络后自动同步本地数据至云端。
+- `IELTS Foundation` with 541 curated context bundles
+- 8 official topic packs for high-frequency IELTS themes
+- `Context-first Session` for meaning, paraphrase, and production practice
+- `Output Studio` for sentence-level output drills
+- `Exam Drills` for mixed reading, listening, writing, and speaking-style tasks
+- Spaced repetition, review queue, wordbook, progress sync, and offline-first behavior
 
-## ✨ v1.6.0 更新回顾 (2026-01-18)
-- 🆕 **全量浅色模式支持** - 覆盖所有组件与页面，提供极致舒适的浅色学习体验
-- 🆕 **主题色标准化** - 全局统一使用 **Emerald-600** 作为品牌色，确保高对比度与视觉一致性
-- 🆕 **高级渐变平替** - 针对部分浏览器渐变失效问题，采用稳健的固态背景方案，彻底解决“白底白字”可见性问题
-- 🆕 **应用页脚上线** - 新增数据来源致谢与开发者信息，增强项目规范性
+## AI Runtime
 
-### 🚀 v1.5.0 更新回顾
-- 🆕 **免费真人发音** - 集成 Free Dictionary API，无需 API Key 即可获得高质量真人发音
-- 🆙 **AI 模型升级** - 基座模型切换为 OpenRouter 提供的 `stepfun/step-3.5-flash:free`
-- ✅ 修复卡片滑动后位置偏移问题
-- ✅ 拼写复习支持键盘快捷键（Space/Enter进入下一个）
-- ✅ 复习列表新增英文例句显示
+The app now uses:
 
-### 🚀 新功能
-- 🆕 **AI生成英文释义** - 一键生成词典级英文释义（快捷键：E）
-- 🆕 **优化水平测试算法** - 准确评估托福110+高分用户（雅思7.5-8.0）
+- Provider: `SiliconFlow`
+- Model: `Qwen/Qwen2.5-72B-Instruct`
+- Browser route: `/api/ai/chat`
+- Upstream base URL: `https://api.siliconflow.cn/v1`
 
-## 特性
+The previous OpenRouter / StepFun route is no longer part of the active client path. Browser requests now go through a local/Netlify proxy so the provider key does not need to live in the public bundle.
 
-- 📚 **13,670精选词汇** - 按难度分为5个级别（CET-4至雅思8.0+）
-- 🎯 **真实语境例句** - 基于真实语料，贴近实际应用
-- 🤖 **AI个性化例句** - 根据学习目的生成定制例句
-- 📖 **AI英文释义** - 词典级英文释义，深度理解单词含义
-- 🧠 **智能水平测试** - 精准评估词汇量，科学推荐词库
-- ⏰ **间隔重复算法** - 科学的复习系统，长期记忆巩固
-- 🎲 **真正随机学习** - Fisher-Yates算法，避免顺序偏差
-- 🏆 **成就系统** - 24个成就激励持续学习
-- 📊 **数据可视化** - 学习热力图和趋势分析
-- ☁️ **云端同步** - 基于 Supabase 的高效跨设备备份（支持 GitHub/邮箱登录）
-- ⌨️ **键盘快捷键** - 高效的学习体验
-- 📱 **完美响应式** - 支持桌面端和移动端
-- 🎨 **莫兰迪配色** - 护眼舒适的学习界面
-
-## 技术栈
-
-- **前端**: Vue 3 + Vite + Tailwind CSS
-- **AI服务**: OpenRouter API (`stepfun/step-3.5-flash:free`)
-- **存储方案**: LocalStorage + Supabase
-- **部署平台**: Netlify
-
-## 快速开始
-
-### 在线使用
-
-在线访问：https://vocabman.netlify.app
-
-### 本地开发
+## Local Setup
 
 ```bash
-# 克隆仓库
-git clone https://github.com/ZJUZhiyuCai/Vocab.git
-cd Vocab
-
-# 安装依赖
 npm install
-
-# 启动开发服务器
 npm run dev
-
-# 访问 http://localhost:3000
 ```
 
-### 构建
+Build for production:
 
 ```bash
 npm run build
 ```
 
-## 词库分级
+Run the release checks:
 
-基于真实考试词汇量要求，按累计增量分段：
-
-| 级别 | 新增词数 | 累计词汇 | CEFR级别 | 对应考试 |
-|------|---------|---------|---------|----------|
-| 四级基础 | 4,500 | 4,500 | A1+A2+部分B1 | CET-4 |
-| 六级进阶 | 1,500 | 6,000 | B1 | CET-6 |
-| 雅思6.0突破 | 500 | 6,500 | B2 | IELTS 6.0 |
-| 雅思7.0冲刺 | 1,500 | 8,000 | B2+C1 | IELTS 7.0 |
-| 雅思8.0+通关 | 4,044 | 12,044 | C1+C2 | IELTS 8.0+ |
-
-**总计：12,044 个精选词汇**（增量累计，无重复）
-
-## 配置说明
-
-### AI 功能
-
-1. 注册 [OpenRouter](https://openrouter.ai/) 获取 API 密钥
-2. 在设置中输入API密钥
-3. 使用 `stepfun/step-3.5-flash:free` 模型进行 AI 功能调用
-4. 选择学习目的（备考/职场/兴趣/日常）
-
-### 学习模式
-
-- **顺序学习**: 按词库顺序
-- **随机学习**: 打乱顺序（推荐）
-
-## 部署
-
-### Netlify 部署
-
-**一键部署**：
-点击下方按钮一键部署到 Netlify：
-[![Deploy with Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ZJUZhiyuCai/Vocab)
-
-**手动部署**：
-1. 访问 [Netlify Dashboard](https://app.netlify.com/start)
-2. 点击 "Add new site" → "Import an existing project"
-3. 导入 GitHub 仓库
-4. 配置项目：
-   - **Build command**: `npm run build`
-   - **Publish directory**: `dist`
-5. 点击 "Deploy site"
-
-**为什么选择 Netlify？**
-- ✅ 自动从 GitHub 部署，无需手动配置
-- ✅ 全球 CDN，访问速度快
-- ✅ 每次推送自动重新构建，确保代码最新
-- ✅ 免费 SSL 证书
-- ✅ 预览部署功能（每个 PR 自动生成预览链接）
-- ✅ 表单处理、无服务器函数等额外功能
-
-## 项目结构
-
-```
-vocab/
-├── public/
-│   └── data/          # 5个词库JSON文件
-├── src/
-│   ├── components/    # Vue组件
-│   ├── utils/         # 工具函数（AI、存储、算法）
-│   └── App.vue
-├── docs/              # 设计文档
-└── package.json
+```bash
+npm run audit:real
+node scripts/qa-validate-bundles.js public/data/ielts-foundation.json
+node scripts/qa-validate-bundles.js public/data/ielts-core-500.json
 ```
 
-## 版本历史
+## Environment
 
-- **v1.7.0** (2026-01-19) - Supabase 云端同步上线
-  - 集成 Supabase Auth (GitHub/Email)
-  - 全量数据同步（设置、进度、SRS、词本、历史、成就）
-  - 自动冲突合并与离线支持
-- **v1.6.0** (2026-01-18) - 全量浅色模式、主题色标准化、Footer上线
-  - 核心组件与页面完美适配浅色模式
-  - 全局主色标准化为 Emerald-600，优化文字对比度
-  - 修复 Logo 与按钮在部分浏览器下的可见性问题
-  - 新增项目页脚致谢
-- **v1.5.0** (2026-01-17) - 免费真人发音、AI模型升级
-  - 集成 Free Dictionary API 提供免费真人发音
-  - AI 基座模型升级为 OpenRouter `stepfun/step-3.5-flash:free`
-- **v1.4.0** (2025-01-13) - Bug修复、AI英文释义、优化水平测试算法
-  - 修复卡片滑动后位置偏移问题
-  - 优化移动端触摸反馈
-  - 拼写复习支持键盘快捷键
-  - 复习列表新增英文例句
-  - 新增AI生成英文释义功能
-  - 全面优化水平测试算法，准确评估高分用户
-- **v1.3.0** (2026-01-18) - 成就系统、数据可视化、云端同步、移动端优化
-  - 新增移动端底部导航栏适配
-  - 优化全局过渡动画与交互反馈
-  - 实现热力图统计与多维度数据展示
-- **v1.2.0** - 全局随机算法
-- **v1.1.0** - AI个性化例句
-- **v1.0.0** - 初始版本 (Morandi Style)
+Use a local-only `.env.local` for secrets. This file is already ignored by Git.
 
-## 常见问题
+```bash
+VITE_SUPABASE_URL=your-supabase-project-url
+VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
+VITE_REDIRECT_URL=http://localhost:5173
+SILICONFLOW_API_KEY=your-local-siliconflow-api-key
+SILICONFLOW_MODEL=Qwen/Qwen2.5-72B-Instruct
+SILICONFLOW_API_BASE_URL=https://api.siliconflow.cn/v1
+```
 
-**Q: AI功能收费吗？**
-A: OpenRouter 提供可选的免费模型路由，本项目默认使用 `stepfun/step-3.5-flash:free`。
+Notes:
 
-**Q: 数据会丢失吗？**
-A: 数据保存在浏览器本地，建议开启云端同步备份。
+- In local development, Vite serves `/api/ai/chat` through a dev middleware that reads `SILICONFLOW_API_KEY`.
+- In deployed builds, Netlify routes `/api/ai/chat` to a serverless function that reads the same non-public env vars.
+- API keys remain local-only and are not synced to Supabase.
+- The settings modal can still accept a manual key for the current browser profile.
 
-**Q: 如何选择合适的词库？**
-A: 使用词汇水平测试功能快速评估。
+## Release Snapshot
 
-## License
+- Foundation: `541`
+- Education: `124`
+- Government: `108`
+- Environment: `71`
+- Technology: `52`
+- Health: `53`
+- Work: `32`
+- Media: `32`
+- Crime: `26`
 
-MIT License
+## Main Paths
 
----
+- `Today` for card-based study
+- `Quiz` for breadth checks
+- `Context` for the IELTS learning track
+- `Output Studio` for controlled output
+- `Exam Drills` for exam-like mixed tasks
 
-**在线地址**: https://vocabman.netlify.app
+## Repo Notes
+
+- Canonical Foundation file: `public/data/ielts-foundation.json`
+- Compatibility mirror: `public/data/ielts-core-500.json`
+- Current Foundation vocabulary ID: `ielts-foundation`

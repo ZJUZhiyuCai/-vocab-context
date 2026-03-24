@@ -1,5 +1,15 @@
 # IELTS Bundle Migration
 
+> **状态：历史文档**
+>
+> 本文档描述的是早期迁移方案。当前系统状态：
+> - 规范文件：`public/data/ielts-foundation.json`
+> - 兼容镜像：`public/data/ielts-core-500.json`
+> - 规范 ID：`ielts-foundation`
+> - 当前数量：541 bundles
+>
+> 请参考 `docs/23-IELTS-Learning-Track-Overview.md` 获取当前系统状态。
+
 ## Purpose
 
 This document explains how the repository moves from the legacy IELTS vocabulary slices to the new context-bundle architecture.

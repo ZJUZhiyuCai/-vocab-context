@@ -1,4 +1,4 @@
-import { createOpenRouterChatCompletion } from './openRouterClient.js';
+import { createAIChatCompletion } from './aiClient.js';
 
 /**
  * AI 词汇关联记忆助手
@@ -17,7 +17,7 @@ export async function generateMemoryHooks({ apiKey, word, userLevel = 'B2' }) {
   const prompt = buildMemoryPrompt(word, userLevel);
 
   try {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey,
       messages: [{ role: 'user', content: prompt }],
       temperature: 0.7,
@@ -182,7 +182,7 @@ export async function generateWordNetwork({ apiKey, word, userLevel = 'B2' }) {
 只返回JSON，不要其他内容。`;
 
   try {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey,
       messages: [{ role: 'user', content: prompt }],
       temperature: 0.6,
@@ -257,7 +257,7 @@ ${targetScenarios.map((s, i) => `${i + 1}. ${s}`).join('\n')}
 只返回JSON，不要其他内容。`;
 
   try {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey,
       messages: [{ role: 'user', content: prompt }],
       temperature: 0.7,
@@ -331,7 +331,7 @@ export async function generateLearningPath({ apiKey, words, goal = 'master', use
 只返回JSON，不要其他内容。`;
 
   try {
-    const data = await createOpenRouterChatCompletion({
+    const data = await createAIChatCompletion({
       apiKey,
       messages: [{ role: 'user', content: prompt }],
       temperature: 0.6,

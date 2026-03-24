@@ -638,7 +638,8 @@
       "exampleQualityScore": 5,
       "totalScore": 16,
       "decision": "keep",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 8,
@@ -727,7 +728,8 @@
       "exampleQualityScore": 5,
       "totalScore": 16,
       "decision": "keep",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 9,
@@ -818,7 +820,8 @@
       "exampleQualityScore": 5,
       "totalScore": 16,
       "decision": "keep",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 10,
@@ -1090,7 +1093,8 @@
       "exampleQualityScore": 5,
       "totalScore": 16,
       "decision": "keep",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 13,
@@ -1269,7 +1273,8 @@
       "exampleQualityScore": 5,
       "totalScore": 16,
       "decision": "keep",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 15,
@@ -1449,7 +1454,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "keep",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 17,
@@ -2083,7 +2089,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 24,
@@ -2263,7 +2270,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 26,
@@ -2353,7 +2361,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 27,
@@ -2714,7 +2723,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 31,
@@ -2805,7 +2815,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 32,
@@ -2895,7 +2906,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 33,
@@ -2985,7 +2997,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 34,
@@ -3254,7 +3267,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 37,
@@ -3433,20 +3447,22 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 39,
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "????????????",
-      "editorEnglishDefinition": "Most important or basic; in education, primary also refers to the first stage of formal schooling.",
+      "editorSense": "most important, basic, or coming first in a system or process",
+      "editorEnglishDefinition": "Most important, basic, or first in order; in education it can also refer to the first stage of formal schooling.",
       "editorChineseMeaning": "首要的；主要的；最早的",
       "editorCollocations": [
         "primary education",
         "primary cause",
-        "primary responsibility"
+        "primary responsibility",
+        "primary concern"
       ],
       "editorParaphrases": [
         "main",
@@ -3457,23 +3473,23 @@
         {
           "kind": "reading",
           "text": "Many reports identify funding shortages as the primary barrier to improving rural primary education.",
-          "translation": "??????????????????????????",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
           "text": "In my view, the primary aim of schooling should be to develop literacy, numeracy, and independent thinking.",
-          "translation": "????????????????????????????????",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
           "text": "The primary reason some parents choose private schools is the belief that class sizes are smaller.",
-          "translation": "???????????????????????????",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "Use \"primary\" in one IELTS-style sentence about the main goal or first stage of education.",
+      "editorProductionPrompt": "Use \"primary\" in one IELTS-style sentence about the main goal, cause, concern, or first stage of education.",
       "key": "primary",
       "word": "primary",
       "partOfSpeech": "adj.",
@@ -3523,7 +3539,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 40,
@@ -3705,7 +3722,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 42,
@@ -3892,7 +3910,7 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "???????????",
+      "editorSense": "suitable or acceptable for a particular situation, purpose, or level",
       "editorEnglishDefinition": "Suitable or acceptable for a particular situation, purpose, or level.",
       "editorChineseMeaning": "适当的；恰当的；合适的 v.盗用",
       "editorCollocations": [
@@ -3975,7 +3993,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 45,
@@ -4074,40 +4093,41 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "To cause physical harm or damage to someone",
+      "editorSense": "to cause physical harm or serious damage",
+      "editorEnglishDefinition": "To cause physical harm to a person or damage to something valuable.",
       "editorChineseMeaning": "伤害，损伤；对某人造成身体伤害",
       "editorCollocations": [
         "seriously injure",
+        "injure pedestrians",
         "injure workers",
         "injure wildlife"
       ],
       "editorParaphrases": [
         "harm",
-        "damage",
-        "wound"
+        "wound",
+        "damage"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "Institutions often injure when they are trying to respond to major public concerns.",
+          "text": "Unsafe roads can seriously injure pedestrians and cyclists in densely populated cities.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Decision-makers should injure more carefully if they want sustainable results.",
+          "text": "Factories that ignore safety rules may injure workers and place extra pressure on public hospitals.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "I think leaders need to injure earlier before the problem becomes harder to manage.",
+          "text": "I think careless drivers should face strict penalties because they can easily injure other people.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"injure\" in one IELTS-style sentence about road safety, workplace safety, or preventable harm.",
       "key": "injure",
       "word": "injure",
       "partOfSpeech": "v.",
@@ -4156,7 +4176,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 47,
@@ -4246,7 +4267,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 48,
@@ -4336,7 +4358,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 49,
@@ -4516,7 +4539,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 51,
@@ -4607,7 +4631,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 52,
@@ -4696,7 +4721,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 53,
@@ -4786,7 +4812,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 54,
@@ -4936,7 +4963,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 56,
@@ -5085,7 +5113,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 58,
@@ -5175,7 +5204,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 59,
@@ -5264,7 +5294,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 60,
@@ -5354,7 +5385,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 61,
@@ -5443,7 +5475,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 62,
@@ -5532,7 +5565,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 63,
@@ -5621,7 +5655,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 64,
@@ -5748,17 +5783,41 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "Happening or existing before the present one",
+      "editorSense": "happening or existing before the present time or event",
+      "editorEnglishDefinition": "Existing, happening, or mentioned before the current time, event, or situation.",
       "editorChineseMeaning": "先前的，以前的；发生在当前之前的",
-      "editorCollocations": [],
+      "editorCollocations": [
+        "previous year",
+        "previous experience",
+        "previous studies",
+        "previous generation"
+      ],
       "editorParaphrases": [
         "earlier",
         "prior",
         "former"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "Previous studies suggest that children learn languages more quickly when they begin at an early age.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Compared with previous generations, young adults now spend more time communicating through digital platforms.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My previous school placed much more emphasis on exams than practical projects.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"previous\" in one IELTS-style sentence comparing an earlier period, study, or experience with the present.",
       "key": "previous",
       "word": "previous",
       "partOfSpeech": "adj.",
@@ -5807,7 +5866,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 67,
@@ -5896,7 +5956,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 68,
@@ -5985,7 +6046,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 69,
@@ -6074,7 +6136,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 70,
@@ -6313,7 +6376,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 73,
@@ -6462,7 +6526,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 75,
@@ -6551,7 +6616,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 76,
@@ -6730,7 +6796,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 78,
@@ -6819,7 +6886,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 79,
@@ -7090,7 +7158,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 82,
@@ -7179,7 +7248,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 83,
@@ -7268,7 +7338,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 84,
@@ -7447,7 +7518,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 86,
@@ -7537,7 +7609,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 87,
@@ -7720,7 +7793,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 89,
@@ -7809,7 +7883,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 90,
@@ -7899,7 +7974,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 91,
@@ -7989,7 +8065,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 92,
@@ -8079,24 +8156,49 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 93,
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "Single or separate; relating to one person rather than a group",
+      "editorSense": "relating to one person separately rather than to a group as a whole",
+      "editorEnglishDefinition": "Relating to one person separately, or designed for each person rather than for a whole group.",
       "editorChineseMeaning": "个人的，个体的；与个人而非群体相关的",
-      "editorCollocations": [],
+      "editorCollocations": [
+        "individual needs",
+        "individual rights",
+        "individual choice",
+        "individual support"
+      ],
       "editorParaphrases": [
         "personal",
-        "single",
-        "private"
+        "one-to-one",
+        "separate"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "Large classes make it harder for teachers to respond to individual learning needs.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Public policy should balance individual freedom with the wider interests of society.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I prefer individual feedback because it helps me understand my weaknesses more clearly.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"individual\" in one IELTS-style sentence about personal needs, rights, choices, or support.",
       "key": "individual",
       "word": "individual",
       "partOfSpeech": "adj.",
@@ -8145,7 +8247,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 94,
@@ -8295,7 +8398,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 96,
@@ -8564,7 +8668,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 99,
@@ -8654,7 +8759,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 100,
@@ -8744,7 +8850,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 101,
@@ -8834,7 +8941,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 102,
@@ -8924,7 +9032,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 103,
@@ -9284,7 +9393,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 107,
@@ -9374,7 +9484,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 108,
@@ -9464,7 +9575,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 109,
@@ -9643,7 +9755,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 111,
@@ -9733,7 +9846,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 112,
@@ -9823,7 +9937,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 113,
@@ -10035,7 +10150,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 116,
@@ -10125,7 +10241,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 117,
@@ -10304,7 +10421,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 119,
@@ -10394,7 +10512,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 120,
@@ -10606,7 +10725,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 123,
@@ -10696,7 +10816,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 124,
@@ -10786,7 +10907,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 125,
@@ -10875,7 +10997,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 126,
@@ -10965,7 +11088,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 127,
@@ -11054,7 +11178,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 128,
@@ -11143,7 +11268,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 129,
@@ -11232,7 +11358,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 130,
@@ -11322,7 +11449,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 131,
@@ -11412,7 +11540,8 @@
       "exampleQualityScore": 5,
       "totalScore": 13,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 132,
@@ -11591,7 +11720,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 134,
@@ -11681,7 +11811,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 135,
@@ -11860,7 +11991,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 137,
@@ -11950,7 +12082,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 138,
@@ -12040,7 +12173,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 139,
@@ -12130,7 +12264,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 140,
@@ -12220,7 +12355,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 141,
@@ -12399,7 +12535,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 143,
@@ -12489,7 +12626,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 144,
@@ -12846,7 +12984,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 148,
@@ -12936,7 +13075,8 @@
       "exampleQualityScore": 5,
       "totalScore": 12,
       "decision": "review",
-      "selectionBucket": "core"
+      "selectionBucket": "core",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 149,
@@ -13454,17 +13594,41 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "To pay to receive a service or publication regularly",
+      "editorSense": "to pay regularly in order to receive a service, publication, or online platform",
+      "editorEnglishDefinition": "To pay regularly so that you can receive a service, publication, or digital platform.",
       "editorChineseMeaning": "订阅；付费定期接收服务或出版物",
-      "editorCollocations": [],
-      "editorParaphrases": [
-        "sign up",
-        "enrol",
-        "register"
+      "editorCollocations": [
+        "subscribe to a journal",
+        "subscribe to a service",
+        "subscribe online",
+        "monthly subscription"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorParaphrases": [
+        "sign up for",
+        "pay for regularly",
+        "take out a subscription to"
+      ],
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "Many university libraries subscribe to expensive academic journals so students can access reliable research.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Consumers now subscribe to digital services instead of buying physical media outright.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I subscribe to an online learning platform because it is cheaper than attending extra classes in person.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"subscribe\" in one IELTS-style sentence about media, research access, or digital services.",
       "key": "subscribe",
       "word": "subscribe",
       "partOfSpeech": "v.",
@@ -13515,7 +13679,8 @@
       "exampleQualityScore": 5,
       "totalScore": 15,
       "decision": "review",
-      "selectionBucket": "topic"
+      "selectionBucket": "topic",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 157,
@@ -13935,17 +14100,41 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "",
-      "editorEnglishDefinition": "To focus attention or energy on a particular activity or subject",
+      "editorSense": "to focus attention, effort, or resources on one task or area",
+      "editorEnglishDefinition": "To direct your attention, effort, or resources towards one subject, task, or problem.",
       "editorChineseMeaning": "集中，专注；将注意力或精力集中于某活动或主题",
-      "editorCollocations": [],
+      "editorCollocations": [
+        "concentrate on studies",
+        "concentrate resources",
+        "concentrate efforts",
+        "find it hard to concentrate"
+      ],
       "editorParaphrases": [
         "focus",
         "direct attention",
-        "pay attention"
+        "devote attention"
       ],
-      "editorContexts": [],
-      "editorProductionPrompt": "",
+      "editorContexts": [
+        {
+          "kind": "reading",
+          "text": "Students often struggle to concentrate in overcrowded classrooms with constant noise.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should concentrate resources on preventive healthcare instead of relying only on hospital treatment.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I can concentrate better when I turn off notifications and study in a quiet place.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "editorProductionPrompt": "Use \"concentrate\" in one IELTS-style sentence about focusing attention, effort, or public resources.",
       "key": "concentrate",
       "word": "concentrate",
       "partOfSpeech": "v.",
@@ -13995,7 +14184,8 @@
       "exampleQualityScore": 5,
       "totalScore": 14,
       "decision": "review",
-      "selectionBucket": "topic"
+      "selectionBucket": "topic",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 163,
@@ -15493,40 +15683,40 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Auto-approved: high confidence score, topicated, clean flags",
-      "editorSense": "a particular day, month, or year when something happens",
-      "editorEnglishDefinition": "a particular day or point in time when something happens or is scheduled",
-      "editorChineseMeaning": "日期；约会；特定的日、月、年或预先安排的社交会面",
+      "editorSense": "a particular day, month, or year when something happens or is scheduled",
+      "editorEnglishDefinition": "A particular day or point in time when an event happens, is recorded, or is planned.",
+      "editorChineseMeaning": "日期；特定的日、月、年；事情发生或安排的时间点",
       "editorCollocations": [
-        "start date",
-        "closing date",
-        "historical date"
+        "set a date",
+        "starting date",
+        "date of birth"
       ],
       "editorParaphrases": [
-        "day",
-        "time",
-        "point in time"
+        "point in time",
+        "scheduled day",
+        "specific time"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The report argues that date remains a key issue in public policy and governance.",
+          "text": "The article compares the starting date of the policy with the period when public concern began to rise.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Many analysts believe that stronger start date would improve trust in government decisions.",
+          "text": "In planning public projects, officials should announce a clear date so that residents can prepare in advance.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In my view, date matters because it shapes how citizens judge public institutions.",
+          "text": "I usually remember an important date by linking it to a personal event or a deadline on my phone.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"date\" in one IELTS-style sentence about scheduling, planning, or when an event happened.",
       "key": "date",
       "word": "date",
       "partOfSpeech": "v.",
@@ -39119,39 +39309,40 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "立法",
-      "editorEnglishDefinition": "Laws or sets of laws made by a government and formally written down",
+      "editorSense": "laws made officially by a government",
+      "editorEnglishDefinition": "Laws, or a set of laws, that a government introduces and officially approves.",
       "editorChineseMeaning": "立法，法律；政府制定的法律条文",
       "editorCollocations": [
-        "new legislation",
-        "introduce legislation"
+        "pass legislation",
+        "environmental legislation",
+        "strict legislation"
       ],
       "editorParaphrases": [
-        "law",
-        "regulation",
-        "statute"
+        "laws",
+        "legal measures",
+        "regulations"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The report argues that legislation remains a key issue in public policy and governance.",
+          "text": "The article argues that stronger environmental legislation is needed to reduce industrial pollution.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Many analysts believe that stronger new legislation would improve trust in government decisions.",
+          "text": "Governments should pass clearer legislation to protect consumers from misleading online advertising.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In my view, legislation matters because it shapes how citizens judge public institutions.",
+          "text": "I think legislation is necessary when voluntary action is not enough to change harmful behaviour.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"legislation\" in one IELTS-style sentence about law, regulation, or public policy.",
       "key": "legislation",
       "word": "legislation",
       "partOfSpeech": "n.",
@@ -39201,45 +39392,48 @@
       "totalScore": 19,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "Topic: Government"
+      "sourceCategory": "Topic: Government",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 5,
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "问责制",
-      "editorEnglishDefinition": "The fact of being responsible for actions and decisions, and expected to explain them when asked",
+      "editorSense": "the requirement to explain and take responsibility for decisions",
+      "editorEnglishDefinition": "The state of being responsible for actions and being expected to explain them to others.",
       "editorChineseMeaning": "问责制，责任；对决策和行为负责的义务",
       "editorCollocations": [
+        "public accountability",
         "ensure accountability",
-        "greater accountability"
+        "lack of accountability"
       ],
       "editorParaphrases": [
         "responsibility",
-        "answerability"
+        "answerability",
+        "transparency in decision-making"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The report argues that accountability remains a key issue in public policy and governance.",
+          "text": "The report links weak accountability to repeated failures in local government projects.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Many analysts believe that stronger ensure accountability would improve trust in government decisions.",
+          "text": "Clear reporting systems can improve accountability in both schools and public institutions.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In my view, accountability matters because it shapes how citizens judge public institutions.",
+          "text": "In my view, accountability matters because officials should justify how public money is spent.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"accountability\" in one IELTS-style sentence about responsibility in government, education, or business.",
       "key": "accountability",
       "word": "accountability",
       "partOfSpeech": "n.",
@@ -39289,7 +39483,8 @@
       "totalScore": 19,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "Topic: Government"
+      "sourceCategory": "Topic: Government",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 6,
@@ -39569,39 +39764,40 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "稳定",
-      "editorEnglishDefinition": "To become or make something steady and unlikely to change",
+      "editorSense": "to make something steady and less likely to change suddenly",
+      "editorEnglishDefinition": "To make something more balanced, controlled, or unlikely to become worse.",
       "editorChineseMeaning": "稳定，使稳定；变得平稳或使某物保持稳定",
       "editorCollocations": [
+        "stabilize prices",
         "stabilize the economy",
-        "stabilize prices"
+        "stabilize demand"
       ],
       "editorParaphrases": [
         "steady",
         "balance",
-        "calm"
+        "make more stable"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "Governments often stabilize when they face pressure to respond to social or economic problems.",
+          "text": "The central bank raised interest rates to stabilize prices after a period of rapid inflation.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Leaders should stabilize more carefully if they want policy changes to be both fair and effective.",
+          "text": "Public investment can help stabilize employment in regions that depend on a single industry.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "I think authorities need to stabilize earlier before public dissatisfaction becomes harder to manage.",
+          "text": "I think governments should act early to stabilize the housing market before costs rise too far.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"stabilize\" in one IELTS-style sentence about prices, employment, or the economy.",
       "key": "stabilize",
       "word": "stabilize",
       "partOfSpeech": "v.",
@@ -39651,46 +39847,48 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "AWL Expansion"
+      "sourceCategory": "AWL Expansion",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 10,
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "升级，加剧",
-      "editorEnglishDefinition": "To increase in intensity or become more serious",
+      "editorSense": "to become more serious or increase quickly",
+      "editorEnglishDefinition": "To become more intense, more severe, or more difficult to control.",
       "editorChineseMeaning": "升级，加剧；强度增加或变得更严重",
       "editorCollocations": [
+        "escalate rapidly",
         "escalate tensions",
-        "escalate costs"
+        "escalate into conflict"
       ],
       "editorParaphrases": [
         "intensify",
-        "increase",
-        "worsen"
+        "worsen",
+        "increase sharply"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "Governments often escalate when they face pressure to respond to social or economic problems.",
+          "text": "Experts warn that water shortages could escalate tensions between farming and urban communities.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Leaders should escalate more carefully if they want policy changes to be both fair and effective.",
+          "text": "If transport problems are ignored, they may escalate into wider economic and environmental costs.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "I think authorities need to escalate earlier before public dissatisfaction becomes harder to manage.",
+          "text": "Small disagreements can escalate quickly online because people react before checking the facts.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"escalate\" in one IELTS-style sentence about a problem becoming more serious.",
       "key": "escalate",
       "word": "escalate",
       "partOfSpeech": "v.",
@@ -39740,7 +39938,8 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "AWL Expansion"
+      "sourceCategory": "AWL Expansion",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 11,
@@ -39838,39 +40037,40 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "盛行，占优势",
-      "editorEnglishDefinition": "To be common or widespread; to win or succeed",
+      "editorSense": "to be common in a place or to succeed after difficulty",
+      "editorEnglishDefinition": "To exist widely in a particular situation, or to win after facing opposition.",
       "editorChineseMeaning": "盛行，获胜；普遍存在或取得成功",
       "editorCollocations": [
-        "prevail over",
-        "prevailing view"
+        "prevail in society",
+        "prevailing attitude",
+        "ultimately prevail"
       ],
       "editorParaphrases": [
         "dominate",
-        "win",
-        "triumph"
+        "be widespread",
+        "succeed in the end"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "Governments often prevail when they face pressure to respond to social or economic problems.",
+          "text": "A belief that university education guarantees success still prevails in many societies.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Leaders should prevail more carefully if they want policy changes to be both fair and effective.",
+          "text": "Short-term economic priorities often prevail over long-term environmental concerns.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "I think authorities need to prevail earlier before public dissatisfaction becomes harder to manage.",
+          "text": "I hope practical solutions will prevail when people debate how to improve public transport.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"prevail\" in one IELTS-style sentence about an idea, attitude, or side becoming dominant.",
       "key": "prevail",
       "word": "prevail",
       "partOfSpeech": "v.",
@@ -39920,7 +40120,8 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "AWL Expansion"
+      "sourceCategory": "AWL Expansion",
+      "editorPartOfSpeech": "v."
     },
     {
       "rank": 13,
@@ -40110,39 +40311,40 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "大量的，实质性的",
-      "editorEnglishDefinition": "Large in amount, value, or importance",
+      "editorSense": "large in amount, importance, or effect",
+      "editorEnglishDefinition": "Large enough to be important, noticeable, or valuable.",
       "editorChineseMeaning": "大量的，实质性的",
       "editorCollocations": [
-        "substantial amount",
-        "substantial evidence"
+        "substantial increase",
+        "substantial evidence",
+        "substantial investment"
       ],
       "editorParaphrases": [
         "considerable",
         "significant",
-        "large"
+        "large-scale"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The study found a substantial gap in achievement between students from different income groups.",
+          "text": "The study found a substantial increase in energy use during extremely hot summers.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Substantial investment in public transport could reduce traffic and improve air quality.",
+          "text": "Substantial investment in public transport could reduce congestion in major cities.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "I think the internet has had a substantial effect on how people communicate.",
+          "text": "For me, the internet has had a substantial impact on how people access information.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"substantial\" in one IELTS-style sentence about a large change, effect, or amount.",
       "key": "substantial",
       "word": "substantial",
       "partOfSpeech": "adj.",
@@ -40192,7 +40394,8 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "AWL Expansion"
+      "sourceCategory": "AWL Expansion",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 16,
@@ -40472,39 +40675,40 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "含义，影响",
-      "editorEnglishDefinition": "A possible future effect or result of an action or decision",
+      "editorSense": "a likely effect or consequence of an action or decision",
+      "editorEnglishDefinition": "A possible result or consequence that may follow from something.",
       "editorChineseMeaning": "影响，含义；行动或决策可能产生的后果",
       "editorCollocations": [
-        "serious implications",
-        "practical implications"
+        "social implications",
+        "practical implications",
+        "long-term implications"
       ],
       "editorParaphrases": [
         "consequence",
         "result",
-        "effect"
+        "likely effect"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The report argues that implication remains a key issue in public policy and governance.",
+          "text": "The paper examines the social implications of replacing workers with automated systems.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Many analysts believe that stronger serious implications would improve trust in government decisions.",
+          "text": "Governments should consider the long-term implications of expanding private car use.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In my view, implication matters because it shapes how citizens judge public institutions.",
+          "text": "One implication of studying abroad is that students often become more independent.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"implication\" in one IELTS-style sentence about a possible result or consequence.",
       "key": "implication",
       "word": "implication",
       "partOfSpeech": "n.",
@@ -40554,46 +40758,48 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "AWL Expansion"
+      "sourceCategory": "AWL Expansion",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 21,
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "威慑物",
-      "editorEnglishDefinition": "Something that discourages or prevents a particular action",
+      "editorSense": "something that discourages people from doing something",
+      "editorEnglishDefinition": "A factor that makes people less likely to do a particular action.",
       "editorChineseMeaning": "威慑物，遏制因素；阻止或抑制某种行为的事物",
       "editorCollocations": [
+        "strong deterrent",
         "effective deterrent",
         "act as a deterrent"
       ],
       "editorParaphrases": [
-        "discouragement",
-        "obstacle",
-        "barrier"
+        "discouraging factor",
+        "disincentive",
+        "preventive measure"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The report argues that deterrent remains a key issue in public policy and governance.",
+          "text": "High fines can act as a deterrent to companies that dump waste illegally.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Many analysts believe that stronger effective deterrent would improve trust in government decisions.",
+          "text": "Visible police patrols may be an effective deterrent to petty crime in crowded areas.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In my view, deterrent matters because it shapes how citizens judge public institutions.",
+          "text": "For many people, the cost of public transport is a deterrent to leaving their car at home.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"deterrent\" in one IELTS-style sentence about something that discourages harmful behaviour.",
       "key": "deterrent",
       "word": "deterrent",
       "partOfSpeech": "n.",
@@ -40643,46 +40849,48 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "AWL Expansion"
+      "sourceCategory": "AWL Expansion",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 22,
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "激励，动机",
-      "editorEnglishDefinition": "Something that encourages a person to do something",
+      "editorSense": "something that motivates people to take a particular action",
+      "editorEnglishDefinition": "A benefit or reward that encourages someone to do something.",
       "editorChineseMeaning": "激励，动力；鼓励某人做某事的因素",
       "editorCollocations": [
         "financial incentive",
-        "strong incentive"
+        "offer incentives",
+        "economic incentive"
       ],
       "editorParaphrases": [
         "motivation",
         "encouragement",
-        "stimulus"
+        "reward"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The report argues that incentive remains a key issue in public policy and governance.",
+          "text": "Tax reductions can provide an incentive for companies to invest in cleaner technology.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Many analysts believe that stronger financial incentive would improve trust in government decisions.",
+          "text": "Governments could offer financial incentives to households that reduce their energy use.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In my view, incentive matters because it shapes how citizens judge public institutions.",
+          "text": "A clear career path is a strong incentive for young people to continue their education.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"incentive\" in one IELTS-style sentence about motivation created by money, policy, or opportunity.",
       "key": "incentive",
       "word": "incentive",
       "partOfSpeech": "n.",
@@ -40732,46 +40940,48 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "AWL Expansion"
+      "sourceCategory": "AWL Expansion",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 23,
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "先例",
-      "editorEnglishDefinition": "An action or decision that is used as an example for future similar situations",
+      "editorSense": "an earlier action or decision that becomes an example for later cases",
+      "editorEnglishDefinition": "A previous case or decision that influences what is done in similar situations later.",
       "editorChineseMeaning": "先例，判例；可供未来类似情况参考的行动或决定",
       "editorCollocations": [
         "set a precedent",
-        "historical precedent"
+        "legal precedent",
+        "dangerous precedent"
       ],
       "editorParaphrases": [
         "example",
-        "model",
-        "case"
+        "earlier case",
+        "guiding case"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The report argues that precedent remains a key issue in public policy and governance.",
+          "text": "The court ruling may set a precedent for future disputes over digital privacy.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Many analysts believe that stronger set a precedent would improve trust in government decisions.",
+          "text": "Allowing unchecked advertising to children could create a dangerous precedent for media regulation.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In my view, precedent matters because it shapes how citizens judge public institutions.",
+          "text": "Once a school relaxes one rule, it can set a precedent that is hard to reverse.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"precedent\" in one IELTS-style sentence about an earlier decision affecting later choices.",
       "key": "precedent",
       "word": "precedent",
       "partOfSpeech": "n.",
@@ -40821,7 +41031,8 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "AWL Expansion"
+      "sourceCategory": "AWL Expansion",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 24,
@@ -40918,39 +41129,40 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "差距，不平等",
-      "editorEnglishDefinition": "A significant difference between two things",
+      "editorSense": "a clear and often unfair difference between two things",
+      "editorEnglishDefinition": "A noticeable difference, especially one that suggests inequality.",
       "editorChineseMeaning": "差距，不平等；两者之间的显著差异",
       "editorCollocations": [
-        "significant disparity",
-        "wealth disparity"
+        "income disparity",
+        "regional disparity",
+        "widening disparity"
       ],
       "editorParaphrases": [
         "gap",
         "inequality",
-        "difference"
+        "imbalance"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The report argues that disparity remains a key issue in public policy and governance.",
+          "text": "The report highlights a growing disparity in income between urban and rural households.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Many analysts believe that stronger significant disparity would improve trust in government decisions.",
+          "text": "Policy makers should address regional disparity by improving transport and digital infrastructure.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In my view, disparity matters because it shapes how citizens judge public institutions.",
+          "text": "I have noticed a disparity in access to good schools between wealthy and poorer areas.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"disparity\" in one IELTS-style sentence about inequality or a widening gap.",
       "key": "disparity",
       "word": "disparity",
       "partOfSpeech": "n.",
@@ -41000,7 +41212,8 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "AWL Expansion"
+      "sourceCategory": "AWL Expansion",
+      "editorPartOfSpeech": "n."
     },
     {
       "rank": 26,
@@ -41190,38 +41403,40 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "有争议的",
-      "editorEnglishDefinition": "Likely to cause disagreement or argument",
+      "editorSense": "likely to cause disagreement or strong argument",
+      "editorEnglishDefinition": "Causing disagreement because people hold opposing opinions about it.",
       "editorChineseMeaning": "有争议的，引起争论的；可能导致分歧的",
       "editorCollocations": [
         "contentious issue",
-        "highly contentious"
+        "highly contentious",
+        "remain contentious"
       ],
       "editorParaphrases": [
         "controversial",
-        "disputed"
+        "disputed",
+        "hotly debated"
       ],
       "editorContexts": [
         {
           "kind": "reading",
-          "text": "The proposal remains contentious because different groups would experience its costs and benefits unequally.",
+          "text": "Expanding nuclear power remains a contentious issue in many countries.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Raising university fees is a contentious policy because it affects both access and fairness.",
+          "text": "Raising university tuition fees is contentious because it affects both access and fairness.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "It is a contentious issue in my country because people disagree strongly about who should pay.",
+          "text": "It is a contentious topic where I live because people disagree about who should pay for the service.",
           "translation": "",
           "purpose": "far-transfer"
         }
       ],
-      "editorProductionPrompt": "",
+      "editorProductionPrompt": "Use \"contentious\" in one IELTS-style sentence about a policy or social issue people disagree on.",
       "key": "contentious",
       "word": "contentious",
       "partOfSpeech": "adj.",
@@ -41271,7 +41486,8 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "Task2 Argumentation"
+      "sourceCategory": "Task2 Argumentation",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 29,
@@ -43986,7 +44202,7 @@
       "reviewStatus": "approved",
       "approved": true,
       "reviewerNotes": "Approved: high-value or acceptable word",
-      "editorSense": "????????????????",
+      "editorSense": "able to continue over time without causing serious environmental, social, or financial harm",
       "editorEnglishDefinition": "Able to continue over time without causing serious environmental, social, or financial harm.",
       "editorChineseMeaning": "可持续的",
       "editorCollocations": [
@@ -44069,7 +44285,8 @@
       "totalScore": 17,
       "decision": "keep",
       "selectionBucket": "core",
-      "sourceCategory": "Topic: Environment"
+      "sourceCategory": "Topic: Environment",
+      "editorPartOfSpeech": "adj."
     },
     {
       "rank": 60,

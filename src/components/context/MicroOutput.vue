@@ -16,27 +16,27 @@
             'inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold',
             isDark ? 'bg-violet-500/10 border border-violet-500/20 text-violet-400' : 'bg-violet-100 border border-violet-300 text-violet-700'
           ]">
-            输出练习
+            {{ promptModeLabel }}
           </span>
         </div>
 
         <!-- Prompt -->
-        <div class="mb-6">
+        <div class="mb-7">
           <h2 :class="['text-xl font-bold mb-3', isDark ? 'text-white' : 'text-slate-900']">
             使用 "{{ bundle?.word || '...' }}" 写一个句子
           </h2>
           <div :class="['p-4 rounded-xl border', isDark ? 'bg-violet-500/5 border-violet-500/10' : 'bg-violet-50 border-violet-200']">
-            <p :class="['text-sm', isDark ? 'text-violet-200/80' : 'text-violet-800']">
-              {{ prompt?.prompt || 'Write a sentence using this word in an academic context.' }}
+            <p :class="['text-sm leading-7', isDark ? 'text-violet-200/80' : 'text-violet-800']">
+              {{ promptInstruction }}
             </p>
           </div>
         </div>
 
         <!-- Context Reference -->
-        <div v-if="prompt?.context" :class="['p-4 rounded-xl border mb-6', isDark ? 'bg-slate-700/30 border-white/5' : 'bg-gray-50 border-gray-200']">
+        <div v-if="prompt?.context" :class="['p-4 rounded-xl border mb-7', isDark ? 'bg-slate-700/30 border-white/5' : 'bg-gray-50 border-gray-200']">
           <p :class="['text-xs font-medium mb-1', isDark ? 'text-gray-400' : 'text-gray-600']">参考语境：</p>
-          <p :class="['text-sm italic', isDark ? 'text-gray-300' : 'text-gray-700']">
-            "{{ prompt.context.text }}"
+          <p :class="['text-sm italic leading-7', isDark ? 'text-gray-300' : 'text-gray-700']">
+            {{ referenceContextText }}
           </p>
         </div>
 
@@ -47,7 +47,7 @@
             :placeholder="placeholderText"
             rows="3"
             :class="[
-              'w-full p-4 rounded-2xl border text-base resize-none transition-all focus:outline-none focus:ring-2 focus:ring-violet-500/50',
+              'w-full p-5 rounded-2xl border text-base leading-7 resize-none transition-all focus:outline-none focus:ring-2 focus:ring-violet-500/50',
               isDark
                 ? 'bg-slate-700/50 border-white/10 text-white placeholder-gray-500'
                 : 'bg-white border-gray-300 text-gray-900 placeholder-gray-400'
@@ -110,6 +110,46 @@ const emit = defineEmits(['submit', 'skip'])
 
 const outputText = ref('')
 const startTime = ref(Date.now())
+
+const promptInstruction = computed(() => {
+  if (!props.prompt) {
+    return '用这个词在学术语境下写一个句子。'
+  }
+
+  if (typeof props.prompt.instruction === 'string' && props.prompt.instruction.trim()) {
+    return props.prompt.instruction.trim()
+  }
+
+  if (typeof props.prompt.prompt === 'string' && props.prompt.prompt.trim()) {
+    return props.prompt.prompt.trim()
+  }
+
+  if (
+    props.prompt.prompt &&
+    typeof props.prompt.prompt === 'object' &&
+    typeof props.prompt.prompt.instruction === 'string'
+  ) {
+    return props.prompt.prompt.instruction.trim()
+  }
+
+  return '用这个词在学术语境下写一个句子。'
+})
+
+const promptModeLabel = computed(() => {
+  const mode = props.prompt?.mode || props.prompt?.prompt?.mode || 'writing'
+  const labels = {
+    writing: '输出练习',
+    speaking: '口语输出',
+    mixed: '综合输出'
+  }
+
+  return labels[mode] || '输出练习'
+})
+
+const referenceContextText = computed(() => {
+  const rawText = props.prompt?.context?.text || ''
+  return rawText.trim()
+})
 
 const placeholderText = computed(() => {
   const word = props.bundle?.word || '...'

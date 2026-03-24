@@ -96,6 +96,16 @@
       @navigate="handleNavigate"
     />
 
+    <ContextPractice
+      v-else-if="currentPage === 'context'"
+      :words="words"
+      :review-states="reviewStates"
+      :current-vocab="currentVocab"
+      :available-vocabularies="allVocabularies"
+      @navigate="handleNavigate"
+      @select-vocabulary="handleVocabularySelect"
+    />
+
     <div v-else-if="currentPage === 'achievements'" class="max-w-4xl mx-auto px-4 py-8 space-y-6 flex-1 overflow-y-auto h-full pb-32">
        <!-- Reusing existing components but wrapped in the dark theme they might look off unless they are transparent. 
             For now, just rendering them. Ideally should refactor them too. -->
@@ -226,9 +236,9 @@
             <h3 :class="['text-sm font-bold uppercase tracking-wider', isDark ? 'text-gray-400' : 'text-gray-600']">AI功能</h3>
           </div>
           <div class="mb-4">
-            <label :class="['block text-sm font-medium mb-2', isDark ? 'text-gray-400' : 'text-gray-600']">OpenRouter API 密钥</label>
-            <input type="password" v-model="settingsForm.apiKey" placeholder="sk-or-v1-..." :class="['w-full rounded-xl px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none', isDark ? 'bg-slate-800 border-gray-700 text-white' : 'bg-gray-50 border-gray-300 text-gray-800 border']">
-            <p :class="['mt-2 text-xs', isDark ? 'text-gray-500' : 'text-gray-500']">仅保存在当前浏览器，不会同步到云端。</p>
+            <label :class="['block text-sm font-medium mb-2', isDark ? 'text-gray-400' : 'text-gray-600']">{{ AI_PROVIDER_LABEL }} API 密钥</label>
+            <input type="password" v-model="settingsForm.apiKey" placeholder="sk-..." :class="['w-full rounded-xl px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none', isDark ? 'bg-slate-800 border-gray-700 text-white' : 'bg-gray-50 border-gray-300 text-gray-800 border']">
+            <p :class="['mt-2 text-xs leading-6', isDark ? 'text-gray-500' : 'text-gray-500']">{{ aiApiHelperText }}</p>
           </div>
         </div>
 
@@ -308,6 +318,7 @@ import PremiumWordCard from './components/PremiumWordCard.vue'
 import PremiumStats from './components/PremiumStats.vue'
 
 import { generateAIExample } from './utils/aiService.js'
+import { AI_MODEL, AI_PROVIDER_LABEL, AI_ENV_API_KEY_NAME } from './utils/aiClient.js'
 import { getEtymology } from './utils/etymologyService.js'
 import { getEnglishDefinition } from './utils/englishDefinitionService.js'
 import { loadSettings, saveSettings as saveSettingsToStorage, loadWordbook, saveWordbook, loadUserProfile, saveUserProfile, shouldShowOnboarding } from './utils/storage.js'
@@ -318,12 +329,15 @@ import ReviewQueue from './components/ReviewQueue.vue'
 import MobileTabBar from './components/MobileTabBar.vue'
 import VocabularySelector from './components/VocabularySelector.vue'
 import Quiz from './components/Quiz.vue'
+import ContextPractice from './components/context/ContextPractice.vue'
 import OnboardingQuiz from './components/OnboardingQuiz.vue'
 import VocabLevelTest from './components/VocabLevelTest.vue'
 
 import {
+  getAllVocabularies,
   getCurrentVocabulary,
   loadCurrentVocabulary,
+  setCurrentVocabulary,
   getVocabularyProgress,
   saveVocabularyProgress
 } from './utils/vocabularyManager.js'
@@ -406,6 +420,7 @@ const generatingWordId = ref(null)
 const loadingEtymology = ref(null)
 const loadingEnglishDefinition = ref(null)
 const error = ref(null)
+const aiApiHelperText = `可在这里手动填写 ${AI_PROVIDER_LABEL} 密钥；如果当前环境已在 .env.local 或部署平台中配置 ${AI_ENV_API_KEY_NAME}，应用也会自动使用 ${AI_MODEL}。`
 
 // 同步状态
 const syncing = ref(false)
@@ -423,6 +438,7 @@ const sessionLearnCount = ref(0)  // 本次会话学习的单词数
 
 // 页面状态
 const currentPage = ref('today')
+const allVocabularies = getAllVocabularies()
 
 // 彩带动画
 const { triggerConfetti } = useConfetti()
@@ -751,12 +767,17 @@ const loadData = async () => {
       ? getBundleLoader(currentVocab.value.file)
       : getVocabularyLoader(currentVocab.value.file);
     const allWords = await loader.getWordsRange(0, await loader.getTotalCount());
+    const validWordIds = new Set(allWords.map(word => word.id));
     
     // Load progress
-    const progress = getVocabularyProgress(currentVocab.value.id);
+    const progress = sanitizeVocabularyProgress(
+      getVocabularyProgress(currentVocab.value.id),
+      validWordIds,
+      allWords.length
+    );
+    persistVocabularyProgressLocally(currentVocab.value.id, progress);
     learned.value = new Set(progress.learned || []);
     forgotten.value = new Set(progress.forgotten || []);
-    currentIndex.value = progress.currentIndex || 0;
 
     const isRandomMode = userSettings.value.studyMode === 'random';
     if (isRandomMode) {
@@ -764,7 +785,8 @@ const loadData = async () => {
     } else {
       words.value = allWords;
     }
-    loadReviewStates();
+    currentIndex.value = clampCurrentIndex(progress.currentIndex, words.value.length);
+    loadReviewStates(validWordIds);
     updateReviewQueue();
   } catch (error) {
     console.error('❌ 加载数据失败:', error);
@@ -781,11 +803,50 @@ const shuffleArray = (array) => {
   return array;
 };
 
-const loadReviewStates = () => {
+const clampCurrentIndex = (index, total) => {
+  if (!Number.isInteger(index) || index < 0 || total <= 0) return 0;
+  return Math.min(index, total - 1);
+};
+
+const sanitizeVocabularyProgress = (progress, validWordIds, totalWords) => {
+  const learnedIds = Array.isArray(progress?.learned)
+    ? progress.learned.filter(id => validWordIds.has(id))
+    : [];
+  const forgottenIds = Array.isArray(progress?.forgotten)
+    ? progress.forgotten.filter(id => validWordIds.has(id))
+    : [];
+
+  return {
+    learned: learnedIds,
+    forgotten: forgottenIds,
+    currentIndex: clampCurrentIndex(progress?.currentIndex, totalWords)
+  };
+};
+
+const persistVocabularyProgressLocally = (vocabId, progress) => {
+  try {
+    const key = `vocabcontext_progress_${vocabId}`;
+    localStorage.setItem(key, JSON.stringify(progress));
+  } catch (error) {
+    console.warn('⚠️ 本地清洗词库进度失败:', error);
+  }
+};
+
+const sanitizeReviewStates = (states, validWordIds) => {
+  if (!states || typeof states !== 'object') return {};
+
+  return Object.fromEntries(
+    Object.entries(states).filter(([wordId]) => validWordIds.has(wordId))
+  );
+};
+
+const loadReviewStates = (validWordIds = new Set()) => {
   try {
     const key = `vocabcontext_review_${currentVocab.value.id}`;
     const saved = localStorage.getItem(key);
-    if (saved) reviewStates.value = JSON.parse(saved);
+    const parsed = saved ? JSON.parse(saved) : {};
+    reviewStates.value = sanitizeReviewStates(parsed, validWordIds);
+    localStorage.setItem(key, JSON.stringify(reviewStates.value));
   } catch (error) {
     reviewStates.value = {};
   }
@@ -814,10 +875,11 @@ const updateReviewQueue = () => {
   reviewQueue.value = getReviewQueue(reviewStates.value, forgotten.value, 50);
 };
 
-const handleVocabularySelect = (vocab) => {
+const handleVocabularySelect = async (vocab) => {
   saveCurrentProgress();
-  currentVocab.value = vocab;
-  loadData();
+  currentVocab.value = setCurrentVocabulary(vocab.id) || vocab;
+  await loadData();
+  showVocabSelector.value = false;
 };
 
 const saveCurrentProgress = () => {
@@ -858,6 +920,7 @@ const closeSettings = () => {
 const saveSettings = () => {
   userSettings.value = {
     apiKey: settingsForm.value.apiKey.trim(),
+    aiProvider: 'siliconflow',
     interests: [...settingsForm.value.interests],
     dailyGoal: settingsForm.value.dailyGoal,
     studyMode: settingsForm.value.studyMode,
@@ -879,11 +942,6 @@ const saveSettings = () => {
 };
 
 const generateExample = async (word) => {
-  if (!userSettings.value.apiKey) {
-    error.value = '请先配置API密钥';
-    setTimeout(() => { error.value = null; }, 3000);
-    return;
-  }
   generatingWordId.value = word.id;
   error.value = null;
   try {
@@ -912,11 +970,6 @@ const generateExample = async (word) => {
 };
 
 const fetchEnglishDefinition = async (word) => {
-  if (!userSettings.value.apiKey) {
-    error.value = '请先配置API密钥';
-    setTimeout(() => { error.value = null; }, 3000);
-    return;
-  }
   loadingEnglishDefinition.value = word.id;
   error.value = null;
   try {
@@ -970,6 +1023,7 @@ const handleKeydown = (event) => {
     if (event.key === 'Escape') closeSettings();
     return;
   }
+  if (currentPage.value !== 'today') return;
   if (!currentWord.value) return;
 
   switch (event.key) {
@@ -985,11 +1039,11 @@ const handleKeydown = (event) => {
       event.preventDefault(); openSettings(); break;
     case 'a': case 'A':
       event.preventDefault();
-      if (userSettings.value.apiKey) generateExample(currentWord.value);
+      generateExample(currentWord.value);
       break;
     case 'e': case 'E':
       event.preventDefault();
-      if (userSettings.value.apiKey) fetchEnglishDefinition(currentWord.value);
+      fetchEnglishDefinition(currentWord.value);
       break;
   }
 };

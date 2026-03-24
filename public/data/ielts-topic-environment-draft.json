@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-23T01:01:23.045Z",
+  "generatedAt": "2026-03-23T14:14:18.314Z",
   "approvalStatus": "draft",
   "draft": true,
   "topic": "environment",
-  "totalBundles": 67,
+  "totalBundles": 72,
   "note": "Draft topic pack generated from approved IELTS Core bundles. Review before learner-facing use.",
   "bundles": [
     {
@@ -3115,7 +3115,7 @@
       "lemma": "sustainable",
       "ipa": "/səˈsteɪnəbl/",
       "partOfSpeech": "adj.",
-      "sense": "????????????????",
+      "sense": "able to continue over time without causing serious environmental, social, or financial harm",
       "englishDefinition": "Able to continue over time without causing serious environmental, social, or financial harm.",
       "chineseMeaning": "可持续的",
       "topic": "environment",
@@ -3993,6 +3993,311 @@
         "decision": "keep"
       },
       "draft": true
+    },
+    {
+      "bundleId": "environment_mitigate_legacyb1_01",
+      "word": "mitigate",
+      "lemma": "mitigate",
+      "ipa": "ˈmɪtˌɪɡet",
+      "partOfSpeech": "v.",
+      "sense": "reduce the seriousness of something harmful",
+      "englishDefinition": "to make a harmful effect, problem, or risk less serious",
+      "chineseMeaning": "减轻；缓和；降低负面影响",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mitigate the effects",
+        "mitigate risk",
+        "mitigate damage"
+      ],
+      "paraphrases": [
+        "reduce",
+        "lessen",
+        "ease"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Governments should endeavour to mitigate distress.",
+          "translation": "政府应努力缓解贫困问题.",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Do our successes mitigate our failures?",
+          "translation": "我们的成功是否能弥补我们的过失?",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In environmental topics, \"mitigate\" can describe pressure, damage, or policy responses.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"mitigate\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "environment_depletion_legacyb1_01",
+      "word": "depletion",
+      "lemma": "depletion",
+      "ipa": "dɪˈpliʃən",
+      "partOfSpeech": "n.",
+      "sense": "the process of using up a resource",
+      "englishDefinition": "a reduction in the amount of something important, especially a resource",
+      "chineseMeaning": "消耗；耗尽；枯竭",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "resource depletion",
+        "ozone depletion",
+        "rapid depletion"
+      ],
+      "paraphrases": [
+        "exhaustion",
+        "reduction",
+        "decline"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Increased consumption of water has led to rapid depletion of groundwater reserves.",
+          "translation": "用水量的增加导致了地下水贮备迅速枯竭.",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "What they find could provide clues to what might happen worldwide if ozone depletion continues.",
+          "translation": "他们的发现可以揭示如果臭氧持续减少，世界范围内可能会出现什么情况。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In environmental topics, \"depletion\" can describe pressure, damage, or policy responses.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"depletion\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "environment_blight_legacyb2_01",
+      "word": "blight",
+      "lemma": "blight",
+      "ipa": "blaɪt",
+      "partOfSpeech": "v.",
+      "sense": "urban or social decay that damages a place",
+      "englishDefinition": "serious decline or decay in an area that makes it look neglected and harmful to live in",
+      "chineseMeaning": "破败；衰败；使地区失去活力的问题",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "urban blight",
+        "industrial blight",
+        "blight an area"
+      ],
+      "paraphrases": [
+        "decay",
+        "decline",
+        "deterioration"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Urban blight can reduce investment, damage confidence, and deepen local inequality.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Authorities should tackle blight by renovating neglected housing and public spaces.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Some districts feel less safe because visible blight has been ignored for years.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"blight\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch2"
+    },
+    {
+      "bundleId": "environment_sanitation_legacyb2_01",
+      "word": "sanitation",
+      "lemma": "sanitation",
+      "ipa": "ˌsænɪˈteʃən",
+      "partOfSpeech": "n.",
+      "sense": "public hygiene systems and sanitary conditions",
+      "englishDefinition": "the systems and conditions needed to keep places clean and safe for health",
+      "chineseMeaning": "环境卫生；卫生设施；排污系统",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "poor sanitation",
+        "sanitation facilities",
+        "sanitation infrastructure"
+      ],
+      "paraphrases": [
+        "hygiene services",
+        "public hygiene",
+        "clean sanitation systems"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Poor sanitation remains a major cause of preventable disease in many communities.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Investment in sanitation infrastructure can improve both health and school attendance.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Access to safe sanitation should be treated as a basic public service.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"sanitation\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch2"
+    },
+    {
+      "bundleId": "environment_flourishing_legacyb3_01",
+      "word": "flourishing",
+      "lemma": "flourishing",
+      "ipa": "'flɜɪʃɪŋ",
+      "partOfSpeech": "adj.",
+      "sense": "developing in a healthy or successful way",
+      "englishDefinition": "growing, developing, or succeeding strongly",
+      "chineseMeaning": "繁荣的；兴盛的；发展旺盛的",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "flourishing economy",
+        "flourishing community",
+        "flourishing wildlife"
+      ],
+      "paraphrases": [
+        "thriving",
+        "prosperous",
+        "growing strongly"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A flourishing local economy often depends on reliable transport, skilled workers, and stable investment.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Cities should protect parks if they want a flourishing urban environment rather than a purely concrete landscape.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Tourism can create a flourishing market for local businesses when it is managed responsibly.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"flourishing\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch3"
     }
   ]
 }

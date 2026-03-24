@@ -1,0 +1,1582 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-03-23T15:48:29.235Z",
+  "source": "IELTS Foundation",
+  "topic": "crime",
+  "name": "IELTS Topic Pack - Crime",
+  "totalBundles": 26,
+  "bundles": [
+    {
+      "bundleId": "crime_circumstance_045",
+      "word": "circumstance",
+      "lemma": "circumstance",
+      "ipa": "/ˈsɜːkəmstæns/",
+      "partOfSpeech": "n.",
+      "sense": "a condition or fact that affects a situation or event",
+      "englishDefinition": "A condition, event, or set of facts that influences what happens in a situation.",
+      "chineseMeaning": "情况，环境，境遇",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "under certain circumstances",
+        "in difficult circumstances",
+        "changing circumstances",
+        "personal circumstances"
+      ],
+      "paraphrases": [
+        "situation",
+        "condition",
+        "context",
+        "set of facts"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Children from disadvantaged circumstances often need extra support at school.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In some circumstances, remote work can improve productivity and reduce commuting time.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I believe universities should consider personal circumstances as well as exam results.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"circumstance\" or \"circumstances\" in one IELTS-style sentence about conditions that affect a result or decision."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "crime_injure_046",
+      "word": "injure",
+      "lemma": "injure",
+      "ipa": "/ˈɪndʒɚ/",
+      "partOfSpeech": "v.",
+      "sense": "to cause physical harm or serious damage",
+      "englishDefinition": "To cause physical harm to a person or damage to something valuable.",
+      "chineseMeaning": "伤害，损伤；对某人造成身体伤害",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "seriously injure",
+        "injure pedestrians",
+        "injure workers",
+        "injure wildlife"
+      ],
+      "paraphrases": [
+        "harm",
+        "wound",
+        "damage"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Unsafe roads can seriously injure pedestrians and cyclists in densely populated cities.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Factories that ignore safety rules may injure workers and place extra pressure on public hospitals.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think careless drivers should face strict penalties because they can easily injure other people.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"injure\" in one IELTS-style sentence about road safety, workplace safety, or preventable harm."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "crime_vary_049",
+      "word": "vary",
+      "lemma": "vary",
+      "ipa": "/ˈveri/",
+      "partOfSpeech": "v.",
+      "sense": "to differ or change according to the situation, place, time, or person involved",
+      "englishDefinition": "To be different in different situations, or to change within a range rather than stay the same.",
+      "chineseMeaning": "变化；不同；因时间、地点或情况而有所差异",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "vary considerably",
+        "vary according to",
+        "prices vary"
+      ],
+      "paraphrases": [
+        "differ",
+        "change",
+        "fluctuate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The data show that household energy use can vary considerably between urban and rural areas.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The effects of screen time on children may vary according to age, content, and parental supervision.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Food prices in my area vary from season to season, especially for imported fruit.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"vary\" in one IELTS-style sentence about differences across groups, places, or time."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "crime_previous_062",
+      "word": "previous",
+      "lemma": "previous",
+      "ipa": "/ˈpriviəs/",
+      "partOfSpeech": "adj.",
+      "sense": "happening or existing before the present time or event",
+      "englishDefinition": "Existing, happening, or mentioned before the current time, event, or situation.",
+      "chineseMeaning": "先前的，以前的；发生在当前之前的",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "previous year",
+        "previous experience",
+        "previous studies",
+        "previous generation"
+      ],
+      "paraphrases": [
+        "earlier",
+        "prior",
+        "former"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Previous studies suggest that children learn languages more quickly when they begin at an early age.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Compared with previous generations, young adults now spend more time communicating through digital platforms.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My previous school placed much more emphasis on exams than practical projects.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"previous\" in one IELTS-style sentence comparing an earlier period, study, or experience with the present."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "crime_divulge_141",
+      "word": "divulge",
+      "lemma": "divulge",
+      "ipa": "/dɪˈvʌldʒ/",
+      "partOfSpeech": "v.",
+      "sense": "泄露",
+      "englishDefinition": "To reveal or make known private or secret information",
+      "chineseMeaning": "泄露，透露；公开私人或秘密信息",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "divulge information",
+        "divulge details",
+        "refuse to divulge"
+      ],
+      "paraphrases": [
+        "reveal",
+        "disclose",
+        "make public"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Institutions often divulge when they are trying to respond to major public concerns.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Decision-makers should divulge more carefully if they want sustainable results.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think leaders need to divulge earlier before the problem becomes harder to manage.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"divulge\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "crime_concentrate_148",
+      "word": "concentrate",
+      "lemma": "concentrate",
+      "ipa": "/ˈkɑnsntreɪt/",
+      "partOfSpeech": "v.",
+      "sense": "to focus attention, effort, or resources on one task or area",
+      "englishDefinition": "To direct your attention, effort, or resources towards one subject, task, or problem.",
+      "chineseMeaning": "集中，专注；将注意力或精力集中于某活动或主题",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "concentrate on studies",
+        "concentrate resources",
+        "concentrate efforts",
+        "find it hard to concentrate"
+      ],
+      "paraphrases": [
+        "focus",
+        "direct attention",
+        "devote attention"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Students often struggle to concentrate in overcrowded classrooms with constant noise.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should concentrate resources on preventive healthcare instead of relying only on hospital treatment.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I can concentrate better when I turn off notifications and study in a quiet place.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"concentrate\" in one IELTS-style sentence about focusing attention, effort, or public resources."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "crime_parody_157",
+      "word": "parody",
+      "lemma": "parody",
+      "ipa": "/ˈpærədi/",
+      "partOfSpeech": "v.",
+      "sense": "拙劣的模仿",
+      "englishDefinition": "A humorous imitation of a particular work or style",
+      "chineseMeaning": "戏仿，滑稽模仿；对特定作品或风格的幽默模仿",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "a parody",
+        "parody of",
+        "grotesque parody"
+      ],
+      "paraphrases": [
+        "satire",
+        "imitation",
+        "spoof"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The first trial was a parody of justice.",
+          "translation": "第一次审判是对正义的愚弄。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "a parody of a horror film",
+          "translation": "一部恐怖电影的仿作",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "She has become a grotesque parody of her former elegant self.",
+          "translation": "她成为了以前那个举止优雅的自己的怪诞模仿品.",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"parody\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "crime_deliberately_183",
+      "word": "deliberately",
+      "lemma": "deliberately",
+      "ipa": "/dɪˈlɪbərɪtlɪ/",
+      "partOfSpeech": "adv.",
+      "sense": "in an intentional and planned way",
+      "englishDefinition": "In an intentional and planned way",
+      "chineseMeaning": "故意地,深思熟虑地,从容不迫地",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "deliberately ignore",
+        "deliberately damage",
+        "deliberately mislead"
+      ],
+      "paraphrases": [
+        "intentionally",
+        "purposely"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Deliberately, recent studies show that prevention and justice has changed over time.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Deliberately, policymakers should focus on prevention and justice instead of short-term gains.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Deliberately, people respond better when prevention and justice is explained clearly.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"deliberately\" in one IELTS-style sentence about crime and public safety."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "crime_rehabilitation_211",
+      "word": "rehabilitation",
+      "lemma": "rehabilitation",
+      "ipa": "/ˌrihəˌbɪləˈteʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the process of helping someone or something return to a better condition",
+      "englishDefinition": "the process of helping a person or system recover and function effectively again",
+      "chineseMeaning": "修复,复兴,复职,恢复名誉",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "offender rehabilitation",
+        "drug rehabilitation",
+        "rehabilitation programme"
+      ],
+      "paraphrases": [
+        "recovery",
+        "reintegration"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Rehabilitation programmes help former prisoners reintegrate into society.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The justice system should balance punishment with rehabilitation.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "After a serious injury, rehabilitation can take months of steady effort.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"rehabilitation\" in one IELTS-style sentence about crime and public safety."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "crime_offender_topicexp1_01",
+      "word": "offender",
+      "lemma": "offender",
+      "ipa": "/əˈfendə/",
+      "partOfSpeech": "n.",
+      "sense": "someone who breaks the law",
+      "englishDefinition": "a person who commits an illegal act",
+      "chineseMeaning": "违法者；罪犯",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "first-time offender",
+        "repeat offender",
+        "young offender"
+      ],
+      "paraphrases": [
+        "criminal",
+        "lawbreaker",
+        "perpetrator"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Statistics show that offender is a significant factor in criminal justice policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The criminal justice system must balance offender with rehabilitation efforts.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime-related discussions, offender is essential for expressing balanced views.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"offender\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "crime_verdict_topicexp1_01",
+      "word": "verdict",
+      "lemma": "verdict",
+      "ipa": "/ˈvɜːdɪkt/",
+      "partOfSpeech": "n.",
+      "sense": "the decision in a trial",
+      "englishDefinition": "a decision reached by a jury in a court of law",
+      "chineseMeaning": "裁决；判决",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "reach a verdict",
+        "guilty verdict",
+        "not guilty verdict"
+      ],
+      "paraphrases": [
+        "judgment",
+        "decision",
+        "ruling"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Statistics show that verdict is a significant factor in criminal justice policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The criminal justice system must balance verdict with rehabilitation efforts.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime-related discussions, verdict is essential for expressing balanced views.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"verdict\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "crime_sentence_topicexp1_01",
+      "word": "sentence",
+      "lemma": "sentence",
+      "ipa": "/ˈsentəns/",
+      "partOfSpeech": "n.",
+      "sense": "punishment given by a court",
+      "englishDefinition": "the punishment assigned to a defendant found guilty in court",
+      "chineseMeaning": "判决；刑罚",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "prison sentence",
+        "life sentence",
+        "reduce a sentence"
+      ],
+      "paraphrases": [
+        "punishment",
+        "penalty",
+        "judgment"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Statistics show that sentence is a significant factor in criminal justice policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The criminal justice system must balance sentence with rehabilitation efforts.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime-related discussions, sentence is essential for expressing balanced views.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"sentence\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "crime_conviction_topicexp1_01",
+      "word": "conviction",
+      "lemma": "conviction",
+      "ipa": "/kənˈvɪkʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the act of finding someone guilty",
+      "englishDefinition": "a formal declaration that someone is guilty of a criminal offense",
+      "chineseMeaning": "定罪；判罪",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "criminal conviction",
+        "previous conviction",
+        "secure a conviction"
+      ],
+      "paraphrases": [
+        "guilty verdict",
+        "finding of guilt",
+        "judgment"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Statistics show that conviction is a significant factor in criminal justice policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The criminal justice system must balance conviction with rehabilitation efforts.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime-related discussions, conviction is essential for expressing balanced views.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"conviction\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "crime_prosecution_topicexp1_01",
+      "word": "prosecution",
+      "lemma": "prosecution",
+      "ipa": "/ˌprɒsɪˈkjuːʃən/",
+      "partOfSpeech": "n.",
+      "sense": "the process of bringing criminal charges",
+      "englishDefinition": "the institution of legal proceedings against someone",
+      "chineseMeaning": "起诉；检控",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "criminal prosecution",
+        "face prosecution",
+        "avoid prosecution"
+      ],
+      "paraphrases": [
+        "legal action",
+        "charges",
+        "trial process"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Statistics show that prosecution is a significant factor in criminal justice policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The criminal justice system must balance prosecution with rehabilitation efforts.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime-related discussions, prosecution is essential for expressing balanced views.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"prosecution\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "crime_incarceration_topicexp1_01",
+      "word": "incarceration",
+      "lemma": "incarceration",
+      "ipa": "/ɪnˌkɑːsəˈreɪʃən/",
+      "partOfSpeech": "n.",
+      "sense": "being put in prison",
+      "englishDefinition": "the state of being imprisoned or confined in prison",
+      "chineseMeaning": "监禁；入狱",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mass incarceration",
+        "face incarceration",
+        "rate of incarceration"
+      ],
+      "paraphrases": [
+        "imprisonment",
+        "detention",
+        "confinement"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Statistics show that incarceration is a significant factor in criminal justice policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The criminal justice system must balance incarceration with rehabilitation efforts.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime-related discussions, incarceration is essential for expressing balanced views.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"incarceration\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "crime_recidivism_topicexp1_01",
+      "word": "recidivism",
+      "lemma": "recidivism",
+      "ipa": "/rɪˈsɪdɪvɪzəm/",
+      "partOfSpeech": "n.",
+      "sense": "returning to criminal behavior",
+      "englishDefinition": "the tendency of a convicted criminal to reoffend",
+      "chineseMeaning": "累犯；再犯",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "high recidivism",
+        "reduce recidivism",
+        "recidivism rate"
+      ],
+      "paraphrases": [
+        "reoffending",
+        "repeat offending",
+        "relapse into crime"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Statistics show that recidivism is a significant factor in criminal justice policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The criminal justice system must balance recidivism with rehabilitation efforts.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime-related discussions, recidivism is essential for expressing balanced views.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"recidivism\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "crime_surveillance_topicexp1_01",
+      "word": "surveillance",
+      "lemma": "surveillance",
+      "ipa": "/səˈveɪləns/",
+      "partOfSpeech": "n.",
+      "sense": "watching and monitoring",
+      "englishDefinition": "close observation, especially of a suspected person",
+      "chineseMeaning": "监视；监控",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "video surveillance",
+        "police surveillance",
+        "under surveillance"
+      ],
+      "paraphrases": [
+        "monitoring",
+        "observation",
+        "watching"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Statistics show that surveillance is a significant factor in criminal justice policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The criminal justice system must balance surveillance with rehabilitation efforts.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime-related discussions, surveillance is essential for expressing balanced views.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"surveillance\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "crime_juvenile_topicexp1_01",
+      "word": "juvenile",
+      "lemma": "juvenile",
+      "ipa": "/ˈdʒuːvənaɪl/",
+      "partOfSpeech": "adj.",
+      "sense": "related to young offenders",
+      "englishDefinition": "relating to young people who are not yet adults",
+      "chineseMeaning": "青少年的",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "juvenile crime",
+        "juvenile offender",
+        "juvenile justice"
+      ],
+      "paraphrases": [
+        "youth",
+        "adolescent",
+        "young person's"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Statistics show that juvenile is a significant factor in criminal justice policy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The criminal justice system must balance juvenile with rehabilitation efforts.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime-related discussions, juvenile is essential for expressing balanced views.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"juvenile\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "crime_wrongdoing_legacy-batch2_01",
+      "word": "wrongdoing",
+      "lemma": "wrongdoing",
+      "ipa": "ˈrɔŋduɪŋ",
+      "partOfSpeech": "n.",
+      "sense": "wrong or illegal conduct",
+      "englishDefinition": "illegal or dishonest behaviour, especially by people or institutions in power",
+      "chineseMeaning": "不当行为；违法违规行为",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "corporate wrongdoing",
+        "financial wrongdoing",
+        "evidence of wrongdoing"
+      ],
+      "paraphrases": [
+        "misconduct",
+        "illegal behaviour",
+        "improper conduct"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Whistleblowers can help expose corporate wrongdoing that would otherwise remain hidden.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Stronger oversight is needed to prevent wrongdoing in public institutions.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "People lose trust quickly when obvious wrongdoing is ignored.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"wrongdoing\" in one IELTS-style sentence about government."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch2"
+    },
+    {
+      "bundleId": "crime_victimize_legacy-batch2_01",
+      "word": "victimize",
+      "lemma": "victimize",
+      "ipa": "ˈvɪktəˌmaɪz",
+      "partOfSpeech": "v.",
+      "sense": "make someone suffer unfair harm",
+      "englishDefinition": "to treat someone unfairly or harm them so that they become a victim",
+      "chineseMeaning": "使受害；使成为不公对待的对象",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "victimize workers",
+        "victimize minorities",
+        "feel victimized"
+      ],
+      "paraphrases": [
+        "target unfairly",
+        "harm",
+        "treat unjustly"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Women and minorities are often victimized by online harassment and abuse.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policies should protect workers who are victimized by unfair treatment in the workplace.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "People can be victimized when rules exist on paper but are not enforced.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"victimize\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch2"
+    },
+    {
+      "bundleId": "crime_connotation_legacy-batch5_01",
+      "word": "connotation",
+      "lemma": "connotation",
+      "ipa": "ˌkɑnəˈteɪʃn",
+      "partOfSpeech": "n.",
+      "sense": "an implied meaning or association carried by a word",
+      "englishDefinition": "the ideas or feelings that a word suggests in addition to its basic meaning",
+      "chineseMeaning": "内涵意义；词语附带的联想色彩",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "negative connotation",
+        "positive connotation",
+        "carry a connotation"
+      ],
+      "paraphrases": [
+        "implied meaning",
+        "association",
+        "suggested meaning"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In reading tasks, understanding connotation can help learners choose the most accurate interpretation of a sentence.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Writers should think about connotation because two similar words may create very different effects.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "A word may look simple, but its connotation can make an answer sound more formal or more critical.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"connotation\" in one IELTS-style sentence about education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch5"
+    },
+    {
+      "bundleId": "crime_remand_legacy-batch5_01",
+      "word": "remand",
+      "lemma": "remand",
+      "ipa": "rɪˈmænd",
+      "partOfSpeech": "v.",
+      "sense": "place someone in custody while waiting for trial",
+      "englishDefinition": "to send someone back into legal custody or send a case back for further judicial action",
+      "chineseMeaning": "还押候审；将案件发回重审",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "on remand",
+        "remand in custody",
+        "remand hearing"
+      ],
+      "paraphrases": [
+        "hold in custody",
+        "return to custody",
+        "detain before trial"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Courts may remand a suspect in custody if there is a serious risk that the person could flee or interfere with evidence.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The debate over whether offenders should be held on remand often focuses on fairness, cost, and public safety.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime-related speaking topics, candidates can mention remand when discussing criminal justice and legal procedure.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"remand\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch5"
+    },
+    {
+      "bundleId": "crime_fatality_legacy-batch6_01",
+      "word": "fatality",
+      "lemma": "fatality",
+      "ipa": "feˈtælɪti, fə-",
+      "partOfSpeech": "n.",
+      "sense": "a death resulting from a harmful event",
+      "englishDefinition": "a death caused by an accident, conflict, disaster, or disease",
+      "chineseMeaning": "死亡事件；致死病例",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "road fatality",
+        "workplace fatality",
+        "fatality rate"
+      ],
+      "paraphrases": [
+        "death",
+        "death case",
+        "loss of life"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Road safety campaigns are often judged by whether they reduce the number of annual fatalities.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Researchers closely monitor fatality rates when a new disease spreads through large populations.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Governments are expected to act quickly when avoidable fatalities reveal a wider policy failure.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"fatality\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch6"
+    },
+    {
+      "bundleId": "crime_entail_legacy-batch7_01",
+      "word": "entail",
+      "lemma": "entail",
+      "ipa": "ɛnˈtel, ɪn-",
+      "partOfSpeech": "v.",
+      "sense": "to make something necessary",
+      "englishDefinition": "to involve something as a necessary part or consequence",
+      "chineseMeaning": "牵涉；使成为必要",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "entail risk",
+        "entail consequences",
+        "entail responsibility"
+      ],
+      "paraphrases": [
+        "involve",
+        "require",
+        "necessitate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Selective aversion to certain risks may entail acceptance of other greater risks.",
+          "translation": "有选择地回避某些风险可能招致更大的风险.",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Such a decision would entail a huge political risk.",
+          "translation": "这样的决定势必带来巨大的政治风险。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime and justice topics, \"entail\" helps explain causes, effects, or policy responses.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"entail\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch7"
+    },
+    {
+      "bundleId": "crime_magnanimity_legacy-batch7_01",
+      "word": "magnanimity",
+      "lemma": "magnanimity",
+      "ipa": "ˌmæɡnəˈnɪmɪti",
+      "partOfSpeech": "n.",
+      "sense": "generosity and forgiveness toward others",
+      "englishDefinition": "the quality of being generous and forgiving, especially toward a rival",
+      "chineseMeaning": "宽宏大量；大度",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "show magnanimity",
+        "act with magnanimity",
+        "magnanimity in victory"
+      ],
+      "paraphrases": [
+        "generosity",
+        "forgiveness",
+        "big-heartedness"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The father of one victim spoke with remarkable magnanimity.",
+          "translation": "一名受害者的父亲以极为宽容的口吻发了言。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Nothing pays richer dividends than magnanimity.",
+          "translation": "没有什么比宽宏大量更能得到厚报.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime and justice topics, \"magnanimity\" helps explain causes, effects, or policy responses.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"magnanimity\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch7"
+    },
+    {
+      "bundleId": "crime_calmness_legacy-batch7_01",
+      "word": "calmness",
+      "lemma": "calmness",
+      "ipa": "'kɑmnəs",
+      "partOfSpeech": "n.",
+      "sense": "a peaceful and composed state",
+      "englishDefinition": "the state of being peaceful and not excited or upset",
+      "chineseMeaning": "平静；冷静",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "maintain calmness",
+        "calmness under pressure",
+        "sense of calmness"
+      ],
+      "paraphrases": [
+        "composure",
+        "tranquility",
+        "serenity"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "All those things gave him a feeling of security and calmness.",
+          "translation": "所有那一切给他一种安全、平静的感觉.",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "For all his seeming calmness, he was really very nervous.",
+          "translation": "尽管他表面上镇定, 其实非常紧张.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In crime and justice topics, \"calmness\" helps explain causes, effects, or policy responses.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"calmness\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch7"
+    }
+  ]
+}

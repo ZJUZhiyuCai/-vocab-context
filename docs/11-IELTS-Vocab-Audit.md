@@ -1,5 +1,15 @@
 # IELTS Vocabulary Audit
 
+> **状态：历史文档**
+>
+> 本文档是早期词汇审计报告。当前系统已重建：
+> - Foundation: 541 个高质量 context bundles
+> - Topic Packs: 8 个主题包
+> - 所有词汇经过人工审核
+> - 质量指标：全部为 0（无问题）
+>
+> 请参考 `docs/23-IELTS-Learning-Track-Overview.md` 获取当前系统状态。
+
 ## Executive Summary
 
 The current shipped IELTS vocabulary is **not a truly IELTS-native vocabulary set**.

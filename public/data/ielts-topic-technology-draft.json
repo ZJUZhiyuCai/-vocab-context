@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-23T01:01:23.047Z",
+  "generatedAt": "2026-03-23T14:14:18.316Z",
   "approvalStatus": "draft",
   "draft": true,
   "topic": "technology",
-  "totalBundles": 48,
+  "totalBundles": 49,
   "note": "Draft topic pack generated from approved IELTS Core bundles. Review before learner-facing use.",
   "bundles": [
     {
@@ -2847,6 +2847,67 @@
         "decision": "keep"
       },
       "draft": true
+    },
+    {
+      "bundleId": "technology_pervade_legacyb1_01",
+      "word": "pervade",
+      "lemma": "pervade",
+      "ipa": "pərˈveɪd",
+      "partOfSpeech": "v.",
+      "sense": "spread throughout something",
+      "englishDefinition": "to spread through every part of a place, system, or experience",
+      "chineseMeaning": "弥漫；遍及；渗透到各处",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "pervade society",
+        "pervade daily life",
+        "pervade the system"
+      ],
+      "paraphrases": [
+        "spread through",
+        "permeate",
+        "run through"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Science and technology have come to pervade every aspect of our lives.",
+          "translation": "科学和技术已经渗透到我们生活的每一个方面.",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Order, proportion, and fitness pervade the universe.",
+          "translation": "秩序 、 均衡和公理遍及宇宙.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In technology topics, \"pervade\" can describe how new systems spread or reshape daily life.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"pervade\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch1"
     }
   ]
 }

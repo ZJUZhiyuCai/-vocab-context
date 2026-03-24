@@ -1,0 +1,1926 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-03-23T15:48:29.234Z",
+  "source": "IELTS Foundation",
+  "topic": "media",
+  "name": "IELTS Topic Pack - Media",
+  "totalBundles": 32,
+  "bundles": [
+    {
+      "bundleId": "media_evidence_004",
+      "word": "evidence",
+      "lemma": "evidence",
+      "ipa": "/ˈɛvɪdəns/",
+      "partOfSpeech": "n.",
+      "sense": "facts, signs, or information that show whether something is true or really exists",
+      "englishDefinition": "Facts, signs, or information that show whether a belief, claim, or explanation is true.",
+      "chineseMeaning": "证据；依据；迹象",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "strong evidence",
+        "clear evidence",
+        "provide evidence"
+      ],
+      "paraphrases": [
+        "proof",
+        "support",
+        "indication"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "There is growing evidence that air pollution affects children’s long-term health.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should base transport policy on evidence rather than short-term political pressure.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I am more likely to change my opinion when someone gives clear evidence instead of just repeating a claim.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"evidence\" in one IELTS-style sentence about proof, research findings, or support for an argument."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_comment_018",
+      "word": "comment",
+      "lemma": "comment",
+      "ipa": "/ˈkɒment/",
+      "partOfSpeech": "n./v.",
+      "sense": "an opinion, remark, or act of expressing a view about something",
+      "englishDefinition": "A remark or opinion about something, or the act of expressing that opinion publicly or privately.",
+      "chineseMeaning": "出口，把商品或服务销往国外",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "make a comment",
+        "comment on",
+        "public comment"
+      ],
+      "paraphrases": [
+        "remark",
+        "opinion",
+        "observation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The article included expert comments on how rising food prices affect low-income families.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Teachers should comment on students’ ideas as well as their grammar when giving feedback.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I usually comment on online services only when the experience is either very good or very poor.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"comment\" in one IELTS-style sentence about feedback, media, or public opinion."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_source_028",
+      "word": "source",
+      "lemma": "source",
+      "ipa": "/sɔrs/",
+      "partOfSpeech": "n.",
+      "sense": "the place, person, or thing that information, energy, materials, or problems come from",
+      "englishDefinition": "The origin of something, or the person, document, or place that provides information or supplies something.",
+      "chineseMeaning": "来源；根源；提供信息或资源的人、文件或地方",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "energy source",
+        "reliable source",
+        "main source of income"
+      ],
+      "paraphrases": [
+        "origin",
+        "basis",
+        "provider"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies traffic as a major source of urban air pollution.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Students should learn how to evaluate whether an online source is reliable before using it in research.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For many families, the internet is now the main source of news and practical information.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"source\" in one IELTS-style sentence about information, pollution, income, or energy."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_react_040",
+      "word": "react",
+      "lemma": "react",
+      "ipa": "/riˈækt/",
+      "partOfSpeech": "v.",
+      "sense": "to respond to an event, change, idea, or situation",
+      "englishDefinition": "To respond in a particular way to news, pressure, change, or another stimulus.",
+      "chineseMeaning": "作出反应，回应",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "react to news",
+        "react quickly",
+        "react negatively",
+        "public reaction"
+      ],
+      "paraphrases": [
+        "respond",
+        "reply",
+        "adjust",
+        "show a response"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Consumers often react quickly when prices rise sharply or product quality falls.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments need to react faster to scientific warnings about climate risks.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "People in my city usually react positively when a new park or cycle lane is introduced.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"react\" in one IELTS-style sentence about how people, consumers, or governments respond to change."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_sequence_043",
+      "word": "sequence",
+      "lemma": "sequence",
+      "ipa": "/ˈsikwəns, -ˌkwɛns/",
+      "partOfSpeech": "n.",
+      "sense": "a series of things, events, or steps arranged in a particular order",
+      "englishDefinition": "A set of related events, stages, or items that happen or are arranged in a specific order.",
+      "chineseMeaning": "顺序；序列；按特定次序排列的一组步骤或事件",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "sequence of events",
+        "logical sequence",
+        "in sequence"
+      ],
+      "paraphrases": [
+        "order",
+        "series",
+        "progression"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The passage describes the sequence of events that led to the rapid growth of the city.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Task 1 answers are clearer when the process is explained in a logical sequence from start to finish.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I remember the sequence of steps more easily when a teacher demonstrates the whole process first.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"sequence\" in one IELTS-style sentence about events, stages, or explaining a process."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_imply_086",
+      "word": "imply",
+      "lemma": "imply",
+      "ipa": "/ɪmˈplaɪ/",
+      "partOfSpeech": "v.",
+      "sense": "suggest something indirectly rather than state it clearly",
+      "englishDefinition": "to suggest or indicate something without saying it directly",
+      "chineseMeaning": "& vi.暗示；意味；隐含",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "imply that",
+        "strongly imply",
+        "seem to imply",
+        "not necessarily imply"
+      ],
+      "paraphrases": [
+        "suggest",
+        "indicate",
+        "hint at"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The findings imply that access to training can reduce unemployment over time.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A sharp fall in attendance may imply that public confidence has weakened.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "High prices can imply that a product is aimed at wealthier consumers.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"imply\" in one IELTS-style sentence that interprets a result or trend."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_perceive_092",
+      "word": "perceive",
+      "lemma": "perceive",
+      "ipa": "/pərˈsiv/",
+      "partOfSpeech": "v.",
+      "sense": "see or understand something in a particular way",
+      "englishDefinition": "to notice, understand, or interpret something in a particular way",
+      "chineseMeaning": "意识到；察觉；发觉",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "perceive a risk",
+        "be perceived as",
+        "widely perceived",
+        "perceive the difference"
+      ],
+      "paraphrases": [
+        "view",
+        "interpret"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Some consumers perceive electric vehicles as expensive but environmentally responsible.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Technology is often perceived as a solution to problems that are partly social.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "People perceive success differently depending on their background.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"perceive\" in one sentence about public opinion."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_item_124",
+      "word": "item",
+      "lemma": "item",
+      "ipa": "/ˈaɪtəm/",
+      "partOfSpeech": "n.",
+      "sense": "a single thing in a list, set, or discussion",
+      "englishDefinition": "A single thing in a list, set, or discussion",
+      "chineseMeaning": "项目，条款；一件商品",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "budget item",
+        "survey item",
+        "news item"
+      ],
+      "paraphrases": [
+        "thing",
+        "entry"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies budget item as a major issue in media and communication.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address survey item if governments want to improve public information and influence.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, item is important because it shapes public information and influence.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"item\" in one IELTS-style sentence about media and communication."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_debrief_150",
+      "word": "debrief",
+      "lemma": "debrief",
+      "ipa": "/ˌdi'brif/",
+      "partOfSpeech": "v.",
+      "sense": "向（外交人员等）询问执行任务的情况",
+      "englishDefinition": "To question someone about a task or mission they have completed",
+      "chineseMeaning": "听取汇报；询问某人完成的任务或行动情况",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "not debrief",
+        "debrief her",
+        "Daily Debrief",
+        "My debrief"
+      ],
+      "paraphrases": [
+        "question",
+        "interview",
+        "examine"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "If Nadia's the one with intel on Vadik, why not debrief her yourself?",
+          "translation": "如果娜蒂娅就是在瓦蒂克工作的为什么你自己不去听她报告?",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Join Charles Cooper and Stephen Shankland on the CNET News Daily Debrief.",
+          "translation": "加入了CNET新闻每天的总结查尔斯库珀和斯蒂芬的专访.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "JB : My debrief room, after qualifying, I think.",
+          "translation": "简森 -巴顿 :我认为会是在排位赛之后的汇报室里.",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"debrief\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_investigative_182",
+      "word": "investigative",
+      "lemma": "investigative",
+      "ipa": "/ɪnˈvestɪgeɪtɪv/",
+      "partOfSpeech": "adj.",
+      "sense": "intended to discover facts through careful examination",
+      "englishDefinition": "involving careful examination to discover facts or expose problems",
+      "chineseMeaning": "调查性质的,研究的,爱调查研究的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "investigative journalism",
+        "investigative report",
+        "investigative work"
+      ],
+      "paraphrases": [
+        "inquiry-based",
+        "fact-finding"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Investigative journalism plays a crucial role in exposing corruption.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The report calls for a full investigative review of the incident.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think investigative reporting is essential for a healthy democracy.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"investigative\" in one IELTS-style sentence about media and public communication."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_prospective_190",
+      "word": "prospective",
+      "lemma": "prospective",
+      "ipa": "/prəˈspɛktɪv/",
+      "partOfSpeech": "adj.",
+      "sense": "expected or likely to happen in the future; potential",
+      "englishDefinition": "expected or likely to happen in the future, or describing someone who may become involved in something",
+      "chineseMeaning": "预期的；未来的；可能的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "prospective students",
+        "prospective buyers",
+        "prospective employees",
+        "prospective benefits"
+      ],
+      "paraphrases": [
+        "potential",
+        "future"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Universities often provide online guidance for prospective students before the application season begins.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The scheme could bring significant benefits for prospective employees in rural areas.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would advise prospective students to compare costs, courses, and campus support carefully.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"prospective\" in one IELTS-style sentence about students, workers, or future outcomes."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_powerful_217",
+      "word": "powerful",
+      "lemma": "powerful",
+      "ipa": "/ˈpaʊərfl/",
+      "partOfSpeech": "adj.",
+      "sense": "having a strong effect or influence",
+      "englishDefinition": "Having a strong effect or influence",
+      "chineseMeaning": "强大的，有力的；有影响力的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "powerful influence",
+        "powerful tool",
+        "powerful effect"
+      ],
+      "paraphrases": [
+        "strong",
+        "influential"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Social media has become a powerful influence on how young people form opinions about public issues.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Advertising is a powerful tool, but it can also encourage unhealthy consumption habits.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, teachers can have a powerful impact on whether students remain motivated.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"powerful\" in one IELTS-style sentence about media and communication."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_broadcast_223",
+      "word": "broadcast",
+      "lemma": "broadcast",
+      "ipa": "/ˈbrɔdkæst/",
+      "partOfSpeech": "v.",
+      "sense": "to send out information by television, radio, or online channels",
+      "englishDefinition": "To send out information by television, radio, or online channels",
+      "chineseMeaning": "广播，播放；传播，散布",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "broadcast information",
+        "broadcast live",
+        "broadcast content"
+      ],
+      "paraphrases": [
+        "transmit",
+        "air"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent studies show that media organisations and audiences often broadcast information when dealing with public information and influence.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should broadcast live if they want to improve outcomes in media and communication.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think institutions need to broadcast content in order to respond effectively to public information and influence.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"broadcast\" in one IELTS-style sentence about media and communication."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_speculate_239",
+      "word": "speculate",
+      "lemma": "speculate",
+      "ipa": "/ˈspɛkjəˌlet/",
+      "partOfSpeech": "v.",
+      "sense": "to guess about something without enough evidence",
+      "englishDefinition": "To guess about something without enough evidence",
+      "chineseMeaning": "推测，猜测；投机，炒作",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "speculate about causes",
+        "speculate publicly",
+        "speculate on outcomes"
+      ],
+      "paraphrases": [
+        "guess",
+        "theorise"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent studies show that media organisations and audiences often speculate about causes when dealing with public information and influence.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should speculate publicly if they want to improve outcomes in media and communication.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think institutions need to speculate on outcomes in order to respond effectively to public information and influence.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"speculate\" in one IELTS-style sentence about media and communication."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_broadcasting_271",
+      "word": "broadcasting",
+      "lemma": "broadcasting",
+      "ipa": "/ˈbrɔdkæstɪŋ/",
+      "partOfSpeech": "n.",
+      "sense": "the activity or industry of sending programmes to the public",
+      "englishDefinition": "The activity or industry of sending programmes to the public",
+      "chineseMeaning": "广播，播音；广播业",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "public broadcasting",
+        "broadcasting industry",
+        "broadcasting standards"
+      ],
+      "paraphrases": [
+        "transmission",
+        "media output"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies public broadcasting as a major issue in media and communication.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address broadcasting industry if governments want to improve public information and influence.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, broadcasting is important because it shapes public information and influence.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"broadcasting\" in one IELTS-style sentence about media and communication."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_commentator_274",
+      "word": "commentator",
+      "lemma": "commentator",
+      "ipa": "/ˈkɑmənteɪtə(r)/",
+      "partOfSpeech": "n.",
+      "sense": "a person who gives opinions publicly on news or events",
+      "englishDefinition": "A person who gives opinions publicly on news or events",
+      "chineseMeaning": "（电台的）时事评论员，实况广播报导员,注解者，注释者,评论员，解说员,主持[解释]宗教仪式的非教士",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "political commentator",
+        "media commentator",
+        "commentator argued"
+      ],
+      "paraphrases": [
+        "analyst",
+        "observer"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies political commentator as a major issue in media and communication.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address media commentator if governments want to improve public information and influence.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, commentator is important because it shapes public information and influence.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"commentator\" in one IELTS-style sentence about media and communication."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_conclusive_275",
+      "word": "conclusive",
+      "lemma": "conclusive",
+      "ipa": "/kənˈklusɪv/",
+      "partOfSpeech": "adj.",
+      "sense": "showing that something is definitely true",
+      "englishDefinition": "Showing that something is definitely true",
+      "chineseMeaning": "决定性的,令人信服的,确凿的,消除怀疑的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "conclusive evidence",
+        "conclusive proof",
+        "conclusive result"
+      ],
+      "paraphrases": [
+        "decisive",
+        "definite"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The researchers found suggestive evidence, but they admitted it was not yet conclusive.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Without conclusive data, policymakers may struggle to justify expensive reforms.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I would not call the evidence conclusive because the sample size was too small.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"conclusive\" in one IELTS-style sentence about media and communication."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "media_journalism_topicexp1_01",
+      "word": "journalism",
+      "lemma": "journalism",
+      "ipa": "/ˈdʒɜːnəlɪzəm/",
+      "partOfSpeech": "n.",
+      "sense": "the profession of reporting news",
+      "englishDefinition": "the activity of gathering, assessing, and presenting news and information",
+      "chineseMeaning": "新闻业；新闻工作",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "investigative journalism",
+        "quality journalism",
+        "career in journalism"
+      ],
+      "paraphrases": [
+        "news reporting",
+        "press work",
+        "news media"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The relationship between journalism and media influence has been widely debated.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Media organizations have a responsibility regarding journalism in their reporting.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For media topics, journalism helps express opinions about information and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"journalism\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "media_censorship_topicexp1_01",
+      "word": "censorship",
+      "lemma": "censorship",
+      "ipa": "/ˈsensəʃɪp/",
+      "partOfSpeech": "n.",
+      "sense": "control over information",
+      "englishDefinition": "the suppression or prohibition of speech, writing, or images",
+      "chineseMeaning": "审查；审查制度",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "media censorship",
+        "government censorship",
+        "censorship laws"
+      ],
+      "paraphrases": [
+        "suppression",
+        "restriction",
+        "control"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The relationship between censorship and media influence has been widely debated.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Media organizations have a responsibility regarding censorship in their reporting.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For media topics, censorship helps express opinions about information and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"censorship\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "media_coverage_topicexp1_01",
+      "word": "coverage",
+      "lemma": "coverage",
+      "ipa": "/ˈkʌvərɪdʒ/",
+      "partOfSpeech": "n.",
+      "sense": "media reporting of an event",
+      "englishDefinition": "the extent to which something is reported by the media",
+      "chineseMeaning": "新闻报道；覆盖范围",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "media coverage",
+        "news coverage",
+        "extensive coverage"
+      ],
+      "paraphrases": [
+        "reporting",
+        "news story",
+        "media attention"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The relationship between coverage and media influence has been widely debated.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Media organizations have a responsibility regarding coverage in their reporting.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For media topics, coverage helps express opinions about information and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"coverage\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "media_advertisement_topicexp1_01",
+      "word": "advertisement",
+      "lemma": "advertisement",
+      "ipa": "/ədˈvɜːtɪsmənt/",
+      "partOfSpeech": "n.",
+      "sense": "paid promotional message",
+      "englishDefinition": "a public notice promoting a product, service, or event",
+      "chineseMeaning": "广告",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "television advertisement",
+        "online advertisement",
+        "advertisement campaign"
+      ],
+      "paraphrases": [
+        "ad",
+        "commercial",
+        "promotion"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The relationship between advertisement and media influence has been widely debated.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Media organizations have a responsibility regarding advertisement in their reporting.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For media topics, advertisement helps express opinions about information and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"advertisement\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "media_sensationalism_topicexp1_01",
+      "word": "sensationalism",
+      "lemma": "sensationalism",
+      "ipa": "/senˈseɪʃənəlɪzəm/",
+      "partOfSpeech": "n.",
+      "sense": "exaggerated media reporting",
+      "englishDefinition": "the presentation of stories in a way that exaggerates to attract attention",
+      "chineseMeaning": "耸人听闻的报道方式",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "media sensationalism",
+        "avoid sensationalism",
+        "accuse of sensationalism"
+      ],
+      "paraphrases": [
+        "exaggeration",
+        "sensational reporting",
+        "hype"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The relationship between sensationalism and media influence has been widely debated.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Media organizations have a responsibility regarding sensationalism in their reporting.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For media topics, sensationalism helps express opinions about information and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"sensationalism\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "media_misinformation_topicexp1_01",
+      "word": "misinformation",
+      "lemma": "misinformation",
+      "ipa": "/ˌmɪsɪnfəˈmeɪʃən/",
+      "partOfSpeech": "n.",
+      "sense": "incorrect information spread as fact",
+      "englishDefinition": "false or inaccurate information that is spread unintentionally",
+      "chineseMeaning": "虚假信息；错误信息",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "spread misinformation",
+        "combat misinformation",
+        "online misinformation"
+      ],
+      "paraphrases": [
+        "false information",
+        "inaccurate data",
+        "wrong information"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The relationship between misinformation and media influence has been widely debated.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Media organizations have a responsibility regarding misinformation in their reporting.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For media topics, misinformation helps express opinions about information and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"misinformation\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "media_credibility_topicexp1_01",
+      "word": "credibility",
+      "lemma": "credibility",
+      "ipa": "/ˌkredəˈbɪləti/",
+      "partOfSpeech": "n.",
+      "sense": "trustworthiness of a source",
+      "englishDefinition": "the quality of being trusted and believed in",
+      "chineseMeaning": "可信度；公信力",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "media credibility",
+        "lose credibility",
+        "establish credibility"
+      ],
+      "paraphrases": [
+        "trustworthiness",
+        "reliability",
+        "believability"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The relationship between credibility and media influence has been widely debated.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Media organizations have a responsibility regarding credibility in their reporting.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For media topics, credibility helps express opinions about information and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"credibility\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "media_mainstream_topicexp1_01",
+      "word": "mainstream",
+      "lemma": "mainstream",
+      "ipa": "/ˈmeɪnstriːm/",
+      "partOfSpeech": "adj.",
+      "sense": "dominant or conventional",
+      "englishDefinition": "considered normal and accepted by the majority of people",
+      "chineseMeaning": "主流的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mainstream media",
+        "mainstream culture",
+        "mainstream opinion"
+      ],
+      "paraphrases": [
+        "conventional",
+        "dominant",
+        "popular"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The relationship between mainstream and media influence has been widely debated.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Media organizations have a responsibility regarding mainstream in their reporting.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For media topics, mainstream helps express opinions about information and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"mainstream\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "media_indirect_legacy-batch1_01",
+      "word": "indirect",
+      "lemma": "indirect",
+      "ipa": "ˌɪndɪˈrɛkt, -daɪ-",
+      "partOfSpeech": "adj.",
+      "sense": "not direct or immediate",
+      "englishDefinition": "not happening in a direct, immediate, or straightforward way",
+      "chineseMeaning": "间接的；非直接的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "indirect effect",
+        "indirect cost",
+        "indirect approach"
+      ],
+      "paraphrases": [
+        "secondary",
+        "not immediate",
+        "roundabout"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Businesses are feeling the indirect effects from the recession that'sgoing on elsewhere.",
+          "translation": "企业感受到了别处经济衰退带来的间接影响。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "His influence has been profound, but it has been indirect.",
+          "translation": "他的影响是深远的，但不是直接的。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, \"indirect\" can be used to explain a wider issue in a clear academic way.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"indirect\" in one IELTS-style sentence about general."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "media_deplorable_legacy-batch2_01",
+      "word": "deplorable",
+      "lemma": "deplorable",
+      "ipa": "dɪˈplɔrəbəl, -ˈplor-",
+      "partOfSpeech": "adj.",
+      "sense": "extremely bad and deserving criticism",
+      "englishDefinition": "so bad that it deserves strong criticism or shock",
+      "chineseMeaning": "糟糕到应受谴责的；令人痛心的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "deplorable conditions",
+        "deplorable behaviour",
+        "deplorable state"
+      ],
+      "paraphrases": [
+        "appalling",
+        "shocking",
+        "unacceptable"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report described the living conditions in the settlement as deplorable.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "It is deplorable when public funds are wasted while essential services remain under pressure.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "A situation becomes deplorable when vulnerable groups receive no meaningful support.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"deplorable\" in one IELTS-style sentence about government."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch2"
+    },
+    {
+      "bundleId": "media_mediate_legacy-batch3_01",
+      "word": "mediate",
+      "lemma": "mediate",
+      "ipa": "ˈmidiˌet",
+      "partOfSpeech": "v.",
+      "sense": "help two sides reach an agreement",
+      "englishDefinition": "to help two sides reach an agreement by discussing the problem with both of them",
+      "chineseMeaning": "调解；斡旋；在双方之间促成解决",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mediate in a dispute",
+        "mediate a conflict",
+        "mediate between groups"
+      ],
+      "paraphrases": [
+        "broker",
+        "help settle",
+        "intervene to resolve"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "International organizations sometimes mediate in disputes when governments cannot negotiate directly.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A neutral body may be needed to mediate between workers and employers during a prolonged strike.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In public life, trusted leaders can mediate when communities disagree strongly.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"mediate\" in one IELTS-style sentence about government."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch3"
+    },
+    {
+      "bundleId": "media_impartiality_legacy-batch4_01",
+      "word": "impartiality",
+      "lemma": "impartiality",
+      "ipa": " ˌɪmpɑrʃɪˈælətɪ",
+      "partOfSpeech": "n.",
+      "sense": "fairness and neutrality",
+      "englishDefinition": "the quality of treating different people or ideas fairly without favouring one side",
+      "chineseMeaning": "公正；不偏不倚；中立",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "judicial impartiality",
+        "maintain impartiality",
+        "political impartiality"
+      ],
+      "paraphrases": [
+        "fairness",
+        "neutrality",
+        "objectivity"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Public trust depends on the impartiality of courts, regulators, and other institutions.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "News organizations should protect impartiality if they want audiences to trust their reporting.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Teachers are expected to show impartiality when dealing with disagreements between students.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"impartiality\" in one IELTS-style sentence about government."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch4"
+    },
+    {
+      "bundleId": "media_resourceful_legacy-batch4_01",
+      "word": "resourceful",
+      "lemma": "resourceful",
+      "ipa": "rɪˈsɔrsfl",
+      "partOfSpeech": "adj.",
+      "sense": "able to solve problems in practical ways",
+      "englishDefinition": "good at finding practical and clever ways to deal with difficulties",
+      "chineseMeaning": "足智多谋的；善于应对问题的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "resourceful student",
+        "resourceful approach",
+        "highly resourceful"
+      ],
+      "paraphrases": [
+        "adaptable",
+        "inventive",
+        "quick-thinking"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Resourceful students often make progress even when they have limited materials or support.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A resourceful teacher can adapt lessons to different levels without lowering standards.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In real life, employers value resourceful people who can solve problems calmly.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"resourceful\" in one IELTS-style sentence about education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch4"
+    },
+    {
+      "bundleId": "media_digression_legacy-batch5_01",
+      "word": "digression",
+      "lemma": "digression",
+      "ipa": "daɪ'ɡreʃn",
+      "partOfSpeech": "n.",
+      "sense": "a movement away from the main topic",
+      "englishDefinition": "a part of a talk or piece of writing that moves away from the main point",
+      "chineseMeaning": "离题；偏离主线的插话或段落",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "brief digression",
+        "avoid digression",
+        "return from a digression"
+      ],
+      "paraphrases": [
+        "side track",
+        "departure from the main point",
+        "off-topic section"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A clear essay should avoid unnecessary digression if the writer wants the main argument to remain strong.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Students often lose marks when a paragraph turns into digression instead of supporting the question directly.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In speaking, a short digression may feel natural, but too much of it weakens the answer.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"digression\" in one IELTS-style sentence about education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch5"
+    },
+    {
+      "bundleId": "media_ovation_legacy-batch7_01",
+      "word": "ovation",
+      "lemma": "ovation",
+      "ipa": "oʊˈveɪʃn",
+      "partOfSpeech": "n.",
+      "sense": "enthusiastic applause or welcome",
+      "englishDefinition": "an occasion when a person or group is enthusiastically cheered or applauded",
+      "chineseMeaning": "热烈欢迎；热烈鼓掌",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "standing ovation",
+        "receive an ovation",
+        "rapturous ovation"
+      ],
+      "paraphrases": [
+        "applause",
+        "acclaim",
+        "cheering"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "When she walked onstage she was given a standing ovation.",
+          "translation": "当她走上台时，观众起立鼓掌欢迎。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The final piece won her a rapturous ovation from the audience.",
+          "translation": "最后一支曲子为她赢得了观众的热烈掌声.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In media topics, \"ovation\" can help discuss information, bias, or public communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"ovation\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch7"
+    }
+  ]
+}

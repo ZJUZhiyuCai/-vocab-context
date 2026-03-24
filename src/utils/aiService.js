@@ -1,6 +1,6 @@
 ﻿/**
  * AI服务工具
- * 封装 OpenRouter API 调用，提供多种AI功能
+ * 封装 AI API 调用，提供多种AI功能
  * - AI个性化例句生成
  * - AI智能测验生成
  * - AI错题分析与学习建议
@@ -10,7 +10,7 @@
 import { generateQuiz, generateFillBlankQuestion } from './aiQuizGenerator.js';
 import { analyzeErrors, analyzeWordError, generateStudyPlan } from './aiErrorAnalyzer.js';
 import { generateMemoryHooks, generateWordNetwork, generateScenarioExamples, generateLearningPath } from './aiMemoryHooks.js';
-import { createOpenRouterChatCompletion, sanitizeApiKey } from './openRouterClient.js';
+import { createAIChatCompletion, resolveApiKey } from './aiClient.js';
 
 // localStorage keys
 const CACHE_KEY_PREFIX = 'vocabcontext_ai_';
@@ -28,11 +28,7 @@ const CACHE_DURATION = 24 * 60 * 60 * 1000; // 24小时缓存
  * @returns {Promise<{sentence: string, translation: string}>} AI生成的例句
  */
 export async function generateAIExample({ apiKey, word, meaning, purpose }) {
-  const cleanedApiKey = sanitizeApiKey(apiKey);
-
-  if (!cleanedApiKey) {
-    throw new Error('API密钥无效');
-  }
+  const cleanedApiKey = resolveApiKey(apiKey);
 
   // 检查缓存
   const cacheKey = getCacheKey(word, purpose);
@@ -154,15 +150,11 @@ function cleanOldCache() {
  * @returns {Promise<{sentence: string, translation: string}>} AI生成的例句
  */
 async function generateAIExampleWithoutCache({ apiKey, word, meaning, purpose }) {
-  const cleanedApiKey = sanitizeApiKey(apiKey);
-
-  if (!cleanedApiKey) {
-    throw new Error('API密钥无效');
-  }
+  const cleanedApiKey = resolveApiKey(apiKey);
 
   const prompt = buildPrompt(word, meaning, purpose);
 
-  const data = await createOpenRouterChatCompletion({
+  const data = await createAIChatCompletion({
     apiKey: cleanedApiKey,
     messages: [
       {
@@ -388,6 +380,7 @@ export function getErrorMessage(errorCode) {
  */
 const DEFAULT_SETTINGS = {
   apiKey: '',
+  aiProvider: 'siliconflow',
   enabled: false,
   features: {
     example: true,      // AI例句
@@ -403,6 +396,8 @@ const DEFAULT_SETTINGS = {
 };
 
 function normalizeAISettings(settings = {}) {
+  const hasSavedApiKey = Boolean(settings.apiKey);
+  const isLegacyProvider = hasSavedApiKey && settings.aiProvider !== DEFAULT_SETTINGS.aiProvider;
   const userLevel = settings.aiUserLevel || settings.userLevel || DEFAULT_SETTINGS.userLevel;
   const cacheEnabled = settings.aiCacheEnabled ?? settings.cacheEnabled ?? DEFAULT_SETTINGS.cacheEnabled;
   const learningPurpose = settings.learningPurpose || settings.purpose || DEFAULT_SETTINGS.learningPurpose;
@@ -410,7 +405,8 @@ function normalizeAISettings(settings = {}) {
   return {
     ...DEFAULT_SETTINGS,
     ...settings,
-    apiKey: settings.apiKey || '',
+    apiKey: isLegacyProvider ? '' : settings.apiKey || '',
+    aiProvider: DEFAULT_SETTINGS.aiProvider,
     userLevel,
     aiUserLevel: userLevel,
     cacheEnabled,
@@ -454,13 +450,9 @@ export function saveAISettings(settings) {
  */
 export async function validateApiKey(apiKey) {
   try {
-    const cleanedApiKey = sanitizeApiKey(apiKey);
+    const cleanedApiKey = resolveApiKey(apiKey);
 
-    if (!cleanedApiKey) {
-      return false;
-    }
-
-    await createOpenRouterChatCompletion({
+    await createAIChatCompletion({
       apiKey: cleanedApiKey,
       messages: [{ role: 'user', content: 'Hello' }],
       maxTokens: 10
@@ -567,7 +559,7 @@ export class AIService {
    * @private
    */
   getCleanedApiKey() {
-    return sanitizeApiKey(this.settings.apiKey);
+    return resolveApiKey(this.settings.apiKey);
   }
 
   /**
@@ -575,7 +567,7 @@ export class AIService {
    */
   isAvailable() {
     this.reloadSettings();
-    return !!this.getCleanedApiKey();
+    return true;
   }
 
   /**

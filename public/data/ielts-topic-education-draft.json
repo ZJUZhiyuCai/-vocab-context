@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-23T01:01:23.040Z",
+  "generatedAt": "2026-03-23T14:14:18.307Z",
   "approvalStatus": "draft",
   "draft": true,
   "topic": "education",
-  "totalBundles": 115,
+  "totalBundles": 122,
   "note": "Draft topic pack generated from approved IELTS Core bundles. Review before learner-facing use.",
   "bundles": [
     {
@@ -488,8 +488,8 @@
       "lemma": "primary",
       "ipa": "/ˈpraɪmeri/",
       "partOfSpeech": "adj.",
-      "sense": "????????????",
-      "englishDefinition": "Most important or basic; in education, primary also refers to the first stage of formal schooling.",
+      "sense": "most important, basic, or coming first in a system or process",
+      "englishDefinition": "Most important, basic, or first in order; in education it can also refer to the first stage of formal schooling.",
       "chineseMeaning": "首要的；主要的；最早的",
       "topic": "education",
       "taskTypes": [
@@ -501,7 +501,8 @@
       "collocations": [
         "primary education",
         "primary cause",
-        "primary responsibility"
+        "primary responsibility",
+        "primary concern"
       ],
       "paraphrases": [
         "main",
@@ -513,25 +514,25 @@
         {
           "kind": "reading",
           "text": "Many reports identify funding shortages as the primary barrier to improving rural primary education.",
-          "translation": "??????????????????????????",
+          "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
           "text": "In my view, the primary aim of schooling should be to develop literacy, numeracy, and independent thinking.",
-          "translation": "????????????????????????????????",
+          "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
           "text": "The primary reason some parents choose private schools is the belief that class sizes are smaller.",
-          "translation": "???????????????????????????",
+          "translation": "",
           "purpose": "far-transfer"
         }
       ],
       "productionPrompt": {
         "mode": "writing",
-        "instruction": "Use \"primary\" in one IELTS-style sentence about the main goal or first stage of education."
+        "instruction": "Use \"primary\" in one IELTS-style sentence about the main goal, cause, concern, or first stage of education."
       },
       "sourceQuality": {
         "relevanceScore": 4,
@@ -608,7 +609,7 @@
       "lemma": "appropriate",
       "ipa": "/əˈproʊpriət/",
       "partOfSpeech": "adj.",
-      "sense": "???????????",
+      "sense": "suitable or acceptable for a particular situation, purpose, or level",
       "englishDefinition": "Suitable or acceptable for a particular situation, purpose, or level.",
       "chineseMeaning": "适当的；恰当的；合适的 v.盗用",
       "topic": "education",
@@ -6841,6 +6842,433 @@
         "decision": "keep"
       },
       "draft": true
+    },
+    {
+      "bundleId": "education_conceptual_legacyb1_01",
+      "word": "conceptual",
+      "lemma": "conceptual",
+      "ipa": "kənˈsɛptʃuəl",
+      "partOfSpeech": "adj.",
+      "sense": "related to ideas or concepts",
+      "englishDefinition": "relating to ideas, concepts, or abstract thinking rather than practical details",
+      "chineseMeaning": "概念上的；观念性的",
+      "topic": "education",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "conceptual framework",
+        "conceptual understanding",
+        "conceptual model"
+      ],
+      "paraphrases": [
+        "theoretical",
+        "abstract",
+        "idea-based"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The functionalist model of industrial society was subjected to conceptual criticism.",
+          "translation": "工业社会的实用主义模型在概念上遭到了批判。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In the 50s, Rauschenberg anticipated the conceptual art movement of the 80s.",
+          "translation": "上世纪50年代时，劳申伯格就早早地预见到了80年代的概念艺术运动。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In an education topic, \"conceptual\" helps explain access, quality, or long-term learning outcomes.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"conceptual\" in one IELTS-style sentence about education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "education_illiteracy_legacyb1_01",
+      "word": "illiteracy",
+      "lemma": "illiteracy",
+      "ipa": "ɪˈlɪtərəsi",
+      "partOfSpeech": "n.",
+      "sense": "lack of the ability to read and write",
+      "englishDefinition": "the inability to read or write, or the lack of basic literacy skills",
+      "chineseMeaning": "文盲；缺乏基本读写能力",
+      "topic": "education",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "reduce illiteracy",
+        "combat illiteracy",
+        "adult illiteracy"
+      ],
+      "paraphrases": [
+        "lack of literacy",
+        "inability to read",
+        "poor reading ability"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Poverty and illiteracy go together with high birth rates.",
+          "translation": "贫困、文盲与高出生率密切相关。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "It is encouraging to read that illiteracy is declining.",
+          "translation": "从读报中了解文盲情况正在好转,这是令人鼓舞的.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In an education topic, \"illiteracy\" helps explain access, quality, or long-term learning outcomes.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"illiteracy\" in one IELTS-style sentence about education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "education_nonprofit_legacyb1_01",
+      "word": "nonprofit",
+      "lemma": "nonprofit",
+      "ipa": "nɑnˈprɑfɪt",
+      "partOfSpeech": "adj.",
+      "sense": "operating without the goal of making profit",
+      "englishDefinition": "not intended to make a profit, especially in relation to an organization",
+      "chineseMeaning": "非营利的",
+      "topic": "education",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "nonprofit organization",
+        "nonprofit sector",
+        "nonprofit group"
+      ],
+      "paraphrases": [
+        "not-for-profit",
+        "charitable",
+        "non-commercial"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The United States corporations donate to charity and other nonprofit purposes some $ 1,600 million annually.",
+          "translation": "美国各大公司每年为慈善事业和其它非牟利事业捐款约十六亿美元.",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Singles in Agriculture was formed as a nonprofit organization in 1986.",
+          "translation": "“单身农业人”这个团体是建立于1986年的非营利机构.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In an education topic, \"nonprofit\" helps explain access, quality, or long-term learning outcomes.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"nonprofit\" in one IELTS-style sentence about education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "education_intercultural_legacyb2_01",
+      "word": "intercultural",
+      "lemma": "intercultural",
+      "ipa": "ˌɪntər'kʌltʃərəl",
+      "partOfSpeech": "adj.",
+      "sense": "relating to interaction across cultures",
+      "englishDefinition": "involving communication or interaction between people from different cultures",
+      "chineseMeaning": "跨文化的；不同文化之间的",
+      "topic": "education",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "intercultural communication",
+        "intercultural understanding",
+        "intercultural skills"
+      ],
+      "paraphrases": [
+        "cross-cultural",
+        "between cultures",
+        "multicultural"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Intercultural communication is becoming more important as universities attract students from many countries.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Schools should provide intercultural training so students can work effectively in diverse teams.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Travel can improve intercultural understanding because it exposes people to different norms.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"intercultural\" in one IELTS-style sentence about education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch2"
+    },
+    {
+      "bundleId": "education_ambivalence_legacyb2_01",
+      "word": "ambivalence",
+      "lemma": "ambivalence",
+      "ipa": "æmˈbɪvələns",
+      "partOfSpeech": "n.",
+      "sense": "mixed feelings about a subject",
+      "englishDefinition": "the state of having mixed feelings or uncertain attitudes about something",
+      "chineseMeaning": "矛盾心理；摇摆不定的态度",
+      "topic": "education",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "feel ambivalence",
+        "public ambivalence",
+        "sense of ambivalence"
+      ],
+      "paraphrases": [
+        "mixed feelings",
+        "uncertainty",
+        "conflicted attitude"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many parents feel ambivalence about children using technology because it is both useful and distracting.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Public ambivalence toward reform often appears when the costs are immediate but the benefits are long term.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I feel some ambivalence about remote work because it offers freedom but reduces face-to-face contact.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"ambivalence\" in one IELTS-style sentence about education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch2"
+    },
+    {
+      "bundleId": "education_atypical_legacyb4_01",
+      "word": "atypical",
+      "lemma": "atypical",
+      "ipa": "eˈtɪpɪkəl",
+      "partOfSpeech": "adj.",
+      "sense": "not typical or representative",
+      "englishDefinition": "not typical, usual, or representative of the normal pattern",
+      "chineseMeaning": "非典型的；不具代表性的",
+      "topic": "education",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "atypical case",
+        "atypical pattern",
+        "atypical result"
+      ],
+      "paraphrases": [
+        "unusual",
+        "unrepresentative",
+        "not typical"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "One atypical example should not be used as evidence for a general trend in education.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Researchers must explain when a result is atypical rather than broadly representative.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "An atypical case can be interesting, but policy should be based on wider evidence.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"atypical\" in one IELTS-style sentence about education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch4"
+    },
+    {
+      "bundleId": "education_resourceful_legacyb4_01",
+      "word": "resourceful",
+      "lemma": "resourceful",
+      "ipa": "rɪˈsɔrsfl",
+      "partOfSpeech": "adj.",
+      "sense": "able to solve problems in practical ways",
+      "englishDefinition": "good at finding practical and clever ways to deal with difficulties",
+      "chineseMeaning": "足智多谋的；善于应对问题的",
+      "topic": "education",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "resourceful student",
+        "resourceful approach",
+        "highly resourceful"
+      ],
+      "paraphrases": [
+        "adaptable",
+        "inventive",
+        "quick-thinking"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Resourceful students often make progress even when they have limited materials or support.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A resourceful teacher can adapt lessons to different levels without lowering standards.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In real life, employers value resourceful people who can solve problems calmly.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"resourceful\" in one IELTS-style sentence about education."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": true,
+      "sourceCategory": "legacy-batch4"
     }
   ]
 }

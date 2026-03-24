@@ -26,7 +26,7 @@
             "{{ bundle?.word || '...' }}"
           </h2>
           <p :class="['text-sm', isDark ? 'text-gray-400' : 'text-gray-600']">
-            选择正确的同义改写
+            选最自然的改写
           </p>
         </div>
 
@@ -51,7 +51,7 @@
               ]">
                 {{ String.fromCharCode(65 + idx) }}
               </span>
-              <span :class="['text-base', isDark ? 'text-gray-200' : 'text-gray-800']">
+              <span :class="['text-base leading-7', isDark ? 'text-gray-200' : 'text-gray-800']">
                 {{ option.text }}
               </span>
             </div>

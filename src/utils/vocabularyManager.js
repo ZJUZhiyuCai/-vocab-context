@@ -48,6 +48,7 @@ export const VOCABULARIES = [
     file: '/data/vocab-ielts6-breakthrough.json',
     icon: '🎯',
     color: '#52667c',
+    ieltsTrackType: 'legacy',
     difficulty: {
       cefr: ['B2'],
       vocabRange: '6000-6500',
@@ -65,6 +66,7 @@ export const VOCABULARIES = [
     file: '/data/vocab-ielts7-sprint.json',
     icon: '🏆',
     color: '#7c6f62',
+    ieltsTrackType: 'legacy',
     difficulty: {
       cefr: ['B2', 'C1'],
       vocabRange: '6500-8000',
@@ -82,6 +84,7 @@ export const VOCABULARIES = [
     file: '/data/vocab-ielts8-mastery.json',
     icon: '💎',
     color: '#6b5c7c',
+    ieltsTrackType: 'legacy',
     difficulty: {
       cefr: ['C1', 'C2'],
       vocabRange: '8000-12044',
@@ -90,21 +93,182 @@ export const VOCABULARIES = [
     }
   },
   {
-    id: 'ielts-core-bundle-sample',
-    name: 'IELTS Core Draft',
-    description: 'Context bundle 草案词库，仅用于实验验证',
-    size: 498,
-    level: 'ielts-core-sample',
+    id: 'ielts-foundation',
+    name: 'IELTS Foundation',
+    description: '雅思基础核心层 · Context Bundle',
+    size: 541,
+    level: 'ielts-foundation',
     category: 'IELTS',
-    file: '/data/ielts-core-500-generated-draft.json',
-    icon: '🧪',
+    file: '/data/ielts-foundation.json',
+    icon: '🎯',
     color: '#6366f1',
     isBundle: true,
+    ieltsTrackType: 'foundation',
     difficulty: {
       cefr: ['B2', 'C1'],
       vocabRange: '6000-8000',
       stars: 3,
-      label: 'IELTS Core'
+      label: 'IELTS Foundation'
+    }
+  },
+  {
+    id: 'ielts-topic-education',
+    name: 'IELTS Topic · Education',
+    description: '教育主题高频语境词汇',
+    size: 124,
+    level: 'ielts-topic',
+    category: 'IELTS',
+    file: '/data/ielts-topic-education.json',
+    icon: '📗',
+    color: '#10b981',
+    isBundle: true,
+    ieltsTrackType: 'topic',
+    topic: 'education',
+    difficulty: {
+      cefr: ['B2', 'C1'],
+      vocabRange: '6000-8000',
+      stars: 3,
+      label: 'Education'
+    }
+  },
+  {
+    id: 'ielts-topic-government',
+    name: 'IELTS Topic · Government',
+    description: '政府与公共政策主题高频语境词汇',
+    size: 108,
+    level: 'ielts-topic',
+    category: 'IELTS',
+    file: '/data/ielts-topic-government.json',
+    icon: '🏯',
+    color: '#0ea5e9',
+    isBundle: true,
+    ieltsTrackType: 'topic',
+    topic: 'government',
+    difficulty: {
+      cefr: ['B2', 'C1'],
+      vocabRange: '6500-8500',
+      stars: 4,
+      label: 'Government'
+    }
+  },
+  {
+    id: 'ielts-topic-environment',
+    name: 'IELTS Topic · Environment',
+    description: '环境与可持续发展主题高频语境词汇',
+    size: 71,
+    level: 'ielts-topic',
+    category: 'IELTS',
+    file: '/data/ielts-topic-environment.json',
+    icon: '🌰',
+    color: '#22c55e',
+    isBundle: true,
+    ieltsTrackType: 'topic',
+    topic: 'environment',
+    difficulty: {
+      cefr: ['B2', 'C1'],
+      vocabRange: '6500-8500',
+      stars: 4,
+      label: 'Environment'
+    }
+  },
+  {
+    id: 'ielts-topic-technology',
+    name: 'IELTS Topic · Technology',
+    description: '科技与数字生活主题高频语境词汇',
+    size: 52,
+    level: 'ielts-topic',
+    category: 'IELTS',
+    file: '/data/ielts-topic-technology.json',
+    icon: '🛰',
+    color: '#8b5cf6',
+    isBundle: true,
+    ieltsTrackType: 'topic',
+    topic: 'technology',
+    difficulty: {
+      cefr: ['B2', 'C1'],
+      vocabRange: '6500-8500',
+      stars: 4,
+      label: 'Technology'
+    }
+  },
+  {
+    id: 'ielts-topic-health',
+    name: 'IELTS Topic · Health',
+    description: '健康与公共卫生主题高频语境词汇',
+    size: 53,
+    level: 'ielts-topic',
+    category: 'IELTS',
+    file: '/data/ielts-topic-health.json',
+    icon: '🩺',
+    color: '#ef4444',
+    isBundle: true,
+    ieltsTrackType: 'topic',
+    topic: 'health',
+    difficulty: {
+      cefr: ['B2', 'C1'],
+      vocabRange: '6500-8500',
+      stars: 4,
+      label: 'Health'
+    }
+  },
+  {
+    id: 'ielts-topic-work',
+    name: 'IELTS Topic · Work',
+    description: '工作、效率与就业主题高频语境词汇',
+    size: 32,
+    level: 'ielts-topic',
+    category: 'IELTS',
+    file: '/data/ielts-topic-work.json',
+    icon: '💼',
+    color: '#f59e0b',
+    isBundle: true,
+    ieltsTrackType: 'topic',
+    topic: 'work',
+    difficulty: {
+      cefr: ['B2', 'C1'],
+      vocabRange: '6500-8500',
+      stars: 3,
+      label: 'Work'
+    }
+  },
+  {
+    id: 'ielts-topic-media',
+    name: 'IELTS Topic · Media',
+    description: '媒体与信息传播主题高频语境词汇',
+    size: 32,
+    level: 'ielts-topic',
+    category: 'IELTS',
+    file: '/data/ielts-topic-media.json',
+    icon: '📰',
+    color: '#06b6d4',
+    isBundle: true,
+    ieltsTrackType: 'topic',
+    topic: 'media',
+    difficulty: {
+      cefr: ['B2', 'C1'],
+      vocabRange: '6500-8500',
+      stars: 3,
+      label: 'Media'
+    }
+  },
+  {
+    id: 'ielts-topic-crime',
+    name: 'IELTS Topic · Crime',
+    description: '犯罪与司法主题高频语境词汇',
+    size: 26,
+    level: 'ielts-topic',
+    category: 'IELTS',
+    file: '/data/ielts-topic-crime.json',
+    icon: '⚖️',
+    color: '#64748b',
+    isBundle: true,
+    ieltsTrackType: 'topic',
+    topic: 'crime',
+    difficulty: {
+      cefr: ['B2', 'C1'],
+      vocabRange: '6500-8500',
+      stars: 3,
+      label: 'Crime'
     }
   }
 ]
@@ -116,6 +280,68 @@ export const LEVEL_LABELS = {
   'intermediate': '中级',
   'upper-intermediate': '中高级',
   'advanced': '高级'
+}
+
+// === LocalStorage migration ===
+const VOCAB_ID_MIGRATIONS = {
+  'ielts-core-bundle-sample': 'ielts-foundation'
+}
+
+const STORAGE_MIGRATION_VERSION = '2'
+
+/**
+ * Run idempotent localStorage migrations for renamed IELTS tracks.
+ *
+ * v1 migrated:
+ * - current vocab id
+ * - progress keys
+ *
+ * v2 additionally migrates:
+ * - review state keys
+ */
+function migrateLocalStorage() {
+  try {
+    const migrationKey = 'vocabcontext_migration_version'
+    const currentVersion = localStorage.getItem(migrationKey)
+
+    if (currentVersion === STORAGE_MIGRATION_VERSION) return
+
+    // Migrate current selected vocabulary id.
+    const currentVocabKey = 'vocabcontext_current_vocab'
+    const savedVocab = localStorage.getItem(currentVocabKey)
+    if (savedVocab && VOCAB_ID_MIGRATIONS[savedVocab]) {
+      localStorage.setItem(currentVocabKey, VOCAB_ID_MIGRATIONS[savedVocab])
+    }
+
+    // Migrate per-vocabulary local data without deleting legacy keys so rollback remains possible.
+    for (const [oldId, newId] of Object.entries(VOCAB_ID_MIGRATIONS)) {
+      const oldProgressKey = `vocabcontext_progress_${oldId}`
+      const newProgressKey = `vocabcontext_progress_${newId}`
+      const oldProgress = localStorage.getItem(oldProgressKey)
+
+      if (oldProgress && !localStorage.getItem(newProgressKey)) {
+        localStorage.setItem(newProgressKey, oldProgress)
+      }
+
+      const oldReviewKey = `vocabcontext_review_${oldId}`
+      const newReviewKey = `vocabcontext_review_${newId}`
+      const oldReview = localStorage.getItem(oldReviewKey)
+
+      if (oldReview && !localStorage.getItem(newReviewKey)) {
+        localStorage.setItem(newReviewKey, oldReview)
+      }
+    }
+
+    localStorage.setItem(migrationKey, STORAGE_MIGRATION_VERSION)
+    console.log(`✅ localStorage migration complete (v${STORAGE_MIGRATION_VERSION})`)
+  } catch (error) {
+    console.warn('localStorage migration failed:', error)
+  }
+}
+
+// Run migration on module load in the browser.
+if (typeof window !== 'undefined') {
+  migrateLocalStorage()
 }
 
 // 当前选择的词库

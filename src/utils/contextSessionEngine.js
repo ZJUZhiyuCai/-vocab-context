@@ -25,6 +25,33 @@ export const TASK_TYPES = {
 // 优先主题
 const PRIORITY_TOPICS = ['education', 'environment', 'technology'];
 
+function getBundleId(bundle) {
+  return bundle?.id || bundle?.bundleId || bundle?.word || '';
+}
+
+function normalizeProductionPrompt(productionPrompt, word) {
+  const fallbackInstruction = `Write a sentence using "${word}" in an academic context.`;
+
+  if (typeof productionPrompt === 'string' && productionPrompt.trim()) {
+    return {
+      mode: 'writing',
+      instruction: productionPrompt.trim()
+    };
+  }
+
+  if (productionPrompt && typeof productionPrompt === 'object') {
+    return {
+      mode: productionPrompt.mode || 'writing',
+      instruction: productionPrompt.instruction || fallbackInstruction
+    };
+  }
+
+  return {
+    mode: 'writing',
+    instruction: fallbackInstruction
+  };
+}
+
 /**
  * 创建 Session 引擎
  */
@@ -95,7 +122,8 @@ export function createContextSessionEngine(bundles, options = {}) {
     };
 
     // 从其他 bundles 获取干扰项
-    const otherBundles = state.bundles.filter(b => b.id !== bundle.id);
+    const bundleId = getBundleId(bundle);
+    const otherBundles = state.bundles.filter(b => getBundleId(b) !== bundleId);
     const distractors = shuffleArray(otherBundles)
       .slice(0, 3)
       .map((b, i) => ({
@@ -124,8 +152,9 @@ export function createContextSessionEngine(bundles, options = {}) {
     };
 
     // 从其他 bundles 获取干扰项
+    const bundleId = getBundleId(bundle);
     const otherBundles = state.bundles.filter(b =>
-      b.id !== bundle.id && b.paraphrases && b.paraphrases.length > 0
+      getBundleId(b) !== bundleId && b.paraphrases && b.paraphrases.length > 0
     );
 
     const distractors = shuffleArray(otherBundles)
@@ -169,8 +198,10 @@ export function createContextSessionEngine(bundles, options = {}) {
     const bundle = currentBundle();
     if (!bundle) return null;
 
+    const resolvedPrompt = normalizeProductionPrompt(bundle.productionPrompt, bundle.word);
+
     return {
-      prompt: bundle.productionPrompt || `Write a sentence using "${bundle.word}" in an academic context.`,
+      ...resolvedPrompt,
       word: bundle.word,
       context: currentContext()
     };
@@ -183,8 +214,9 @@ export function createContextSessionEngine(bundles, options = {}) {
     const bundle = currentBundle();
     if (!bundle) return;
 
-    const existingResult = state.results.find(r => r.bundleId === bundle.id) || {
-      bundleId: bundle.id,
+    const bundleId = getBundleId(bundle);
+    const existingResult = state.results.find(r => r.bundleId === bundleId) || {
+      bundleId,
       word: bundle.word,
       topic: bundle.topic
     };

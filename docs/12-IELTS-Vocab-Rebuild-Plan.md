@@ -1,5 +1,15 @@
 # IELTS Vocabulary Rebuild Plan
 
+> **状态：历史文档**
+>
+> 本文档是早期重建计划。当前系统已完成重建：
+> - Foundation: 541 bundles（原计划 Core 500）
+> - Topic Packs: 8 个主题包
+> - 规范文件：`ielts-foundation.json`
+> - 规范 ID：`ielts-foundation`
+>
+> 请参考 `docs/23-IELTS-Learning-Track-Overview.md` 获取当前系统状态。
+
 ## Goal
 
 Rebuild the current IELTS vocabulary into a defensible, high-utility IELTS lexical system.

@@ -1,4 +1,4 @@
-import { createOpenRouterChatCompletion } from './openRouterClient.js';
+import { createAIChatCompletion } from './aiClient.js';
 
 /**
  * 英文释义API服务
@@ -26,7 +26,7 @@ export async function getEnglishDefinition({ apiKey, word, meaning }) {
 
   const prompt = buildPrompt(word, meaning);
 
-  const data = await createOpenRouterChatCompletion({
+  const data = await createAIChatCompletion({
     apiKey,
     messages: [
       {

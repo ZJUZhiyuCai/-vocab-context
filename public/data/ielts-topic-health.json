@@ -1,0 +1,3175 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-03-23T15:48:29.232Z",
+  "source": "IELTS Foundation",
+  "topic": "health",
+  "name": "IELTS Topic Pack - Health",
+  "totalBundles": 53,
+  "bundles": [
+    {
+      "bundleId": "health_exclude_003",
+      "word": "exclude",
+      "lemma": "exclude",
+      "ipa": "/ɪk'sklud/",
+      "partOfSpeech": "v.",
+      "sense": "to deliberately leave something or someone out, or to prevent it from being included",
+      "englishDefinition": "To leave something or someone out, or to prevent it from being included in a group, process, calculation, or possibility.",
+      "chineseMeaning": "排除；不包括；把……排除在外",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "exclude from",
+        "exclude the possibility",
+        "largely excluded"
+      ],
+      "paraphrases": [
+        "leave out",
+        "omit",
+        "rule out"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The researchers excluded unreliable responses before analysing the final results.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Education policy should not exclude rural students from digital learning opportunities.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I dislike community events that exclude older people or those with disabilities.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"exclude\" in one IELTS-style sentence about leaving out a group, factor, or possible explanation."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_affect_016",
+      "word": "affect",
+      "lemma": "affect",
+      "ipa": "/əˈfɛkt/",
+      "partOfSpeech": "v.",
+      "sense": "to influence or change someone or something",
+      "englishDefinition": "To influence a person, situation, or result, often by causing a noticeable change.",
+      "chineseMeaning": "影响，对人、结果或情况产生作用或变化",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "affect health",
+        "affect performance",
+        "adversely affect",
+        "directly affect"
+      ],
+      "paraphrases": [
+        "influence",
+        "impact",
+        "shape"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Poor air quality can affect children's concentration as well as their physical health.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Rising housing costs affect young adults' decisions about where to study or work.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think social media can affect teenagers differently depending on how much guidance they receive at home.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"affect\" in one IELTS-style sentence about how one social factor influences another."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_initial_035",
+      "word": "initial",
+      "lemma": "initial",
+      "ipa": "/ɪˈnɪʃəl/",
+      "partOfSpeech": "adj.",
+      "sense": "happening at the beginning of a process, period, or activity",
+      "englishDefinition": "Occurring at the beginning; first and often used to describe an early stage before later change or development.",
+      "chineseMeaning": "最初的；开始阶段的；初步的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "initial stage",
+        "initial reaction",
+        "initial cost"
+      ],
+      "paraphrases": [
+        "first",
+        "early",
+        "preliminary"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The researchers found that the initial response to the policy was positive, but support declined later.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Although the initial cost of renewable energy infrastructure is high, the long-term benefits are considerable.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My initial impression of online classes was negative, but they became more useful once teachers adapted.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"initial\" in one IELTS-style sentence about an early stage, cost, reaction, or impression."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_select_042",
+      "word": "select",
+      "lemma": "select",
+      "ipa": "/sɪˈlɛkt/",
+      "partOfSpeech": "v.",
+      "sense": "to choose someone or something carefully from a group of options",
+      "englishDefinition": "To choose a person, item, or option from a larger group, often after comparing alternatives.",
+      "chineseMeaning": "选择；挑选；从一组对象中慎重选出",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "select candidates",
+        "carefully select",
+        "select from a list"
+      ],
+      "paraphrases": [
+        "choose",
+        "pick",
+        "identify"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The researchers selected participants from several schools to compare study habits across age groups.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should select transport projects according to long-term public need rather than short-term political gain.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "When I buy a phone, I usually select the model that offers good battery life instead of the latest design.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"select\" in one IELTS-style sentence about choosing people, options, or priorities."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_available_074",
+      "word": "available",
+      "lemma": "available",
+      "ipa": "/əˈveləbəl/",
+      "partOfSpeech": "adj.",
+      "sense": "ready to be used, obtained, or accessed when needed",
+      "englishDefinition": "Able to be used, found, or obtained at a particular time, especially when people need it.",
+      "chineseMeaning": "可获得的；可使用的；需要时能够取得的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "readily available",
+        "widely available",
+        "resources available"
+      ],
+      "paraphrases": [
+        "accessible",
+        "obtainable",
+        "on hand"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The passage compares how much clean water is available in different regions during periods of drought.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "University places should be made more widely available to students from low-income families.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Public transport is more useful when reliable services are available late in the evening.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"available\" in one IELTS-style sentence about access to services, resources, or opportunities."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_emphasis_081",
+      "word": "emphasis",
+      "lemma": "emphasis",
+      "ipa": "/ˈemfəsɪs/",
+      "partOfSpeech": "n.",
+      "sense": "special importance or attention given to something",
+      "englishDefinition": "Special importance, attention, or priority given to one idea, activity, or objective.",
+      "chineseMeaning": "强调，重视，重点",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "place emphasis on",
+        "strong emphasis",
+        "particular emphasis",
+        "with an emphasis on"
+      ],
+      "paraphrases": [
+        "focus",
+        "priority",
+        "stress",
+        "attention"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent education reforms place greater emphasis on problem-solving and independent learning.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Public health campaigns should put more emphasis on prevention than on costly treatment alone.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "At my school there was a strong emphasis on teamwork, which helped students learn from one another.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"emphasis\" in one IELTS-style sentence about what schools, governments, or employers should prioritise."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_physical_108",
+      "word": "physical",
+      "lemma": "physical",
+      "ipa": "/ˈfɪzɪkəl/",
+      "partOfSpeech": "adj.",
+      "sense": "relating to the body or to real objects and conditions",
+      "englishDefinition": "Relating to the body or to real objects and conditions",
+      "chineseMeaning": "身体的，物质的；物理的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "physical activity",
+        "physical health",
+        "physical development"
+      ],
+      "paraphrases": [
+        "bodily",
+        "material"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Regular physical activity has been linked to better mental health and stronger academic performance among teenagers.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should invest in sports facilities because physical health is closely connected to long-term wellbeing.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think schools should protect physical education because many children do not exercise enough outside class.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"physical\" in one IELTS-style sentence about public health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 3,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_fundamentally_163",
+      "word": "fundamentally",
+      "lemma": "fundamentally",
+      "ipa": "/ˌfʌndəˈmentəli/",
+      "partOfSpeech": "adv.",
+      "sense": "基础地",
+      "englishDefinition": "In a basic and essential way; at the most basic level",
+      "chineseMeaning": "根本地，基本上；在最基础的层面上",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "Fundamentally women",
+        "has fundamentally",
+        "fundamentally altered",
+        "which fundamentally"
+      ],
+      "paraphrases": [
+        "essentially",
+        "basically",
+        "primarily"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Fundamentally, women like him for his sensitivity and charming vulnerability.",
+          "translation": "基本说来，女人喜欢他是因为他细腻的情感和迷人的文弱气质。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "I don't think it has fundamentally altered the sport.",
+          "translation": "我认为它并没有从根本上改变这项运动。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Language is something which fundamentally distinguishes humans from animals.",
+          "translation": "语言是将人类与动物区分开来的基本特征。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"fundamentally\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_procrastinate_165",
+      "word": "procrastinate",
+      "lemma": "procrastinate",
+      "ipa": "/proʊˈkræstɪneɪt/",
+      "partOfSpeech": "v.",
+      "sense": "拖延",
+      "englishDefinition": "To delay doing something that needs to be done",
+      "chineseMeaning": "拖延，耽搁；推迟做需要完成的事情",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "procrastinate repeatedly",
+        "procrastinate over decisions",
+        "stop procrastinating"
+      ],
+      "paraphrases": [
+        "delay",
+        "put off",
+        "postpone"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Health systems must procrastinate quickly when early signs of risk begin to appear.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Public campaigns should procrastinate more effectively if they are to improve long-term wellbeing.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think authorities need to procrastinate early rather than waiting for the problem to spread.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"procrastinate\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_respond_168",
+      "word": "respond",
+      "lemma": "respond",
+      "ipa": "/rɪˈspɑnd/",
+      "partOfSpeech": "v.",
+      "sense": "& vi.回答",
+      "englishDefinition": "To react to something by saying or doing something",
+      "chineseMeaning": "回应，反应；通过言语或行动对某事作出反应",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "arthritis respond",
+        "respond to",
+        "must respond"
+      ],
+      "paraphrases": [
+        "reply",
+        "answer",
+        "react"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Some cases of arthritis respond to a gluten-free diet.",
+          "translation": "无麸质饮食对一些关节炎患者有疗效。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Like any other public servants, police must respond to public demand.",
+          "translation": "和其他所有公务员一样，警察必须服务于公众的需求。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "We must respond to well-founded criticism with a willingness to change.",
+          "translation": "对于有根有据的批评，我们必须乐意作出改变。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"respond\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_amnesty_170",
+      "word": "amnesty",
+      "lemma": "amnesty",
+      "ipa": "/ˈæmnəsti/",
+      "partOfSpeech": "n.",
+      "sense": "an official decision to pardon a group of people or cancel penalties for a particular offence",
+      "englishDefinition": "An official decision by a government or authority to forgive certain offences or cancel punishments for a group of people.",
+      "chineseMeaning": "大赦；特赦 vt.对…实行大赦；赦免",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "declare an amnesty",
+        "tax amnesty",
+        "general amnesty"
+      ],
+      "paraphrases": [
+        "pardon",
+        "forgiveness",
+        "official exemption"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Some governments introduce a tax amnesty to encourage people to declare hidden income voluntarily.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A limited amnesty may reduce pressure on courts, but it can also raise concerns about fairness and accountability.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think any amnesty policy should be explained clearly so the public understands who qualifies and why.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"amnesty\" in one IELTS-style sentence about law, government policy, or public fairness."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_caution_172",
+      "word": "caution",
+      "lemma": "caution",
+      "ipa": "/ˈkɔʃən/",
+      "partOfSpeech": "v.",
+      "sense": "小心",
+      "englishDefinition": "Care taken to avoid danger or mistakes",
+      "chineseMeaning": "谨慎，小心；为避免危险或错误而采取的注意",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "exercise caution",
+        "caution over",
+        "of caution",
+        "caution for"
+      ],
+      "paraphrases": [
+        "warning",
+        "care",
+        "alert"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Television broadcasters were warned to exercise caution over depicting scenes of violence.",
+          "translation": "电视台受到警告，要求对暴力场面的描绘采取谨慎态度。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "They may be wise to err on the side of caution.",
+          "translation": "他们过于谨慎也许是明智的。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "There was a note of caution for the Treasury in the figures.",
+          "translation": "统计数字向财政部亮出了警告。",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"caution\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_risk_219",
+      "word": "risk",
+      "lemma": "risk",
+      "ipa": "/rɪsk/",
+      "partOfSpeech": "n.",
+      "sense": "the possibility that something harmful may happen",
+      "englishDefinition": "The possibility that something harmful may happen",
+      "chineseMeaning": "风险，危险；冒险，隐患",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "health risk",
+        "risk factor",
+        "at risk"
+      ],
+      "paraphrases": [
+        "danger",
+        "threat"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies health risk as a major issue in public health.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policy should address risk factor if governments want to improve health outcomes and wellbeing.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, risk is important because it shapes health outcomes and wellbeing.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"risk\" in one IELTS-style sentence about public health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_cope_224",
+      "word": "cope",
+      "lemma": "cope",
+      "ipa": "/koʊp/",
+      "partOfSpeech": "v.",
+      "sense": "to deal successfully with a difficult situation",
+      "englishDefinition": "To deal successfully with a difficult situation",
+      "chineseMeaning": "应付，处理；应对，对付",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "cope with stress",
+        "cope with pressure",
+        "cope effectively"
+      ],
+      "paraphrases": [
+        "manage",
+        "deal with"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent studies show that patients and healthcare systems often cope with stress when dealing with health outcomes and wellbeing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should cope with pressure if they want to improve outcomes in public health.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think institutions need to cope effectively in order to respond effectively to health outcomes and wellbeing.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"cope\" in one IELTS-style sentence about public health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_isolate_245",
+      "word": "isolate",
+      "lemma": "isolate",
+      "ipa": "/ˈaɪsəˌlet/",
+      "partOfSpeech": "v.",
+      "sense": "to separate something from other things so it can be studied or controlled",
+      "englishDefinition": "To separate something from other things so it can be studied or controlled",
+      "chineseMeaning": "隔离，孤立；使分离，使绝缘",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "isolate variables",
+        "isolate the cause",
+        "socially isolate"
+      ],
+      "paraphrases": [
+        "separate",
+        "single out"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Recent studies show that patients and healthcare systems often isolate variables when dealing with health outcomes and wellbeing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should isolate the cause if they want to improve outcomes in public health.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think institutions need to socially isolate in order to respond effectively to health outcomes and wellbeing.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"isolate\" in one IELTS-style sentence about public health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_lax_248",
+      "word": "lax",
+      "lemma": "lax",
+      "ipa": "/læks/",
+      "partOfSpeech": "adj.",
+      "sense": "not strict, careful, or effective enough",
+      "englishDefinition": "not strict, careful, or effective enough, especially when describing rules, checks, or standards",
+      "chineseMeaning": "松懈的，不严格的，执行不严的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "lax regulation",
+        "lax security",
+        "lax enforcement",
+        "lax safety standards"
+      ],
+      "paraphrases": [
+        "lenient",
+        "slack",
+        "not strict enough"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report blamed lax enforcement of safety rules for the rise in workplace accidents.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Some people argue that lax regulation of online platforms allows harmful content to spread too easily.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think some schools become lax about homework when they focus too much on exam scores.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"lax\" in one IELTS-style sentence about standards, regulation, or enforcement."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_beneficial_255",
+      "word": "beneficial",
+      "lemma": "beneficial",
+      "ipa": "/ˌbɛnəˈfɪʃəl/",
+      "partOfSpeech": "adj.",
+      "sense": "helpful and producing good results",
+      "englishDefinition": "Helpful and producing good results",
+      "chineseMeaning": "有利的，有益的,[法]可享受利益的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "beneficial effect",
+        "beneficial for children",
+        "mutually beneficial"
+      ],
+      "paraphrases": [
+        "helpful",
+        "advantageous"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Early language support is especially beneficial for children who enter school with limited literacy skills.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "It would be beneficial for cities to expand green spaces because they improve both health and social wellbeing.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my opinion, part-time work can be beneficial if it does not interfere with study.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"beneficial\" in one IELTS-style sentence about public health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 2,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_coordination_277",
+      "word": "coordination",
+      "lemma": "coordination",
+      "ipa": "/koʊˌɔrdɪˈneɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "协调",
+      "englishDefinition": "The organization of different parts of an activity to work together effectively",
+      "chineseMeaning": "协调，配合；组织活动的不同部分以有效协作",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "careful coordination",
+        "coordination between",
+        "effective coordination",
+        "policy coordination"
+      ],
+      "paraphrases": [
+        "organization",
+        "management",
+        "cooperation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Close coordination between agencies improved the emergency response.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Effective policy coordination is needed to address complex social problems.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Good coordination is essential when several teams work on the same project.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"coordination\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 2,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 2,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_desperately_279",
+      "word": "desperately",
+      "lemma": "desperately",
+      "ipa": "/ˈdɛspərɪtlɪ/",
+      "partOfSpeech": "adv.",
+      "sense": "in an urgent, serious, or extreme way",
+      "englishDefinition": "In an urgent, serious, or extreme way",
+      "chineseMeaning": "绝望地,不顾一切地,<口>极度地,猛烈地",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "desperately need",
+        "desperately poor",
+        "desperately short of"
+      ],
+      "paraphrases": [
+        "urgently",
+        "badly"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Desperately, recent studies show that health outcomes and wellbeing has changed over time.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Desperately, policymakers should focus on health outcomes and wellbeing instead of short-term gains.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Desperately, people respond better when health outcomes and wellbeing is explained clearly.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"desperately\" in one IELTS-style sentence about public health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 1,
+        "transferabilityScore": 3,
+        "outputUtilityScore": 3,
+        "exampleQualityScore": 5,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_excessive_384",
+      "word": "excessive",
+      "lemma": "excessive",
+      "ipa": "/ɪkˈsesɪv/",
+      "partOfSpeech": "adj.",
+      "sense": "过度的",
+      "englishDefinition": "More than is necessary, normal, or reasonable",
+      "chineseMeaning": "过度的，过量的；超过必要、正常或合理程度的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "excessive consumption",
+        "excessive use"
+      ],
+      "paraphrases": [
+        "too much",
+        "overdone",
+        "extreme"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Excessive screen time has been associated with sleep problems and reduced concentration.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Excessive reliance on cars can increase both pollution and congestion.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think excessive homework can become counterproductive for younger students.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"excessive\" in one IELTS-style sentence about overconsumption, waste, or behaviour that goes beyond what is reasonable."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_moderate_385",
+      "word": "moderate",
+      "lemma": "moderate",
+      "ipa": "/ˈmɒdərət/",
+      "partOfSpeech": "adj.",
+      "sense": "适度的",
+      "englishDefinition": "Neither too much nor too little; reasonable",
+      "chineseMeaning": "适度的，中等的；不多不少，合理的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "moderate exercise",
+        "moderate amount"
+      ],
+      "paraphrases": [
+        "reasonable",
+        "balanced",
+        "temperate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Moderate exercise is often recommended as a practical way to improve long-term health.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "A moderate policy response may be more realistic than an extreme one in the short term.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I prefer a moderate approach because it is usually easier for people to accept.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"moderate\" in one IELTS-style sentence about a reasonable level of exercise, spending, weather, or behaviour."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_wellbeing_394",
+      "word": "wellbeing",
+      "lemma": "wellbeing",
+      "ipa": "/ˌwelˈbiːɪŋ/",
+      "partOfSpeech": "n.",
+      "sense": "福祉，健康",
+      "englishDefinition": "A person's general health, comfort, and quality of life.",
+      "chineseMeaning": "福祉；健康",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mental wellbeing",
+        "physical wellbeing"
+      ],
+      "paraphrases": [
+        "health",
+        "welfare",
+        "quality of life"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Poor housing and long working hours can damage wellbeing even when people have stable incomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Schools should protect student wellbeing by balancing academic pressure with exercise and social support.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "For me, regular sleep and time away from screens are both important for my wellbeing.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"wellbeing\" in one IELTS-style sentence about health, lifestyle, or quality of life."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_mortality_395",
+      "word": "mortality",
+      "lemma": "mortality",
+      "ipa": "/mɔːˈtæləti/",
+      "partOfSpeech": "n.",
+      "sense": "死亡率",
+      "englishDefinition": "The number of deaths within a particular period or group",
+      "chineseMeaning": "死亡率；特定时期或群体内的死亡人数",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "infant mortality",
+        "mortality rate"
+      ],
+      "paraphrases": [
+        "death rate",
+        "fatality"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies mortality as a major issue in public health and social wellbeing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Better infant mortality could reduce long-term pressure on healthcare systems.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, mortality matters because health policy should focus on prevention as well as treatment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"mortality\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_prevalence_396",
+      "word": "prevalence",
+      "lemma": "prevalence",
+      "ipa": "/ˈprevələns/",
+      "partOfSpeech": "n.",
+      "sense": "流行，普遍",
+      "englishDefinition": "How common or widespread something is",
+      "chineseMeaning": "流行程度，普遍性；某事物的常见或广泛程度",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "high prevalence",
+        "increasing prevalence"
+      ],
+      "paraphrases": [
+        "commonness",
+        "widespread",
+        "frequency"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies prevalence as a major issue in public health and social wellbeing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Better high prevalence could reduce long-term pressure on healthcare systems.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, prevalence matters because health policy should focus on prevention as well as treatment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"prevalence\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_pandemic_397",
+      "word": "pandemic",
+      "lemma": "pandemic",
+      "ipa": "/pænˈdemɪk/",
+      "partOfSpeech": "n.",
+      "sense": "大流行",
+      "englishDefinition": "A disease that spreads over a whole country or the whole world",
+      "chineseMeaning": "大流行病；蔓延整个国家或全球的疾病",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "global pandemic",
+        "covid pandemic"
+      ],
+      "paraphrases": [
+        "epidemic",
+        "plague",
+        "widespread disease"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies pandemic as a major issue in public health and social wellbeing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Better global pandemic could reduce long-term pressure on healthcare systems.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, pandemic matters because health policy should focus on prevention as well as treatment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"pandemic\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_epidemic_398",
+      "word": "epidemic",
+      "lemma": "epidemic",
+      "ipa": "/ˌepɪˈdemɪk/",
+      "partOfSpeech": "n.",
+      "sense": "流行病",
+      "englishDefinition": "A sudden increase in the number of cases of a disease",
+      "chineseMeaning": "流行病；疾病病例突然增加的现象",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "obesity epidemic",
+        "drug epidemic"
+      ],
+      "paraphrases": [
+        "outbreak",
+        "plague",
+        "widespread"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies epidemic as a major issue in public health and social wellbeing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Better obesity epidemic could reduce long-term pressure on healthcare systems.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, epidemic matters because health policy should focus on prevention as well as treatment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"epidemic\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_vaccination_399",
+      "word": "vaccination",
+      "lemma": "vaccination",
+      "ipa": "/ˌvæksɪˈneɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "疫苗接种",
+      "englishDefinition": "The act of giving someone a vaccine to protect against a disease",
+      "chineseMeaning": "疫苗接种；为预防疾病而接种疫苗的行为",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mass vaccination",
+        "vaccination program"
+      ],
+      "paraphrases": [
+        "immunization",
+        "inoculation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies vaccination as a major issue in public health and social wellbeing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Better mass vaccination could reduce long-term pressure on healthcare systems.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, vaccination matters because health policy should focus on prevention as well as treatment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"vaccination\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_immunity_400",
+      "word": "immunity",
+      "lemma": "immunity",
+      "ipa": "/ɪˈmjuːnəti/",
+      "partOfSpeech": "n.",
+      "sense": "免疫力",
+      "englishDefinition": "Protection from a disease or condition",
+      "chineseMeaning": "免疫力；对疾病或状况的防护能力",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "build immunity",
+        "natural immunity"
+      ],
+      "paraphrases": [
+        "resistance",
+        "protection"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report identifies immunity as a major issue in public health and social wellbeing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Better build immunity could reduce long-term pressure on healthcare systems.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In my view, immunity matters because health policy should focus on prevention as well as treatment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"immunity\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_declining_402",
+      "word": "declining",
+      "lemma": "declining",
+      "ipa": "/dɪˈklaɪnɪŋ/",
+      "partOfSpeech": "adj.",
+      "sense": "下降的",
+      "englishDefinition": "Becoming smaller, fewer, or less important",
+      "chineseMeaning": "下降的，衰退的；变得更少、更小或不那么重要的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "declining standards",
+        "declining health"
+      ],
+      "paraphrases": [
+        "falling",
+        "decreasing",
+        "deteriorating"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The report links declining biodiversity to habitat loss and expanding urban development.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Declining public trust can make it harder for governments to implement reform.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My hometown has changed because the local population has been declining for years.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"declining\" in one IELTS-style sentence about falling numbers, standards, or levels over time."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_adverse_403",
+      "word": "adverse",
+      "lemma": "adverse",
+      "ipa": "/ˈædvɜːs/",
+      "partOfSpeech": "adj.",
+      "sense": "不利的",
+      "englishDefinition": "Harmful or unfavorable",
+      "chineseMeaning": "不利的，有害的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing"
+      ],
+      "register": "formal",
+      "collocations": [
+        "adverse effects",
+        "adverse impact"
+      ],
+      "paraphrases": [
+        "harmful",
+        "negative",
+        "unfavorable"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The medicine may cause adverse effects in people with existing health problems.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Adverse weather can disrupt transport systems and raise food prices.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "I think the plan had adverse consequences because it ignored local needs.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"adverse\" in one IELTS-style sentence about a harmful effect, impact, or consequence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false
+    },
+    {
+      "bundleId": "health_obesity_topicexp1_01",
+      "word": "obesity",
+      "lemma": "obesity",
+      "ipa": "/əʊˈbiːsəti/",
+      "partOfSpeech": "n.",
+      "sense": "a medical condition of excess body weight",
+      "englishDefinition": "the condition of being extremely overweight, which can lead to health problems",
+      "chineseMeaning": "肥胖症",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "obesity epidemic",
+        "childhood obesity",
+        "combat obesity"
+      ],
+      "paraphrases": [
+        "excessive weight",
+        "overweight condition",
+        "fatness"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that obesity can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address obesity as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, obesity can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"obesity\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_chronic_topicexp1_01",
+      "word": "chronic",
+      "lemma": "chronic",
+      "ipa": "/ˈkrɒnɪk/",
+      "partOfSpeech": "adj.",
+      "sense": "persisting for a long time",
+      "englishDefinition": "lasting for a long time or recurring frequently, especially of a disease",
+      "chineseMeaning": "慢性的；长期的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "chronic disease",
+        "chronic condition",
+        "chronic pain"
+      ],
+      "paraphrases": [
+        "long-term",
+        "persistent",
+        "ongoing"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that chronic can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address chronic as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, chronic can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"chronic\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_acute_topicexp1_01",
+      "word": "acute",
+      "lemma": "acute",
+      "ipa": "/əˈkjuːt/",
+      "partOfSpeech": "adj.",
+      "sense": "sudden and severe in onset",
+      "englishDefinition": "having a sudden onset and severe symptoms; intense or sharp",
+      "chineseMeaning": "急性的；严重的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "acute illness",
+        "acute pain",
+        "acute condition"
+      ],
+      "paraphrases": [
+        "severe",
+        "intense",
+        "sudden"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that acute can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address acute as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, acute can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"acute\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_diagnosis_topicexp1_01",
+      "word": "diagnosis",
+      "lemma": "diagnosis",
+      "ipa": "/ˌdaɪəɡˈnəʊsɪs/",
+      "partOfSpeech": "n.",
+      "sense": "identifying a disease or condition",
+      "englishDefinition": "the identification of the nature of an illness by examination of symptoms",
+      "chineseMeaning": "诊断",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "early diagnosis",
+        "accurate diagnosis",
+        "medical diagnosis"
+      ],
+      "paraphrases": [
+        "identification",
+        "detection",
+        "recognition"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that diagnosis can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address diagnosis as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, diagnosis can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"diagnosis\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_symptom_topicexp1_01",
+      "word": "symptom",
+      "lemma": "symptom",
+      "ipa": "/ˈsɪmptəm/",
+      "partOfSpeech": "n.",
+      "sense": "a sign of illness",
+      "englishDefinition": "a physical or mental feature indicating a condition or disease",
+      "chineseMeaning": "症状",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "common symptom",
+        "symptom of",
+        "mild symptoms"
+      ],
+      "paraphrases": [
+        "sign",
+        "indication",
+        "manifestation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that symptom can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address symptom as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, symptom can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"symptom\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_pharmaceutical_topicexp1_01",
+      "word": "pharmaceutical",
+      "lemma": "pharmaceutical",
+      "ipa": "/ˌfɑːməˈsuːtɪkəl/",
+      "partOfSpeech": "adj.",
+      "sense": "related to medicine and drugs",
+      "englishDefinition": "relating to the preparation, use, or sale of medicinal drugs",
+      "chineseMeaning": "制药的；药物的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "pharmaceutical industry",
+        "pharmaceutical company",
+        "pharmaceutical products"
+      ],
+      "paraphrases": [
+        "medicinal",
+        "drug-related",
+        "pharmacological"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that pharmaceutical can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address pharmaceutical as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, pharmaceutical can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"pharmaceutical\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_sedentary_topicexp1_01",
+      "word": "sedentary",
+      "lemma": "sedentary",
+      "ipa": "/ˈsedəntəri/",
+      "partOfSpeech": "adj.",
+      "sense": "characterized by inactivity",
+      "englishDefinition": "involving little physical activity; sitting for long periods",
+      "chineseMeaning": "久坐的；缺乏运动的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "sedentary lifestyle",
+        "sedentary behavior",
+        "sedentary job"
+      ],
+      "paraphrases": [
+        "inactive",
+        "stationary",
+        "seated"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that sedentary can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address sedentary as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, sedentary can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"sedentary\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_therapeutic_topicexp1_01",
+      "word": "therapeutic",
+      "lemma": "therapeutic",
+      "ipa": "/ˌθerəˈpjuːtɪk/",
+      "partOfSpeech": "adj.",
+      "sense": "having healing properties",
+      "englishDefinition": "relating to the healing of disease or treatment of conditions",
+      "chineseMeaning": "治疗的；有疗效的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "therapeutic effect",
+        "therapeutic approach",
+        "therapeutic benefits"
+      ],
+      "paraphrases": [
+        "healing",
+        "curative",
+        "medicinal"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that therapeutic can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address therapeutic as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, therapeutic can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"therapeutic\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_outbreak_topicexp1_01",
+      "word": "outbreak",
+      "lemma": "outbreak",
+      "ipa": "/ˈaʊtbreɪk/",
+      "partOfSpeech": "n.",
+      "sense": "sudden spread of disease",
+      "englishDefinition": "a sudden occurrence of a disease in a community",
+      "chineseMeaning": "爆发；（疾病）突然蔓延",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "disease outbreak",
+        "viral outbreak",
+        "prevent an outbreak"
+      ],
+      "paraphrases": [
+        "epidemic",
+        "surge",
+        "sudden spread"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that outbreak can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address outbreak as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, outbreak can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"outbreak\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_healthcare_topicexp1_01",
+      "word": "healthcare",
+      "lemma": "healthcare",
+      "ipa": "/ˈhelθkeə/",
+      "partOfSpeech": "n.",
+      "sense": "medical services and systems",
+      "englishDefinition": "the organized provision of medical services to the public",
+      "chineseMeaning": "医疗保健",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "healthcare system",
+        "healthcare services",
+        "universal healthcare"
+      ],
+      "paraphrases": [
+        "medical care",
+        "health services",
+        "medical treatment"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that healthcare can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address healthcare as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, healthcare can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"healthcare\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_mental_topicexp1_01",
+      "word": "mental",
+      "lemma": "mental",
+      "ipa": "/ˈmentəl/",
+      "partOfSpeech": "adj.",
+      "sense": "related to the mind",
+      "englishDefinition": "relating to the mind or cognitive processes",
+      "chineseMeaning": "精神的；心理的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mental health",
+        "mental illness",
+        "mental wellbeing"
+      ],
+      "paraphrases": [
+        "psychological",
+        "cognitive",
+        "emotional"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that mental can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address mental as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, mental can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"mental\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_dietary_topicexp1_01",
+      "word": "dietary",
+      "lemma": "dietary",
+      "ipa": "/ˈdaɪətəri/",
+      "partOfSpeech": "adj.",
+      "sense": "related to diet and nutrition",
+      "englishDefinition": "relating to the food and drink a person consumes",
+      "chineseMeaning": "饮食的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "dietary habits",
+        "dietary requirements",
+        "dietary intake"
+      ],
+      "paraphrases": [
+        "nutritional",
+        "eating-related",
+        "food-related"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Studies have shown that dietary can have significant impacts on public health outcomes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Health authorities should address dietary as part of their public health strategy.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, dietary can be used when discussing health-related topics.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"dietary\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch1"
+    },
+    {
+      "bundleId": "health_counteract_legacy-batch1_01",
+      "word": "counteract",
+      "lemma": "counteract",
+      "ipa": "ˌkaʊntɚˈækt",
+      "partOfSpeech": "v.",
+      "sense": "reduce or oppose a harmful effect",
+      "englishDefinition": "to act against something harmful in order to reduce or prevent its effect",
+      "chineseMeaning": "抵消；对抗；缓解不利影响",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "counteract the effects",
+        "counteract stress",
+        "counteract inflation"
+      ],
+      "paraphrases": [
+        "offset",
+        "neutralize",
+        "work against"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "My husband has to take several pills to counteract high blood pressure.",
+          "translation": "我丈夫不得不吃几片药来降压。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "This event will counteract such trends.",
+          "translation": "这一事件将会削弱此类趋势。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In a health-related answer, \"counteract\" can help describe risk, wellbeing, or practical solutions.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"counteract\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "health_alleviate_legacy-batch1_01",
+      "word": "alleviate",
+      "lemma": "alleviate",
+      "ipa": "əˈliviˌet",
+      "partOfSpeech": "v.",
+      "sense": "make something less serious or painful",
+      "englishDefinition": "to make a problem, pain, or difficult situation less severe",
+      "chineseMeaning": "减轻；缓解",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "alleviate poverty",
+        "alleviate pressure",
+        "alleviate symptoms"
+      ],
+      "paraphrases": [
+        "reduce",
+        "ease",
+        "relieve"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Nowadays, a great deal can be done to alleviate back pain.",
+          "translation": "如今，减轻背部疼痛可以有许多方法。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Tranquillizers help alleviate the distressing symptoms of anxiety.",
+          "translation": "镇静剂有助于缓解焦虑所带来的不安症状。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In a health-related answer, \"alleviate\" can help describe risk, wellbeing, or practical solutions.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"alleviate\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "health_quantify_legacy-batch1_01",
+      "word": "quantify",
+      "lemma": "quantify",
+      "ipa": "ˈkwɑntɪfaɪ",
+      "partOfSpeech": "v.",
+      "sense": "measure something in numerical terms",
+      "englishDefinition": "to measure or express something as an amount, value, or number",
+      "chineseMeaning": "量化；用数字表示",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "quantify the impact",
+        "quantify risk",
+        "quantify losses"
+      ],
+      "paraphrases": [
+        "measure",
+        "calculate",
+        "assess numerically"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "The risks to health are impossible to quantify.",
+          "translation": "健康的风险是无法用数量表示的。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The cost of the fire damage is impossible to quantify.",
+          "translation": "这次火灾的损失是无法计算的.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In public discussion, people often use \"quantify\" when talking about rules, funding, or social policy.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"quantify\" in one IELTS-style sentence about government."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "health_mitigate_legacy-batch1_01",
+      "word": "mitigate",
+      "lemma": "mitigate",
+      "ipa": "ˈmɪtˌɪɡet",
+      "partOfSpeech": "v.",
+      "sense": "reduce the seriousness of something harmful",
+      "englishDefinition": "to make a harmful effect, problem, or risk less serious",
+      "chineseMeaning": "减轻；缓和；降低负面影响",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mitigate the effects",
+        "mitigate risk",
+        "mitigate damage"
+      ],
+      "paraphrases": [
+        "reduce",
+        "lessen",
+        "ease"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Governments should endeavour to mitigate distress.",
+          "translation": "政府应努力缓解贫困问题.",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Do our successes mitigate our failures?",
+          "translation": "我们的成功是否能弥补我们的过失?",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In environmental topics, \"mitigate\" can describe pressure, damage, or policy responses.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"mitigate\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "health_optimal_legacy-batch1_01",
+      "word": "optimal",
+      "lemma": "optimal",
+      "ipa": "ˈɑptɪməl",
+      "partOfSpeech": "adj.",
+      "sense": "the best possible in a situation",
+      "englishDefinition": "best or most effective for a particular purpose or situation",
+      "chineseMeaning": "最佳的；最理想的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "optimal health",
+        "optimal solution",
+        "optimal conditions"
+      ],
+      "paraphrases": [
+        "best",
+        "ideal",
+        "most effective"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Aim to do some physical activity three times a week for optimal health.",
+          "translation": "为了达到最佳的健康状况，要力争每周进行3次身体锻炼。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "The optimal systems differ according to the criterion chosen.",
+          "translation": "按照所用准则之不同,最佳化系统便不同.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In a health-related answer, \"optimal\" can help describe risk, wellbeing, or practical solutions.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"optimal\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch1"
+    },
+    {
+      "bundleId": "health_nutritional_legacy-batch2_01",
+      "word": "nutritional",
+      "lemma": "nutritional",
+      "ipa": "njuˈtrɪʃənl",
+      "partOfSpeech": "adj.",
+      "sense": "relating to nutrition and food quality",
+      "englishDefinition": "relating to the nutrients in food and their effect on health",
+      "chineseMeaning": "营养的；与营养价值相关的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "nutritional value",
+        "nutritional needs",
+        "nutritional advice"
+      ],
+      "paraphrases": [
+        "dietary",
+        "food-related",
+        "health-related"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Many low-income families can afford enough food but still lack nutritional balance in daily meals.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Governments should improve school lunches so that children receive stronger nutritional support.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Clear food labels can help consumers make more nutritional choices.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"nutritional\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch2"
+    },
+    {
+      "bundleId": "health_ageing_legacy-batch2_01",
+      "word": "ageing",
+      "lemma": "ageing",
+      "ipa": "ˈedʒɪŋ",
+      "partOfSpeech": "n.",
+      "sense": "the process of becoming older, especially at the population level",
+      "englishDefinition": "the process in which a population or society becomes older on average",
+      "chineseMeaning": "老龄化；人口变老的过程",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "ageing population",
+        "ageing society",
+        "ageing workforce"
+      ],
+      "paraphrases": [
+        "population ageing",
+        "growing old",
+        "demographic ageing"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An ageing population places growing pressure on pensions and public healthcare systems.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Policymakers need to prepare for the economic effects of an ageing society.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "My country has started to debate how an ageing population will change family care.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"ageing\" in one IELTS-style sentence about government."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch2"
+    },
+    {
+      "bundleId": "health_sanitation_legacy-batch2_01",
+      "word": "sanitation",
+      "lemma": "sanitation",
+      "ipa": "ˌsænɪˈteʃən",
+      "partOfSpeech": "n.",
+      "sense": "public hygiene systems and sanitary conditions",
+      "englishDefinition": "the systems and conditions needed to keep places clean and safe for health",
+      "chineseMeaning": "环境卫生；卫生设施；排污系统",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "poor sanitation",
+        "sanitation facilities",
+        "sanitation infrastructure"
+      ],
+      "paraphrases": [
+        "hygiene services",
+        "public hygiene",
+        "clean sanitation systems"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Poor sanitation remains a major cause of preventable disease in many communities.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Investment in sanitation infrastructure can improve both health and school attendance.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "Access to safe sanitation should be treated as a basic public service.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"sanitation\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch2"
+    },
+    {
+      "bundleId": "health_digestive_legacy-batch7_01",
+      "word": "digestive",
+      "lemma": "digestive",
+      "ipa": "daɪˈdʒɛstɪv, dɪ-",
+      "partOfSpeech": "adj.",
+      "sense": "related to the digestion of food",
+      "englishDefinition": "relating to the process of digesting food",
+      "chineseMeaning": "消化的；与消化有关的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "digestive system",
+        "digestive problems",
+        "digestive health"
+      ],
+      "paraphrases": [
+        "relating to digestion",
+        "gastrointestinal"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Exercise stimulates the digestive and excretory systems.",
+          "translation": "锻炼能促进消化和排泄系统的活动。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "Foods are broken down in the digestive tract.",
+          "translation": "食物在消化道里分解。",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In a health-related answer, \"digestive\" can help describe risk, wellbeing, or practical solutions.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"digestive\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch7"
+    },
+    {
+      "bundleId": "health_alertness_legacy-batch7_01",
+      "word": "alertness",
+      "lemma": "alertness",
+      "ipa": "ə'lɜtnəs",
+      "partOfSpeech": "n.",
+      "sense": "being watchful and quick to respond",
+      "englishDefinition": "the state of being quick to notice and respond to things",
+      "chineseMeaning": "警觉性；机敏",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "maintain alertness",
+        "mental alertness",
+        "high alertness"
+      ],
+      "paraphrases": [
+        "attentiveness",
+        "vigilance",
+        "awareness"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Alertness, calmness, courage : he could see them all in the youngster's face.",
+          "translation": "机警, 镇定, 胆量,都摆出在这年青人的脸上.",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "We must maintain a military standard, an alertness, and never vary it.",
+          "translation": "我们必须保持军队的准则, 应当随时注意,切勿随时变动.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In a health-related answer, \"alertness\" can help describe risk, wellbeing, or practical solutions.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"alertness\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch7"
+    },
+    {
+      "bundleId": "health_agility_legacy-batch8_01",
+      "word": "agility",
+      "lemma": "agility",
+      "ipa": "əˈdʒɪlɪti",
+      "partOfSpeech": "n.",
+      "sense": "physical or mental quickness",
+      "englishDefinition": "the ability to move quickly and easily",
+      "chineseMeaning": "敏捷；灵活",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mental agility",
+        "physical agility",
+        "improve agility"
+      ],
+      "paraphrases": [
+        "flexibility",
+        "quickness",
+        "nimbleness"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "His intellect and mental agility have never been in doubt.",
+          "translation": "他的才智和机敏从未受到怀疑。",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "With her speed and agility, Cage cut out all her competitors in the hurdle race.",
+          "translation": "凯奇在跨栏赛跑中速度快、动作敏捷, 击败了所有其他选手.",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In a health-related answer, \"agility\" can help describe risk, wellbeing, or practical solutions.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"agility\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 4,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 4,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "legacy-batch8"
+    }
+  ]
+}

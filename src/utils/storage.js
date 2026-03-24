@@ -8,6 +8,18 @@ import { syncService } from './syncService'
 
 const SETTINGS_KEY = 'vocabcontext_settings';
 const USER_PROFILE_KEY = 'vocabcontext_user_profile';
+const AI_PROVIDER = 'siliconflow';
+
+function normalizeSettings(settings = {}) {
+  const hasSavedApiKey = Boolean(settings.apiKey);
+  const isLegacyProvider = hasSavedApiKey && settings.aiProvider !== AI_PROVIDER;
+
+  return {
+    ...settings,
+    aiProvider: AI_PROVIDER,
+    apiKey: isLegacyProvider ? '' : (settings.apiKey || '')
+  };
+}
 
 /**
  * 从localStorage加载用户设置
@@ -16,7 +28,7 @@ const USER_PROFILE_KEY = 'vocabcontext_user_profile';
 export function loadSettings() {
   try {
     const saved = localStorage.getItem(SETTINGS_KEY);
-    return saved ? JSON.parse(saved) : null;
+    return saved ? normalizeSettings(JSON.parse(saved)) : null;
   } catch (error) {
     console.error('加载设置失败:', error);
     return null;
@@ -29,12 +41,13 @@ export function loadSettings() {
  * @returns {boolean} 保存是否成功
  */
 export function saveSettings(settings) {
+  const normalizedSettings = normalizeSettings(settings);
   try {
-    const data = JSON.stringify(settings);
+    const data = JSON.stringify(normalizedSettings);
     localStorage.setItem(SETTINGS_KEY, data);
 
     // 异步同步到云端
-    syncService.syncSettings(settings).catch(err => {
+    syncService.syncSettings(normalizedSettings).catch(err => {
       console.warn('⚠️ 自动同步设置失败（可能未登录或断网）:', err);
     });
 
@@ -48,7 +61,7 @@ export function saveSettings(settings) {
       console.warn('⚠️ localStorage已满，尝试清理缓存...');
       cleanOldCache().then(() => {
         try {
-          localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+          localStorage.setItem(SETTINGS_KEY, JSON.stringify(normalizedSettings));
           console.log('✅ 清理后保存成功');
         } catch (retryError) {
           console.error('❌ 清理后仍然无法保存:', retryError);

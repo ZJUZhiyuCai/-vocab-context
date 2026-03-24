@@ -171,7 +171,8 @@ function syncState() {
   outputPrompt.value = engine.getMicroOutputPrompt()
 
   // Track completed tasks for current bundle
-  const result = engine.state.results.find(r => r.bundleId === currentBundle.value?.id)
+  const currentBundleId = currentBundle.value?.id || currentBundle.value?.bundleId || currentBundle.value?.word
+  const result = engine.state.results.find(r => r.bundleId === currentBundleId)
   if (result) {
     completedTasks.value = []
     if (result.meaningCorrect !== undefined) completedTasks.value.push(TASK_TYPES.MEANING_CHOICE)
@@ -234,11 +235,6 @@ function handleNext() {
   completedTasks.value = []
   currentResult.value = null
   advanceToNextTask()
-
-  if (currentTask.value === TASK_TYPES.SUMMARY) {
-    summary.value = engine.getSummary()
-    saveContextSessionToHistory(summary.value)
-  }
 }
 
 // Advance to next task
@@ -249,6 +245,7 @@ function advanceToNextTask() {
   if (newTask === TASK_TYPES.SUMMARY) {
     summary.value = engine.getSummary()
     saveContextSessionToHistory(summary.value)
+    emit('complete', summary.value)
   }
 }
 
