@@ -1,53 +1,46 @@
 # VocabMan
 
-Context-first IELTS vocabulary practice with spaced repetition, curated foundation bundles, and lightweight AI support.
+Context-first vocabulary learning for IELTS-focused learners.
 
-Live site: [https://vocabman.netlify.app](https://vocabman.netlify.app)
+面向雅思学习者的语境优先词汇学习应用。
 
-## What Ships Today
+## Language
 
-- `IELTS Foundation` with 541 curated context bundles
-- 8 official topic packs for high-frequency IELTS themes
-- `Context-first Session` for meaning, paraphrase, and production practice
-- `Output Studio` for sentence-level output drills
-- `Exam Drills` for mixed reading, listening, writing, and speaking-style tasks
-- Spaced repetition, review queue, wordbook, progress sync, and offline-first behavior
+- [English](./README.en.md)
+- [简体中文](./README.zh-CN.md)
 
-## AI Runtime
+## Snapshot
 
-The app now uses:
+- Live site: [https://vocabman.netlify.app](https://vocabman.netlify.app)
+- IELTS Foundation: `541` curated context bundles
+- Official Topic Packs: `8`
+- Main learning paths: `Today`, `Context-first Session`, `Output Studio`, `Exam Drills`
+- AI runtime: `SiliconFlow` + `Qwen/Qwen2.5-72B-Instruct`
 
-- Provider: `SiliconFlow`
-- Model: `Qwen/Qwen2.5-72B-Instruct`
-- Browser route: `/api/ai/chat`
-- Upstream base URL: `https://api.siliconflow.cn/v1`
+## What This Repo Contains
 
-The previous OpenRouter / StepFun route is no longer part of the active client path. Browser requests now go through a local/Netlify proxy so the provider key does not need to live in the public bundle.
+- A production vocabulary app built with `Vue 3`, `Vite`, and `Tailwind CSS`
+- A rebuilt IELTS learning track with Foundation and Topic Packs
+- Context-first practice flows for recognition, paraphrase, and production
+- Safe AI proxy wiring for local development and Netlify deployment
+- Scripts and datasets used to curate, validate, and ship the IELTS bundle system
 
-## Local Setup
+## Quick Start
 
 ```bash
 npm install
 npm run dev
 ```
 
-Build for production:
-
 ```bash
 npm run build
-```
-
-Run the release checks:
-
-```bash
 npm run audit:real
 node scripts/qa-validate-bundles.js public/data/ielts-foundation.json
-node scripts/qa-validate-bundles.js public/data/ielts-core-500.json
 ```
 
 ## Environment
 
-Use a local-only `.env.local` for secrets. This file is already ignored by Git.
+Use local-only secrets in `.env.local` and deployment secrets in your hosting platform:
 
 ```bash
 VITE_SUPABASE_URL=your-supabase-project-url
@@ -58,35 +51,11 @@ SILICONFLOW_MODEL=Qwen/Qwen2.5-72B-Instruct
 SILICONFLOW_API_BASE_URL=https://api.siliconflow.cn/v1
 ```
 
-Notes:
+## Contributors
 
-- In local development, Vite serves `/api/ai/chat` through a dev middleware that reads `SILICONFLOW_API_KEY`.
-- In deployed builds, Netlify routes `/api/ai/chat` to a serverless function that reads the same non-public env vars.
-- API keys remain local-only and are not synced to Supabase.
-- The settings modal can still accept a manual key for the current browser profile.
+- `ZJUZhiyuCai` — product direction, repository ownership, IELTS rebuild
+- `Codex` — release hardening, AI integration migration, documentation, launch support
 
-## Release Snapshot
+## License
 
-- Foundation: `541`
-- Education: `124`
-- Government: `108`
-- Environment: `71`
-- Technology: `52`
-- Health: `53`
-- Work: `32`
-- Media: `32`
-- Crime: `26`
-
-## Main Paths
-
-- `Today` for card-based study
-- `Quiz` for breadth checks
-- `Context` for the IELTS learning track
-- `Output Studio` for controlled output
-- `Exam Drills` for exam-like mixed tasks
-
-## Repo Notes
-
-- Canonical Foundation file: `public/data/ielts-foundation.json`
-- Compatibility mirror: `public/data/ielts-core-500.json`
-- Current Foundation vocabulary ID: `ielts-foundation`
+MIT
