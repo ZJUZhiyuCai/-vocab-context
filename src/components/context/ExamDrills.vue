@@ -638,7 +638,11 @@ function advanceToNext() {
     currentTask.value = null
 
     // Save to history
-    saveExamDrillToHistory(summary.value)
+    saveExamDrillToHistory(summary.value, {
+      vocabId: props.currentVocab?.id || 'unknown',
+      topic: props.currentVocab?.topic || 'general',
+      trackType: props.currentVocab?.ieltsTrackType || 'foundation'
+    })
     lastSessionSummary.value = summary.value
     history.value = loadHistory()
 

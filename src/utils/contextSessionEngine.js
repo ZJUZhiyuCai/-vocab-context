@@ -407,22 +407,44 @@ export function getContextSessionHistory() {
   try {
     const key = 'vocabman-context-session-history';
     const saved = localStorage.getItem(key);
-    return saved ? JSON.parse(saved) : { sessions: 0, totalBundles: 0, totalCorrect: 0 };
+    return saved ? JSON.parse(saved) : { sessions: 0, totalBundles: 0, totalCorrect: 0, topicStats: {}, vocabStats: {} };
   } catch (e) {
-    return { sessions: 0, totalBundles: 0, totalCorrect: 0 };
+    return { sessions: 0, totalBundles: 0, totalCorrect: 0, topicStats: {}, vocabStats: {} };
   }
 }
 
 /**
  * 保存 session 到历史
  */
-export function saveContextSessionToHistory(summary) {
+export function saveContextSessionToHistory(summary, meta = {}) {
   try {
     const key = 'vocabman-context-session-history';
     const history = getContextSessionHistory();
+    const topicKey = meta.topic || 'general';
+    const vocabKey = meta.vocabId || 'unknown';
+    const correctCount = (summary.meaningCorrect || 0) + (summary.paraphraseCorrect || 0);
     history.sessions++;
     history.totalBundles += summary.totalBundles;
-    history.totalCorrect += summary.meaningCorrect + summary.paraphraseCorrect;
+    history.totalCorrect += correctCount;
+
+    if (!history.topicStats[topicKey]) {
+      history.topicStats[topicKey] = { sessions: 0, totalBundles: 0, totalCorrect: 0, outputSubmitted: 0 };
+    }
+    history.topicStats[topicKey].sessions += 1;
+    history.topicStats[topicKey].totalBundles += summary.totalBundles;
+    history.topicStats[topicKey].totalCorrect += correctCount;
+    history.topicStats[topicKey].outputSubmitted += summary.outputSubmitted || 0;
+
+    if (!history.vocabStats[vocabKey]) {
+      history.vocabStats[vocabKey] = { sessions: 0, totalBundles: 0, totalCorrect: 0, outputSubmitted: 0, topic: topicKey, trackType: meta.trackType || 'foundation' };
+    }
+    history.vocabStats[vocabKey].sessions += 1;
+    history.vocabStats[vocabKey].totalBundles += summary.totalBundles;
+    history.vocabStats[vocabKey].totalCorrect += correctCount;
+    history.vocabStats[vocabKey].outputSubmitted += summary.outputSubmitted || 0;
+    history.vocabStats[vocabKey].topic = topicKey;
+    history.vocabStats[vocabKey].trackType = meta.trackType || history.vocabStats[vocabKey].trackType;
+
     localStorage.setItem(key, JSON.stringify(history));
   } catch (e) {
     console.warn('Failed to save session history:', e);

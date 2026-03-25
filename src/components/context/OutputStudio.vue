@@ -558,7 +558,11 @@ function advanceToNext() {
     currentTask.value = null
 
     // Save to history
-    saveOutputStudioToHistory(summary.value)
+    saveOutputStudioToHistory(summary.value, {
+      vocabId: props.currentVocab?.id || 'unknown',
+      topic: props.currentVocab?.topic || 'general',
+      trackType: props.currentVocab?.ieltsTrackType || 'foundation'
+    })
     lastSessionSummary.value = summary.value
     history.value = loadHistory()
 

@@ -52,6 +52,7 @@
         <ContextSession
           :bundles="sessionPool"
           :session-size="sessionSize"
+          :current-vocab="currentVocab"
           @complete="handleSessionComplete"
           @exit="exitSession"
         />
@@ -673,18 +674,101 @@ const recommendedTopic = computed(() => {
   return firstTopic?.key || 'education'
 })
 
-const pathCoach = computed(() => {
-  const contextSessions = history.value.sessions || 0
-  const contextAccuracy = history.value.accuracy || 0
-  const outputSessions = history.value.output?.sessions || 0
-  const outputAccuracy = history.value.output?.accuracy || 0
-  const outputCount = history.value.output?.totalOutputs || 0
-  const examSessions = history.value.exam?.sessions || 0
-  const examAccuracy = history.value.exam?.accuracy || 0
+const activeTopicKey = computed(() => props.currentVocab?.topic || recommendedTopic.value || 'general')
+const activeTopicLabel = computed(() => topicLabel(activeTopicKey.value))
 
-  const contextReady = contextSessions >= 3 && contextAccuracy >= 70
-  const outputReady = outputSessions >= 2 && outputCount >= 8 && outputAccuracy >= 60
-  const examReady = examSessions >= 2 && examAccuracy >= 65
+function safePercent(numerator, denominator) {
+  if (!denominator) return 0
+  return Math.round((numerator / denominator) * 100)
+}
+
+function readTopicProgress(historyBlock, topicKey, type, vocabId = '') {
+  const vocabStats = vocabId ? historyBlock?.vocabStats?.[vocabId] : null
+  if (vocabStats) {
+    if (type === 'context') {
+      return {
+        sessions: vocabStats.sessions || 0,
+        accuracy: safePercent(vocabStats.totalCorrect || 0, (vocabStats.totalBundles || 0) * 2),
+        volume: vocabStats.totalBundles || 0
+      }
+    }
+
+    if (type === 'output') {
+      return {
+        sessions: vocabStats.sessions || 0,
+        accuracy: safePercent(vocabStats.qualityScoreTotal || 0, vocabStats.sessions || 0),
+        volume: vocabStats.totalOutputs || 0
+      }
+    }
+
+    if (type === 'exam') {
+      return {
+        sessions: vocabStats.sessions || 0,
+        accuracy: safePercent(vocabStats.totalCorrect || 0, vocabStats.totalItems || 0),
+        volume: vocabStats.totalItems || 0
+      }
+    }
+  }
+
+  const topicStats = historyBlock?.topicStats?.[topicKey]
+  if (topicStats) {
+    if (type === 'context') {
+      return {
+        sessions: topicStats.sessions || 0,
+        accuracy: safePercent(topicStats.totalCorrect || 0, (topicStats.totalBundles || 0) * 2),
+        volume: topicStats.totalBundles || 0
+      }
+    }
+
+    if (type === 'output') {
+      return {
+        sessions: topicStats.sessions || 0,
+        accuracy: safePercent(topicStats.qualityScoreTotal || 0, topicStats.sessions || 0),
+        volume: topicStats.totalOutputs || 0
+      }
+    }
+
+    if (type === 'exam') {
+      return {
+        sessions: topicStats.sessions || 0,
+        accuracy: safePercent(topicStats.totalCorrect || 0, topicStats.totalItems || 0),
+        volume: topicStats.totalItems || 0
+      }
+    }
+  }
+
+  if (type === 'context') {
+    return {
+      sessions: historyBlock?.sessions || 0,
+      accuracy: historyBlock?.accuracy || 0,
+      volume: historyBlock?.totalBundles || 0
+    }
+  }
+
+  if (type === 'output') {
+    return {
+      sessions: historyBlock?.sessions || 0,
+      accuracy: historyBlock?.accuracy || 0,
+      volume: historyBlock?.totalOutputs || 0
+    }
+  }
+
+  return {
+    sessions: historyBlock?.sessions || 0,
+    accuracy: historyBlock?.accuracy || 0,
+    volume: historyBlock?.totalItems || 0
+  }
+}
+
+const pathCoach = computed(() => {
+  const currentVocabId = props.currentVocab?.id || ''
+  const contextProgress = readTopicProgress(history.value.context, activeTopicKey.value, 'context', currentVocabId)
+  const outputProgress = readTopicProgress(history.value.output, activeTopicKey.value, 'output', currentVocabId)
+  const examProgress = readTopicProgress(history.value.exam, activeTopicKey.value, 'exam', currentVocabId)
+
+  const contextReady = contextProgress.sessions >= 3 && contextProgress.accuracy >= 70
+  const outputReady = outputProgress.sessions >= 2 && outputProgress.volume >= 4 && outputProgress.accuracy >= 60
+  const examReady = examProgress.sessions >= 2 && examProgress.accuracy >= 65
 
   const gates = [
     {
@@ -692,7 +776,7 @@ const pathCoach = computed(() => {
       title: '语境理解',
       status: contextReady ? 'done' : 'active',
       statusLabel: contextReady ? '已达标' : '待提升',
-      detail: `已完成 ${contextSessions} 轮，准确率 ${contextAccuracy}%`,
+      detail: `${activeTopicLabel.value} · 已完成 ${contextProgress.sessions} 轮，准确率 ${contextProgress.accuracy}%`,
       target: '至少 3 轮，准确率约 70%'
     },
     {
@@ -700,15 +784,15 @@ const pathCoach = computed(() => {
       title: '真实输出',
       status: outputReady ? 'done' : (contextReady ? 'active' : 'locked'),
       statusLabel: outputReady ? '已达标' : (contextReady ? '下一步' : '未就绪'),
-      detail: `已完成 ${outputSessions} 轮，提交 ${outputCount} 条输出，平均质量 ${outputAccuracy}%`,
-      target: '至少 2 轮，8 条输出，平均质量约 60%'
+      detail: `${activeTopicLabel.value} · 已完成 ${outputProgress.sessions} 轮，提交 ${outputProgress.volume} 条输出，平均质量 ${outputProgress.accuracy}%`,
+      target: '至少 2 轮，4 条输出，平均质量约 60%'
     },
     {
       key: 'exam',
       title: '考试迁移',
       status: examReady ? 'done' : (outputReady ? 'active' : 'locked'),
       statusLabel: examReady ? '已达标' : (outputReady ? '下一步' : '未就绪'),
-      detail: `已完成 ${examSessions} 轮，考试表现 ${examAccuracy}%`,
+      detail: `${activeTopicLabel.value} · 已完成 ${examProgress.sessions} 轮，考试表现 ${examProgress.accuracy}%`,
       target: '至少 2 轮，正确率约 65%'
     }
   ]
@@ -718,7 +802,7 @@ const pathCoach = computed(() => {
       stage: 'foundation',
       stageLabel: '先稳住 Foundation',
       headline: '先把语境理解练稳，再谈输出。',
-      nextStep: '建议先在 Foundation 或当前 Topic Pack 里完成至少 3 轮 Context-first，先把“看懂 + 改写”做稳定。',
+      nextStep: `建议先在 ${props.currentVocab?.ieltsTrackType === 'topic' ? `${activeTopicLabel.value} Topic` : 'Foundation'} 里完成至少 3 轮 Context-first，先把“看懂 + 改写”做稳定。`,
       gates
     }
   }
@@ -728,7 +812,7 @@ const pathCoach = computed(() => {
       stage: 'topic',
       stageLabel: '切入 Topic Packs',
       headline: 'Foundation 已够用，下一步该进入主题深练。',
-      nextStep: `建议切到 ${topicLabel(recommendedTopic.value)} 相关 Topic Pack，先把主题表达练具体，再进 Output Studio。`,
+      nextStep: `建议切到 ${activeTopicLabel.value} 相关 Topic Pack，先把主题表达练具体，再进 Output Studio。`,
       gates
     }
   }
@@ -738,7 +822,7 @@ const pathCoach = computed(() => {
       stage: 'output',
       stageLabel: '进入 Output',
       headline: '你已经能看懂词，现在要把词写出来。',
-      nextStep: '建议优先做 Output Studio，把短输出练到“可用”以上，再进入 Exam Drills。',
+      nextStep: `建议优先在 ${activeTopicLabel.value} 主题里做 Output Studio，把短输出练到“可用”以上，再进入 Exam Drills。`,
       gates
     }
   }
@@ -748,7 +832,7 @@ const pathCoach = computed(() => {
       stage: 'exam',
       stageLabel: '进入 Exam',
       headline: '输出开始可用了，现在该转入考试压力场景。',
-      nextStep: '建议进入 Exam Drills，验证这些词能不能在阅读、听力、写作、口语表面都用得起来。',
+      nextStep: `建议进入 ${activeTopicLabel.value} 主题的 Exam Drills，验证这些词能不能在阅读、听力、写作、口语表面都用得起来。`,
       gates
     }
   }
@@ -757,7 +841,7 @@ const pathCoach = computed(() => {
     stage: 'loop',
     stageLabel: '交替循环',
     headline: '你已经进入“主题 + 输出 + 模拟”交替提升阶段。',
-    nextStep: `建议保持循环：先做 ${topicLabel(recommendedTopic.value)} 主题补强，再做 Output Studio，最后用 Exam Drills 检查迁移效果。`,
+    nextStep: `建议保持循环：先做 ${activeTopicLabel.value} 主题补强，再做 Output Studio，最后用 Exam Drills 检查迁移效果。`,
     gates
   }
 })
@@ -873,12 +957,16 @@ function loadHistory() {
   const rawHistory = getContextSessionHistory()
   const outputHistory = getOutputStudioHistory()
   const examHistory = getExamDrillHistory()
-  const totalAttempts = rawHistory.totalBundles * 2
+  const totalAttempts = (rawHistory.totalBundles || 0) * 2
   const outputTotalWords = outputHistory.totalWords || 0
   const examTotalItems = examHistory.totalItems || 0
 
   return {
-    ...rawHistory,
+    context: {
+      ...rawHistory,
+      accuracy: totalAttempts > 0 ? Math.round((rawHistory.totalCorrect / totalAttempts) * 100) : 0
+    },
+    sessions: rawHistory.sessions || 0,
     accuracy: totalAttempts > 0 ? Math.round((rawHistory.totalCorrect / totalAttempts) * 100) : 0,
     output: {
       ...outputHistory,

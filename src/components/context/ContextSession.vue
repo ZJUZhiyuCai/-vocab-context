@@ -118,6 +118,10 @@ const props = defineProps({
   sessionSize: {
     type: Number,
     default: 5
+  },
+  currentVocab: {
+    type: Object,
+    default: null
   }
 })
 
@@ -301,7 +305,11 @@ function advanceToNextTask() {
 
   if (newTask === TASK_TYPES.SUMMARY) {
     summary.value = engine.getSummary()
-    saveContextSessionToHistory(summary.value)
+    saveContextSessionToHistory(summary.value, {
+      vocabId: props.currentVocab?.id || 'unknown',
+      topic: props.currentVocab?.topic || 'general',
+      trackType: props.currentVocab?.ieltsTrackType || 'foundation'
+    })
     emit('complete', summary.value)
   }
 }

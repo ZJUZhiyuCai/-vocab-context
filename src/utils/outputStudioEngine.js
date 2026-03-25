@@ -413,22 +413,48 @@ export function getOutputStudioHistory() {
     return saved ? JSON.parse(saved) : {
       sessions: 0,
       totalWords: 0,
-      totalOutputs: 0
+      totalOutputs: 0,
+      qualityScoreTotal: 0,
+      topicStats: {},
+      vocabStats: {}
     };
   } catch (e) {
-    return { sessions: 0, totalWords: 0, totalOutputs: 0 };
+    return { sessions: 0, totalWords: 0, totalOutputs: 0, qualityScoreTotal: 0, topicStats: {}, vocabStats: {} };
   }
 }
 
 /**
  * 保存到历史
  */
-export function saveOutputStudioToHistory(summary) {
+export function saveOutputStudioToHistory(summary, meta = {}) {
   try {
     const history = getOutputStudioHistory();
+    const topicKey = meta.topic || 'general';
+    const vocabKey = meta.vocabId || 'unknown';
+    const averageScore = summary?.coach?.averageScore || 0;
     history.sessions++;
     history.totalWords += summary.totalBundles;
     history.totalOutputs += summary.submittedCount;
+    history.qualityScoreTotal += averageScore;
+
+    if (!history.topicStats[topicKey]) {
+      history.topicStats[topicKey] = { sessions: 0, totalWords: 0, totalOutputs: 0, qualityScoreTotal: 0 };
+    }
+    history.topicStats[topicKey].sessions += 1;
+    history.topicStats[topicKey].totalWords += summary.totalBundles;
+    history.topicStats[topicKey].totalOutputs += summary.submittedCount;
+    history.topicStats[topicKey].qualityScoreTotal += averageScore;
+
+    if (!history.vocabStats[vocabKey]) {
+      history.vocabStats[vocabKey] = { sessions: 0, totalWords: 0, totalOutputs: 0, qualityScoreTotal: 0, topic: topicKey, trackType: meta.trackType || 'foundation' };
+    }
+    history.vocabStats[vocabKey].sessions += 1;
+    history.vocabStats[vocabKey].totalWords += summary.totalBundles;
+    history.vocabStats[vocabKey].totalOutputs += summary.submittedCount;
+    history.vocabStats[vocabKey].qualityScoreTotal += averageScore;
+    history.vocabStats[vocabKey].topic = topicKey;
+    history.vocabStats[vocabKey].trackType = meta.trackType || history.vocabStats[vocabKey].trackType;
+
     localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   } catch (e) {
     console.warn('保存 Output Studio 历史失败:', e);

@@ -603,22 +603,43 @@ export function getExamDrillHistory() {
     return saved ? JSON.parse(saved) : {
       sessions: 0,
       totalItems: 0,
-      totalCorrect: 0
+      totalCorrect: 0,
+      topicStats: {},
+      vocabStats: {}
     };
   } catch (e) {
-    return { sessions: 0, totalItems: 0, totalCorrect: 0 };
+    return { sessions: 0, totalItems: 0, totalCorrect: 0, topicStats: {}, vocabStats: {} };
   }
 }
 
 /**
  * 保存到历史
  */
-export function saveExamDrillToHistory(summary) {
+export function saveExamDrillToHistory(summary, meta = {}) {
   try {
     const history = getExamDrillHistory();
+    const topicKey = meta.topic || 'general';
+    const vocabKey = meta.vocabId || 'unknown';
     history.sessions++;
     history.totalItems += summary.totalItems;
     history.totalCorrect += summary.correctCount;
+
+    if (!history.topicStats[topicKey]) {
+      history.topicStats[topicKey] = { sessions: 0, totalItems: 0, totalCorrect: 0 };
+    }
+    history.topicStats[topicKey].sessions += 1;
+    history.topicStats[topicKey].totalItems += summary.totalItems;
+    history.topicStats[topicKey].totalCorrect += summary.correctCount;
+
+    if (!history.vocabStats[vocabKey]) {
+      history.vocabStats[vocabKey] = { sessions: 0, totalItems: 0, totalCorrect: 0, topic: topicKey, trackType: meta.trackType || 'foundation' };
+    }
+    history.vocabStats[vocabKey].sessions += 1;
+    history.vocabStats[vocabKey].totalItems += summary.totalItems;
+    history.vocabStats[vocabKey].totalCorrect += summary.correctCount;
+    history.vocabStats[vocabKey].topic = topicKey;
+    history.vocabStats[vocabKey].trackType = meta.trackType || history.vocabStats[vocabKey].trackType;
+
     localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   } catch (e) {
     console.warn('保存 Exam Drill 历史失败:', e);
