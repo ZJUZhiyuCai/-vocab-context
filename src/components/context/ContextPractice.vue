@@ -127,6 +127,36 @@
           </div>
         </div>
 
+        <div :class="['path-coach', isDark ? 'dark' : 'light']">
+          <div class="path-coach-head">
+            <div>
+              <p :class="['text-xs font-semibold uppercase tracking-[0.18em]', isDark ? 'text-emerald-400/80' : 'text-emerald-700']">
+                Path Coach
+              </p>
+              <h3 :class="['text-lg font-bold mt-2', isDark ? 'text-white' : 'text-slate-900']">
+                {{ pathCoach.headline }}
+              </h3>
+              <p :class="['text-sm mt-2 leading-7', isDark ? 'text-gray-400' : 'text-gray-600']">
+                {{ pathCoach.nextStep }}
+              </p>
+            </div>
+            <div :class="['path-coach-badge', isDark ? 'dark' : 'light']">
+              {{ pathCoach.stageLabel }}
+            </div>
+          </div>
+
+          <div class="path-gate-grid">
+            <div v-for="gate in pathCoach.gates" :key="gate.key" :class="['path-gate-card', gate.status, isDark ? 'dark' : 'light']">
+              <div class="path-gate-top">
+                <p :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">{{ gate.title }}</p>
+                <span class="path-gate-state">{{ gate.statusLabel }}</span>
+              </div>
+              <p :class="['text-xs mt-2 leading-6', isDark ? 'text-gray-400' : 'text-gray-600']">{{ gate.detail }}</p>
+              <p :class="['text-xs mt-2', isDark ? 'text-gray-500' : 'text-gray-500']">目标：{{ gate.target }}</p>
+            </div>
+          </div>
+        </div>
+
         <div class="track-stack">
           <div class="track-group">
             <div class="track-group-header">
@@ -529,6 +559,8 @@ import ContextSession from './ContextSession.vue'
 import OutputStudio from './OutputStudio.vue'
 import ExamDrills from './ExamDrills.vue'
 import { getContextSessionHistory } from '../../utils/contextSessionEngine.js'
+import { getOutputStudioHistory } from '../../utils/outputStudioEngine.js'
+import { getExamDrillHistory } from '../../utils/examDrillEngine.js'
 
 const SESSION_SIZE_STORAGE_KEY = 'vocabman-context-practice-size'
 const PRIORITY_TOPICS = ['education', 'environment', 'technology']
@@ -634,6 +666,100 @@ const topicSummary = computed(() => {
     .map(([key, count]) => ({ key, count }))
     .sort((left, right) => right.count - left.count)
     .slice(0, 6)
+})
+
+const recommendedTopic = computed(() => {
+  const firstTopic = topicSummary.value.find(item => item.key !== 'general')
+  return firstTopic?.key || 'education'
+})
+
+const pathCoach = computed(() => {
+  const contextSessions = history.value.sessions || 0
+  const contextAccuracy = history.value.accuracy || 0
+  const outputSessions = history.value.output?.sessions || 0
+  const outputAccuracy = history.value.output?.accuracy || 0
+  const outputCount = history.value.output?.totalOutputs || 0
+  const examSessions = history.value.exam?.sessions || 0
+  const examAccuracy = history.value.exam?.accuracy || 0
+
+  const contextReady = contextSessions >= 3 && contextAccuracy >= 70
+  const outputReady = outputSessions >= 2 && outputCount >= 8 && outputAccuracy >= 60
+  const examReady = examSessions >= 2 && examAccuracy >= 65
+
+  const gates = [
+    {
+      key: 'context',
+      title: '语境理解',
+      status: contextReady ? 'done' : 'active',
+      statusLabel: contextReady ? '已达标' : '待提升',
+      detail: `已完成 ${contextSessions} 轮，准确率 ${contextAccuracy}%`,
+      target: '至少 3 轮，准确率约 70%'
+    },
+    {
+      key: 'output',
+      title: '真实输出',
+      status: outputReady ? 'done' : (contextReady ? 'active' : 'locked'),
+      statusLabel: outputReady ? '已达标' : (contextReady ? '下一步' : '未就绪'),
+      detail: `已完成 ${outputSessions} 轮，提交 ${outputCount} 条输出，平均质量 ${outputAccuracy}%`,
+      target: '至少 2 轮，8 条输出，平均质量约 60%'
+    },
+    {
+      key: 'exam',
+      title: '考试迁移',
+      status: examReady ? 'done' : (outputReady ? 'active' : 'locked'),
+      statusLabel: examReady ? '已达标' : (outputReady ? '下一步' : '未就绪'),
+      detail: `已完成 ${examSessions} 轮，考试表现 ${examAccuracy}%`,
+      target: '至少 2 轮，正确率约 65%'
+    }
+  ]
+
+  if (!contextReady) {
+    return {
+      stage: 'foundation',
+      stageLabel: '先稳住 Foundation',
+      headline: '先把语境理解练稳，再谈输出。',
+      nextStep: '建议先在 Foundation 或当前 Topic Pack 里完成至少 3 轮 Context-first，先把“看懂 + 改写”做稳定。',
+      gates
+    }
+  }
+
+  if (props.currentVocab?.ieltsTrackType !== 'topic' && !outputReady) {
+    return {
+      stage: 'topic',
+      stageLabel: '切入 Topic Packs',
+      headline: 'Foundation 已够用，下一步该进入主题深练。',
+      nextStep: `建议切到 ${topicLabel(recommendedTopic.value)} 相关 Topic Pack，先把主题表达练具体，再进 Output Studio。`,
+      gates
+    }
+  }
+
+  if (!outputReady) {
+    return {
+      stage: 'output',
+      stageLabel: '进入 Output',
+      headline: '你已经能看懂词，现在要把词写出来。',
+      nextStep: '建议优先做 Output Studio，把短输出练到“可用”以上，再进入 Exam Drills。',
+      gates
+    }
+  }
+
+  if (!examReady) {
+    return {
+      stage: 'exam',
+      stageLabel: '进入 Exam',
+      headline: '输出开始可用了，现在该转入考试压力场景。',
+      nextStep: '建议进入 Exam Drills，验证这些词能不能在阅读、听力、写作、口语表面都用得起来。',
+      gates
+    }
+  }
+
+  return {
+    stage: 'loop',
+    stageLabel: '交替循环',
+    headline: '你已经进入“主题 + 输出 + 模拟”交替提升阶段。',
+    nextStep: `建议保持循环：先做 ${topicLabel(recommendedTopic.value)} 主题补强，再做 Output Studio，最后用 Exam Drills 检查迁移效果。`,
+    gates
+  }
 })
 
 function startSession() {
@@ -745,11 +871,23 @@ function saveSessionSize(size) {
 
 function loadHistory() {
   const rawHistory = getContextSessionHistory()
+  const outputHistory = getOutputStudioHistory()
+  const examHistory = getExamDrillHistory()
   const totalAttempts = rawHistory.totalBundles * 2
+  const outputTotalWords = outputHistory.totalWords || 0
+  const examTotalItems = examHistory.totalItems || 0
 
   return {
     ...rawHistory,
-    accuracy: totalAttempts > 0 ? Math.round((rawHistory.totalCorrect / totalAttempts) * 100) : 0
+    accuracy: totalAttempts > 0 ? Math.round((rawHistory.totalCorrect / totalAttempts) * 100) : 0,
+    output: {
+      ...outputHistory,
+      accuracy: outputTotalWords > 0 ? Math.round((outputHistory.totalOutputs / outputTotalWords) * 100) : 0
+    },
+    exam: {
+      ...examHistory,
+      accuracy: examTotalItems > 0 ? Math.round((examHistory.totalCorrect / examTotalItems) * 100) : 0
+    }
   }
 }
 
@@ -951,6 +1089,74 @@ function topicLabel(topic) {
 
 .track-stack {
   @apply max-w-[1140px] mx-auto space-y-10;
+}
+
+.path-coach {
+  @apply max-w-[1140px] mx-auto rounded-3xl border p-5 md:p-6 mb-8;
+}
+
+.path-coach.dark {
+  @apply bg-slate-900/40 border-white/5;
+}
+
+.path-coach.light {
+  @apply bg-gray-50 border-gray-200;
+}
+
+.path-coach-head {
+  @apply flex flex-col gap-4 md:flex-row md:items-start md:justify-between;
+}
+
+.path-coach-badge {
+  @apply inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold border whitespace-nowrap;
+}
+
+.path-coach-badge.dark {
+  @apply bg-emerald-500/10 border-emerald-500/20 text-emerald-300;
+}
+
+.path-coach-badge.light {
+  @apply bg-emerald-100 border-emerald-200 text-emerald-700;
+}
+
+.path-gate-grid {
+  @apply grid gap-4 mt-6 md:grid-cols-3;
+}
+
+.path-gate-card {
+  @apply rounded-2xl border p-4;
+}
+
+.path-gate-card.dark {
+  @apply bg-slate-800/60 border-white/5;
+}
+
+.path-gate-card.light {
+  @apply bg-white border-gray-200;
+}
+
+.path-gate-card.done.dark {
+  @apply border-emerald-500/20;
+}
+
+.path-gate-card.done.light {
+  @apply border-emerald-200;
+}
+
+.path-gate-card.active.dark {
+  @apply border-amber-500/20;
+}
+
+.path-gate-card.active.light {
+  @apply border-amber-200;
+}
+
+.path-gate-top {
+  @apply flex items-center justify-between gap-3;
+}
+
+.path-gate-state {
+  @apply text-xs font-semibold;
 }
 
 .track-group {
