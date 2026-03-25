@@ -56,7 +56,20 @@
             </div>
             <h2 class="text-4xl font-black mb-4 tracking-tight">All caught up!</h2>
             <p class="text-slate-400 mb-8 text-lg">你已经完成了今日的所有单词。</p>
-            <button @click="restart" class="premium-btn px-10 py-4 text-lg">
+            <div v-if="todayIeltsRecommendation" :class="['w-full max-w-2xl rounded-3xl border p-6 mb-6 text-left', isDark ? 'bg-slate-800/50 border-white/10' : 'bg-white border-gray-200 shadow-xl']">
+              <p class="text-xs uppercase tracking-[0.18em] text-emerald-400 font-semibold">Next Best Step</p>
+              <h3 :class="['text-2xl font-bold mt-3', isDark ? 'text-white' : 'text-slate-900']">{{ todayIeltsRecommendation.title }}</h3>
+              <p :class="['text-sm mt-3 leading-7', isDark ? 'text-gray-400' : 'text-gray-600']">{{ todayIeltsRecommendation.description }}</p>
+              <div class="flex flex-wrap gap-3 mt-5">
+                <button @click="followTodayIeltsRecommendation" class="premium-btn px-8 py-3">
+                  {{ todayIeltsRecommendation.ctaLabel }}
+                </button>
+                <button @click="restart" :class="['px-8 py-3 rounded-2xl border font-semibold transition-all', isDark ? 'bg-white/5 border-white/10 text-gray-300 hover:border-gray-400' : 'bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400']">
+                  重新开始
+                </button>
+              </div>
+            </div>
+            <button v-else @click="restart" class="premium-btn px-10 py-4 text-lg">
                 重新开始
             </button>
         </div>
@@ -322,6 +335,7 @@ import PremiumStats from './components/PremiumStats.vue'
 
 import { generateAIExample } from './utils/aiService.js'
 import { AI_MODEL, AI_PROVIDER_LABEL, AI_ENV_API_KEY_NAME } from './utils/aiClient.js'
+import { buildIeltsQuickRecommendation, setPendingIeltsPathTarget } from './utils/ieltsPathEntry.js'
 import { getEtymology } from './utils/etymologyService.js'
 import { getEnglishDefinition } from './utils/englishDefinitionService.js'
 import { loadSettings, saveSettings as saveSettingsToStorage, loadWordbook, saveWordbook, loadUserProfile, saveUserProfile, shouldShowOnboarding } from './utils/storage.js'
@@ -470,6 +484,8 @@ const stats = computed(() => {
     accuracy,
   }
 })
+
+const todayIeltsRecommendation = computed(() => buildIeltsQuickRecommendation(currentVocab.value))
 
 // 今日统计
 const todayStats = computed(() => ({
@@ -995,6 +1011,15 @@ const fetchEnglishDefinition = async (word) => {
 
 const handleNavigate = (page) => {
   currentPage.value = page;
+};
+
+const followTodayIeltsRecommendation = () => {
+  if (!todayIeltsRecommendation.value) return;
+  setPendingIeltsPathTarget({
+    mode: todayIeltsRecommendation.value.mode,
+    targetTopic: todayIeltsRecommendation.value.targetTopic
+  });
+  currentPage.value = 'context';
 };
 
 const handleOnboardingComplete = (profile) => {

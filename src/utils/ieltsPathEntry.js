@@ -157,6 +157,7 @@ export function buildIeltsQuickRecommendation(currentVocab) {
     return {
       stage: 'context',
       mode: 'session',
+      targetTopic: activeTopic,
       title: '下一步：先练语境理解',
       description: `${activeLabel} 主题的 Context-first 还没练稳。建议先把“看懂 + 改写”做稳定。`,
       ctaLabel: '去做 Context-first'
@@ -167,9 +168,10 @@ export function buildIeltsQuickRecommendation(currentVocab) {
     return {
       stage: 'topic',
       mode: 'session',
+      targetTopic: activeTopic,
       title: '下一步：切入 Topic Packs',
       description: `Foundation 基础已经够用，建议转去 ${activeLabel} Topic Pack 深练。`,
-      ctaLabel: '去走 IELTS 路径'
+      ctaLabel: `切到 ${activeLabel} Topic`
     }
   }
 
@@ -177,6 +179,7 @@ export function buildIeltsQuickRecommendation(currentVocab) {
     return {
       stage: 'output',
       mode: 'outputStudio',
+      targetTopic: activeTopic,
       title: '下一步：把词真正写出来',
       description: `${activeLabel} 主题的输出还不够稳定，建议先做 Output Studio。`,
       ctaLabel: '去做 Output Studio'
@@ -187,6 +190,7 @@ export function buildIeltsQuickRecommendation(currentVocab) {
     return {
       stage: 'exam',
       mode: 'examDrills',
+      targetTopic: activeTopic,
       title: '下一步：转入考试迁移',
       description: `${activeLabel} 主题已经能输出，下一步该验证考试场景迁移。`,
       ctaLabel: '去做 Exam Drills'
@@ -196,6 +200,7 @@ export function buildIeltsQuickRecommendation(currentVocab) {
   return {
     stage: 'loop',
     mode: 'outputStudio',
+    targetTopic: activeTopic,
     title: '下一步：继续主题循环',
     description: `${activeLabel} 主题可以进入“Output + Exam”交替巩固。`,
     ctaLabel: '继续 IELTS 路径'

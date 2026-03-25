@@ -562,7 +562,7 @@ import ExamDrills from './ExamDrills.vue'
 import { getContextSessionHistory } from '../../utils/contextSessionEngine.js'
 import { getOutputStudioHistory } from '../../utils/outputStudioEngine.js'
 import { getExamDrillHistory } from '../../utils/examDrillEngine.js'
-import { consumePendingIeltsPathTarget } from '../../utils/ieltsPathEntry.js'
+import { consumePendingIeltsPathTarget, setPendingIeltsPathTarget } from '../../utils/ieltsPathEntry.js'
 
 const SESSION_SIZE_STORAGE_KEY = 'vocabman-context-practice-size'
 const PRIORITY_TOPICS = ['education', 'environment', 'technology']
@@ -935,6 +935,20 @@ function handleSessionComplete(summary) {
 function applyPendingPathTarget() {
   const pending = consumePendingIeltsPathTarget()
   if (!pending?.mode || !hasEligibleBundles.value) return
+
+  if (pending.targetTopic && props.currentVocab?.topic !== pending.targetTopic) {
+    const targetVocab = (props.availableVocabularies || []).find(vocab =>
+      vocab.category === 'IELTS' &&
+      vocab.ieltsTrackType === 'topic' &&
+      vocab.topic === pending.targetTopic
+    )
+
+    if (targetVocab) {
+      setPendingIeltsPathTarget(pending)
+      emit('select-vocabulary', targetVocab)
+      return
+    }
+  }
 
   if (pending.mode === 'outputStudio') {
     enterOutputStudio()

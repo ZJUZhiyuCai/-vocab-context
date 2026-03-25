@@ -259,7 +259,10 @@ function startContextSession() {
 
 function followIeltsRecommendation() {
   if (!ieltsRecommendation.value) return
-  setPendingIeltsPathTarget({ mode: ieltsRecommendation.value.mode })
+  setPendingIeltsPathTarget({
+    mode: ieltsRecommendation.value.mode,
+    targetTopic: ieltsRecommendation.value.targetTopic
+  })
   emit('navigate', 'context')
 }
 
