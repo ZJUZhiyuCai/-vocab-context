@@ -82,7 +82,10 @@
       <SessionSummary
         v-else-if="currentTask === 'summary'"
         :summary="summary"
+        :remediation-summary="remediationSummary"
+        :is-retry-session="isRetrySession"
         @restart="handleRestart"
+        @retry-remediation="handleRetryRemediation"
         @exit="handleExit"
       />
     </div>
@@ -97,6 +100,7 @@ import {
   TASK_TYPES,
   saveContextSessionToHistory
 } from '../../utils/contextSessionEngine.js'
+import { evaluateProductionAttempt } from '../../utils/learningCoach.js'
 import ContextPromptCard from './ContextPromptCard.vue'
 import MeaningChoice from './MeaningChoice.vue'
 import ParaphraseMatch from './ParaphraseMatch.vue'
@@ -134,6 +138,8 @@ const outputPrompt = ref(null)
 const currentResult = ref(null)
 const summary = ref(null)
 const completedTasks = ref([])
+const isRetrySession = ref(false)
+const retryTargetWords = ref([])
 
 // Task labels for progress
 const taskLabels = [
@@ -150,10 +156,48 @@ const progress = computed(() => {
   return Math.min(100, Math.round(bundleProgress))
 })
 
+const remediationSummary = computed(() => {
+  if (!summary.value) return null
+
+  const targetWords = (isRetrySession.value && retryTargetWords.value.length
+    ? retryTargetWords.value
+    : (summary.value.results || []).map(result => result.word)
+  ).filter(Boolean)
+
+  if (!targetWords.length) return null
+
+  const resultMap = new Map((summary.value.results || []).map(result => [result.word, result]))
+  const passedWords = targetWords.filter(word => {
+    const result = resultMap.get(word)
+    return Boolean(result?.meaningCorrect && result?.paraphraseCorrect && result?.outputSubmitted)
+  })
+  const remainingWords = targetWords.filter(word => !passedWords.includes(word))
+
+  return {
+    targetWords,
+    passedWords,
+    remainingWords,
+    passRate: targetWords.length ? Math.round((passedWords.length / targetWords.length) * 100) : 0,
+    sessionPassed: remainingWords.length === 0
+  }
+})
+
+const retryActionBundles = computed(() => {
+  if (remediationSummary.value?.remainingWords?.length) {
+    const remainingSet = new Set(remediationSummary.value.remainingWords)
+    return props.bundles.filter(bundle => remainingSet.has(bundle.word))
+  }
+  return []
+})
+
 // Initialize engine
-function initEngine() {
-  engine = createContextSessionEngine(props.bundles, {
-    sessionSize: props.sessionSize
+function initEngine(sourceBundles = props.bundles, meta = {}) {
+  const bundles = Array.isArray(sourceBundles) ? sourceBundles : props.bundles
+  isRetrySession.value = Boolean(meta.retry)
+  retryTargetWords.value = isRetrySession.value ? bundles.map(bundle => bundle.word) : []
+
+  engine = createContextSessionEngine(bundles, {
+    sessionSize: Math.min(props.sessionSize, bundles.length || props.sessionSize)
   })
   syncState()
 }
@@ -213,12 +257,25 @@ function handleParaphraseAnswer(data) {
 
 // Handle output submit
 function handleOutputSubmit(data) {
-  engine.recordResult(TASK_TYPES.MICRO_OUTPUT, data)
+  const outputFeedback = evaluateProductionAttempt({
+    text: data.text || '',
+    word: currentBundle.value?.word || '',
+    collocations: currentBundle.value?.collocations || [],
+    paraphrase: currentBundle.value?.paraphrases?.[0] || '',
+    promptType: outputPrompt.value?.mode === 'speaking' ? 'speaking' : 'sentence',
+    topic: currentBundle.value?.topic || 'general'
+  })
+
+  engine.recordResult(TASK_TYPES.MICRO_OUTPUT, {
+    ...data,
+    feedback: outputFeedback
+  })
   completedTasks.value.push(TASK_TYPES.MICRO_OUTPUT)
   currentResult.value = {
     ...currentResult.value,
     outputSubmitted: data.submitted,
-    outputText: data.text
+    outputText: data.text,
+    outputFeedback
   }
   advanceToNextTask()
 }
@@ -258,8 +315,18 @@ function handleRestart() {
   syncState()
 }
 
+function handleRetryRemediation() {
+  if (!retryActionBundles.value.length) return
+  completedTasks.value = []
+  currentResult.value = null
+  summary.value = null
+  initEngine(retryActionBundles.value, { retry: true })
+}
+
 // Handle exit
 function handleExit() {
+  isRetrySession.value = false
+  retryTargetWords.value = []
   emit('exit')
 }
 

@@ -231,6 +231,7 @@ export function createContextSessionEngine(bundles, options = {}) {
       existingResult.outputSubmitted = data.submitted;
       existingResult.outputText = data.text;
       existingResult.outputTime = data.time;
+      existingResult.outputFeedback = data.feedback || null;
     }
 
     // 确保结果被记录
