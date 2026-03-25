@@ -31,12 +31,12 @@
 
 ## Why This Repo Matters
 
-VocabMan is no longer just a flashcard app. The repo now contains a more structured IELTS vocabulary system:
+VocabMan is no longer just a flashcard app. The repository now contains a more structured IELTS vocabulary system:
 
 - A curated `Foundation` layer for high-transfer vocabulary
 - `Topic Packs` organized around common IELTS themes
 - Context-based practice before output-heavy study
-- Short-form production drills before full writing/speaking pressure
+- Short-form production drills before full writing and speaking pressure
 - A safer AI integration path that keeps secrets out of the public bundle
 
 ## Learning Architecture
@@ -76,10 +76,12 @@ SILICONFLOW_MODEL=Qwen/Qwen2.5-72B-Instruct
 SILICONFLOW_API_BASE_URL=https://api.siliconflow.cn/v1
 ```
 
-## Docs Map
+## Project Docs
 
 - [English README](./README.en.md)
 - [中文 README](./README.zh-CN.md)
+- [Contributing Guide](./CONTRIBUTING.md)
+- [Changelog](./CHANGELOG.md)
 - [IELTS Track Overview](./docs/23-IELTS-Learning-Track-Overview.md)
 - [Release Notes](./docs/25-IELTS-Release-Notes.md)
 
