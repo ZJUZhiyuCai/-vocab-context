@@ -196,6 +196,18 @@
             <!-- Actions -->
             <div class="summary-actions">
               <button
+                v-if="retryBundles.length"
+                @click="handleRetryWeakWords"
+                :class="[
+                  'flex-1 py-4 rounded-2xl font-semibold transition-all active:scale-[0.98]',
+                  isDark
+                    ? 'bg-amber-500/15 border border-amber-500/20 text-amber-300 hover:border-amber-400/40'
+                    : 'bg-amber-50 border border-amber-200 text-amber-700 hover:border-amber-300'
+                ]"
+              >
+                重练薄弱词
+              </button>
+              <button
                 @click="handleRestart"
                 :class="[
                   'flex-1 py-4 rounded-2xl font-semibold transition-all active:scale-[0.98]',
@@ -474,6 +486,14 @@ const surfaceStats = computed(() => {
   return stats
 })
 
+const retryBundles = computed(() => {
+  const weakWords = summary.value?.coach?.outputCoach?.weakWords || []
+  if (!weakWords.length) return []
+
+  const weakWordSet = new Set(weakWords.map(item => item.word))
+  return eligibleBundles.value.filter(bundle => weakWordSet.has(bundle.word))
+})
+
 // Methods
 function loadHistory() {
   const raw = getExamDrillHistory()
@@ -486,12 +506,16 @@ function loadHistory() {
   }
 }
 
-function startSession() {
-  if (!hasEligibleBundles.value) return
+function startSession(customBundles = null) {
+  const sourceBundles = Array.isArray(customBundles) && customBundles.length
+    ? customBundles
+    : eligibleBundles.value
+
+  if (!sourceBundles.length) return
 
   // Create engine
-  engine = createExamDrillEngine(eligibleBundles.value, {
-    sessionSize: sessionSize.value
+  engine = createExamDrillEngine(sourceBundles, {
+    sessionSize: Math.min(sessionSize.value, sourceBundles.length)
   })
 
   // Sync initial state
@@ -551,6 +575,11 @@ function handleRestart() {
   syncState()
   showSummary.value = false
   summary.value = null
+}
+
+function handleRetryWeakWords() {
+  if (!retryBundles.value.length) return
+  startSession(retryBundles.value)
 }
 
 function surfaceLabel(type) {
