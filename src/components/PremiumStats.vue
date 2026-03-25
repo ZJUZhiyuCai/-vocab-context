@@ -45,6 +45,25 @@
         </div>
      </div>
 
+     <div
+      v-if="ieltsRecommendation"
+      :class="['backdrop-blur-sm border rounded-3xl p-6 shadow-lg hover:shadow-xl transition-all', isDark ? 'bg-slate-800/50 border-white/10' : 'bg-white border-gray-200']"
+     >
+        <div class="flex items-start justify-between gap-4">
+          <div>
+            <p class="text-xs uppercase tracking-[0.18em] text-emerald-400 font-semibold">Next Best Step</p>
+            <h3 :class="['text-lg font-bold mt-2', isDark ? 'text-white' : 'text-slate-900']">{{ ieltsRecommendation.title }}</h3>
+            <p class="text-sm text-gray-500 mt-2 leading-7">{{ ieltsRecommendation.description }}</p>
+          </div>
+          <button
+            @click="followIeltsRecommendation"
+            class="px-5 py-2.5 rounded-2xl bg-emerald-600 text-white font-semibold shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-[1.02] transition-all"
+          >
+            {{ ieltsRecommendation.ctaLabel }}
+          </button>
+        </div>
+     </div>
+
      <!-- Recent History -->
      <div :class="['backdrop-blur-sm border rounded-3xl p-6 shadow-lg flex-1 min-h-[200px]', isDark ? 'bg-slate-800/50 border-white/10' : 'bg-white border-gray-200']">
         <div class="flex items-center justify-between mb-5">
@@ -82,10 +101,12 @@
 
 <script setup>
 import { useTheme } from '../composables/useTheme.js'
+import { computed } from 'vue'
+import { buildIeltsQuickRecommendation, setPendingIeltsPathTarget } from '../utils/ieltsPathEntry.js'
 
 const { isDark } = useTheme()
 
-defineProps({
+const props = defineProps({
   todayLearned: {
     type: Number,
     default: 0
@@ -105,8 +126,22 @@ defineProps({
   recentHistory: {
     type: Array,
     default: () => []
+  },
+  currentVocab: {
+    type: Object,
+    default: null
   }
 })
+
+const emit = defineEmits(['navigate'])
+
+const ieltsRecommendation = computed(() => buildIeltsQuickRecommendation(props.currentVocab))
+
+function followIeltsRecommendation() {
+  if (!ieltsRecommendation.value) return
+  setPendingIeltsPathTarget({ mode: ieltsRecommendation.value.mode })
+  emit('navigate', 'context')
+}
 </script>
 
 <style scoped>

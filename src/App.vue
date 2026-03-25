@@ -69,6 +69,8 @@
             :streak="streakDays" 
             :total-learned="stats.learned"
             :recent-history="recentHistoryList"
+            :current-vocab="currentVocab"
+            @navigate="handleNavigate"
         />
     </div>
 
@@ -93,6 +95,7 @@
       :words="words"
       :learned="learned"
       :review-states="reviewStates"
+      :current-vocab="currentVocab"
       @navigate="handleNavigate"
     />
 

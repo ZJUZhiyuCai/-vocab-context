@@ -72,6 +72,33 @@
           </div>
         </div>
 
+        <div
+          v-if="ieltsRecommendation && learnedCount > 0"
+          :class="['mt-4 p-4 rounded-2xl border', isDark ? 'bg-emerald-500/5 border-emerald-500/20' : 'bg-emerald-50 border-emerald-200']"
+        >
+          <div class="flex items-center justify-between gap-4 flex-wrap">
+            <div class="flex items-center gap-4">
+              <div :class="['w-12 h-12 rounded-xl flex items-center justify-center', isDark ? 'bg-emerald-500/20' : 'bg-emerald-100']">
+                <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8L10 18l-5-5" />
+                </svg>
+              </div>
+              <div>
+                <h3 :class="['font-bold', isDark ? 'text-white' : 'text-slate-900']">{{ ieltsRecommendation.title }}</h3>
+                <p :class="['text-sm', isDark ? 'text-gray-400' : 'text-gray-600']">
+                  {{ ieltsRecommendation.description }}
+                </p>
+              </div>
+            </div>
+            <button
+              @click="followIeltsRecommendation"
+              class="px-6 py-2.5 rounded-xl bg-emerald-600 text-white font-semibold shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
+            >
+              {{ ieltsRecommendation.ctaLabel }}
+            </button>
+          </div>
+        </div>
+
         <div v-else class="empty-state">
           <div class="flex justify-center mb-6 text-slate-700/50">
             <svg class="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -132,6 +159,7 @@ import { computed, ref } from 'vue'
 import ReviewSession from './quiz/ReviewSession.vue'
 import ReviewQueuePreview from './ReviewQueuePreview.vue'
 import { useTheme } from '../composables/useTheme.js'
+import { buildIeltsQuickRecommendation, setPendingIeltsPathTarget } from '../utils/ieltsPathEntry.js'
 
 const { isDark } = useTheme()
 
@@ -147,6 +175,10 @@ const props = defineProps({
   reviewStates: {
     type: Object,
     required: true
+  },
+  currentVocab: {
+    type: Object,
+    default: null
   }
 })
 
@@ -202,6 +234,8 @@ const learnedWords = computed(() => {
     })
 })
 
+const ieltsRecommendation = computed(() => buildIeltsQuickRecommendation(props.currentVocab))
+
 const wordListData = computed(() => {
   return learnedWords.value.map(word => ({
     word,
@@ -220,6 +254,12 @@ function startSession(mode) {
 }
 
 function startContextSession() {
+  emit('navigate', 'context')
+}
+
+function followIeltsRecommendation() {
+  if (!ieltsRecommendation.value) return
+  setPendingIeltsPathTarget({ mode: ieltsRecommendation.value.mode })
   emit('navigate', 'context')
 }
 

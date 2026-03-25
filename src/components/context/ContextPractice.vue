@@ -554,7 +554,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { useTheme } from '../../composables/useTheme.js'
 import ContextSession from './ContextSession.vue'
 import OutputStudio from './OutputStudio.vue'
@@ -562,6 +562,7 @@ import ExamDrills from './ExamDrills.vue'
 import { getContextSessionHistory } from '../../utils/contextSessionEngine.js'
 import { getOutputStudioHistory } from '../../utils/outputStudioEngine.js'
 import { getExamDrillHistory } from '../../utils/examDrillEngine.js'
+import { consumePendingIeltsPathTarget } from '../../utils/ieltsPathEntry.js'
 
 const SESSION_SIZE_STORAGE_KEY = 'vocabman-context-practice-size'
 const PRIORITY_TOPICS = ['education', 'environment', 'technology']
@@ -931,6 +932,23 @@ function handleSessionComplete(summary) {
   history.value = loadHistory()
 }
 
+function applyPendingPathTarget() {
+  const pending = consumePendingIeltsPathTarget()
+  if (!pending?.mode || !hasEligibleBundles.value) return
+
+  if (pending.mode === 'outputStudio') {
+    enterOutputStudio()
+    return
+  }
+
+  if (pending.mode === 'examDrills') {
+    enterExamDrills()
+    return
+  }
+
+  startSession()
+}
+
 function setSessionSize(size) {
   sessionSize.value = size
   saveSessionSize(size)
@@ -978,6 +996,10 @@ function loadHistory() {
     }
   }
 }
+
+onMounted(() => {
+  applyPendingPathTarget()
+})
 
 function normalizeBundle(word) {
   const id = word.id || word.bundleId || word.word
