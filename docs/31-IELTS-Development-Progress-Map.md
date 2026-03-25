@@ -39,8 +39,7 @@ flowchart LR
     classDef next fill:#2563eb,color:#ffffff,stroke:#2563eb,stroke-width:2px;
     classDef later fill:#475569,color:#ffffff,stroke:#475569,stroke-width:2px;
 
-    class A,B,C,D,E,F,G,H done;
-    class I active;
+    class A,B,C,D,E,F,G,H,I done;
     class J next;
 ```
 
@@ -64,37 +63,38 @@ flowchart LR
 | Exam Drills | 已完成 | 75% | 已有表面训练与补救闭环 |
 | Remediation Loop | 已完成 | 72% | 三条主路径都已具备补救和过关条件 |
 | Path Guidance | 已完成 | 68% | 已能按词库和 topic 给建议，但还不够“像真人老师” |
-| Today / Quiz 导流 | 已完成 | 65% | 已接入推荐入口，但还可以更强地嵌入卡片流程 |
-| Teacher Layer | 进行中 | 35% | 反馈语言与教学感仍偏“系统提示” |
-| Learning OS | 下一阶段 | 20% | 尚未形成完整的首周学习脚手架与成长系统 |
+| Today / Quiz 导流 | 已完成 | 75% | 已接入推荐入口，卡片级导流已实现 |
+| Teacher Layer | 已完成 | 90% | 反馈语言已改为老师式，优先级逻辑已修复 |
+| First-Week Scaffold | 已完成 | 85% | 首周学习脚手架已实现，需实际用户验证 |
+| Learning OS | 下一阶段 | 25% | 尚未形成完整的成长系统与长期目标 |
 
 ## 4. 当前开发重点
 
 当前最值得投时间的不是再加新的练习模式，而是把下面三件事做深：
 
-### A. Teacher Layer
+### A. Teacher Layer ✅ 已完成
 
 目标：
 
 - 让反馈更像英语老师，而不是评分板
-- 让用户知道“为什么错、怎么改、下次怎么说得更自然”
+- 让用户知道”为什么错、怎么改、下次怎么说得更自然”
 
 状态：
 
-- `进行中`
+- `已完成` - 反馈语言已改为老师式，优先级逻辑已修复
 
-### B. Progression Logic
+### B. Progression Logic ✅ 已完成
 
 目标：
 
-- 不只是告诉用户“去某个页面”
-- 而是明确“你现在在这一步，下一步该去哪，为什么”
+- 不只是告诉用户”去某个页面”
+- 而是明确”你现在在这一步，下一步该去哪，为什么”
 
 状态：
 
-- `已起步`
+- `已完成` - 卡片级导流已实现，用户完成 bundle 词后会收到下一步建议
 
-### C. Daily Learning OS
+### C. Daily Learning OS 🔄 下一阶段
 
 目标：
 
@@ -151,17 +151,17 @@ flowchart LR
 
 ## 6. 下一步开发顺序
 
-### P1
+### P1 ✅ 已完成
 
 - Teacher-style feedback rewrite
 - 让反馈更像老师批改，而不是系统面板
 
-### P2
+### P2 ✅ 已完成
 
 - Today 卡片级导流
 - 用户完成某个词后，就知道下一步该去哪层练
 
-### P3
+### P3 🔄 下一阶段
 
 - First-week IELTS learning scaffold
 - 让新用户进入产品后，不需要自己判断路径

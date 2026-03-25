@@ -7,8 +7,11 @@ export const SUPABASE_AUTH_STORAGE_KEY = `sb-${SUPABASE_PROJECT_REF}-auth-token`
 const SUPABASE_AUTH_LOCK_KEY = `lock:${SUPABASE_AUTH_STORAGE_KEY}`
 const EXPIRY_MARGIN_MS = 90 * 1000
 
-if (!supabaseUrl || !supabaseKey) {
-    console.warn('Supabase credentials missing. Please check your environment config.')
+// 检查是否有有效的 Supabase 配置
+export const hasSupabaseConfig = Boolean(supabaseUrl && supabaseKey)
+
+if (!hasSupabaseConfig) {
+    console.warn('Supabase credentials missing. Running in offline mode.')
 }
 
 function readStoredSession() {
@@ -60,11 +63,14 @@ function pruneExpiredSupabaseSession() {
 
 pruneExpiredSupabaseSession()
 
-export const supabase = createClient(supabaseUrl, supabaseKey, {
-    auth: {
-        storageKey: SUPABASE_AUTH_STORAGE_KEY,
-        persistSession: true,
-        detectSessionInUrl: true,
-        autoRefreshToken: false
-    }
-})
+// 只有在配置有效时才创建 Supabase 客户端
+export const supabase = hasSupabaseConfig
+  ? createClient(supabaseUrl, supabaseKey, {
+      auth: {
+          storageKey: SUPABASE_AUTH_STORAGE_KEY,
+          persistSession: true,
+          detectSessionInUrl: true,
+          autoRefreshToken: false
+      }
+  })
+  : null

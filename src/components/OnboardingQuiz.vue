@@ -167,6 +167,7 @@
 import { ref } from 'vue'
 import VocabLevelTest from './VocabLevelTest.vue'
 import { useTheme } from '../composables/useTheme.js'
+import { markTaskCompleted } from '../utils/firstWeekScaffold.js'
 
 const { isDark } = useTheme()
 const emit = defineEmits(['complete'])
@@ -256,6 +257,9 @@ const handleVocabTestComplete = (result) => {
 }
 
 const completeOnboarding = () => {
+  // 标记首周 onboarding 任务完成
+  markTaskCompleted('onboarding')
+
   emit('complete', {
     ...userProfile.value,
     vocabTestResult: vocabTestResult.value

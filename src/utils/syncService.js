@@ -6,7 +6,7 @@ export const syncService = {
      * Sync User Settings
      */
     async syncSettings(settings) {
-        if (!user.value) return
+        if (!user.value || !supabase) return
         const { data, error } = await supabase
             .from('user_settings')
             .upsert({
@@ -26,7 +26,7 @@ export const syncService = {
      * Sync Vocabulary Progress
      */
     async syncVocabularyProgress(vocabId, progress) {
-        if (!user.value) return
+        if (!user.value || !supabase) return
         const { data, error } = await supabase
             .from('vocabulary_progress')
             .upsert({
@@ -44,7 +44,7 @@ export const syncService = {
      * Sync Wordbook
      */
     async syncWordbook(wordId, vocabId, isAdding) {
-        if (!user.value) return
+        if (!user.value || !supabase) return
         if (isAdding) {
             return await supabase
                 .from('wordbook')
@@ -67,7 +67,7 @@ export const syncService = {
      * This is called after initial login
      */
     async fullSync() {
-        if (!user.value) return
+        if (!user.value || !supabase) return
 
         // 1. Fetch cloud settings
         const { data: cloudSettings } = await supabase
@@ -114,7 +114,7 @@ export const syncService = {
      * Sync Word Review State (SRS)
      */
     async syncReviewState(vocabId, wordId, state) {
-        if (!user.value) return
+        if (!user.value || !supabase) return
         const { data, error } = await supabase
             .from('word_review_states')
             .upsert({
@@ -137,7 +137,7 @@ export const syncService = {
      * Sync Study History
      */
     async syncStudyHistory(date, wordsLearned, studyTimeSeconds) {
-        if (!user.value) return
+        if (!user.value || !supabase) return
         const { data, error } = await supabase
             .from('study_history')
             .upsert({
@@ -154,7 +154,7 @@ export const syncService = {
      * Sync Achievement
      */
     async syncAchievement(achievementId) {
-        if (!user.value) return
+        if (!user.value || !supabase) return
         const { data, error } = await supabase
             .from('achievements')
             .upsert({

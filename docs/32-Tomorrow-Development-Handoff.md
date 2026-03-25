@@ -21,16 +21,18 @@ What is already in place:
 - Remediation loops and retry gates
 - Path Coach
 - Today / Quiz / Context entry handoff
+- Teacher-style feedback language
+- Card-level next step recommendations
+- First-week learning scaffold
 
 What is still weak:
 
-- feedback still feels too system-like
-- users can be guided better inside the daily card flow itself
-- the first-week learning experience still needs more structure
+- long-term progression goals and achievement system
+- users could benefit from more personalized learning path adjustments
 
 ## Recommended Priority for Tomorrow
 
-### P1. Teacher Layer Rewrite
+### P1. Teacher Layer Rewrite ✅ DONE
 
 Goal:
 
@@ -49,7 +51,7 @@ Success criteria:
 - more concrete guidance
 - stronger “why this is weak / how to improve” language
 
-### P2. Today Card-Level Handoff
+### P2. Today Card-Level Handoff ✅ DONE
 
 Goal:
 
@@ -65,7 +67,7 @@ Success criteria:
 - users do not need to guess where to go after daily review
 - Today becomes a learning orchestrator, not only a card feed
 
-### P3. First-Week Learning OS
+### P3. First-Week Learning OS ✅ DONE
 
 Goal:
 
@@ -81,23 +83,39 @@ Success criteria:
 
 - a new learner can open the app and know exactly what to do next
 
+### P4. Long-term Progression System 🔄 NEXT
+
+Goal:
+
+- provide long-term learning goals beyond the first week
+
+Scope:
+
+- Weekly/monthly learning targets
+- Milestone achievements
+- Learning streak rewards
+- Level progression system
+
+Success criteria:
+
+- users have clear long-term goals
+- users feel motivated to continue learning
+
 ## Suggested Execution Order
 
-1. Rewrite teacher-style feedback copy
-2. Add Today card-level handoff
-3. Design first-week scaffold
+1. ~~Rewrite teacher-style feedback copy~~ ✅ DONE
+2. ~~Add Today card-level handoff~~ ✅ DONE
+3. ~~Design first-week scaffold~~ ✅ DONE
+4. Design long-term progression system
 
 ## Technical Anchors
 
 Likely files to touch next:
 
-- `src/components/context/OutputStudio.vue`
-- `src/components/context/ExamDrills.vue`
-- `src/components/context/SessionSummary.vue`
-- `src/components/PremiumWordCard.vue`
-- `src/components/BundleWordCard.vue`
-- `src/App.vue`
-- `src/utils/ieltsPathEntry.js`
+- `src/utils/achievements.js` - Achievement system
+- `src/components/AchievementsPanel.vue` - Achievement display
+- `src/utils/firstWeekScaffold.js` - May extend for long-term goals
+- `src/utils/studyHistory.js` - Learning history tracking
 
 ## Validation Checklist
 
@@ -111,4 +129,4 @@ node scripts/qa-validate-bundles.js public/data/ielts-foundation.json
 
 ## One-Sentence Summary
 
-Tomorrow should focus on turning the current IELTS system from “well-structured practice” into “teacher-guided deliberate practice”.
+Next session should focus on designing the long-term progression system to give users clear weekly/monthly goals and milestone achievements beyond the first week.

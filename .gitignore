@@ -51,6 +51,7 @@ data/*.csv
 *.tmp
 *.temp
 .cache/
+output/
 
 # Local Netlify folder
 .netlify

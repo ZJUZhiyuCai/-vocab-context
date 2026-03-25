@@ -302,6 +302,14 @@
       :achievement="currentAchievementNotification"
       @close="onAchievementClose"
     />
+
+    <!-- Card Next Step Toast -->
+    <CardNextStepToast
+      v-if="cardRecommendation"
+      :recommendation="cardRecommendation"
+      @action="handleCardRecommendationAction"
+      @dismiss="handleCardRecommendationDismiss"
+    />
     
     <!-- Vocab Level Test -->
     <div v-if="showVocabTest" class="fixed inset-0 z-50 bg-slate-900">
@@ -336,6 +344,7 @@ import PremiumStats from './components/PremiumStats.vue'
 import { generateAIExample } from './utils/aiService.js'
 import { AI_MODEL, AI_PROVIDER_LABEL, AI_ENV_API_KEY_NAME } from './utils/aiClient.js'
 import { buildIeltsQuickRecommendation, setPendingIeltsPathTarget } from './utils/ieltsPathEntry.js'
+import { shouldShowCardRecommendation, buildCardRecommendation, getRecommendationDelay } from './utils/cardRecommendation.js'
 import { getEtymology } from './utils/etymologyService.js'
 import { getEnglishDefinition } from './utils/englishDefinitionService.js'
 import { loadSettings, saveSettings as saveSettingsToStorage, loadWordbook, saveWordbook, loadUserProfile, saveUserProfile, shouldShowOnboarding } from './utils/storage.js'
@@ -374,6 +383,7 @@ import { recordTodayStudy, getStreakDays } from './utils/studyHistory.js'
 import { checkAchievements } from './utils/achievements.js'
 import AchievementsPanel from './components/AchievementsPanel.vue'
 import AchievementNotification from './components/AchievementNotification.vue'
+import CardNextStepToast from './components/CardNextStepToast.vue'
 import StudyHeatmap from './components/StudyHeatmap.vue'
 import { getTTS } from './utils/text-to-speech.js'
 import { getFreeDictionaryTTS } from './utils/freeDictionaryTTS.js'
@@ -451,7 +461,12 @@ const showVocabTest = ref(false)  // 显示词汇测试弹窗
 
 // 成就系统状态
 const currentAchievementNotification = ref(null)
-const sessionLearnCount = ref(0)  // 本次会话学习的单词数
+const sessionLearnCount = ref(0)  // 本次会话学习数
+const learnedCount = ref(0)       // 本次会话"认识"的次数（用于卡片推荐频率）
+
+// 卡片级下一步推荐
+const cardRecommendation = ref(null)
+let pendingRecommendationTimer = null
 
 // 页面状态
 const currentPage = ref('today')
@@ -611,7 +626,24 @@ const handleKnow = () => {
     updateReviewQueue();
     recordTodayStudy(1);
     sessionLearnCount.value++;
+    learnedCount.value++;
     checkAndUnlockAchievements();
+
+    // 检查是否显示卡片级推荐（使用 snapshot 避免延迟后读取到错误的词）
+    const vocabSnapshot = currentVocab.value;
+    const wordSnapshot = currentWord.value;
+    const reviewSnapshot = reviewStates.value[currentWord.value.id];
+    if (shouldShowCardRecommendation(vocabSnapshot, wordSnapshot, reviewSnapshot, learnedCount.value)) {
+      // 清理旧的 timer
+      if (pendingRecommendationTimer) {
+        clearTimeout(pendingRecommendationTimer);
+      }
+      pendingRecommendationTimer = setTimeout(() => {
+        cardRecommendation.value = buildCardRecommendation(vocabSnapshot, wordSnapshot);
+        pendingRecommendationTimer = null;
+      }, getRecommendationDelay());
+    }
+
     animateCardAndNext('slide-left');
   }
 };
@@ -765,7 +797,19 @@ const toggleWordbook = (wordId) => {
   else addToWordbook(wordId);
 };
 
+// 清理 pending 推荐状态
+const clearPendingRecommendation = () => {
+  if (pendingRecommendationTimer) {
+    clearTimeout(pendingRecommendationTimer);
+    pendingRecommendationTimer = null;
+  }
+  cardRecommendation.value = null;
+};
+
 const restart = async () => {
+  // 清理 pending 推荐
+  clearPendingRecommendation();
+
   currentIndex.value = 0;
   learned.value.clear();
   forgotten.value.clear();
@@ -775,6 +819,7 @@ const restart = async () => {
   localStorage.removeItem(reviewKey);
   reviewStates.value = {};
   sessionLearnCount.value = 0;
+  learnedCount.value = 0;
   await loadData();
 };
 
@@ -895,6 +940,8 @@ const updateReviewQueue = () => {
 };
 
 const handleVocabularySelect = async (vocab) => {
+  // 切词库时清理 pending 推荐
+  clearPendingRecommendation();
   saveCurrentProgress();
   currentVocab.value = setCurrentVocabulary(vocab.id) || vocab;
   await loadData();
@@ -1010,6 +1057,10 @@ const fetchEnglishDefinition = async (word) => {
 };
 
 const handleNavigate = (page) => {
+  // 离开 Today 页面时清理 pending 推荐
+  if (currentPage.value === 'today' && page !== 'today') {
+    clearPendingRecommendation();
+  }
   currentPage.value = page;
 };
 
@@ -1020,6 +1071,20 @@ const followTodayIeltsRecommendation = () => {
     targetTopic: todayIeltsRecommendation.value.targetTopic
   });
   currentPage.value = 'context';
+};
+
+const handleCardRecommendationAction = (recommendation) => {
+  if (!recommendation) return;
+  setPendingIeltsPathTarget({
+    mode: recommendation.mode,
+    targetTopic: recommendation.targetTopic
+  });
+  cardRecommendation.value = null;
+  currentPage.value = 'context';
+};
+
+const handleCardRecommendationDismiss = () => {
+  cardRecommendation.value = null;
 };
 
 const handleOnboardingComplete = (profile) => {
@@ -1040,6 +1105,10 @@ const handleVocabTestComplete = (result) => {
 };
 
 const handleMobileNavigate = (page) => {
+  // 离开 Today 页面时清理 pending 推荐
+  if (currentPage.value === 'today' && page !== 'today' && page !== 'settings' && page !== 'vocab') {
+    clearPendingRecommendation();
+  }
   if (page === 'settings') openSettings();
   else if (page === 'vocab') showVocabSelector.value = true;
   else currentPage.value = page;
@@ -1121,6 +1190,9 @@ onUnmounted(() => {
   window.removeEventListener('online', handleOnline);
   window.removeEventListener('offline', handleOffline);
   saveStudyTime();
+
+  // 清理 pending 推荐
+  clearPendingRecommendation();
 });
 
 // 监听登录状态，自动执行全量同步

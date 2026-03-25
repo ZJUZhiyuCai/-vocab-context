@@ -84,9 +84,9 @@
         </div>
 
 <div class="flex items-center gap-3">
-           <!-- Login/User Button -->
-           <button 
-             v-if="!isLoggedIn"
+           <!-- Login/User Button (only show when Supabase is configured) -->
+           <button
+             v-if="!isLoggedIn && hasSupabaseConfig"
              @click="showAuth = true" 
              :class="[
                'px-4 py-2 text-sm font-bold rounded-xl transition-all active:scale-95',
@@ -99,7 +99,7 @@
            </button>
            
            <button 
-             v-else
+             v-else-if="hasUser"
              @click="toggleUserMenu"
              :class="[
                'w-10 h-10 rounded-xl overflow-hidden border transition-all hover:scale-105 active:scale-95',
@@ -107,9 +107,9 @@
              ]"
            >
              <img 
-               :src="user.user_metadata.avatar_url || 'https://api.dicebear.com/7.x/avataaars/svg?seed=' + user.id" 
+               :src="userAvatarUrl"
                class="w-full h-full object-cover"
-               :alt="user.email"
+               :alt="userEmail"
              >
            </button>
 
@@ -126,12 +126,12 @@
 
       <!-- User Menu Dropdown -->
       <div 
-        v-if="showUserMenu && isLoggedIn" 
+        v-if="showUserMenu && hasUser" 
         class="absolute top-20 right-6 w-64 bg-slate-900 border border-white/10 rounded-2xl p-2 shadow-2xl z-50 animate-dropdown"
       >
         <div class="p-4 border-b border-white/5 mb-2">
           <p class="text-xs text-slate-500 uppercase tracking-widest mb-1">已登录为</p>
-          <p class="text-sm font-bold truncate text-white">{{ user.email }}</p>
+          <p class="text-sm font-bold truncate text-white">{{ userEmail }}</p>
         </div>
         <button 
           @click="handleLogout"
@@ -145,9 +145,9 @@
       </div>
 
       <!-- Auth Overlay -->
-      <AuthOverlay 
-        v-if="showAuth && !isLoggedIn" 
-        @close="showAuth = false" 
+      <AuthOverlay
+        v-if="showAuth && !isLoggedIn && hasSupabaseConfig"
+        @close="showAuth = false"
       />
 
       <!-- Main Layout -->
@@ -182,9 +182,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useTheme } from '../composables/useTheme.js'
 import { useAuth } from '../composables/useAuth.js'
+import { hasSupabaseConfig } from '../utils/supabase.js'
 import AuthOverlay from '../components/AuthOverlay.vue'
 
 const { isDark } = useTheme()
@@ -192,6 +193,13 @@ const { isLoggedIn, user, logout } = useAuth()
 
 const showAuth = ref(false)
 const showUserMenu = ref(false)
+const hasUser = computed(() => !!user.value)
+const userId = computed(() => user.value?.id || 'offline-user')
+const userEmail = computed(() => user.value?.email || 'User')
+const userAvatarUrl = computed(() => {
+  return user.value?.user_metadata?.avatar_url
+    || `https://api.dicebear.com/7.x/avataaars/svg?seed=${userId.value}`
+})
 
 defineProps({
   currentPage: {
@@ -203,6 +211,7 @@ defineProps({
 defineEmits(['navigate', 'open-settings', 'open-vocab-selector'])
 
 function toggleUserMenu() {
+  if (!hasUser.value) return
   showUserMenu.value = !showUserMenu.value
 }
 

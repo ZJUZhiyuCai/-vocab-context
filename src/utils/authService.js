@@ -1,4 +1,4 @@
-import { clearSupabaseAuthStorage, supabase } from './supabase'
+import { clearSupabaseAuthStorage, supabase, hasSupabaseConfig } from './supabase'
 import { ref } from 'vue'
 
 export const user = ref(null)
@@ -39,12 +39,19 @@ async function recoverBrokenLocalSession(error) {
     if (!isRetryableAuthNetworkError(error)) return
 
     clearSupabaseAuthStorage()
-    try {
-        await supabase.auth.signOut({ scope: 'local' })
-    } catch {}
+    if (supabase) {
+        try {
+            await supabase.auth.signOut({ scope: 'local' })
+        } catch {}
+    }
 }
 
 async function initializeSession() {
+    if (!supabase) {
+        console.log('Running in offline mode (no Supabase config)')
+        return
+    }
+
     try {
         const { data: { session }, error } = await supabase.auth.getSession()
 
@@ -67,22 +74,27 @@ async function initializeSession() {
 checkAuthErrorInHash()
 initializeSession()
 
-supabase.auth.onAuthStateChange((event, session) => {
-    console.log('Auth state changed:', event)
-    user.value = session?.user ?? null
+if (supabase) {
+    supabase.auth.onAuthStateChange((event, session) => {
+        console.log('Auth state changed:', event)
+        user.value = session?.user ?? null
 
-    if (event === 'SIGNED_IN') {
-        console.log('User signed in:', session?.user?.email)
-        authError.value = null
-    } else if (event === 'SIGNED_OUT') {
-        console.log('User signed out')
-    } else if (event === 'TOKEN_REFRESHED') {
-        console.log('Token refreshed')
-    }
-})
+        if (event === 'SIGNED_IN') {
+            console.log('User signed in:', session?.user?.email)
+            authError.value = null
+        } else if (event === 'SIGNED_OUT') {
+            console.log('User signed out')
+        } else if (event === 'TOKEN_REFRESHED') {
+            console.log('Token refreshed')
+        }
+    })
+}
 
 export const authService = {
     async signInWithOAuth(provider) {
+        if (!supabase) {
+            return { error: { message: 'Supabase not configured' } }
+        }
         const redirectUrl = import.meta.env.VITE_REDIRECT_URL || window.location.origin
         console.log('Redirect URL (OAuth):', redirectUrl)
 
@@ -96,6 +108,9 @@ export const authService = {
     },
 
     async signInWithMagicLink(email) {
+        if (!supabase) {
+            return { error: { message: 'Supabase not configured' } }
+        }
         const redirectUrl = import.meta.env.VITE_REDIRECT_URL || window.location.origin
         console.log('Redirect URL (Magic Link):', redirectUrl)
 
@@ -116,6 +131,9 @@ export const authService = {
     },
 
     async signOut() {
+        if (!supabase) {
+            return { error: null }
+        }
         const { error } = await supabase.auth.signOut({ scope: 'local' })
         return { error }
     },
@@ -134,5 +152,7 @@ export const authService = {
 
     clearAuthError() {
         authError.value = null
-    }
+    },
+
+    hasSupabaseConfig
 }

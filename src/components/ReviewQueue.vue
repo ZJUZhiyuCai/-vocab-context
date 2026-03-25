@@ -106,6 +106,7 @@
 import { ref, computed, onMounted } from 'vue'
 import ReviewSession from './quiz/ReviewSession.vue'
 import { useTheme } from '../composables/useTheme.js'
+import { markTaskCompleted } from '../utils/firstWeekScaffold.js'
 
 const { isDark } = useTheme()
 
@@ -176,19 +177,22 @@ const reviewWords = computed(() => {
   return props.reviewData.map(item => item.word)
 })
 
-// 选择单词
-const selectWord = (item) => {
-  const index = props.reviewData.indexOf(item)
+function openReviewAt(index) {
   reviewIndex.value = index
   reviewMode.value = 'flashcard'
   showReview.value = true
+  markTaskCompleted('review')
+}
+
+// 选择单词
+const selectWord = (item) => {
+  const index = props.reviewData.indexOf(item)
+  openReviewAt(index)
 }
 
 // 开始复习
 const startReview = () => {
-  reviewIndex.value = 0
-  reviewMode.value = 'flashcard'
-  showReview.value = true
+  openReviewAt(0)
 }
 
 // 复习完成

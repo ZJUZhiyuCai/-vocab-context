@@ -139,18 +139,18 @@
 
             <div v-if="summary?.coach" class="coach-panel">
               <p :class="['text-xs font-semibold uppercase tracking-wider mb-3', isDark ? 'text-gray-400' : 'text-gray-500']">
-                Learning Coach
+                老师点评
               </p>
               <div :class="['coach-card', isDark ? 'dark' : 'light']">
-                <p :class="['text-sm font-semibold leading-7', isDark ? 'text-white' : 'text-slate-900']">
+                <p :class="['text-base font-semibold leading-7', isDark ? 'text-white' : 'text-slate-900']">
                   {{ summary.coach.headline }}
                 </p>
                 <p :class="['text-sm mt-3 leading-7', isDark ? 'text-gray-400' : 'text-gray-600']">
-                  下一步：{{ summary.coach.nextAction }}
+                  {{ summary.coach.nextAction }}
                 </p>
 
                 <div v-if="summary.coach.weakSurfaces?.length" class="coach-block">
-                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">最弱题型</p>
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">需要加强的题型</p>
                   <div class="coach-chip-row">
                     <span v-for="item in summary.coach.weakSurfaces" :key="item.type" :class="['coach-chip warn', isDark ? 'dark' : 'light']">
                       {{ surfaceLabel(item.type) }} · {{ item.accuracy }}%
@@ -159,7 +159,7 @@
                 </div>
 
                 <div v-if="summary.coach.outputCoach?.strengths?.length" class="coach-block">
-                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">输出层做得好的地方</p>
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">这轮做得好的地方</p>
                   <div class="coach-chip-row">
                     <span v-for="item in summary.coach.outputCoach.strengths" :key="item" :class="['coach-chip success', isDark ? 'dark' : 'light']">
                       {{ getFocusLabel(item) }}
@@ -168,7 +168,7 @@
                 </div>
 
                 <div v-if="summary.coach.outputCoach?.focusAreas?.length" class="coach-block">
-                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">输出层下一轮重点</p>
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">下一轮重点补强</p>
                   <div class="coach-chip-row">
                     <span v-for="item in summary.coach.outputCoach.focusAreas" :key="item" :class="['coach-chip warn', isDark ? 'dark' : 'light']">
                       {{ getFocusLabel(item) }}
@@ -177,7 +177,7 @@
                 </div>
 
                 <div v-if="summary.coach.outputCoach?.weakWords?.length" class="coach-block">
-                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">建议重做的词</p>
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">建议重练的词</p>
                   <div class="coach-weak-list">
                     <div
                       v-for="item in summary.coach.outputCoach.weakWords"
@@ -186,7 +186,7 @@
                     >
                       <p :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">{{ item.word }}</p>
                       <p :class="['text-xs mt-2 leading-6', isDark ? 'text-gray-400' : 'text-gray-600']">问题：{{ item.reason }}</p>
-                      <p :class="['text-xs mt-1 leading-6', isDark ? 'text-rose-300/80' : 'text-rose-700']">建议：{{ item.nextStep }}</p>
+                      <p :class="['text-xs mt-1 leading-6', isDark ? 'text-emerald-300/80' : 'text-emerald-700']">{{ item.nextStep }}</p>
                     </div>
                   </div>
                 </div>

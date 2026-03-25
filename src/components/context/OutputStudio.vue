@@ -108,14 +108,14 @@
 
             <div v-if="summary?.coach" class="coach-panel">
               <p :class="['text-xs font-semibold uppercase tracking-wider mb-3', isDark ? 'text-gray-400' : 'text-gray-500']">
-                Learning Coach
+                老师点评
               </p>
               <div :class="['coach-card', isDark ? 'dark' : 'light']">
-                <p :class="['text-sm font-semibold leading-7', isDark ? 'text-white' : 'text-slate-900']">
+                <p :class="['text-base font-semibold leading-7', isDark ? 'text-white' : 'text-slate-900']">
                   {{ summary.coach.headline }}
                 </p>
                 <p :class="['text-sm mt-3 leading-7', isDark ? 'text-gray-400' : 'text-gray-600']">
-                  平均质量分：{{ summary.coach.averageScore }} · 下一步：{{ summary.coach.nextAction }}
+                  {{ summary.coach.nextAction }}
                 </p>
 
                 <div class="coach-band-row">
@@ -152,7 +152,7 @@
                     >
                       <p :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">{{ item.word }}</p>
                       <p :class="['text-xs mt-2 leading-6', isDark ? 'text-gray-400' : 'text-gray-600']">问题：{{ item.reason }}</p>
-                      <p :class="['text-xs mt-1 leading-6', isDark ? 'text-violet-300/80' : 'text-violet-700']">建议：{{ item.nextStep }}</p>
+                      <p :class="['text-xs mt-1 leading-6', isDark ? 'text-emerald-300/80' : 'text-emerald-700']">{{ item.nextStep }}</p>
                     </div>
                   </div>
                 </div>

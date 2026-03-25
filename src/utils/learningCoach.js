@@ -92,23 +92,99 @@ function buildBand(score) {
   return 'needsWork'
 }
 
-function pickNextStep(failedChecks) {
-  if (failedChecks.includes('targetWord')) {
-    return '下一轮先确保把目标词自然放进句子主干。'
+/**
+ * 建议优先级（从高到低）
+ * 1. targetWord - 没用对目标词，最关键
+ * 2. englishOnly - 夹中文，考试大忌
+ * 3. minimumLength - 表达不够展开
+ * 4. supportSignal - 缺少搭配/改写
+ * 5. topicSignal - 偏离主题
+ */
+const SUGGESTION_PRIORITY = ['targetWord', 'englishOnly', 'minimumLength', 'supportSignal', 'topicSignal', 'sentenceControl']
+
+/**
+ * 生成老师式的下一步建议
+ * @param {string[]} failedChecks - 未通过的检查项
+ * @param {Object} context - 上下文信息（word, collocations 等）
+ * @returns {string} 建议文本
+ */
+function pickNextStep(failedChecks, context = {}) {
+  const { word, collocations = [] } = context
+
+  const tips = {
+    targetWord: `试着把 ${word || '这个词'} 放在句子的关键位置，让它成为表达的核心。`,
+    englishOnly: '写作考试要求全程英语，试着把中文想法直接用简单英文表达。',
+    minimumLength: '雅思写作需要展开论证，试着加一个原因或例子。',
+    supportSignal: collocations.length > 0
+      ? `高级词汇要配高级搭配，试试用 "${collocations[0]}"。`
+      : '高级词汇要配高级搭配，试着找一个自然的搭配词。',
+    topicSignal: '把句子拉回当前主题，加一个更具体的场景词。',
+    sentenceControl: '句子需要更完整，检查首字母大写和结尾标点。'
   }
-  if (failedChecks.includes('englishOnly')) {
-    return '下一轮尽量全程用英语表达，不要夹中文。'
+
+  // 按优先级查找第一个匹配的失败项
+  for (const key of SUGGESTION_PRIORITY) {
+    if (failedChecks.includes(key)) {
+      return tips[key]
+    }
   }
-  if (failedChecks.includes('minimumLength')) {
-    return '下一轮至少补一层原因、结果或例子，把句子写满。'
+
+  return '继续保持，试着用更自然的句式和更具体的细节。'
+}
+
+/**
+ * 生成老师式的下一步建议（带详细示例）
+ * @param {string[]} failedChecks - 未通过的检查项
+ * @param {Object} context - 上下文信息
+ * @returns {Object} 包含 tip 和 example 的对象
+ */
+function pickNextStepDetailed(failedChecks, context = {}) {
+  const { word, collocations = [] } = context
+
+  const tips = {
+    targetWord: {
+      tip: `试着把 ${word || '这个词'} 放在句子的关键位置，让它成为表达的核心。`,
+      example: `比如："The results were ${word || 'significant'} in several ways."`
+    },
+    englishOnly: {
+      tip: '写作考试要求全程英语，试着把中文想法直接用简单英文表达。',
+      example: '实在想不起来，可以用简单词代替，比如 think 代替 "认为"'
+    },
+    minimumLength: {
+      tip: '雅思写作需要展开论证，试着加一个原因或例子。',
+      example: '比如加 "because..." 或 "for example..."'
+    },
+    supportSignal: {
+      tip: collocations.length > 0
+        ? `高级词汇要配高级搭配，试试用 "${collocations[0]}"`
+        : '高级词汇要配高级搭配，试着找一个自然的搭配词。',
+      example: collocations.length > 0
+        ? `比如 "${word || 'significant'} ${collocations[0]}"`
+        : `比如 "${word || 'significant'} effect"`
+    },
+    topicSignal: {
+      tip: '把句子拉回当前主题，加一个更具体的场景词。',
+      example: '比如提到具体的数据、时间、地点'
+    },
+    sentenceControl: {
+      tip: '句子需要更完整，检查首字母大写和结尾标点。',
+      example: '确保句子以大写字母开头，以句号结束'
+    }
   }
-  if (failedChecks.includes('supportSignal')) {
-    return '下一轮尽量带一个搭配或改写表达，不要只孤立使用单词。'
+
+  const defaultTip = {
+    tip: '继续保持，试着用更自然的句式和更具体的细节。',
+    example: '多读几遍，看看是否通顺自然'
   }
-  if (failedChecks.includes('topicSignal')) {
-    return '下一轮把句子拉回当前主题，补一个更具体的场景词。'
+
+  // 按优先级查找第一个匹配的失败项（与 pickNextStep 保持一致）
+  for (const key of SUGGESTION_PRIORITY) {
+    if (failedChecks.includes(key)) {
+      return tips[key]
+    }
   }
-  return '下一轮继续保持，用更自然的句式和更具体的细节提升表达。'
+
+  return defaultTip
 }
 
 export function getBandLabel(band) {
@@ -164,7 +240,7 @@ export function evaluateProductionAttempt({
     checks,
     strengthKeys,
     failedKeys,
-    nextStep: pickNextStep(failedKeys)
+    nextStep: pickNextStep(failedKeys, { word, collocations })
   }
 }
 
@@ -175,11 +251,11 @@ export function buildOutputCoach(results = []) {
     return {
       averageScore: 0,
       bandCounts: { strong: 0, usable: 0, needsWork: 0 },
-      headline: '这一轮还没有足够的英语产出来判断学习质量。',
+      headline: '这轮还没提交足够的英语输出，没法判断学习质量。',
       focusAreas: ['minimumLength'],
       strengths: [],
       weakWords: [],
-      nextAction: '下一轮至少提交 3 条完整英文输出，我们才能看到真实学习增益。'
+      nextAction: '下一轮试着至少提交 3 条完整的英文句子，这样才能看到真实进步。'
     }
   }
 
@@ -237,14 +313,19 @@ export function buildOutputCoach(results = []) {
       reason: result.feedback.failedKeys.length
         ? result.feedback.failedKeys.map(getFocusLabel).join('、')
         : '表达还不够稳定',
-      nextStep: result.feedback.nextStep
+      nextStep: result.feedback.nextStep,
+      nextStepDetailed: pickNextStepDetailed(result.feedback.failedKeys, { word: result.word })
     }))
 
-  const headline = averageScore >= 78
-    ? '这轮产出已经接近“会用词”，不只是“认得词”。'
-    : averageScore >= 55
-      ? '这轮输出已经开始可用，但还没稳定到考试场景。'
-      : '这轮更像在试词，还没有把词真正写成自然英语。'
+  // 老师式的 headline
+  let headline
+  if (averageScore >= 78) {
+    headline = '这轮表现很稳，你已经能把这个词自然地用在雅思级别的句子里了。'
+  } else if (averageScore >= 55) {
+    headline = '这轮表现不错，句子是通顺的，但还有提升空间让表达更地道。'
+  } else {
+    headline = '这轮像是还在找感觉，没关系，多练几次就自然了。'
+  }
 
   return {
     averageScore,
@@ -273,9 +354,14 @@ export function buildExamCoach(results = [], surfaceStats = {}) {
   const outputCoach = buildOutputCoach(outputResults)
   const weakestSurface = weakSurfaces[0]?.type || null
 
-  const headline = weakestSurface
-    ? `你当前最薄弱的考试表面是 ${weakestSurface.replace('_', ' ')}，而且产出质量还可以继续拉高。`
-    : '这轮题型表现比较均衡，下一步重点是把输出质量再抬高。'
+  // 老师式的 headline
+  let headline
+  if (weakestSurface) {
+    const surfaceName = getSurfaceLabel(weakestSurface)
+    headline = `这轮 ${surfaceName} 题型稍弱，但整体表现还不错，继续加油。`
+  } else {
+    headline = '这轮题型表现比较均衡，继续保持，下一步把输出质量再抬高。'
+  }
 
   return {
     headline,
@@ -283,7 +369,21 @@ export function buildExamCoach(results = [], surfaceStats = {}) {
     weakSurfaces: weakSurfaces.slice(0, 2),
     outputCoach,
     nextAction: weakestSurface
-      ? '下一轮优先重做最弱题型，并确保输出题不只是完成，而是写出完整英文句子。'
+      ? `下一轮重点攻克 ${getSurfaceLabel(weakestSurface)} 题型，确保输出题不只是完成，而是写出完整的英文句子。`
       : outputCoach.nextAction
   }
+}
+
+/**
+ * 获取题型标签
+ */
+function getSurfaceLabel(type) {
+  const labels = {
+    reading_rewrite: '阅读改写',
+    reading_paraphrase: '阅读改写',
+    listening_paraphrase: '听力转述',
+    writing_argument: '写作论证',
+    speaking_frame: '口语框架'
+  }
+  return labels[type] || type.replace('_', ' ')
 }

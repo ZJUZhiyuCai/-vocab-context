@@ -160,6 +160,7 @@ import ReviewSession from './quiz/ReviewSession.vue'
 import ReviewQueuePreview from './ReviewQueuePreview.vue'
 import { useTheme } from '../composables/useTheme.js'
 import { buildIeltsQuickRecommendation, setPendingIeltsPathTarget } from '../utils/ieltsPathEntry.js'
+import { markTaskCompleted } from '../utils/firstWeekScaffold.js'
 
 const { isDark } = useTheme()
 
@@ -282,6 +283,8 @@ function startSessionFromIndex(index) {
 
 function handleSessionComplete() {
   currentMode.value = null
+  // 标记首周 quiz 任务完成
+  markTaskCompleted('quiz')
 }
 
 function exitSession() {

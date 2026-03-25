@@ -1,6 +1,15 @@
 <template>
   <div class="lg:col-span-5 flex flex-col gap-5 animate-slide-left delay-100">
-    
+
+    <!-- First Week Panel (only for IELTS new users) -->
+    <FirstWeekPanel
+      v-if="showFirstWeekPanel"
+      :current-vocab="currentVocab"
+      :learned-count="todayLearned"
+      :total-learned="totalLearned"
+      @navigate="$emit('navigate', $event)"
+    />
+
     <!-- Daily Goal Card -->
     <div :class="['backdrop-blur-sm border rounded-3xl p-6 shadow-lg hover:shadow-xl hover:border-emerald-500/20 transition-all', isDark ? 'bg-slate-800/50 border-white/10' : 'bg-white border-gray-200']">
        <div class="flex justify-between items-start mb-5">
@@ -101,8 +110,14 @@
 
 <script setup>
 import { useTheme } from '../composables/useTheme.js'
-import { computed } from 'vue'
+import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { buildIeltsQuickRecommendation, setPendingIeltsPathTarget } from '../utils/ieltsPathEntry.js'
+import {
+  FIRST_WEEK_PROGRESS_EVENT,
+  shouldShowFirstWeekPanel,
+  updateDayProgress
+} from '../utils/firstWeekScaffold.js'
+import FirstWeekPanel from './FirstWeekPanel.vue'
 
 const { isDark } = useTheme()
 
@@ -135,7 +150,40 @@ const props = defineProps({
 
 const emit = defineEmits(['navigate'])
 
+const scaffoldVersion = ref(0)
+
+function handleFirstWeekProgressChange() {
+  scaffoldVersion.value += 1
+}
+
+onMounted(() => {
+  window.addEventListener(FIRST_WEEK_PROGRESS_EVENT, handleFirstWeekProgressChange)
+})
+
+onUnmounted(() => {
+  window.removeEventListener(FIRST_WEEK_PROGRESS_EVENT, handleFirstWeekProgressChange)
+})
+
+const showFirstWeekPanel = computed(() => {
+  scaffoldVersion.value
+  return shouldShowFirstWeekPanel(props.currentVocab)
+})
+
 const ieltsRecommendation = computed(() => buildIeltsQuickRecommendation(props.currentVocab))
+
+// 监听学习进度变化，更新首周进度
+watch(
+  () => [props.todayLearned, props.totalLearned],
+  () => {
+    if (showFirstWeekPanel.value) {
+      updateDayProgress({
+        learnedCount: props.todayLearned,
+        totalLearned: props.totalLearned
+      })
+    }
+  },
+  { immediate: true }
+)
 
 function followIeltsRecommendation() {
   if (!ieltsRecommendation.value) return
