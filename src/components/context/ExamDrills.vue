@@ -137,6 +137,62 @@
               </div>
             </div>
 
+            <div v-if="summary?.coach" class="coach-panel">
+              <p :class="['text-xs font-semibold uppercase tracking-wider mb-3', isDark ? 'text-gray-400' : 'text-gray-500']">
+                Learning Coach
+              </p>
+              <div :class="['coach-card', isDark ? 'dark' : 'light']">
+                <p :class="['text-sm font-semibold leading-7', isDark ? 'text-white' : 'text-slate-900']">
+                  {{ summary.coach.headline }}
+                </p>
+                <p :class="['text-sm mt-3 leading-7', isDark ? 'text-gray-400' : 'text-gray-600']">
+                  下一步：{{ summary.coach.nextAction }}
+                </p>
+
+                <div v-if="summary.coach.weakSurfaces?.length" class="coach-block">
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">最弱题型</p>
+                  <div class="coach-chip-row">
+                    <span v-for="item in summary.coach.weakSurfaces" :key="item.type" :class="['coach-chip warn', isDark ? 'dark' : 'light']">
+                      {{ surfaceLabel(item.type) }} · {{ item.accuracy }}%
+                    </span>
+                  </div>
+                </div>
+
+                <div v-if="summary.coach.outputCoach?.strengths?.length" class="coach-block">
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">输出层做得好的地方</p>
+                  <div class="coach-chip-row">
+                    <span v-for="item in summary.coach.outputCoach.strengths" :key="item" :class="['coach-chip success', isDark ? 'dark' : 'light']">
+                      {{ getFocusLabel(item) }}
+                    </span>
+                  </div>
+                </div>
+
+                <div v-if="summary.coach.outputCoach?.focusAreas?.length" class="coach-block">
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">输出层下一轮重点</p>
+                  <div class="coach-chip-row">
+                    <span v-for="item in summary.coach.outputCoach.focusAreas" :key="item" :class="['coach-chip warn', isDark ? 'dark' : 'light']">
+                      {{ getFocusLabel(item) }}
+                    </span>
+                  </div>
+                </div>
+
+                <div v-if="summary.coach.outputCoach?.weakWords?.length" class="coach-block">
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">建议重做的词</p>
+                  <div class="coach-weak-list">
+                    <div
+                      v-for="item in summary.coach.outputCoach.weakWords"
+                      :key="item.word"
+                      :class="['coach-weak-card', isDark ? 'dark' : 'light']"
+                    >
+                      <p :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">{{ item.word }}</p>
+                      <p :class="['text-xs mt-2 leading-6', isDark ? 'text-gray-400' : 'text-gray-600']">问题：{{ item.reason }}</p>
+                      <p :class="['text-xs mt-1 leading-6', isDark ? 'text-rose-300/80' : 'text-rose-700']">建议：{{ item.nextStep }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Actions -->
             <div class="summary-actions">
               <button
@@ -324,6 +380,7 @@ import {
   SURFACE_LABELS,
   getTopicLabel
 } from '../../utils/examDrillEngine.js'
+import { getFocusLabel } from '../../utils/learningCoach.js'
 
 const { isDark } = useTheme()
 
@@ -494,6 +551,10 @@ function handleRestart() {
   syncState()
   showSummary.value = false
   summary.value = null
+}
+
+function surfaceLabel(type) {
+  return SURFACE_LABELS[type] || type
 }
 
 function exitSession() {
@@ -811,6 +872,70 @@ onMounted(() => {
 .surface-chip.light,
 .topic-chip.light {
   @apply bg-gray-50 border-gray-200 text-gray-700;
+}
+
+.coach-panel {
+  @apply mb-6 text-left;
+}
+
+.coach-card {
+  @apply rounded-2xl border p-4 md:p-5;
+}
+
+.coach-card.dark {
+  @apply bg-slate-900/40 border-white/5;
+}
+
+.coach-card.light {
+  @apply bg-gray-50 border-gray-200;
+}
+
+.coach-block {
+  @apply mt-4;
+}
+
+.coach-label {
+  @apply text-xs font-semibold uppercase tracking-wider mb-2;
+}
+
+.coach-chip-row {
+  @apply flex flex-wrap gap-2;
+}
+
+.coach-chip {
+  @apply px-3 py-1.5 rounded-xl text-sm border;
+}
+
+.coach-chip.success.dark {
+  @apply bg-emerald-500/10 border-emerald-500/20 text-emerald-300;
+}
+
+.coach-chip.success.light {
+  @apply bg-emerald-50 border-emerald-200 text-emerald-700;
+}
+
+.coach-chip.warn.dark {
+  @apply bg-amber-500/10 border-amber-500/20 text-amber-300;
+}
+
+.coach-chip.warn.light {
+  @apply bg-amber-50 border-amber-200 text-amber-700;
+}
+
+.coach-weak-list {
+  @apply grid gap-3 md:grid-cols-2;
+}
+
+.coach-weak-card {
+  @apply rounded-2xl border p-4;
+}
+
+.coach-weak-card.dark {
+  @apply bg-slate-800/60 border-white/5;
+}
+
+.coach-weak-card.light {
+  @apply bg-white border-gray-200;
 }
 
 .summary-actions {

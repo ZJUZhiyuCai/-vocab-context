@@ -84,6 +84,7 @@ SILICONFLOW_API_BASE_URL=https://api.siliconflow.cn/v1
 - [Changelog](./CHANGELOG.md)
 - [IELTS Track Overview](./docs/23-IELTS-Learning-Track-Overview.md)
 - [Release Notes](./docs/25-IELTS-Release-Notes.md)
+- [Week 1 Learning Quality Plan](./docs/30-IELTS-Week-1-Learning-Quality-Plan.md)
 
 ## Contributors
 

@@ -10,6 +10,7 @@
 
 const STORAGE_KEY = 'vocabman-exam-drill-state';
 const HISTORY_KEY = 'vocabman-exam-drill-history';
+import { buildExamCoach, evaluateProductionAttempt } from './learningCoach.js';
 
 // 任务表面类型
 export const SURFACE_TYPES = {
@@ -413,15 +414,36 @@ export function createExamDrillEngine(bundles, options = {}) {
     const item = state.items[state.currentIndex];
     if (!item) return;
 
+    const isOutputSurface = [
+      SURFACE_TYPES.WRITING_ARGUMENT,
+      SURFACE_TYPES.SPEAKING_FRAME
+    ].includes(item.surfaceType);
+
+    const feedback = isOutputSurface && data.submitted
+      ? evaluateProductionAttempt({
+          text: data.text || '',
+          word: item.bundle.word,
+          collocations: item.bundle.collocations || [],
+          paraphrase: item.bundle.paraphrases?.[0] || '',
+          promptType: item.surfaceType === SURFACE_TYPES.SPEAKING_FRAME ? 'speaking' : 'sentence',
+          topic: item.bundle.topic || 'general'
+        })
+      : null;
+
+    const derivedCorrect = feedback
+      ? feedback.band !== 'needsWork'
+      : (data.correct || false);
+
     state.results.push({
       bundleId: getBundleId(item.bundle),
       word: item.bundle.word,
       surfaceType: item.surfaceType,
       topic: item.bundle.topic || 'general',
-      correct: data.correct || false,
+      correct: derivedCorrect,
       submitted: data.submitted !== undefined ? data.submitted : true,
       text: data.text || '',
-      time: data.time || 0
+      time: data.time || 0,
+      feedback
     });
 
     saveState();
@@ -488,7 +510,8 @@ export function createExamDrillEngine(bundles, options = {}) {
       totalTime,
       surfaceStats,
       topicStats,
-      results
+      results,
+      coach: buildExamCoach(results, surfaceStats)
     };
   }
 

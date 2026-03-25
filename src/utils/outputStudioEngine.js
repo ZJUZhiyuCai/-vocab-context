@@ -10,6 +10,7 @@
 
 const STORAGE_KEY = 'vocabman-output-studio-state';
 const HISTORY_KEY = 'vocabman-output-studio-history';
+import { buildOutputCoach, evaluateProductionAttempt } from './learningCoach.js';
 
 // 最小 context 文本长度（字符）
 const MIN_CONTEXT_LENGTH = 40;
@@ -238,6 +239,17 @@ export function createOutputStudioEngine(bundles, options = {}) {
     const bundle = currentBundle();
     if (!bundle) return;
 
+    const feedback = data.submitted
+      ? evaluateProductionAttempt({
+          text: data.text || '',
+          word: bundle.word,
+          collocations: bundle.collocations || [],
+          paraphrase: (bundle.paraphrases || [])[0] || '',
+          promptType: data.promptType,
+          topic: bundle.topic || 'general'
+        })
+      : null;
+
     const result = {
       bundleId: bundle.bundleId || bundle.id || bundle.word,
       word: bundle.word,
@@ -245,7 +257,8 @@ export function createOutputStudioEngine(bundles, options = {}) {
       submitted: data.submitted,
       text: data.text || '',
       time: data.time || 0,
-      promptType: data.promptType
+      promptType: data.promptType,
+      feedback
     };
 
     state.results.push(result);
@@ -296,7 +309,8 @@ export function createOutputStudioEngine(bundles, options = {}) {
         : 0,
       totalTime,
       topicStats,
-      results
+      results,
+      coach: buildOutputCoach(results)
     };
   }
 

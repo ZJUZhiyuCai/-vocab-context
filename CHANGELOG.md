@@ -6,6 +6,8 @@ All notable changes to this project are documented here.
 
 ### Added
 
+- Local learning-quality coaching for Output Studio and Exam Drills.
+- Week 1 product plan focused on turning practice into real learning guidance.
 - Bilingual README set with dedicated English and Simplified Chinese entry points.
 - Contributor-facing repository docs including a contributing guide and PR template.
 - GitHub collaboration templates for bug reports and feature requests.
