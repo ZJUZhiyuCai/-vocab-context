@@ -159,10 +159,42 @@
               </div>
             </div>
 
+            <div v-if="remediationSummary" class="coach-panel">
+              <p :class="['text-xs font-semibold uppercase tracking-wider mb-3', isDark ? 'text-gray-400' : 'text-gray-500']">
+                Retry Gate
+              </p>
+              <div :class="['coach-card', isDark ? 'dark' : 'light']">
+                <p :class="['text-sm font-semibold leading-7', isDark ? 'text-white' : 'text-slate-900']">
+                  {{ remediationSummary.sessionPassed ? '这轮补救已过关。' : '这轮补救还没完全过关。' }}
+                </p>
+                <p :class="['text-sm mt-3 leading-7', isDark ? 'text-gray-400' : 'text-gray-600']">
+                  过关规则：提交并达到“可用”或“强”。当前通过 {{ remediationSummary.passedWords.length }}/{{ remediationSummary.targetWords.length }}，通过率 {{ remediationSummary.passRate }}%。
+                </p>
+
+                <div v-if="remediationSummary.passedWords.length" class="coach-block">
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">已过关</p>
+                  <div class="coach-chip-row">
+                    <span v-for="word in remediationSummary.passedWords" :key="word" :class="['coach-chip success', isDark ? 'dark' : 'light']">
+                      {{ word }}
+                    </span>
+                  </div>
+                </div>
+
+                <div v-if="remediationSummary.remainingWords.length" class="coach-block">
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">还没过关</p>
+                  <div class="coach-chip-row">
+                    <span v-for="word in remediationSummary.remainingWords" :key="word" :class="['coach-chip warn', isDark ? 'dark' : 'light']">
+                      {{ word }}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- Actions -->
             <div class="summary-actions">
               <button
-                v-if="retryBundles.length"
+                v-if="retryActionBundles.length"
                 @click="handleRetryWeakWords"
                 :class="[
                   'flex-1 py-4 rounded-2xl font-semibold transition-all active:scale-[0.98]',
@@ -171,7 +203,7 @@
                     : 'bg-amber-50 border border-amber-200 text-amber-700 hover:border-amber-300'
                 ]"
               >
-                重练薄弱词
+                {{ remediationSummary?.remainingWords?.length ? '继续修剩余词' : '重练薄弱词' }}
               </button>
               <button
                 @click="handleRestart"
@@ -380,6 +412,8 @@ const currentMode = ref(null) // null = overview, 'session' = in session
 const sessionSize = ref(5)
 const lastSessionSummary = ref(null)
 const history = ref(loadHistory())
+const isRetrySession = ref(false)
+const retryTargetWords = ref([])
 
 // Engine
 let engine = null
@@ -422,6 +456,36 @@ const retryBundles = computed(() => {
   return eligibleBundles.value.filter(bundle => weakWordSet.has(bundle.word))
 })
 
+const remediationSummary = computed(() => {
+  if (!isRetrySession.value || !summary.value || !retryTargetWords.value.length) return null
+
+  const resultByWord = new Map((summary.value.results || []).map(result => [result.word, result]))
+  const passedWords = retryTargetWords.value.filter(word => {
+    const result = resultByWord.get(word)
+    return result?.submitted && result?.feedback && ['usable', 'strong'].includes(result.feedback.band)
+  })
+  const remainingWords = retryTargetWords.value.filter(word => !passedWords.includes(word))
+
+  return {
+    targetWords: retryTargetWords.value,
+    passedWords,
+    remainingWords,
+    passRate: retryTargetWords.value.length
+      ? Math.round((passedWords.length / retryTargetWords.value.length) * 100)
+      : 0,
+    sessionPassed: remainingWords.length === 0
+  }
+})
+
+const retryActionBundles = computed(() => {
+  if (remediationSummary.value?.remainingWords?.length) {
+    const remainingSet = new Set(remediationSummary.value.remainingWords)
+    return eligibleBundles.value.filter(bundle => remainingSet.has(bundle.word))
+  }
+
+  return retryBundles.value
+})
+
 const progress = computed(() => {
   if (totalWords.value === 0) return 0
   return Math.round(((currentIndex.value + 1) / totalWords.value) * 100)
@@ -439,12 +503,15 @@ function loadHistory() {
   }
 }
 
-function startSession(customBundles = null) {
+function startSession(customBundles = null, meta = {}) {
   const sourceBundles = Array.isArray(customBundles) && customBundles.length
     ? customBundles
     : eligibleBundles.value
 
   if (!sourceBundles.length) return
+
+  isRetrySession.value = Boolean(meta.retry)
+  retryTargetWords.value = isRetrySession.value ? sourceBundles.map(bundle => bundle.word) : []
 
   // Create engine
   engine = createOutputStudioEngine(sourceBundles, {
@@ -511,8 +578,8 @@ function handleRestart() {
 }
 
 function handleRetryWeakWords() {
-  if (!retryBundles.value.length) return
-  startSession(retryBundles.value)
+  if (!retryActionBundles.value.length) return
+  startSession(retryActionBundles.value, { retry: true })
 }
 
 function exitSession() {
@@ -521,6 +588,8 @@ function exitSession() {
   summary.value = null
   currentTask.value = null
   engine = null
+  isRetrySession.value = false
+  retryTargetWords.value = []
   history.value = loadHistory()
 }
 
