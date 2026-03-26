@@ -19,8 +19,12 @@ export const isPlayingWord = ref(false)
 
 /**
  * Play word audio using TTS
+ * Uses single-flight pattern to prevent overlapping playback
  */
 export async function playWordAudio(word) {
+  // Single-flight: reject if already playing
+  if (isPlayingWord.value) return
+
   isPlayingWord.value = true
   try {
     const success = await freeDictTTS.play(word)
