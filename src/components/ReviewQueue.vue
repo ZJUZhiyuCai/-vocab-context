@@ -30,7 +30,7 @@
     <!-- 单词列表 -->
     <div v-if="hasWords" class="word-list">
       <div
-        v-for="(item, index) in reviewData"
+        v-for="item in reviewData"
         :key="item.word.id"
         class="word-card group"
         :class="{ 'word-card-forgotten': item.type === 'forgotten' }"

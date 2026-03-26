@@ -348,9 +348,9 @@ const calculateResult = () => {
   })
 
   // 根据能力分数估算词汇量和等级
-  let vocabRange = ''
-  let cefr = ''
-  let ielts = ''
+  let vocabRange;
+  let cefr;
+  let ielts;
 
   if (abilityScore < 25) {
     vocabRange = '500-1500'

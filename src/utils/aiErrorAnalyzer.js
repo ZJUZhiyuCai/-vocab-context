@@ -146,7 +146,7 @@ function parseAnalysisResponse(data) {
     };
   } catch (parseError) {
     console.error('JSON解析失败:', jsonStr);
-    throw new Error('AI返回的格式无法解析');
+    throw new Error('AI返回的格式无法解析', { cause: parseError });
   }
 }
 

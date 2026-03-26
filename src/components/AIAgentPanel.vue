@@ -389,7 +389,7 @@ async function analyzeWeakWord(word) {
     wordAnalysis.value = result
 
     // 提示用户
-    alert(`已加�?"${word.word}" 的分析结果`)
+    alert(`已加入"${word.word}" 的分析结果`)
   } catch (error) {
     console.error('分析失败:', error)
     alert('分析失败: ' + error.message)

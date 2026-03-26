@@ -7,7 +7,9 @@ export const AI_NETLIFY_FUNCTION_URL = '/.netlify/functions/ai-chat';
 export const AI_BROWSER_BASE_URL = 'https://api.siliconflow.cn/v1';
 
 export function sanitizeApiKey(apiKey) {
-  return String(apiKey || '').trim().replace(/[^\x00-\x7F]/g, '');
+  // Keep only printable ASCII characters (0x20-0x7E)
+  // eslint-disable-next-line no-control-regex
+  return String(apiKey || '').trim().replace(/[^\x20-\x7E]/g, '');
 }
 
 export function resolveApiKey(apiKey) {

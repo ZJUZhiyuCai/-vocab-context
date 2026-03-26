@@ -42,7 +42,9 @@ async function recoverBrokenLocalSession(error) {
     if (supabase) {
         try {
             await supabase.auth.signOut({ scope: 'local' })
-        } catch {}
+        } catch {
+            // Ignore signOut errors - user is being logged out anyway
+        }
     }
 }
 

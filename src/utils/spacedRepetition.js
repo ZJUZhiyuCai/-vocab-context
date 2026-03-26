@@ -37,7 +37,7 @@ export function calculateNextReview(intervalLevel, easeFactor = 2.5) {
  */
 export function updateWordLevel(currentLevel, isCorrect, easeFactor = 2.5) {
   let newLevel = currentLevel;
-  let newEaseFactor = easeFactor;
+  let newEaseFactor;
 
   if (isCorrect) {
     // 回答正确，提升间隔等级

@@ -47,7 +47,7 @@
       <div class="overflow-x-auto">
         <div class="flex gap-1 min-w-max">
           <div
-            v-for="(day, index) in recentDays"
+            v-for="day in recentDays"
             :key="day.date"
             class="flex flex-col items-center gap-2"
           >
@@ -88,7 +88,7 @@
       </div>
       <div class="h-48 flex items-end gap-1">
         <div
-          v-for="(day, index) in recentDays"
+          v-for="day in recentDays"
           :key="day.date"
           class="flex-1 flex flex-col items-center gap-1"
         >

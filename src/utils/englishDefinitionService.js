@@ -99,7 +99,7 @@ function parseResponse(data) {
     return definition;
   } catch (error) {
     console.error('解析响应失败:', error);
-    throw new Error('AI响应格式错误');
+    throw new Error('AI响应格式错误', { cause: error });
   }
 }
 

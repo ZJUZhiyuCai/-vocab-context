@@ -38,7 +38,9 @@ export function clearSupabaseAuthStorage() {
     keys.forEach(key => {
         try {
             window.localStorage.removeItem(key)
-        } catch {}
+        } catch {
+            // Ignore localStorage access errors
+        }
     })
 }
 

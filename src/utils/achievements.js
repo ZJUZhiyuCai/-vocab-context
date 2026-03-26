@@ -285,10 +285,11 @@ export function checkAchievements(stats) {
 
     // 根据类型检查条件
     switch (achievement.type) {
-      case 'count':
+      case 'count': {
         const count = achievement.session ? stats.sessionCount : stats.totalLearned
         shouldUnlock = count >= achievement.threshold
         break
+      }
 
       case 'streak':
         shouldUnlock = stats.streakDays >= achievement.threshold
@@ -301,12 +302,13 @@ export function checkAchievements(stats) {
         }
         break
 
-      case 'accuracy':
+      case 'accuracy': {
         const minCount = achievement.minCount || 5
         if (stats.sessionCount >= minCount && stats.accuracy >= achievement.threshold) {
           shouldUnlock = true
         }
         break
+      }
 
       case 'special':
         if (achievement.id === 'night_owl' && stats.hour >= 22) {

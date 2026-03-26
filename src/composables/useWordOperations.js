@@ -25,11 +25,14 @@ export async function playWordAudio(word) {
   try {
     const success = await freeDictTTS.play(word)
     if (success) return
+    await fallbackBrowserTTS(word)
   } catch (err) {
     console.warn('Free Dictionary TTS failed:', err)
-  }
-  try {
-    await fallbackBrowserTTS(word)
+    try {
+      await fallbackBrowserTTS(word)
+    } catch (fallbackErr) {
+      console.error('Fallback TTS also failed:', fallbackErr)
+    }
   } finally {
     isPlayingWord.value = false
   }
