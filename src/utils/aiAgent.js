@@ -306,11 +306,7 @@ ${context.example ? `【例句】${context.example}` : ''}
       return JSON.parse(jsonMatch[1] || jsonMatch[0]);
     } catch (error) {
       console.error('解析单词分析响应失败:', error);
-      return {
-        word,
-        error: '解析失败',
-        rawResponse: response
-      };
+      throw new Error(`解析单词分析响应失败: ${error.message}`, { cause: error });
     }
   }
 
@@ -583,10 +579,7 @@ ${weakWords.slice(0, 10).map(w => `- ${w.word}: ${w.meaning}`).join('\n')}
       return JSON.parse(jsonMatch[1] || jsonMatch[0]);
     } catch (error) {
       console.error('解析JSON响应失败:', error);
-      return {
-        error: '解析失败',
-        rawResponse: response
-      };
+      throw new Error(`解析JSON响应失败: ${error.message}`, { cause: error });
     }
   }
 

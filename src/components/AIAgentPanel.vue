@@ -333,16 +333,17 @@ const isAnalyzingWeak = ref(false)
 async function analyzeCurrentWord() {
   if (!props.currentWord || !isAvailable.value) return
 
+  const wordToAnalyze = props.currentWord // 在 await 前捕获
   isLoadingAnalysis.value = true
   wordAnalysis.value = null
 
   try {
-    const result = await agent.analyzeWord(props.currentWord.word, {
-      meaning: props.currentWord.meaning,
-      example: props.currentWord.example
+    const result = await agent.analyzeWord(wordToAnalyze.word, {
+      meaning: wordToAnalyze.meaning,
+      example: wordToAnalyze.example
     })
     wordAnalysis.value = result
-    analyzedWord.value = props.currentWord // 记录正在显示的单词
+    analyzedWord.value = wordToAnalyze // 使用捕获的单词
   } catch (error) {
     console.error('单词分析失败:', error)
     alert('分析失败: ' + error.message)
