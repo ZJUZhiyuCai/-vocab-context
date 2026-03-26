@@ -23,14 +23,16 @@ export const sessionSizeOptions = [
 
 /**
  * Load session size from localStorage
- * @returns {number} Session size (default: 8)
+ * Validates that the value is one of the supported options (5, 8, 12)
+ * @returns {number} Session size (default: 5)
  */
 export function loadSessionSize() {
   try {
-    const saved = localStorage.getItem(SESSION_SIZE_STORAGE_KEY)
-    return saved ? parseInt(saved, 10) : 8
+    const saved = parseInt(localStorage.getItem(SESSION_SIZE_STORAGE_KEY), 10)
+    // Only accept valid session sizes, fallback to 5 (热身) as default
+    return [5, 8, 12].includes(saved) ? saved : 5
   } catch {
-    return 8
+    return 5
   }
 }
 
