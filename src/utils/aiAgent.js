@@ -142,7 +142,9 @@ export class AIAgent {
    * @returns {boolean}
    */
   isAvailable() {
-    return true;
+    this.reloadApiSettings();
+    const apiKey = this.apiSettings?.apiKey;
+    return !!(apiKey && apiKey.trim().length > 0);
   }
 
   /**

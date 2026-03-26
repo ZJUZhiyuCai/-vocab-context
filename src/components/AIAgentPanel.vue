@@ -42,8 +42,8 @@
         <div v-else class="word-analysis">
           <!-- 单词标题 -->
           <div class="word-header">
-            <h3 class="word-title">{{ currentWord.word }}</h3>
-            <span v-if="currentWord.ipa" class="word-ipa">{{ currentWord.ipa }}</span>
+            <h3 class="word-title">{{ (analyzedWord || currentWord).word }}</h3>
+            <span v-if="(analyzedWord || currentWord).ipa" class="word-ipa">{{ (analyzedWord || currentWord).ipa }}</span>
           </div>
 
           <!-- AI 分析按钮 -->
@@ -320,6 +320,7 @@ const tabs = [
 // 单词分析
 const isLoadingAnalysis = ref(false)
 const wordAnalysis = ref(null)
+const analyzedWord = ref(null) // 当前显示分析结果的单词
 
 // 学习策略
 const isLoadingStrategy = ref(false)
@@ -341,6 +342,7 @@ async function analyzeCurrentWord() {
       example: props.currentWord.example
     })
     wordAnalysis.value = result
+    analyzedWord.value = props.currentWord // 记录正在显示的单词
   } catch (error) {
     console.error('单词分析失败:', error)
     alert('分析失败: ' + error.message)
@@ -387,6 +389,7 @@ async function analyzeWeakWord(word) {
     // 切换到单词分析标签
     activeTab.value = 'word'
     wordAnalysis.value = result
+    analyzedWord.value = word // 记录正在显示的单词
 
     // 提示用户
     alert(`已加入"${word.word}" 的分析结果`)

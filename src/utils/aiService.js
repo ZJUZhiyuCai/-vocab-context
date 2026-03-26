@@ -567,7 +567,8 @@ export class AIService {
    */
   isAvailable() {
     this.reloadSettings();
-    return true;
+    const apiKey = this.settings?.apiKey;
+    return !!(apiKey && apiKey.trim().length > 0);
   }
 
   /**
