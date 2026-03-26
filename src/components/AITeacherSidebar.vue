@@ -1,6 +1,6 @@
 <template>
   <div class="ai-teacher-sidebar">
-    <!-- 收起状�?- 浮动按钮 -->
+    <!-- 收起状态 - 浮动按钮 -->
     <Transition name="slide">
       <button
         v-if="!isOpen"
@@ -13,7 +13,7 @@
       </button>
     </Transition>
 
-    <!-- 展开状�?- 侧边�?-->
+    <!-- 展开状态 - 侧边栏 -->
     <Transition name="slide">
       <div v-if="isOpen" class="sidebar-panel">
         <!-- 头部 -->
@@ -41,12 +41,12 @@
             <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
           </svg>
           <span>请先配置 API 密钥</span>
-          <button @click="$emit('openSettings')" class="text-btn">去设�?/button>
+          <button @click="$emit('openSettings')" class="text-btn">去设置</button>
         </div>
 
         <!-- 快捷问题 -->
         <div v-if="isAvailable && currentWord && !isLoading" class="quick-questions">
-          <p class="quick-label">你可以问�?/p>
+          <p class="quick-label">你可以问：</p>
           <div class="quick-buttons">
             <button
               v-for="(question, idx) in quickQuestions"
@@ -76,7 +76,7 @@
             </div>
           </div>
 
-          <!-- 加载�?-->
+          <!-- 加载中 -->
           <div v-if="isLoading" class="message assistant">
             <div class="message-avatar">🤖</div>
             <div class="message-content">
@@ -90,12 +90,12 @@
 
           <!-- 欢迎消息 -->
           <div v-if="conversationHistory.length === 0 && !isLoading" class="welcome-message">
-            <p class="welcome-text">👋 你好！我是你�?AI 学习老师</p>
+            <p class="welcome-text">👋 你好！我是你的 AI 学习老师</p>
             <p class="welcome-hint">关于单词学习的问题，随时问我</p>
           </div>
         </div>
 
-        <!-- 输入�?-->
+        <!-- 输入框 -->
         <div class="input-area">
           <textarea
             v-model="userInput"
@@ -110,7 +110,7 @@
             @click="sendMessage"
             class="send-btn"
             :disabled="!userInput.trim() || isSending || !isAvailable"
-            title="发�?(Enter)"
+            title="发送 (Enter)"
           >
             <svg v-if="!isSending" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
@@ -148,7 +148,7 @@ const messagesContainer = ref(null)
 const conversationHistory = ref([])
 
 const isAvailable = computed(() => agent.isAvailable())
-const unreadCount = computed(() => 0) // 暂时未实现未读消息功�?
+const unreadCount = computed(() => 0) // 暂时未实现未读消息功能
 
 // 快捷问题
 const quickQuestions = computed(() => {
@@ -159,11 +159,11 @@ const quickQuestions = computed(() => {
     `"${word}" 的记忆技巧`,
     `"${word}" 的词源`,
     `"${word}" 的同义词`,
-    `�?"${word}" 造句`
+    `用"${word}" 造句`
   ]
 })
 
-// 切换开�?
+// 切换开关
 function toggleOpen() {
   isOpen.value = !isOpen.value
   if (isOpen.value) {
@@ -173,7 +173,7 @@ function toggleOpen() {
   }
 }
 
-// 发送消�?
+// 发送消息
 async function sendMessage() {
   const message = userInput.value.trim()
   if (!message || isSending.value) return
@@ -195,7 +195,7 @@ async function sendMessage() {
   scrollToBottom()
 
   try {
-    // 构建上下�?
+    // 构建上下文
     let context = ''
     if (props.currentWord) {
       context = `当前正在学习单词${props.currentWord.word}（${props.currentWord.meaning}）`
@@ -230,7 +230,7 @@ function askQuestion(question) {
   })
 }
 
-// 滚动到底�?
+// 滚动到底部
 function scrollToBottom() {
   nextTick(() => {
     if (messagesContainer.value) {
@@ -239,7 +239,7 @@ function scrollToBottom() {
   })
 }
 
-// 格式化时�?
+// 格式化时间
 function formatTime(timestamp) {
   const date = new Date(timestamp)
   const hours = date.getHours().toString().padStart(2, '0')
@@ -257,7 +257,7 @@ watch(() => props.currentWord, (newWord) => {
 
 // 加载历史对话
 onMounted(() => {
-  // 可以�?localStorage 加载历史对话
+  // 可以从localStorage 加载历史对话
   try {
     const saved = localStorage.getItem('vocabcontext_ai_teacher_history')
     if (saved) {
@@ -313,7 +313,7 @@ defineExpose({
   @apply flex items-center justify-center;
 }
 
-/* 侧边栏面�?*/
+/* 侧边栏面板*/
 .sidebar-panel {
   @apply fixed right-0 top-0 bottom-0 w-96;
   @apply bg-white shadow-2xl border-l border-gray-200;
@@ -420,7 +420,7 @@ defineExpose({
   @apply text-xs text-gray-400 mt-1 px-1;
 }
 
-/* 输入指示�?*/
+/* 输入指示器*/
 .typing-indicator {
   @apply flex gap-1 px-4 py-3;
   @apply bg-white border border-gray-200 rounded-2xl rounded-bl-md;
@@ -452,7 +452,7 @@ defineExpose({
   @apply text-sm text-gray-500;
 }
 
-/* 输入�?*/
+/* 输入框*/
 .input-area {
   @apply flex gap-2 p-4 border-t border-gray-200 bg-white;
 }
