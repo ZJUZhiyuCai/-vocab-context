@@ -152,6 +152,7 @@
 <script setup>
 import { computed } from 'vue'
 import { useTheme } from '../composables/useTheme.js'
+import { highlightWordSafe } from '../utils/sanitize.js'
 
 const { isDark } = useTheme()
 
@@ -192,11 +193,7 @@ const currentExample = computed(() => {
 
 const highlightedSentence = computed(() => {
   if (!currentExample.value || !props.word?.word) return ''
-  const sentence = currentExample.value.sentence
-  const word = props.word.word
-  // Simple case-insensitive replacement to highlight
-  const regex = new RegExp(`(${word})`, 'gi')
-  return sentence.replace(regex, '<span class="font-semibold text-amber-300 underline decoration-amber-500 decoration-2 underline-offset-2">$1</span>')
+  return highlightWordSafe(currentExample.value.sentence, props.word.word)
 })
 </script>
 
