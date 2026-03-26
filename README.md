@@ -93,6 +93,21 @@ SILICONFLOW_API_BASE_URL=https://api.siliconflow.cn/v1
 - `ZJUZhiyuCai` — product direction, repository ownership, IELTS rebuild
 - `Codex` — release hardening, AI migration, documentation, launch support
 
+## Code Architecture
+
+The codebase follows Vue 3 Composition API best practices with extracted composables:
+
+- `useAppState.js` — Central state management (words, progress, settings)
+- `useWordOperations.js` — Word actions (audio, wordbook, AI generation)
+- `useReviewSystem.js` — Spaced repetition and review queue logic
+- `sanitize.js` — XSS-safe HTML rendering with DOMPurify
+
+### Quality Metrics
+
+- **Tests:** 50 unit tests with Vitest
+- **Lint:** 0 errors (ESLint flat config)
+- **Security:** DOMPurify for v-html sanitization
+
 ## License
 
 MIT
