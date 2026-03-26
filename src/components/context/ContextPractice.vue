@@ -617,7 +617,7 @@ const coreTopicTracks = computed(() =>
   topicTracks.value.filter(vocab => CORE_TOPIC_ORDER.includes(vocab.topic))
 )
 const extendedTopicTracks = computed(() =>
-  topicTracks.value.filter(vocab => !coreTopicOrder.includes(vocab.topic))
+  topicTracks.value.filter(vocab => !CORE_TOPIC_ORDER.includes(vocab.topic))
 )
 const legacyTracks = computed(() =>
   (props.availableVocabularies || []).filter(vocab => vocab.category === 'IELTS' && vocab.ieltsTrackType === 'legacy')
