@@ -172,3 +172,65 @@ export function resetProgressState() {
   learnedCount.value = 0
   reviewStates.value = {}
 }
+
+// ============================================
+// Study Time Functions
+// ============================================
+
+/**
+ * Get current session duration in seconds
+ */
+export function getSessionTime() {
+  if (!isPageVisible.value) return 0
+  return Math.floor((Date.now() - sessionStartTime.value) / 1000)
+}
+
+/**
+ * Format duration for display
+ * @param {number} seconds - Duration in seconds
+ * @returns {string} Formatted duration string
+ */
+export function formatDuration(seconds) {
+  if (seconds < 60) return `${seconds}秒`
+  const minutes = Math.floor(seconds / 60)
+  if (minutes < 60) return `${minutes}分钟`
+  const hours = Math.floor(minutes / 60)
+  const remainingMinutes = minutes % 60
+  return remainingMinutes > 0 ? `${hours}小时${remainingMinutes}分` : `${hours}小时`
+}
+
+/**
+ * Save study time to localStorage
+ */
+export function saveStudyTime() {
+  try {
+    const currentSessionTime = getSessionTime()
+    const totalTime = totalStudyTime.value + currentSessionTime
+    localStorage.setItem('vocabcontext_study_time', totalTime.toString())
+    totalStudyTime.value = totalTime
+    sessionStartTime.value = Date.now()
+  } catch (error) {
+    console.error('保存学习时长失败:', error)
+  }
+}
+
+/**
+ * Load study time from localStorage
+ * @returns {number} Total study time in seconds
+ */
+export function loadStudyTime() {
+  try {
+    const saved = localStorage.getItem('vocabcontext_study_time')
+    return saved ? parseInt(saved, 10) : 0
+  } catch (error) {
+    return 0
+  }
+}
+
+/**
+ * Initialize study time from localStorage
+ */
+export function initStudyTime() {
+  totalStudyTime.value = loadStudyTime()
+  sessionStartTime.value = Date.now()
+}

@@ -363,7 +363,8 @@ import {
   cardRecommendation, pendingRecommendationTimer, setPendingRecommendationTimer, clearPendingRecommendationTimer,
   sessionStartTime, totalStudyTime, isPageVisible,
   currentWord, progress, stats,
-  initializeState, resetProgressState
+  initializeState, resetProgressState,
+  getSessionTime, formatDuration, saveStudyTime, loadStudyTime, initStudyTime
 } from './composables/useAppState.js'
 
 import {
@@ -469,41 +470,6 @@ const recentHistoryList = computed(() => {
 // TTS 语音朗读（本地辅助函数，用于未导入composable的场景）
 const tts = getTTS()
 const freeDictTTS = getFreeDictionaryTTS()
-
-const getSessionTime = () => {
-  if (!isPageVisible.value) return 0
-  return Math.floor((Date.now() - sessionStartTime.value) / 1000)
-}
-
-const formatDuration = (seconds) => {
-  if (seconds < 60) return `${seconds}秒`
-  const minutes = Math.floor(seconds / 60)
-  if (minutes < 60) return `${minutes}分钟`
-  const hours = Math.floor(minutes / 60)
-  const remainingMinutes = minutes % 60
-  return remainingMinutes > 0 ? `${hours}小时${remainingMinutes}分` : `${hours}小时`
-}
-
-const saveStudyTime = () => {
-  try {
-    const currentSessionTime = getSessionTime()
-    const totalTime = totalStudyTime.value + currentSessionTime
-    localStorage.setItem('vocabcontext_study_time', totalTime.toString())
-    totalStudyTime.value = totalTime
-    sessionStartTime.value = Date.now()
-  } catch (error) {
-    console.error('保存学习时长失败:', error)
-  }
-}
-
-const loadStudyTime = () => {
-  try {
-    const saved = localStorage.getItem('vocabcontext_study_time')
-    return saved ? parseInt(saved, 10) : 0
-  } catch (error) {
-    return 0
-  }
-};
 
 // Handlers
 const handleKnow = () => {

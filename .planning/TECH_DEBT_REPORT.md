@@ -1,13 +1,13 @@
 # VocabMan 技术债务清理报告
 
 **日期:** 2026-03-26
-**状态:** Phase 1 完成，Phase 2-6 部分完成，关键 Bug 已全部修复
+**状态:** Phase 1 完成，Phase 2 进行中，关键 Bug 已全部修复
 
 ---
 
 ## 执行摘要
 
-本项目旨在系统性清理 VocabMan 代码库的技术债务。已完成测试基础设施、ESLint 配置修复、所有关键 Bug 修复和部分重构工作。
+本项目旨在系统性清理 VocabMan 代码库的技术债务。已完成测试基础设施、ESLint 配置修复、所有关键 Bug 修复，正在进行 App.vue 重构。
 
 ---
 
@@ -64,7 +64,7 @@
 
 ---
 
-## Phase 2: App.vue 重构 🔄 部分完成
+## Phase 2: App.vue 重构 🔄 进行中
 
 **目标:** 1304行 → <500行
 
@@ -73,12 +73,16 @@
 - `useWordOperations.js` (159行) - 单词操作 ✅ (已修复导入错误)
 - `useReviewSystem.js` (228行) - 复习逻辑 ✅ (已修复 require)
 - `SettingsModal.vue` (208行) - 设置组件 ✅
+- 移除重复状态声明 ✅
+- 移除重复函数定义 ✅
+- 修复导入变量重赋值问题 ✅
 
-### 待完成
-- 重构 App.vue 使用新 composables
-- 减少 App.vue 行数
+### 进度
+- App.vue: 1304行 → 1119行 (-185行, 14% 减少)
+- 构建通过 ✅
+- 测试通过 (50/50) ✅
 
-**提交:** `8cc6f09`
+**提交:** `8770b64`
 
 ---
 
@@ -118,10 +122,10 @@
 | 指标 | 开始 | 目标 | 当前 |
 |------|------|------|------|
 | 测试数量 | 0 | 50+ | 50 ✅ |
-| App.vue 行数 | 1304 | <500 | 1304 |
+| App.vue 行数 | 1304 | <500 | 1119 |
 | ContextPractice.vue 行数 | 1682 | <800 | 1682 |
 | ESLint 错误 | 437 | 0 | 0 ✅ |
-| ESLint 警告 | - | - | 2980 |
+| ESLint 警告 | - | - | ~2900 |
 | 覆盖率 | 0% | >50% | ~5% |
 | 构建状态 | - | 通过 | ✅ 通过 |
 
@@ -130,6 +134,7 @@
 ## Git 提交历史
 
 ```
+8770b64 refactor(app): remove duplicate state and function definitions
 ce26d2a fix: repair all corrupted Chinese strings in AI components
 88aded3 fix: resolve all remaining lint errors (0 errors now)
 7c31330 fix(critical): resolve ESLint config, import errors, and encoding issues
@@ -147,18 +152,18 @@ e331efc docs: initialize tech debt cleanup project
 ```bash
 npm test -- --run  # 运行测试 (50 passing) ✅
 npm run build      # 构建验证 (通过) ✅
-npm run lint       # 代码检查 (0 errors, 2980 warnings) ✅
+npm run lint       # 代码检查 (0 errors) ✅
 ```
 
 ---
 
 ## 剩余工作
 
-1. Phase 2 剩余: 重构 App.vue 使用 composables
+1. Phase 2 继续: 进一步减少 App.vue 行数
 2. Phase 3: ContextPractice.vue 重构
 3. Phase 6 剩余: 修复 v-html XSS
-4. 可选: 修复 2980 个 lint warnings (大部分是 console.log 和代码格式)
+4. 可选: 修复 lint warnings (大部分是 console.log 和代码格式)
 
 ---
 
-*报告最后更新: 2026-03-26 11:00*
+*报告最后更新: 2026-03-26 13:50*
