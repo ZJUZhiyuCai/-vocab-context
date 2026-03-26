@@ -1,22 +1,22 @@
 # VocabMan 技术债务清理报告
 
 **日期:** 2026-03-26
-**状态:** Phase 1 完成，Phase 2-6 部分完成
+**状态:** Phase 1 完成，Phase 2-6 部分完成，关键 Bug 已全部修复
 
 ---
 
 ## 执行摘要
 
-本项目旨在系统性清理 VocabMan 代码库的技术债务。已完成测试基础设施、ESLint 配置修复、关键 Bug 修复和部分重构工作。
+本项目旨在系统性清理 VocabMan 代码库的技术债务。已完成测试基础设施、ESLint 配置修复、所有关键 Bug 修复和部分重构工作。
 
 ---
 
-## 关键 Bug 修复 (2026-03-26 09:57)
+## 关键 Bug 修复 (2026-03-26 10:24)
 
 ### P1 - ESLint 配置修复 ✅
 - 添加 `globals` 包和全局变量声明
 - 添加更多 ignore 模式 (public/, netlify/, server/)
-- **结果:** 437 errors → 17 errors (仅剩代码质量问题)
+- **结果:** 437 errors → 0 errors ✅
 
 ### P1 - useWordOperations.js 导入错误 ✅
 - 移除不存在的 `useAppState` 函数导入
@@ -26,15 +26,22 @@
 - 将 `require('./useAppState.js')` 替换为 ESM import
 - 添加 `words` 到导入列表
 
-### P2 - playWordAudio 音频状态 Bug ✅
-- 修复 `isPlayingWord` 卡在 `true` 的 Bug
-- 使用 try/finally 确保状态始终重置
+### P2 - playWordAudio 音频状态 Bug ✅ (第二轮修复)
+- 之前的修复不完整，`finally` 在错误分支
+- 使用外层 try/finally 确保状态始终重置
 
 ### P1 - App.vue 未定义变量 ✅
 - 添加缺失的 `cloudSRS`, `cloudHistory`, `cloudAchievements` 解构
 
 ### P1 - 编码损坏字符串修复 ✅
 - 修复 AIAgentPanel.vue 和 AITeacherSidebar.vue 中损坏的中文字符串
+- 修复模板字符串 `${...}` 被损坏成 `?{...}` 的问题
+
+### 代码质量修复 ✅
+- achievements.js: case 块中的 const 声明用 {} 包裹
+- spacedRepetition.js, VocabLevelTest.vue: 移除无用变量初始化
+- ReviewQueue.vue, StudyHeatmap.vue: 移除未使用的 index 变量
+- 多个文件: 添加 { cause: originalError } 保留原始错误
 
 ---
 
@@ -108,8 +115,8 @@
 | 测试数量 | 0 | 50+ | 50 ✅ |
 | App.vue 行数 | 1304 | <500 | 1304 |
 | ContextPractice.vue 行数 | 1682 | <800 | 1682 |
-| ESLint 错误 | 437 | 0 | 17 |
-| ESLint 警告 | - | - | 2981 |
+| ESLint 错误 | 437 | 0 | 0 ✅ |
+| ESLint 警告 | - | - | 2980 |
 | 覆盖率 | 0% | >50% | ~5% |
 | 构建状态 | - | 通过 | ✅ 通过 |
 
@@ -118,7 +125,8 @@
 ## Git 提交历史
 
 ```
-[待提交] fix(critical): resolve ESLint config, import errors, and encoding issues
+88aded3 fix: resolve all remaining lint errors (0 errors now)
+7c31330 fix(critical): resolve ESLint config, import errors, and encoding issues
 561d323 feat(tech-debt): add storage keys, logger, and error boundary
 8cc6f09 feat(2-app-vue): create composables for state extraction
 45780ee feat(test): add Vitest testing framework and ESLint/Prettier
@@ -131,9 +139,9 @@ e331efc docs: initialize tech debt cleanup project
 ## 验证命令
 
 ```bash
-npm test        # 运行测试 (50 passing)
-npm run lint    # 代码检查 (17 errors - 代码质量问题)
-npm run build   # 构建验证 (通过)
+npm test -- --run  # 运行测试 (50 passing) ✅
+npm run build      # 构建验证 (通过) ✅
+npm run lint       # 代码检查 (0 errors, 2980 warnings) ✅
 ```
 
 ---
@@ -143,8 +151,8 @@ npm run build   # 构建验证 (通过)
 1. Phase 2 剩余: 重构 App.vue 使用 composables
 2. Phase 3: ContextPractice.vue 重构
 3. Phase 6 剩余: 修复 v-html XSS
-4. 修复剩余 17 个 lint 错误 (代码质量问题)
+4. 可选: 修复 2980 个 lint warnings (大部分是 console.log 和代码格式)
 
 ---
 
-*报告最后更新: 2026-03-26 09:58*
+*报告最后更新: 2026-03-26 10:25*
