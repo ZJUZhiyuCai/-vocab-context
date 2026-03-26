@@ -563,9 +563,19 @@ import { getContextSessionHistory } from '../../utils/contextSessionEngine.js'
 import { getOutputStudioHistory } from '../../utils/outputStudioEngine.js'
 import { getExamDrillHistory } from '../../utils/examDrillEngine.js'
 import { consumePendingIeltsPathTarget, setPendingIeltsPathTarget } from '../../utils/ieltsPathEntry.js'
-
-const SESSION_SIZE_STORAGE_KEY = 'vocabman-context-practice-size'
-const PRIORITY_TOPICS = ['education', 'environment', 'technology']
+import {
+  SESSION_SIZE_STORAGE_KEY,
+  PRIORITY_TOPICS,
+  CORE_TOPIC_ORDER,
+  sessionSizeOptions,
+  loadSessionSize,
+  saveSessionSize,
+  normalizeBundle,
+  isEligibleBundle,
+  compareBundles,
+  rankBundle,
+  topicLabel
+} from '../../utils/contextPracticeUtils.js'
 
 const { isDark } = useTheme()
 
@@ -595,12 +605,6 @@ const sessionSize = ref(loadSessionSize())
 const lastSummary = ref(null)
 const history = ref(loadHistory())
 
-const sessionSizeOptions = [
-  { value: 5, label: '热身' },
-  { value: 8, label: '标准' },
-  { value: 12, label: '冲刺' }
-]
-
 const isIeltsTrack = computed(() => props.currentVocab?.category === 'IELTS')
 const currentVocabName = computed(() => props.currentVocab?.name || '当前词库')
 const foundationTracks = computed(() =>
@@ -609,9 +613,8 @@ const foundationTracks = computed(() =>
 const topicTracks = computed(() =>
   (props.availableVocabularies || []).filter(vocab => vocab.category === 'IELTS' && vocab.ieltsTrackType === 'topic')
 )
-const coreTopicOrder = ['education', 'government', 'environment', 'technology']
 const coreTopicTracks = computed(() =>
-  topicTracks.value.filter(vocab => coreTopicOrder.includes(vocab.topic))
+  topicTracks.value.filter(vocab => CORE_TOPIC_ORDER.includes(vocab.topic))
 )
 const extendedTopicTracks = computed(() =>
   topicTracks.value.filter(vocab => !coreTopicOrder.includes(vocab.topic))
@@ -968,23 +971,6 @@ function setSessionSize(size) {
   saveSessionSize(size)
 }
 
-function loadSessionSize() {
-  try {
-    const saved = Number.parseInt(localStorage.getItem(SESSION_SIZE_STORAGE_KEY) || '', 10)
-    return [5, 8, 12].includes(saved) ? saved : 5
-  } catch {
-    return 5
-  }
-}
-
-function saveSessionSize(size) {
-  try {
-    localStorage.setItem(SESSION_SIZE_STORAGE_KEY, String(size))
-  } catch {
-    // no-op: local storage is optional
-  }
-}
-
 function loadHistory() {
   const rawHistory = getContextSessionHistory()
   const outputHistory = getOutputStudioHistory()
@@ -1015,92 +1001,8 @@ onMounted(() => {
   applyPendingPathTarget()
 })
 
-function normalizeBundle(word) {
-  const id = word.id || word.bundleId || word.word
-  const contexts = Array.isArray(word.contexts)
-    ? word.contexts
-        .map((context, index) => ({
-          ...context,
-          id: context.id || `${id}-context-${index}`,
-          text: context.text || context.sentence || '',
-          translation: context.translation || '',
-          kind: context.kind || context.purpose || 'reading',
-          purpose: context.purpose || context.kind || 'reading'
-        }))
-        .filter(context => context.text)
-    : []
-
-  return {
-    ...word,
-    id,
-    bundleId: word.bundleId || id,
-    meaning: word.meaning || word.chineseMeaning || '',
-    englishDefinition: word.englishDefinition || word.sense || '',
-    paraphrases: Array.isArray(word.paraphrases) ? word.paraphrases.filter(Boolean) : [],
-    collocations: Array.isArray(word.collocations) ? word.collocations.filter(Boolean) : [],
-    contexts,
-    topic: word.topic || 'general',
-    draft: Boolean(word.draft)
-  }
-}
-
-function isEligibleBundle(bundle) {
-  return Boolean(
-    bundle.word &&
-      bundle.meaning &&
-      bundle.contexts.length > 0 &&
-      bundle.paraphrases.length > 0 &&
-      !bundle.draft
-  )
-}
-
-function compareBundles(left, right, reviewStates, now) {
-  const leftScore = rankBundle(left, reviewStates, now)
-  const rightScore = rankBundle(right, reviewStates, now)
-
-  if (leftScore !== rightScore) {
-    return rightScore - leftScore
-  }
-
-  return left.word.localeCompare(right.word)
-}
-
-function rankBundle(bundle, reviewStates, now) {
-  const state = reviewStates?.[bundle.id]
-  const isDue = Boolean(state?.nextReview && state.nextReview <= now)
-  const topicBonus = PRIORITY_TOPICS.includes(bundle.topic) ? 3 : 0
-  const reviewCount = state?.reviewCount || 0
-  const contextBonus = Math.min(bundle.contexts.length, 3)
-  const paraphraseBonus = Math.min(bundle.paraphrases.length, 2)
-
-  return (
-    (isDue ? 100 : 0) +
-    topicBonus * 10 +
-    contextBonus * 4 +
-    paraphraseBonus * 3 +
-    reviewCount
-  )
-}
-
-function topicLabel(topic) {
-  const labels = {
-    education: '教育',
-    environment: '环境',
-    technology: '科技',
-    government: '政府',
-    health: '健康',
-    society: '社会',
-    economy: '经济',
-    work: '工作',
-    media: '媒体',
-    crime: '犯罪',
-    culture: '文化',
-    transport: '交通',
-    general: '通用'
-  }
-
-  return labels[topic] || topic || '通用'
-}
+// Note: normalizeBundle, isEligibleBundle, compareBundles, rankBundle, topicLabel
+// are now imported from contextPracticeUtils.js
 </script>
 
 <style scoped>
