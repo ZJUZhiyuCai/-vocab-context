@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "timestamp": "2026-03-26T16:34:54Z",
+  "project": "VocabMan IELTS Vocabulary Upgrade",
+  "status": "paused",
+  "completed_phases": [
+    {
+      "phase": "tech-debt-1-6",
+      "name": "技术债务清理 (Phase 1-6)",
+      "status": "done",
+      "summary": "测试配置、App.vue重构、ContextPractice重构、Storage统一、日志系统、XSS防护"
+    },
+    {
+      "phase": "ielts-upgrade-1",
+      "name": "词汇难度标签重构",
+      "status": "done",
+      "summary": "移除CET标签，改用IELTS Band，新增ieltsBand字段，更新推荐算法"
+    },
+    {
+      "phase": "ielts-upgrade-2",
+      "name": "Topic Pack扩展",
+      "status": "done",
+      "summary": "Foundation 541→743词，所有Topic Pack达76+词汇"
+    }
+  ],
+  "current_phase": {
+    "phase": "ielts-upgrade-3",
+    "name": "雅思专项功能增强 - Speaking Part 2 话题词群",
+    "status": "in_progress",
+    "progress": "规划已批准，尚未开始编码"
+  },
+  "remaining_tasks": [
+    {"id": 1, "name": "创建 speakingTopicEngine.js", "status": "not_started"},
+    {"id": 2, "name": "创建 SpeakingTopicPanel.vue", "status": "not_started"},
+    {"id": 3, "name": "集成到现有导航", "status": "not_started"}
+  ],
+  "blockers": [],
+  "human_actions_pending": [],
+  "decisions": [
+    {"decision": "使用IELTS Band替代CET标签", "rationale": "更直观，用户明确目标分数", "phase": "ielts-upgrade-1"},
+    {"decision": "选择Speaking Part 2话题词群作为Phase 3首个功能", "rationale": "用户选择", "phase": "ielts-upgrade-3"}
+  ],
+  "files_modified_uncommitted": [
+    ".planning/IELTS_VOCAB_UPGRADE.md",
+    ".planning/CODEX_REVIEW_IELTS_UPGRADE.md"
+  ],
+  "next_action": "创建 src/utils/speakingTopicEngine.js - 话题词群引擎",
+  "context_notes": "Context接近90%上限，建议新会话继续。已完成Codex审查修复（buildContexts词性问题、parseIeltsBand边界、去重逻辑、CEFR标签显示）。数据已重新生成并验证。"
+}
