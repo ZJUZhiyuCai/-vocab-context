@@ -34,8 +34,13 @@
 - 添加缺失的 `cloudSRS`, `cloudHistory`, `cloudAchievements` 解构
 
 ### P1 - 编码损坏字符串修复 ✅
-- 修复 AIAgentPanel.vue 和 AITeacherSidebar.vue 中损坏的中文字符串
-- 修复模板字符串 `${...}` 被损坏成 `?{...}` 的问题
+- 修复 AIAgentPanel.vue 中 ~40+ 处损坏的中文字符串
+  - UI 标签: 分析中、词性、同义词、反义词、记忆技巧等
+  - 注释: 标签页、内容区、空状态等
+- 修复 AITeacherSidebar.vue 中 ~20+ 处损坏的中文字符串
+  - 模板字符串: `${...}` 被损坏成 `?{...}`
+  - UI 标签: 去设置、你可以问、我是你的 AI 学习老师等
+  - 注释: 收起状态、展开状态、输入框等
 
 ### 代码质量修复 ✅
 - achievements.js: case 块中的 const 声明用 {} 包裹
@@ -125,6 +130,7 @@
 ## Git 提交历史
 
 ```
+ce26d2a fix: repair all corrupted Chinese strings in AI components
 88aded3 fix: resolve all remaining lint errors (0 errors now)
 7c31330 fix(critical): resolve ESLint config, import errors, and encoding issues
 561d323 feat(tech-debt): add storage keys, logger, and error boundary
@@ -155,4 +161,4 @@ npm run lint       # 代码检查 (0 errors, 2980 warnings) ✅
 
 ---
 
-*报告最后更新: 2026-03-26 10:25*
+*报告最后更新: 2026-03-26 11:00*
