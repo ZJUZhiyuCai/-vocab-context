@@ -222,7 +222,7 @@
                 </div>
                 <div v-if="strategyResult.daily_plan.focus_areas" class="plan-item">
                   <span class="plan-label">重点领域�?/span>
-                  <span class="plan-value">{{ strategyResult.daily_plan.focus_areas.join('�?) }}</span>
+                  <span class="plan-value">{{ strategyResult.daily_plan.focus_areas.join(', ') }}</span>
                 </div>
               </div>
             </div>
@@ -343,7 +343,7 @@ async function analyzeCurrentWord() {
     wordAnalysis.value = result
   } catch (error) {
     console.error('单词分析失败:', error)
-    alert('分析失败�? + error.message)
+    alert('分析失败: ' + error.message)
   } finally {
     isLoadingAnalysis.value = false
   }
@@ -367,7 +367,7 @@ async function generateStrategy() {
     strategyResult.value = result
   } catch (error) {
     console.error('生成策略失败:', error)
-    alert('生成失败�? + error.message)
+    alert('生成失败: ' + error.message)
   } finally {
     isLoadingStrategy.value = false
   }
@@ -392,7 +392,7 @@ async function analyzeWeakWord(word) {
     alert(`已加�?"${word.word}" 的分析结果`)
   } catch (error) {
     console.error('分析失败:', error)
-    alert('分析失败�? + error.message)
+    alert('分析失败: ' + error.message)
   } finally {
     isAnalyzingWeak.value = false
   }

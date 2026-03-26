@@ -25,7 +25,8 @@ import {
   cardRecommendation,
   setPendingRecommendationTimer,
   clearPendingRecommendationTimer,
-  pendingRecommendationTimer
+  pendingRecommendationTimer,
+  words
 } from './useAppState.js'
 import { shouldShowCardRecommendation, buildCardRecommendation, getRecommendationDelay } from '../utils/cardRecommendation.js'
 import { checkAchievements } from '../utils/achievements.js'
@@ -178,7 +179,6 @@ export const reviewStats = computed(() => {
  * Review queue data computed
  */
 export const reviewQueueData = computed(() => {
-  const { words } = require('./useAppState.js')
   return reviewQueue.value.map(item => {
     const word = words.value.find(w => w.id === item.wordId)
     const reviewState = reviewStates.value[item.wordId]
@@ -195,7 +195,6 @@ export const reviewQueueData = computed(() => {
  * Check and unlock achievements
  */
 export function checkAndUnlockAchievements(streakDays, stats, sessionLearnCount, triggerConfetti, showAchievementNotification) {
-  const { words } = require('./useAppState.js')
   const hour = new Date().getHours()
   const achievementStats = {
     totalLearned: learned.value.size,

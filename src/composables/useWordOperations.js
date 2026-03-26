@@ -10,8 +10,8 @@ import { saveWordbook } from '../utils/storage.js'
 import { syncService } from '../utils/syncService.js'
 import { getTTS } from '../utils/text-to-speech.js'
 import { getFreeDictionaryTTS } from '../utils/freeDictionaryTTS.js'
-import { useAppState, userSettings, userProfile, currentVocab, error, generatingWordId, loadingEnglishDefinition } from './useAppState.js'
 import { useConfetti } from './useConfetti.js'
+import { wordbook, userSettings, userProfile, currentVocab, error, generatingWordId, loadingEnglishDefinition } from './useAppState.js'
 
 const tts = getTTS()
 const freeDictTTS = getFreeDictionaryTTS()
@@ -28,8 +28,11 @@ export async function playWordAudio(word) {
   } catch (err) {
     console.warn('Free Dictionary TTS failed:', err)
   }
-  await fallbackBrowserTTS(word)
-  isPlayingWord.value = false
+  try {
+    await fallbackBrowserTTS(word)
+  } finally {
+    isPlayingWord.value = false
+  }
 }
 
 async function fallbackBrowserTTS(word) {
@@ -48,7 +51,6 @@ async function fallbackBrowserTTS(word) {
  * Check if word is in wordbook
  */
 export function isWordbooked(wordId) {
-  const { wordbook } = useAppState()
   return wordbook.value.has(wordId)
 }
 
@@ -56,7 +58,6 @@ export function isWordbooked(wordId) {
  * Add word to wordbook
  */
 export function addToWordbook(wordId) {
-  const { wordbook } = useAppState()
   wordbook.value.add(wordId)
   saveWordbook(wordbook.value)
 
@@ -71,7 +72,6 @@ export function addToWordbook(wordId) {
  * Remove word from wordbook
  */
 export function removeFromWordbook(wordId) {
-  const { wordbook } = useAppState()
   wordbook.value.delete(wordId)
   saveWordbook(wordbook.value)
 
@@ -94,7 +94,6 @@ export function toggleWordbook(wordId) {
  * Batch remove words from wordbook
  */
 export function handleBatchRemoveFromWordbook(wordIds) {
-  const { wordbook } = useAppState()
   wordIds.forEach(wordId => {
     wordbook.value.delete(wordId)
     if (currentVocab.value) {

@@ -1203,7 +1203,7 @@ watch(user, async (newUser, oldUser) => {
       const syncResult = await syncService.fullSync();
       if (!syncResult) return;
 
-      const { cloudSettings, cloudProgress, cloudWordbook } = syncResult;
+      const { cloudSettings, cloudProgress, cloudWordbook, cloudSRS, cloudHistory, cloudAchievements } = syncResult;
 
       // 1. 同步设置
       if (cloudSettings) {

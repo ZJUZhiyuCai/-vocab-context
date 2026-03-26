@@ -202,7 +202,7 @@ async function sendMessage() {
     }
 
     // 调用 AI
-    const response = await agent.chat(context + '\n\n用户问题�? + message)
+    const response = await agent.chat(context + '\n\n用户问题: ' + message)
 
     conversationHistory.value.push({
       role: 'assistant',
@@ -213,7 +213,7 @@ async function sendMessage() {
     console.error('AI 回复失败:', error)
     conversationHistory.value.push({
       role: 'assistant',
-      content: '抱歉，我遇到了一些问题。请稍后再试�?,
+      content: '抱歉，我遇到了一些问题。请稍后再试。',
       timestamp: Date.now()
     })
   } finally {
