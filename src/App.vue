@@ -350,6 +350,32 @@ import { getEnglishDefinition } from './utils/englishDefinitionService.js'
 import { loadSettings, saveSettings as saveSettingsToStorage, loadWordbook, saveWordbook, loadUserProfile, saveUserProfile, shouldShowOnboarding } from './utils/storage.js'
 import { useConfetti } from './composables/useConfetti.js'
 import { useTheme } from './composables/useTheme.js'
+
+// Import from composables - state and operations
+import {
+  words, currentIndex, learned, forgotten, wordbook,
+  isLoading, currentVocab, showVocabSelector, currentPage, allVocabularies,
+  reviewStates, reviewQueue, cardAnimation, isCardAnimating, isOnline,
+  userSettings, settingsForm, showSettings, newInterest, generatingWordId, loadingEtymology, loadingEnglishDefinition, error,
+  syncing, testingGist, gistSyncStats,
+  userProfile, showOnboarding, showVocabTest,
+  currentAchievementNotification, sessionLearnCount, learnedCount,
+  cardRecommendation, pendingRecommendationTimer, setPendingRecommendationTimer, clearPendingRecommendationTimer,
+  sessionStartTime, totalStudyTime, isPageVisible,
+  currentWord, progress, stats,
+  initializeState, resetProgressState
+} from './composables/useAppState.js'
+
+import {
+  isPlayingWord, playWordAudio, isWordbooked, addToWordbook,
+  removeFromWordbook, toggleWordbook, handleBatchRemoveFromWordbook
+} from './composables/useWordOperations.js'
+
+import {
+  saveReviewStates, loadReviewStates, updateReviewQueue,
+  getStreak, reviewStats, reviewQueueData
+} from './composables/useReviewSystem.js'
+
 import Wordbook from './components/Wordbook.vue'
 import ReviewQueue from './components/ReviewQueue.vue'
 import MobileTabBar from './components/MobileTabBar.vue'
@@ -395,110 +421,22 @@ import {
   getSyncStats
 } from './utils/gistSync.js'
 
-// 状态
-const words = ref([])
-const currentIndex = ref(0)
-const learned = ref(new Set())
-const forgotten = ref(new Set())
-const wordbook = ref(new Set()) // 单词本
-const wordCard = ref(null) // 单词卡片引用
-const isLoading = ref(true) // 加载状态
-const currentVocab = ref(null) // 当前词库
-const showVocabSelector = ref(false) // 显示词库选择器
-
-// 复习系统状态
-const reviewStates = ref({}) // 单词ID -> 复习状态
-const reviewQueue = ref([]) // 复习队列
-
-// 卡片动画状态
-const cardAnimation = ref('') // 'slide-left', 'slide-right', ''
-const isCardAnimating = ref(false)
-
-// 网络状态
-const isOnline = ref(navigator.onLine)
-
-// 触摸手势状态
+// Local UI state not in composables
+const wordCard = ref(null)
 const touchStartX = ref(0)
 const touchStartY = ref(0)
 const touchEndX = ref(0)
 const touchEndY = ref(0)
 const isSwiping = ref(false)
 
-// AI相关状态
-const userSettings = ref({
-  apiKey: '',
-  interests: [],
-  dailyGoal: 20,
-  studyMode: 'random',
-  githubToken: '',
-  purpose: 'exam'
-})
-const settingsForm = ref({
-  apiKey: '',
-  interests: [],
-  dailyGoal: 20,
-  studyMode: 'random',
-  githubToken: '',
-  purpose: 'exam'
-})
-const showSettings = ref(false)
-const newInterest = ref('')
-const generatingWordId = ref(null)
-const loadingEtymology = ref(null)
-const loadingEnglishDefinition = ref(null)
-const error = ref(null)
+// AI helper text - must be defined after imports
 const aiApiHelperText = `可在这里手动填写 ${AI_PROVIDER_LABEL} 密钥；如果当前环境已在 .env.local 或部署平台中配置 ${AI_ENV_API_KEY_NAME}，应用也会自动使用 ${AI_MODEL}。`
-
-// 同步状态
-const syncing = ref(false)
-const testingGist = ref(false)
-const gistSyncStats = ref({ lastSync: '从未同步', gistId: null, hasConfig: false })
-
-// 用户画像状态
-const userProfile = ref({ purpose: '' })
-const showOnboarding = ref(false)
-const showVocabTest = ref(false)  // 显示词汇测试弹窗
-
-// 成就系统状态
-const currentAchievementNotification = ref(null)
-const sessionLearnCount = ref(0)  // 本次会话学习数
-const learnedCount = ref(0)       // 本次会话"认识"的次数（用于卡片推荐频率）
-
-// 卡片级下一步推荐
-const cardRecommendation = ref(null)
-let pendingRecommendationTimer = null
-
-// 页面状态
-const currentPage = ref('today')
-const allVocabularies = getAllVocabularies()
 
 // 彩带动画
 const { triggerConfetti } = useConfetti()
 
 // 主题管理
 const { theme, isDark, setTheme, THEMES } = useTheme()
-
-// 当前单词
-const currentWord = computed(() => {
-  return words.value[currentIndex.value] || null;
-})
-
-// 进度
-const progress = computed(() => ({
-  total: words.value.length,
-  learned: learned.value.size,
-}))
-
-// 统计数据
-const stats = computed(() => {
-  const total = learned.value.size + forgotten.value.size
-  const accuracy = total > 0 ? Math.round((learned.value.size / total) * 100) : 0
-  return {
-    learned: learned.value.size,
-    forgotten: forgotten.value.size,
-    accuracy,
-  }
-})
 
 const todayIeltsRecommendation = computed(() => buildIeltsQuickRecommendation(currentVocab.value))
 
@@ -528,44 +466,9 @@ const recentHistoryList = computed(() => {
     return recentIds.map(id => words.value.find(w => w.id === id)).filter(Boolean);
 })
 
-// 学习时长统计
-const sessionStartTime = ref(Date.now())
-const totalStudyTime = ref(0) // 从localStorage加载的总时长（秒）
-const isPageVisible = ref(true)
-
-// TTS 语音朗读
+// TTS 语音朗读（本地辅助函数，用于未导入composable的场景）
 const tts = getTTS()
 const freeDictTTS = getFreeDictionaryTTS()
-const isPlayingWord = ref(false)
-
-// 朗读单词
-async function playWordAudio(word) {
-  isPlayingWord.value = true
-  try {
-    console.log('🔊 尝试 Free Dictionary API:', word)
-    const success = await freeDictTTS.play(word)
-    if (success) {
-      console.log('✅ Free Dictionary 发音成功')
-      return
-    }
-  } catch (error) {
-    console.warn('⚠️ Free Dictionary API 失败:', error)
-  }
-  await fallbackBrowserTTS(word)
-  isPlayingWord.value = false
-}
-
-async function fallbackBrowserTTS(word) {
-  if (!tts.isSupported()) {
-    alert('请先配置 API 密钥或使用支持语音的浏览器')
-    return
-  }
-  try {
-    await tts.speakWord(word)
-  } catch (error) {
-    console.error('语音朗读失败:', error)
-  }
-}
 
 const getSessionTime = () => {
   if (!isPageVisible.value) return 0
@@ -638,10 +541,10 @@ const handleKnow = () => {
       if (pendingRecommendationTimer) {
         clearTimeout(pendingRecommendationTimer);
       }
-      pendingRecommendationTimer = setTimeout(() => {
+      setPendingRecommendationTimer(setTimeout(() => {
         cardRecommendation.value = buildCardRecommendation(vocabSnapshot, wordSnapshot);
-        pendingRecommendationTimer = null;
-      }, getRecommendationDelay());
+        clearPendingRecommendationTimer();
+      }, getRecommendationDelay()));
     }
 
     animateCardAndNext('slide-left');
@@ -699,23 +602,6 @@ const previousWord = () => {
   }
 };
 
-const reviewStats = computed(() => {
-  return getTodayReviewStats(reviewStates.value);
-});
-
-const reviewQueueData = computed(() => {
-  return reviewQueue.value.map(item => {
-    const word = words.value.find(w => w.id === item.wordId);
-    const reviewState = reviewStates.value[item.wordId];
-    return {
-      word,
-      reviewState,
-      type: item.type || 'review',
-      priority: item.priority || 0
-    };
-  }).filter(item => item.word);
-});
-
 const checkAndUnlockAchievements = () => {
   const hour = new Date().getHours()
   const achievementStats = {
@@ -759,49 +645,11 @@ const onAchievementClose = () => {
   currentAchievementNotification.value = null
 }
 
-const isWordbooked = (wordId) => wordbook.value.has(wordId);
-
-const addToWordbook = (wordId) => {
-  wordbook.value.add(wordId);
-  saveWordbook(wordbook.value);
-  
-  // 同步到云端
-  if (currentVocab.value) {
-    syncService.syncWordbook(wordId, currentVocab.value.id, true).catch(err => {
-      console.warn('⚠️ 同步到单词本失败:', err);
-    });
-  }
-};
-const removeFromWordbook = (wordId) => {
-  wordbook.value.delete(wordId);
-  saveWordbook(wordbook.value);
-  
-  // 同步到云端
-  if (currentVocab.value) {
-    syncService.syncWordbook(wordId, currentVocab.value.id, false).catch(err => {
-      console.warn('⚠️ 从云端单词本删除失败:', err);
-    });
-  }
-};
-const handleBatchRemoveFromWordbook = (wordIds) => {
-  wordIds.forEach(wordId => {
-    wordbook.value.delete(wordId);
-    if (currentVocab.value) {
-      syncService.syncWordbook(wordId, currentVocab.value.id, false).catch(() => {});
-    }
-  });
-  saveWordbook(wordbook.value);
-};
-const toggleWordbook = (wordId) => {
-  if (isWordbooked(wordId)) removeFromWordbook(wordId);
-  else addToWordbook(wordId);
-};
-
 // 清理 pending 推荐状态
 const clearPendingRecommendation = () => {
   if (pendingRecommendationTimer) {
     clearTimeout(pendingRecommendationTimer);
-    pendingRecommendationTimer = null;
+    clearPendingRecommendationTimer();
   }
   cardRecommendation.value = null;
 };
@@ -904,40 +752,7 @@ const sanitizeReviewStates = (states, validWordIds) => {
   );
 };
 
-const loadReviewStates = (validWordIds = new Set()) => {
-  try {
-    const key = `vocabcontext_review_${currentVocab.value.id}`;
-    const saved = localStorage.getItem(key);
-    const parsed = saved ? JSON.parse(saved) : {};
-    reviewStates.value = sanitizeReviewStates(parsed, validWordIds);
-    localStorage.setItem(key, JSON.stringify(reviewStates.value));
-  } catch (error) {
-    reviewStates.value = {};
-  }
-};
-
-
-const saveReviewStates = () => {
-  try {
-    const key = `vocabcontext_review_${currentVocab.value.id}`;
-    localStorage.setItem(key, JSON.stringify(reviewStates.value));
-    
-    // 同步当前单词的状态到云端
-    if (currentWord.value && reviewStates.value[currentWord.value.id]) {
-      syncService.syncReviewState(
-        currentVocab.value.id, 
-        currentWord.value.id, 
-        reviewStates.value[currentWord.value.id]
-      ).catch(err => console.warn('⚠️ 同步复习状态失败:', err));
-    }
-  } catch (error) {
-    console.error('保存复习状态失败:', error);
-  }
-};
-
-const updateReviewQueue = () => {
-  reviewQueue.value = getReviewQueue(reviewStates.value, forgotten.value, 50);
-};
+// Note: loadReviewStates, saveReviewStates, updateReviewQueue are imported from useReviewSystem.js
 
 const handleVocabularySelect = async (vocab) => {
   // 切词库时清理 pending 推荐
