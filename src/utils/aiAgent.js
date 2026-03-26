@@ -142,9 +142,11 @@ export class AIAgent {
    * @returns {boolean}
    */
   isAvailable() {
-    this.reloadApiSettings();
-    const apiKey = this.apiSettings?.apiKey;
-    return !!(apiKey && apiKey.trim().length > 0);
+    // Always return true - the proxy server may have SILICONFLOW_API_KEY
+    // configured as an environment variable, so AI may work even without
+    // a user-provided key. The actual availability is determined when
+    // the request is made.
+    return true;
   }
 
   /**
