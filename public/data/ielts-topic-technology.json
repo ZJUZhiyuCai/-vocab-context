@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-23T15:48:29.231Z",
+  "generatedAt": "2026-03-26T16:12:37.669Z",
   "source": "IELTS Foundation",
   "topic": "technology",
   "name": "IELTS Topic Pack - Technology",
-  "totalBundles": 52,
+  "totalBundles": 80,
   "bundles": [
     {
       "bundleId": "technology_indicate_023",
@@ -3089,6 +3089,1714 @@
       },
       "draft": false,
       "sourceCategory": "legacy-batch7"
+    },
+    {
+      "bundleId": "technology_algorithm_batch3_01",
+      "word": "algorithm",
+      "lemma": "algorithm",
+      "ipa": "/ˈælɡərɪðəm/",
+      "partOfSpeech": "n.",
+      "sense": "computing procedure",
+      "englishDefinition": "a set of rules for solving problems in computing",
+      "chineseMeaning": "算法",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "search algorithm",
+        "machine learning algorithm",
+        "complex algorithm"
+      ],
+      "paraphrases": [
+        "procedure",
+        "formula",
+        "process"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An algorithm is a set of rules for solving problems in computing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"search algorithm\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"algorithm\" in phrases such as \"search algorithm\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"algorithm\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_bandwidth_batch3_01",
+      "word": "bandwidth",
+      "lemma": "bandwidth",
+      "ipa": "/ˈbændwɪdθ/",
+      "partOfSpeech": "n.",
+      "sense": "data capacity",
+      "englishDefinition": "the rate of data transfer in a network",
+      "chineseMeaning": "带宽",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "high bandwidth",
+        "increase bandwidth",
+        "bandwidth limit"
+      ],
+      "paraphrases": [
+        "capacity",
+        "speed",
+        "throughput"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Bandwidth is the rate of data transfer in a network.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"high bandwidth\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"bandwidth\" in phrases such as \"high bandwidth\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"bandwidth\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_cyber_batch3_01",
+      "word": "cyber",
+      "lemma": "cyber",
+      "ipa": "/ˈsaɪbə/",
+      "partOfSpeech": "adj.",
+      "sense": "computer-related",
+      "englishDefinition": "relating to computers and the internet",
+      "chineseMeaning": "网络的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "cyber security",
+        "cyber attack",
+        "cyber crime"
+      ],
+      "paraphrases": [
+        "digital",
+        "online",
+        "virtual"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In technology and innovation contexts, \"cyber\" is an adjective meaning relating to computers and the internet.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"cyber security\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"cyber\" in phrases such as \"cyber security\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"cyber\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_database_batch3_01",
+      "word": "database",
+      "lemma": "database",
+      "ipa": "/ˈdeɪtəbeɪs/",
+      "partOfSpeech": "n.",
+      "sense": "data storage",
+      "englishDefinition": "an organized collection of electronic data",
+      "chineseMeaning": "数据库",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "access database",
+        "database system",
+        "large database"
+      ],
+      "paraphrases": [
+        "data bank",
+        "information system",
+        "archive"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A database is an organized collection of electronic data.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"database system\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"database\" in phrases such as \"database system\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"database\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_device_batch3_01",
+      "word": "device",
+      "lemma": "device",
+      "ipa": "/dɪˈvaɪs/",
+      "partOfSpeech": "n.",
+      "sense": "electronic tool",
+      "englishDefinition": "an electronic tool or piece of equipment",
+      "chineseMeaning": "设备",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mobile device",
+        "electronic device",
+        "smart device"
+      ],
+      "paraphrases": [
+        "gadget",
+        "tool",
+        "appliance"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A device is an electronic tool or piece of equipment.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"mobile device\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"device\" in phrases such as \"mobile device\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"device\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_download_batch3_01",
+      "word": "download",
+      "lemma": "download",
+      "ipa": "/ˈdaʊnləʊd/",
+      "partOfSpeech": "v.",
+      "sense": "get data from internet",
+      "englishDefinition": "to transfer data from the internet to a device",
+      "chineseMeaning": "下载",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "download file",
+        "download speed",
+        "free download"
+      ],
+      "paraphrases": [
+        "transfer",
+        "save",
+        "retrieve"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To download means to transfer data from the internet to a device.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"download file\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"download\" in phrases such as \"download file\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"download\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_encryption_batch3_01",
+      "word": "encryption",
+      "lemma": "encryption",
+      "ipa": "/ɪnˈkrɪpʃn/",
+      "partOfSpeech": "n.",
+      "sense": "data protection",
+      "englishDefinition": "the process of converting data into code",
+      "chineseMeaning": "加密",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "data encryption",
+        "strong encryption",
+        "use encryption"
+      ],
+      "paraphrases": [
+        "coding",
+        "encoding",
+        "cipher"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Encryption is the process of converting data into code.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"data encryption\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"encryption\" in phrases such as \"data encryption\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"encryption\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_hardware_batch3_01",
+      "word": "hardware",
+      "lemma": "hardware",
+      "ipa": "/ˈhɑːdweə/",
+      "partOfSpeech": "n.",
+      "sense": "physical equipment",
+      "englishDefinition": "the physical parts of a computer system",
+      "chineseMeaning": "硬件",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "computer hardware",
+        "hardware components",
+        "upgrade hardware"
+      ],
+      "paraphrases": [
+        "equipment",
+        "machinery",
+        "devices"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Hardware is the physical parts of a computer system.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"computer hardware\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"hardware\" in phrases such as \"computer hardware\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"hardware\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_interface_batch3_01",
+      "word": "interface",
+      "lemma": "interface",
+      "ipa": "/ˈɪntəfeɪs/",
+      "partOfSpeech": "n.",
+      "sense": "interaction point",
+      "englishDefinition": "a point where a user interacts with a system",
+      "chineseMeaning": "界面",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "user interface",
+        "graphical interface",
+        "touch interface"
+      ],
+      "paraphrases": [
+        "UI",
+        "dashboard",
+        "control panel"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An interface is a point where a user interacts with a system.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"user interface\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"interface\" in phrases such as \"user interface\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"interface\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_internet_batch3_01",
+      "word": "internet",
+      "lemma": "internet",
+      "ipa": "/ˈɪntənet/",
+      "partOfSpeech": "n.",
+      "sense": "worldwide network",
+      "englishDefinition": "a global computer network",
+      "chineseMeaning": "互联网",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "access the internet",
+        "internet connection",
+        "internet usage"
+      ],
+      "paraphrases": [
+        "web",
+        "net",
+        "online world"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An internet is a global computer network.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"internet connection\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"internet\" in phrases such as \"internet connection\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"internet\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_platform_batch3_01",
+      "word": "platform",
+      "lemma": "platform",
+      "ipa": "/ˈplætfɔːm/",
+      "partOfSpeech": "n.",
+      "sense": "software environment",
+      "englishDefinition": "a digital environment for running applications",
+      "chineseMeaning": "平台",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "social media platform",
+        "digital platform",
+        "gaming platform"
+      ],
+      "paraphrases": [
+        "system",
+        "service",
+        "framework"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A platform is a digital environment for running applications.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"social media platform\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"platform\" in phrases such as \"social media platform\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"platform\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_processor_batch3_01",
+      "word": "processor",
+      "lemma": "processor",
+      "ipa": "/ˈprəʊsesə/",
+      "partOfSpeech": "n.",
+      "sense": "computing brain",
+      "englishDefinition": "the central processing unit of a computer",
+      "chineseMeaning": "处理器",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "fast processor",
+        "computer processor",
+        "multi-core processor"
+      ],
+      "paraphrases": [
+        "CPU",
+        "chip",
+        "microprocessor"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Processor is the central processing unit of a computer.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"fast processor\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"processor\" in phrases such as \"fast processor\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"processor\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_robotics_batch3_01",
+      "word": "robotics",
+      "lemma": "robotics",
+      "ipa": "/rəʊˈbɒtɪks/",
+      "partOfSpeech": "n.",
+      "sense": "robot technology",
+      "englishDefinition": "the branch of technology dealing with robots",
+      "chineseMeaning": "机器人技术",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "advanced robotics",
+        "industrial robotics",
+        "robotics industry"
+      ],
+      "paraphrases": [
+        "automation",
+        "mechanization",
+        "AI"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Robotics is the branch of technology dealing with robots.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"advanced robotics\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"robotics\" in phrases such as \"advanced robotics\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"robotics\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_software_batch3_01",
+      "word": "software",
+      "lemma": "software",
+      "ipa": "/ˈsɒftweə/",
+      "partOfSpeech": "n.",
+      "sense": "computer programs",
+      "englishDefinition": "programs and data for computers",
+      "chineseMeaning": "软件",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "software development",
+        "install software",
+        "software update"
+      ],
+      "paraphrases": [
+        "programs",
+        "applications",
+        "apps"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Software is programs and data for computers.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"software development\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"software\" in phrases such as \"software development\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"software\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_storage_batch3_01",
+      "word": "storage",
+      "lemma": "storage",
+      "ipa": "/ˈstɔːrɪdʒ/",
+      "partOfSpeech": "n.",
+      "sense": "data keeping",
+      "englishDefinition": "the capacity to hold digital data",
+      "chineseMeaning": "存储",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "data storage",
+        "cloud storage",
+        "storage device"
+      ],
+      "paraphrases": [
+        "memory",
+        "capacity",
+        "drive"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Storage is the capacity to hold digital data.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"data storage\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"storage\" in phrases such as \"data storage\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"storage\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_telecommunication_batch3_01",
+      "word": "telecommunication",
+      "lemma": "telecommunication",
+      "ipa": "/ˌtelikəˌmjuːnɪˈkeɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "distance communication",
+      "englishDefinition": "communication over distance using technology",
+      "chineseMeaning": "电信",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "telecommunication industry",
+        "telecommunication network",
+        "telecommunication services"
+      ],
+      "paraphrases": [
+        "telecom",
+        "communications",
+        "connectivity"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Telecommunication is communication over distance using technology.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"telecommunication industry\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"telecommunication\" in phrases such as \"telecommunication industry\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"telecommunication\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_upgrade_batch3_01",
+      "word": "upgrade",
+      "lemma": "upgrade",
+      "ipa": "/ˈʌpɡreɪd/",
+      "partOfSpeech": "v.",
+      "sense": "make better",
+      "englishDefinition": "to improve to a newer or better version",
+      "chineseMeaning": "升级",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "upgrade system",
+        "upgrade software",
+        "upgrade to"
+      ],
+      "paraphrases": [
+        "improve",
+        "update",
+        "enhance"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To upgrade means to improve to a newer or better version.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"upgrade system\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"upgrade\" in phrases such as \"upgrade system\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"upgrade\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_wireless_batch3_01",
+      "word": "wireless",
+      "lemma": "wireless",
+      "ipa": "/ˈwaɪələs/",
+      "partOfSpeech": "adj.",
+      "sense": "cordless technology",
+      "englishDefinition": "using radio waves instead of wires",
+      "chineseMeaning": "无线的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "wireless network",
+        "wireless technology",
+        "wireless connection"
+      ],
+      "paraphrases": [
+        "cordless",
+        "Wi-Fi",
+        "radio"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In technology and innovation contexts, \"wireless\" is an adjective meaning using radio waves instead of wires.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"wireless network\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"wireless\" in phrases such as \"wireless network\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"wireless\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_cloud_batch3_01",
+      "word": "cloud",
+      "lemma": "cloud",
+      "ipa": "/klaʊd/",
+      "partOfSpeech": "n.",
+      "sense": "online storage system",
+      "englishDefinition": "remote servers accessed over the internet",
+      "chineseMeaning": "云计算",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "cloud computing",
+        "cloud storage",
+        "cloud service"
+      ],
+      "paraphrases": [
+        "remote server",
+        "online storage",
+        "web hosting"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Cloud is remote servers accessed over the internet.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"cloud computing\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"cloud\" in phrases such as \"cloud computing\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"cloud\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_coding_batch3_01",
+      "word": "coding",
+      "lemma": "coding",
+      "ipa": "/ˈkəʊdɪŋ/",
+      "partOfSpeech": "n.",
+      "sense": "programming",
+      "englishDefinition": "the process of writing computer programs",
+      "chineseMeaning": "编程",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "learn coding",
+        "coding skills",
+        "coding language"
+      ],
+      "paraphrases": [
+        "programming",
+        "development",
+        "coding"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Coding is the process of writing computer programs.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"coding skills\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"coding\" in phrases such as \"coding skills\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"coding\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_drone_batch3_01",
+      "word": "drone",
+      "lemma": "drone",
+      "ipa": "/drəʊn/",
+      "partOfSpeech": "n.",
+      "sense": "unmanned flying device",
+      "englishDefinition": "an unmanned aircraft controlled remotely",
+      "chineseMeaning": "无人机",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "military drone",
+        "delivery drone",
+        "fly a drone"
+      ],
+      "paraphrases": [
+        "UAV",
+        "unmanned aircraft",
+        "quadcopter"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A drone is an unmanned aircraft controlled remotely.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"military drone\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"drone\" in phrases such as \"military drone\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"drone\" in one IELTS-style sentence about technology."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "technology_biometric_batch4_01",
+      "word": "biometric",
+      "lemma": "biometric",
+      "ipa": "/ˌbaɪəʊˈmetrɪk/",
+      "partOfSpeech": "adj.",
+      "sense": "生物识别的",
+      "englishDefinition": "using physical characteristics for identification",
+      "chineseMeaning": "生物识别的",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "biometric data",
+        "biometric security",
+        "biometric authentication"
+      ],
+      "paraphrases": [
+        "biological",
+        "identification",
+        "recognition"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In technology and innovation contexts, \"biometric\" is an adjective meaning using physical characteristics for identification.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"biometric data\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"biometric\" in phrases such as \"biometric data\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"biometric\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "technology_blockchain_batch4_01",
+      "word": "blockchain",
+      "lemma": "blockchain",
+      "ipa": "/ˈblɒktʃeɪn/",
+      "partOfSpeech": "n.",
+      "sense": "区块链",
+      "englishDefinition": "a distributed digital ledger technology",
+      "chineseMeaning": "区块链",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "blockchain technology",
+        "blockchain network",
+        "use blockchain"
+      ],
+      "paraphrases": [
+        "distributed ledger",
+        "crypto",
+        "decentralized"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A blockchain is a distributed digital ledger technology.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"blockchain technology\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"blockchain\" in phrases such as \"blockchain technology\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"blockchain\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "technology_debug_batch4_01",
+      "word": "debug",
+      "lemma": "debug",
+      "ipa": "/diːˈbʌɡ/",
+      "partOfSpeech": "v.",
+      "sense": "调试",
+      "englishDefinition": "to identify and remove errors from software",
+      "chineseMeaning": "调试",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "debug code",
+        "debug mode",
+        "help debug"
+      ],
+      "paraphrases": [
+        "fix",
+        "troubleshoot",
+        "correct"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To debug means to identify and remove errors from software.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"debug code\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"debug\" in phrases such as \"debug code\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"debug\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "technology_e-commerce_batch4_01",
+      "word": "e-commerce",
+      "lemma": "e-commerce",
+      "ipa": "/ˈiːkɒmɜːs/",
+      "partOfSpeech": "n.",
+      "sense": "电子商务",
+      "englishDefinition": "buying and selling goods over the internet",
+      "chineseMeaning": "电子商务",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "e-commerce platform",
+        "e-commerce business",
+        "online e-commerce"
+      ],
+      "paraphrases": [
+        "online shopping",
+        "digital commerce",
+        "internet retail"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "E-commerce is buying and selling goods over the internet.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"e-commerce platform\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"e-commerce\" in phrases such as \"e-commerce platform\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"e-commerce\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "technology_gadget_batch4_01",
+      "word": "gadget",
+      "lemma": "gadget",
+      "ipa": "/ˈɡædʒɪt/",
+      "partOfSpeech": "n.",
+      "sense": "小工具",
+      "englishDefinition": "a small technological device or tool",
+      "chineseMeaning": "小工具",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "electronic gadget",
+        "new gadget",
+        "smart gadget"
+      ],
+      "paraphrases": [
+        "device",
+        "tool",
+        "appliance"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A gadget is a small technological device or tool.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"electronic gadget\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"gadget\" in phrases such as \"electronic gadget\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"gadget\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "technology_nanotechnology_batch4_01",
+      "word": "nanotechnology",
+      "lemma": "nanotechnology",
+      "ipa": "/ˌnænəʊtekˈnɒlədʒi/",
+      "partOfSpeech": "n.",
+      "sense": "纳米技术",
+      "englishDefinition": "technology on an atomic or molecular scale",
+      "chineseMeaning": "纳米技术",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "use nanotechnology",
+        "nanotechnology research",
+        "nanotechnology industry"
+      ],
+      "paraphrases": [
+        "nanotech",
+        "molecular engineering",
+        "atomic tech"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Nanotechnology is technology on an atomic or molecular scale.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"nanotechnology research\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"nanotechnology\" in phrases such as \"nanotechnology research\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"nanotechnology\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "technology_wearable_batch4_01",
+      "word": "wearable",
+      "lemma": "wearable",
+      "ipa": "/ˈweərəbl/",
+      "partOfSpeech": "n.",
+      "sense": "可穿戴设备",
+      "englishDefinition": "an electronic device worn on the body",
+      "chineseMeaning": "可穿戴设备",
+      "topic": "technology",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "wearable device",
+        "wearable technology",
+        "smart wearable"
+      ],
+      "paraphrases": [
+        "smartwatch",
+        "fitness tracker",
+        "portable device"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A wearable is an electronic device worn on the body.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about technology and innovation, phrases such as \"wearable device\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"wearable\" in phrases such as \"wearable device\" when discussing technology and innovation.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"wearable\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
     }
   ]
 }

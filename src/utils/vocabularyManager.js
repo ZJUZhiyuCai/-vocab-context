@@ -2,46 +2,51 @@
  * 词库管理器
  */
 
-// 词库配置 - 按累计词汇量分段（方案C）
+// 词库配置 - IELTS-focused vocabulary system
+// 难度标签基于 IELTS Band 分数段，CEFR 作为辅助参考
 export const VOCABULARIES = [
+  // === Legacy CET Track (retained for backward compatibility) ===
   {
     id: 'vocab-cet4-basic',
-    name: '四级基础',
-    description: '大学英语四级核心词汇（累计4,500词）',
+    name: '基础词汇',
+    description: '基础英语核心词汇（累计4,500词）',
     size: 4500,
-    level: 'cet4',
-    category: 'CET',
+    level: 'basic',
+    category: 'Foundation',
     file: '/data/vocab-cet4-basic.json',
     icon: '📖',
     color: '#8da892',
     difficulty: {
+      ieltsBand: '4.0-5.0',
       cefr: ['A1', 'A2'],
       vocabRange: '0-4500',
       stars: 1,
-      label: '四级'
+      label: 'IELTS 4.0-5.0'
     }
   },
   {
     id: 'vocab-cet6-advanced',
-    name: '六级进阶',
-    description: '大学英语六级新增词汇（累计6,000词）',
+    name: '进阶词汇',
+    description: '中级英语扩展词汇（累计6,000词）',
     size: 1500,
-    level: 'cet6',
-    category: 'CET',
+    level: 'intermediate',
+    category: 'Foundation',
     file: '/data/vocab-cet6-advanced.json',
     icon: '📚',
     color: '#5c6b5c',
     difficulty: {
+      ieltsBand: '5.0-6.0',
       cefr: ['B1'],
       vocabRange: '4500-6000',
       stars: 2,
-      label: '六级'
+      label: 'IELTS 5.0-6.0'
     }
   },
+  // === IELTS Core Track ===
   {
     id: 'vocab-ielts6-breakthrough',
-    name: '雅思6.0突破',
-    description: '雅思6.0水平B2词汇',
+    name: 'IELTS 6.0 突破',
+    description: '雅思6.0目标词汇（B2水平）',
     size: 500,
     level: 'ielts6',
     category: 'IELTS',
@@ -50,16 +55,17 @@ export const VOCABULARIES = [
     color: '#52667c',
     ieltsTrackType: 'legacy',
     difficulty: {
+      ieltsBand: '6.0',
       cefr: ['B2'],
       vocabRange: '6000-6500',
       stars: 3,
-      label: '雅思6.0'
+      label: 'IELTS 6.0'
     }
   },
   {
     id: 'vocab-ielts7-sprint',
-    name: '雅思7.0冲刺',
-    description: '雅思7.0水平B2+/C1词汇',
+    name: 'IELTS 7.0 冲刺',
+    description: '雅思7.0目标词汇（B2+/C1水平）',
     size: 1500,
     level: 'ielts7',
     category: 'IELTS',
@@ -68,16 +74,17 @@ export const VOCABULARIES = [
     color: '#7c6f62',
     ieltsTrackType: 'legacy',
     difficulty: {
+      ieltsBand: '7.0',
       cefr: ['B2', 'C1'],
       vocabRange: '6500-8000',
       stars: 4,
-      label: '雅思7.0'
+      label: 'IELTS 7.0'
     }
   },
   {
     id: 'vocab-ielts8-mastery',
-    name: '雅思8.0通关',
-    description: '雅思8.0+水平C1/C2精通词汇',
+    name: 'IELTS 8.0 通关',
+    description: '雅思8.0+精通词汇（C1/C2水平）',
     size: 4044,
     level: 'ielts8',
     category: 'IELTS',
@@ -86,17 +93,19 @@ export const VOCABULARIES = [
     color: '#6b5c7c',
     ieltsTrackType: 'legacy',
     difficulty: {
+      ieltsBand: '8.0+',
       cefr: ['C1', 'C2'],
       vocabRange: '8000-12044',
       stars: 5,
-      label: '雅思8.0+'
+      label: 'IELTS 8.0+'
     }
   },
+  // === IELTS Foundation (Context-first) ===
   {
     id: 'ielts-foundation',
     name: 'IELTS Foundation',
-    description: '雅思基础核心层 · Context Bundle',
-    size: 541,
+    description: '雅思核心词汇 · 语境优先学习',
+    size: 743,
     level: 'ielts-foundation',
     category: 'IELTS',
     file: '/data/ielts-foundation.json',
@@ -105,12 +114,14 @@ export const VOCABULARIES = [
     isBundle: true,
     ieltsTrackType: 'foundation',
     difficulty: {
+      ieltsBand: '6.0-7.0',
       cefr: ['B2', 'C1'],
       vocabRange: '6000-8000',
       stars: 3,
-      label: 'IELTS Foundation'
+      label: 'IELTS Core'
     }
   },
+  // === IELTS Topic Packs ===
   {
     id: 'ielts-topic-education',
     name: 'IELTS Topic · Education',
@@ -125,6 +136,7 @@ export const VOCABULARIES = [
     ieltsTrackType: 'topic',
     topic: 'education',
     difficulty: {
+      ieltsBand: '6.0-7.0',
       cefr: ['B2', 'C1'],
       vocabRange: '6000-8000',
       stars: 3,
@@ -145,6 +157,7 @@ export const VOCABULARIES = [
     ieltsTrackType: 'topic',
     topic: 'government',
     difficulty: {
+      ieltsBand: '6.5-7.5',
       cefr: ['B2', 'C1'],
       vocabRange: '6500-8500',
       stars: 4,
@@ -155,7 +168,7 @@ export const VOCABULARIES = [
     id: 'ielts-topic-environment',
     name: 'IELTS Topic · Environment',
     description: '环境与可持续发展主题高频语境词汇',
-    size: 71,
+    size: 79,
     level: 'ielts-topic',
     category: 'IELTS',
     file: '/data/ielts-topic-environment.json',
@@ -165,6 +178,7 @@ export const VOCABULARIES = [
     ieltsTrackType: 'topic',
     topic: 'environment',
     difficulty: {
+      ieltsBand: '6.5-7.5',
       cefr: ['B2', 'C1'],
       vocabRange: '6500-8500',
       stars: 4,
@@ -175,7 +189,7 @@ export const VOCABULARIES = [
     id: 'ielts-topic-technology',
     name: 'IELTS Topic · Technology',
     description: '科技与数字生活主题高频语境词汇',
-    size: 52,
+    size: 80,
     level: 'ielts-topic',
     category: 'IELTS',
     file: '/data/ielts-topic-technology.json',
@@ -185,6 +199,7 @@ export const VOCABULARIES = [
     ieltsTrackType: 'topic',
     topic: 'technology',
     difficulty: {
+      ieltsBand: '6.5-7.5',
       cefr: ['B2', 'C1'],
       vocabRange: '6500-8500',
       stars: 4,
@@ -195,7 +210,7 @@ export const VOCABULARIES = [
     id: 'ielts-topic-health',
     name: 'IELTS Topic · Health',
     description: '健康与公共卫生主题高频语境词汇',
-    size: 53,
+    size: 80,
     level: 'ielts-topic',
     category: 'IELTS',
     file: '/data/ielts-topic-health.json',
@@ -205,6 +220,7 @@ export const VOCABULARIES = [
     ieltsTrackType: 'topic',
     topic: 'health',
     difficulty: {
+      ieltsBand: '6.5-7.5',
       cefr: ['B2', 'C1'],
       vocabRange: '6500-8500',
       stars: 4,
@@ -215,7 +231,7 @@ export const VOCABULARIES = [
     id: 'ielts-topic-work',
     name: 'IELTS Topic · Work',
     description: '工作、效率与就业主题高频语境词汇',
-    size: 32,
+    size: 76,
     level: 'ielts-topic',
     category: 'IELTS',
     file: '/data/ielts-topic-work.json',
@@ -225,8 +241,9 @@ export const VOCABULARIES = [
     ieltsTrackType: 'topic',
     topic: 'work',
     difficulty: {
+      ieltsBand: '6.0-7.0',
       cefr: ['B2', 'C1'],
-      vocabRange: '6500-8500',
+      vocabRange: '6000-8000',
       stars: 3,
       label: 'Work'
     }
@@ -235,7 +252,7 @@ export const VOCABULARIES = [
     id: 'ielts-topic-media',
     name: 'IELTS Topic · Media',
     description: '媒体与信息传播主题高频语境词汇',
-    size: 32,
+    size: 77,
     level: 'ielts-topic',
     category: 'IELTS',
     file: '/data/ielts-topic-media.json',
@@ -245,6 +262,7 @@ export const VOCABULARIES = [
     ieltsTrackType: 'topic',
     topic: 'media',
     difficulty: {
+      ieltsBand: '6.0-7.0',
       cefr: ['B2', 'C1'],
       vocabRange: '6500-8500',
       stars: 3,
@@ -255,7 +273,7 @@ export const VOCABULARIES = [
     id: 'ielts-topic-crime',
     name: 'IELTS Topic · Crime',
     description: '犯罪与司法主题高频语境词汇',
-    size: 26,
+    size: 76,
     level: 'ielts-topic',
     category: 'IELTS',
     file: '/data/ielts-topic-crime.json',
@@ -265,6 +283,7 @@ export const VOCABULARIES = [
     ieltsTrackType: 'topic',
     topic: 'crime',
     difficulty: {
+      ieltsBand: '6.5-7.5',
       cefr: ['B2', 'C1'],
       vocabRange: '6500-8500',
       stars: 3,
@@ -447,7 +466,47 @@ export function saveVocabularyProgress(vocabId, progress) {
 }
 
 /**
- * 根据词汇测试结果推荐词库（精准匹配版）
+ * Parse IELTS Band string to numeric range
+ * Handles formats: '6.0-7.0', '8.0+', '基础-4.0', '4.0-5.0'
+ * @param {string} ieltsBand - e.g., '6.0-7.0', '8.0+', '基础-4.0'
+ * @returns {Object} { min, max }
+ */
+function parseIeltsBand(ieltsBand) {
+  if (!ieltsBand) return { min: 0, max: 9 }
+
+  // Extract all numeric values from the string
+  const numbers = ieltsBand.match(/\d+\.?\d*/g)?.map(parseFloat) || []
+
+  if (numbers.length === 0) return { min: 0, max: 9 }
+
+  if (ieltsBand.includes('+')) {
+    return { min: numbers[0], max: 9 }
+  }
+
+  if (numbers.length >= 2) {
+    return { min: numbers[0], max: numbers[numbers.length - 1] }
+  }
+
+  // Single number
+  return { min: numbers[0] - 0.5, max: numbers[0] + 0.5 }
+}
+
+/**
+ * Extract numeric IELTS band from test result format
+ * Handles: '基础-4.0', '4.0-5.0', '6.0-6.5', '7.5-8.5+'
+ * @param {string} ieltsLevel
+ * @returns {number|null} - The primary IELTS band value
+ */
+function extractIeltsBandNumber(ieltsLevel) {
+  if (!ieltsLevel) return null
+
+  // Extract the first valid number from the string
+  const match = ieltsLevel.match(/\d+\.?\d*/)
+  return match ? parseFloat(match[0]) : null
+}
+
+/**
+ * 根据词汇测试结果推荐词库（IELTS-focused）
  * @param {Object} testResult - 测试结果 { estimatedVocab, cefrLevel, ieltsLevel }
  * @returns {Array} 推荐的词库列表（按推荐度排序）
  */
@@ -457,95 +516,76 @@ export function getRecommendedVocabularies(testResult) {
     return VOCABULARIES.filter(v => v.difficulty.stars === 3).map(v => ({ ...v, isRecommended: true }));
   }
 
-  const { cefrLevel, estimatedVocab } = testResult;
+  const { cefrLevel, estimatedVocab, ieltsLevel } = testResult;
 
-  // 精准匹配策略：优先选择完全匹配CEFR等级的词库
+  // IELTS Band to CEFR mapping for better recommendations
+  const ieltsToCefr = {
+    '4.0': 'A2', '4.5': 'A2', '5.0': 'B1', '5.5': 'B1',
+    '6.0': 'B2', '6.5': 'B2', '7.0': 'C1', '7.5': 'C1',
+    '8.0': 'C2', '8.5': 'C2', '9.0': 'C2'
+  }
+
+  // Extract numeric IELTS band from test result (handles '基础-4.0', '4.0-5.0' etc.)
+  const userBand = extractIeltsBandNumber(ieltsLevel)
+
+  // Derive CEFR from IELTS if not provided
+  const effectiveCefrLevel = cefrLevel || (userBand !== null ? ieltsToCefr[userBand.toString()] : 'B2')
+
   const scoredVocabs = VOCABULARIES.map(vocab => {
     let score = 0;
     const diff = vocab.difficulty;
 
-    // 1. 精确CEFR等级匹配（权重：60%）
-    if (diff.cefr.includes(cefrLevel)) {
-      score += 60;  // 完全匹配，高分
-    } else {
-      // 检查相邻等级
-      const cefrOrder = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
-      const userLevelIndex = cefrOrder.indexOf(cefrLevel);
-      const minDiff = Math.min(
-        ...diff.cefr.map(level => Math.abs(cefrOrder.indexOf(level) - userLevelIndex))
-      );
-      if (minDiff === 1) score += 35;  // 相邻等级，仍然比较适合
-      if (minDiff === 2) score += 15;  // 隔一个等级，勉强可以
+    // 1. IELTS Band matching (highest priority for IELTS-focused users)
+    if (userBand !== null && diff.ieltsBand) {
+      const { min, max } = parseIeltsBand(diff.ieltsBand)
+
+      if (userBand >= min && userBand <= max) {
+        score += 70  // Perfect match
+      } else if (userBand >= min - 0.5 && userBand <= max + 0.5) {
+        score += 50  // Adjacent band
+      } else if (userBand >= min - 1 && userBand <= max + 1) {
+        score += 30  // Within one band
+      }
     }
 
-    // 2. 词汇量范围匹配（权重：25%）
+    // 2. CEFR level matching (weight: 20%)
+    if (diff.cefr.includes(effectiveCefrLevel)) {
+      score += 20;
+    } else {
+      const cefrOrder = ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'];
+      const userLevelIndex = cefrOrder.indexOf(effectiveCefrLevel);
+      if (userLevelIndex >= 0) {
+        const minDiff = Math.min(
+          ...diff.cefr.map(level => Math.abs(cefrOrder.indexOf(level) - userLevelIndex))
+        );
+        if (minDiff === 1) score += 12;
+        if (minDiff === 2) score += 5;
+      }
+    }
+
+    // 3. Vocabulary range matching (weight: 10%)
     if (estimatedVocab) {
       const [min, max] = estimatedVocab.split('-').map(Number);
       const userVocab = (min + max) / 2;
 
-      // 解析词库的词汇量范围
       const vocabMin = diff.vocabRange.includes('-')
         ? parseInt(diff.vocabRange.split('-')[0])
         : parseInt(diff.vocabRange);
       const vocabMax = diff.vocabRange.includes('-')
         ? parseInt(diff.vocabRange.split('-')[1])
         : parseInt(diff.vocabRange);
-      const vocabAvg = (vocabMin + vocabMax) / 2;
 
-      // 计算词汇量重合度
-      const userMax = max;
-      const userMin = min;
-
-      // 检查范围是否有重合
-      const hasOverlap = !(userMax < vocabMin || userMin > vocabMax);
+      const hasOverlap = !(max < vocabMin || min > vocabMax);
 
       if (hasOverlap) {
-        // 计算重合比例
-        const overlapMin = Math.max(userMin, vocabMin);
-        const overlapMax = Math.min(userMax, vocabMax);
-        const overlapRange = overlapMax - overlapMin;
-        const userRange = userMax - userMin;
-        const overlapPercent = overlapRange / userRange;
-
-        if (overlapPercent > 0.5) score += 25;
-        else if (overlapPercent > 0.3) score += 20;
-        else if (overlapPercent > 0.1) score += 10;
-        else score += 5;
+        score += 10;
       } else {
-        // 没有重合，计算距离
         const distance = Math.min(
           Math.abs(userVocab - vocabMin),
           Math.abs(userVocab - vocabMax)
         );
-        const distanceThreshold = 1000;
-        if (distance < distanceThreshold) score += 10;
-        else score -= 10;  // 差距太大，扣分
+        if (distance < 1000) score += 5;
       }
-    }
-
-    // 3. 理想难度星级匹配（权重：15%）
-    // 对于不同水平，推荐策略不同：
-    // - A1-A2: 推荐同级或高一级
-    // - B1-B2: 推荐同级或高一级
-    // - C1-C2: 推荐同级或低一级（避免太难）
-    const idealStarsMap = {
-      'A1': [1, 2],
-      'A2': [1, 2, 3],
-      'B1': [3, 4],
-      'B2': [4, 5],
-      'C1': [5, 6],
-      'C2': [5, 6]
-    };
-
-    const idealStars = idealStarsMap[cefrLevel] || [3];
-
-    if (idealStars.includes(diff.stars)) {
-      score += 15;
-    } else {
-      const starDiff = Math.min(...idealStars.map(s => Math.abs(diff.stars - s)));
-      if (starDiff === 1) score += 10;
-      else if (starDiff === 2) score += 5;
-      else score -= 5;  // 差距太大，扣分
     }
 
     return { ...vocab, recommendScore: score };

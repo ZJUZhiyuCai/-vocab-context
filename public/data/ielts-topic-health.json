@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-23T15:48:29.232Z",
+  "generatedAt": "2026-03-26T16:12:37.670Z",
   "source": "IELTS Foundation",
   "topic": "health",
   "name": "IELTS Topic Pack - Health",
-  "totalBundles": 53,
+  "totalBundles": 80,
   "bundles": [
     {
       "bundleId": "health_exclude_003",
@@ -1799,19 +1799,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that obesity can have significant impacts on public health outcomes.",
+          "text": "Obesity is the condition of being extremely overweight, which can lead to health problems.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address obesity as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"obesity epidemic\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, obesity can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"obesity\" in phrases such as \"obesity epidemic\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1860,19 +1860,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that chronic can have significant impacts on public health outcomes.",
+          "text": "In health and healthcare contexts, \"chronic\" is an adjective meaning lasting for a long time or recurring frequently, especially of a disease.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address chronic as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"chronic disease\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, chronic can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"chronic\" in phrases such as \"chronic disease\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1921,19 +1921,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that acute can have significant impacts on public health outcomes.",
+          "text": "In health and healthcare contexts, \"acute\" is an adjective meaning having a sudden onset and severe symptoms; intense or sharp.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address acute as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"acute illness\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, acute can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"acute\" in phrases such as \"acute illness\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1982,19 +1982,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that diagnosis can have significant impacts on public health outcomes.",
+          "text": "Diagnosis is the identification of the nature of an illness by examination of symptoms.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address diagnosis as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"early diagnosis\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, diagnosis can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"diagnosis\" in phrases such as \"early diagnosis\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -2043,19 +2043,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that symptom can have significant impacts on public health outcomes.",
+          "text": "A symptom is a physical or mental feature indicating a condition or disease.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address symptom as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"common symptom\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, symptom can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"symptom\" in phrases such as \"common symptom\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -2104,19 +2104,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that pharmaceutical can have significant impacts on public health outcomes.",
+          "text": "In health and healthcare contexts, \"pharmaceutical\" is an adjective meaning relating to the preparation, use, or sale of medicinal drugs.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address pharmaceutical as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"pharmaceutical industry\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, pharmaceutical can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"pharmaceutical\" in phrases such as \"pharmaceutical industry\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -2165,19 +2165,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that sedentary can have significant impacts on public health outcomes.",
+          "text": "In health and healthcare contexts, \"sedentary\" is an adjective meaning involving little physical activity; sitting for long periods.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address sedentary as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"sedentary lifestyle\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, sedentary can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"sedentary\" in phrases such as \"sedentary lifestyle\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -2226,19 +2226,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that therapeutic can have significant impacts on public health outcomes.",
+          "text": "In health and healthcare contexts, \"therapeutic\" is an adjective meaning relating to the healing of disease or treatment of conditions.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address therapeutic as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"therapeutic effect\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, therapeutic can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"therapeutic\" in phrases such as \"therapeutic effect\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -2287,19 +2287,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that outbreak can have significant impacts on public health outcomes.",
+          "text": "An outbreak is a sudden occurrence of a disease in a community.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address outbreak as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"disease outbreak\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, outbreak can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"outbreak\" in phrases such as \"disease outbreak\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -2348,19 +2348,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that healthcare can have significant impacts on public health outcomes.",
+          "text": "Healthcare is the organized provision of medical services to the public.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address healthcare as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"healthcare system\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, healthcare can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"healthcare\" in phrases such as \"healthcare system\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -2409,19 +2409,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that mental can have significant impacts on public health outcomes.",
+          "text": "In health and healthcare contexts, \"mental\" is an adjective meaning relating to the mind or cognitive processes.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address mental as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"mental health\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, mental can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"mental\" in phrases such as \"mental health\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -2470,19 +2470,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Studies have shown that dietary can have significant impacts on public health outcomes.",
+          "text": "In health and healthcare contexts, \"dietary\" is an adjective meaning relating to the food and drink a person consumes.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Health authorities should address dietary as part of their public health strategy.",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"dietary habits\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In IELTS speaking, dietary can be used when discussing health-related topics.",
+          "text": "In IELTS speaking, you can use \"dietary\" in phrases such as \"dietary habits\" when discussing health and healthcare.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -3170,6 +3170,1653 @@
       },
       "draft": false,
       "sourceCategory": "legacy-batch8"
+    },
+    {
+      "bundleId": "health_addiction_batch3_01",
+      "word": "addiction",
+      "lemma": "addiction",
+      "ipa": "/əˈdɪkʃn/",
+      "partOfSpeech": "n.",
+      "sense": "dependency on drugs or behavior",
+      "englishDefinition": "physical or mental dependence on a substance",
+      "chineseMeaning": "成瘾",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "drug addiction",
+        "overcome addiction",
+        "treat addiction"
+      ],
+      "paraphrases": [
+        "dependence",
+        "habit",
+        "compulsion"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Addiction is physical or mental dependence on a substance.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"drug addiction\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"addiction\" in phrases such as \"drug addiction\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"addiction\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_antibiotic_batch3_01",
+      "word": "antibiotic",
+      "lemma": "antibiotic",
+      "ipa": "/ˌæntɪbaɪˈɒtɪk/",
+      "partOfSpeech": "n.",
+      "sense": "bacteria-fighting drug",
+      "englishDefinition": "a medicine that destroys bacteria",
+      "chineseMeaning": "抗生素",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "take antibiotics",
+        "antibiotic resistance",
+        "prescribe antibiotics"
+      ],
+      "paraphrases": [
+        "antimicrobial",
+        "antibacterial",
+        "medicine"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An antibiotic is a medicine that destroys bacteria.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"antibiotic resistance\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"antibiotic\" in phrases such as \"antibiotic resistance\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"antibiotic\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_bacteria_batch3_01",
+      "word": "bacteria",
+      "lemma": "bacteria",
+      "ipa": "/bækˈtɪəriə/",
+      "partOfSpeech": "n.",
+      "sense": "microorganisms",
+      "englishDefinition": "microscopic single-celled organisms",
+      "chineseMeaning": "细菌",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "kill bacteria",
+        "harmful bacteria",
+        "bacterial infection"
+      ],
+      "paraphrases": [
+        "germs",
+        "microbes",
+        "pathogens"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Bacteria is microscopic single-celled organisms.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"harmful bacteria\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"bacteria\" in phrases such as \"harmful bacteria\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"bacteria\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_cardiovascular_batch3_01",
+      "word": "cardiovascular",
+      "lemma": "cardiovascular",
+      "ipa": "/ˌkɑːdiəʊˈvæskjələ/",
+      "partOfSpeech": "adj.",
+      "sense": "heart-related",
+      "englishDefinition": "relating to the heart and blood vessels",
+      "chineseMeaning": "心血管的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "cardiovascular disease",
+        "cardiovascular health",
+        "cardiovascular system"
+      ],
+      "paraphrases": [
+        "heart",
+        "cardiac",
+        "circulatory"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In health and healthcare contexts, \"cardiovascular\" is an adjective meaning relating to the heart and blood vessels.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"cardiovascular disease\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"cardiovascular\" in phrases such as \"cardiovascular disease\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"cardiovascular\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_clinic_batch3_01",
+      "word": "clinic",
+      "lemma": "clinic",
+      "ipa": "/ˈklɪnɪk/",
+      "partOfSpeech": "n.",
+      "sense": "medical center",
+      "englishDefinition": "a medical facility for outpatient treatment",
+      "chineseMeaning": "诊所",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "health clinic",
+        "visit a clinic",
+        "clinic staff"
+      ],
+      "paraphrases": [
+        "medical center",
+        "practice",
+        "health center"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A clinic is a medical facility for outpatient treatment.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"health clinic\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"clinic\" in phrases such as \"health clinic\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"clinic\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_contagious_batch3_01",
+      "word": "contagious",
+      "lemma": "contagious",
+      "ipa": "/kənˈteɪdʒəs/",
+      "partOfSpeech": "adj.",
+      "sense": "infectious",
+      "englishDefinition": "spread from one person to another",
+      "chineseMeaning": "传染性的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "highly contagious",
+        "contagious disease",
+        "contagious virus"
+      ],
+      "paraphrases": [
+        "infectious",
+        "catching",
+        "transmissible"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In health and healthcare contexts, \"contagious\" is an adjective meaning spread from one person to another.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"highly contagious\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"contagious\" in phrases such as \"highly contagious\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"contagious\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_deficiency_batch3_01",
+      "word": "deficiency",
+      "lemma": "deficiency",
+      "ipa": "/dɪˈfɪʃənsi/",
+      "partOfSpeech": "n.",
+      "sense": "nutritional lack",
+      "englishDefinition": "a lack or shortage of something needed",
+      "chineseMeaning": "缺乏",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "vitamin deficiency",
+        "nutrient deficiency",
+        "iron deficiency"
+      ],
+      "paraphrases": [
+        "shortage",
+        "lack",
+        "insufficiency"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A deficiency is a lack or shortage of something needed.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"vitamin deficiency\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"deficiency\" in phrases such as \"vitamin deficiency\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"deficiency\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_diabetes_batch3_01",
+      "word": "diabetes",
+      "lemma": "diabetes",
+      "ipa": "/ˌdaɪəˈbiːtiːz/",
+      "partOfSpeech": "n.",
+      "sense": "metabolic disorder",
+      "englishDefinition": "a disease affecting blood sugar regulation",
+      "chineseMeaning": "糖尿病",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "type 2 diabetes",
+        "manage diabetes",
+        "diabetes patient"
+      ],
+      "paraphrases": [
+        "blood sugar disease",
+        "metabolic condition",
+        "chronic illness"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A diabetes is a disease affecting blood sugar regulation.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"type 2 diabetes\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"diabetes\" in phrases such as \"type 2 diabetes\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"diabetes\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_disorder_batch3_01",
+      "word": "disorder",
+      "lemma": "disorder",
+      "ipa": "/dɪsˈɔːdə/",
+      "partOfSpeech": "n.",
+      "sense": "medical condition",
+      "englishDefinition": "an illness or condition affecting normal function",
+      "chineseMeaning": "疾病；失调",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mental disorder",
+        "eating disorder",
+        "sleep disorder"
+      ],
+      "paraphrases": [
+        "condition",
+        "illness",
+        "disease"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A disorder is an illness or condition affecting normal function.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"mental disorder\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"disorder\" in phrases such as \"mental disorder\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"disorder\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_exercise_batch3_01",
+      "word": "exercise",
+      "lemma": "exercise",
+      "ipa": "/ˈeksəsaɪz/",
+      "partOfSpeech": "n.",
+      "sense": "physical workout",
+      "englishDefinition": "physical activity for health",
+      "chineseMeaning": "运动",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "regular exercise",
+        "do exercise",
+        "exercise routine"
+      ],
+      "paraphrases": [
+        "workout",
+        "training",
+        "physical activity"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Exercise is physical activity for health.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"regular exercise\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"exercise\" in phrases such as \"regular exercise\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"exercise\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_fatigue_batch3_01",
+      "word": "fatigue",
+      "lemma": "fatigue",
+      "ipa": "/fəˈtiːɡ/",
+      "partOfSpeech": "n.",
+      "sense": "extreme tiredness",
+      "englishDefinition": "extreme tiredness from mental or physical exertion",
+      "chineseMeaning": "疲劳",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "chronic fatigue",
+        "suffer from fatigue",
+        "combat fatigue"
+      ],
+      "paraphrases": [
+        "tiredness",
+        "exhaustion",
+        "weariness"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Fatigue is extreme tiredness from mental or physical exertion.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"chronic fatigue\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"fatigue\" in phrases such as \"chronic fatigue\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"fatigue\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_fitness_batch3_01",
+      "word": "fitness",
+      "lemma": "fitness",
+      "ipa": "/ˈfɪtnəs/",
+      "partOfSpeech": "n.",
+      "sense": "physical health",
+      "englishDefinition": "the condition of being physically fit",
+      "chineseMeaning": "健康；健身",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "physical fitness",
+        "fitness level",
+        "fitness program"
+      ],
+      "paraphrases": [
+        "health",
+        "condition",
+        "wellness"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Fitness is the condition of being physically fit.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"physical fitness\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"fitness\" in phrases such as \"physical fitness\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"fitness\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_immune_batch3_01",
+      "word": "immune",
+      "lemma": "immune",
+      "ipa": "/ɪˈmjuːn/",
+      "partOfSpeech": "adj.",
+      "sense": "protected from disease",
+      "englishDefinition": "resistant to a particular infection",
+      "chineseMeaning": "免疫的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "immune system",
+        "immune response",
+        "immune to"
+      ],
+      "paraphrases": [
+        "protected",
+        "resistant",
+        "defended"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In health and healthcare contexts, \"immune\" is an adjective meaning resistant to a particular infection.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"immune system\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"immune\" in phrases such as \"immune system\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"immune\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_infection_batch3_01",
+      "word": "infection",
+      "lemma": "infection",
+      "ipa": "/ɪnˈfekʃn/",
+      "partOfSpeech": "n.",
+      "sense": "disease contamination",
+      "englishDefinition": "the process of being infected with a disease",
+      "chineseMeaning": "感染",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "bacterial infection",
+        "prevent infection",
+        "viral infection"
+      ],
+      "paraphrases": [
+        "contamination",
+        "disease",
+        "illness"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Infection is the process of being infected with a disease.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"bacterial infection\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"infection\" in phrases such as \"bacterial infection\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"infection\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_injury_batch3_01",
+      "word": "injury",
+      "lemma": "injury",
+      "ipa": "/ˈɪndʒəri/",
+      "partOfSpeech": "n.",
+      "sense": "physical damage",
+      "englishDefinition": "physical harm or damage to the body",
+      "chineseMeaning": "伤害",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "serious injury",
+        "prevent injury",
+        "sports injury"
+      ],
+      "paraphrases": [
+        "wound",
+        "damage",
+        "harm"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Injury is physical harm or damage to the body.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"serious injury\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"injury\" in phrases such as \"serious injury\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"injury\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_intake_batch3_01",
+      "word": "intake",
+      "lemma": "intake",
+      "ipa": "/ˈɪnteɪk/",
+      "partOfSpeech": "n.",
+      "sense": "consumption amount",
+      "englishDefinition": "the amount of food or drink consumed",
+      "chineseMeaning": "摄入量",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "daily intake",
+        "calorie intake",
+        "reduce intake"
+      ],
+      "paraphrases": [
+        "consumption",
+        "ingestion",
+        "diet"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Intake is the amount of food or drink consumed.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"daily intake\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"intake\" in phrases such as \"daily intake\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"intake\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_malnutrition_batch3_01",
+      "word": "malnutrition",
+      "lemma": "malnutrition",
+      "ipa": "/ˌmælnjuːˈtrɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "nutritional deficiency",
+      "englishDefinition": "lack of proper nutrition caused by poor diet",
+      "chineseMeaning": "营养不良",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "suffer from malnutrition",
+        "severe malnutrition",
+        "childhood malnutrition"
+      ],
+      "paraphrases": [
+        "undernourishment",
+        "poor nutrition",
+        "starvation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Malnutrition is lack of proper nutrition caused by poor diet.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"severe malnutrition\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"malnutrition\" in phrases such as \"severe malnutrition\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"malnutrition\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_nutrition_batch3_01",
+      "word": "nutrition",
+      "lemma": "nutrition",
+      "ipa": "/njuːˈtrɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "food for health",
+      "englishDefinition": "the process of obtaining food for health",
+      "chineseMeaning": "营养",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "good nutrition",
+        "nutrition education",
+        "proper nutrition"
+      ],
+      "paraphrases": [
+        "nourishment",
+        "diet",
+        "sustenance"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Nutrition is the process of obtaining food for health.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"good nutrition\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"nutrition\" in phrases such as \"good nutrition\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"nutrition\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_overweight_batch3_01",
+      "word": "overweight",
+      "lemma": "overweight",
+      "ipa": "/ˌəʊvəˈweɪt/",
+      "partOfSpeech": "adj.",
+      "sense": "above healthy weight",
+      "englishDefinition": "weighing more than is healthy",
+      "chineseMeaning": "超重的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "overweight adults",
+        "become overweight",
+        "overweight population"
+      ],
+      "paraphrases": [
+        "heavy",
+        "obese",
+        "plump"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In health and healthcare contexts, \"overweight\" is an adjective meaning weighing more than is healthy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"overweight adults\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"overweight\" in phrases such as \"overweight adults\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"overweight\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_patient_batch3_01",
+      "word": "patient",
+      "lemma": "patient",
+      "ipa": "/ˈpeɪʃənt/",
+      "partOfSpeech": "n.",
+      "sense": "medical recipient",
+      "englishDefinition": "a person receiving medical treatment",
+      "chineseMeaning": "病人",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "hospital patient",
+        "treat patients",
+        "patient care"
+      ],
+      "paraphrases": [
+        "sick person",
+        "sufferer",
+        "case"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A patient is a person receiving medical treatment.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"hospital patient\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"patient\" in phrases such as \"hospital patient\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"patient\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_prescription_batch3_01",
+      "word": "prescription",
+      "lemma": "prescription",
+      "ipa": "/prɪˈskrɪpʃn/",
+      "partOfSpeech": "n.",
+      "sense": "medical order",
+      "englishDefinition": "an instruction written by a doctor for medicine",
+      "chineseMeaning": "处方",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "prescription drug",
+        "write a prescription",
+        "on prescription"
+      ],
+      "paraphrases": [
+        "medication order",
+        "medical instruction",
+        "script"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A prescription is an instruction written by a doctor for medicine.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"prescription drug\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"prescription\" in phrases such as \"prescription drug\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"prescription\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_virus_batch3_01",
+      "word": "virus",
+      "lemma": "virus",
+      "ipa": "/ˈvaɪrəs/",
+      "partOfSpeech": "n.",
+      "sense": "infectious agent",
+      "englishDefinition": "a tiny infectious agent that replicates in cells",
+      "chineseMeaning": "病毒",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "spread virus",
+        "viral infection",
+        "computer virus"
+      ],
+      "paraphrases": [
+        "pathogen",
+        "germ",
+        "bug"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A virus is a tiny infectious agent that replicates in cells.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"viral infection\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"virus\" in phrases such as \"viral infection\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"virus\" in one IELTS-style sentence about health."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "health_allergy_batch4_01",
+      "word": "allergy",
+      "lemma": "allergy",
+      "ipa": "/ˈælədʒi/",
+      "partOfSpeech": "n.",
+      "sense": "过敏",
+      "englishDefinition": "an immune system reaction to a substance",
+      "chineseMeaning": "过敏",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "have an allergy",
+        "food allergy",
+        "severe allergy"
+      ],
+      "paraphrases": [
+        "hypersensitivity",
+        "reaction",
+        "intolerance"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An allergy is an immune system reaction to a substance.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"food allergy\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"allergy\" in phrases such as \"food allergy\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"allergy\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "health_cardiac_batch4_01",
+      "word": "cardiac",
+      "lemma": "cardiac",
+      "ipa": "/ˈkɑːdiæk/",
+      "partOfSpeech": "adj.",
+      "sense": "心脏的",
+      "englishDefinition": "relating to the heart",
+      "chineseMeaning": "心脏的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "cardiac arrest",
+        "cardiac patient",
+        "cardiac surgery"
+      ],
+      "paraphrases": [
+        "heart",
+        "cardiovascular",
+        "coronary"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In health and healthcare contexts, \"cardiac\" is an adjective meaning relating to the heart.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"cardiac arrest\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"cardiac\" in phrases such as \"cardiac arrest\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"cardiac\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "health_stroke_batch4_01",
+      "word": "stroke",
+      "lemma": "stroke",
+      "ipa": "/strəʊk/",
+      "partOfSpeech": "n.",
+      "sense": "中风",
+      "englishDefinition": "a sudden interruption of blood supply to the brain",
+      "chineseMeaning": "中风",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "suffer a stroke",
+        "stroke patient",
+        "prevent stroke"
+      ],
+      "paraphrases": [
+        "brain attack",
+        "cerebral accident",
+        "CVA"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A stroke is a sudden interruption of blood supply to the brain.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"stroke patient\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"stroke\" in phrases such as \"stroke patient\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"stroke\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "health_tumor_batch4_01",
+      "word": "tumor",
+      "lemma": "tumor",
+      "ipa": "/ˈtjuːmə/",
+      "partOfSpeech": "n.",
+      "sense": "肿瘤",
+      "englishDefinition": "an abnormal growth of tissue",
+      "chineseMeaning": "肿瘤",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "benign tumor",
+        "malignant tumor",
+        "remove tumor"
+      ],
+      "paraphrases": [
+        "growth",
+        "mass",
+        "neoplasm"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A tumor is an abnormal growth of tissue.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"benign tumor\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"tumor\" in phrases such as \"benign tumor\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"tumor\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "health_sterile_final_01",
+      "word": "sterile",
+      "lemma": "sterile",
+      "ipa": "/ˈsteraɪl/",
+      "partOfSpeech": "adj.",
+      "sense": "无菌的",
+      "englishDefinition": "free from bacteria or other microorganisms",
+      "chineseMeaning": "无菌的",
+      "topic": "health",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "sterile equipment",
+        "sterile environment",
+        "keep sterile"
+      ],
+      "paraphrases": [
+        "germ-free",
+        "clean",
+        "hygienic"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In health and healthcare contexts, \"sterile\" is an adjective meaning free from bacteria or other microorganisms.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about health and healthcare, phrases such as \"sterile equipment\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"sterile\" in phrases such as \"sterile equipment\" when discussing health and healthcare.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"sterile\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "final-batch"
     }
   ]
 }

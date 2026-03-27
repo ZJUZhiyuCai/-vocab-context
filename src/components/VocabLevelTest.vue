@@ -408,7 +408,7 @@ const generateRecommendations = (cefr) => {
     id: vocab.id,
     name: vocab.name,
     icon: vocab.icon,
-    level: vocab.difficulty.cefr.join('-'),
+    level: vocab.difficulty.label,  // 使用 IELTS 标签而非 CEFR
     wordCount: vocab.size,
     isRecommended: vocab.isRecommended,
     vocabData: vocab  // 保存完整数据供后续使用

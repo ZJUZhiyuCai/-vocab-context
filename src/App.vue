@@ -123,10 +123,14 @@
     />
 
     <div v-else-if="currentPage === 'achievements'" class="max-w-4xl mx-auto px-4 py-8 space-y-6 flex-1 overflow-y-auto h-full pb-32">
-       <!-- Reusing existing components but wrapped in the dark theme they might look off unless they are transparent. 
+       <!-- Reusing existing components but wrapped in the dark theme they might look off unless they are transparent.
             For now, just rendering them. Ideally should refactor them too. -->
       <StudyHeatmap />
       <AchievementsPanel />
+    </div>
+
+    <div v-else-if="currentPage === 'speaking'" class="max-w-4xl mx-auto px-4 py-8 flex-1 overflow-y-auto h-full pb-32">
+      <SpeakingTopicPanel />
     </div>
 
     <!-- Modals and Overlays -->
@@ -409,6 +413,7 @@ import {
 import { recordTodayStudy, getStreakDays } from './utils/studyHistory.js'
 import { checkAchievements } from './utils/achievements.js'
 import AchievementsPanel from './components/AchievementsPanel.vue'
+import SpeakingTopicPanel from './components/SpeakingTopicPanel.vue'
 import AchievementNotification from './components/AchievementNotification.vue'
 import CardNextStepToast from './components/CardNextStepToast.vue'
 import StudyHeatmap from './components/StudyHeatmap.vue'

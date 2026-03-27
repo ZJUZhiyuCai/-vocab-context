@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-23T15:48:29.234Z",
+  "generatedAt": "2026-03-26T16:12:37.670Z",
   "source": "IELTS Foundation",
   "topic": "work",
   "name": "IELTS Topic Pack - Work",
-  "totalBundles": 32,
+  "totalBundles": 76,
   "bundles": [
     {
       "bundleId": "work_significant_001",
@@ -1161,19 +1161,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Research indicates that employment plays a crucial role in workplace dynamics.",
+          "text": "Employment is the state of having paid work; the act of employing someone.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Employers need to consider employment when developing workplace policies.",
+          "text": "In IELTS writing about work and employment, phrases such as \"full employment\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "When talking about work topics, employment is useful for describing employment situations.",
+          "text": "In IELTS speaking, you can use \"employment\" in phrases such as \"full employment\" when discussing work and employment.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1222,19 +1222,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Research indicates that unemployment plays a crucial role in workplace dynamics.",
+          "text": "Unemployment is the state of not having a job despite being willing and able to work.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Employers need to consider unemployment when developing workplace policies.",
+          "text": "In IELTS writing about work and employment, phrases such as \"high unemployment\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "When talking about work topics, unemployment is useful for describing employment situations.",
+          "text": "In IELTS speaking, you can use \"unemployment\" in phrases such as \"high unemployment\" when discussing work and employment.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1283,19 +1283,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Research indicates that recruitment plays a crucial role in workplace dynamics.",
+          "text": "Recruitment is the process of finding and hiring new employees.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Employers need to consider recruitment when developing workplace policies.",
+          "text": "In IELTS writing about work and employment, phrases such as \"recruitment process\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "When talking about work topics, recruitment is useful for describing employment situations.",
+          "text": "In IELTS speaking, you can use \"recruitment\" in phrases such as \"recruitment process\" when discussing work and employment.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1344,19 +1344,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Research indicates that redundancy plays a crucial role in workplace dynamics.",
+          "text": "Redundancy is the state of being no longer needed or wanted; dismissal from work.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Employers need to consider redundancy when developing workplace policies.",
+          "text": "In IELTS writing about work and employment, phrases such as \"mass redundancy\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "When talking about work topics, redundancy is useful for describing employment situations.",
+          "text": "In IELTS speaking, you can use \"redundancy\" in phrases such as \"mass redundancy\" when discussing work and employment.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1405,19 +1405,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Research indicates that promotion plays a crucial role in workplace dynamics.",
+          "text": "Promotion is advancement to a higher position or rank in an organization.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Employers need to consider promotion when developing workplace policies.",
+          "text": "In IELTS writing about work and employment, phrases such as \"career promotion\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "When talking about work topics, promotion is useful for describing employment situations.",
+          "text": "In IELTS speaking, you can use \"promotion\" in phrases such as \"career promotion\" when discussing work and employment.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1466,19 +1466,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Research indicates that workload plays a crucial role in workplace dynamics.",
+          "text": "Workload is the amount of work to be done by a person or organization.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Employers need to consider workload when developing workplace policies.",
+          "text": "In IELTS writing about work and employment, phrases such as \"heavy workload\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "When talking about work topics, workload is useful for describing employment situations.",
+          "text": "In IELTS speaking, you can use \"workload\" in phrases such as \"heavy workload\" when discussing work and employment.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1527,19 +1527,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Research indicates that flexible plays a crucial role in workplace dynamics.",
+          "text": "In work and employment contexts, \"flexible\" is an adjective meaning able to change or adapt to different circumstances; not fixed.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Employers need to consider flexible when developing workplace policies.",
+          "text": "In IELTS writing about work and employment, phrases such as \"flexible working\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "When talking about work topics, flexible is useful for describing employment situations.",
+          "text": "In IELTS speaking, you can use \"flexible\" in phrases such as \"flexible working\" when discussing work and employment.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1588,19 +1588,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Research indicates that retirement plays a crucial role in workplace dynamics.",
+          "text": "Retirement is the action or fact of leaving one's job and stopping work.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Employers need to consider retirement when developing workplace policies.",
+          "text": "In IELTS writing about work and employment, phrases such as \"retirement age\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "When talking about work topics, retirement is useful for describing employment situations.",
+          "text": "In IELTS speaking, you can use \"retirement\" in phrases such as \"retirement age\" when discussing work and employment.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1649,19 +1649,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Research indicates that colleague plays a crucial role in workplace dynamics.",
+          "text": "A colleague is a person with whom one works in a profession or business.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Employers need to consider colleague when developing workplace policies.",
+          "text": "In IELTS writing about work and employment, phrases such as \"fellow colleague\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "When talking about work topics, colleague is useful for describing employment situations.",
+          "text": "In IELTS speaking, you can use \"colleague\" in phrases such as \"fellow colleague\" when discussing work and employment.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1710,19 +1710,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Research indicates that occupation plays a crucial role in workplace dynamics.",
+          "text": "An occupation is a job or profession; the way one spends one's time.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Employers need to consider occupation when developing workplace policies.",
+          "text": "In IELTS writing about work and employment, phrases such as \"skilled occupation\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "When talking about work topics, occupation is useful for describing employment situations.",
+          "text": "In IELTS speaking, you can use \"occupation\" in phrases such as \"skilled occupation\" when discussing work and employment.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1923,6 +1923,2690 @@
       },
       "draft": false,
       "sourceCategory": "legacy-batch7"
+    },
+    {
+      "bundleId": "work_apprentice_batch2_01",
+      "word": "apprentice",
+      "lemma": "apprentice",
+      "ipa": "/əˈprentɪs/",
+      "partOfSpeech": "n.",
+      "sense": "someone learning a skilled trade",
+      "englishDefinition": "a person who is learning a trade from a skilled employer",
+      "chineseMeaning": "学徒；实习生",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "apprentice plumber",
+        "hire an apprentice",
+        "apprentice program"
+      ],
+      "paraphrases": [
+        "trainee",
+        "learner",
+        "novice"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An apprentice is a person who is learning a trade from a skilled employer.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"apprentice plumber\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"apprentice\" in phrases such as \"apprentice plumber\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"apprentice\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_automate_batch2_01",
+      "word": "automate",
+      "lemma": "automate",
+      "ipa": "/ˈɔːtəmeɪt/",
+      "partOfSpeech": "v.",
+      "sense": "make a process automatic",
+      "englishDefinition": "to convert a process to operate by machines rather than people",
+      "chineseMeaning": "自动化",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "automate processes",
+        "fully automate",
+        "partially automate"
+      ],
+      "paraphrases": [
+        "mechanize",
+        "computerize",
+        "digitize"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To automate means to convert a process to operate by machines rather than people.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"automate processes\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"automate\" in phrases such as \"automate processes\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"automate\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_blueprint_batch2_01",
+      "word": "blueprint",
+      "lemma": "blueprint",
+      "ipa": "/ˈbluːprɪnt/",
+      "partOfSpeech": "n.",
+      "sense": "a detailed plan",
+      "englishDefinition": "a detailed plan or design for achieving something",
+      "chineseMeaning": "蓝图；计划",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "career blueprint",
+        "strategic blueprint",
+        "blueprint for success"
+      ],
+      "paraphrases": [
+        "plan",
+        "design",
+        "roadmap"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A blueprint is a detailed plan or design for achieving something.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"career blueprint\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"blueprint\" in phrases such as \"career blueprint\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"blueprint\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_brainstorm_batch2_01",
+      "word": "brainstorm",
+      "lemma": "brainstorm",
+      "ipa": "/ˈbreɪnstɔːm/",
+      "partOfSpeech": "v.",
+      "sense": "generate ideas together",
+      "englishDefinition": "to discuss and produce ideas spontaneously in a group",
+      "chineseMeaning": "头脑风暴",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "brainstorm ideas",
+        "brainstorm session",
+        "brainstorm solutions"
+      ],
+      "paraphrases": [
+        "ideate",
+        "generate ideas",
+        "think creatively"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To brainstorm means to discuss and produce ideas spontaneously in a group.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"brainstorm ideas\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"brainstorm\" in phrases such as \"brainstorm ideas\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"brainstorm\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_collaboration_batch2_01",
+      "word": "collaboration",
+      "lemma": "collaboration",
+      "ipa": "/kəˌlæbəˈreɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "working together",
+      "englishDefinition": "the action of working with someone to produce something",
+      "chineseMeaning": "合作；协作",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "close collaboration",
+        "international collaboration",
+        "foster collaboration"
+      ],
+      "paraphrases": [
+        "cooperation",
+        "partnership",
+        "teamwork"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Collaboration is the action of working with someone to produce something.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"international collaboration\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"collaboration\" in phrases such as \"international collaboration\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"collaboration\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_competence_batch2_01",
+      "word": "competence",
+      "lemma": "competence",
+      "ipa": "/ˈkɒmpɪtəns/",
+      "partOfSpeech": "n.",
+      "sense": "being capable",
+      "englishDefinition": "the ability to do something successfully or efficiently",
+      "chineseMeaning": "能力；胜任",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "professional competence",
+        "demonstrate competence",
+        "core competence"
+      ],
+      "paraphrases": [
+        "capability",
+        "skill",
+        "proficiency"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Competence is the ability to do something successfully or efficiently.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"professional competence\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"competence\" in phrases such as \"professional competence\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"competence\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_dedication_batch2_01",
+      "word": "dedication",
+      "lemma": "dedication",
+      "ipa": "/ˌdedɪˈkeɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "strong commitment",
+      "englishDefinition": "the quality of being committed to a task or purpose",
+      "chineseMeaning": "奉献；敬业",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "show dedication",
+        "unwavering dedication",
+        "work dedication"
+      ],
+      "paraphrases": [
+        "commitment",
+        "devotion",
+        "loyalty"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Dedication is the quality of being committed to a task or purpose.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"show dedication\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"dedication\" in phrases such as \"show dedication\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"dedication\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_downsizing_batch2_01",
+      "word": "downsizing",
+      "lemma": "downsizing",
+      "ipa": "/ˈdaʊnˌsaɪzɪŋ/",
+      "partOfSpeech": "n.",
+      "sense": "reducing staff numbers",
+      "englishDefinition": "the reduction of a company's workforce to improve efficiency",
+      "chineseMeaning": "裁员；精简",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "corporate downsizing",
+        "announce downsizing",
+        "due to downsizing"
+      ],
+      "paraphrases": [
+        "layoffs",
+        "staff reduction",
+        "cutbacks"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Downsizing is the reduction of a company's workforce to improve efficiency.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"corporate downsizing\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"downsizing\" in phrases such as \"corporate downsizing\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"downsizing\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_entrepreneur_batch2_01",
+      "word": "entrepreneur",
+      "lemma": "entrepreneur",
+      "ipa": "/ˌɒntrəprəˈnɜː/",
+      "partOfSpeech": "n.",
+      "sense": "business founder",
+      "englishDefinition": "a person who starts and runs their own business",
+      "chineseMeaning": "企业家",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "successful entrepreneur",
+        "young entrepreneur",
+        "tech entrepreneur"
+      ],
+      "paraphrases": [
+        "business owner",
+        "founder",
+        "startup founder"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An entrepreneur is a person who starts and runs their own business.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"successful entrepreneur\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"entrepreneur\" in phrases such as \"successful entrepreneur\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"entrepreneur\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_freelance_batch2_01",
+      "word": "freelance",
+      "lemma": "freelance",
+      "ipa": "/ˈfriːlɑːns/",
+      "partOfSpeech": "adj.",
+      "sense": "self-employed work",
+      "englishDefinition": "working independently for different companies",
+      "chineseMeaning": "自由职业的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "freelance work",
+        "freelance writer",
+        "freelance career"
+      ],
+      "paraphrases": [
+        "self-employed",
+        "independent",
+        "contract"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In work and employment contexts, \"freelance\" is an adjective meaning working independently for different companies.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"freelance work\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"freelance\" in phrases such as \"freelance work\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"freelance\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_headhunt_batch2_01",
+      "word": "headhunt",
+      "lemma": "headhunt",
+      "ipa": "/ˈhedhʌnt/",
+      "partOfSpeech": "v.",
+      "sense": "actively recruit talent",
+      "englishDefinition": "to recruit executive staff for a company",
+      "chineseMeaning": "猎头招聘",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "headhunt talent",
+        "headhunted by",
+        "headhunting firm"
+      ],
+      "paraphrases": [
+        "recruit",
+        "poach",
+        "scout"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To headhunt means to recruit executive staff for a company.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"headhunt talent\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"headhunt\" in phrases such as \"headhunt talent\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"headhunt\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_intern_batch2_01",
+      "word": "intern",
+      "lemma": "intern",
+      "ipa": "/ˈɪntɜːn/",
+      "partOfSpeech": "n.",
+      "sense": "work experience position",
+      "englishDefinition": "a student or trainee who works for experience",
+      "chineseMeaning": "实习生",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "summer intern",
+        "hire interns",
+        "intern position"
+      ],
+      "paraphrases": [
+        "trainee",
+        "apprentice",
+        "work experience"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An intern is a student or trainee who works for experience.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"summer intern\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"intern\" in phrases such as \"summer intern\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"intern\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_leadership_batch2_01",
+      "word": "leadership",
+      "lemma": "leadership",
+      "ipa": "/ˈliːdəʃɪp/",
+      "partOfSpeech": "n.",
+      "sense": "ability to lead",
+      "englishDefinition": "the action of leading a group or organization",
+      "chineseMeaning": "领导力",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "strong leadership",
+        "leadership skills",
+        "effective leadership"
+      ],
+      "paraphrases": [
+        "management",
+        "guidance",
+        "direction"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Leadership is the action of leading a group or organization.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"strong leadership\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"leadership\" in phrases such as \"strong leadership\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"leadership\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_merit_batch2_01",
+      "word": "merit",
+      "lemma": "merit",
+      "ipa": "/ˈmerɪt/",
+      "partOfSpeech": "n.",
+      "sense": "worthiness or value",
+      "englishDefinition": "the quality of being particularly good or worthy",
+      "chineseMeaning": "优点；功绩",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "on merit",
+        "merit-based",
+        "recognize merit"
+      ],
+      "paraphrases": [
+        "worth",
+        "value",
+        "excellence"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Merit is the quality of being particularly good or worthy.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"on merit\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"merit\" in phrases such as \"on merit\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"merit\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_network_batch2_01",
+      "word": "network",
+      "lemma": "network",
+      "ipa": "/ˈnetwɜːk/",
+      "partOfSpeech": "v.",
+      "sense": "build professional relationships",
+      "englishDefinition": "to interact with others to exchange information and develop contacts",
+      "chineseMeaning": "建立人脉",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "network effectively",
+        "network event",
+        "professional network"
+      ],
+      "paraphrases": [
+        "connect",
+        "socialize",
+        "build contacts"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To network means to interact with others to exchange information and develop contacts.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"network effectively\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"network\" in phrases such as \"network effectively\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"network\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_outsourcing_batch2_01",
+      "word": "outsourcing",
+      "lemma": "outsourcing",
+      "ipa": "/ˈaʊtˌsɔːsɪŋ/",
+      "partOfSpeech": "n.",
+      "sense": "hiring external workers",
+      "englishDefinition": "the practice of obtaining goods or services from an external supplier",
+      "chineseMeaning": "外包",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "IT outsourcing",
+        "increase outsourcing",
+        "outsourcing trend"
+      ],
+      "paraphrases": [
+        "contracting",
+        "subcontracting",
+        "external hiring"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Outsourcing is the practice of obtaining goods or services from an external supplier.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"IT outsourcing\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"outsourcing\" in phrases such as \"IT outsourcing\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"outsourcing\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_remuneration_batch2_01",
+      "word": "remuneration",
+      "lemma": "remuneration",
+      "ipa": "/rɪˌmjuːnəˈreɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "payment for work",
+      "englishDefinition": "money paid for work or services",
+      "chineseMeaning": "报酬；薪资",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "competitive remuneration",
+        "remuneration package",
+        "salary remuneration"
+      ],
+      "paraphrases": [
+        "salary",
+        "pay",
+        "compensation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Remuneration is money paid for work or services.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"competitive remuneration\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"remuneration\" in phrases such as \"competitive remuneration\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"remuneration\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_self-employed_batch2_01",
+      "word": "self-employed",
+      "lemma": "self-employed",
+      "ipa": "/ˌself ɪmˈplɔɪd/",
+      "partOfSpeech": "adj.",
+      "sense": "working independently",
+      "englishDefinition": "working for oneself rather than an employer",
+      "chineseMeaning": "自雇的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "become self-employed",
+        "self-employed workers",
+        "self-employed status"
+      ],
+      "paraphrases": [
+        "freelance",
+        "independent",
+        "own boss"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In work and employment contexts, \"self-employed\" is an adjective meaning working for oneself rather than an employer.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"self-employed workers\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"self-employed\" in phrases such as \"self-employed workers\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"self-employed\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_specialist_batch2_01",
+      "word": "specialist",
+      "lemma": "specialist",
+      "ipa": "/ˈspeʃəlɪst/",
+      "partOfSpeech": "n.",
+      "sense": "expert in one area",
+      "englishDefinition": "a person who concentrates on a particular field",
+      "chineseMeaning": "专家",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "IT specialist",
+        "medical specialist",
+        "specialist knowledge"
+      ],
+      "paraphrases": [
+        "expert",
+        "professional",
+        "authority"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A specialist is a person who concentrates on a particular field.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"IT specialist\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"specialist\" in phrases such as \"IT specialist\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"specialist\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_telecommute_batch2_01",
+      "word": "telecommute",
+      "lemma": "telecommute",
+      "ipa": "/ˈtelɪkəˌmjuːt/",
+      "partOfSpeech": "v.",
+      "sense": "working remotely",
+      "englishDefinition": "to work from home using technology to communicate",
+      "chineseMeaning": "远程办公",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "telecommute regularly",
+        "telecommute option",
+        "ability to telecommute"
+      ],
+      "paraphrases": [
+        "work remotely",
+        "work from home",
+        "remote work"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To telecommute means to work from home using technology to communicate.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"telecommute regularly\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"telecommute\" in phrases such as \"telecommute regularly\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"telecommute\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_tenure_batch2_01",
+      "word": "tenure",
+      "lemma": "tenure",
+      "ipa": "/ˈtenjə/",
+      "partOfSpeech": "n.",
+      "sense": "length of employment",
+      "englishDefinition": "the period of holding an office or job",
+      "chineseMeaning": "任期；终身职位",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "job tenure",
+        "academic tenure",
+        "long tenure"
+      ],
+      "paraphrases": [
+        "term",
+        "period",
+        "duration"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Tenure is the period of holding an office or job.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"job tenure\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"tenure\" in phrases such as \"job tenure\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"tenure\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_underemployed_batch2_01",
+      "word": "underemployed",
+      "lemma": "underemployed",
+      "ipa": "/ˌʌndərɪmˈplɔɪd/",
+      "partOfSpeech": "adj.",
+      "sense": "not fully utilized",
+      "englishDefinition": "working in a job that does not use one's skills fully",
+      "chineseMeaning": "就业不足的",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "underemployed workers",
+        "underemployed graduates",
+        "remain underemployed"
+      ],
+      "paraphrases": [
+        "underutilized",
+        "overqualified",
+        "part-time"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In work and employment contexts, \"underemployed\" is an adjective meaning working in a job that does not use one's skills fully.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"underemployed workers\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"underemployed\" in phrases such as \"underemployed workers\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"underemployed\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_vacancy_batch2_01",
+      "word": "vacancy",
+      "lemma": "vacancy",
+      "ipa": "/ˈveɪkənsi/",
+      "partOfSpeech": "n.",
+      "sense": "available job position",
+      "englishDefinition": "an unoccupied position or job",
+      "chineseMeaning": "空缺职位",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "job vacancy",
+        "fill a vacancy",
+        "vacancy rate"
+      ],
+      "paraphrases": [
+        "opening",
+        "position",
+        "slot"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A vacancy is an unoccupied position or job.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"job vacancy\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"vacancy\" in phrases such as \"job vacancy\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"vacancy\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_wage_batch2_01",
+      "word": "wage",
+      "lemma": "wage",
+      "ipa": "/weɪdʒ/",
+      "partOfSpeech": "n.",
+      "sense": "payment for labor",
+      "englishDefinition": "a fixed regular payment for work",
+      "chineseMeaning": "工资",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "minimum wage",
+        "hourly wage",
+        "wage increase"
+      ],
+      "paraphrases": [
+        "pay",
+        "salary",
+        "earnings"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A wage is a fixed regular payment for work.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"minimum wage\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"wage\" in phrases such as \"minimum wage\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"wage\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_workforce_batch2_01",
+      "word": "workforce",
+      "lemma": "workforce",
+      "ipa": "/ˈwɜːkfɔːs/",
+      "partOfSpeech": "n.",
+      "sense": "total workers",
+      "englishDefinition": "the people engaged in or available for work",
+      "chineseMeaning": "劳动力",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "skilled workforce",
+        "workforce development",
+        "aging workforce"
+      ],
+      "paraphrases": [
+        "employees",
+        "staff",
+        "labor force"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Workforce is the people engaged in or available for work.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"skilled workforce\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"workforce\" in phrases such as \"skilled workforce\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"workforce\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_workplace_batch2_01",
+      "word": "workplace",
+      "lemma": "workplace",
+      "ipa": "/ˈwɜːkpleɪs/",
+      "partOfSpeech": "n.",
+      "sense": "environment for work",
+      "englishDefinition": "a place where people work",
+      "chineseMeaning": "工作场所",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "workplace safety",
+        "modern workplace",
+        "workplace culture"
+      ],
+      "paraphrases": [
+        "office",
+        "work environment",
+        "job site"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A workplace is a place where people work.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"workplace safety\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"workplace\" in phrases such as \"workplace safety\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"workplace\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_achievement_batch2_01",
+      "word": "achievement",
+      "lemma": "achievement",
+      "ipa": "/əˈtʃiːvmənt/",
+      "partOfSpeech": "n.",
+      "sense": "successful completion",
+      "englishDefinition": "something done successfully with effort",
+      "chineseMeaning": "成就",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "great achievement",
+        "achievement gap",
+        "sense of achievement"
+      ],
+      "paraphrases": [
+        "accomplishment",
+        "success",
+        "feat"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Achievement is something done successfully with effort.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"great achievement\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"achievement\" in phrases such as \"great achievement\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"achievement\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_career_batch2_01",
+      "word": "career",
+      "lemma": "career",
+      "ipa": "/kəˈrɪə/",
+      "partOfSpeech": "n.",
+      "sense": "professional path",
+      "englishDefinition": "an occupation undertaken for a significant period",
+      "chineseMeaning": "职业",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "career path",
+        "career development",
+        "change career"
+      ],
+      "paraphrases": [
+        "profession",
+        "occupation",
+        "vocation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A career is an occupation undertaken for a significant period.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"career path\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"career\" in phrases such as \"career path\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"career\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_deadline_batch2_01",
+      "word": "deadline",
+      "lemma": "deadline",
+      "ipa": "/ˈdedlaɪn/",
+      "partOfSpeech": "n.",
+      "sense": "time limit",
+      "englishDefinition": "the latest time by which something must be completed",
+      "chineseMeaning": "截止日期",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "meet deadline",
+        "tight deadline",
+        "miss deadline"
+      ],
+      "paraphrases": [
+        "due date",
+        "time limit",
+        "cutoff"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Deadline is the latest time by which something must be completed.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"tight deadline\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"deadline\" in phrases such as \"tight deadline\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"deadline\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_delegate_batch2_01",
+      "word": "delegate",
+      "lemma": "delegate",
+      "ipa": "/ˈdelɪɡeɪt/",
+      "partOfSpeech": "v.",
+      "sense": "give tasks to others",
+      "englishDefinition": "to assign responsibility to another person",
+      "chineseMeaning": "授权；委派",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "delegate tasks",
+        "delegate authority",
+        "effectively delegate"
+      ],
+      "paraphrases": [
+        "assign",
+        "entrust",
+        "transfer"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To delegate means to assign responsibility to another person.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"delegate tasks\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"delegate\" in phrases such as \"delegate tasks\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"delegate\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_expertise_batch2_01",
+      "word": "expertise",
+      "lemma": "expertise",
+      "ipa": "/ˌekspɜːˈtiːz/",
+      "partOfSpeech": "n.",
+      "sense": "specialized knowledge",
+      "englishDefinition": "expert skill or knowledge in a particular field",
+      "chineseMeaning": "专业知识",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "technical expertise",
+        "demonstrate expertise",
+        "area of expertise"
+      ],
+      "paraphrases": [
+        "knowledge",
+        "skill",
+        "know-how"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Expertise is expert skill or knowledge in a particular field.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"technical expertise\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"expertise\" in phrases such as \"technical expertise\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"expertise\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_internship_batch2_01",
+      "word": "internship",
+      "lemma": "internship",
+      "ipa": "/ˈɪntɜːnʃɪp/",
+      "partOfSpeech": "n.",
+      "sense": "work experience program",
+      "englishDefinition": "a period of work experience offered by an employer",
+      "chineseMeaning": "实习",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "summer internship",
+        "paid internship",
+        "complete internship"
+      ],
+      "paraphrases": [
+        "work experience",
+        "training",
+        "placement"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An internship is a period of work experience offered by an employer.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"summer internship\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"internship\" in phrases such as \"summer internship\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"internship\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_mentor_batch2_01",
+      "word": "mentor",
+      "lemma": "mentor",
+      "ipa": "/ˈmentɔː/",
+      "partOfSpeech": "n.",
+      "sense": "adviser or guide",
+      "englishDefinition": "an experienced person who advises a less experienced person",
+      "chineseMeaning": "导师",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "assigned mentor",
+        "mentor program",
+        "become a mentor"
+      ],
+      "paraphrases": [
+        "adviser",
+        "guide",
+        "coach"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A mentor is an experienced person who advises a less experienced person.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"assigned mentor\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"mentor\" in phrases such as \"assigned mentor\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"mentor\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_overtime_batch2_01",
+      "word": "overtime",
+      "lemma": "overtime",
+      "ipa": "/ˈəʊvətaɪm/",
+      "partOfSpeech": "n.",
+      "sense": "extra work time",
+      "englishDefinition": "time worked in addition to normal working hours",
+      "chineseMeaning": "加班",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "work overtime",
+        "paid overtime",
+        "overtime pay"
+      ],
+      "paraphrases": [
+        "extra hours",
+        "additional work",
+        "extended hours"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Overtime is time worked in addition to normal working hours.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"paid overtime\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"overtime\" in phrases such as \"paid overtime\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"overtime\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_profession_batch2_01",
+      "word": "profession",
+      "lemma": "profession",
+      "ipa": "/prəˈfeʃn/",
+      "partOfSpeech": "n.",
+      "sense": "skilled occupation",
+      "englishDefinition": "a paid occupation requiring advanced training",
+      "chineseMeaning": "职业",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "legal profession",
+        "medical profession",
+        "chosen profession"
+      ],
+      "paraphrases": [
+        "career",
+        "occupation",
+        "vocation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A profession is a paid occupation requiring advanced training.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"legal profession\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"profession\" in phrases such as \"legal profession\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"profession\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_resign_batch2_01",
+      "word": "resign",
+      "lemma": "resign",
+      "ipa": "/rɪˈzaɪn/",
+      "partOfSpeech": "v.",
+      "sense": "quit a position",
+      "englishDefinition": "to voluntarily leave a job",
+      "chineseMeaning": "辞职",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "resign from",
+        "decide to resign",
+        "submit resignation"
+      ],
+      "paraphrases": [
+        "quit",
+        "leave",
+        "step down"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To resign means to voluntarily leave a job.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"resign from\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"resign\" in phrases such as \"resign from\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"resign\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_shift_batch2_01",
+      "word": "shift",
+      "lemma": "shift",
+      "ipa": "/ʃɪft/",
+      "partOfSpeech": "n.",
+      "sense": "work period",
+      "englishDefinition": "a set period of work",
+      "chineseMeaning": "轮班",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "night shift",
+        "day shift",
+        "shift work"
+      ],
+      "paraphrases": [
+        "work period",
+        "turn",
+        "rotation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A shift is a set period of work.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"night shift\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"shift\" in phrases such as \"night shift\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"shift\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_skillset_batch2_01",
+      "word": "skillset",
+      "lemma": "skillset",
+      "ipa": "/ˈskɪlset/",
+      "partOfSpeech": "n.",
+      "sense": "collection of skills",
+      "englishDefinition": "a person's range of skills and abilities",
+      "chineseMeaning": "技能组合",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "technical skillset",
+        "expand skillset",
+        "valuable skillset"
+      ],
+      "paraphrases": [
+        "abilities",
+        "capabilities",
+        "competencies"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A skillset is a person's range of skills and abilities.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"technical skillset\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"skillset\" in phrases such as \"technical skillset\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"skillset\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_subordinate_batch2_01",
+      "word": "subordinate",
+      "lemma": "subordinate",
+      "ipa": "/səˈbɔːdɪnət/",
+      "partOfSpeech": "n.",
+      "sense": "lower-ranking worker",
+      "englishDefinition": "a person under the authority of another",
+      "chineseMeaning": "下属",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "direct subordinate",
+        "manage subordinates",
+        "treat subordinates"
+      ],
+      "paraphrases": [
+        "employee",
+        "staff member",
+        "underling"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A subordinate is a person under the authority of another.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"direct subordinate\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"subordinate\" in phrases such as \"direct subordinate\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"subordinate\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_supervise_batch2_01",
+      "word": "supervise",
+      "lemma": "supervise",
+      "ipa": "/ˈsuːpəvaɪz/",
+      "partOfSpeech": "v.",
+      "sense": "oversee work",
+      "englishDefinition": "to observe and direct the work of others",
+      "chineseMeaning": "监督；管理",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "closely supervise",
+        "supervise staff",
+        "directly supervise"
+      ],
+      "paraphrases": [
+        "oversee",
+        "manage",
+        "direct"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To supervise means to observe and direct the work of others.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"supervise staff\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"supervise\" in phrases such as \"supervise staff\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"supervise\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_teamwork_batch2_01",
+      "word": "teamwork",
+      "lemma": "teamwork",
+      "ipa": "/ˈtiːmwɜːk/",
+      "partOfSpeech": "n.",
+      "sense": "working together",
+      "englishDefinition": "combined action of a group to achieve a goal",
+      "chineseMeaning": "团队合作",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "effective teamwork",
+        "promote teamwork",
+        "teamwork skills"
+      ],
+      "paraphrases": [
+        "collaboration",
+        "cooperation",
+        "coordination"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Teamwork is combined action of a group to achieve a goal.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"effective teamwork\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"teamwork\" in phrases such as \"effective teamwork\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"teamwork\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_trainee_batch2_01",
+      "word": "trainee",
+      "lemma": "trainee",
+      "ipa": "/treɪˈniː/",
+      "partOfSpeech": "n.",
+      "sense": "learning worker",
+      "englishDefinition": "a person learning a job or skill",
+      "chineseMeaning": "受训者",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "new trainee",
+        "management trainee",
+        "trainee program"
+      ],
+      "paraphrases": [
+        "learner",
+        "apprentice",
+        "novice"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A trainee is a person learning a job or skill.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"new trainee\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"trainee\" in phrases such as \"new trainee\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"trainee\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_union_batch2_01",
+      "word": "union",
+      "lemma": "union",
+      "ipa": "/ˈjuːniən/",
+      "partOfSpeech": "n.",
+      "sense": "workers' organization",
+      "englishDefinition": "an organized association of workers",
+      "chineseMeaning": "工会",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "trade union",
+        "labor union",
+        "union member"
+      ],
+      "paraphrases": [
+        "workers' association",
+        "labor organization",
+        "syndicate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A union is an organized association of workers.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"trade union\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"union\" in phrases such as \"trade union\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"union\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "work_vocation_batch2_01",
+      "word": "vocation",
+      "lemma": "vocation",
+      "ipa": "/vəʊˈkeɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "calling or career",
+      "englishDefinition": "a strong feeling of suitability for a career",
+      "chineseMeaning": "天职；职业",
+      "topic": "work",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "find one's vocation",
+        "true vocation",
+        "vocational training"
+      ],
+      "paraphrases": [
+        "calling",
+        "career",
+        "mission"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A vocation is a strong feeling of suitability for a career.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about work and employment, phrases such as \"true vocation\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"vocation\" in phrases such as \"true vocation\" when discussing work and employment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"vocation\" in one IELTS-style sentence about work."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
     }
   ]
 }

@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { buildExpansionContexts } from './topic-context-helpers.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -478,48 +479,8 @@ function writeJson(file, data) {
   fs.writeFileSync(file, JSON.stringify(data, null, 2) + '\n', 'utf8');
 }
 
-function buildContexts(word, topic) {
-  const templates = {
-    reading: {
-      health: `Studies have shown that ${word} can have significant impacts on public health outcomes.`,
-      work: `Research indicates that ${word} plays a crucial role in workplace dynamics.`,
-      media: `The relationship between ${word} and media influence has been widely debated.`,
-      crime: `Statistics show that ${word} is a significant factor in criminal justice policy.`
-    },
-    writing: {
-      health: `Health authorities should address ${word} as part of their public health strategy.`,
-      work: `Employers need to consider ${word} when developing workplace policies.`,
-      media: `Media organizations have a responsibility regarding ${word} in their reporting.`,
-      crime: `The criminal justice system must balance ${word} with rehabilitation efforts.`
-    },
-    speaking: {
-      health: `In IELTS speaking, ${word} can be used when discussing health-related topics.`,
-      work: `When talking about work topics, ${word} is useful for describing employment situations.`,
-      media: `For media topics, ${word} helps express opinions about information and communication.`,
-      crime: `In crime-related discussions, ${word} is essential for expressing balanced views.`
-    }
-  };
-
-  return [
-    {
-      kind: 'reading',
-      text: templates.reading[topic],
-      translation: '',
-      purpose: 'core'
-    },
-    {
-      kind: 'writing',
-      text: templates.writing[topic],
-      translation: '',
-      purpose: 'near-transfer'
-    },
-    {
-      kind: 'speaking',
-      text: templates.speaking[topic],
-      translation: '',
-      purpose: 'far-transfer'
-    }
-  ];
+function buildContexts(item) {
+  return buildExpansionContexts(item);
 }
 
 function buildBundleId(existingIds, topic, word) {
@@ -549,6 +510,7 @@ function main() {
     }
 
     const bundleId = buildBundleId(existingIds, approved.topic, approved.word);
+    existingWords.add(approved.word.toLowerCase());
 
     reviewed.push({
       word: approved.word,
@@ -559,7 +521,7 @@ function main() {
       editorChineseMeaning: approved.chineseMeaning,
       editorCollocations: approved.collocations,
       editorParaphrases: approved.paraphrases,
-      editorContexts: buildContexts(approved.word, approved.topic),
+      editorContexts: buildContexts(approved),
       editorProductionPrompt: `Use "${approved.word}" in one IELTS-style sentence about ${approved.topic}.`
     });
 
@@ -578,7 +540,7 @@ function main() {
       collocations: approved.collocations,
       paraphrases: approved.paraphrases,
       confusions: [],
-      contexts: buildContexts(approved.word, approved.topic),
+      contexts: buildContexts(approved),
       productionPrompt: {
         mode: 'writing',
         instruction: `Use "${approved.word}" in one IELTS-style sentence about ${approved.topic}.`

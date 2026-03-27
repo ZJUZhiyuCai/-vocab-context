@@ -23,8 +23,8 @@
 ## Snapshot
 
 - Live site: [https://vocabman.netlify.app](https://vocabman.netlify.app)
-- IELTS Foundation: `541` curated context bundles
-- Official Topic Packs: `8`
+- IELTS Foundation: `743` curated context bundles
+- Official Topic Packs: `8` (76-124 words each)
 - Main paths: `Today`, `Context-first Session`, `Output Studio`, `Exam Drills`
 - AI runtime: `SiliconFlow` + `Qwen/Qwen2.5-72B-Instruct`
 - Deployment-safe AI path: browser route + Netlify/server proxy fallback

@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-23T15:48:29.235Z",
+  "generatedAt": "2026-03-26T16:12:37.672Z",
   "source": "IELTS Foundation",
   "topic": "crime",
   "name": "IELTS Topic Pack - Crime",
-  "totalBundles": 26,
+  "totalBundles": 76,
   "bundles": [
     {
       "bundleId": "crime_circumstance_045",
@@ -571,19 +571,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Statistics show that offender is a significant factor in criminal justice policy.",
+          "text": "An offender is a person who commits an illegal act.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The criminal justice system must balance offender with rehabilitation efforts.",
+          "text": "In IELTS writing about crime and justice, phrases such as \"first-time offender\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In crime-related discussions, offender is essential for expressing balanced views.",
+          "text": "In IELTS speaking, you can use \"offender\" in phrases such as \"first-time offender\" when discussing crime and justice.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -632,19 +632,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Statistics show that verdict is a significant factor in criminal justice policy.",
+          "text": "A verdict is a decision reached by a jury in a court of law.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The criminal justice system must balance verdict with rehabilitation efforts.",
+          "text": "In IELTS writing about crime and justice, phrases such as \"guilty verdict\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In crime-related discussions, verdict is essential for expressing balanced views.",
+          "text": "In IELTS speaking, you can use \"verdict\" in phrases such as \"guilty verdict\" when discussing crime and justice.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -693,19 +693,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Statistics show that sentence is a significant factor in criminal justice policy.",
+          "text": "Sentence is the punishment assigned to a defendant found guilty in court.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The criminal justice system must balance sentence with rehabilitation efforts.",
+          "text": "In IELTS writing about crime and justice, phrases such as \"prison sentence\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In crime-related discussions, sentence is essential for expressing balanced views.",
+          "text": "In IELTS speaking, you can use \"sentence\" in phrases such as \"prison sentence\" when discussing crime and justice.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -754,19 +754,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Statistics show that conviction is a significant factor in criminal justice policy.",
+          "text": "A conviction is a formal declaration that someone is guilty of a criminal offense.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The criminal justice system must balance conviction with rehabilitation efforts.",
+          "text": "In IELTS writing about crime and justice, phrases such as \"criminal conviction\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In crime-related discussions, conviction is essential for expressing balanced views.",
+          "text": "In IELTS speaking, you can use \"conviction\" in phrases such as \"criminal conviction\" when discussing crime and justice.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -815,19 +815,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Statistics show that prosecution is a significant factor in criminal justice policy.",
+          "text": "Prosecution is the institution of legal proceedings against someone.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The criminal justice system must balance prosecution with rehabilitation efforts.",
+          "text": "In IELTS writing about crime and justice, phrases such as \"criminal prosecution\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In crime-related discussions, prosecution is essential for expressing balanced views.",
+          "text": "In IELTS speaking, you can use \"prosecution\" in phrases such as \"criminal prosecution\" when discussing crime and justice.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -876,19 +876,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Statistics show that incarceration is a significant factor in criminal justice policy.",
+          "text": "Incarceration is the state of being imprisoned or confined in prison.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The criminal justice system must balance incarceration with rehabilitation efforts.",
+          "text": "In IELTS writing about crime and justice, phrases such as \"mass incarceration\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In crime-related discussions, incarceration is essential for expressing balanced views.",
+          "text": "In IELTS speaking, you can use \"incarceration\" in phrases such as \"mass incarceration\" when discussing crime and justice.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -937,19 +937,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Statistics show that recidivism is a significant factor in criminal justice policy.",
+          "text": "Recidivism is the tendency of a convicted criminal to reoffend.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The criminal justice system must balance recidivism with rehabilitation efforts.",
+          "text": "In IELTS writing about crime and justice, phrases such as \"high recidivism\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In crime-related discussions, recidivism is essential for expressing balanced views.",
+          "text": "In IELTS speaking, you can use \"recidivism\" in phrases such as \"high recidivism\" when discussing crime and justice.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -998,19 +998,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Statistics show that surveillance is a significant factor in criminal justice policy.",
+          "text": "Surveillance is close observation, especially of a suspected person.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The criminal justice system must balance surveillance with rehabilitation efforts.",
+          "text": "In IELTS writing about crime and justice, phrases such as \"video surveillance\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In crime-related discussions, surveillance is essential for expressing balanced views.",
+          "text": "In IELTS speaking, you can use \"surveillance\" in phrases such as \"video surveillance\" when discussing crime and justice.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1059,19 +1059,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "Statistics show that juvenile is a significant factor in criminal justice policy.",
+          "text": "In crime and justice contexts, \"juvenile\" is an adjective meaning relating to young people who are not yet adults.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "The criminal justice system must balance juvenile with rehabilitation efforts.",
+          "text": "In IELTS writing about crime and justice, phrases such as \"juvenile crime\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "In crime-related discussions, juvenile is essential for expressing balanced views.",
+          "text": "In IELTS speaking, you can use \"juvenile\" in phrases such as \"juvenile crime\" when discussing crime and justice.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1577,6 +1577,3056 @@
       },
       "draft": false,
       "sourceCategory": "legacy-batch7"
+    },
+    {
+      "bundleId": "crime_abduction_batch2_01",
+      "word": "abduction",
+      "lemma": "abduction",
+      "ipa": "/æbˈdʌkʃn/",
+      "partOfSpeech": "n.",
+      "sense": "kidnapping",
+      "englishDefinition": "the act of taking someone away by force",
+      "chineseMeaning": "绑架",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "child abduction",
+        "attempted abduction",
+        "abduction case"
+      ],
+      "paraphrases": [
+        "kidnapping",
+        "seizure",
+        "capture"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Abduction is the act of taking someone away by force.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"child abduction\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"abduction\" in phrases such as \"child abduction\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"abduction\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_accomplice_batch2_01",
+      "word": "accomplice",
+      "lemma": "accomplice",
+      "ipa": "/əˈkʌmplɪs/",
+      "partOfSpeech": "n.",
+      "sense": "crime partner",
+      "englishDefinition": "a person who helps someone commit a crime",
+      "chineseMeaning": "同谋",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "accomplice to",
+        "accomplice in crime",
+        "alleged accomplice"
+      ],
+      "paraphrases": [
+        "partner",
+        "accessory",
+        "associate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An accomplice is a person who helps someone commit a crime.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"accomplice to\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"accomplice\" in phrases such as \"accomplice to\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"accomplice\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_alibi_batch2_01",
+      "word": "alibi",
+      "lemma": "alibi",
+      "ipa": "/ˈælɪbaɪ/",
+      "partOfSpeech": "n.",
+      "sense": "proof of absence",
+      "englishDefinition": "evidence of being elsewhere when a crime occurred",
+      "chineseMeaning": "不在场证明",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "provide an alibi",
+        "false alibi",
+        "solid alibi"
+      ],
+      "paraphrases": [
+        "defense",
+        "excuse",
+        "evidence"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Alibi is evidence of being elsewhere when a crime occurred.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"provide an alibi\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"alibi\" in phrases such as \"provide an alibi\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"alibi\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_arson_batch2_01",
+      "word": "arson",
+      "lemma": "arson",
+      "ipa": "/ˈɑːsn/",
+      "partOfSpeech": "n.",
+      "sense": "fire-setting crime",
+      "englishDefinition": "the criminal act of deliberately setting fire",
+      "chineseMeaning": "纵火罪",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "commit arson",
+        "arson attack",
+        "arson investigation"
+      ],
+      "paraphrases": [
+        "fire-setting",
+        "pyromania",
+        "incendiarism"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Arson is the criminal act of deliberately setting fire.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"arson attack\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"arson\" in phrases such as \"arson attack\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"arson\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_assault_batch2_01",
+      "word": "assault",
+      "lemma": "assault",
+      "ipa": "/əˈsɔːlt/",
+      "partOfSpeech": "n.",
+      "sense": "physical attack",
+      "englishDefinition": "a physical attack on someone",
+      "chineseMeaning": "袭击",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "sexual assault",
+        "assault charge",
+        "violent assault"
+      ],
+      "paraphrases": [
+        "attack",
+        "violence",
+        "battery"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An assault is a physical attack on someone.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"sexual assault\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"assault\" in phrases such as \"sexual assault\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"assault\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_bail_batch2_01",
+      "word": "bail",
+      "lemma": "bail",
+      "ipa": "/beɪl/",
+      "partOfSpeech": "n.",
+      "sense": "temporary release payment",
+      "englishDefinition": "money paid to release someone from custody",
+      "chineseMeaning": "保释",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "post bail",
+        "bail hearing",
+        "grant bail"
+      ],
+      "paraphrases": [
+        "bond",
+        "security",
+        "release money"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Bail is money paid to release someone from custody.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"bail hearing\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"bail\" in phrases such as \"bail hearing\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"bail\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_barrister_batch2_01",
+      "word": "barrister",
+      "lemma": "barrister",
+      "ipa": "/ˈbærɪstə/",
+      "partOfSpeech": "n.",
+      "sense": "court lawyer",
+      "englishDefinition": "a lawyer who speaks in higher courts",
+      "chineseMeaning": "大律师",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "defence barrister",
+        "senior barrister",
+        "hire a barrister"
+      ],
+      "paraphrases": [
+        "lawyer",
+        "counsel",
+        "advocate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A barrister is a lawyer who speaks in higher courts.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"defence barrister\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"barrister\" in phrases such as \"defence barrister\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"barrister\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_blackmail_batch2_01",
+      "word": "blackmail",
+      "lemma": "blackmail",
+      "ipa": "/ˈblækmeɪl/",
+      "partOfSpeech": "n.",
+      "sense": "threat-based extortion",
+      "englishDefinition": "demanding money by threatening to reveal secrets",
+      "chineseMeaning": "敲诈",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "commit blackmail",
+        "blackmail attempt",
+        "victim of blackmail"
+      ],
+      "paraphrases": [
+        "extortion",
+        "threat",
+        "coercion"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Blackmail is demanding money by threatening to reveal secrets.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"blackmail attempt\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"blackmail\" in phrases such as \"blackmail attempt\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"blackmail\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_bribe_batch2_01",
+      "word": "bribe",
+      "lemma": "bribe",
+      "ipa": "/braɪb/",
+      "partOfSpeech": "n.",
+      "sense": "illegal payment",
+      "englishDefinition": "money given to influence someone's actions",
+      "chineseMeaning": "贿赂",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "accept a bribe",
+        "pay a bribe",
+        "bribe scandal"
+      ],
+      "paraphrases": [
+        "payoff",
+        "kickback",
+        "payola"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Bribe is money given to influence someone's actions.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"bribe scandal\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"bribe\" in phrases such as \"bribe scandal\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"bribe\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_burglary_batch2_01",
+      "word": "burglary",
+      "lemma": "burglary",
+      "ipa": "/ˈbɜːɡləri/",
+      "partOfSpeech": "n.",
+      "sense": "break-in theft",
+      "englishDefinition": "entering a building to commit theft",
+      "chineseMeaning": "入室盗窃",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "commit burglary",
+        "burglary rate",
+        "attempted burglary"
+      ],
+      "paraphrases": [
+        "break-in",
+        "robbery",
+        "theft"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Burglary is entering a building to commit theft.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"burglary rate\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"burglary\" in phrases such as \"burglary rate\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"burglary\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_capital_batch2_01",
+      "word": "capital",
+      "lemma": "capital",
+      "ipa": "/ˈkæpɪtl/",
+      "partOfSpeech": "adj.",
+      "sense": "death penalty",
+      "englishDefinition": "punishable by death",
+      "chineseMeaning": "死刑的",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "capital punishment",
+        "capital offense",
+        "capital crime"
+      ],
+      "paraphrases": [
+        "death penalty",
+        "fatal",
+        "ultimate"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In crime and justice contexts, \"capital\" is an adjective meaning punishable by death.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"capital punishment\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"capital\" in phrases such as \"capital punishment\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"capital\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_charge_batch2_01",
+      "word": "charge",
+      "lemma": "charge",
+      "ipa": "/tʃɑːdʒ/",
+      "partOfSpeech": "n.",
+      "sense": "criminal accusation",
+      "englishDefinition": "a formal accusation of a crime",
+      "chineseMeaning": "指控",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "face charges",
+        "criminal charge",
+        "drop charges"
+      ],
+      "paraphrases": [
+        "accusation",
+        "indictment",
+        "allegation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A charge is a formal accusation of a crime.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"criminal charge\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"charge\" in phrases such as \"criminal charge\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"charge\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_civil_batch2_01",
+      "word": "civil",
+      "lemma": "civil",
+      "ipa": "/ˈsɪvl/",
+      "partOfSpeech": "adj.",
+      "sense": "non-criminal legal",
+      "englishDefinition": "relating to private rights rather than crimes",
+      "chineseMeaning": "民事的",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "civil case",
+        "civil law",
+        "civil court"
+      ],
+      "paraphrases": [
+        "private",
+        "non-criminal",
+        "personal"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In crime and justice contexts, \"civil\" is an adjective meaning relating to private rights rather than crimes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"civil case\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"civil\" in phrases such as \"civil case\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"civil\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_confession_batch2_01",
+      "word": "confession",
+      "lemma": "confession",
+      "ipa": "/kənˈfeʃn/",
+      "partOfSpeech": "n.",
+      "sense": "guilty admission",
+      "englishDefinition": "admission of guilt for a crime",
+      "chineseMeaning": "供认",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "make a confession",
+        "false confession",
+        "forced confession"
+      ],
+      "paraphrases": [
+        "admission",
+        "acknowledgment",
+        "statement"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Confession is admission of guilt for a crime.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"false confession\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"confession\" in phrases such as \"false confession\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"confession\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_court_batch2_01",
+      "word": "court",
+      "lemma": "court",
+      "ipa": "/kɔːt/",
+      "partOfSpeech": "n.",
+      "sense": "legal venue",
+      "englishDefinition": "where legal cases are heard",
+      "chineseMeaning": "法庭",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "appear in court",
+        "court case",
+        "court decision"
+      ],
+      "paraphrases": [
+        "tribunal",
+        "judiciary",
+        "bench"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Court is where legal cases are heard.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"court case\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"court\" in phrases such as \"court case\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"court\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_criminal_batch2_01",
+      "word": "criminal",
+      "lemma": "criminal",
+      "ipa": "/ˈkrɪmɪnl/",
+      "partOfSpeech": "n.",
+      "sense": "lawbreaker",
+      "englishDefinition": "a person who commits crimes",
+      "chineseMeaning": "罪犯",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "convicted criminal",
+        "career criminal",
+        "known criminal"
+      ],
+      "paraphrases": [
+        "lawbreaker",
+        "offender",
+        "felon"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A criminal is a person who commits crimes.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"convicted criminal\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"criminal\" in phrases such as \"convicted criminal\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"criminal\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_defence_batch2_01",
+      "word": "defence",
+      "lemma": "defence",
+      "ipa": "/dɪˈfens/",
+      "partOfSpeech": "n.",
+      "sense": "legal argument",
+      "englishDefinition": "the case presented by the accused",
+      "chineseMeaning": "辩护",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "defence lawyer",
+        "defence case",
+        "legal defence"
+      ],
+      "paraphrases": [
+        "defense",
+        "justification",
+        "argument"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Defence is the case presented by the accused.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"defence lawyer\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"defence\" in phrases such as \"defence lawyer\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"defence\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_defendant_batch2_01",
+      "word": "defendant",
+      "lemma": "defendant",
+      "ipa": "/dɪˈfendənt/",
+      "partOfSpeech": "n.",
+      "sense": "accused person",
+      "englishDefinition": "a person accused in court",
+      "chineseMeaning": "被告",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "the defendant",
+        "defendant pleads",
+        "defendant was"
+      ],
+      "paraphrases": [
+        "accused",
+        "respondent",
+        "charged person"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A defendant is a person accused in court.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"the defendant\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"defendant\" in phrases such as \"the defendant\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"defendant\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_detention_batch2_01",
+      "word": "detention",
+      "lemma": "detention",
+      "ipa": "/dɪˈtenʃn/",
+      "partOfSpeech": "n.",
+      "sense": "being held",
+      "englishDefinition": "the state of being held in custody",
+      "chineseMeaning": "拘留",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "in detention",
+        "detention center",
+        "detention without trial"
+      ],
+      "paraphrases": [
+        "custody",
+        "confinement",
+        "holding"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Detention is the state of being held in custody.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"in detention\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"detention\" in phrases such as \"in detention\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"detention\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_felony_batch2_01",
+      "word": "felony",
+      "lemma": "felony",
+      "ipa": "/ˈfeləni/",
+      "partOfSpeech": "n.",
+      "sense": "major crime",
+      "englishDefinition": "a serious crime punishable by imprisonment",
+      "chineseMeaning": "重罪",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "commit a felony",
+        "felony charge",
+        "violent felony"
+      ],
+      "paraphrases": [
+        "major crime",
+        "serious offense",
+        "indictable offense"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A felony is a serious crime punishable by imprisonment.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"felony charge\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"felony\" in phrases such as \"felony charge\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"felony\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_fine_batch2_01",
+      "word": "fine",
+      "lemma": "fine",
+      "ipa": "/faɪn/",
+      "partOfSpeech": "n.",
+      "sense": "monetary penalty",
+      "englishDefinition": "a sum of money paid as punishment",
+      "chineseMeaning": "罚款",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "pay a fine",
+        "heavy fine",
+        "on-the-spot fine"
+      ],
+      "paraphrases": [
+        "penalty",
+        "penalty fee",
+        "forfeit"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A fine is a sum of money paid as punishment.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"heavy fine\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"fine\" in phrases such as \"heavy fine\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"fine\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_fraud_batch2_01",
+      "word": "fraud",
+      "lemma": "fraud",
+      "ipa": "/frɔːd/",
+      "partOfSpeech": "n.",
+      "sense": "deceptive crime",
+      "englishDefinition": "criminal deception for personal gain",
+      "chineseMeaning": "诈骗",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "commit fraud",
+        "tax fraud",
+        "identity fraud"
+      ],
+      "paraphrases": [
+        "deception",
+        "scam",
+        "swindle"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Fraud is criminal deception for personal gain.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"tax fraud\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"fraud\" in phrases such as \"tax fraud\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"fraud\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_guilty_batch2_01",
+      "word": "guilty",
+      "lemma": "guilty",
+      "ipa": "/ˈɡɪlti/",
+      "partOfSpeech": "adj.",
+      "sense": "responsible for crime",
+      "englishDefinition": "having committed a crime",
+      "chineseMeaning": "有罪的",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "found guilty",
+        "plead guilty",
+        "guilty verdict"
+      ],
+      "paraphrases": [
+        "culpable",
+        "responsible",
+        "liable"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In crime and justice contexts, \"guilty\" is an adjective meaning having committed a crime.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"found guilty\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"guilty\" in phrases such as \"found guilty\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"guilty\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_hacking_batch2_01",
+      "word": "hacking",
+      "lemma": "hacking",
+      "ipa": "/ˈhækɪŋ/",
+      "partOfSpeech": "n.",
+      "sense": "cyber crime",
+      "englishDefinition": "unauthorized access to computer systems",
+      "chineseMeaning": "黑客攻击",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "computer hacking",
+        "hacking attack",
+        "accused of hacking"
+      ],
+      "paraphrases": [
+        "cyberattack",
+        "unauthorized access",
+        "breach"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Hacking is unauthorized access to computer systems.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"computer hacking\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"hacking\" in phrases such as \"computer hacking\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"hacking\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_homicide_batch2_01",
+      "word": "homicide",
+      "lemma": "homicide",
+      "ipa": "/ˈhɒmɪsaɪd/",
+      "partOfSpeech": "n.",
+      "sense": "killing",
+      "englishDefinition": "the killing of one person by another",
+      "chineseMeaning": "杀人",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "homicide rate",
+        "commit homicide",
+        "homicide investigation"
+      ],
+      "paraphrases": [
+        "murder",
+        "killing",
+        "manslaughter"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Homicide is the killing of one person by another.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"homicide rate\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"homicide\" in phrases such as \"homicide rate\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"homicide\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_innocent_batch2_01",
+      "word": "innocent",
+      "lemma": "innocent",
+      "ipa": "/ˈɪnəsnt/",
+      "partOfSpeech": "adj.",
+      "sense": "not responsible",
+      "englishDefinition": "not guilty of a crime",
+      "chineseMeaning": "无辜的",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "prove innocent",
+        "innocent until proven guilty",
+        "found innocent"
+      ],
+      "paraphrases": [
+        "blameless",
+        "not guilty",
+        "faultless"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In crime and justice contexts, \"innocent\" is an adjective meaning not guilty of a crime.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"innocent until proven guilty\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"innocent\" in phrases such as \"innocent until proven guilty\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"innocent\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_interrogation_batch2_01",
+      "word": "interrogation",
+      "lemma": "interrogation",
+      "ipa": "/ɪnˌterəˈɡeɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "formal questioning",
+      "englishDefinition": "intense questioning by police",
+      "chineseMeaning": "审讯",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "police interrogation",
+        "under interrogation",
+        "during interrogation"
+      ],
+      "paraphrases": [
+        "questioning",
+        "examination",
+        "interview"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Interrogation is intense questioning by police.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"police interrogation\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"interrogation\" in phrases such as \"police interrogation\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"interrogation\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_judge_batch2_01",
+      "word": "judge",
+      "lemma": "judge",
+      "ipa": "/dʒʌdʒ/",
+      "partOfSpeech": "n.",
+      "sense": "legal decision-maker",
+      "englishDefinition": "an official who decides cases in court",
+      "chineseMeaning": "法官",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "the judge",
+        "federal judge",
+        "high court judge"
+      ],
+      "paraphrases": [
+        "magistrate",
+        "justice",
+        "adjudicator"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A judge is an official who decides cases in court.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"the judge\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"judge\" in phrases such as \"the judge\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"judge\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_juror_batch2_01",
+      "word": "juror",
+      "lemma": "juror",
+      "ipa": "/ˈdʒʊərə/",
+      "partOfSpeech": "n.",
+      "sense": "jury member",
+      "englishDefinition": "a member of a jury",
+      "chineseMeaning": "陪审员",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "juror selection",
+        "juror dismissed",
+        "potential juror"
+      ],
+      "paraphrases": [
+        "jury member",
+        "peer",
+        "jurist"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A juror is a member of a jury.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"juror selection\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"juror\" in phrases such as \"juror selection\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"juror\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_jury_batch2_01",
+      "word": "jury",
+      "lemma": "jury",
+      "ipa": "/ˈdʒʊəri/",
+      "partOfSpeech": "n.",
+      "sense": "decision-making group",
+      "englishDefinition": "a group of people who decide a verdict",
+      "chineseMeaning": "陪审团",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "the jury",
+        "jury trial",
+        "jury selection"
+      ],
+      "paraphrases": [
+        "panel",
+        "peers",
+        "decision-makers"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A jury is a group of people who decide a verdict.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"the jury\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"jury\" in phrases such as \"the jury\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"jury\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_lawyer_batch2_01",
+      "word": "lawyer",
+      "lemma": "lawyer",
+      "ipa": "/ˈlɔːjə/",
+      "partOfSpeech": "n.",
+      "sense": "legal representative",
+      "englishDefinition": "a person who practices law",
+      "chineseMeaning": "律师",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "defence lawyer",
+        "hire a lawyer",
+        "lawyer argued"
+      ],
+      "paraphrases": [
+        "attorney",
+        "counsel",
+        "solicitor"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A lawyer is a person who practices law.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"defence lawyer\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"lawyer\" in phrases such as \"defence lawyer\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"lawyer\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_magistrate_batch2_01",
+      "word": "magistrate",
+      "lemma": "magistrate",
+      "ipa": "/ˈmædʒɪstreɪt/",
+      "partOfSpeech": "n.",
+      "sense": "lower court judge",
+      "englishDefinition": "a judicial officer who handles minor cases",
+      "chineseMeaning": "治安法官",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "magistrate court",
+        "the magistrate",
+        "lay magistrate"
+      ],
+      "paraphrases": [
+        "justice",
+        "judge",
+        "judicial officer"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A magistrate is a judicial officer who handles minor cases.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"magistrate court\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"magistrate\" in phrases such as \"magistrate court\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"magistrate\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_manslaughter_batch2_01",
+      "word": "manslaughter",
+      "lemma": "manslaughter",
+      "ipa": "/ˈmænˌslɔːtə/",
+      "partOfSpeech": "n.",
+      "sense": "unintentional killing",
+      "englishDefinition": "killing without premeditation",
+      "chineseMeaning": "过失杀人",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "charge with manslaughter",
+        "manslaughter conviction",
+        "involuntary manslaughter"
+      ],
+      "paraphrases": [
+        "unintentional killing",
+        "accidental killing",
+        "homicide"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Manslaughter is killing without premeditation.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"charge with manslaughter\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"manslaughter\" in phrases such as \"charge with manslaughter\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"manslaughter\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_money_batch2_01",
+      "word": "money",
+      "lemma": "money",
+      "ipa": "/ˈmʌni/",
+      "partOfSpeech": "n.",
+      "sense": "illegal financial activity",
+      "englishDefinition": "laundering illicit funds",
+      "chineseMeaning": "金钱（洗钱）",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "money laundering",
+        "launder money",
+        "laundered money"
+      ],
+      "paraphrases": [
+        "laundering",
+        "washing",
+        "concealment"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Money is laundering illicit funds.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"money laundering\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"money\" in phrases such as \"money laundering\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"money\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_murder_batch2_01",
+      "word": "murder",
+      "lemma": "murder",
+      "ipa": "/ˈmɜːdə/",
+      "partOfSpeech": "n.",
+      "sense": "intentional killing",
+      "englishDefinition": "the unlawful premeditated killing of a person",
+      "chineseMeaning": "谋杀",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "commit murder",
+        "murder charge",
+        "murder trial"
+      ],
+      "paraphrases": [
+        "homicide",
+        "killing",
+        "slaughter"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Murder is the unlawful premeditated killing of a person.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"murder charge\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"murder\" in phrases such as \"murder charge\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"murder\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_parole_batch2_01",
+      "word": "parole",
+      "lemma": "parole",
+      "ipa": "/pəˈrəʊl/",
+      "partOfSpeech": "n.",
+      "sense": "conditional release",
+      "englishDefinition": "early release from prison under supervision",
+      "chineseMeaning": "假释",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "on parole",
+        "grant parole",
+        "parole board"
+      ],
+      "paraphrases": [
+        "release",
+        "freedom",
+        "probation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Parole is early release from prison under supervision.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"on parole\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"parole\" in phrases such as \"on parole\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"parole\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_penalty_batch2_01",
+      "word": "penalty",
+      "lemma": "penalty",
+      "ipa": "/ˈpenəlti/",
+      "partOfSpeech": "n.",
+      "sense": "legal punishment",
+      "englishDefinition": "punishment for breaking a law",
+      "chineseMeaning": "刑罚",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "death penalty",
+        "heavy penalty",
+        "severe penalty"
+      ],
+      "paraphrases": [
+        "punishment",
+        "sentence",
+        "sanction"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Penalty is punishment for breaking a law.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"death penalty\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"penalty\" in phrases such as \"death penalty\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"penalty\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_plaintiff_batch2_01",
+      "word": "plaintiff",
+      "lemma": "plaintiff",
+      "ipa": "/ˈpleɪntɪf/",
+      "partOfSpeech": "n.",
+      "sense": "accuser",
+      "englishDefinition": "a person who brings a case to court",
+      "chineseMeaning": "原告",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "the plaintiff",
+        "plaintiff claims",
+        "plaintiff argued"
+      ],
+      "paraphrases": [
+        "accuser",
+        "claimant",
+        "prosecutor"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A plaintiff is a person who brings a case to court.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"the plaintiff\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"plaintiff\" in phrases such as \"the plaintiff\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"plaintiff\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_prison_batch2_01",
+      "word": "prison",
+      "lemma": "prison",
+      "ipa": "/ˈprɪzn/",
+      "partOfSpeech": "n.",
+      "sense": "incarceration facility",
+      "englishDefinition": "a building where criminals are held",
+      "chineseMeaning": "监狱",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "in prison",
+        "prison sentence",
+        "federal prison"
+      ],
+      "paraphrases": [
+        "jail",
+        "penitentiary",
+        "correctional facility"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A prison is a building where criminals are held.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"in prison\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"prison\" in phrases such as \"in prison\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"prison\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_probation_batch2_01",
+      "word": "probation",
+      "lemma": "probation",
+      "ipa": "/prəˈbeɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "court supervision",
+      "englishDefinition": "supervised release instead of prison",
+      "chineseMeaning": "缓刑",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "on probation",
+        "probation officer",
+        "violate probation"
+      ],
+      "paraphrases": [
+        "supervision",
+        "conditional release",
+        "monitoring"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Probation is supervised release instead of prison.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"on probation\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"probation\" in phrases such as \"on probation\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"probation\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_prosecutor_batch2_01",
+      "word": "prosecutor",
+      "lemma": "prosecutor",
+      "ipa": "/ˈprɒsɪkjuːtə/",
+      "partOfSpeech": "n.",
+      "sense": "state attorney",
+      "englishDefinition": "a lawyer who presents the case against someone",
+      "chineseMeaning": "检察官",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "public prosecutor",
+        "chief prosecutor",
+        "federal prosecutor"
+      ],
+      "paraphrases": [
+        "district attorney",
+        "state attorney",
+        "crown prosecutor"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A prosecutor is a lawyer who presents the case against someone.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"public prosecutor\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"prosecutor\" in phrases such as \"public prosecutor\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"prosecutor\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_rape_batch2_01",
+      "word": "rape",
+      "lemma": "rape",
+      "ipa": "/reɪp/",
+      "partOfSpeech": "n.",
+      "sense": "sexual assault",
+      "englishDefinition": "the crime of forcing someone to have sex",
+      "chineseMeaning": "强奸",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "rape case",
+        "rape victim",
+        "date rape"
+      ],
+      "paraphrases": [
+        "sexual assault",
+        "violation",
+        "attack"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Rape is the crime of forcing someone to have sex.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"rape case\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"rape\" in phrases such as \"rape case\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"rape\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_robbery_batch2_01",
+      "word": "robbery",
+      "lemma": "robbery",
+      "ipa": "/ˈrɒbəri/",
+      "partOfSpeech": "n.",
+      "sense": "violent theft",
+      "englishDefinition": "taking property by force or threat",
+      "chineseMeaning": "抢劫",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "armed robbery",
+        "bank robbery",
+        "commit robbery"
+      ],
+      "paraphrases": [
+        "hold-up",
+        "heist",
+        "stick-up"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Robbery is taking property by force or threat.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"armed robbery\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"robbery\" in phrases such as \"armed robbery\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"robbery\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_solicitor_batch2_01",
+      "word": "solicitor",
+      "lemma": "solicitor",
+      "ipa": "/səˈlɪsɪtə/",
+      "partOfSpeech": "n.",
+      "sense": "legal adviser",
+      "englishDefinition": "a lawyer who prepares legal documents",
+      "chineseMeaning": "事务律师",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "hire a solicitor",
+        "solicitor general",
+        "practice as a solicitor"
+      ],
+      "paraphrases": [
+        "lawyer",
+        "attorney",
+        "legal adviser"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A solicitor is a lawyer who prepares legal documents.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"solicitor general\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"solicitor\" in phrases such as \"solicitor general\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"solicitor\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_statute_batch2_01",
+      "word": "statute",
+      "lemma": "statute",
+      "ipa": "/ˈstætʃuːt/",
+      "partOfSpeech": "n.",
+      "sense": "written law",
+      "englishDefinition": "a written law passed by legislature",
+      "chineseMeaning": "法规",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "statute law",
+        "federal statute",
+        "criminal statute"
+      ],
+      "paraphrases": [
+        "law",
+        "act",
+        "legislation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A statute is a written law passed by legislature.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"statute law\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"statute\" in phrases such as \"statute law\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"statute\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_suspect_batch2_01",
+      "word": "suspect",
+      "lemma": "suspect",
+      "ipa": "/ˈsʌspekt/",
+      "partOfSpeech": "n.",
+      "sense": "accused person",
+      "englishDefinition": "a person thought to have committed a crime",
+      "chineseMeaning": "嫌疑人",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "prime suspect",
+        "arrest a suspect",
+        "question a suspect"
+      ],
+      "paraphrases": [
+        "accused",
+        "defendant",
+        "alleged criminal"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A suspect is a person thought to have committed a crime.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"prime suspect\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"suspect\" in phrases such as \"prime suspect\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"suspect\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_theft_batch2_01",
+      "word": "theft",
+      "lemma": "theft",
+      "ipa": "/θeft/",
+      "partOfSpeech": "n.",
+      "sense": "stealing",
+      "englishDefinition": "the act of stealing something",
+      "chineseMeaning": "盗窃",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "commit theft",
+        "identity theft",
+        "grand theft"
+      ],
+      "paraphrases": [
+        "stealing",
+        "larceny",
+        "robbery"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Theft is the act of stealing something.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"identity theft\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"theft\" in phrases such as \"identity theft\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"theft\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_trial_batch2_01",
+      "word": "trial",
+      "lemma": "trial",
+      "ipa": "/ˈtraɪəl/",
+      "partOfSpeech": "n.",
+      "sense": "legal proceeding",
+      "englishDefinition": "a formal examination of evidence in court",
+      "chineseMeaning": "审判",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "stand trial",
+        "fair trial",
+        "trial date"
+      ],
+      "paraphrases": [
+        "hearing",
+        "proceeding",
+        "case"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A trial is a formal examination of evidence in court.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"stand trial\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"trial\" in phrases such as \"stand trial\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"trial\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_witness_batch2_01",
+      "word": "witness",
+      "lemma": "witness",
+      "ipa": "/ˈwɪtnəs/",
+      "partOfSpeech": "n.",
+      "sense": "observer",
+      "englishDefinition": "a person who sees an event occur",
+      "chineseMeaning": "证人",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "witness testimony",
+        "key witness",
+        "eyewitness"
+      ],
+      "paraphrases": [
+        "observer",
+        "bystander",
+        "onlooker"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A witness is a person who sees an event occur.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"witness testimony\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"witness\" in phrases such as \"witness testimony\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"witness\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "crime_warrant_batch2_01",
+      "word": "warrant",
+      "lemma": "warrant",
+      "ipa": "/ˈwɒrənt/",
+      "partOfSpeech": "n.",
+      "sense": "legal authorization",
+      "englishDefinition": "an official document authorizing police action",
+      "chineseMeaning": "逮捕令",
+      "topic": "crime",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "arrest warrant",
+        "search warrant",
+        "issue a warrant"
+      ],
+      "paraphrases": [
+        "authorization",
+        "order",
+        "decree"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A warrant is an official document authorizing police action.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about crime and justice, phrases such as \"search warrant\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"warrant\" in phrases such as \"search warrant\" when discussing crime and justice.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"warrant\" in one IELTS-style sentence about crime."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
     }
   ]
 }

@@ -68,6 +68,17 @@
         <li>
           <a
             href="#"
+            @click.prevent="$emit('navigate', 'speaking')"
+            class="nav-item"
+            :class="{ 'active': currentPage === 'speaking' }"
+          >
+            <span class="text-xl">🗣️</span>
+            <span>口语话题</span>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
             @click.prevent="$emit('open-vocab-selector')"
             class="nav-item"
           >

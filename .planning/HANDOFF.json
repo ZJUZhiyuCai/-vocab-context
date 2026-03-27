@@ -1,14 +1,14 @@
 {
   "version": "1.0",
-  "timestamp": "2026-03-26T16:34:54Z",
+  "timestamp": "2026-03-27T05:57:00Z",
   "project": "VocabMan IELTS Vocabulary Upgrade",
-  "status": "paused",
+  "status": "verified",
   "completed_phases": [
     {
       "phase": "tech-debt-1-6",
       "name": "技术债务清理 (Phase 1-6)",
-      "status": "done",
-      "summary": "测试配置、App.vue重构、ContextPractice重构、Storage统一、日志系统、XSS防护"
+      "status": "partial",
+      "summary": "部分完成：测试配置、composables拆分、storageKeys、logger、ErrorBoundary存在；测试环境问题待修复"
     },
     {
       "phase": "ielts-upgrade-1",
@@ -21,29 +21,39 @@
       "name": "Topic Pack扩展",
       "status": "done",
       "summary": "Foundation 541→743词，所有Topic Pack达76+词汇"
+    },
+    {
+      "phase": "ielts-upgrade-3",
+      "name": "Speaking Part 2 话题词群",
+      "status": "verified",
+      "summary": "Claude + Codex 双方验收通过，构建成功，准备提交"
     }
   ],
   "current_phase": {
     "phase": "ielts-upgrade-3",
     "name": "雅思专项功能增强 - Speaking Part 2 话题词群",
-    "status": "in_progress",
-    "progress": "规划已批准，尚未开始编码"
+    "status": "verified",
+    "progress": "双AI验收通过，准备提交到 GitHub"
   },
   "remaining_tasks": [
-    {"id": 1, "name": "创建 speakingTopicEngine.js", "status": "not_started"},
-    {"id": 2, "name": "创建 SpeakingTopicPanel.vue", "status": "not_started"},
-    {"id": 3, "name": "集成到现有导航", "status": "not_started"}
+    "提交 Phase 3 成果到 ZJUZhiyuCai/Vocab",
+    "技术债务 Phase 1: 修复测试环境问题 (authService window 访问)",
+    "技术债务 Phase 1: 修复 lint warnings (2891 warnings)"
   ],
   "blockers": [],
-  "human_actions_pending": [],
+  "human_actions_pending": ["确认提交信息"],
   "decisions": [
     {"decision": "使用IELTS Band替代CET标签", "rationale": "更直观，用户明确目标分数", "phase": "ielts-upgrade-1"},
-    {"decision": "选择Speaking Part 2话题词群作为Phase 3首个功能", "rationale": "用户选择", "phase": "ielts-upgrade-3"}
+    {"decision": "选择Speaking Part 2话题词群作为Phase 3首个功能", "rationale": "用户选择", "phase": "ielts-upgrade-3"},
+    {"decision": "speakingTopicEngine过滤条件只保留topic", "rationale": "Speaking Part 2只显示话题包，不包含foundation", "phase": "ielts-upgrade-3"}
   ],
-  "files_modified_uncommitted": [
-    ".planning/IELTS_VOCAB_UPGRADE.md",
-    ".planning/CODEX_REVIEW_IELTS_UPGRADE.md"
+  "files_to_commit": [
+    "src/components/SpeakingTopicPanel.vue",
+    "src/utils/speakingTopicEngine.js",
+    "src/utils/__tests__/speakingTopicEngine.test.js",
+    ".planning/.continue-here.md",
+    ".planning/HANDOFF.json"
   ],
-  "next_action": "创建 src/utils/speakingTopicEngine.js - 话题词群引擎",
-  "context_notes": "Context接近90%上限，建议新会话继续。已完成Codex审查修复（buildContexts词性问题、parseIeltsBand边界、去重逻辑、CEFR标签显示）。数据已重新生成并验证。"
+  "next_action": "提交到 GitHub",
+  "context_notes": "Phase 3 验收完成。新增文件：speakingTopicEngine.js (196行)、SpeakingTopicPanel.vue (192行)、speakingTopicEngine.test.js。构建通过。"
 }

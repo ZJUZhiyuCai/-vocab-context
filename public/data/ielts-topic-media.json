@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-23T15:48:29.234Z",
+  "generatedAt": "2026-03-26T16:12:37.671Z",
   "source": "IELTS Foundation",
   "topic": "media",
   "name": "IELTS Topic Pack - Media",
-  "totalBundles": 32,
+  "totalBundles": 77,
   "bundles": [
     {
       "bundleId": "media_evidence_004",
@@ -1037,19 +1037,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The relationship between journalism and media influence has been widely debated.",
+          "text": "Journalism is the activity of gathering, assessing, and presenting news and information.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Media organizations have a responsibility regarding journalism in their reporting.",
+          "text": "In IELTS writing about media and communication, phrases such as \"investigative journalism\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "For media topics, journalism helps express opinions about information and communication.",
+          "text": "In IELTS speaking, you can use \"journalism\" in phrases such as \"investigative journalism\" when discussing media and communication.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1098,19 +1098,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The relationship between censorship and media influence has been widely debated.",
+          "text": "Censorship is the suppression or prohibition of speech, writing, or images.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Media organizations have a responsibility regarding censorship in their reporting.",
+          "text": "In IELTS writing about media and communication, phrases such as \"media censorship\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "For media topics, censorship helps express opinions about information and communication.",
+          "text": "In IELTS speaking, you can use \"censorship\" in phrases such as \"media censorship\" when discussing media and communication.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1159,19 +1159,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The relationship between coverage and media influence has been widely debated.",
+          "text": "Coverage is the extent to which something is reported by the media.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Media organizations have a responsibility regarding coverage in their reporting.",
+          "text": "In IELTS writing about media and communication, phrases such as \"media coverage\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "For media topics, coverage helps express opinions about information and communication.",
+          "text": "In IELTS speaking, you can use \"coverage\" in phrases such as \"media coverage\" when discussing media and communication.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1220,19 +1220,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The relationship between advertisement and media influence has been widely debated.",
+          "text": "An advertisement is a public notice promoting a product, service, or event.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Media organizations have a responsibility regarding advertisement in their reporting.",
+          "text": "In IELTS writing about media and communication, phrases such as \"television advertisement\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "For media topics, advertisement helps express opinions about information and communication.",
+          "text": "In IELTS speaking, you can use \"advertisement\" in phrases such as \"television advertisement\" when discussing media and communication.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1281,19 +1281,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The relationship between sensationalism and media influence has been widely debated.",
+          "text": "Sensationalism is the presentation of stories in a way that exaggerates to attract attention.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Media organizations have a responsibility regarding sensationalism in their reporting.",
+          "text": "In IELTS writing about media and communication, phrases such as \"media sensationalism\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "For media topics, sensationalism helps express opinions about information and communication.",
+          "text": "In IELTS speaking, you can use \"sensationalism\" in phrases such as \"media sensationalism\" when discussing media and communication.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1342,19 +1342,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The relationship between misinformation and media influence has been widely debated.",
+          "text": "Misinformation is false or inaccurate information that is spread unintentionally.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Media organizations have a responsibility regarding misinformation in their reporting.",
+          "text": "In IELTS writing about media and communication, phrases such as \"online misinformation\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "For media topics, misinformation helps express opinions about information and communication.",
+          "text": "In IELTS speaking, you can use \"misinformation\" in phrases such as \"online misinformation\" when discussing media and communication.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1403,19 +1403,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The relationship between credibility and media influence has been widely debated.",
+          "text": "Credibility is the quality of being trusted and believed in.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Media organizations have a responsibility regarding credibility in their reporting.",
+          "text": "In IELTS writing about media and communication, phrases such as \"media credibility\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "For media topics, credibility helps express opinions about information and communication.",
+          "text": "In IELTS speaking, you can use \"credibility\" in phrases such as \"media credibility\" when discussing media and communication.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1464,19 +1464,19 @@
       "contexts": [
         {
           "kind": "reading",
-          "text": "The relationship between mainstream and media influence has been widely debated.",
+          "text": "In media and communication contexts, \"mainstream\" is an adjective meaning considered normal and accepted by the majority of people.",
           "translation": "",
           "purpose": "core"
         },
         {
           "kind": "writing",
-          "text": "Media organizations have a responsibility regarding mainstream in their reporting.",
+          "text": "In IELTS writing about media and communication, phrases such as \"mainstream media\" help you express ideas more precisely.",
           "translation": "",
           "purpose": "near-transfer"
         },
         {
           "kind": "speaking",
-          "text": "For media topics, mainstream helps express opinions about information and communication.",
+          "text": "In IELTS speaking, you can use \"mainstream\" in phrases such as \"mainstream media\" when discussing media and communication.",
           "translation": "",
           "purpose": "far-transfer"
         }
@@ -1921,6 +1921,2751 @@
       },
       "draft": false,
       "sourceCategory": "legacy-batch7"
+    },
+    {
+      "bundleId": "media_airtime_batch2_01",
+      "word": "airtime",
+      "lemma": "airtime",
+      "ipa": "/ˈeətaɪm/",
+      "partOfSpeech": "n.",
+      "sense": "broadcast time",
+      "englishDefinition": "time allocated for broadcasting",
+      "chineseMeaning": "播出时间",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "get airtime",
+        "airtime allocation",
+        "purchase airtime"
+      ],
+      "paraphrases": [
+        "broadcast time",
+        "air space",
+        "radio time"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Airtime is time allocated for broadcasting.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"airtime allocation\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"airtime\" in phrases such as \"airtime allocation\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"airtime\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_anchor_batch2_01",
+      "word": "anchor",
+      "lemma": "anchor",
+      "ipa": "/ˈæŋkə/",
+      "partOfSpeech": "n.",
+      "sense": "news presenter",
+      "englishDefinition": "a person who presents news on television",
+      "chineseMeaning": "新闻主播",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "news anchor",
+        "TV anchor",
+        "anchor desk"
+      ],
+      "paraphrases": [
+        "presenter",
+        "newscaster",
+        "host"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An anchor is a person who presents news on television.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"news anchor\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"anchor\" in phrases such as \"news anchor\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"anchor\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_audience_batch2_01",
+      "word": "audience",
+      "lemma": "audience",
+      "ipa": "/ˈɔːdiəns/",
+      "partOfSpeech": "n.",
+      "sense": "media consumers",
+      "englishDefinition": "the people who watch or listen to media",
+      "chineseMeaning": "观众；受众",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "target audience",
+        "mass audience",
+        "audience rating"
+      ],
+      "paraphrases": [
+        "viewers",
+        "listeners",
+        "spectators"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Audience is the people who watch or listen to media.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"target audience\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"audience\" in phrases such as \"target audience\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"audience\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_celebrity_batch2_01",
+      "word": "celebrity",
+      "lemma": "celebrity",
+      "ipa": "/sɪˈlebrəti/",
+      "partOfSpeech": "n.",
+      "sense": "famous person",
+      "englishDefinition": "a famous person widely recognized by the public",
+      "chineseMeaning": "名人",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "celebrity culture",
+        "A-list celebrity",
+        "celebrity status"
+      ],
+      "paraphrases": [
+        "star",
+        "famous person",
+        "public figure"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A celebrity is a famous person widely recognized by the public.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"celebrity culture\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"celebrity\" in phrases such as \"celebrity culture\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"celebrity\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_circulation_batch2_01",
+      "word": "circulation",
+      "lemma": "circulation",
+      "ipa": "/ˌsɜːkjəˈleɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "distribution count",
+      "englishDefinition": "the number of copies of a publication distributed",
+      "chineseMeaning": "发行量",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "daily circulation",
+        "circulation figures",
+        "increase circulation"
+      ],
+      "paraphrases": [
+        "distribution",
+        "readership",
+        "sales"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Circulation is the number of copies of a publication distributed.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"daily circulation\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"circulation\" in phrases such as \"daily circulation\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"circulation\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_commentary_batch2_01",
+      "word": "commentary",
+      "lemma": "commentary",
+      "ipa": "/ˈkɒməntəri/",
+      "partOfSpeech": "n.",
+      "sense": "analytical discussion",
+      "englishDefinition": "explanation or discussion of events",
+      "chineseMeaning": "评论；解说",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "provide commentary",
+        "political commentary",
+        "live commentary"
+      ],
+      "paraphrases": [
+        "analysis",
+        "observation",
+        "remarks"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Commentary is explanation or discussion of events.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"provide commentary\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"commentary\" in phrases such as \"provide commentary\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"commentary\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_correspondent_batch2_01",
+      "word": "correspondent",
+      "lemma": "correspondent",
+      "ipa": "/ˌkɒrɪˈspɒndənt/",
+      "partOfSpeech": "n.",
+      "sense": "news reporter",
+      "englishDefinition": "a reporter who sends news from a particular place",
+      "chineseMeaning": "通讯员；记者",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "foreign correspondent",
+        "war correspondent",
+        "news correspondent"
+      ],
+      "paraphrases": [
+        "reporter",
+        "journalist",
+        "news writer"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A correspondent is a reporter who sends news from a particular place.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"foreign correspondent\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"correspondent\" in phrases such as \"foreign correspondent\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"correspondent\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_documentary_batch2_01",
+      "word": "documentary",
+      "lemma": "documentary",
+      "ipa": "/ˌdɒkjəˈmentəri/",
+      "partOfSpeech": "n.",
+      "sense": "factual media",
+      "englishDefinition": "a film or television program based on facts",
+      "chineseMeaning": "纪录片",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "watch documentary",
+        "documentary film",
+        "make a documentary"
+      ],
+      "paraphrases": [
+        "factual film",
+        "non-fiction",
+        "docudrama"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A documentary is a film or television program based on facts.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"watch documentary\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"documentary\" in phrases such as \"watch documentary\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"documentary\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_editor_batch2_01",
+      "word": "editor",
+      "lemma": "editor",
+      "ipa": "/ˈedɪtə/",
+      "partOfSpeech": "n.",
+      "sense": "content manager",
+      "englishDefinition": "a person responsible for editorial content",
+      "chineseMeaning": "编辑",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "chief editor",
+        "newspaper editor",
+        "editor-in-chief"
+      ],
+      "paraphrases": [
+        "editorial chief",
+        "managing editor",
+        "content manager"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An editor is a person responsible for editorial content.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"chief editor\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"editor\" in phrases such as \"chief editor\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"editor\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_editorial_batch2_01",
+      "word": "editorial",
+      "lemma": "editorial",
+      "ipa": "/ˌedɪˈtɔːriəl/",
+      "partOfSpeech": "n.",
+      "sense": "opinion piece",
+      "englishDefinition": "a newspaper article expressing opinions",
+      "chineseMeaning": "社论",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "write an editorial",
+        "editorial board",
+        "editorial opinion"
+      ],
+      "paraphrases": [
+        "opinion piece",
+        "op-ed",
+        "commentary"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An editorial is a newspaper article expressing opinions.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"editorial board\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"editorial\" in phrases such as \"editorial board\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"editorial\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_footage_batch2_01",
+      "word": "footage",
+      "lemma": "footage",
+      "ipa": "/ˈfʊtɪdʒ/",
+      "partOfSpeech": "n.",
+      "sense": "video clips",
+      "englishDefinition": "recorded video material",
+      "chineseMeaning": "影片片段",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "archival footage",
+        "video footage",
+        "news footage"
+      ],
+      "paraphrases": [
+        "video clips",
+        "film",
+        "recording"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Footage is recorded video material.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"archival footage\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"footage\" in phrases such as \"archival footage\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"footage\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_headline_batch2_01",
+      "word": "headline",
+      "lemma": "headline",
+      "ipa": "/ˈhedlaɪn/",
+      "partOfSpeech": "n.",
+      "sense": "news title",
+      "englishDefinition": "a heading at the top of a news article",
+      "chineseMeaning": "标题",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "grab headlines",
+        "front-page headline",
+        "headline news"
+      ],
+      "paraphrases": [
+        "title",
+        "heading",
+        "banner"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A headline is a heading at the top of a news article.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"grab headlines\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"headline\" in phrases such as \"grab headlines\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"headline\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_influencer_batch2_01",
+      "word": "influencer",
+      "lemma": "influencer",
+      "ipa": "/ˈɪnfluənsə/",
+      "partOfSpeech": "n.",
+      "sense": "social media personality",
+      "englishDefinition": "someone who can influence others on social media",
+      "chineseMeaning": "网红；影响者",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "social media influencer",
+        "become an influencer",
+        "top influencer"
+      ],
+      "paraphrases": [
+        "content creator",
+        "online personality",
+        "vlogger"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Influencer is someone who can influence others on social media.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"social media influencer\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"influencer\" in phrases such as \"social media influencer\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"influencer\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_journalist_batch2_01",
+      "word": "journalist",
+      "lemma": "journalist",
+      "ipa": "/ˈdʒɜːnəlɪst/",
+      "partOfSpeech": "n.",
+      "sense": "news writer",
+      "englishDefinition": "a person who writes for newspapers or media",
+      "chineseMeaning": "记者",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "investigative journalist",
+        "freelance journalist",
+        "professional journalist"
+      ],
+      "paraphrases": [
+        "reporter",
+        "news writer",
+        "correspondent"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A journalist is a person who writes for newspapers or media.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"investigative journalist\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"journalist\" in phrases such as \"investigative journalist\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"journalist\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_live_batch2_01",
+      "word": "live",
+      "lemma": "live",
+      "ipa": "/laɪv/",
+      "partOfSpeech": "adj.",
+      "sense": "real-time broadcast",
+      "englishDefinition": "broadcast as it happens",
+      "chineseMeaning": "直播的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "live broadcast",
+        "go live",
+        "live coverage"
+      ],
+      "paraphrases": [
+        "real-time",
+        "broadcast live",
+        "simultaneous"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In media and communication contexts, \"live\" is an adjective meaning broadcast as it happens.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"live broadcast\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"live\" in phrases such as \"live broadcast\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"live\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_media_batch2_01",
+      "word": "media",
+      "lemma": "media",
+      "ipa": "/ˈmiːdiə/",
+      "partOfSpeech": "n.",
+      "sense": "communication channels",
+      "englishDefinition": "the main means of mass communication",
+      "chineseMeaning": "媒体",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "mass media",
+        "social media",
+        "media industry"
+      ],
+      "paraphrases": [
+        "press",
+        "broadcasting",
+        "communications"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Media is the main means of mass communication.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"mass media\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"media\" in phrases such as \"mass media\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"media\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_newscast_batch2_01",
+      "word": "newscast",
+      "lemma": "newscast",
+      "ipa": "/ˈnjuːzkɑːst/",
+      "partOfSpeech": "n.",
+      "sense": "news program",
+      "englishDefinition": "a broadcast of news",
+      "chineseMeaning": "新闻广播",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "evening newscast",
+        "radio newscast",
+        "television newscast"
+      ],
+      "paraphrases": [
+        "news broadcast",
+        "news program",
+        "news report"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A newscast is a broadcast of news.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"evening newscast\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"newscast\" in phrases such as \"evening newscast\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"newscast\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_newspaper_batch2_01",
+      "word": "newspaper",
+      "lemma": "newspaper",
+      "ipa": "/ˈnjuːzˌpeɪpə/",
+      "partOfSpeech": "n.",
+      "sense": "print news medium",
+      "englishDefinition": "a printed publication with news and articles",
+      "chineseMeaning": "报纸",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "daily newspaper",
+        "local newspaper",
+        "newspaper article"
+      ],
+      "paraphrases": [
+        "paper",
+        "press",
+        "publication"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A newspaper is a printed publication with news and articles.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"daily newspaper\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"newspaper\" in phrases such as \"daily newspaper\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"newspaper\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_podcast_batch2_01",
+      "word": "podcast",
+      "lemma": "podcast",
+      "ipa": "/ˈpɒdkɑːst/",
+      "partOfSpeech": "n.",
+      "sense": "audio content",
+      "englishDefinition": "a digital audio program available for download",
+      "chineseMeaning": "播客",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "listen to podcast",
+        "start a podcast",
+        "podcast episode"
+      ],
+      "paraphrases": [
+        "audio program",
+        "radio show",
+        "audio series"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A podcast is a digital audio program available for download.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"listen to podcast\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"podcast\" in phrases such as \"listen to podcast\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"podcast\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_press_batch2_01",
+      "word": "press",
+      "lemma": "press",
+      "ipa": "/pres/",
+      "partOfSpeech": "n.",
+      "sense": "news media",
+      "englishDefinition": "newspapers and news media collectively",
+      "chineseMeaning": "新闻界",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "freedom of the press",
+        "press conference",
+        "press release"
+      ],
+      "paraphrases": [
+        "media",
+        "journalism",
+        "news"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Press is newspapers and news media collectively.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"freedom of the press\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"press\" in phrases such as \"freedom of the press\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"press\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_publicity_batch2_01",
+      "word": "publicity",
+      "lemma": "publicity",
+      "ipa": "/pʌˈblɪsəti/",
+      "partOfSpeech": "n.",
+      "sense": "media attention",
+      "englishDefinition": "public attention given to something",
+      "chineseMeaning": "宣传；关注",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "generate publicity",
+        "negative publicity",
+        "seek publicity"
+      ],
+      "paraphrases": [
+        "attention",
+        "exposure",
+        "promotion"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Publicity is public attention given to something.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"generate publicity\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"publicity\" in phrases such as \"generate publicity\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"publicity\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_publisher_batch2_01",
+      "word": "publisher",
+      "lemma": "publisher",
+      "ipa": "/ˈpʌblɪʃə/",
+      "partOfSpeech": "n.",
+      "sense": "media company",
+      "englishDefinition": "a company that prepares and issues media",
+      "chineseMeaning": "出版商",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "book publisher",
+        "newspaper publisher",
+        "major publisher"
+      ],
+      "paraphrases": [
+        "publishing house",
+        "media company",
+        "content producer"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A publisher is a company that prepares and issues media.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"book publisher\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"publisher\" in phrases such as \"book publisher\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"publisher\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_radio_batch2_01",
+      "word": "radio",
+      "lemma": "radio",
+      "ipa": "/ˈreɪdiəʊ/",
+      "partOfSpeech": "n.",
+      "sense": "audio broadcasting",
+      "englishDefinition": "the transmission of programs by radio waves",
+      "chineseMeaning": "广播",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "listen to radio",
+        "radio station",
+        "radio broadcast"
+      ],
+      "paraphrases": [
+        "wireless",
+        "broadcast",
+        "transmission"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Radio is the transmission of programs by radio waves.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"listen to radio\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"radio\" in phrases such as \"listen to radio\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"radio\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_ratings_batch2_01",
+      "word": "ratings",
+      "lemma": "ratings",
+      "ipa": "/ˈreɪtɪŋz/",
+      "partOfSpeech": "n.",
+      "sense": "audience measurement",
+      "englishDefinition": "statistics showing audience size",
+      "chineseMeaning": "收视率",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "TV ratings",
+        "high ratings",
+        "ratings drop"
+      ],
+      "paraphrases": [
+        "viewership",
+        "audience figures",
+        "popularity"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Ratings is statistics showing audience size.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"TV ratings\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"ratings\" in phrases such as \"TV ratings\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"ratings\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_reporter_batch2_01",
+      "word": "reporter",
+      "lemma": "reporter",
+      "ipa": "/rɪˈpɔːtə/",
+      "partOfSpeech": "n.",
+      "sense": "news gatherer",
+      "englishDefinition": "a person who reports news",
+      "chineseMeaning": "记者",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "news reporter",
+        "field reporter",
+        "television reporter"
+      ],
+      "paraphrases": [
+        "journalist",
+        "correspondent",
+        "news writer"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A reporter is a person who reports news.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"news reporter\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"reporter\" in phrases such as \"news reporter\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"reporter\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_satellite_batch2_01",
+      "word": "satellite",
+      "lemma": "satellite",
+      "ipa": "/ˈsætəlaɪt/",
+      "partOfSpeech": "n.",
+      "sense": "broadcast technology",
+      "englishDefinition": "an artificial object used for communication",
+      "chineseMeaning": "卫星",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "satellite TV",
+        "satellite broadcast",
+        "communication satellite"
+      ],
+      "paraphrases": [
+        "orbital",
+        "transmitter",
+        "relay"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A satellite is an artificial object used for communication.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"satellite TV\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"satellite\" in phrases such as \"satellite TV\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"satellite\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_scoop_batch2_01",
+      "word": "scoop",
+      "lemma": "scoop",
+      "ipa": "/skuːp/",
+      "partOfSpeech": "n.",
+      "sense": "exclusive story",
+      "englishDefinition": "a news story obtained first by one source",
+      "chineseMeaning": "独家新闻",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "get a scoop",
+        "news scoop",
+        "big scoop"
+      ],
+      "paraphrases": [
+        "exclusive",
+        "breaking story",
+        "first report"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A scoop is a news story obtained first by one source.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"news scoop\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"scoop\" in phrases such as \"news scoop\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"scoop\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_screens_batch2_01",
+      "word": "screens",
+      "lemma": "screens",
+      "ipa": "/skriːnz/",
+      "partOfSpeech": "n.",
+      "sense": "display devices",
+      "englishDefinition": "electronic displays for viewing content",
+      "chineseMeaning": "屏幕",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "small screens",
+        "screen time",
+        "across screens"
+      ],
+      "paraphrases": [
+        "displays",
+        "monitors",
+        "devices"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Screens is electronic displays for viewing content.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"small screens\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"screens\" in phrases such as \"small screens\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"screens\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_social_batch2_01",
+      "word": "social",
+      "lemma": "social",
+      "ipa": "/ˈsəʊʃəl/",
+      "partOfSpeech": "adj.",
+      "sense": "community-based",
+      "englishDefinition": "relating to society and communication",
+      "chineseMeaning": "社交的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "social media",
+        "social networking",
+        "social platform"
+      ],
+      "paraphrases": [
+        "community",
+        "public",
+        "interactive"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In media and communication contexts, \"social\" is an adjective meaning relating to society and communication.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"social media\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"social\" in phrases such as \"social media\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"social\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_sponsor_batch2_01",
+      "word": "sponsor",
+      "lemma": "sponsor",
+      "ipa": "/ˈspɒnsə/",
+      "partOfSpeech": "n.",
+      "sense": "financial supporter",
+      "englishDefinition": "a person or organization providing funding",
+      "chineseMeaning": "赞助商",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "event sponsor",
+        "corporate sponsor",
+        "become a sponsor"
+      ],
+      "paraphrases": [
+        "funder",
+        "backer",
+        "patron"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A sponsor is a person or organization providing funding.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"event sponsor\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"sponsor\" in phrases such as \"event sponsor\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"sponsor\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_streaming_batch2_01",
+      "word": "streaming",
+      "lemma": "streaming",
+      "ipa": "/ˈstriːmɪŋ/",
+      "partOfSpeech": "n.",
+      "sense": "online content delivery",
+      "englishDefinition": "the delivery of content over the internet",
+      "chineseMeaning": "流媒体",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "video streaming",
+        "streaming service",
+        "live streaming"
+      ],
+      "paraphrases": [
+        "online broadcast",
+        "digital delivery",
+        "webcast"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Streaming is the delivery of content over the internet.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"video streaming\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"streaming\" in phrases such as \"video streaming\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"streaming\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_subscriber_batch2_01",
+      "word": "subscriber",
+      "lemma": "subscriber",
+      "ipa": "/səbˈskraɪbə/",
+      "partOfSpeech": "n.",
+      "sense": "paying audience",
+      "englishDefinition": "a person who pays to receive content",
+      "chineseMeaning": "订阅者",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "gain subscribers",
+        "paid subscriber",
+        "email subscriber"
+      ],
+      "paraphrases": [
+        "member",
+        "follower",
+        "audience"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A subscriber is a person who pays to receive content.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"paid subscriber\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"subscriber\" in phrases such as \"paid subscriber\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"subscriber\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_tabloid_batch2_01",
+      "word": "tabloid",
+      "lemma": "tabloid",
+      "ipa": "/ˈtæblɔɪd/",
+      "partOfSpeech": "n.",
+      "sense": "sensational press",
+      "englishDefinition": "a newspaper with sensational stories",
+      "chineseMeaning": "小报",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "tabloid journalism",
+        "tabloid newspaper",
+        "tabloid headline"
+      ],
+      "paraphrases": [
+        "sensational paper",
+        "gossip paper",
+        "popular press"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A tabloid is a newspaper with sensational stories.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"tabloid journalism\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"tabloid\" in phrases such as \"tabloid journalism\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"tabloid\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_telecast_batch2_01",
+      "word": "telecast",
+      "lemma": "telecast",
+      "ipa": "/ˈtelikɑːst/",
+      "partOfSpeech": "v.",
+      "sense": "TV transmission",
+      "englishDefinition": "to broadcast by television",
+      "chineseMeaning": "电视广播",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "live telecast",
+        "telecast event",
+        "national telecast"
+      ],
+      "paraphrases": [
+        "broadcast",
+        "air",
+        "televise"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "To telecast means to broadcast by television.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"telecast event\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"telecast\" in phrases such as \"telecast event\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"telecast\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_television_batch2_01",
+      "word": "television",
+      "lemma": "television",
+      "ipa": "/ˈtelɪvɪʒən/",
+      "partOfSpeech": "n.",
+      "sense": "broadcast medium",
+      "englishDefinition": "a system for transmitting visual images",
+      "chineseMeaning": "电视",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "watch television",
+        "television program",
+        "television industry"
+      ],
+      "paraphrases": [
+        "TV",
+        "broadcast",
+        "video media"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A television is a system for transmitting visual images.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"watch television\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"television\" in phrases such as \"watch television\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"television\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_trending_batch2_01",
+      "word": "trending",
+      "lemma": "trending",
+      "ipa": "/ˈtrendɪŋ/",
+      "partOfSpeech": "adj.",
+      "sense": "currently popular",
+      "englishDefinition": "currently popular or widely discussed",
+      "chineseMeaning": "热门的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "trending topic",
+        "trending now",
+        "viral trending"
+      ],
+      "paraphrases": [
+        "popular",
+        "hot",
+        "viral"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In media and communication contexts, \"trending\" is an adjective meaning currently popular or widely discussed.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"trending topic\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"trending\" in phrases such as \"trending topic\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"trending\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_viral_batch2_01",
+      "word": "viral",
+      "lemma": "viral",
+      "ipa": "/ˈvaɪərəl/",
+      "partOfSpeech": "adj.",
+      "sense": "rapidly shared",
+      "englishDefinition": "spreading rapidly through sharing",
+      "chineseMeaning": "病毒式传播的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "go viral",
+        "viral video",
+        "viral content"
+      ],
+      "paraphrases": [
+        "spread quickly",
+        "trending",
+        "widely shared"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In media and communication contexts, \"viral\" is an adjective meaning spreading rapidly through sharing.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"go viral\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"viral\" in phrases such as \"go viral\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"viral\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_webcast_batch2_01",
+      "word": "webcast",
+      "lemma": "webcast",
+      "ipa": "/ˈwebkɑːst/",
+      "partOfSpeech": "n.",
+      "sense": "online broadcast",
+      "englishDefinition": "a broadcast transmitted over the internet",
+      "chineseMeaning": "网络广播",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "live webcast",
+        "webcast event",
+        "streaming webcast"
+      ],
+      "paraphrases": [
+        "online broadcast",
+        "stream",
+        "web stream"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A webcast is a broadcast transmitted over the internet.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"live webcast\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"webcast\" in phrases such as \"live webcast\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"webcast\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_agenda_batch2_01",
+      "word": "agenda",
+      "lemma": "agenda",
+      "ipa": "/əˈdʒendə/",
+      "partOfSpeech": "n.",
+      "sense": "media intentions",
+      "englishDefinition": "the underlying intentions behind media coverage",
+      "chineseMeaning": "议程",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "media agenda",
+        "hidden agenda",
+        "political agenda"
+      ],
+      "paraphrases": [
+        "purpose",
+        "motive",
+        "plan"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Agenda is the underlying intentions behind media coverage.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"media agenda\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"agenda\" in phrases such as \"media agenda\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"agenda\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_bias_batch2_01",
+      "word": "bias",
+      "lemma": "bias",
+      "ipa": "/ˈbaɪəs/",
+      "partOfSpeech": "n.",
+      "sense": "unfair preference",
+      "englishDefinition": "a preference that prevents objectivity",
+      "chineseMeaning": "偏见",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "media bias",
+        "political bias",
+        "show bias"
+      ],
+      "paraphrases": [
+        "prejudice",
+        "partiality",
+        "slant"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A bias is a preference that prevents objectivity.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"media bias\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"bias\" in phrases such as \"media bias\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"bias\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_clickbait_batch2_01",
+      "word": "clickbait",
+      "lemma": "clickbait",
+      "ipa": "/ˈklɪkbeɪt/",
+      "partOfSpeech": "n.",
+      "sense": "misleading headlines",
+      "englishDefinition": "sensational headlines designed to attract clicks",
+      "chineseMeaning": "标题党",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "clickbait headlines",
+        "clickbait article",
+        "avoid clickbait"
+      ],
+      "paraphrases": [
+        "sensational headline",
+        "attention-grabber",
+        "bait"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Clickbait is sensational headlines designed to attract clicks.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"clickbait headlines\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"clickbait\" in phrases such as \"clickbait headlines\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"clickbait\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_consumer_batch2_01",
+      "word": "consumer",
+      "lemma": "consumer",
+      "ipa": "/kənˈsjuːmə/",
+      "partOfSpeech": "n.",
+      "sense": "media user",
+      "englishDefinition": "a person who uses media content",
+      "chineseMeaning": "消费者",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "media consumer",
+        "content consumer",
+        "consumer behavior"
+      ],
+      "paraphrases": [
+        "user",
+        "audience",
+        "viewer"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A consumer is a person who uses media content.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"media consumer\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"consumer\" in phrases such as \"media consumer\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"consumer\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_disinformation_batch2_01",
+      "word": "disinformation",
+      "lemma": "disinformation",
+      "ipa": "/dɪsˌɪnfəˈmeɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "intentional lies",
+      "englishDefinition": "false information spread deliberately",
+      "chineseMeaning": "虚假信息",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "spread disinformation",
+        "combat disinformation",
+        "political disinformation"
+      ],
+      "paraphrases": [
+        "falsehoods",
+        "fake news",
+        "propaganda"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Disinformation is false information spread deliberately.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"political disinformation\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"disinformation\" in phrases such as \"political disinformation\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"disinformation\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_episode_batch2_01",
+      "word": "episode",
+      "lemma": "episode",
+      "ipa": "/ˈepɪsəʊd/",
+      "partOfSpeech": "n.",
+      "sense": "series installment",
+      "englishDefinition": "one part of a series",
+      "chineseMeaning": "一集",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "watch episode",
+        "new episode",
+        "final episode"
+      ],
+      "paraphrases": [
+        "installment",
+        "part",
+        "segment"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Episode is one part of a series.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"watch episode\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"episode\" in phrases such as \"watch episode\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"episode\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
+    },
+    {
+      "bundleId": "media_fake_batch2_01",
+      "word": "fake",
+      "lemma": "fake",
+      "ipa": "/feɪk/",
+      "partOfSpeech": "adj.",
+      "sense": "not real",
+      "englishDefinition": "not genuine; false or counterfeit",
+      "chineseMeaning": "虚假的",
+      "topic": "media",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "fake news",
+        "fake account",
+        "fake information"
+      ],
+      "paraphrases": [
+        "false",
+        "bogus",
+        "counterfeit"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "In media and communication contexts, \"fake\" is an adjective meaning not genuine; false or counterfeit.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about media and communication, phrases such as \"fake news\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"fake\" in phrases such as \"fake news\" when discussing media and communication.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"fake\" in one IELTS-style sentence about media."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch2"
     }
   ]
 }

@@ -1,10 +1,10 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-03-23T15:48:29.228Z",
+  "generatedAt": "2026-03-26T16:12:37.669Z",
   "source": "IELTS Foundation",
   "topic": "environment",
   "name": "IELTS Topic Pack - Environment",
-  "totalBundles": 71,
+  "totalBundles": 79,
   "bundles": [
     {
       "bundleId": "environment_commission_010",
@@ -4235,6 +4235,494 @@
       },
       "draft": false,
       "sourceCategory": "legacy-batch8"
+    },
+    {
+      "bundleId": "environment_ecosystem_batch3_01",
+      "word": "ecosystem",
+      "lemma": "ecosystem",
+      "ipa": "/ˈiːkəʊsɪstəm/",
+      "partOfSpeech": "n.",
+      "sense": "natural system",
+      "englishDefinition": "a biological community of interacting organisms",
+      "chineseMeaning": "生态系统",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "marine ecosystem",
+        "fragile ecosystem",
+        "ecosystem services"
+      ],
+      "paraphrases": [
+        "habitat",
+        "environment",
+        "biome"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "An ecosystem is a biological community of interacting organisms.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about the environment, phrases such as \"marine ecosystem\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"ecosystem\" in phrases such as \"marine ecosystem\" when discussing the environment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"ecosystem\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "environment_extinction_batch3_01",
+      "word": "extinction",
+      "lemma": "extinction",
+      "ipa": "/ɪkˈstɪŋkʃn/",
+      "partOfSpeech": "n.",
+      "sense": "species loss",
+      "englishDefinition": "the complete disappearance of a species",
+      "chineseMeaning": "灭绝",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "face extinction",
+        "mass extinction",
+        "prevent extinction"
+      ],
+      "paraphrases": [
+        "disappearance",
+        "die-out",
+        "extirpation"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Extinction is the complete disappearance of a species.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about the environment, phrases such as \"mass extinction\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"extinction\" in phrases such as \"mass extinction\" when discussing the environment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"extinction\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "environment_habitat_batch3_01",
+      "word": "habitat",
+      "lemma": "habitat",
+      "ipa": "/ˈhæbɪtæt/",
+      "partOfSpeech": "n.",
+      "sense": "natural environment",
+      "englishDefinition": "the natural home of an animal or plant",
+      "chineseMeaning": "栖息地",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "natural habitat",
+        "destroy habitat",
+        "wildlife habitat"
+      ],
+      "paraphrases": [
+        "home",
+        "environment",
+        "territory"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Habitat is the natural home of an animal or plant.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about the environment, phrases such as \"natural habitat\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"habitat\" in phrases such as \"natural habitat\" when discussing the environment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"habitat\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "environment_pollution_batch3_01",
+      "word": "pollution",
+      "lemma": "pollution",
+      "ipa": "/pəˈluːʃn/",
+      "partOfSpeech": "n.",
+      "sense": "environmental contamination",
+      "englishDefinition": "harmful substances in the environment",
+      "chineseMeaning": "污染",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "air pollution",
+        "water pollution",
+        "reduce pollution"
+      ],
+      "paraphrases": [
+        "contamination",
+        "toxicity",
+        "impurity"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Pollution is harmful substances in the environment.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about the environment, phrases such as \"air pollution\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"pollution\" in phrases such as \"air pollution\" when discussing the environment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"pollution\" in one IELTS-style sentence about environment."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch3"
+    },
+    {
+      "bundleId": "environment_afforestation_batch4_01",
+      "word": "afforestation",
+      "lemma": "afforestation",
+      "ipa": "/əˌfɒrɪˈsteɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "植树造林",
+      "englishDefinition": "the process of establishing forests on land",
+      "chineseMeaning": "植树造林",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "promote afforestation",
+        "large-scale afforestation",
+        "afforestation project"
+      ],
+      "paraphrases": [
+        "planting",
+        "reforestation",
+        "tree planting"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Afforestation is the process of establishing forests on land.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about the environment, phrases such as \"large-scale afforestation\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"afforestation\" in phrases such as \"large-scale afforestation\" when discussing the environment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"afforestation\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "environment_carbon_batch4_01",
+      "word": "carbon",
+      "lemma": "carbon",
+      "ipa": "/ˈkɑːbən/",
+      "partOfSpeech": "n.",
+      "sense": "碳",
+      "englishDefinition": "a chemical element in fossil fuels",
+      "chineseMeaning": "碳",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "carbon footprint",
+        "carbon emissions",
+        "carbon neutral"
+      ],
+      "paraphrases": [
+        "CO2",
+        "greenhouse gas",
+        "carbon dioxide"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "A carbon is a chemical element in fossil fuels.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about the environment, phrases such as \"carbon footprint\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"carbon\" in phrases such as \"carbon footprint\" when discussing the environment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"carbon\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "environment_deforestation_batch4_01",
+      "word": "deforestation",
+      "lemma": "deforestation",
+      "ipa": "/diːˌfɒrɪˈsteɪʃn/",
+      "partOfSpeech": "n.",
+      "sense": "森林砍伐",
+      "englishDefinition": "the removal of trees from an area",
+      "chineseMeaning": "森林砍伐",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "stop deforestation",
+        "deforestation rate",
+        "cause deforestation"
+      ],
+      "paraphrases": [
+        "tree removal",
+        "forest clearing",
+        "logging"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Deforestation is the removal of trees from an area.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about the environment, phrases such as \"deforestation rate\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"deforestation\" in phrases such as \"deforestation rate\" when discussing the environment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"deforestation\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "topic-expansion-batch4"
+    },
+    {
+      "bundleId": "environment_wildlife_final_01",
+      "word": "wildlife",
+      "lemma": "wildlife",
+      "ipa": "/ˈwaɪldlaɪf/",
+      "partOfSpeech": "n.",
+      "sense": "野生动物",
+      "englishDefinition": "animals and plants in their natural environment",
+      "chineseMeaning": "野生动物",
+      "topic": "environment",
+      "taskTypes": [
+        "reading",
+        "writing",
+        "speaking"
+      ],
+      "register": "formal",
+      "collocations": [
+        "protect wildlife",
+        "wildlife habitat",
+        "local wildlife"
+      ],
+      "paraphrases": [
+        "animals",
+        "fauna",
+        "nature"
+      ],
+      "confusions": [],
+      "contexts": [
+        {
+          "kind": "reading",
+          "text": "Wildlife is animals and plants in their natural environment.",
+          "translation": "",
+          "purpose": "core"
+        },
+        {
+          "kind": "writing",
+          "text": "In IELTS writing about the environment, phrases such as \"wildlife habitat\" help you express ideas more precisely.",
+          "translation": "",
+          "purpose": "near-transfer"
+        },
+        {
+          "kind": "speaking",
+          "text": "In IELTS speaking, you can use \"wildlife\" in phrases such as \"wildlife habitat\" when discussing the environment.",
+          "translation": "",
+          "purpose": "far-transfer"
+        }
+      ],
+      "productionPrompt": {
+        "mode": "writing",
+        "instruction": "Use \"wildlife\" in an IELTS-style sentence."
+      },
+      "sourceQuality": {
+        "relevanceScore": 5,
+        "transferabilityScore": 4,
+        "outputUtilityScore": 5,
+        "exampleQualityScore": 4,
+        "decision": "keep"
+      },
+      "draft": false,
+      "sourceCategory": "final-batch"
     }
   ]
 }

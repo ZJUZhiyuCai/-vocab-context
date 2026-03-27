@@ -5,6 +5,8 @@
 
 import DOMPurify from 'dompurify'
 
+const DEFAULT_HIGHLIGHT_CLASS = 'font-semibold text-amber-300 underline decoration-amber-500 decoration-2 underline-offset-2'
+
 /**
  * Sanitize HTML content to prevent XSS attacks
  * @param {string} html - HTML content to sanitize
@@ -17,6 +19,40 @@ export function sanitizeHTML(html, options = {}) {
     ALLOWED_ATTR: ['class'],
     ...options
   })
+}
+
+function stripHTMLToPlainText(html) {
+  const sanitized = DOMPurify.sanitize(html, {
+    ALLOWED_TAGS: [],
+    ALLOWED_ATTR: []
+  })
+
+  const container = document.createElement('div')
+  container.innerHTML = sanitized
+  return container.textContent || ''
+}
+
+function sanitizeHighlightClass(highlightClass) {
+  if (typeof highlightClass !== 'string') return DEFAULT_HIGHLIGHT_CLASS
+
+  const safeClassName = highlightClass
+    .trim()
+    .split(/\s+/)
+    .filter(token => {
+      if (!token) return false
+
+      for (const char of token) {
+        const code = char.charCodeAt(0)
+        if (code <= 31 || code === 127 || /\s/u.test(char) || `"'=\`<>`.includes(char)) {
+          return false
+        }
+      }
+
+      return true
+    })
+    .join(' ')
+
+  return safeClassName || DEFAULT_HIGHLIGHT_CLASS
 }
 
 /**
@@ -43,27 +79,33 @@ function escapeHTML(text) {
  * @param {string} highlightClass - CSS class for highlighting (trusted)
  * @returns {string} Sanitized HTML with highlighted word
  */
-export function highlightWordSafe(sentence, word, highlightClass = 'font-semibold text-amber-300 underline decoration-amber-500 decoration-2 underline-offset-2') {
+export function highlightWordSafe(sentence, word, highlightClass = DEFAULT_HIGHLIGHT_CLASS) {
   if (!sentence || !word) return ''
 
-  // First, strip ALL HTML tags from the input to prevent any injection
-  // DOMPurify with FORBID_TAGS will remove tags but keep text content
-  const plainText = DOMPurify.sanitize(sentence, {
-    ALLOWED_TAGS: [],
-    ALLOWED_ATTR: []
-  })
-
-  // Escape any remaining special characters
-  const safeText = escapeHTML(plainText)
+  const plainText = stripHTMLToPlainText(sentence)
+  const safeHighlightClass = sanitizeHighlightClass(highlightClass)
 
   // Escape special regex characters in the word
   const escapedWord = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 
   // Create regex for case-insensitive match
-  const regex = new RegExp(`(${escapedWord})`, 'gi')
+  const regex = new RegExp(escapedWord, 'gi')
 
-  // Replace with highlighted span using only trusted class
-  return safeText.replace(regex, `<span class="${highlightClass}">$1</span>`)
+  let lastIndex = 0
+  let highlighted = ''
+
+  for (const match of plainText.matchAll(regex)) {
+    const start = match.index ?? 0
+    const matchedText = match[0]
+
+    highlighted += escapeHTML(plainText.slice(lastIndex, start))
+    highlighted += `<span class="${safeHighlightClass}">${escapeHTML(matchedText)}</span>`
+    lastIndex = start + matchedText.length
+  }
+
+  highlighted += escapeHTML(plainText.slice(lastIndex))
+
+  return sanitizeHTML(highlighted)
 }
 
 export default DOMPurify
