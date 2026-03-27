@@ -555,7 +555,7 @@ export function createExamDrillEngine(bundles, options = {}) {
   function clearState() {
     try {
       localStorage.removeItem(STORAGE_KEY);
-    } catch (e) {
+    } catch {
       // ignore
     }
   }
@@ -607,7 +607,7 @@ export function getExamDrillHistory() {
       topicStats: {},
       vocabStats: {}
     };
-  } catch (e) {
+  } catch {
     return { sessions: 0, totalItems: 0, totalCorrect: 0, topicStats: {}, vocabStats: {} };
   }
 }

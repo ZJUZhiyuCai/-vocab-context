@@ -154,7 +154,6 @@ import {
   getOrCreateFirstWeekProgress,
   getTodayTask,
   getFirstWeekProgressPercent,
-  calculateCurrentDay,
   checkTaskCompletion
 } from '../utils/firstWeekScaffold.js'
 

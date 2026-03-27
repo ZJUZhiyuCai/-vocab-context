@@ -247,7 +247,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { getStudyHistory, getRecentStudyDays, getStreakDays, getTotalStudyDays } from '../utils/studyHistory.js'
 import { useTheme } from '../composables/useTheme.js'
 

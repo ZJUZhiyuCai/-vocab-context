@@ -127,7 +127,7 @@
 </template>
 
 <script setup>
-const props = defineProps({
+defineProps({
   word: {
     type: Object,
     required: true

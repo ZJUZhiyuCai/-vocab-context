@@ -408,7 +408,7 @@ export function getContextSessionHistory() {
     const key = 'vocabman-context-session-history';
     const saved = localStorage.getItem(key);
     return saved ? JSON.parse(saved) : { sessions: 0, totalBundles: 0, totalCorrect: 0, topicStats: {}, vocabStats: {} };
-  } catch (e) {
+  } catch {
     return { sessions: 0, totalBundles: 0, totalCorrect: 0, topicStats: {}, vocabStats: {} };
   }
 }

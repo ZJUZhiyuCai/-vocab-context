@@ -575,7 +575,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['navigate'])
+defineEmits(['navigate'])
 
 const agent = getAIAgent()
 const isAvailable = computed(() => agent.isAvailable())

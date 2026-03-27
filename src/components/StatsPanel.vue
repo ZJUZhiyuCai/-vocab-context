@@ -117,7 +117,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { getRecentStudyDays, getStreakDays } from '../utils/studyHistory.js'
 
 const props = defineProps({

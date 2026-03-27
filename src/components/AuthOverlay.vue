@@ -121,7 +121,7 @@
 import { ref } from 'vue'
 import { useAuth } from '../composables/useAuth'
 
-const emit = defineEmits(['close'])
+defineEmits(['close'])
 const { loginWithGithub, loginWithMagicLink } = useAuth()
 const loading = ref(false)
 const email = ref('')

@@ -296,7 +296,7 @@ ${context.example ? `【例句】${context.example}` : ''}
    * 解析分析响应
    * @private
    */
-  parseAnalysisResponse(response, word) {
+  parseAnalysisResponse(response) {
     try {
       const jsonMatch = response.match(/```json\s*([\s\S]*?)\s*```/) ||
                         response.match(/\{[\s\S]*\}/);

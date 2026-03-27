@@ -6,9 +6,6 @@
 // 缓存已加载的词汇数据
 const vocabCache = new Map();
 
-// 每批加载的单词数量
-const BATCH_SIZE = 200;
-
 /**
  * 词汇加载器类
  */

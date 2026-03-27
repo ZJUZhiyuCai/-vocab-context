@@ -523,7 +523,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useTheme } from '../../composables/useTheme.js'
 import OutputStudioCard from './OutputStudioCard.vue'
 import {

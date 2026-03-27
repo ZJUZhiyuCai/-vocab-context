@@ -189,7 +189,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['navigate'])
+defineEmits(['navigate'])
 
 const showReview = ref(false)
 const reviewMode = ref('flashcard')
@@ -240,10 +240,6 @@ const getAccuracyClass = (reviewState) => {
 }
 
 // Is overdue
-const isOverdue = (reviewState) => {
-  return reviewState && reviewState.nextReview && Date.now() >= reviewState.nextReview
-}
-
 // 复习单词
 const reviewWords = computed(() => {
   return props.reviewData.map(item => item.word)
@@ -268,7 +264,7 @@ const startReview = () => {
 }
 
 // 复习完成
-const handleReviewComplete = (result) => {
+const handleReviewComplete = () => {
   showReview.value = false
 }
 </script>

@@ -152,6 +152,7 @@
             </div>
               
             <div v-if="currentExample">
+              <!-- eslint-disable-next-line vue/no-v-html -->
               <p
                 :class="['text-lg leading-relaxed', isDark ? 'text-amber-100/80' : 'text-amber-900']"
                 v-html="highlightedSentence"
@@ -253,7 +254,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['play-audio', 'known', 'unknown', 'generate-ai', 'fetch-english-def', 'toggle-wordbook'])
+defineEmits(['play-audio', 'known', 'unknown', 'generate-ai', 'fetch-english-def', 'toggle-wordbook'])
 
 const currentExample = computed(() => {
   if (props.word?.aiExample) return props.word.aiExample

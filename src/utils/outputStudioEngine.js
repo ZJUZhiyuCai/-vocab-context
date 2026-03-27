@@ -354,7 +354,7 @@ export function createOutputStudioEngine(bundles, options = {}) {
   function clearState() {
     try {
       localStorage.removeItem(STORAGE_KEY);
-    } catch (e) {
+    } catch {
       // ignore
     }
   }
@@ -418,7 +418,7 @@ export function getOutputStudioHistory() {
       topicStats: {},
       vocabStats: {}
     };
-  } catch (e) {
+  } catch {
     return { sessions: 0, totalWords: 0, totalOutputs: 0, qualityScoreTotal: 0, topicStats: {}, vocabStats: {} };
   }
 }

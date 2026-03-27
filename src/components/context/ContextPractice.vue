@@ -710,8 +710,6 @@ import { getOutputStudioHistory } from '../../utils/outputStudioEngine.js'
 import { getExamDrillHistory } from '../../utils/examDrillEngine.js'
 import { consumePendingIeltsPathTarget, setPendingIeltsPathTarget } from '../../utils/ieltsPathEntry.js'
 import {
-  SESSION_SIZE_STORAGE_KEY,
-  PRIORITY_TOPICS,
   CORE_TOPIC_ORDER,
   sessionSizeOptions,
   loadSessionSize,
@@ -719,7 +717,6 @@ import {
   normalizeBundle,
   isEligibleBundle,
   compareBundles,
-  rankBundle,
   topicLabel
 } from '../../utils/contextPracticeUtils.js'
 

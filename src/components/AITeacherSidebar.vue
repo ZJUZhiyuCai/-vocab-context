@@ -226,7 +226,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['openSettings'])
+defineEmits(['openSettings'])
 
 const agent = getAIAgent()
 const isOpen = ref(false)

@@ -457,7 +457,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted, onUnmounted, watch } from 'vue'
+import { computed, onMounted, onUnmounted, watch } from 'vue'
 import { user } from './utils/authService.js'
 import { syncService } from './utils/syncService.js'
 import PremiumLayout from './layouts/PremiumLayout.vue'
@@ -469,7 +469,6 @@ import { generateAIExample } from './utils/aiService.js'
 import { AI_MODEL, AI_PROVIDER_LABEL, AI_ENV_API_KEY_NAME } from './utils/aiClient.js'
 import { buildIeltsQuickRecommendation, setPendingIeltsPathTarget } from './utils/ieltsPathEntry.js'
 import { shouldShowCardRecommendation, buildCardRecommendation, getRecommendationDelay } from './utils/cardRecommendation.js'
-import { getEtymology } from './utils/etymologyService.js'
 import { getEnglishDefinition } from './utils/englishDefinitionService.js'
 import { loadSettings, saveSettings as saveSettingsToStorage, loadWordbook, saveWordbook, loadUserProfile, saveUserProfile, shouldShowOnboarding } from './utils/storage.js'
 import { useConfetti } from './composables/useConfetti.js'
@@ -479,26 +478,25 @@ import { useTheme } from './composables/useTheme.js'
 import {
   words, currentIndex, learned, forgotten, wordbook,
   isLoading, currentVocab, showVocabSelector, currentPage, allVocabularies,
-  reviewStates, reviewQueue, cardAnimation, isCardAnimating, isOnline,
-  userSettings, settingsForm, showSettings, newInterest, generatingWordId, loadingEtymology, loadingEnglishDefinition, error,
-  syncing, testingGist, gistSyncStats,
+  reviewStates, cardAnimation, isCardAnimating, isOnline,
+  userSettings, settingsForm, showSettings, generatingWordId, loadingEnglishDefinition, error,
+  gistSyncStats,
   userProfile, showOnboarding, showVocabTest,
   currentAchievementNotification, sessionLearnCount, learnedCount,
   cardRecommendation, pendingRecommendationTimer, setPendingRecommendationTimer, clearPendingRecommendationTimer,
   sessionStartTime, totalStudyTime, isPageVisible,
-  currentWord, progress, stats,
-  initializeState, resetProgressState,
-  getSessionTime, formatDuration, saveStudyTime, loadStudyTime, initStudyTime
+  currentWord, stats,
+  getSessionTime, formatDuration, saveStudyTime, loadStudyTime
 } from './composables/useAppState.js'
 
 import {
-  isPlayingWord, playWordAudio, isWordbooked, addToWordbook,
+  isPlayingWord, playWordAudio, isWordbooked,
   removeFromWordbook, toggleWordbook, handleBatchRemoveFromWordbook
 } from './composables/useWordOperations.js'
 
 import {
   saveReviewStates, loadReviewStates, updateReviewQueue,
-  getStreak, reviewStats, reviewQueueData
+  reviewQueueData
 } from './composables/useReviewSystem.js'
 
 import Wordbook from './components/Wordbook.vue'
@@ -511,8 +509,6 @@ import OnboardingQuiz from './components/OnboardingQuiz.vue'
 import VocabLevelTest from './components/VocabLevelTest.vue'
 
 import {
-  getAllVocabularies,
-  getCurrentVocabulary,
   loadCurrentVocabulary,
   setCurrentVocabulary,
   getVocabularyProgress,
@@ -524,11 +520,8 @@ import { getVocabularyLoader } from './utils/vocabularyLoader.js'
 import { getBundleLoader } from './utils/bundleLoader.js'
 import {
   createWordReviewState,
-  needsReview,
   updateWordLevel,
-  calculateNextReview,
-  getReviewQueue,
-  getTodayReviewStats
+  calculateNextReview
 } from './utils/spacedRepetition.js'
 import { recordTodayStudy, getStreakDays } from './utils/studyHistory.js'
 import { checkAchievements } from './utils/achievements.js'
@@ -537,23 +530,11 @@ import SpeakingTopicPanel from './components/SpeakingTopicPanel.vue'
 import AchievementNotification from './components/AchievementNotification.vue'
 import CardNextStepToast from './components/CardNextStepToast.vue'
 import StudyHeatmap from './components/StudyHeatmap.vue'
-import { getTTS } from './utils/text-to-speech.js'
-import { getFreeDictionaryTTS } from './utils/freeDictionaryTTS.js'
 import {
   saveGistConfig,
   loadGistConfig,
-  syncData,
-  testGistConfig,
   getSyncStats
 } from './utils/gistSync.js'
-
-// Local UI state not in composables
-const wordCard = ref(null)
-const touchStartX = ref(0)
-const touchStartY = ref(0)
-const touchEndX = ref(0)
-const touchEndY = ref(0)
-const isSwiping = ref(false)
 
 // AI helper text - must be defined after imports
 const aiApiHelperText = `可在这里手动填写 ${AI_PROVIDER_LABEL} 密钥；如果当前环境已在 .env.local 或部署平台中配置 ${AI_ENV_API_KEY_NAME}，应用也会自动使用 ${AI_MODEL}。`
@@ -578,7 +559,7 @@ const todayStats = computed(() => ({
 const streakDays = computed(() => {
     try {
         return getStreakDays() || 0;
-    } catch (e) {
+    } catch {
         return 0;
     }
 })
@@ -591,10 +572,6 @@ const recentHistoryList = computed(() => {
     const recentIds = learnedIds.slice(-5).reverse();
     return recentIds.map(id => words.value.find(w => w.id === id)).filter(Boolean);
 })
-
-// TTS 语音朗读（本地辅助函数，用于未导入composable的场景）
-const tts = getTTS()
-const freeDictTTS = getFreeDictionaryTTS()
 
 // Handlers
 const handleKnow = () => {
@@ -833,14 +810,6 @@ const persistVocabularyProgressLocally = (vocabId, progress) => {
   } catch (error) {
     console.warn('⚠️ 本地清洗词库进度失败:', error);
   }
-};
-
-const sanitizeReviewStates = (states, validWordIds) => {
-  if (!states || typeof states !== 'object') return {};
-
-  return Object.fromEntries(
-    Object.entries(states).filter(([wordId]) => validWordIds.has(wordId))
-  );
 };
 
 // Note: loadReviewStates, saveReviewStates, updateReviewQueue are imported from useReviewSystem.js

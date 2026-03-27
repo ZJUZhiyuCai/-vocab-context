@@ -4,7 +4,7 @@
  */
 
 import { ref, computed } from 'vue'
-import { getAllVocabularies, getCurrentVocabulary, loadCurrentVocabulary } from '../utils/vocabularyManager.js'
+import { getAllVocabularies } from '../utils/vocabularyManager.js'
 import { loadSettings, loadWordbook, loadUserProfile, shouldShowOnboarding } from '../utils/storage.js'
 
 // ============================================
@@ -222,7 +222,7 @@ export function loadStudyTime() {
   try {
     const saved = localStorage.getItem('vocabcontext_study_time')
     return saved ? parseInt(saved, 10) : 0
-  } catch (error) {
+  } catch {
     return 0
   }
 }

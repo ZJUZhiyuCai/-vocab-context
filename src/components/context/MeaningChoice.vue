@@ -94,12 +94,12 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { useTheme } from '../../composables/useTheme.js'
 
 const { isDark } = useTheme()
 
-const props = defineProps({
+defineProps({
   bundle: {
     type: Object,
     default: null

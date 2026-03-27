@@ -9,7 +9,6 @@
 
 // localStorage keys
 const SETTINGS_KEY = 'vocabcontext_tts_settings';
-const FAVORITE_VOICES_KEY = 'vocabcontext_tts_favorite_voices';
 
 /**
  * 默认 TTS 设置
@@ -96,7 +95,7 @@ export class TextToSpeech {
    * @returns {SpeechSynthesisVoice|null} 语音对象
    * @private
    */
-  getBestVoice(lang = 'en-US') {
+  getBestVoice() {
     // 如果用户指定了语音索引，使用该索引
     if (this.settings.voiceIndex >= 0 && this.settings.voiceIndex < this.voices.length) {
       return this.voices[this.settings.voiceIndex];

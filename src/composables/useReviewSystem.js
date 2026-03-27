@@ -3,7 +3,7 @@
  * Handles spaced repetition logic and review queue management
  */
 
-import { ref, computed } from 'vue'
+import { computed } from 'vue'
 import {
   createWordReviewState,
   updateWordLevel,
@@ -62,7 +62,7 @@ export function loadReviewStates(validWordIds = new Set()) {
     const parsed = saved ? JSON.parse(saved) : {}
     reviewStates.value = sanitizeReviewStates(parsed, validWordIds)
     localStorage.setItem(key, JSON.stringify(reviewStates.value))
-  } catch (err) {
+  } catch {
     reviewStates.value = {}
   }
 }
@@ -163,7 +163,7 @@ export function handleForget(isCardAnimating, animateCardAndNext) {
 export function getStreak() {
   try {
     return getStreakDays() || 0
-  } catch (e) {
+  } catch {
     return 0
   }
 }

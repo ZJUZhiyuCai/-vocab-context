@@ -124,7 +124,7 @@ const props = defineProps({
   }
 })
 
-const emit = defineEmits(['restart', 'exit'])
+defineEmits(['restart', 'exit'])
 
 // 错题数量
 const wrongCount = computed(() => {

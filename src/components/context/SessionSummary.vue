@@ -265,16 +265,6 @@ const retryActionEnabled = computed(() => {
   return Boolean(props.remediationSummary?.remainingWords?.length)
 })
 
-function formatTime(ms) {
-  if (!ms) return '0秒'
-  const seconds = Math.floor(ms / 1000)
-  const minutes = Math.floor(seconds / 60)
-  if (minutes > 0) {
-    return `${minutes}分 ${seconds % 60}秒`
-  }
-  return `${seconds}秒`
-}
-
 function topicLabel(topic) {
   const labels = {
     education: '教育',

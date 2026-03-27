@@ -180,7 +180,7 @@ const props = defineProps({
   }
 })
 
-defineEmits(['navigate', 'open-settings'])
+defineEmits(['navigate', 'open-settings', 'open-vocab-selector'])
 
 const todayProgress = computed(() => {
   if (props.todayTarget === 0) return 0

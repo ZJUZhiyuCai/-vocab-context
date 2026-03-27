@@ -98,7 +98,7 @@ function buildMemoryPrompt(word, userLevel) {
 /**
  * 解析记忆辅助响应
  */
-function parseMemoryResponse(data, originalWord) {
+function parseMemoryResponse(data) {
   const content = data.choices[0].message.content;
 
   let jsonStr = content;

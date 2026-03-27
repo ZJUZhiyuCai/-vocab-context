@@ -10,7 +10,6 @@ import { saveWordbook } from '../utils/storage.js'
 import { syncService } from '../utils/syncService.js'
 import { getTTS } from '../utils/text-to-speech.js'
 import { getFreeDictionaryTTS } from '../utils/freeDictionaryTTS.js'
-import { useConfetti } from './useConfetti.js'
 import { wordbook, userSettings, userProfile, currentVocab, error, generatingWordId, loadingEnglishDefinition } from './useAppState.js'
 
 const tts = getTTS()

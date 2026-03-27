@@ -60,8 +60,6 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-
 const props = defineProps({
   word: {
     type: Object,

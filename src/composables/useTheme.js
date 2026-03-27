@@ -1,4 +1,4 @@
-import { ref, watch, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 
 // 主题类型
 const THEMES = {
@@ -75,7 +75,7 @@ function initTheme() {
     // 监听系统主题变化
     if (typeof window !== 'undefined') {
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-        mediaQuery.addEventListener('change', (e) => {
+        mediaQuery.addEventListener('change', () => {
             if (theme.value === THEMES.SYSTEM) {
                 applyTheme(THEMES.SYSTEM)
             }

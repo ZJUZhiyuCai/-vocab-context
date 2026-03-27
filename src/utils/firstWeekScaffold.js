@@ -5,7 +5,6 @@
  * 为新 IELTS 用户提供 Day 1-7 的结构化学习路径
  */
 
-import { getTodayStudyCount, getStudyHistory } from './studyHistory.js'
 import { getContextSessionHistory } from './contextSessionEngine.js'
 import { getOutputStudioHistory } from './outputStudioEngine.js'
 import { getExamDrillHistory } from './examDrillEngine.js'

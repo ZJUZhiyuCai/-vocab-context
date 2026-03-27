@@ -4,7 +4,6 @@
  */
 
 const GIST_CONFIG_KEY = 'vocabcontext_gist_config'
-const SYNC_QUEUE_KEY = 'vocabcontext_sync_queue'
 const LAST_SYNC_KEY = 'vocabcontext_last_sync'
 
 /**

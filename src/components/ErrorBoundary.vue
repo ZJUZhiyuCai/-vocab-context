@@ -58,7 +58,7 @@
 <script setup>
 import { ref, onErrorCaptured } from 'vue'
 
-const props = defineProps({
+defineProps({
   showDetails: { type: Boolean, default: false }
 })
 
