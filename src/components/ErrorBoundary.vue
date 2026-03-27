@@ -57,6 +57,7 @@
 
 <script setup>
 import { ref, onErrorCaptured } from 'vue'
+import logger from '../utils/logger.js'
 
 defineProps({
   showDetails: { type: Boolean, default: false }
@@ -76,8 +77,7 @@ onErrorCaptured((error) => {
 
   emit('error', error)
 
-  // Log to console for debugging
-  console.error('[ErrorBoundary]', error)
+  logger.error('[ErrorBoundary]', error)
 
   // Return false to prevent the error from propagating further
   return false

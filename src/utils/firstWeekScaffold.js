@@ -8,6 +8,7 @@
 import { getContextSessionHistory } from './contextSessionEngine.js'
 import { getOutputStudioHistory } from './outputStudioEngine.js'
 import { getExamDrillHistory } from './examDrillEngine.js'
+import logger from './logger.js'
 
 const PROGRESS_KEY = 'vocabcontext_first_week_progress'
 export const FIRST_WEEK_PROGRESS_EVENT = 'vocabcontext:first-week-progress-updated'
@@ -108,7 +109,7 @@ export function saveFirstWeekProgress(progress) {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(progress))
     emitFirstWeekProgressUpdate(progress)
   } catch (error) {
-    console.error('保存首周进度失败:', error)
+    logger.error('保存首周进度失败:', error)
   }
 }
 

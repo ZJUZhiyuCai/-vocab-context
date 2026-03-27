@@ -10,6 +10,8 @@
  * 6. Summary
  */
 
+import logger from './logger.js';
+
 const STORAGE_KEY = 'vocabman-context-session-state';
 
 // 任务类型
@@ -323,7 +325,7 @@ export function createContextSessionEngine(bundles, options = {}) {
         startedAt: state.startedAt
       }));
     } catch (e) {
-      console.warn('Failed to save session state:', e);
+      logger.warn('Failed to save session state:', e);
     }
   }
 
@@ -343,7 +345,7 @@ export function createContextSessionEngine(bundles, options = {}) {
         }
       }
     } catch (e) {
-      console.warn('Failed to load session state:', e);
+      logger.warn('Failed to load session state:', e);
     }
   }
 
@@ -354,7 +356,7 @@ export function createContextSessionEngine(bundles, options = {}) {
     try {
       localStorage.removeItem(STORAGE_KEY);
     } catch (e) {
-      console.warn('Failed to clear session state:', e);
+      logger.warn('Failed to clear session state:', e);
     }
   }
 
@@ -447,6 +449,6 @@ export function saveContextSessionToHistory(summary, meta = {}) {
 
     localStorage.setItem(key, JSON.stringify(history));
   } catch (e) {
-    console.warn('Failed to save session history:', e);
+    logger.warn('Failed to save session history:', e);
   }
 }

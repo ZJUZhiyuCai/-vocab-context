@@ -313,6 +313,7 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
 import { useTheme } from '../composables/useTheme.js'
+import logger from '../utils/logger.js'
 
 const { isDark } = useTheme()
 
@@ -510,7 +511,7 @@ onMounted(() => {
     try {
       favoriteTimes.value = new Map(JSON.parse(saved))
     } catch (e) {
-      console.error('加载收藏时间失败:', e)
+      logger.error('加载收藏时间失败:', e)
     }
   }
 

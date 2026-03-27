@@ -8,6 +8,7 @@
  */
 
 import { VOCABULARIES } from './vocabularyManager.js';
+import logger from './logger.js';
 
 // Speaking Part 2 常见话题模板
 export const SPEAKING_TEMPLATES = {
@@ -130,8 +131,7 @@ export async function getTopicWordCluster(topicId, size = 12) {
       topic: bundle.topic
     }));
   } catch (err) {
-    // eslint-disable-next-line no-console
-    console.error('Failed to load topic cluster:', err);
+    logger.error('Failed to load topic cluster:', err);
     return [];
   }
 }

@@ -470,6 +470,7 @@ import { AI_MODEL, AI_PROVIDER_LABEL, AI_ENV_API_KEY_NAME } from './utils/aiClie
 import { buildIeltsQuickRecommendation, setPendingIeltsPathTarget } from './utils/ieltsPathEntry.js'
 import { shouldShowCardRecommendation, buildCardRecommendation, getRecommendationDelay } from './utils/cardRecommendation.js'
 import { getEnglishDefinition } from './utils/englishDefinitionService.js'
+import logger from './utils/logger.js'
 import { loadSettings, saveSettings as saveSettingsToStorage, loadWordbook, saveWordbook, loadUserProfile, saveUserProfile, shouldShowOnboarding } from './utils/storage.js'
 import { useConfetti } from './composables/useConfetti.js'
 import { useTheme } from './composables/useTheme.js'
@@ -769,7 +770,7 @@ const loadData = async () => {
     loadReviewStates(validWordIds);
     updateReviewQueue();
   } catch (error) {
-    console.error('❌ 加载数据失败:', error);
+    logger.error('❌ 加载数据失败:', error);
   } finally {
     isLoading.value = false;
   }
@@ -808,7 +809,7 @@ const persistVocabularyProgressLocally = (vocabId, progress) => {
     const key = `vocabcontext_progress_${vocabId}`;
     localStorage.setItem(key, JSON.stringify(progress));
   } catch (error) {
-    console.warn('⚠️ 本地清洗词库进度失败:', error);
+    logger.warn('⚠️ 本地清洗词库进度失败:', error);
   }
 };
 
@@ -1073,7 +1074,7 @@ onUnmounted(() => {
 // 监听登录状态，自动执行全量同步
 watch(user, async (newUser, oldUser) => {
   if (newUser && !oldUser) {
-    console.log('🔄 检测到用户登录，开始同步云端数据...');
+    logger.info('🔄 检测到用户登录，开始同步云端数据...');
     try {
       const syncResult = await syncService.fullSync();
       if (!syncResult) return;
@@ -1155,11 +1156,11 @@ watch(user, async (newUser, oldUser) => {
         saveUnlockedAchievements(localAchievements);
       }
 
-      console.log('✅ 云端数据同步完成');
+      logger.info('✅ 云端数据同步完成');
       error.value = '已恢复云端数据';
       setTimeout(() => { error.value = null; }, 3000);
     } catch (err) {
-      console.error('❌ 全量同步失败:', err);
+      logger.error('❌ 全量同步失败:', err);
     }
   }
 }, { immediate: true });

@@ -3,6 +3,8 @@
  * 记录每天学习的单词数量，用于生成学习热力图
  */
 
+import logger from './logger.js'
+
 const HISTORY_KEY = 'vocabcontext_study_history'
 
 /**
@@ -14,7 +16,7 @@ export function getStudyHistory() {
     const saved = localStorage.getItem(HISTORY_KEY)
     return saved ? JSON.parse(saved) : {}
   } catch (error) {
-    console.error('读取学习历史失败:', error)
+    logger.error('读取学习历史失败:', error)
     return {}
   }
 }
@@ -28,7 +30,7 @@ export function saveStudyHistory(history) {
     localStorage.setItem(HISTORY_KEY, JSON.stringify(history))
     return true
   } catch (error) {
-    console.error('保存学习历史失败:', error)
+    logger.error('保存学习历史失败:', error)
     return false
   }
 }
@@ -50,7 +52,7 @@ export function recordTodayStudy(count) {
 
   // 异步同步到云端
   syncService.syncStudyHistory(today, history[today], 0).catch(err => {
-    console.warn('⚠️ 同步学习历史失败:', err);
+    logger.warn('⚠️ 同步学习历史失败:', err);
   });
 }
 

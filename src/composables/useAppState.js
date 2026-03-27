@@ -4,6 +4,7 @@
  */
 
 import { ref, computed } from 'vue'
+import logger from '../utils/logger.js'
 import { getAllVocabularies } from '../utils/vocabularyManager.js'
 import { loadSettings, loadWordbook, loadUserProfile, shouldShowOnboarding } from '../utils/storage.js'
 
@@ -210,7 +211,7 @@ export function saveStudyTime() {
     totalStudyTime.value = totalTime
     sessionStartTime.value = Date.now()
   } catch (error) {
-    console.error('保存学习时长失败:', error)
+    logger.error('保存学习时长失败:', error)
   }
 }
 

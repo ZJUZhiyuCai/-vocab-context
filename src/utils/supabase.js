@@ -1,4 +1,5 @@
 import { createClient } from '@supabase/supabase-js'
+import logger from './logger.js'
 
 const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
 const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY
@@ -11,7 +12,7 @@ const EXPIRY_MARGIN_MS = 90 * 1000
 export const hasSupabaseConfig = Boolean(supabaseUrl && supabaseKey)
 
 if (!hasSupabaseConfig) {
-    console.warn('Supabase credentials missing. Running in offline mode.')
+    logger.warn('Supabase credentials missing. Running in offline mode.')
 }
 
 function readStoredSession() {

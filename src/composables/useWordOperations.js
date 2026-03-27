@@ -10,6 +10,7 @@ import { saveWordbook } from '../utils/storage.js'
 import { syncService } from '../utils/syncService.js'
 import { getTTS } from '../utils/text-to-speech.js'
 import { getFreeDictionaryTTS } from '../utils/freeDictionaryTTS.js'
+import logger from '../utils/logger.js'
 import { wordbook, userSettings, userProfile, currentVocab, error, generatingWordId, loadingEnglishDefinition } from './useAppState.js'
 
 const tts = getTTS()
@@ -30,11 +31,11 @@ export async function playWordAudio(word) {
     if (success) return
     await fallbackBrowserTTS(word)
   } catch (err) {
-    console.warn('Free Dictionary TTS failed:', err)
+    logger.warn('Free Dictionary TTS failed:', err)
     try {
       await fallbackBrowserTTS(word)
     } catch (fallbackErr) {
-      console.error('Fallback TTS also failed:', fallbackErr)
+      logger.error('Fallback TTS also failed:', fallbackErr)
     }
   } finally {
     isPlayingWord.value = false
@@ -49,7 +50,7 @@ async function fallbackBrowserTTS(word) {
   try {
     await tts.speakWord(word)
   } catch (err) {
-    console.error('TTS failed:', err)
+    logger.error('TTS failed:', err)
   }
 }
 
@@ -69,7 +70,7 @@ export function addToWordbook(wordId) {
 
   if (currentVocab.value) {
     syncService.syncWordbook(wordId, currentVocab.value.id, true).catch(err => {
-      console.warn('Failed to sync wordbook:', err)
+      logger.warn('Failed to sync wordbook:', err)
     })
   }
 }
@@ -83,7 +84,7 @@ export function removeFromWordbook(wordId) {
 
   if (currentVocab.value) {
     syncService.syncWordbook(wordId, currentVocab.value.id, false).catch(err => {
-      console.warn('Failed to remove from cloud wordbook:', err)
+      logger.warn('Failed to remove from cloud wordbook:', err)
     })
   }
 }

@@ -1,4 +1,5 @@
 import { ref, onMounted } from 'vue'
+import logger from '../utils/logger.js'
 
 // 主题类型
 const THEMES = {
@@ -43,7 +44,7 @@ function saveTheme(themeValue) {
     try {
         localStorage.setItem(STORAGE_KEY, themeValue)
     } catch (e) {
-        console.warn('Failed to save theme preference:', e)
+        logger.warn('Failed to save theme preference:', e)
     }
 }
 
@@ -55,7 +56,7 @@ function loadTheme() {
             return saved
         }
     } catch (e) {
-        console.warn('Failed to load theme preference:', e)
+        logger.warn('Failed to load theme preference:', e)
     }
     return THEMES.DARK // 默认深色
 }
@@ -92,7 +93,7 @@ export function useTheme() {
     // 设置主题
     function setTheme(newTheme) {
         if (!Object.values(THEMES).includes(newTheme)) {
-            console.warn('Invalid theme:', newTheme)
+            logger.warn('Invalid theme:', newTheme)
             return
         }
         theme.value = newTheme

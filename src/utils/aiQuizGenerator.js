@@ -1,4 +1,5 @@
 import { createAIChatCompletion } from './aiClient.js';
+import logger from './logger.js';
 
 /**
  * AI 智能测验生成器
@@ -26,7 +27,7 @@ export async function generateQuiz({ apiKey, word, otherWords, userLevel = 'B2' 
     });
     return parseQuizResponse(data, word);
   } catch (error) {
-    console.error('生成测验失败:', error);
+    logger.error('生成测验失败:', error);
     throw error;
   }
 }
@@ -102,7 +103,7 @@ function parseQuizResponse(data, originalWord) {
   try {
     quizData = JSON.parse(jsonStr);
   } catch (parseError) {
-    console.error('JSON解析失败:', jsonStr);
+    logger.error('JSON解析失败:', jsonStr);
     throw new Error('AI返回的格式无法解析', { cause: parseError });
   }
 
@@ -217,7 +218,7 @@ export async function generateFillBlankQuestion({ apiKey, word, userLevel = 'B2'
       generatedAt: new Date().toISOString()
     };
   } catch (error) {
-    console.error('生成填空题失败:', error);
+    logger.error('生成填空题失败:', error);
     throw error;
   }
 }

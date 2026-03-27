@@ -1,4 +1,5 @@
 import { createAIChatCompletion } from './aiClient.js';
+import logger from './logger.js';
 
 /**
  * AI 词汇关联记忆助手
@@ -25,7 +26,7 @@ export async function generateMemoryHooks({ apiKey, word, userLevel = 'B2' }) {
     });
     return parseMemoryResponse(data, word);
   } catch (error) {
-    console.error('生成记忆辅助失败:', error);
+    logger.error('生成记忆辅助失败:', error);
     throw error;
   }
 }
@@ -117,7 +118,7 @@ function parseMemoryResponse(data) {
       generatedAt: new Date().toISOString()
     };
   } catch (parseError) {
-    console.error('JSON解析失败:', jsonStr);
+    logger.error('JSON解析失败:', jsonStr);
     throw new Error('AI返回的格式无法解析', { cause: parseError });
   }
 }
@@ -202,7 +203,7 @@ export async function generateWordNetwork({ apiKey, word, userLevel = 'B2' }) {
       generatedAt: new Date().toISOString()
     };
   } catch (error) {
-    console.error('生成单词网络失败:', error);
+    logger.error('生成单词网络失败:', error);
     throw error;
   }
 }
@@ -277,7 +278,7 @@ ${targetScenarios.map((s, i) => `${i + 1}. ${s}`).join('\n')}
       generatedAt: new Date().toISOString()
     };
   } catch (error) {
-    console.error('生成场景化例句失败:', error);
+    logger.error('生成场景化例句失败:', error);
     throw error;
   }
 }
@@ -351,7 +352,7 @@ export async function generateLearningPath({ apiKey, words, goal = 'master', use
       generatedAt: new Date().toISOString()
     };
   } catch (error) {
-    console.error('生成学习路径失败:', error);
+    logger.error('生成学习路径失败:', error);
     throw error;
   }
 }

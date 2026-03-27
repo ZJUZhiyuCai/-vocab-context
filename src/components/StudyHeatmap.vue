@@ -250,6 +250,7 @@
 import { ref, onMounted } from 'vue'
 import { getStudyHistory, getRecentStudyDays, getStreakDays, getTotalStudyDays } from '../utils/studyHistory.js'
 import { useTheme } from '../composables/useTheme.js'
+import logger from '../utils/logger.js'
 
 const { isDark } = useTheme()
 
@@ -268,7 +269,7 @@ const loadData = () => {
     const currentVocab = getCurrentVocabulary()
     if (currentVocab) vocab.value = currentVocab
   } catch (e) {
-    console.error('Failed to load current vocab info:', e)
+    logger.error('Failed to load current vocab info:', e)
   }
 
   // 加载最近14天的数据

@@ -218,6 +218,7 @@
 <script setup>
 import { ref, computed, watch, nextTick, onMounted } from 'vue'
 import { getAIAgent } from '../utils/aiAgent.js'
+import logger from '../utils/logger.js'
 
 const props = defineProps({
   currentWord: {
@@ -299,7 +300,7 @@ async function sendMessage() {
       timestamp: Date.now()
     })
   } catch (error) {
-    console.error('AI 回复失败:', error)
+    logger.error('AI 回复失败:', error)
     conversationHistory.value.push({
       role: 'assistant',
       content: '抱歉，我遇到了一些问题。请稍后再试。',
@@ -355,7 +356,7 @@ onMounted(() => {
       conversationHistory.value = history.slice(-20)
     }
   } catch (error) {
-    console.error('加载对话历史失败:', error)
+    logger.error('加载对话历史失败:', error)
   }
 })
 
@@ -364,7 +365,7 @@ watch(conversationHistory, (newHistory) => {
   try {
     localStorage.setItem('vocabcontext_ai_teacher_history', JSON.stringify(newHistory))
   } catch (error) {
-    console.error('保存对话历史失败:', error)
+    logger.error('保存对话历史失败:', error)
   }
 }, { deep: true })
 

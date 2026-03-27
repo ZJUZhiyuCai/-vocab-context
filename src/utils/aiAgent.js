@@ -10,6 +10,7 @@
 
 import { loadAISettings } from './aiService.js';
 import { createAIChatCompletion, getCompletionText, resolveApiKey } from './aiClient.js';
+import logger from './logger.js';
 
 // localStorage keys
 const CONVERSATION_KEY = 'vocabcontext_agent_conversations';
@@ -77,7 +78,7 @@ export class AIAgent {
         return { ...DEFAULT_AGENT_SETTINGS, ...JSON.parse(saved) };
       }
     } catch (error) {
-      console.error('加载Agent设置失败:', error);
+      logger.error('加载Agent设置失败:', error);
     }
     return { ...DEFAULT_AGENT_SETTINGS };
   }
@@ -90,7 +91,7 @@ export class AIAgent {
     try {
       localStorage.setItem(AGENT_SETTINGS_KEY, JSON.stringify(this.settings));
     } catch (error) {
-      console.error('保存Agent设置失败:', error);
+      logger.error('保存Agent设置失败:', error);
     }
   }
 
@@ -105,7 +106,7 @@ export class AIAgent {
         return JSON.parse(saved);
       }
     } catch (error) {
-      console.error('加载对话历史失败:', error);
+      logger.error('加载对话历史失败:', error);
     }
     return {};
   }
@@ -124,7 +125,7 @@ export class AIAgent {
       }
       localStorage.setItem(CONVERSATION_KEY, JSON.stringify(this.conversations));
     } catch (error) {
-      console.error('保存对话历史失败:', error);
+      logger.error('保存对话历史失败:', error);
     }
   }
 
@@ -307,7 +308,7 @@ ${context.example ? `【例句】${context.example}` : ''}
 
       return JSON.parse(jsonMatch[1] || jsonMatch[0]);
     } catch (error) {
-      console.error('解析单词分析响应失败:', error);
+      logger.error('解析单词分析响应失败:', error);
       throw new Error(`解析单词分析响应失败: ${error.message}`, { cause: error });
     }
   }
@@ -580,7 +581,7 @@ ${weakWords.slice(0, 10).map(w => `- ${w.word}: ${w.meaning}`).join('\n')}
 
       return JSON.parse(jsonMatch[1] || jsonMatch[0]);
     } catch (error) {
-      console.error('解析JSON响应失败:', error);
+      logger.error('解析JSON响应失败:', error);
       throw new Error(`解析JSON响应失败: ${error.message}`, { cause: error });
     }
   }

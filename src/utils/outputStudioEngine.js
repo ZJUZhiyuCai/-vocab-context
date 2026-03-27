@@ -11,6 +11,7 @@
 const STORAGE_KEY = 'vocabman-output-studio-state';
 const HISTORY_KEY = 'vocabman-output-studio-history';
 import { buildOutputCoach, evaluateProductionAttempt } from './learningCoach.js';
+import logger from './logger.js';
 
 // 最小 context 文本长度（字符）
 const MIN_CONTEXT_LENGTH = 40;
@@ -325,7 +326,7 @@ export function createOutputStudioEngine(bundles, options = {}) {
         startedAt: state.startedAt
       }));
     } catch (e) {
-      console.warn('保存 Output Studio 状态失败:', e);
+      logger.warn('保存 Output Studio 状态失败:', e);
     }
   }
 
@@ -344,7 +345,7 @@ export function createOutputStudioEngine(bundles, options = {}) {
         }
       }
     } catch (e) {
-      console.warn('加载 Output Studio 状态失败:', e);
+      logger.warn('加载 Output Studio 状态失败:', e);
     }
   }
 
@@ -457,7 +458,7 @@ export function saveOutputStudioToHistory(summary, meta = {}) {
 
     localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   } catch (e) {
-    console.warn('保存 Output Studio 历史失败:', e);
+    logger.warn('保存 Output Studio 历史失败:', e);
   }
 }
 

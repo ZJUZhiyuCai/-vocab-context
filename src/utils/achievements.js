@@ -3,6 +3,8 @@
  * 检测和管理用户学习成就
  */
 
+import logger from './logger.js'
+
 const ACHIEVEMENTS_KEY = 'vocabcontext_achievements'
 
 /**
@@ -244,7 +246,7 @@ export function getUnlockedAchievements() {
     const saved = localStorage.getItem(ACHIEVEMENTS_KEY)
     return new Set(saved ? JSON.parse(saved) : [])
   } catch (error) {
-    console.error('读取成就失败:', error)
+    logger.error('读取成就失败:', error)
     return new Set()
   }
 }
@@ -258,7 +260,7 @@ export function saveUnlockedAchievements(unlocked) {
     localStorage.setItem(ACHIEVEMENTS_KEY, JSON.stringify(Array.from(unlocked)))
     return true
   } catch (error) {
-    console.error('保存成就失败:', error)
+    logger.error('保存成就失败:', error)
     return false
   }
 }
@@ -369,5 +371,5 @@ export function getAchievementStats() {
  */
 export function resetAllAchievements() {
   localStorage.removeItem(ACHIEVEMENTS_KEY)
-  console.log('⚠️ 所有成就已重置')
+  logger.info('⚠️ 所有成就已重置')
 }

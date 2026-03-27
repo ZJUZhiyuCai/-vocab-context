@@ -1,4 +1,5 @@
 import { createAIChatCompletion } from './aiClient.js';
+import logger from './logger.js';
 
 /**
  * AI 错题分析与学习建议
@@ -35,7 +36,7 @@ export async function analyzeErrors({ apiKey, mistakes, stats, userLevel = 'B2' 
     });
     return parseAnalysisResponse(data);
   } catch (error) {
-    console.error('分析错题失败:', error);
+    logger.error('分析错题失败:', error);
     throw error;
   }
 }
@@ -145,7 +146,7 @@ function parseAnalysisResponse(data) {
       generatedAt: new Date().toISOString()
     };
   } catch (parseError) {
-    console.error('JSON解析失败:', jsonStr);
+    logger.error('JSON解析失败:', jsonStr);
     throw new Error('AI返回的格式无法解析', { cause: parseError });
   }
 }
@@ -202,7 +203,7 @@ export async function analyzeWordError({ apiKey, word, userAnswer, correctAnswer
       analyzedAt: new Date().toISOString()
     };
   } catch (error) {
-    console.error('分析单词错误失败:', error);
+    logger.error('分析单词错误失败:', error);
     throw error;
   }
 }
@@ -287,7 +288,7 @@ ${weakAreas.map(area => `- ${area}`).join('\n')}
       generatedAt: new Date().toISOString()
     };
   } catch (error) {
-    console.error('生成学习计划失败:', error);
+    logger.error('生成学习计划失败:', error);
     throw error;
   }
 }

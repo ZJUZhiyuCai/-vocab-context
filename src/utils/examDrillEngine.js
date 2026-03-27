@@ -11,6 +11,7 @@
 const STORAGE_KEY = 'vocabman-exam-drill-state';
 const HISTORY_KEY = 'vocabman-exam-drill-history';
 import { buildExamCoach, evaluateProductionAttempt } from './learningCoach.js';
+import logger from './logger.js';
 
 // 任务表面类型
 export const SURFACE_TYPES = {
@@ -526,7 +527,7 @@ export function createExamDrillEngine(bundles, options = {}) {
         startedAt: state.startedAt
       }));
     } catch (e) {
-      console.warn('保存 Exam Drill 状态失败:', e);
+      logger.warn('保存 Exam Drill 状态失败:', e);
     }
   }
 
@@ -545,7 +546,7 @@ export function createExamDrillEngine(bundles, options = {}) {
         }
       }
     } catch (e) {
-      console.warn('加载 Exam Drill 状态失败:', e);
+      logger.warn('加载 Exam Drill 状态失败:', e);
     }
   }
 
@@ -642,7 +643,7 @@ export function saveExamDrillToHistory(summary, meta = {}) {
 
     localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
   } catch (e) {
-    console.warn('保存 Exam Drill 历史失败:', e);
+    logger.warn('保存 Exam Drill 历史失败:', e);
   }
 }
 

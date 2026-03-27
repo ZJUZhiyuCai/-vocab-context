@@ -7,6 +7,8 @@
  * - 提供播放控制（播放、暂停、停止、恢复）
  */
 
+import logger from './logger.js';
+
 // localStorage keys
 const SETTINGS_KEY = 'vocabcontext_tts_settings';
 
@@ -53,7 +55,7 @@ export class TextToSpeech {
    */
   initVoices() {
     if (!this.synth) {
-      console.warn('当前浏览器不支持 Web Speech API');
+      logger.warn('当前浏览器不支持 Web Speech API');
       return;
     }
 
@@ -72,7 +74,7 @@ export class TextToSpeech {
         return { ...DEFAULT_SETTINGS, ...JSON.parse(saved) };
       }
     } catch (error) {
-      console.error('加载TTS设置失败:', error);
+      logger.error('加载TTS设置失败:', error);
     }
     return { ...DEFAULT_SETTINGS };
   }
@@ -85,7 +87,7 @@ export class TextToSpeech {
     try {
       localStorage.setItem(SETTINGS_KEY, JSON.stringify(this.settings));
     } catch (error) {
-      console.error('保存TTS设置失败:', error);
+      logger.error('保存TTS设置失败:', error);
     }
   }
 
@@ -131,7 +133,7 @@ export class TextToSpeech {
         v.name.includes(preferred) || v.name === preferred
       );
       if (voice) {
-        console.log('找到高质量语音:', voice.name);
+        logger.info('找到高质量语音:', voice.name);
         return voice;
       }
     }

@@ -1,4 +1,5 @@
 import { createAIChatCompletion } from './aiClient.js';
+import logger from './logger.js';
 
 /**
  * 词根词缀API服务
@@ -100,7 +101,7 @@ function parseResponse(data) {
       mnemonic: result.mnemonic || ''
     }
   } catch (error) {
-    console.error('解析响应失败:', error)
+    logger.error('解析响应失败:', error)
     return null
   }
 }

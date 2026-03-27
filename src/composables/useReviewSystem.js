@@ -12,6 +12,7 @@ import {
   getTodayReviewStats
 } from '../utils/spacedRepetition.js'
 import { recordTodayStudy, getStreakDays } from '../utils/studyHistory.js'
+import logger from '../utils/logger.js'
 import { syncService } from '../utils/syncService.js'
 import {
   reviewStates,
@@ -45,10 +46,10 @@ export function saveReviewStates() {
         currentVocab.value.id,
         currentWord.value.id,
         reviewStates.value[currentWord.value.id]
-      ).catch(err => console.warn('Failed to sync review state:', err))
+      ).catch(err => logger.warn('Failed to sync review state:', err))
     }
   } catch (err) {
-    console.error('Failed to save review states:', err)
+    logger.error('Failed to save review states:', err)
   }
 }
 

@@ -555,6 +555,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { getAIAgent } from '../utils/aiAgent.js'
+import logger from '../utils/logger.js'
 
 const props = defineProps({
   currentWord: {
@@ -616,7 +617,7 @@ async function analyzeCurrentWord() {
     wordAnalysis.value = result
     analyzedWord.value = wordToAnalyze // 使用捕获的单词
   } catch (error) {
-    console.error('单词分析失败:', error)
+    logger.error('单词分析失败:', error)
     alert('分析失败: ' + error.message)
   } finally {
     isLoadingAnalysis.value = false
@@ -640,7 +641,7 @@ async function generateStrategy() {
     )
     strategyResult.value = result
   } catch (error) {
-    console.error('生成策略失败:', error)
+    logger.error('生成策略失败:', error)
     alert('生成失败: ' + error.message)
   } finally {
     isLoadingStrategy.value = false
@@ -666,7 +667,7 @@ async function analyzeWeakWord(word) {
     // 提示用户
     alert(`已加入"${word.word}" 的分析结果`)
   } catch (error) {
-    console.error('分析失败:', error)
+    logger.error('分析失败:', error)
     alert('分析失败: ' + error.message)
   } finally {
     isAnalyzingWeak.value = false
