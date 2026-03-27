@@ -2,6 +2,8 @@
  * 词库管理器
  */
 
+import logger from './logger.js'
+
 // 词库配置 - IELTS-focused vocabulary system
 // 难度标签基于 IELTS Band 分数段，CEFR 作为辅助参考
 export const VOCABULARIES = [
@@ -352,9 +354,9 @@ function migrateLocalStorage() {
     }
 
     localStorage.setItem(migrationKey, STORAGE_MIGRATION_VERSION)
-    console.log(`✅ localStorage migration complete (v${STORAGE_MIGRATION_VERSION})`)
+    logger.info(`localStorage migration complete (v${STORAGE_MIGRATION_VERSION})`)
   } catch (error) {
-    console.warn('localStorage migration failed:', error)
+    logger.warn('localStorage migration failed:', error)
   }
 }
 
@@ -404,7 +406,7 @@ export function loadCurrentVocabulary() {
       if (vocab) return vocab;
     }
   } catch (error) {
-    console.error('加载词库设置失败:', error);
+    logger.error('加载词库设置失败:', error);
   }
   return currentVocabulary;
 }
@@ -417,7 +419,7 @@ export function saveCurrentVocabulary(vocabId) {
     localStorage.setItem('vocabcontext_current_vocab', vocabId);
     return true;
   } catch (error) {
-    console.error('保存词库设置失败:', error);
+    logger.error('保存词库设置失败:', error);
     return false;
   }
 }
@@ -433,7 +435,7 @@ export function getVocabularyProgress(vocabId) {
       return JSON.parse(saved);
     }
   } catch (error) {
-    console.error('加载词库进度失败:', error);
+    logger.error('加载词库进度失败:', error);
   }
   return {
     learned: [],
@@ -445,7 +447,7 @@ function syncVocabularyProgressInBackground(vocabId, progress) {
   void import('./syncService')
     .then(({ syncService }) => syncService.syncVocabularyProgress(vocabId, progress))
     .catch(err => {
-      console.warn('⚠️ 自动同步进度失败:', err);
+      logger.warn('自动同步进度失败:', err);
     });
 }
 
@@ -462,7 +464,7 @@ export function saveVocabularyProgress(vocabId, progress) {
 
     return true;
   } catch (error) {
-    console.error('保存词库进度失败:', error);
+    logger.error('保存词库进度失败:', error);
     return false;
   }
 }

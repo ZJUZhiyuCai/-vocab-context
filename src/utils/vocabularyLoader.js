@@ -3,6 +3,8 @@
  * 解决大文件加载性能问题（如C1词库37MB）
  */
 
+import logger from './logger.js';
+
 // 缓存已加载的词汇数据
 const vocabCache = new Map();
 
@@ -34,15 +36,15 @@ export class VocabularyLoader {
 
     // 确保数据有效
     if (!this.fullData || !Array.isArray(this.fullData.words)) {
-      console.error('❌ 词库数据无效:', this.fullData);
+      logger.error('词库数据无效:', this.fullData);
       return [];
     }
 
     const endIndex = Math.min(startIndex + count, this.totalWords);
-    console.log(`🔍 getWordsRange: startIndex=${startIndex}, count=${count}, endIndex=${endIndex}, totalWords=${this.totalWords}`);
+    logger.info(`getWordsRange: startIndex=${startIndex}, count=${count}, endIndex=${endIndex}, totalWords=${this.totalWords}`);
 
     const result = this.fullData.words.slice(startIndex, endIndex);
-    console.log(`📦 返回 ${result.length} 个单词`);
+    logger.info(`返回 ${result.length} 个单词`);
 
     return result;
   }
@@ -97,7 +99,7 @@ export class VocabularyLoader {
    */
   async _loadFullFile() {
     try {
-      console.log(`📖 首次加载词库: ${this.vocabFile}`);
+      logger.info(`首次加载词库: ${this.vocabFile}`);
       const startTime = Date.now();
 
       const response = await fetch(this.vocabFile);
@@ -110,11 +112,10 @@ export class VocabularyLoader {
       const loadTime = Date.now() - startTime;
       const fileSizeMB = (new TextEncoder().encode(JSON.stringify(data)).length / 1024 / 1024).toFixed(2);
 
-      console.log(`✅ 词库加载完成:`);
-      console.log(`   - 单词数量: ${data.words?.length || 0}`);
-      console.log(`   - 耗时: ${loadTime}ms`);
-      console.log(`   - 文件大小: ${fileSizeMB}MB`);
-      console.log(`   - 数据结构:`, {
+      logger.info('词库加载完成', {
+        wordCount: data.words?.length || 0,
+        loadTimeMs: loadTime,
+        fileSizeMB,
         hasWords: !!data.words,
         wordsIsArray: Array.isArray(data.words),
         totalWords: data.totalWords
@@ -123,12 +124,12 @@ export class VocabularyLoader {
       this.fullData = data;
       this.totalWords = data.totalWords || (Array.isArray(data.words) ? data.words.length : 0);
 
-      console.log(`🎯 设置 totalWords = ${this.totalWords}`);
+      logger.info(`设置 totalWords = ${this.totalWords}`);
 
       // 存入全局缓存
       vocabCache.set(this.cacheKey, data);
     } catch (error) {
-      console.error(`❌ 加载词库失败 ${this.vocabFile}:`, error);
+      logger.error(`加载词库失败 ${this.vocabFile}:`, error);
       throw error;
     }
   }

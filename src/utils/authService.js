@@ -1,4 +1,5 @@
 import { clearSupabaseAuthStorage, supabase, hasSupabaseConfig } from './supabase'
+import logger from './logger.js'
 import { ref } from 'vue'
 
 const isBrowser = typeof window !== 'undefined'
@@ -17,7 +18,7 @@ function checkAuthErrorInHash() {
         const errorDescription = params.get('error_description')
 
         if (error) {
-            console.error('Auth error from URL:', {
+            logger.error('Auth error from URL:', {
                 error,
                 errorCode,
                 errorDescription: decodeURIComponent(errorDescription || '')
@@ -58,7 +59,7 @@ function getRedirectUrl() {
 
 async function initializeSession() {
     if (!supabase) {
-        console.log('Running in offline mode (no Supabase config)')
+        logger.info('Running in offline mode (no Supabase config)')
         return
     }
 
@@ -68,16 +69,16 @@ async function initializeSession() {
         if (error) {
             await recoverBrokenLocalSession(error)
             user.value = null
-            console.warn('Auth session unavailable. Continuing in local-only mode.')
+            logger.warn('Auth session unavailable. Continuing in local-only mode.')
             return
         }
 
         user.value = session?.user ?? null
-        console.log('Auth session initialized:', session ? 'Logged in as ' + session.user.email : 'Not logged in')
+        logger.info('Auth session initialized:', session ? 'Logged in as ' + session.user.email : 'Not logged in')
     } catch (error) {
         await recoverBrokenLocalSession(error)
         user.value = null
-        console.warn('Auth initialization skipped due to network error.')
+        logger.warn('Auth initialization skipped due to network error.')
     }
 }
 
@@ -85,16 +86,16 @@ function bindAuthStateListener() {
     if (!supabase || !isBrowser) return
 
     supabase.auth.onAuthStateChange((event, session) => {
-        console.log('Auth state changed:', event)
+        logger.info('Auth state changed:', event)
         user.value = session?.user ?? null
 
         if (event === 'SIGNED_IN') {
-            console.log('User signed in:', session?.user?.email)
+            logger.info('User signed in:', session?.user?.email)
             authError.value = null
         } else if (event === 'SIGNED_OUT') {
-            console.log('User signed out')
+            logger.info('User signed out')
         } else if (event === 'TOKEN_REFRESHED') {
-            console.log('Token refreshed')
+            logger.info('Token refreshed')
         }
     })
 }
@@ -111,7 +112,7 @@ export const authService = {
             return { error: { message: 'Supabase not configured' } }
         }
         const redirectUrl = getRedirectUrl()
-        console.log('Redirect URL (OAuth):', redirectUrl)
+        logger.info('Redirect URL (OAuth):', redirectUrl)
 
         const { data, error } = await supabase.auth.signInWithOAuth({
             provider,
@@ -127,7 +128,7 @@ export const authService = {
             return { error: { message: 'Supabase not configured' } }
         }
         const redirectUrl = getRedirectUrl()
-        console.log('Redirect URL (Magic Link):', redirectUrl)
+        logger.info('Redirect URL (Magic Link):', redirectUrl)
 
         const { data, error } = await supabase.auth.signInWithOtp({
             email,
@@ -137,9 +138,9 @@ export const authService = {
         })
 
         if (error) {
-            console.error('Magic Link Error:', error)
+            logger.error('Magic Link Error:', error)
         } else {
-            console.log('Magic link sent to:', email)
+            logger.info('Magic link sent to:', email)
         }
 
         return { data, error }

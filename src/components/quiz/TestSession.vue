@@ -229,8 +229,7 @@ const next = () => {
   }
 }
 
-const handleRate = (rating) => {
-  console.log('评分:', rating)
+const handleRate = () => {
   next()
 }
 

@@ -30,5 +30,11 @@ export default [
       'no-unused-vars': 'warn',
       'no-console': 'warn'
     }
+  },
+  {
+    files: ['src/utils/logger.js'],
+    rules: {
+      'no-console': 'off'
+    }
   }
 ]

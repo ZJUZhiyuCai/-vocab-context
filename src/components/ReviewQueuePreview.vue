@@ -241,9 +241,8 @@ const getOverdueText = (reviewState) => {
 }
 
 // 选择单词（查看详情）
-const selectWord = (index) => {
+const selectWord = () => {
   // 预留：可以添加查看单词详情的逻辑
-  console.log('选中单词:', index)
 }
 
 // 从指定索引开始复习

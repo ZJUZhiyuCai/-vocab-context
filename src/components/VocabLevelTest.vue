@@ -401,14 +401,6 @@ const calculateResult = () => {
   // 计算能力分数 (0-100)
   const abilityScore = (avgDifficulty / 6) * 40 + correctRate * 60
 
-  console.log('📊 测试分析:', {
-    correctCount,
-    totalQuestions,
-    correctRate: (correctRate * 100).toFixed(1) + '%',
-    avgDifficulty: avgDifficulty.toFixed(2),
-    abilityScore: abilityScore.toFixed(1)
-  })
-
   // 根据能力分数估算词汇量和等级
   let vocabRange;
   let cefr;

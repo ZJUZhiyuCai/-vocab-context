@@ -175,7 +175,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed } from 'vue'
 import ReviewSession from './quiz/ReviewSession.vue'
 import { useTheme } from '../composables/useTheme.js'
 import { markTaskCompleted } from '../utils/firstWeekScaffold.js'
@@ -194,14 +194,6 @@ defineEmits(['navigate'])
 const showReview = ref(false)
 const reviewMode = ref('flashcard')
 const reviewIndex = ref(0)
-
-// 调试
-onMounted(() => {
-  console.log('ReviewQueue收到的数据:', {
-    reviewDataCount: props.reviewData.length,
-    reviewData: props.reviewData
-  })
-})
 
 // 是否有单词
 const hasWords = computed(() => {

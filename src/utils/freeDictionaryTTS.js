@@ -4,6 +4,8 @@
  * 完全免费，无需 API Key
  */
 
+import logger from './logger.js'
+
 const API_BASE = 'https://api.dictionaryapi.dev/api/v2/entries/en'
 const CACHE_KEY_PREFIX = 'vocabcontext_freedict_'
 
@@ -26,7 +28,7 @@ export class FreeDictionaryTTS {
 
         // 检查内存缓存
         if (this.audioCache.has(cleanWord)) {
-            console.log('🔊 使用内存缓存:', cleanWord)
+            logger.info('使用内存缓存:', cleanWord)
             return this.audioCache.get(cleanWord)
         }
 
@@ -34,17 +36,17 @@ export class FreeDictionaryTTS {
         const cached = this.getFromCache(cleanWord)
         if (cached) {
             this.audioCache.set(cleanWord, cached)
-            console.log('🔊 使用本地缓存:', cleanWord)
+            logger.info('使用本地缓存:', cleanWord)
             return cached
         }
 
         try {
-            console.log('🔊 请求 Free Dictionary API:', cleanWord)
+            logger.info('请求 Free Dictionary API:', cleanWord)
             const response = await fetch(`${API_BASE}/${encodeURIComponent(cleanWord)}`)
 
             if (!response.ok) {
                 if (response.status === 404) {
-                    console.warn('❌ 单词未找到:', cleanWord)
+                    logger.warn('单词未找到:', cleanWord)
                     return null
                 }
                 throw new Error(`API 请求失败: ${response.status}`)
@@ -87,14 +89,14 @@ export class FreeDictionaryTTS {
                 this.audioCache.set(cleanWord, audioUrl)
                 this.saveToCache(cleanWord, audioUrl)
 
-                console.log('✅ 获取发音成功:', cleanWord, audioUrl)
+                logger.info('获取发音成功:', cleanWord, audioUrl)
                 return audioUrl
             }
 
-            console.warn('⚠️ 未找到发音:', cleanWord)
+            logger.warn('未找到发音:', cleanWord)
             return null
         } catch (error) {
-            console.error('❌ Free Dictionary API 错误:', error)
+            logger.error('Free Dictionary API 错误:', error)
             return null
         }
     }
@@ -126,7 +128,7 @@ export class FreeDictionaryTTS {
 
             return true
         } catch (error) {
-            console.error('❌ 播放失败:', error)
+            logger.error('播放失败:', error)
             return false
         }
     }
@@ -158,7 +160,7 @@ export class FreeDictionaryTTS {
                 }
             }
         } catch (error) {
-            console.error('读取缓存失败:', error)
+            logger.error('读取缓存失败:', error)
         }
         return null
     }
@@ -176,7 +178,7 @@ export class FreeDictionaryTTS {
             }
             localStorage.setItem(key, JSON.stringify(data))
         } catch (error) {
-            console.error('保存缓存失败:', error)
+            logger.error('保存缓存失败:', error)
         }
     }
 
@@ -193,10 +195,10 @@ export class FreeDictionaryTTS {
             })
 
             this.audioCache.clear()
-            console.log(`🧹 清除了 ${ttsKeys.length} 条发音缓存`)
+            logger.info(`清除了 ${ttsKeys.length} 条发音缓存`)
             return ttsKeys.length
         } catch (error) {
-            console.error('清除缓存失败:', error)
+            logger.error('清除缓存失败:', error)
             return 0
         }
     }

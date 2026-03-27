@@ -374,12 +374,6 @@ const handleVocabTestComplete = (result) => {
   vocabTestResult.value = result.testResult
   showVocabTest.value = false
 
-  // 如果用户选择了词库，保存到用户设置中
-  if (result.selectedVocab) {
-    // TODO: 保存选中的词库到localStorage或发送给父组件
-    console.log('用户选择了词库:', result.selectedVocab)
-  }
-
   // 测试完成后进入下一步
   nextStep()
 }

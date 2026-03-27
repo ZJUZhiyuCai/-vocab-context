@@ -5,6 +5,7 @@
 
 
 import { syncService } from './syncService'
+import logger from './logger.js'
 
 const SETTINGS_KEY = 'vocabcontext_settings';
 const USER_PROFILE_KEY = 'vocabcontext_user_profile';
@@ -30,7 +31,7 @@ export function loadSettings() {
     const saved = localStorage.getItem(SETTINGS_KEY);
     return saved ? normalizeSettings(JSON.parse(saved)) : null;
   } catch (error) {
-    console.error('加载设置失败:', error);
+    logger.error('加载设置失败:', error);
     return null;
   }
 }
@@ -48,23 +49,23 @@ export function saveSettings(settings) {
 
     // 异步同步到云端
     syncService.syncSettings(normalizedSettings).catch(err => {
-      console.warn('⚠️ 自动同步设置失败（可能未登录或断网）:', err);
+      logger.warn('自动同步设置失败（可能未登录或断网）:', err);
     });
 
-    console.log('✅ 设置保存成功');
+    logger.info('设置保存成功');
     return true;
   } catch (error) {
-    console.error('❌ 保存设置失败:', error);
+    logger.error('保存设置失败:', error);
 
     // 如果是容量错误，尝试清理缓存后重试
     if (error.name === 'QuotaExceededError') {
-      console.warn('⚠️ localStorage已满，尝试清理缓存...');
+      logger.warn('localStorage已满，尝试清理缓存...');
       cleanOldCache().then(() => {
         try {
           localStorage.setItem(SETTINGS_KEY, JSON.stringify(normalizedSettings));
-          console.log('✅ 清理后保存成功');
+          logger.info('清理后保存成功');
         } catch (retryError) {
-          console.error('❌ 清理后仍然无法保存:', retryError);
+          logger.error('清理后仍然无法保存:', retryError);
         }
       });
     }
@@ -102,10 +103,10 @@ async function cleanOldCache() {
         localStorage.removeItem(cacheEntries[i].key);
       }
 
-      console.log(`🧹 清理了 ${deleteCount} 条旧缓存`);
+      logger.info(`清理了 ${deleteCount} 条旧缓存`);
       resolve(deleteCount);
     } catch (error) {
-      console.error('清理缓存失败:', error);
+      logger.error('清理缓存失败:', error);
       resolve(0);
     }
   });
@@ -127,7 +128,7 @@ export function loadUserProfile() {
     const saved = localStorage.getItem(USER_PROFILE_KEY);
     return saved ? JSON.parse(saved) : null;
   } catch (error) {
-    console.error('加载用户画像失败:', error);
+    logger.error('加载用户画像失败:', error);
     return null;
   }
 }
@@ -142,7 +143,7 @@ export function saveUserProfile(profile) {
     localStorage.setItem(USER_PROFILE_KEY, JSON.stringify(profile));
     return true;
   } catch (error) {
-    console.error('保存用户画像失败:', error);
+    logger.error('保存用户画像失败:', error);
     return false;
   }
 }
@@ -166,7 +167,7 @@ export function saveWordbook(wordbook) {
     localStorage.setItem('vocabcontext_wordbook', JSON.stringify([...wordbook]));
     return true;
   } catch (error) {
-    console.error('保存单词本失败:', error);
+    logger.error('保存单词本失败:', error);
     return false;
   }
 }
@@ -180,7 +181,7 @@ export function loadWordbook() {
     const saved = localStorage.getItem('vocabcontext_wordbook');
     return saved ? new Set(JSON.parse(saved)) : new Set();
   } catch (error) {
-    console.error('加载单词本失败:', error);
+    logger.error('加载单词本失败:', error);
     return new Set();
   }
 }

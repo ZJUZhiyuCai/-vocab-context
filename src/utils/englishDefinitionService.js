@@ -1,4 +1,5 @@
 import { createAIChatCompletion } from './aiClient.js';
+import logger from './logger.js';
 
 /**
  * 英文释义API服务
@@ -20,7 +21,7 @@ export async function getEnglishDefinition({ apiKey, word, meaning }) {
   // 检查缓存
   const cached = getFromCache(word);
   if (cached) {
-    console.log(`✅ 使用缓存的英文释义: ${word}`);
+    logger.info(`使用缓存的英文释义: ${word}`);
     return cached;
   }
 
@@ -98,7 +99,7 @@ function parseResponse(data) {
 
     return definition;
   } catch (error) {
-    console.error('解析响应失败:', error);
+    logger.error('解析响应失败:', error);
     throw new Error('AI响应格式错误', { cause: error });
   }
 }
@@ -124,7 +125,7 @@ function getFromCache(word) {
       }
     }
   } catch (error) {
-    console.error('读取缓存失败:', error);
+    logger.error('读取缓存失败:', error);
   }
   return null;
 }
@@ -143,7 +144,7 @@ function saveToCache(word, definition) {
     };
     localStorage.setItem(key, JSON.stringify(data));
   } catch (error) {
-    console.error('保存缓存失败:', error);
+    logger.error('保存缓存失败:', error);
   }
 }
 
@@ -160,10 +161,10 @@ export function clearAllDefinitionCache() {
       localStorage.removeItem(key);
     });
 
-    console.log(`🧹 清除了 ${cacheKeys.length} 条英文释义缓存`);
+    logger.info(`清除了 ${cacheKeys.length} 条英文释义缓存`);
     return cacheKeys.length;
   } catch (error) {
-    console.error('清除缓存失败:', error);
+    logger.error('清除缓存失败:', error);
     return 0;
   }
 }

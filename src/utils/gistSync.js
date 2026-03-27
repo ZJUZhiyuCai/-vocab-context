@@ -3,6 +3,8 @@
  * 用于备份和同步学习数据
  */
 
+import logger from './logger.js'
+
 const GIST_CONFIG_KEY = 'vocabcontext_gist_config'
 const LAST_SYNC_KEY = 'vocabcontext_last_sync'
 
@@ -14,7 +16,7 @@ export function saveGistConfig(config) {
     localStorage.setItem(GIST_CONFIG_KEY, JSON.stringify(config))
     return true
   } catch (error) {
-    console.error('保存Gist配置失败:', error)
+    logger.error('保存Gist配置失败:', error)
     return false
   }
 }
@@ -27,7 +29,7 @@ export function loadGistConfig() {
     const saved = localStorage.getItem(GIST_CONFIG_KEY)
     return saved ? JSON.parse(saved) : null
   } catch (error) {
-    console.error('加载Gist配置失败:', error)
+    logger.error('加载Gist配置失败:', error)
     return null
   }
 }
@@ -53,7 +55,7 @@ export function collectSyncData() {
     try {
       data[key] = localStorage.getItem(key)
     } catch (error) {
-      console.error(`读取数据失败 ${key}:`, error)
+      logger.error(`读取数据失败 ${key}:`, error)
     }
   })
 
@@ -81,11 +83,11 @@ export function restoreSyncData(syncData) {
       localStorage.setItem(key, value)
       restoredCount++
     } catch (error) {
-      console.error(`恢复数据失败 ${key}:`, error)
+      logger.error(`恢复数据失败 ${key}:`, error)
     }
   })
 
-  console.log(`✅ 恢复了 ${restoredCount} 条数据`)
+  logger.info(`恢复了 ${restoredCount} 条数据`)
   return restoredCount
 }
 
@@ -254,20 +256,20 @@ export function saveLastSyncTime() {
  */
 export async function syncData(token) {
   try {
-    console.log('🔄 开始同步...')
+    logger.info('开始同步...')
 
     // 1. 先下载远程数据
     let remoteData = null
     try {
       remoteData = await downloadFromGist(token)
-      console.log('📥 下载远程数据成功')
+      logger.info('下载远程数据成功')
     } catch (error) {
-      console.log('⚠️ 下载远程数据失败（可能是首次同步）:', error.message)
+      logger.warn('下载远程数据失败（可能是首次同步）:', error.message)
     }
 
     // 2. 收集本地数据
     const localData = collectSyncData()
-    console.log('📦 本地数据收集完成')
+    logger.info('本地数据收集完成')
 
     // 3. 如果有远程数据，判断哪个更新
     let dataToUpload = localData
@@ -278,7 +280,7 @@ export async function syncData(token) {
 
       if (remoteTime > localTime) {
         // 远程更新，使用远程数据
-        console.log('🌐 远程数据更新，使用远程数据')
+        logger.info('远程数据更新，使用远程数据')
         restoreSyncData(remoteData)
         // 然后重新收集本地数据（可能已更新）
         dataToUpload = collectSyncData()
@@ -287,7 +289,7 @@ export async function syncData(token) {
 
     // 4. 上传本地数据
     const gist = await uploadToGist(token, dataToUpload)
-    console.log('☁️ 上传到云端成功')
+    logger.info('上传到云端成功')
 
     // 5. 保存同步时间
     saveLastSyncTime()
@@ -298,7 +300,7 @@ export async function syncData(token) {
       gistUrl: gist.html_url
     }
   } catch (error) {
-    console.error('❌ 同步失败:', error)
+    logger.error('同步失败:', error)
     throw error
   }
 }

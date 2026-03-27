@@ -196,9 +196,7 @@ const next = () => {
   }
 }
 
-const handleRate = (rating) => {
-  // 可以记录评分
-  console.log('评分:', rating)
+const handleRate = () => {
   next()
 }
 

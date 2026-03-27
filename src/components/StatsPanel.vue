@@ -159,9 +159,6 @@ const loadHeatmap = () => {
   heatmap.value = getRecentStudyDays(14)
   streakDays.value = getStreakDays()
 
-  console.log('热力图数据:', heatmap.value)
-  console.log('连续学习天数:', streakDays.value)
-
   // 更新成就
   achievements.value[1].unlocked = streakDays.value >= 7
   achievements.value[2].unlocked = props.todayStats.newWords >= 100

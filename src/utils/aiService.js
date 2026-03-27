@@ -11,6 +11,7 @@ import { generateQuiz, generateFillBlankQuestion } from './aiQuizGenerator.js';
 import { analyzeErrors, analyzeWordError, generateStudyPlan } from './aiErrorAnalyzer.js';
 import { generateMemoryHooks, generateWordNetwork, generateScenarioExamples, generateLearningPath } from './aiMemoryHooks.js';
 import { createAIChatCompletion, resolveApiKey } from './aiClient.js';
+import logger from './logger.js';
 
 // localStorage keys
 const CACHE_KEY_PREFIX = 'vocabcontext_ai_';
@@ -34,7 +35,7 @@ export async function generateAIExample({ apiKey, word, meaning, purpose }) {
   const cacheKey = getCacheKey(word, purpose);
   const cached = getFromCache(cacheKey);
   if (cached) {
-    console.log(`✅ 使用缓存的AI例句: ${word}`);
+    logger.info(`使用缓存的AI例句: ${word}`);
     return cached;
   }
 
@@ -83,7 +84,7 @@ function getFromCache(key) {
       }
     }
   } catch (error) {
-    console.error('读取缓存失败:', error);
+    logger.error('读取缓存失败:', error);
   }
   return null;
 }
@@ -97,14 +98,14 @@ function saveToCache(key, data) {
   try {
     localStorage.setItem(key, JSON.stringify(data));
   } catch (error) {
-    console.error('保存缓存失败:', error);
+    logger.error('保存缓存失败:', error);
     // 如果localStorage满了，清理旧缓存
     if (error.name === 'QuotaExceededError') {
       cleanOldCache();
       try {
         localStorage.setItem(key, JSON.stringify(data));
       } catch (retryError) {
-        console.error('重试保存缓存失败:', retryError);
+        logger.error('重试保存缓存失败:', retryError);
       }
     }
   }
@@ -134,9 +135,9 @@ function cleanOldCache() {
       localStorage.removeItem(cacheEntries[i].key);
     }
 
-    console.log(`🧹 清理了 ${deleteCount} 条旧AI例句缓存`);
+    logger.info(`清理了 ${deleteCount} 条旧AI例句缓存`);
   } catch (error) {
-    console.error('清理缓存失败:', error);
+    logger.error('清理缓存失败:', error);
   }
 }
 
@@ -271,7 +272,7 @@ function parseResponse(data) {
       translation: result.translation
     };
   } catch (error) {
-    console.error('解析响应失败:', error);
+    logger.error('解析响应失败:', error);
     throw new Error('AI响应格式错误', { cause: error });
   }
 }
@@ -288,10 +289,10 @@ export function clearAllAICache() {
       localStorage.removeItem(key);
     });
 
-    console.log(`🧹 清除了 ${aiCacheKeys.length} 条AI例句缓存`);
+    logger.info(`清除了 ${aiCacheKeys.length} 条AI例句缓存`);
     return aiCacheKeys.length;
   } catch (error) {
-    console.error('清除AI缓存失败:', error);
+    logger.error('清除AI缓存失败:', error);
     return 0;
   }
 }
@@ -335,7 +336,7 @@ export function getAICacheStats() {
       totalSizeBytes: totalSize
     };
   } catch (error) {
-    console.error('获取缓存统计失败:', error);
+    logger.error('获取缓存统计失败:', error);
     return {
       totalCount: 0,
       validCount: 0,
@@ -426,7 +427,7 @@ export function loadAISettings() {
       return normalizeAISettings(parsed);
     }
   } catch (error) {
-    console.error('加载AI设置失败:', error);
+    logger.error('加载AI设置失败:', error);
   }
   return normalizeAISettings();
 }
@@ -440,7 +441,7 @@ export function saveAISettings(settings) {
     localStorage.setItem(SETTINGS_KEY, JSON.stringify(normalizedSettings));
     return true;
   } catch (error) {
-    console.error('保存AI设置失败:', error);
+    logger.error('保存AI设置失败:', error);
     return false;
   }
 }
@@ -460,7 +461,7 @@ export async function validateApiKey(apiKey) {
 
     return true;
   } catch (error) {
-    console.error('验证API密钥失败:', error);
+    logger.error('验证API密钥失败:', error);
     return false;
   }
 }
@@ -489,7 +490,7 @@ function getCachedData(cacheKey) {
       }
     }
   } catch (error) {
-    console.error('读取缓存失败:', error);
+    logger.error('读取缓存失败:', error);
   }
   return null;
 }
@@ -505,7 +506,7 @@ function setCachedData(cacheKey, content) {
     };
     localStorage.setItem(cacheKey, JSON.stringify(data));
   } catch (error) {
-    console.error('保存缓存失败:', error);
+    logger.error('保存缓存失败:', error);
   }
 }
 
@@ -523,7 +524,7 @@ export function clearAICacheByType(type) {
 
     return cacheKeys.length;
   } catch (error) {
-    console.error('清除缓存失败:', error);
+    logger.error('清除缓存失败:', error);
     return 0;
   }
 }

@@ -1054,8 +1054,7 @@ function exitOutputStudio() {
   history.value = loadHistory()
 }
 
-function handleOutputStudioComplete(summary) {
-  console.log('Output Studio 完成:', summary)
+function handleOutputStudioComplete() {
   history.value = loadHistory()
 }
 
@@ -1068,8 +1067,7 @@ function exitExamDrills() {
   history.value = loadHistory()
 }
 
-function handleExamDrillsComplete(summary) {
-  console.log('Exam Drills 完成:', summary)
+function handleExamDrillsComplete() {
   history.value = loadHistory()
 }
 
