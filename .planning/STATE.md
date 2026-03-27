@@ -1,64 +1,80 @@
-# State — VocabMan 技术债务清理
+# State — VocabMan 词汇质量提升
 
-**Project:** VocabMan 技术债务清理
-**Started:** 2026-03-26
-**Mode:** YOLO (Auto)
+**Project:** VocabMan 词汇质量提升
+**Started:** 2026-03-27
+**Mode:** Collaborative (Claude 设计 + Codex 执行)
 
 ---
 
 ## Current Position
 
-**Phase:** 1
-**Status:** Ready to plan
-**Last Action:** Project initialized
+**Phase:** 0 - 需求分析
+**Status:** 讨论中
+**Last Action:** 用户反馈非雅思词汇质量不如雅思词库
 
 ---
 
-## Phase Status
+## Problem Statement
 
-| Phase | Name | Status | Progress |
-|-------|------|--------|----------|
-| 1 | 测试与质量工具配置 | pending | 0/8 |
-| 2 | App.vue 重构 | pending | 0/6 |
-| 3 | ContextPractice.vue 重构 | pending | 0/4 |
-| 4 | Storage 统一管理 | pending | 0/4 |
-| 5 | 日志系统 | pending | 0/3 |
-| 6 | 安全加固与错误处理 | pending | 0/5 |
+用户发现：**非雅思词汇（CET4/6、CEFR A2-C2）的质量比不过雅思词库的质量**
 
----
-
-## Session Log
-
-### 2026-03-26 初始化
-
-**Completed:**
-- 代码库分析完成（7 个文档）
-- PROJECT.md 创建
-- config.json 创建（YOLO 模式）
-- REQUIREMENTS.md 创建（29 个需求）
-- ROADMAP.md 创建（6 个阶段）
-
-**Next:**
-- 执行 Phase 1: 测试与质量工具配置
+**背景：**
+- 雅思词库（ielts-foundation, ielts-topic-*）经过精心设计，包含：
+  - 语境例句
+  - 词群关联
+  - IELTS Band 标签
+  - 高质量释义
+- 非雅思词库（CET4/6、CEFR）可能缺少这些优质属性
 
 ---
 
-## Key Decisions
+## Current Vocabulary Status
 
-| Date | Decision | Rationale |
-|------|----------|-----------|
-| 2026-03-26 | YOLO 模式 | 用户要求自动运行 |
-| 2026-03-26 | 跳过研究 | 已有完整代码库分析 |
-| 2026-03-26 | Standard granularity | 6 阶段适中 |
+### IELTS 词汇（高质量）
+| 文件 | 状态 | 特点 |
+|------|------|------|
+| ielts-foundation.json | ✅ 743词 | 语境优先、高质量例句 |
+| ielts-topic-*.json | ✅ 8个主题包 | 话题词群、76-124词/包 |
+| ielts-core-500.json | ✅ 500词 | 核心词汇 |
+
+### 非IELTS 词汇（质量待提升）
+| 文件 | 状态 | 问题 |
+|------|------|------|
+| vocab-cet4*.json | ⚠️ 质量待评估 | 缺少语境例句？ |
+| vocab-cet6*.json | ⚠️ 质量待评估 | 缺少语境例句？ |
+| vocab-a2-basic.json | ⚠️ 质量待评估 | 缺少语境例句？ |
+| vocab-b1-intermediate.json | ⚠️ 质量待评估 | 缺少语境例句？ |
+| vocab-b2-upper-intermediate.json | ⚠️ 质量待评估 | 缺少语境例句？ |
+| vocab-c1-advanced.json | ⚠️ 质量待评估 | 缺少语境例句？ |
+| vocab-c2-proficiency.json | ⚠️ 质量待评估 | 缺少语境例句？ |
 
 ---
 
-## Metrics
+## Key Questions
 
-- Total Requirements: 29
-- Completed: 0
-- In Progress: 0
-- Pending: 29
+1. 非雅思词汇的具体质量问题是什么？
+   - 缺少语境例句？
+   - 缺少词群关联？
+   - 释义质量不够？
+   - 缺少发音/IPA？
+
+2. 用户想要什么样的优质词汇？
+   - 类似雅思词库的语境例句？
+   - 特定考试（四六级）的高频词？
+   - 学术英语词汇？
+
+3. 优先级如何排序？
+   - 先处理哪些词库？
+   - 目标词汇量是多少？
 
 ---
-*Last updated: 2026-03-26 01:00*
+
+## Next Actions
+
+- [ ] 与 Codex 讨论词汇质量问题
+- [ ] 分析现有非雅思词库的数据结构
+- [ ] 确定质量提升方案
+- [ ] 更新 ROADMAP
+
+---
+*Last updated: 2026-03-27 20:00*

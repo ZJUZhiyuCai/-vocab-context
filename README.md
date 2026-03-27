@@ -25,7 +25,7 @@
 - Live site: [https://vocabman.netlify.app](https://vocabman.netlify.app)
 - IELTS Foundation: `743` curated context bundles
 - Official Topic Packs: `8` (76-124 words each)
-- Main paths: `Today`, `Context-first Session`, `Output Studio`, `Exam Drills`
+- Main paths: `Today`, `Context-first Session`, `Output Studio`, `Exam Drills`, `Speaking Part 2`
 - AI runtime: `SiliconFlow` + `Qwen/Qwen2.5-72B-Instruct`
 - Deployment-safe AI path: browser route + Netlify/server proxy fallback
 
@@ -91,6 +91,7 @@ SILICONFLOW_API_BASE_URL=https://api.siliconflow.cn/v1
 ## Contributors
 
 - `ZJUZhiyuCai` — product direction, repository ownership, IELTS rebuild
+- `Claude` — Speaking Part 2 feature, tech debt cleanup, logging system
 - `Codex` — release hardening, AI migration, documentation, launch support
 
 ## Code Architecture
@@ -104,9 +105,10 @@ The codebase follows Vue 3 Composition API best practices with extracted composa
 
 ### Quality Metrics
 
-- **Tests:** 50 unit tests with Vitest
-- **Lint:** 0 errors (ESLint flat config)
+- **Tests:** 59 unit tests with Vitest (all passing)
+- **Lint:** 0 errors, 1 accepted warning (ESLint flat config)
 - **Security:** DOMPurify for v-html sanitization
+- **Logging:** Environment-aware logger utility
 
 ## License
 
