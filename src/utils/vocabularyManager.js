@@ -441,9 +441,13 @@ export function getVocabularyProgress(vocabId) {
     currentIndex: 0
   };
 }
-
-
-import { syncService } from './syncService'
+function syncVocabularyProgressInBackground(vocabId, progress) {
+  void import('./syncService')
+    .then(({ syncService }) => syncService.syncVocabularyProgress(vocabId, progress))
+    .catch(err => {
+      console.warn('⚠️ 自动同步进度失败:', err);
+    });
+}
 
 /**
  * 保存词库学习进度并同步到云端
@@ -454,9 +458,7 @@ export function saveVocabularyProgress(vocabId, progress) {
     localStorage.setItem(key, JSON.stringify(progress));
 
     // 异步同步到云端
-    syncService.syncVocabularyProgress(vocabId, progress).catch(err => {
-      console.warn('⚠️ 自动同步进度失败:', err);
-    });
+    syncVocabularyProgressInBackground(vocabId, progress);
 
     return true;
   } catch (error) {

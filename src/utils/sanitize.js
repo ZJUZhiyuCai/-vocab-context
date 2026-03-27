@@ -3,9 +3,30 @@
  * Provides XSS-safe HTML rendering functions
  */
 
-import DOMPurify from 'dompurify'
+import createDOMPurify from 'dompurify'
 
 const DEFAULT_HIGHLIGHT_CLASS = 'font-semibold text-amber-300 underline decoration-amber-500 decoration-2 underline-offset-2'
+let domPurifyInstance = null
+
+function getDOMPurify() {
+  if (domPurifyInstance) return domPurifyInstance
+
+  if (createDOMPurify && typeof createDOMPurify.sanitize === 'function') {
+    domPurifyInstance = createDOMPurify
+    return domPurifyInstance
+  }
+
+  if (typeof window !== 'undefined' && typeof createDOMPurify === 'function') {
+    domPurifyInstance = createDOMPurify(window)
+    return domPurifyInstance
+  }
+
+  return null
+}
+
+function stripTagsFallback(html) {
+  return String(html ?? '').replace(/<[^>]*>/g, '')
+}
 
 /**
  * Sanitize HTML content to prevent XSS attacks
@@ -14,7 +35,10 @@ const DEFAULT_HIGHLIGHT_CLASS = 'font-semibold text-amber-300 underline decorati
  * @returns {string} Sanitized HTML
  */
 export function sanitizeHTML(html, options = {}) {
-  return DOMPurify.sanitize(html, {
+  const domPurify = getDOMPurify()
+  if (!domPurify?.sanitize) return stripTagsFallback(html)
+
+  return domPurify.sanitize(html, {
     ALLOWED_TAGS: ['span', 'b', 'i', 'strong', 'em', 'br'],
     ALLOWED_ATTR: ['class'],
     ...options
@@ -22,10 +46,17 @@ export function sanitizeHTML(html, options = {}) {
 }
 
 function stripHTMLToPlainText(html) {
-  const sanitized = DOMPurify.sanitize(html, {
-    ALLOWED_TAGS: [],
-    ALLOWED_ATTR: []
-  })
+  const domPurify = getDOMPurify()
+  const sanitized = domPurify?.sanitize
+    ? domPurify.sanitize(html, {
+      ALLOWED_TAGS: [],
+      ALLOWED_ATTR: []
+    })
+    : stripTagsFallback(html)
+
+  if (typeof document === 'undefined') {
+    return sanitized
+  }
 
   const container = document.createElement('div')
   container.innerHTML = sanitized
@@ -108,4 +139,4 @@ export function highlightWordSafe(sentence, word, highlightClass = DEFAULT_HIGHL
   return sanitizeHTML(highlighted)
 }
 
-export default DOMPurify
+export default getDOMPurify()

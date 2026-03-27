@@ -82,7 +82,7 @@
 
       <div v-else class="space-y-3">
         <div
-          v-for="(word, index) in wordCluster"
+          v-for="word in wordCluster"
           :key="word.word"
           :class="[
             'p-4 rounded-xl border transition-all',

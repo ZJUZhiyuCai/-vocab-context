@@ -1,10 +1,14 @@
 import { clearSupabaseAuthStorage, supabase, hasSupabaseConfig } from './supabase'
 import { ref } from 'vue'
 
+const isBrowser = typeof window !== 'undefined'
+
 export const user = ref(null)
 export const authError = ref(null)
 
 function checkAuthErrorInHash() {
+    if (!isBrowser) return false
+
     const hash = window.location.hash
     if (hash && hash.includes('error=')) {
         const params = new URLSearchParams(hash.substring(1))
@@ -48,6 +52,10 @@ async function recoverBrokenLocalSession(error) {
     }
 }
 
+function getRedirectUrl() {
+    return import.meta.env.VITE_REDIRECT_URL || (isBrowser ? window.location.origin : '')
+}
+
 async function initializeSession() {
     if (!supabase) {
         console.log('Running in offline mode (no Supabase config)')
@@ -73,10 +81,9 @@ async function initializeSession() {
     }
 }
 
-checkAuthErrorInHash()
-initializeSession()
+function bindAuthStateListener() {
+    if (!supabase || !isBrowser) return
 
-if (supabase) {
     supabase.auth.onAuthStateChange((event, session) => {
         console.log('Auth state changed:', event)
         user.value = session?.user ?? null
@@ -92,12 +99,18 @@ if (supabase) {
     })
 }
 
+if (isBrowser) {
+    checkAuthErrorInHash()
+    void initializeSession()
+    bindAuthStateListener()
+}
+
 export const authService = {
     async signInWithOAuth(provider) {
         if (!supabase) {
             return { error: { message: 'Supabase not configured' } }
         }
-        const redirectUrl = import.meta.env.VITE_REDIRECT_URL || window.location.origin
+        const redirectUrl = getRedirectUrl()
         console.log('Redirect URL (OAuth):', redirectUrl)
 
         const { data, error } = await supabase.auth.signInWithOAuth({
@@ -113,7 +126,7 @@ export const authService = {
         if (!supabase) {
             return { error: { message: 'Supabase not configured' } }
         }
-        const redirectUrl = import.meta.env.VITE_REDIRECT_URL || window.location.origin
+        const redirectUrl = getRedirectUrl()
         console.log('Redirect URL (Magic Link):', redirectUrl)
 
         const { data, error } = await supabase.auth.signInWithOtp({
