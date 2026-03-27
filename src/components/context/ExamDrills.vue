@@ -1,7 +1,10 @@
 <template>
   <div class="exam-drills animate-slide-right">
     <!-- Session Mode -->
-    <div v-if="currentMode === 'session'" :class="['session-shell', isDark ? 'dark' : 'light']">
+    <div
+      v-if="currentMode === 'session'"
+      :class="['session-shell', isDark ? 'dark' : 'light']"
+    >
       <div :class="['session-shell-header', isDark ? 'dark' : 'light']">
         <div>
           <p :class="['text-xs uppercase tracking-[0.24em]', isDark ? 'text-rose-400/80' : 'text-rose-600']">
@@ -15,13 +18,13 @@
           </p>
         </div>
         <button
-          @click="exitSession"
           :class="[
             'session-shell-action',
             isDark
               ? 'bg-white/5 border-white/10 text-gray-300 hover:border-rose-500/30 hover:text-rose-400'
               : 'bg-gray-100 border-gray-200 text-gray-700 hover:border-rose-500/30 hover:text-rose-600'
           ]"
+          @click="exitSession"
         >
           返回
         </button>
@@ -42,7 +45,7 @@
             <div
               class="h-full bg-gradient-to-r from-rose-500 via-pink-500 to-red-500 rounded-full transition-all duration-500"
               :style="{ width: `${progress}%` }"
-            ></div>
+            />
           </div>
           <!-- Surface Type Indicators -->
           <div class="flex flex-wrap gap-2 mt-3 justify-center">
@@ -74,11 +77,24 @@
         />
 
         <!-- Summary -->
-        <div v-else-if="showSummary" class="summary-section">
+        <div
+          v-else-if="showSummary"
+          class="summary-section"
+        >
           <div :class="['summary-card', isDark ? 'dark' : 'light']">
             <div class="summary-icon">
-              <svg class="w-12 h-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg
+                class="w-12 h-12"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
             </div>
             <h2 :class="['text-2xl font-bold mb-2', isDark ? 'text-white' : 'text-slate-900']">
@@ -91,29 +107,44 @@
             <!-- Stats Grid -->
             <div class="stats-row">
               <div :class="['stat-item', isDark ? 'dark' : 'light']">
-                <div class="stat-value text-rose-500">{{ summary?.accuracy || 0 }}%</div>
-                <div class="stat-label">正确率</div>
+                <div class="stat-value text-rose-500">
+                  {{ summary?.accuracy || 0 }}%
+                </div>
+                <div class="stat-label">
+                  正确率
+                </div>
               </div>
               <div :class="['stat-item', isDark ? 'dark' : 'light']">
-                <div class="stat-value text-emerald-500">{{ summary?.correctCount || 0 }}</div>
-                <div class="stat-label">正确</div>
+                <div class="stat-value text-emerald-500">
+                  {{ summary?.correctCount || 0 }}
+                </div>
+                <div class="stat-label">
+                  正确
+                </div>
               </div>
               <div :class="['stat-item', isDark ? 'dark' : 'light']">
-                <div class="stat-value text-cyan-500">{{ summary?.completedItems || 0 }}</div>
-                <div class="stat-label">已完成</div>
+                <div class="stat-value text-cyan-500">
+                  {{ summary?.completedItems || 0 }}
+                </div>
+                <div class="stat-label">
+                  已完成
+                </div>
               </div>
             </div>
 
             <!-- Surface Stats -->
-            <div v-if="summary?.surfaceStats" class="surface-stats">
+            <div
+              v-if="summary?.surfaceStats"
+              class="surface-stats"
+            >
               <p :class="['text-xs font-semibold uppercase tracking-wider mb-3', isDark ? 'text-gray-400' : 'text-gray-500']">
                 题型分布
               </p>
               <div class="surface-chips">
                 <span
                   v-for="(stat, type) in summary.surfaceStats"
-                  :key="type"
                   v-show="stat.total > 0"
+                  :key="type"
                   :class="['surface-chip', isDark ? 'dark' : 'light']"
                 >
                   {{ stat.label }} · {{ stat.correct }}/{{ stat.total }}
@@ -122,7 +153,10 @@
             </div>
 
             <!-- Topic Stats -->
-            <div v-if="summary?.topicStats && Object.keys(summary.topicStats).length > 0" class="topic-stats">
+            <div
+              v-if="summary?.topicStats && Object.keys(summary.topicStats).length > 0"
+              class="topic-stats"
+            >
               <p :class="['text-xs font-semibold uppercase tracking-wider mb-3', isDark ? 'text-gray-400' : 'text-gray-500']">
                 主题分布
               </p>
@@ -137,7 +171,10 @@
               </div>
             </div>
 
-            <div v-if="summary?.coach" class="coach-panel">
+            <div
+              v-if="summary?.coach"
+              class="coach-panel"
+            >
               <p :class="['text-xs font-semibold uppercase tracking-wider mb-3', isDark ? 'text-gray-400' : 'text-gray-500']">
                 老师点评
               </p>
@@ -149,51 +186,92 @@
                   {{ summary.coach.nextAction }}
                 </p>
 
-                <div v-if="summary.coach.weakSurfaces?.length" class="coach-block">
-                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">需要加强的题型</p>
+                <div
+                  v-if="summary.coach.weakSurfaces?.length"
+                  class="coach-block"
+                >
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">
+                    需要加强的题型
+                  </p>
                   <div class="coach-chip-row">
-                    <span v-for="item in summary.coach.weakSurfaces" :key="item.type" :class="['coach-chip warn', isDark ? 'dark' : 'light']">
+                    <span
+                      v-for="item in summary.coach.weakSurfaces"
+                      :key="item.type"
+                      :class="['coach-chip warn', isDark ? 'dark' : 'light']"
+                    >
                       {{ surfaceLabel(item.type) }} · {{ item.accuracy }}%
                     </span>
                   </div>
                 </div>
 
-                <div v-if="summary.coach.outputCoach?.strengths?.length" class="coach-block">
-                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">这轮做得好的地方</p>
+                <div
+                  v-if="summary.coach.outputCoach?.strengths?.length"
+                  class="coach-block"
+                >
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">
+                    这轮做得好的地方
+                  </p>
                   <div class="coach-chip-row">
-                    <span v-for="item in summary.coach.outputCoach.strengths" :key="item" :class="['coach-chip success', isDark ? 'dark' : 'light']">
+                    <span
+                      v-for="item in summary.coach.outputCoach.strengths"
+                      :key="item"
+                      :class="['coach-chip success', isDark ? 'dark' : 'light']"
+                    >
                       {{ getFocusLabel(item) }}
                     </span>
                   </div>
                 </div>
 
-                <div v-if="summary.coach.outputCoach?.focusAreas?.length" class="coach-block">
-                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">下一轮重点补强</p>
+                <div
+                  v-if="summary.coach.outputCoach?.focusAreas?.length"
+                  class="coach-block"
+                >
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">
+                    下一轮重点补强
+                  </p>
                   <div class="coach-chip-row">
-                    <span v-for="item in summary.coach.outputCoach.focusAreas" :key="item" :class="['coach-chip warn', isDark ? 'dark' : 'light']">
+                    <span
+                      v-for="item in summary.coach.outputCoach.focusAreas"
+                      :key="item"
+                      :class="['coach-chip warn', isDark ? 'dark' : 'light']"
+                    >
                       {{ getFocusLabel(item) }}
                     </span>
                   </div>
                 </div>
 
-                <div v-if="summary.coach.outputCoach?.weakWords?.length" class="coach-block">
-                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">建议重练的词</p>
+                <div
+                  v-if="summary.coach.outputCoach?.weakWords?.length"
+                  class="coach-block"
+                >
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">
+                    建议重练的词
+                  </p>
                   <div class="coach-weak-list">
                     <div
                       v-for="item in summary.coach.outputCoach.weakWords"
                       :key="item.word"
                       :class="['coach-weak-card', isDark ? 'dark' : 'light']"
                     >
-                      <p :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">{{ item.word }}</p>
-                      <p :class="['text-xs mt-2 leading-6', isDark ? 'text-gray-400' : 'text-gray-600']">问题：{{ item.reason }}</p>
-                      <p :class="['text-xs mt-1 leading-6', isDark ? 'text-emerald-300/80' : 'text-emerald-700']">{{ item.nextStep }}</p>
+                      <p :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">
+                        {{ item.word }}
+                      </p>
+                      <p :class="['text-xs mt-2 leading-6', isDark ? 'text-gray-400' : 'text-gray-600']">
+                        问题：{{ item.reason }}
+                      </p>
+                      <p :class="['text-xs mt-1 leading-6', isDark ? 'text-emerald-300/80' : 'text-emerald-700']">
+                        {{ item.nextStep }}
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div v-if="remediationSummary" class="coach-panel">
+            <div
+              v-if="remediationSummary"
+              class="coach-panel"
+            >
               <p :class="['text-xs font-semibold uppercase tracking-wider mb-3', isDark ? 'text-gray-400' : 'text-gray-500']">
                 Retry Gate
               </p>
@@ -205,19 +283,37 @@
                   过关规则：该词对应任务已提交，且结果达到“正确”或输出达到“可用/强”。当前通过 {{ remediationSummary.passedWords.length }}/{{ remediationSummary.targetWords.length }}，通过率 {{ remediationSummary.passRate }}%。
                 </p>
 
-                <div v-if="remediationSummary.passedWords.length" class="coach-block">
-                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">已过关</p>
+                <div
+                  v-if="remediationSummary.passedWords.length"
+                  class="coach-block"
+                >
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">
+                    已过关
+                  </p>
                   <div class="coach-chip-row">
-                    <span v-for="word in remediationSummary.passedWords" :key="word" :class="['coach-chip success', isDark ? 'dark' : 'light']">
+                    <span
+                      v-for="word in remediationSummary.passedWords"
+                      :key="word"
+                      :class="['coach-chip success', isDark ? 'dark' : 'light']"
+                    >
                       {{ word }}
                     </span>
                   </div>
                 </div>
 
-                <div v-if="remediationSummary.remainingWords.length" class="coach-block">
-                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">还没过关</p>
+                <div
+                  v-if="remediationSummary.remainingWords.length"
+                  class="coach-block"
+                >
+                  <p :class="['coach-label', isDark ? 'text-gray-400' : 'text-gray-500']">
+                    还没过关
+                  </p>
                   <div class="coach-chip-row">
-                    <span v-for="word in remediationSummary.remainingWords" :key="word" :class="['coach-chip warn', isDark ? 'dark' : 'light']">
+                    <span
+                      v-for="word in remediationSummary.remainingWords"
+                      :key="word"
+                      :class="['coach-chip warn', isDark ? 'dark' : 'light']"
+                    >
                       {{ word }}
                     </span>
                   </div>
@@ -229,33 +325,33 @@
             <div class="summary-actions">
               <button
                 v-if="retryActionBundles.length"
-                @click="handleRetryWeakWords"
                 :class="[
                   'flex-1 py-4 rounded-2xl font-semibold transition-all active:scale-[0.98]',
                   isDark
                     ? 'bg-amber-500/15 border border-amber-500/20 text-amber-300 hover:border-amber-400/40'
                     : 'bg-amber-50 border border-amber-200 text-amber-700 hover:border-amber-300'
                 ]"
+                @click="handleRetryWeakWords"
               >
                 {{ remediationSummary?.remainingWords?.length ? '继续修剩余词' : '重练薄弱词' }}
               </button>
               <button
-                @click="handleRestart"
                 :class="[
                   'flex-1 py-4 rounded-2xl font-semibold transition-all active:scale-[0.98]',
                   'bg-rose-600 text-white shadow-lg shadow-rose-500/25 hover:shadow-rose-500/40 hover:scale-[1.02]'
                 ]"
+                @click="handleRestart"
               >
                 再练一轮
               </button>
               <button
-                @click="exitSession"
                 :class="[
                   'flex-1 py-4 rounded-2xl border font-semibold transition-all active:scale-[0.98]',
                   isDark
                     ? 'bg-slate-700/50 border-white/10 text-gray-300 hover:border-gray-500'
                     : 'bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400'
                 ]"
+                @click="exitSession"
               >
                 返回
               </button>
@@ -266,7 +362,10 @@
     </div>
 
     <!-- Overview Mode -->
-    <div v-else class="space-y-6">
+    <div
+      v-else
+      class="space-y-6"
+    >
       <section :class="['hero-card', isDark ? 'dark' : 'light']">
         <div class="hero-copy">
           <div class="hero-badges">
@@ -293,10 +392,23 @@
             </p>
           </div>
 
-          <div v-if="lastSessionSummary" :class="['last-summary last-summary-rose', isDark ? 'dark' : 'light']">
+          <div
+            v-if="lastSessionSummary"
+            :class="['last-summary last-summary-rose', isDark ? 'dark' : 'light']"
+          >
             <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-rose-500/15 text-rose-400">
-              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
             </div>
             <div>
@@ -309,18 +421,18 @@
 
         <div class="hero-actions">
           <button
-            @click="startSession"
             class="btn-primary-rose w-full sm:w-auto"
             :disabled="!hasEligibleBundles"
+            @click="startSession"
           >
             开始 8 题练习
           </button>
           <button
-            @click="$emit('back')"
             :class="[
               'btn-secondary w-full sm:w-auto',
               isDark ? 'dark' : 'light'
             ]"
+            @click="$emit('back')"
           >
             返回学习路径
           </button>
@@ -330,29 +442,52 @@
       <!-- Stats Grid -->
       <div class="stats-grid">
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value text-rose-500">{{ eligibleBundles.length }}</div>
-          <div class="stat-label">可练习</div>
+          <div class="stat-value text-rose-500">
+            {{ eligibleBundles.length }}
+          </div>
+          <div class="stat-label">
+            可练习
+          </div>
         </div>
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value text-pink-500">{{ history.sessions }}</div>
-          <div class="stat-label">累计轮次</div>
+          <div class="stat-value text-pink-500">
+            {{ history.sessions }}
+          </div>
+          <div class="stat-label">
+            累计轮次
+          </div>
         </div>
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value text-red-500">{{ history.totalItems }}</div>
-          <div class="stat-label">完成题目</div>
+          <div class="stat-value text-red-500">
+            {{ history.totalItems }}
+          </div>
+          <div class="stat-label">
+            完成题目
+          </div>
         </div>
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value text-emerald-500">{{ history.accuracy }}%</div>
-          <div class="stat-label">历史正确率</div>
+          <div class="stat-value text-emerald-500">
+            {{ history.accuracy }}%
+          </div>
+          <div class="stat-label">
+            历史正确率
+          </div>
         </div>
       </div>
 
       <!-- Session Size Selector -->
-      <section v-if="hasEligibleBundles" :class="['content-card', isDark ? 'dark' : 'light']">
+      <section
+        v-if="hasEligibleBundles"
+        :class="['content-card', isDark ? 'dark' : 'light']"
+      >
         <div class="section-heading">
           <div>
-            <h2 class="section-title">练习设置</h2>
-            <p class="section-description">选择本轮题目数量。</p>
+            <h2 class="section-title">
+              练习设置
+            </h2>
+            <p class="section-description">
+              选择本轮题目数量。
+            </p>
           </div>
         </div>
 
@@ -360,18 +495,20 @@
           <button
             v-for="option in sizeOptions"
             :key="option.value"
-            @click="sessionSize = option.value"
             :class="[
               'size-card',
               sessionSize === option.value ? 'active' : '',
               isDark ? 'dark' : 'light'
             ]"
+            @click="sessionSize = option.value"
           >
             <div class="size-card-head">
               <span class="size-card-value">{{ option.value }}</span>
               <span class="size-card-unit">题</span>
             </div>
-            <div class="size-card-label">{{ option.label }}</div>
+            <div class="size-card-label">
+              {{ option.label }}
+            </div>
           </button>
         </div>
 
@@ -385,7 +522,10 @@
                 阅读改写 · 听力转述 · 写作论证 · 口语框架
               </p>
             </div>
-            <button @click="startSession" class="btn-primary-rose">
+            <button
+              class="btn-primary-rose"
+              @click="startSession"
+            >
               立即开始
             </button>
           </div>
@@ -393,10 +533,23 @@
       </section>
 
       <!-- Empty State -->
-      <section v-else :class="['empty-card', isDark ? 'dark' : 'light']">
+      <section
+        v-else
+        :class="['empty-card', isDark ? 'dark' : 'light']"
+      >
         <div class="empty-icon empty-icon-rose">
-          <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+          <svg
+            class="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.8"
+              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+            />
           </svg>
         </div>
         <h2 :class="['text-2xl font-bold', isDark ? 'text-white' : 'text-slate-900']">
@@ -405,7 +558,10 @@
         <p :class="['max-w-2xl text-sm leading-7', isDark ? 'text-gray-400' : 'text-gray-600']">
           请先切换到 IELTS Foundation 或 Topic Pack 词库，这些词库已包含完整的语境和改写素材。
         </p>
-        <button @click="$emit('back')" class="btn-primary-rose">
+        <button
+          class="btn-primary-rose"
+          @click="$emit('back')"
+        >
           返回学习路径
         </button>
       </section>

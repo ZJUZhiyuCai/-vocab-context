@@ -1,34 +1,63 @@
 <template>
-  <div class="review-queue-page animate-slide-right" :class="isDark ? 'dark' : 'light'">
+  <div
+    class="review-queue-page animate-slide-right"
+    :class="isDark ? 'dark' : 'light'"
+  >
     <!-- 头部 -->
     <div class="page-header">
       <div>
-        <h1 class="page-title">复习列表</h1>
-        <p class="page-desc">优先复习不认识的单词</p>
+        <h1 class="page-title">
+          复习列表
+        </h1>
+        <p class="page-desc">
+          优先复习不认识的单词
+        </p>
       </div>
-      <button v-if="hasWords" @click="startReview" class="btn-primary">
+      <button
+        v-if="hasWords"
+        class="btn-primary"
+        @click="startReview"
+      >
         开始复习
       </button>
     </div>
 
     <!-- 统计卡片 -->
-    <div v-if="hasWords" class="stats-grid">
+    <div
+      v-if="hasWords"
+      class="stats-grid"
+    >
       <div class="stat-box">
-        <div class="stat-label">待复习</div>
-        <div class="stat-value">{{ reviewData.length }}</div>
+        <div class="stat-label">
+          待复习
+        </div>
+        <div class="stat-value">
+          {{ reviewData.length }}
+        </div>
       </div>
       <div class="stat-box stat-box-warning">
-        <div class="stat-label">不认识</div>
-        <div class="stat-value">{{ forgottenCount }}</div>
+        <div class="stat-label">
+          不认识
+        </div>
+        <div class="stat-value">
+          {{ forgottenCount }}
+        </div>
       </div>
       <div class="stat-box">
-        <div class="stat-label">已学习</div>
-        <div class="stat-value">{{ totalCount }}</div>
+        <div class="stat-label">
+          已学习
+        </div>
+        <div class="stat-value">
+          {{ totalCount }}
+        </div>
       </div>
     </div>
 
     <!-- 单词列表 -->
-    <div v-if="hasWords" class="word-list">
+    <div
+      v-if="hasWords"
+      class="word-list"
+    >
       <div
         v-for="item in reviewData"
         :key="item.word.id"
@@ -38,40 +67,65 @@
       >
         <div class="word-main">
           <div class="word-header">
-            <h3 class="word-text group-hover:text-emerald-400 transition-colors">{{ item.word.word }}</h3>
-            <span v-if="item.word.ipa" class="word-ipa">{{ item.word.ipa }}</span>
+            <h3 class="word-text group-hover:text-emerald-400 transition-colors">
+              {{ item.word.word }}
+            </h3>
+            <span
+              v-if="item.word.ipa"
+              class="word-ipa"
+            >{{ item.word.ipa }}</span>
           </div>
-          <p class="word-meaning">{{ item.word.meaning }}</p>
+          <p class="word-meaning">
+            {{ item.word.meaning }}
+          </p>
           <!-- 🔥 添加英文例句作为英文参考 -->
-          <div v-if="item.word.examples && item.word.examples.length > 0" class="word-example">
+          <div
+            v-if="item.word.examples && item.word.examples.length > 0"
+            class="word-example"
+          >
             <span class="example-text">{{ item.word.examples[0].sentence }}</span>
           </div>
         </div>
 
         <div class="word-meta">
           <!-- 不认识标记 -->
-          <div v-if="item.type === 'forgotten'" class="meta-item meta-tag meta-tag-forgotten">
+          <div
+            v-if="item.type === 'forgotten'"
+            class="meta-item meta-tag meta-tag-forgotten"
+          >
             <span class="tag-icon">⚠️</span>
             <span class="tag-text">不认识</span>
           </div>
 
           <!-- 复习信息 -->
-          <div v-else class="meta-item">
+          <div
+            v-else
+            class="meta-item"
+          >
             <span class="meta-label">复习</span>
             <span class="meta-value">{{ item.reviewState?.reviewCount || 0 }}次</span>
           </div>
 
           <!-- 正确率 -->
-          <div v-if="item.reviewState" class="meta-item">
+          <div
+            v-if="item.reviewState"
+            class="meta-item"
+          >
             <span class="meta-label">正确率</span>
-            <span class="meta-value" :class="getAccuracyClass(item.reviewState)">
+            <span
+              class="meta-value"
+              :class="getAccuracyClass(item.reviewState)"
+            >
               {{ getAccuracy(item.reviewState) }}%
             </span>
           </div>
 
           <!-- 优先级标记 -->
           <div class="meta-item">
-            <span class="meta-label priority-badge" :class="getPriorityClass(item.priority)">
+            <span
+              class="meta-label priority-badge"
+              :class="getPriorityClass(item.priority)"
+            >
               优先级 {{ item.priority }}
             </span>
           </div>
@@ -80,15 +134,33 @@
     </div>
 
     <!-- 空状态 -->
-    <div v-else class="empty-state">
-      <div class="empty-icon">—</div>
-      <h3 class="empty-title">还没有学习过的单词</h3>
-      <p class="empty-desc">先去今日学习页面学习一些新单词</p>
-      <button @click="$emit('navigate', 'today')" class="btn-primary">开始学习</button>
+    <div
+      v-else
+      class="empty-state"
+    >
+      <div class="empty-icon">
+        —
+      </div>
+      <h3 class="empty-title">
+        还没有学习过的单词
+      </h3>
+      <p class="empty-desc">
+        先去今日学习页面学习一些新单词
+      </p>
+      <button
+        class="btn-primary"
+        @click="$emit('navigate', 'today')"
+      >
+        开始学习
+      </button>
     </div>
 
     <!-- 复习会话弹窗 -->
-    <div v-if="showReview" class="modal-overlay" @click.self="showReview = false">
+    <div
+      v-if="showReview"
+      class="modal-overlay"
+      @click.self="showReview = false"
+    >
       <div class="modal-container">
         <ReviewSession
           :words="reviewWords"

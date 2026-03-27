@@ -3,14 +3,19 @@
     <!-- 头部 -->
     <div class="preview-header">
       <div class="flex items-center gap-2 mb-1">
-        <div class="w-1.5 h-6 rounded-full bg-emerald-500"></div>
-        <h2 class="text-xl font-bold text-white uppercase tracking-tight">复习队列</h2>
+        <div class="w-1.5 h-6 rounded-full bg-emerald-500" />
+        <h2 class="text-xl font-bold text-white uppercase tracking-tight">
+          复习队列
+        </h2>
       </div>
       <div class="header-stats">
         <span class="stat-badge">
           {{ words.length }} 个学习过的单词
         </span>
-        <span v-if="overdueCount > 0" class="stat-badge warning">
+        <span
+          v-if="overdueCount > 0"
+          class="stat-badge warning"
+        >
           {{ overdueCount }} 个需要复习
         </span>
       </div>
@@ -25,11 +30,19 @@
         :class="{ 'overdue': isOverdue(item.reviewState) }"
       >
         <!-- 单词信息 -->
-        <div class="word-info" @click="selectWord(index)">
+        <div
+          class="word-info"
+          @click="selectWord(index)"
+        >
           <div class="word-header">
-            <h3 class="word-text group-hover:text-emerald-400 transition-colors">{{ item.word.word }}</h3>
+            <h3 class="word-text group-hover:text-emerald-400 transition-colors">
+              {{ item.word.word }}
+            </h3>
             <div class="word-meta">
-              <span v-if="item.word.ipa" class="ipa">{{ item.word.ipa }}</span>
+              <span
+                v-if="item.word.ipa"
+                class="ipa"
+              >{{ item.word.ipa }}</span>
               <span class="review-count">已复习 {{ item.reviewState.reviewCount || 0 }} 次</span>
             </div>
           </div>
@@ -37,7 +50,10 @@
           <div class="word-stats">
             <div class="stat-item">
               <span class="stat-label">正确率</span>
-              <span class="stat-value" :class="getAccuracyClass(item.reviewState)">
+              <span
+                class="stat-value"
+                :class="getAccuracyClass(item.reviewState)"
+              >
                 {{ getAccuracy(item.reviewState) }}%
               </span>
             </div>
@@ -45,7 +61,10 @@
               <span class="stat-label">上次复习</span>
               <span class="stat-value">{{ getTimeAgo(item.reviewState.lastReview) }}</span>
             </div>
-            <div v-if="isOverdue(item.reviewState)" class="stat-item overdue">
+            <div
+              v-if="isOverdue(item.reviewState)"
+              class="stat-item overdue"
+            >
               <span class="stat-label">超时</span>
               <span class="stat-value text-rose-400">{{ getOverdueText(item.reviewState) }}</span>
             </div>
@@ -59,12 +78,20 @@
         <!-- 快捷操作 -->
         <div class="word-actions">
           <button
-            @click.stop="startFromIndex(index)"
             class="action-btn"
             title="从此单词开始复习"
+            @click.stop="startFromIndex(index)"
           >
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+            <svg
+              class="w-4 h-4"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                clip-rule="evenodd"
+              />
             </svg>
             <span class="text-xs ml-1">从此开始</span>
           </button>
@@ -72,23 +99,49 @@
       </div>
 
       <!-- 空状态 -->
-      <div v-if="words.length === 0" class="empty-state">
+      <div
+        v-if="words.length === 0"
+        class="empty-state"
+      >
         <div class="flex justify-center mb-6 text-slate-700/50">
-          <svg class="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.168.477-4.5 1.253" />
+          <svg
+            class="w-20 h-20"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.168.477-4.5 1.253"
+            />
           </svg>
         </div>
-        <h3 class="text-xl font-bold text-slate-200 mb-2">还没有学习过的单词</h3>
-        <p class="text-slate-500">先去学习一些新单词吧</p>
+        <h3 class="text-xl font-bold text-slate-200 mb-2">
+          还没有学习过的单词
+        </h3>
+        <p class="text-slate-500">
+          先去学习一些新单词吧
+        </p>
       </div>
     </div>
 
     <!-- 底部操作 -->
-    <div v-if="words.length > 0" class="preview-footer">
-      <button @click="$emit('close')" class="footer-btn secondary">
+    <div
+      v-if="words.length > 0"
+      class="preview-footer"
+    >
+      <button
+        class="footer-btn secondary"
+        @click="$emit('close')"
+      >
         取消
       </button>
-      <button @click="startReview" class="footer-btn primary">
+      <button
+        class="footer-btn primary"
+        @click="startReview"
+      >
         开始复习
       </button>
     </div>

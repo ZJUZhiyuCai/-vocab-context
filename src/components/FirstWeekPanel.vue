@@ -17,7 +17,9 @@
           <h3 :class="['font-bold', isDark ? 'text-white' : 'text-slate-900']">
             首周学习计划
           </h3>
-          <p class="text-xs text-gray-500">Day {{ todayTask?.day || 1 }}/7</p>
+          <p class="text-xs text-gray-500">
+            Day {{ todayTask?.day || 1 }}/7
+          </p>
         </div>
       </div>
       <div :class="['text-sm font-semibold px-3 py-1 rounded-full', isDark ? 'bg-emerald-500/20 text-emerald-400' : 'bg-emerald-100 text-emerald-700']">
@@ -30,7 +32,7 @@
       <div
         class="bg-gradient-to-r from-emerald-400 to-teal-500 h-full rounded-full transition-all duration-500"
         :style="{ width: progressPercent + '%' }"
-      ></div>
+      />
     </div>
 
     <!-- Day Progress Dots -->
@@ -52,9 +54,15 @@
     </div>
 
     <!-- Today's Tasks -->
-    <div v-if="todayTask" :class="['rounded-2xl p-4 mb-4', isDark ? 'bg-slate-900/50' : 'bg-gray-50']">
+    <div
+      v-if="todayTask"
+      :class="['rounded-2xl p-4 mb-4', isDark ? 'bg-slate-900/50' : 'bg-gray-50']"
+    >
       <div class="flex items-center gap-2 mb-3">
-        <span class="text-sm font-semibold" :class="isDark ? 'text-gray-300' : 'text-gray-700'">
+        <span
+          class="text-sm font-semibold"
+          :class="isDark ? 'text-gray-300' : 'text-gray-700'"
+        >
           今天任务
         </span>
         <span :class="['text-xs px-2 py-0.5 rounded-full', isDark ? 'bg-cyan-500/20 text-cyan-400' : 'bg-cyan-100 text-cyan-700']">
@@ -81,8 +89,19 @@
                 : (isDark ? 'bg-slate-700 border border-slate-600' : 'bg-gray-200 border border-gray-300')
             ]"
           >
-            <svg v-if="task.completed" class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+            <svg
+              v-if="task.completed"
+              class="w-3 h-3"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M5 13l4 4L19 7"
+              />
             </svg>
           </div>
           <span
@@ -102,7 +121,10 @@
     <!-- Tip -->
     <div class="flex items-start gap-2 mb-4">
       <span class="text-sm">💡</span>
-      <p class="text-sm" :class="isDark ? 'text-gray-400' : 'text-gray-600'">
+      <p
+        class="text-sm"
+        :class="isDark ? 'text-gray-400' : 'text-gray-600'"
+      >
         {{ todayTask?.tip || '继续加油！' }}
       </p>
     </div>
@@ -110,8 +132,8 @@
     <!-- Action Button -->
     <button
       v-if="!isTodayComplete"
-      @click="handleStartTask"
       class="w-full py-3 rounded-2xl bg-emerald-600 text-white font-semibold shadow-lg shadow-emerald-500/25 hover:bg-emerald-500 hover:shadow-emerald-500/40 transition-all"
+      @click="handleStartTask"
     >
       开始今天的任务
     </button>

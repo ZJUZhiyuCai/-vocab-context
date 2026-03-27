@@ -4,26 +4,59 @@
     <div class="session-header">
       <div class="header-info">
         <h2 :class="['text-xl font-bold flex items-center gap-2', isDark ? 'text-emerald-400' : 'text-emerald-600']">
-          <svg v-if="mode === 'flashcard'" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+          <svg
+            v-if="mode === 'flashcard'"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+            />
           </svg>
-          <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+          <svg
+            v-else
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+            />
           </svg>
           {{ mode === 'flashcard' ? '闪卡复习' : '拼写复习' }}
         </h2>
         <span :class="['text-sm', isDark ? 'text-gray-400' : 'text-gray-600']">{{ currentIndex + 1 }} / {{ words.length }}</span>
       </div>
-      <button @click="$emit('exit')" :class="['exit-button', isDark ? 'dark' : 'light']">退出</button>
+      <button
+        :class="['exit-button', isDark ? 'dark' : 'light']"
+        @click="$emit('exit')"
+      >
+        退出
+      </button>
     </div>
 
     <!-- 进度条 -->
     <div :class="['progress-bar', isDark ? 'dark' : 'light']">
-      <div class="progress-fill" :style="{ width: progressPercent + '%' }"></div>
+      <div
+        class="progress-fill"
+        :style="{ width: progressPercent + '%' }"
+      />
     </div>
 
     <!-- 闪卡模式 -->
-    <div v-if="mode === 'flashcard'" class="content-area">
+    <div
+      v-if="mode === 'flashcard'"
+      class="content-area"
+    >
       <FlashcardView
         :word="currentWord"
         :show-answer="showAnswer"
@@ -37,7 +70,10 @@
     </div>
 
     <!-- 拼写模式 -->
-    <div v-else-if="mode === 'spelling'" class="content-area">
+    <div
+      v-else-if="mode === 'spelling'"
+      class="content-area"
+    >
       <SpellingQuestion
         :word="currentWord"
         :answered="answered"
@@ -45,24 +81,52 @@
         @input="handleInput"
         @submit="handleSubmit"
       />
-      <div v-if="answered" class="action-buttons">
-        <button @click="next" class="btn btn-primary">
+      <div
+        v-if="answered"
+        class="action-buttons"
+      >
+        <button
+          class="btn btn-primary"
+          @click="next"
+        >
           {{ isLast ? '完成复习' : '下一个' }}
         </button>
       </div>
     </div>
 
     <!-- 完成页面 -->
-    <div v-if="currentIndex >= words.length" class="completion-view">
+    <div
+      v-if="currentIndex >= words.length"
+      class="completion-view"
+    >
       <div class="text-center">
         <div class="mb-8 text-emerald-400 flex justify-center">
-          <svg class="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          <svg
+            class="w-20 h-20"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+            />
           </svg>
         </div>
-        <h2 :class="['text-3xl font-black mb-2 tracking-tight', isDark ? 'text-white' : 'text-slate-800']">复习完成！</h2>
-        <p :class="['mb-8', isDark ? 'text-slate-400' : 'text-slate-600']">你复习了 {{ words.length }} 个单词</p>
-        <button @click="handleComplete" class="premium-btn px-10 py-3">完成</button>
+        <h2 :class="['text-3xl font-black mb-2 tracking-tight', isDark ? 'text-white' : 'text-slate-800']">
+          复习完成！
+        </h2>
+        <p :class="['mb-8', isDark ? 'text-slate-400' : 'text-slate-600']">
+          你复习了 {{ words.length }} 个单词
+        </p>
+        <button
+          class="premium-btn px-10 py-3"
+          @click="handleComplete"
+        >
+          完成
+        </button>
       </div>
     </div>
   </div>

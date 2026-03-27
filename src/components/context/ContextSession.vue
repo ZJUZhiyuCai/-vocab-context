@@ -14,7 +14,7 @@
         <div
           class="h-full bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full transition-all duration-500"
           :style="{ width: `${progress}%` }"
-        ></div>
+        />
       </div>
       <!-- Task indicators -->
       <div class="flex gap-1 mt-3 justify-center">

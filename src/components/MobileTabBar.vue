@@ -1,19 +1,35 @@
 <template>
-  <nav class="mobile-tab-bar" :class="isDark ? 'dark' : 'light'">
+  <nav
+    class="mobile-tab-bar"
+    :class="isDark ? 'dark' : 'light'"
+  >
     <button
       v-for="tab in tabs"
       :key="tab.key"
-      @click="$emit('navigate', tab.key)"
       class="tab-item"
       :class="{ active: currentTab === tab.key }"
+      @click="$emit('navigate', tab.key)"
     >
       <div class="tab-icon-wrapper">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" :d="tab.icon" />
+        <svg
+          class="w-6 h-6"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            :d="tab.icon"
+          />
         </svg>
       </div>
       <span class="tab-label">{{ tab.label }}</span>
-      <span v-if="tab.badge && tab.badge > 0" class="tab-badge">{{ tab.badge }}</span>
+      <span
+        v-if="tab.badge && tab.badge > 0"
+        class="tab-badge"
+      >{{ tab.badge }}</span>
     </button>
   </nav>
 </template>

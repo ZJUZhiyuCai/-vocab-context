@@ -1,5 +1,8 @@
 <template>
-  <div class="vocab-test-modal" :class="isDark ? 'dark' : 'light'">
+  <div
+    class="vocab-test-modal"
+    :class="isDark ? 'dark' : 'light'"
+  >
     <div class="modal-content">
       <!-- 进度指示 -->
       <div class="progress-header">
@@ -8,47 +11,78 @@
           <span class="text-sm font-medium text-emerald-400">{{ currentQuestion + 1 }} / {{ totalQuestions }}</span>
         </div>
         <div class="progress-bar">
-          <div class="progress-fill" :style="{ width: progressPercentage + '%' }"></div>
+          <div
+            class="progress-fill"
+            :style="{ width: progressPercentage + '%' }"
+          />
         </div>
       </div>
 
       <!-- 测试说明 -->
-      <div v-if="currentQuestion === -1" class="intro-section text-center">
-        <h2 class="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-6">词汇量水平测试</h2>
+      <div
+        v-if="currentQuestion === -1"
+        class="intro-section text-center"
+      >
+        <h2 class="text-3xl font-bold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent mb-6">
+          词汇量水平测试
+        </h2>
         <div class="text-left space-y-4 bg-white/5 p-6 rounded-2xl border border-white/5 text-slate-300 mb-8">
-          <p class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>共 <strong>50 道题</strong>，大约需要 <strong>5-8 分钟</strong></p>
-          <p class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>自适应测试，题目难度会根据你的回答调整</p>
-          <p class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>测试完成后会为你推荐合适的词库</p>
-          <p class="text-sm text-slate-500 mt-6 pt-4 border-t border-white/5">请根据你是否认识这个单词的<strong>主要含义</strong>来回答</p>
+          <p class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500" />共 <strong>50 道题</strong>，大约需要 <strong>5-8 分钟</strong>
+          </p>
+          <p class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500" />自适应测试，题目难度会根据你的回答调整
+          </p>
+          <p class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500" />测试完成后会为你推荐合适的词库
+          </p>
+          <p class="text-sm text-slate-500 mt-6 pt-4 border-t border-white/5">
+            请根据你是否认识这个单词的<strong>主要含义</strong>来回答
+          </p>
         </div>
-        <button @click="startTest" class="premium-btn w-full py-4 text-lg">开始测试</button>
+        <button
+          class="premium-btn w-full py-4 text-lg"
+          @click="startTest"
+        >
+          开始测试
+        </button>
       </div>
 
       <!-- 测试题目 -->
-      <div v-else-if="currentQuestion < totalQuestions && !testCompleted" class="question-section py-8 text-center">
+      <div
+        v-else-if="currentQuestion < totalQuestions && !testCompleted"
+        class="question-section py-8 text-center"
+      >
         <div class="word-display mb-12">
-          <h2 class="text-5xl font-black text-white mb-4 tracking-tight">{{ currentTestWord.word }}</h2>
-          <p v-if="currentTestWord.ipa" class="text-xl font-mono text-emerald-400/80 mb-6">{{ currentTestWord.ipa }}</p>
+          <h2 class="text-5xl font-black text-white mb-4 tracking-tight">
+            {{ currentTestWord.word }}
+          </h2>
+          <p
+            v-if="currentTestWord.ipa"
+            class="text-xl font-mono text-emerald-400/80 mb-6"
+          >
+            {{ currentTestWord.ipa }}
+          </p>
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-slate-400 font-medium">
             <span>难度: {{ currentTestWord.cefr }}</span>
-            <span class="w-1 h-1 rounded-full bg-slate-600"></span>
+            <span class="w-1 h-1 rounded-full bg-slate-600" />
             <span>{{ currentTestWord.ielts }}</span>
           </div>
         </div>
 
         <div class="answer-buttons grid grid-cols-2 gap-6 mb-8">
           <button
+            class="answer-btn btn-forget group"
             @click="answerWord(false)"
             @touchstart.passive="() => {}"
-            class="answer-btn btn-forget group"
           >
             <span class="text-3xl mb-2 group-hover:scale-110 transition-transform">✕</span>
             <span class="font-bold">不认识</span>
           </button>
           <button
+            class="answer-btn btn-know group"
             @click="answerWord(true)"
             @touchstart.passive="() => {}"
-            class="answer-btn btn-know group"
           >
             <span class="text-3xl mb-2 group-hover:scale-110 transition-transform">✓</span>
             <span class="font-bold">认识</span>
@@ -56,13 +90,21 @@
         </div>
 
         <div class="test-tip">
-          <p class="text-xs text-slate-500">提示：选择后自动进入下一题，不能返回</p>
+          <p class="text-xs text-slate-500">
+            提示：选择后自动进入下一题，不能返回
+          </p>
         </div>
       </div>
 
       <!-- 测试结果 -->
-      <div v-else-if="testCompleted" class="result-section text-center" @click="selectedVocab = null">
-        <h2 class="text-2xl font-bold text-emerald-400 mb-6">测试完成</h2>
+      <div
+        v-else-if="testCompleted"
+        class="result-section text-center"
+        @click="selectedVocab = null"
+      >
+        <h2 class="text-2xl font-bold text-emerald-400 mb-6">
+          测试完成
+        </h2>
 
         <div class="grid grid-cols-3 gap-4 mb-8">
           <div class="result-box">
@@ -82,45 +124,65 @@
         <!-- 添加详细统计信息 -->
         <div class="result-stats mb-8">
           <div class="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4 flex items-center gap-2 justify-center">
-            <span class="w-8 h-[1px] bg-slate-800"></span>
+            <span class="w-8 h-[1px] bg-slate-800" />
             <span>详细统计</span>
-            <span class="w-8 h-[1px] bg-slate-800"></span>
+            <span class="w-8 h-[1px] bg-slate-800" />
           </div>
           <div class="grid grid-cols-2 gap-4">
             <div class="bg-white/5 rounded-xl p-4 border border-white/5">
-              <div class="text-xs text-slate-500 mb-1">答对题数</div>
-              <div class="text-xl font-bold text-slate-200">{{ userAnswers.filter(a => a.known).length }} / {{ totalQuestions }}</div>
+              <div class="text-xs text-slate-500 mb-1">
+                答对题数
+              </div>
+              <div class="text-xl font-bold text-slate-200">
+                {{ userAnswers.filter(a => a.known).length }} / {{ totalQuestions }}
+              </div>
             </div>
             <div class="bg-white/5 rounded-xl p-4 border border-white/5">
-              <div class="text-xs text-slate-500 mb-1">正确率</div>
-              <div class="text-xl font-bold text-slate-200">{{ ((userAnswers.filter(a => a.known).length / totalQuestions) * 100).toFixed(0) }}%</div>
+              <div class="text-xs text-slate-500 mb-1">
+                正确率
+              </div>
+              <div class="text-xl font-bold text-slate-200">
+                {{ ((userAnswers.filter(a => a.known).length / totalQuestions) * 100).toFixed(0) }}%
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="recommended-section text-left" @click.stop>
+        <div
+          class="recommended-section text-left"
+          @click.stop
+        >
           <div class="flex items-center gap-2 mb-4">
-            <div class="w-1 h-5 rounded-full bg-emerald-500"></div>
-            <h3 class="text-lg font-bold text-slate-200">推荐词库</h3>
+            <div class="w-1 h-5 rounded-full bg-emerald-500" />
+            <h3 class="text-lg font-bold text-slate-200">
+              推荐词库
+            </h3>
           </div>
           <div class="vocab-list">
             <div
               v-for="vocab in recommendedVocabs"
               :key="vocab.id"
-              @click.stop="selectVocab(vocab)"
               class="vocab-item"
               :class="{ 'selected': selectedVocab?.id === vocab.id }"
+              @click.stop="selectVocab(vocab)"
             >
-              <div class="vocab-icon">{{ vocab.icon }}</div>
+              <div class="vocab-icon">
+                {{ vocab.icon }}
+              </div>
               <div class="vocab-info">
-                <div class="vocab-name">{{ vocab.name }}</div>
+                <div class="vocab-name">
+                  {{ vocab.name }}
+                </div>
                 <div class="vocab-meta">
                   <span class="px-1.5 py-0.5 rounded bg-white/5 text-[10px] text-slate-400">{{ vocab.level }}</span>
                   <span class="text-[10px] text-slate-500">{{ vocab.wordCount }}词</span>
                 </div>
               </div>
               <div class="vocab-recommend">
-                <span class="recommend-badge" v-if="vocab.isRecommended">推荐</span>
+                <span
+                  v-if="vocab.isRecommended"
+                  class="recommend-badge"
+                >推荐</span>
               </div>
             </div>
           </div>
@@ -128,15 +190,15 @@
 
         <div class="action-buttons flex gap-4 mt-8">
           <button
-            @click="skipSelection"
             class="px-6 py-3 rounded-xl font-bold bg-slate-700/50 text-slate-400 hover:bg-slate-700 hover:text-slate-200 transition-all border border-white/5"
+            @click="skipSelection"
           >
             稍后选择
           </button>
           <button
-            @click="confirmSelection"
             class="premium-btn flex-1 py-3 text-base"
             :disabled="!selectedVocab"
+            @click="confirmSelection"
           >
             开始学习
           </button>

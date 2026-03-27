@@ -6,7 +6,12 @@
   >
     <div class="max-w-md w-full text-center">
       <div class="mb-6">
-        <svg class="w-16 h-16 mx-auto text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg
+          class="w-16 h-16 mx-auto text-red-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
           <path
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -15,26 +20,30 @@
           />
         </svg>
       </div>
-      <h1 class="text-2xl font-bold text-white mb-2">Something went wrong</h1>
-      <p class="text-gray-400 mb-6">{{ errorMessage }}</p>
+      <h1 class="text-2xl font-bold text-white mb-2">
+        Something went wrong
+      </h1>
+      <p class="text-gray-400 mb-6">
+        {{ errorMessage }}
+      </p>
       <div class="flex gap-3 justify-center">
         <button
-          @click="retry"
           class="px-6 py-3 rounded-xl bg-emerald-600 text-white font-bold hover:bg-emerald-500 transition-colors"
+          @click="retry"
         >
           Try Again
         </button>
         <button
-          @click="goHome"
           class="px-6 py-3 rounded-xl bg-slate-700 text-gray-300 font-bold hover:bg-slate-600 transition-colors"
+          @click="goHome"
         >
           Go Home
         </button>
       </div>
       <button
         v-if="showDetails"
-        @click="toggleDetails"
         class="mt-4 text-sm text-gray-500 hover:text-gray-400"
+        @click="toggleDetails"
       >
         {{ detailsVisible ? 'Hide Details' : 'Show Details' }}
       </button>

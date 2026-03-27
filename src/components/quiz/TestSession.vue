@@ -10,17 +10,28 @@
       </div>
       <div class="flex items-center gap-4">
         <span class="score-badge">得分: {{ score }}/{{ totalAnswered }}</span>
-        <button @click="showExitConfirm = true" :class="['exit-button', isDark ? 'dark' : 'light']">退出</button>
+        <button
+          :class="['exit-button', isDark ? 'dark' : 'light']"
+          @click="showExitConfirm = true"
+        >
+          退出
+        </button>
       </div>
     </div>
 
     <!-- 进度条 -->
     <div :class="['progress-bar', isDark ? 'dark' : 'light']">
-      <div class="progress-fill" :style="{ width: progressPercent + '%' }"></div>
+      <div
+        class="progress-fill"
+        :style="{ width: progressPercent + '%' }"
+      />
     </div>
 
     <!-- 拼写模式 -->
-    <div v-if="mode === 'spelling' && !showResults" class="content-area">
+    <div
+      v-if="mode === 'spelling' && !showResults"
+      class="content-area"
+    >
       <SpellingQuestion
         :word="currentWord"
         :answered="answered"
@@ -28,15 +39,24 @@
         @input="handleInput"
         @submit="handleSubmit"
       />
-      <div v-if="answered" class="action-buttons">
-        <button @click="nextQuestion" class="btn btn-primary">
+      <div
+        v-if="answered"
+        class="action-buttons"
+      >
+        <button
+          class="btn btn-primary"
+          @click="nextQuestion"
+        >
           {{ isLast ? '查看结果' : '下一题' }}
         </button>
       </div>
     </div>
 
     <!-- 闪卡模式 -->
-    <div v-else-if="mode === 'flashcard' && !showResults" class="content-area">
+    <div
+      v-else-if="mode === 'flashcard' && !showResults"
+      class="content-area"
+    >
       <FlashcardView
         :word="currentWord"
         :show-answer="showAnswer"
@@ -50,7 +70,10 @@
     </div>
 
     <!-- 结果页面 -->
-    <div v-if="showResults" class="results-view">
+    <div
+      v-if="showResults"
+      class="results-view"
+    >
       <QuizResults
         :score="score"
         :total="words.length"
@@ -63,13 +86,30 @@
     </div>
 
     <!-- 退出确认弹窗 -->
-    <div v-if="showExitConfirm" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+    <div
+      v-if="showExitConfirm"
+      class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+    >
       <div class="bg-white rounded-lg p-6 max-w-md w-full mx-4">
-        <h3 class="text-lg font-bold text-gray-800 mb-2">确认退出？</h3>
-        <p class="text-gray-600 mb-4">当前的测试进度将会丢失</p>
+        <h3 class="text-lg font-bold text-gray-800 mb-2">
+          确认退出？
+        </h3>
+        <p class="text-gray-600 mb-4">
+          当前的测试进度将会丢失
+        </p>
         <div class="flex gap-3">
-          <button @click="showExitConfirm = false" class="flex-1 btn bg-gray-200 text-gray-700">取消</button>
-          <button @click="handleExit" class="flex-1 btn btn-error">退出</button>
+          <button
+            class="flex-1 btn bg-gray-200 text-gray-700"
+            @click="showExitConfirm = false"
+          >
+            取消
+          </button>
+          <button
+            class="flex-1 btn btn-error"
+            @click="handleExit"
+          >
+            退出
+          </button>
         </div>
       </div>
     </div>

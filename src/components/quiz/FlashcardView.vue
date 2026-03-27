@@ -9,13 +9,26 @@
       >
         <!-- 正面 -->
         <div :class="['flashcard-front', isDark ? 'dark' : 'light']">
-          <h2 class="word-text">{{ word.word }}</h2>
-          <div v-if="word.phonetic" class="phonetic-text">
+          <h2 class="word-text">
+            {{ word.word }}
+          </h2>
+          <div
+            v-if="word.phonetic"
+            class="phonetic-text"
+          >
             {{ word.phonetic }}
           </div>
           <div class="tap-hint">
-            <svg class="w-5 h-5 animate-bounce" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            <svg
+              class="w-5 h-5 animate-bounce"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v3.586L7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              />
             </svg>
             <span class="ml-1 text-sm">点击查看释义</span>
           </div>
@@ -23,11 +36,19 @@
 
         <!-- 背面 -->
         <div :class="['flashcard-back', isDark ? 'dark' : 'light']">
-          <h3 class="meaning-text">{{ word.meaning }}</h3>
-          <div v-if="word.example" class="example-text">
+          <h3 class="meaning-text">
+            {{ word.meaning }}
+          </h3>
+          <div
+            v-if="word.example"
+            class="example-text"
+          >
             {{ word.example }}
           </div>
-          <div v-if="word.exampleTranslation" class="example-translation">
+          <div
+            v-if="word.exampleTranslation"
+            class="example-translation"
+          >
             {{ word.exampleTranslation }}
           </div>
         </div>
@@ -35,30 +56,70 @@
     </div>
 
     <!-- 难度按钮 -->
-    <div v-if="showAnswer" class="difficulty-buttons">
-      <button @click.stop="$emit('rate', 'easy')" class="difficulty-button easy">
+    <div
+      v-if="showAnswer"
+      class="difficulty-buttons"
+    >
+      <button
+        class="difficulty-button easy"
+        @click.stop="$emit('rate', 'easy')"
+      >
         简单
       </button>
-      <button @click.stop="$emit('rate', 'medium')" class="difficulty-button medium">
+      <button
+        class="difficulty-button medium"
+        @click.stop="$emit('rate', 'medium')"
+      >
         一般
       </button>
-      <button @click.stop="$emit('rate', 'hard')" class="difficulty-button hard">
+      <button
+        class="difficulty-button hard"
+        @click.stop="$emit('rate', 'hard')"
+      >
         困难
       </button>
     </div>
 
     <!-- 导航按钮 -->
     <div class="navigation-buttons">
-      <button @click.stop="$emit('previous')" :class="['nav-button', isDark ? 'dark' : 'light']" :disabled="!hasPrevious">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      <button
+        :class="['nav-button', isDark ? 'dark' : 'light']"
+        :disabled="!hasPrevious"
+        @click.stop="$emit('previous')"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
         </svg>
         上一个
       </button>
-      <button @click.stop="$emit('next')" :class="['nav-button', isDark ? 'dark' : 'light']" :disabled="!hasNext">
+      <button
+        :class="['nav-button', isDark ? 'dark' : 'light']"
+        :disabled="!hasNext"
+        @click.stop="$emit('next')"
+      >
         下一个
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+        <svg
+          class="w-5 h-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 5l7 7-7 7"
+          />
         </svg>
       </button>
     </div>

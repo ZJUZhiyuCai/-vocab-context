@@ -9,19 +9,84 @@
         @click="selectVocabulary(vocab)"
       >
         <!-- 词库图标 -->
-        <div class="vocab-icon" :style="{ backgroundColor: vocab.color + '15', color: vocab.color, border: '1px solid ' + vocab.color + '30' }">
-          <svg v-if="vocab.id.includes('cet4')" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.168.477-4.5 1.253" /></svg>
-          <svg v-else-if="vocab.id.includes('cet6')" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" /></svg>
-          <svg v-else-if="vocab.id.includes('ielts6')" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          <svg v-else-if="vocab.id.includes('ielts7')" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.143-7.714L1 12l7.714-2.143L11 3z" /></svg>
-          <svg v-else class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+        <div
+          class="vocab-icon"
+          :style="{ backgroundColor: vocab.color + '15', color: vocab.color, border: '1px solid ' + vocab.color + '30' }"
+        >
+          <svg
+            v-if="vocab.id.includes('cet4')"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.168.477-4.5 1.253"
+          /></svg>
+          <svg
+            v-else-if="vocab.id.includes('cet6')"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"
+          /></svg>
+          <svg
+            v-else-if="vocab.id.includes('ielts6')"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+          /></svg>
+          <svg
+            v-else-if="vocab.id.includes('ielts7')"
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-7.714 2.143L11 21l-2.143-7.714L1 12l7.714-2.143L11 3z"
+          /></svg>
+          <svg
+            v-else
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          ><path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+          /></svg>
         </div>
 
         <!-- 词库信息 -->
         <div class="vocab-info">
           <div class="flex items-center justify-between mb-1">
-            <h3 :class="['vocab-title transition-colors', isDark ? 'group-hover:text-white' : 'group-hover:text-emerald-600']">{{ vocab.name }}</h3>
-            <div v-if="vocab.id === currentVocabId" class="check-badge">✓</div>
+            <h3 :class="['vocab-title transition-colors', isDark ? 'group-hover:text-white' : 'group-hover:text-emerald-600']">
+              {{ vocab.name }}
+            </h3>
+            <div
+              v-if="vocab.id === currentVocabId"
+              class="check-badge"
+            >
+              ✓
+            </div>
           </div>
 
           <!-- 词库统计 -->
@@ -31,7 +96,10 @@
           </div>
 
           <!-- 学习进度 -->
-          <div v-if="getProgress(vocab.id)" class="vocab-progress">
+          <div
+            v-if="getProgress(vocab.id)"
+            class="vocab-progress"
+          >
             <div class="flex justify-between text-xs text-gray-500 mb-1">
               <span>进度 {{ getProgressPercent(vocab.id) }}%</span>
             </div>
@@ -42,7 +110,7 @@
                   width: getProgressPercent(vocab.id) + '%',
                   backgroundColor: vocab.color
                 }"
-              ></div>
+              />
             </div>
           </div>
         </div>

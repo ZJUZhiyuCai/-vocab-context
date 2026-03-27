@@ -1,5 +1,8 @@
 <template>
-  <div class="onboarding-modal" :class="isDark ? 'dark' : 'light'">
+  <div
+    class="onboarding-modal"
+    :class="isDark ? 'dark' : 'light'"
+  >
     <div class="modal-content">
       <!-- 进度指示 -->
       <div class="progress-bar">
@@ -8,104 +11,227 @@
           :key="i"
           class="progress-dot"
           :class="{ 'active': i <= currentStep, 'completed': i < currentStep }"
-        ></div>
+        />
       </div>
 
       <!-- 问题区域 -->
       <div class="question-area">
-        <transition name="fade" mode="out-in">
+        <transition
+          name="fade"
+          mode="out-in"
+        >
           <div :key="currentStep">
             <!-- Step 1: 欢迎 -->
-            <div v-if="currentStep === 0" class="step-content">
+            <div
+              v-if="currentStep === 0"
+              class="step-content"
+            >
               <div class="flex justify-center mb-6 text-emerald-400">
-                <svg class="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" />
+                <svg
+                  class="w-20 h-20"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                    stroke="currentColor"
+                  />
                 </svg>
               </div>
-              <h2 class="step-title">欢迎使用 VocabMan</h2>
-              <p class="step-desc">为了给你提供更个性化的学习体验，请回答几个简单问题</p>
+              <h2 class="step-title">
+                欢迎使用 VocabMan
+              </h2>
+              <p class="step-desc">
+                为了给你提供更个性化的学习体验，请回答几个简单问题
+              </p>
               <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs mt-4">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <svg
+                  class="w-3.5 h-3.5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                /></svg>
                 只需30秒
               </div>
             </div>
 
             <!-- Step 2: 词汇水平测试 -->
-            <div v-if="currentStep === 1" class="step-content">
+            <div
+              v-if="currentStep === 1"
+              class="step-content"
+            >
               <div class="flex justify-center mb-6 text-cyan-400">
-                <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m0 0a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2v12" />
+                <svg
+                  class="w-16 h-16"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m0 0a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2v12"
+                  />
                 </svg>
               </div>
-              <h2 class="step-title">词汇量水平测试</h2>
-              <p class="step-desc">了解你的词汇量，为你推荐合适的词库</p>
+              <h2 class="step-title">
+                词汇量水平测试
+              </h2>
+              <p class="step-desc">
+                了解你的词汇量，为你推荐合适的词库
+              </p>
 
               <div class="test-info-box">
                 <div class="test-info-item">
                   <div class="test-info-icon">
-                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                    <svg
+                      class="w-3 h-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                      d="M5 13l4 4L19 7"
+                    /></svg>
                   </div>
-                  <div class="test-info-text">共 50 道题，约 5-8 分钟</div>
+                  <div class="test-info-text">
+                    共 50 道题，约 5-8 分钟
+                  </div>
                 </div>
                 <div class="test-info-item">
                   <div class="test-info-icon">
-                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                    <svg
+                      class="w-3 h-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                      d="M5 13l4 4L19 7"
+                    /></svg>
                   </div>
-                  <div class="test-info-text">自适应测试，题目难度动态调整</div>
+                  <div class="test-info-text">
+                    自适应测试，题目难度动态调整
+                  </div>
                 </div>
                 <div class="test-info-item">
                   <div class="test-info-icon">
-                    <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" /></svg>
+                    <svg
+                      class="w-3 h-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    ><path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="3"
+                      d="M5 13l4 4L19 7"
+                    /></svg>
                   </div>
-                  <div class="test-info-text">完成后推荐合适的学习词库</div>
+                  <div class="test-info-text">
+                    完成后推荐合适的学习词库
+                  </div>
                 </div>
               </div>
 
-              <button @click="startVocabTest" class="premium-btn w-full py-4 text-lg mb-4">
+              <button
+                class="premium-btn w-full py-4 text-lg mb-4"
+                @click="startVocabTest"
+              >
                 🚀 开始测试
               </button>
 
-              <button @click="skipTest" class="text-slate-500 text-sm font-medium hover:text-emerald-400 transition-colors">
+              <button
+                class="text-slate-500 text-sm font-medium hover:text-emerald-400 transition-colors"
+                @click="skipTest"
+              >
                 跳过测试，稍后再测
               </button>
             </div>
 
             <!-- Step 3: 学习目的 -->
-            <div v-if="currentStep === 2" class="step-content">
-              <h2 class="step-title">你学习英语的目的是什么？</h2>
-              <p class="step-desc">选择与你目标最匹配的选项</p>
+            <div
+              v-if="currentStep === 2"
+              class="step-content"
+            >
+              <h2 class="step-title">
+                你学习英语的目的是什么？
+              </h2>
+              <p class="step-desc">
+                选择与你目标最匹配的选项
+              </p>
 
               <div class="options-grid">
                 <button
                   v-for="option in purposeOptions"
                   :key="option.value"
-                  @click="selectPurpose(option.value)"
                   class="option-card"
                   :class="{ 'selected': userProfile.purpose === option.value }"
+                  @click="selectPurpose(option.value)"
                 >
-                  <div class="option-icon">{{ option.icon }}</div>
-                  <div class="option-title">{{ option.title }}</div>
-                  <div class="option-desc">{{ option.desc }}</div>
+                  <div class="option-icon">
+                    {{ option.icon }}
+                  </div>
+                  <div class="option-title">
+                    {{ option.title }}
+                  </div>
+                  <div class="option-desc">
+                    {{ option.desc }}
+                  </div>
                 </button>
               </div>
             </div>
 
             <!-- Step 4: 确认 -->
-            <div v-if="currentStep === 3" class="step-content">
+            <div
+              v-if="currentStep === 3"
+              class="step-content"
+            >
               <div class="flex justify-center mb-6 text-emerald-400">
-                <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <svg
+                  class="w-16 h-16"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
                 </svg>
               </div>
-              <h2 class="step-title">设置完成</h2>
-              <p class="step-desc">我们已根据你的情况优化学习体验</p>
+              <h2 class="step-title">
+                设置完成
+              </h2>
+              <p class="step-desc">
+                我们已根据你的情况优化学习体验
+              </p>
 
               <div class="summary-box">
                 <div class="summary-item">
                   <span class="summary-label text-slate-500">词汇量</span>
                   <span class="summary-value text-slate-200">{{ vocabTestResult ? vocabTestResult.estimatedVocab : '未测试' }}</span>
                 </div>
-                <div class="summary-item" v-if="vocabTestResult">
+                <div
+                  v-if="vocabTestResult"
+                  class="summary-item"
+                >
                   <span class="summary-label text-slate-500">等级</span>
                   <span class="summary-value text-slate-200">{{ vocabTestResult.cefrLevel }} ({{ vocabTestResult.ieltsLevel }})</span>
                 </div>
@@ -115,7 +241,9 @@
                 </div>
               </div>
 
-              <p class="text-xs text-slate-500 mt-4">你随时可以在设置页面修改这些偏好</p>
+              <p class="text-xs text-slate-500 mt-4">
+                你随时可以在设置页面修改这些偏好
+              </p>
             </div>
           </div>
         </transition>
@@ -125,30 +253,30 @@
       <div class="action-buttons">
         <button
           v-if="currentStep === 2"
-          @click="previousStep"
           class="btn-secondary"
+          @click="previousStep"
         >
           上一步
         </button>
         <button
           v-if="currentStep === 0"
-          @click="nextStep"
           class="premium-btn px-8"
+          @click="nextStep"
         >
           开始
         </button>
         <button
           v-if="currentStep === 2"
-          @click="nextStep"
           class="premium-btn px-8"
           :disabled="!userProfile.purpose"
+          @click="nextStep"
         >
           下一步
         </button>
         <button
           v-if="currentStep === 3"
-          @click="completeOnboarding"
           class="premium-btn px-8"
+          @click="completeOnboarding"
         >
           🚀 开始学习
         </button>

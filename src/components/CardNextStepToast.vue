@@ -14,8 +14,18 @@
     >
       <!-- Icon -->
       <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-emerald-500/20 flex items-center justify-center">
-        <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        <svg
+          class="w-5 h-5 text-emerald-400"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 7l5 5m0 0l-5 5m5-5H6"
+          />
         </svg>
       </div>
 
@@ -32,19 +42,19 @@
       <!-- Actions -->
       <div class="flex gap-2 flex-shrink-0">
         <button
-          @click="handleDismiss"
           :class="[
             'px-3 py-2 text-xs font-medium rounded-xl transition-all',
             isDark
               ? 'text-gray-400 hover:text-white hover:bg-white/10'
               : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
           ]"
+          @click="handleDismiss"
         >
           稍后
         </button>
         <button
-          @click="handleAction"
           class="px-4 py-2 text-xs font-bold rounded-xl bg-emerald-600 text-white shadow-lg shadow-emerald-500/20 hover:bg-emerald-500 transition-all"
+          @click="handleAction"
         >
           {{ recommendation?.ctaLabel }}
         </button>

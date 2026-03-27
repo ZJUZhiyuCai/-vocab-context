@@ -2,10 +2,23 @@
   <div class="ai-learn-panel">
     <!-- 头部 -->
     <div class="panel-header">
-      <h2 class="panel-title">🤖 AI 学习助手</h2>
-      <div v-if="!isAvailable" class="api-warning">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+      <h2 class="panel-title">
+        🤖 AI 学习助手
+      </h2>
+      <div
+        v-if="!isAvailable"
+        class="api-warning"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+            clip-rule="evenodd"
+          />
         </svg>
         <span>请配置 API 密钥</span>
       </div>
@@ -16,9 +29,9 @@
       <button
         v-for="tab in tabs"
         :key="tab.key"
-        @click="activeTab = tab.key"
         class="tab"
         :class="{ active: activeTab === tab.key }"
+        @click="activeTab = tab.key"
       >
         <span class="tab-icon">{{ tab.icon }}</span>
         <span class="tab-label">{{ tab.label }}</span>
@@ -28,126 +41,272 @@
     <!-- 内容区 -->
     <div class="panel-content">
       <!-- 单词深度分析 -->
-      <div v-if="activeTab === 'word'" class="tab-content">
-        <div v-if="!currentWord" class="empty-state">
-          <svg class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd" />
+      <div
+        v-if="activeTab === 'word'"
+        class="tab-content"
+      >
+        <div
+          v-if="!currentWord"
+          class="empty-state"
+        >
+          <svg
+            class="w-16 h-16 mx-auto mb-4 text-gray-300"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z"
+              clip-rule="evenodd"
+            />
           </svg>
-          <p class="text-gray-500">请先在学习页面选择一个单词</p>
-          <button @click="$emit('navigate', 'today')" class="btn-primary mt-4">
+          <p class="text-gray-500">
+            请先在学习页面选择一个单词
+          </p>
+          <button
+            class="btn-primary mt-4"
+            @click="$emit('navigate', 'today')"
+          >
             前往学习
           </button>
         </div>
 
-        <div v-else class="word-analysis">
+        <div
+          v-else
+          class="word-analysis"
+        >
           <!-- 单词标题 -->
           <div class="word-header">
-            <h3 class="word-title">{{ (analyzedWord || currentWord).word }}</h3>
-            <span v-if="(analyzedWord || currentWord).ipa" class="word-ipa">{{ (analyzedWord || currentWord).ipa }}</span>
+            <h3 class="word-title">
+              {{ (analyzedWord || currentWord).word }}
+            </h3>
+            <span
+              v-if="(analyzedWord || currentWord).ipa"
+              class="word-ipa"
+            >{{ (analyzedWord || currentWord).ipa }}</span>
           </div>
 
           <!-- AI 分析按钮 -->
           <div class="analysis-actions">
             <button
-              @click="analyzeCurrentWord"
               :disabled="isLoadingAnalysis || !isAvailable"
               class="btn-analyze"
+              @click="analyzeCurrentWord"
             >
-              <svg v-if="!isLoadingAnalysis" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <svg
+                v-if="!isLoadingAnalysis"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <svg v-else class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
-                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+              <svg
+                v-else
+                class="w-5 h-5 animate-spin"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  class="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  stroke-width="4"
+                />
+                <path
+                  class="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                />
               </svg>
               {{ isLoadingAnalysis ? '分析中...' : 'AI 深度分析' }}
             </button>
           </div>
 
           <!-- 分析结果 -->
-          <div v-if="wordAnalysis" class="analysis-result">
+          <div
+            v-if="wordAnalysis"
+            class="analysis-result"
+          >
             <!-- 词性 -->
-            <div v-if="wordAnalysis.pos" class="info-card">
-              <h4 class="info-label">词性</h4>
-              <p class="info-value">{{ wordAnalysis.pos }}</p>
+            <div
+              v-if="wordAnalysis.pos"
+              class="info-card"
+            >
+              <h4 class="info-label">
+                词性
+              </h4>
+              <p class="info-value">
+                {{ wordAnalysis.pos }}
+              </p>
             </div>
 
             <!-- 英英释义 -->
-            <div v-if="wordAnalysis.definition" class="info-card">
-              <h4 class="info-label">英英释义</h4>
-              <p class="info-value">{{ wordAnalysis.definition }}</p>
+            <div
+              v-if="wordAnalysis.definition"
+              class="info-card"
+            >
+              <h4 class="info-label">
+                英英释义
+              </h4>
+              <p class="info-value">
+                {{ wordAnalysis.definition }}
+              </p>
             </div>
 
             <!-- 词源 -->
-            <div v-if="wordAnalysis.etymology" class="info-card expanded">
+            <div
+              v-if="wordAnalysis.etymology"
+              class="info-card expanded"
+            >
               <h4 class="info-label">
                 <span>📖 词源</span>
               </h4>
               <div class="info-content">
-                <p v-if="wordAnalysis.etymology.origin" class="etymology-origin">
+                <p
+                  v-if="wordAnalysis.etymology.origin"
+                  class="etymology-origin"
+                >
                   <strong>起源：</strong>{{ wordAnalysis.etymology.origin }}
                 </p>
-                <p v-if="wordAnalysis.etymology.evolution" class="etymology-evolution">
+                <p
+                  v-if="wordAnalysis.etymology.evolution"
+                  class="etymology-evolution"
+                >
                   <strong>演变：</strong>{{ wordAnalysis.etymology.evolution }}
                 </p>
-                <p v-if="wordAnalysis.etymology.interesting_fact" class="etymology-fact">
+                <p
+                  v-if="wordAnalysis.etymology.interesting_fact"
+                  class="etymology-fact"
+                >
                   <strong>💡 趣闻：</strong>{{ wordAnalysis.etymology.interesting_fact }}
                 </p>
               </div>
             </div>
 
             <!-- 同义词 -->
-            <div v-if="wordAnalysis.synonyms && wordAnalysis.synonyms.length" class="info-card expanded">
-              <h4 class="info-label">🔄 同义词</h4>
+            <div
+              v-if="wordAnalysis.synonyms && wordAnalysis.synonyms.length"
+              class="info-card expanded"
+            >
+              <h4 class="info-label">
+                🔄 同义词
+              </h4>
               <div class="synonyms-list">
-                <div v-for="(syn, idx) in wordAnalysis.synonyms" :key="idx" class="synonym-item">
+                <div
+                  v-for="(syn, idx) in wordAnalysis.synonyms"
+                  :key="idx"
+                  class="synonym-item"
+                >
                   <span class="synonym-word">{{ syn.word }}</span>
-                  <span v-if="syn.nuance" class="synonym-nuance">{{ syn.nuance }}</span>
+                  <span
+                    v-if="syn.nuance"
+                    class="synonym-nuance"
+                  >{{ syn.nuance }}</span>
                 </div>
               </div>
             </div>
 
             <!-- 反义词 -->
-            <div v-if="wordAnalysis.antonyms && wordAnalysis.antonyms.length" class="info-card">
-              <h4 class="info-label">🔄 反义词</h4>
+            <div
+              v-if="wordAnalysis.antonyms && wordAnalysis.antonyms.length"
+              class="info-card"
+            >
+              <h4 class="info-label">
+                🔄 反义词
+              </h4>
               <div class="antonyms-list">
-                <span v-for="(ant, idx) in wordAnalysis.antonyms" :key="idx" class="antonym-tag">
+                <span
+                  v-for="(ant, idx) in wordAnalysis.antonyms"
+                  :key="idx"
+                  class="antonym-tag"
+                >
                   {{ ant }}
                 </span>
               </div>
             </div>
 
             <!-- 常用搭配 -->
-            <div v-if="wordAnalysis.collocations && wordAnalysis.collocations.length" class="info-card expanded">
-              <h4 class="info-label">🔗 常用搭配</h4>
+            <div
+              v-if="wordAnalysis.collocations && wordAnalysis.collocations.length"
+              class="info-card expanded"
+            >
+              <h4 class="info-label">
+                🔗 常用搭配
+              </h4>
               <div class="collocations-list">
-                <div v-for="(col, idx) in wordAnalysis.collocations" :key="idx" class="collocation-item">
-                  <p class="collocation-phrase"><strong>{{ col.phrase }}</strong></p>
-                  <p v-if="col.meaning" class="collocation-meaning">{{ col.meaning }}</p>
-                  <p v-if="col.example" class="collocation-example">{{ col.example }}</p>
+                <div
+                  v-for="(col, idx) in wordAnalysis.collocations"
+                  :key="idx"
+                  class="collocation-item"
+                >
+                  <p class="collocation-phrase">
+                    <strong>{{ col.phrase }}</strong>
+                  </p>
+                  <p
+                    v-if="col.meaning"
+                    class="collocation-meaning"
+                  >
+                    {{ col.meaning }}
+                  </p>
+                  <p
+                    v-if="col.example"
+                    class="collocation-example"
+                  >
+                    {{ col.example }}
+                  </p>
                 </div>
               </div>
             </div>
 
             <!-- 使用注意 -->
-            <div v-if="wordAnalysis.usage_notes && wordAnalysis.usage_notes.length" class="info-card expanded">
-              <h4 class="info-label">⚠️ 使用注意</h4>
+            <div
+              v-if="wordAnalysis.usage_notes && wordAnalysis.usage_notes.length"
+              class="info-card expanded"
+            >
+              <h4 class="info-label">
+                ⚠️ 使用注意
+              </h4>
               <ul class="usage-list">
-                <li v-for="(note, idx) in wordAnalysis.usage_notes" :key="idx">{{ note }}</li>
+                <li
+                  v-for="(note, idx) in wordAnalysis.usage_notes"
+                  :key="idx"
+                >
+                  {{ note }}
+                </li>
               </ul>
             </div>
 
             <!-- 记忆技巧 -->
-            <div v-if="wordAnalysis.memory_hook" class="info-card memory-card">
-              <h4 class="info-label">🧠 记忆技巧</h4>
-              <p class="memory-content">{{ wordAnalysis.memory_hook }}</p>
+            <div
+              v-if="wordAnalysis.memory_hook"
+              class="info-card memory-card"
+            >
+              <h4 class="info-label">
+                🧠 记忆技巧
+              </h4>
+              <p class="memory-content">
+                {{ wordAnalysis.memory_hook }}
+              </p>
             </div>
 
             <!-- 常见错误 -->
-            <div v-if="wordAnalysis.common_mistakes && wordAnalysis.common_mistakes.length" class="info-card">
-              <h4 class="info-label">⚠️ 常见错误</h4>
+            <div
+              v-if="wordAnalysis.common_mistakes && wordAnalysis.common_mistakes.length"
+              class="info-card"
+            >
+              <h4 class="info-label">
+                ⚠️ 常见错误
+              </h4>
               <ul class="mistakes-list">
-                <li v-for="(mistake, idx) in wordAnalysis.common_mistakes" :key="idx">{{ mistake }}</li>
+                <li
+                  v-for="(mistake, idx) in wordAnalysis.common_mistakes"
+                  :key="idx"
+                >
+                  {{ mistake }}
+                </li>
               </ul>
             </div>
           </div>
@@ -155,62 +314,133 @@
       </div>
 
       <!-- 学习策略 -->
-      <div v-if="activeTab === 'strategy'" class="tab-content">
+      <div
+        v-if="activeTab === 'strategy'"
+        class="tab-content"
+      >
         <div class="strategy-section">
-          <h3 class="section-title">📊 学习分析</h3>
+          <h3 class="section-title">
+            📊 学习分析
+          </h3>
 
           <!-- 学习概览 -->
           <div class="stats-grid">
             <div class="stat-card">
-              <div class="stat-value">{{ stats.learned || 0 }}</div>
-              <div class="stat-label">已掌握</div>
+              <div class="stat-value">
+                {{ stats.learned || 0 }}
+              </div>
+              <div class="stat-label">
+                已掌握
+              </div>
             </div>
             <div class="stat-card">
-              <div class="stat-value">{{ stats.weak || 0 }}</div>
-              <div class="stat-label">待复习</div>
+              <div class="stat-value">
+                {{ stats.weak || 0 }}
+              </div>
+              <div class="stat-label">
+                待复习
+              </div>
             </div>
             <div class="stat-card">
-              <div class="stat-value">{{ stats.accuracy || 0 }}%</div>
-              <div class="stat-label">正确率</div>
+              <div class="stat-value">
+                {{ stats.accuracy || 0 }}%
+              </div>
+              <div class="stat-label">
+                正确率
+              </div>
             </div>
             <div class="stat-card">
-              <div class="stat-value">{{ stats.streak || 0 }}</div>
-              <div class="stat-label">连续天数</div>
+              <div class="stat-value">
+                {{ stats.streak || 0 }}
+              </div>
+              <div class="stat-label">
+                连续天数
+              </div>
             </div>
           </div>
 
           <!-- AI 建议按钮 -->
           <button
-            @click="generateStrategy"
             :disabled="isLoadingStrategy || !isAvailable"
             class="btn-generate"
+            @click="generateStrategy"
           >
-            <svg v-if="!isLoadingStrategy" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clip-rule="evenodd" />
+            <svg
+              v-if="!isLoadingStrategy"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                clip-rule="evenodd"
+              />
             </svg>
-            <svg v-else class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
-              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            <svg
+              v-else
+              class="w-5 h-5 animate-spin"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              />
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
             </svg>
             {{ isLoadingStrategy ? '生成中...' : '生成学习建议' }}
           </button>
 
           <!-- AI 建议结果 -->
-          <div v-if="strategyResult" class="strategy-result">
-            <div v-if="strategyResult.overall_assessment" class="info-card">
-              <h4 class="info-label">📈 整体评估</h4>
-              <p class="info-value">{{ strategyResult.overall_assessment }}</p>
+          <div
+            v-if="strategyResult"
+            class="strategy-result"
+          >
+            <div
+              v-if="strategyResult.overall_assessment"
+              class="info-card"
+            >
+              <h4 class="info-label">
+                📈 整体评估
+              </h4>
+              <p class="info-value">
+                {{ strategyResult.overall_assessment }}
+              </p>
             </div>
 
-            <div v-if="strategyResult.priorities && strategyResult.priorities.length" class="info-card">
-              <h4 class="info-label">🎯 优先级</h4>
+            <div
+              v-if="strategyResult.priorities && strategyResult.priorities.length"
+              class="info-card"
+            >
+              <h4 class="info-label">
+                🎯 优先级
+              </h4>
               <ul class="priority-list">
-                <li v-for="(priority, idx) in strategyResult.priorities" :key="idx">{{ priority }}</li>
+                <li
+                  v-for="(priority, idx) in strategyResult.priorities"
+                  :key="idx"
+                >
+                  {{ priority }}
+                </li>
               </ul>
             </div>
 
-            <div v-if="strategyResult.daily_plan" class="info-card expanded">
-              <h4 class="info-label">📅 每日计划</h4>
+            <div
+              v-if="strategyResult.daily_plan"
+              class="info-card expanded"
+            >
+              <h4 class="info-label">
+                📅 每日计划
+              </h4>
               <div class="daily-plan">
                 <div class="plan-item">
                   <span class="plan-label">新词学习：</span>
@@ -220,40 +450,79 @@
                   <span class="plan-label">复习单词：</span>
                   <span class="plan-value">{{ strategyResult.daily_plan.review_words }}</span>
                 </div>
-                <div v-if="strategyResult.daily_plan.focus_areas" class="plan-item">
+                <div
+                  v-if="strategyResult.daily_plan.focus_areas"
+                  class="plan-item"
+                >
                   <span class="plan-label">重点领域：</span>
                   <span class="plan-value">{{ strategyResult.daily_plan.focus_areas.join(', ') }}</span>
                 </div>
               </div>
             </div>
 
-            <div v-if="strategyResult.study_tips && strategyResult.study_tips.length" class="info-card expanded">
-              <h4 class="info-label">💡 学习建议</h4>
+            <div
+              v-if="strategyResult.study_tips && strategyResult.study_tips.length"
+              class="info-card expanded"
+            >
+              <h4 class="info-label">
+                💡 学习建议
+              </h4>
               <ul class="tips-list">
-                <li v-for="(tip, idx) in strategyResult.study_tips" :key="idx">{{ tip }}</li>
+                <li
+                  v-for="(tip, idx) in strategyResult.study_tips"
+                  :key="idx"
+                >
+                  {{ tip }}
+                </li>
               </ul>
             </div>
 
-            <div v-if="strategyResult.encouragement" class="info-card encouragement-card">
-              <p class="encouragement-text">💪 {{ strategyResult.encouragement }}</p>
+            <div
+              v-if="strategyResult.encouragement"
+              class="info-card encouragement-card"
+            >
+              <p class="encouragement-text">
+                💪 {{ strategyResult.encouragement }}
+              </p>
             </div>
           </div>
         </div>
       </div>
 
       <!-- 薄弱单词 -->
-      <div v-if="activeTab === 'weak'" class="tab-content">
+      <div
+        v-if="activeTab === 'weak'"
+        class="tab-content"
+      >
         <div class="weak-section">
-          <h3 class="section-title">📉 需要加强的单词</h3>
+          <h3 class="section-title">
+            📉 需要加强的单词
+          </h3>
 
-          <div v-if="weakWords.length === 0" class="empty-state">
-            <svg class="w-16 h-16 mx-auto mb-4 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+          <div
+            v-if="weakWords.length === 0"
+            class="empty-state"
+          >
+            <svg
+              class="w-16 h-16 mx-auto mb-4 text-gray-300"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd"
+              />
             </svg>
-            <p class="text-gray-500">太棒了！没有薄弱单词</p>
+            <p class="text-gray-500">
+              太棒了！没有薄弱单词
+            </p>
           </div>
 
-          <div v-else class="weak-words-list">
+          <div
+            v-else
+            class="weak-words-list"
+          >
             <div
               v-for="word in weakWords.slice(0, 10)"
               :key="word.id"
@@ -265,11 +534,13 @@
                   遗忘 {{ getForgetCount(word.id) }} 个
                 </span>
               </div>
-              <p class="weak-word-meaning">{{ word.meaning }}</p>
+              <p class="weak-word-meaning">
+                {{ word.meaning }}
+              </p>
               <button
-                @click="analyzeWeakWord(word)"
                 :disabled="isAnalyzingWeak || !isAvailable"
                 class="btn-analyze-weak"
+                @click="analyzeWeakWord(word)"
               >
                 AI 分析
               </button>

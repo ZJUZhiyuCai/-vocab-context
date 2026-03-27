@@ -3,26 +3,33 @@
     <!-- Glass Card -->
     <div class="group relative">
       <!-- Glow Effect -->
-      <div class="absolute -inset-1 bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500 rounded-[28px] opacity-15 group-hover:opacity-25 blur-xl transition-all duration-500"></div>
+      <div class="absolute -inset-1 bg-gradient-to-r from-violet-500 via-purple-500 to-fuchsia-500 rounded-[28px] opacity-15 group-hover:opacity-25 blur-xl transition-all duration-500" />
 
       <!-- Card -->
-      <div :class="[
-        'relative backdrop-blur-xl border rounded-3xl p-6 md:p-8 shadow-2xl transform transition-all duration-500',
-        isDark ? 'bg-slate-800/70 border-white/10' : 'bg-white/80 border-black/10 shadow-lg'
-      ]">
+      <div
+        :class="[
+          'relative backdrop-blur-xl border rounded-3xl p-6 md:p-8 shadow-2xl transform transition-all duration-500',
+          isDark ? 'bg-slate-800/70 border-white/10' : 'bg-white/80 border-black/10 shadow-lg'
+        ]"
+      >
         <!-- Header -->
         <div class="flex items-center justify-between gap-3 mb-6">
           <div class="flex items-center gap-3">
-            <span :class="[
-              'inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold',
-              isDark ? 'bg-violet-500/10 border border-violet-500/20 text-violet-400' : 'bg-violet-100 border border-violet-300 text-violet-700'
-            ]">
+            <span
+              :class="[
+                'inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold',
+                isDark ? 'bg-violet-500/10 border border-violet-500/20 text-violet-400' : 'bg-violet-100 border border-violet-300 text-violet-700'
+              ]"
+            >
               {{ promptTypeLabel }}
             </span>
-            <span v-if="task.topic" :class="[
-              'inline-flex items-center px-3 py-1 rounded-full text-xs font-medium',
-              isDark ? 'bg-emerald-500/10 text-emerald-400' : 'bg-emerald-100 text-emerald-700'
-            ]">
+            <span
+              v-if="task.topic"
+              :class="[
+                'inline-flex items-center px-3 py-1 rounded-full text-xs font-medium',
+                isDark ? 'bg-emerald-500/10 text-emerald-400' : 'bg-emerald-100 text-emerald-700'
+              ]"
+            >
               {{ topicLabel }}
             </span>
           </div>
@@ -42,7 +49,10 @@
         </div>
 
         <!-- Collocations -->
-        <div v-if="task.collocations && task.collocations.length > 0" class="mb-6">
+        <div
+          v-if="task.collocations && task.collocations.length > 0"
+          class="mb-6"
+        >
           <p :class="['text-xs font-semibold uppercase tracking-wider mb-2', isDark ? 'text-gray-400' : 'text-gray-500']">
             常用搭配
           </p>
@@ -63,23 +73,33 @@
         </div>
 
         <!-- Paraphrase Hint -->
-        <div v-if="task.paraphrase" class="mb-6">
+        <div
+          v-if="task.paraphrase"
+          class="mb-6"
+        >
           <p :class="['text-xs font-semibold uppercase tracking-wider mb-2', isDark ? 'text-gray-400' : 'text-gray-500']">
             同义替换
           </p>
-          <div :class="[
-            'inline-flex items-center px-4 py-2 rounded-xl border',
-            isDark
-              ? 'bg-amber-500/10 border-amber-500/20 text-amber-300'
-              : 'bg-amber-50 border-amber-200 text-amber-700'
-          ]">
+          <div
+            :class="[
+              'inline-flex items-center px-4 py-2 rounded-xl border',
+              isDark
+                ? 'bg-amber-500/10 border-amber-500/20 text-amber-300'
+                : 'bg-amber-50 border-amber-200 text-amber-700'
+            ]"
+          >
             <span class="text-sm font-medium">{{ task.paraphrase }}</span>
           </div>
         </div>
 
         <!-- Reference Context -->
-        <div v-if="task.referenceContext" :class="['p-4 rounded-xl border mb-6', isDark ? 'bg-slate-700/30 border-white/5' : 'bg-gray-50 border-gray-200']">
-          <p :class="['text-xs font-medium mb-1', isDark ? 'text-gray-400' : 'text-gray-600']">例句参考：</p>
+        <div
+          v-if="task.referenceContext"
+          :class="['p-4 rounded-xl border mb-6', isDark ? 'bg-slate-700/30 border-white/5' : 'bg-gray-50 border-gray-200']"
+        >
+          <p :class="['text-xs font-medium mb-1', isDark ? 'text-gray-400' : 'text-gray-600']">
+            例句参考：
+          </p>
           <p :class="['text-sm leading-7', isDark ? 'text-gray-300' : 'text-gray-700']">
             {{ task.referenceContext.text }}
           </p>
@@ -94,7 +114,10 @@
             <p :class="['text-sm leading-7', isDark ? 'text-violet-200/80' : 'text-violet-800']">
               {{ task.prompt?.instruction || '用这个词写一个句子。' }}
             </p>
-            <p v-if="task.prompt?.hint" :class="['text-xs mt-2', isDark ? 'text-violet-400/60' : 'text-violet-600']">
+            <p
+              v-if="task.prompt?.hint"
+              :class="['text-xs mt-2', isDark ? 'text-violet-400/60' : 'text-violet-600']"
+            >
               {{ task.prompt.hint }}
             </p>
           </div>
@@ -112,12 +135,15 @@
                 ? 'bg-slate-700/50 border-white/10 text-white placeholder-gray-500'
                 : 'bg-white border-gray-300 text-gray-900 placeholder-gray-400'
             ]"
-          ></textarea>
+          />
           <div class="flex items-center justify-between mt-2">
             <p :class="['text-xs', isDark ? 'text-gray-500' : 'text-gray-500']">
               {{ outputText.length }} 字符
             </p>
-            <p v-if="task.prompt?.mode === 'speaking'" :class="['text-xs', isDark ? 'text-gray-500' : 'text-gray-500']">
+            <p
+              v-if="task.prompt?.mode === 'speaking'"
+              :class="['text-xs', isDark ? 'text-gray-500' : 'text-gray-500']"
+            >
               口语任务：可练习口述或记录要点
             </p>
           </div>
@@ -126,18 +152,17 @@
         <!-- Actions -->
         <div class="flex gap-3">
           <button
-            @click="handleSkip"
             :class="[
               'flex-1 py-4 rounded-2xl border font-semibold transition-all active:scale-[0.98]',
               isDark
                 ? 'bg-slate-700/50 border-white/10 text-gray-300 hover:border-gray-500'
                 : 'bg-gray-100 border-gray-300 text-gray-700 hover:border-gray-400'
             ]"
+            @click="handleSkip"
           >
             跳过
           </button>
           <button
-            @click="handleSubmit"
             :disabled="!outputText.trim()"
             :class="[
               'flex-1 py-4 rounded-2xl font-semibold shadow-lg transition-all active:scale-[0.98]',
@@ -145,6 +170,7 @@
                 ? 'bg-violet-600 text-white shadow-violet-500/25 hover:shadow-violet-500/40 hover:scale-[1.02]'
                 : 'bg-gray-400 text-gray-200 cursor-not-allowed'
             ]"
+            @click="handleSubmit"
           >
             提交
           </button>

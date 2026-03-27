@@ -36,13 +36,13 @@
           </p>
         </div>
         <button
-          @click="exitSession"
           :class="[
             'session-shell-action',
             isDark
               ? 'bg-white/5 border-white/10 text-gray-300 hover:border-emerald-500/30 hover:text-emerald-400'
               : 'bg-gray-100 border-gray-200 text-gray-700 hover:border-emerald-500/30 hover:text-emerald-600'
           ]"
+          @click="exitSession"
         >
           返回概览
         </button>
@@ -59,7 +59,10 @@
       </div>
     </div>
 
-    <div v-else class="space-y-6">
+    <div
+      v-else
+      class="space-y-6"
+    >
       <section :class="['hero-card', isDark ? 'dark' : 'light']">
         <div class="hero-copy">
           <div class="hero-badges">
@@ -86,10 +89,23 @@
             </p>
           </div>
 
-          <div v-if="lastSummary" :class="['last-summary', isDark ? 'dark' : 'light']">
+          <div
+            v-if="lastSummary"
+            :class="['last-summary', isDark ? 'dark' : 'light']"
+          >
             <div class="w-10 h-10 rounded-xl flex items-center justify-center bg-emerald-500/15 text-emerald-400">
-              <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
               </svg>
             </div>
             <div>
@@ -102,29 +118,36 @@
 
         <div class="hero-actions">
           <button
-            @click="startSession"
             class="btn-primary w-full sm:w-auto"
             :disabled="!hasEligibleBundles"
+            @click="startSession"
           >
             开始 5 词
           </button>
           <button
-            @click="$emit('navigate', 'today')"
             :class="[
               'btn-secondary w-full sm:w-auto',
               isDark ? 'dark' : 'light'
             ]"
+            @click="$emit('navigate', 'today')"
           >
             回到今日学习
           </button>
         </div>
       </section>
 
-      <section v-if="isIeltsTrack" :class="['content-card', isDark ? 'dark' : 'light']">
+      <section
+        v-if="isIeltsTrack"
+        :class="['content-card', isDark ? 'dark' : 'light']"
+      >
         <div class="section-heading path-heading">
           <div>
-            <h2 class="section-title">IELTS 学习路径</h2>
-            <p class="section-description">先基础，再主题，再广度。</p>
+            <h2 class="section-title">
+              IELTS 学习路径
+            </h2>
+            <p class="section-description">
+              先基础，再主题，再广度。
+            </p>
           </div>
         </div>
 
@@ -147,13 +170,23 @@
           </div>
 
           <div class="path-gate-grid">
-            <div v-for="gate in pathCoach.gates" :key="gate.key" :class="['path-gate-card', gate.status, isDark ? 'dark' : 'light']">
+            <div
+              v-for="gate in pathCoach.gates"
+              :key="gate.key"
+              :class="['path-gate-card', gate.status, isDark ? 'dark' : 'light']"
+            >
               <div class="path-gate-top">
-                <p :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">{{ gate.title }}</p>
+                <p :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">
+                  {{ gate.title }}
+                </p>
                 <span class="path-gate-state">{{ gate.statusLabel }}</span>
               </div>
-              <p :class="['text-xs mt-2 leading-6', isDark ? 'text-gray-400' : 'text-gray-600']">{{ gate.detail }}</p>
-              <p :class="['text-xs mt-2', isDark ? 'text-gray-500' : 'text-gray-500']">目标：{{ gate.target }}</p>
+              <p :class="['text-xs mt-2 leading-6', isDark ? 'text-gray-400' : 'text-gray-600']">
+                {{ gate.detail }}
+              </p>
+              <p :class="['text-xs mt-2', isDark ? 'text-gray-500' : 'text-gray-500']">
+                目标：{{ gate.target }}
+              </p>
             </div>
           </div>
         </div>
@@ -162,8 +195,12 @@
           <div class="track-group">
             <div class="track-group-header">
               <div>
-                <h3 :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">Foundation</h3>
-                <p :class="['text-xs mt-1', isDark ? 'text-gray-400' : 'text-gray-600']">高迁移基础词。</p>
+                <h3 :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">
+                  Foundation
+                </h3>
+                <p :class="['text-xs mt-1', isDark ? 'text-gray-400' : 'text-gray-600']">
+                  高迁移基础词。
+                </p>
               </div>
             </div>
             <div class="track-grid foundation-grid">
@@ -174,21 +211,28 @@
               >
                 <div class="track-card-top">
                   <span :class="['track-pill', isDark ? 'dark' : 'light']">Foundation</span>
-                  <span v-if="isCurrentTrack(vocab)" class="track-current">当前词库</span>
+                  <span
+                    v-if="isCurrentTrack(vocab)"
+                    class="track-current"
+                  >当前词库</span>
                 </div>
-                <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">{{ vocab.name }}</h4>
-                <p :class="['track-description', isDark ? 'text-gray-400' : 'text-gray-600']">{{ compactTrackDescription(vocab) }}</p>
+                <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">
+                  {{ vocab.name }}
+                </h4>
+                <p :class="['track-description', isDark ? 'text-gray-400' : 'text-gray-600']">
+                  {{ compactTrackDescription(vocab) }}
+                </p>
                 <div class="track-meta">
                   <span>{{ vocab.size }} 词</span>
                   <span>{{ vocab.difficulty?.label }}</span>
                 </div>
                 <button
-                  @click="handleTrackAction(vocab)"
                   :class="[
                     'track-action',
                     isCurrentTrack(vocab) ? 'primary' : 'secondary',
                     isDark ? 'dark' : 'light'
                   ]"
+                  @click="handleTrackAction(vocab)"
                 >
                   {{ trackActionLabel(vocab) }}
                 </button>
@@ -199,8 +243,12 @@
           <div class="track-group">
             <div class="track-group-header">
               <div>
-                <h3 :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">Topic Packs</h3>
-                <p :class="['text-xs mt-1', isDark ? 'text-gray-400' : 'text-gray-600']">按题材补覆盖。</p>
+                <h3 :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">
+                  Topic Packs
+                </h3>
+                <p :class="['text-xs mt-1', isDark ? 'text-gray-400' : 'text-gray-600']">
+                  按题材补覆盖。
+                </p>
               </div>
             </div>
             <div class="topic-sections">
@@ -217,21 +265,28 @@
                   >
                     <div class="track-card-top">
                       <span :class="['track-pill', isDark ? 'dark' : 'light']">{{ topicLabel(vocab.topic) }}</span>
-                      <span v-if="isCurrentTrack(vocab)" class="track-current">当前词库</span>
+                      <span
+                        v-if="isCurrentTrack(vocab)"
+                        class="track-current"
+                      >当前词库</span>
                     </div>
-                    <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">{{ vocab.name }}</h4>
-                    <p :class="['track-description', isDark ? 'text-gray-400' : 'text-gray-600']">{{ compactTrackDescription(vocab) }}</p>
+                    <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">
+                      {{ vocab.name }}
+                    </h4>
+                    <p :class="['track-description', isDark ? 'text-gray-400' : 'text-gray-600']">
+                      {{ compactTrackDescription(vocab) }}
+                    </p>
                     <div class="track-meta">
                       <span>{{ vocab.size }} 词</span>
                       <span>{{ vocab.difficulty?.label }}</span>
                     </div>
                     <button
-                      @click="handleTrackAction(vocab)"
                       :class="[
                         'track-action',
                         isCurrentTrack(vocab) ? 'primary' : 'secondary',
                         isDark ? 'dark' : 'light'
                       ]"
+                      @click="handleTrackAction(vocab)"
                     >
                       {{ trackActionLabel(vocab) }}
                     </button>
@@ -239,7 +294,10 @@
                 </div>
               </div>
 
-              <div v-if="extendedTopicTracks.length" class="topic-subgroup">
+              <div
+                v-if="extendedTopicTracks.length"
+                class="topic-subgroup"
+              >
                 <div class="topic-subgroup-header">
                   <span :class="['topic-subgroup-pill', isDark ? 'dark' : 'light']">Extended Topics</span>
                   <span :class="['topic-subgroup-copy', isDark ? 'text-gray-400' : 'text-gray-600']">健康、工作、媒体、犯罪等补充视角。</span>
@@ -252,21 +310,28 @@
                   >
                     <div class="track-card-top">
                       <span :class="['track-pill', isDark ? 'dark' : 'light']">{{ topicLabel(vocab.topic) }}</span>
-                      <span v-if="isCurrentTrack(vocab)" class="track-current">当前词库</span>
+                      <span
+                        v-if="isCurrentTrack(vocab)"
+                        class="track-current"
+                      >当前词库</span>
                     </div>
-                    <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">{{ vocab.name }}</h4>
-                    <p :class="['track-description', isDark ? 'text-gray-400' : 'text-gray-600']">{{ compactTrackDescription(vocab) }}</p>
+                    <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">
+                      {{ vocab.name }}
+                    </h4>
+                    <p :class="['track-description', isDark ? 'text-gray-400' : 'text-gray-600']">
+                      {{ compactTrackDescription(vocab) }}
+                    </p>
                     <div class="track-meta">
                       <span>{{ vocab.size }} 词</span>
                       <span>{{ vocab.difficulty?.label }}</span>
                     </div>
                     <button
-                      @click="handleTrackAction(vocab)"
                       :class="[
                         'track-action',
                         isCurrentTrack(vocab) ? 'primary' : 'secondary',
                         isDark ? 'dark' : 'light'
                       ]"
+                      @click="handleTrackAction(vocab)"
                     >
                       {{ trackActionLabel(vocab) }}
                     </button>
@@ -279,8 +344,12 @@
           <div class="track-group">
             <div class="track-group-header">
               <div>
-                <h3 :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">Legacy Breadth</h3>
-                <p :class="['text-xs mt-1', isDark ? 'text-gray-400' : 'text-gray-600']">旧版词库补广度。</p>
+                <h3 :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">
+                  Legacy Breadth
+                </h3>
+                <p :class="['text-xs mt-1', isDark ? 'text-gray-400' : 'text-gray-600']">
+                  旧版词库补广度。
+                </p>
               </div>
             </div>
             <div class="track-grid compact">
@@ -291,21 +360,28 @@
               >
                 <div class="track-card-top">
                   <span :class="['track-pill', isDark ? 'dark' : 'light']">Legacy</span>
-                  <span v-if="isCurrentTrack(vocab)" class="track-current">当前词库</span>
+                  <span
+                    v-if="isCurrentTrack(vocab)"
+                    class="track-current"
+                  >当前词库</span>
                 </div>
-                <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">{{ vocab.name }}</h4>
-                <p :class="['track-description', isDark ? 'text-gray-400' : 'text-gray-600']">{{ compactTrackDescription(vocab) }}</p>
+                <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">
+                  {{ vocab.name }}
+                </h4>
+                <p :class="['track-description', isDark ? 'text-gray-400' : 'text-gray-600']">
+                  {{ compactTrackDescription(vocab) }}
+                </p>
                 <div class="track-meta">
                   <span>{{ vocab.size }} 词</span>
                   <span>{{ vocab.difficulty?.label }}</span>
                 </div>
                 <button
-                  @click="handleTrackAction(vocab)"
                   :class="[
                     'track-action',
                     isCurrentTrack(vocab) ? 'primary' : 'secondary',
                     isDark ? 'dark' : 'light'
                   ]"
+                  @click="handleTrackAction(vocab)"
                 >
                   {{ trackActionLabel(vocab) }}
                 </button>
@@ -317,8 +393,12 @@
           <div class="track-group output-studio-entry">
             <div class="track-group-header">
               <div>
-                <h3 :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">Output Studio</h3>
-                <p :class="['text-xs mt-1', isDark ? 'text-gray-400' : 'text-gray-600']">专注产出练习：写作、口语、改写。</p>
+                <h3 :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">
+                  Output Studio
+                </h3>
+                <p :class="['text-xs mt-1', isDark ? 'text-gray-400' : 'text-gray-600']">
+                  专注产出练习：写作、口语、改写。
+                </p>
               </div>
             </div>
             <div class="output-studio-card-wrapper">
@@ -326,7 +406,9 @@
                 <div class="track-card-top">
                   <span :class="['track-pill track-pill-violet', isDark ? 'dark' : 'light']">Production</span>
                 </div>
-                <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">产出工作室</h4>
+                <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">
+                  产出工作室
+                </h4>
                 <p :class="['track-description', isDark ? 'text-gray-400' : 'text-gray-600']">
                   把词真正用出来：写句子、练口语框架、做改写练习。
                 </p>
@@ -335,8 +417,8 @@
                   <span>Foundation + Topics</span>
                 </div>
                 <button
-                  @click="enterOutputStudio"
                   :class="['track-action track-action-violet', isDark ? 'dark' : 'light']"
+                  @click="enterOutputStudio"
                 >
                   进入工作室
                 </button>
@@ -348,8 +430,12 @@
           <div class="track-group exam-drills-entry">
             <div class="track-group-header">
               <div>
-                <h3 :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">Exam Drills</h3>
-                <p :class="['text-xs mt-1', isDark ? 'text-gray-400' : 'text-gray-600']">考试模拟：混合题型、实战压力。</p>
+                <h3 :class="['text-sm font-semibold', isDark ? 'text-white' : 'text-slate-900']">
+                  Exam Drills
+                </h3>
+                <p :class="['text-xs mt-1', isDark ? 'text-gray-400' : 'text-gray-600']">
+                  考试模拟：混合题型、实战压力。
+                </p>
               </div>
             </div>
             <div class="exam-drills-card-wrapper">
@@ -357,7 +443,9 @@
                 <div class="track-card-top">
                   <span :class="['track-pill track-pill-rose', isDark ? 'dark' : 'light']">Exam</span>
                 </div>
-                <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">考试模拟练习</h4>
+                <h4 :class="['track-title', isDark ? 'text-white' : 'text-slate-900']">
+                  考试模拟练习
+                </h4>
                 <p :class="['track-description', isDark ? 'text-gray-400' : 'text-gray-600']">
                   阅读改写、听力转述、写作论证、口语框架。在考试压力下运用词汇。
                 </p>
@@ -366,8 +454,8 @@
                   <span>混合题型</span>
                 </div>
                 <button
-                  @click="enterExamDrills"
                   :class="['track-action track-action-rose', isDark ? 'dark' : 'light']"
+                  @click="enterExamDrills"
                 >
                   开始模拟
                 </button>
@@ -379,29 +467,52 @@
 
       <div class="stats-grid">
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value text-emerald-500">{{ eligibleBundles.length }}</div>
-          <div class="stat-label">可练习</div>
+          <div class="stat-value text-emerald-500">
+            {{ eligibleBundles.length }}
+          </div>
+          <div class="stat-label">
+            可练习
+          </div>
         </div>
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value text-cyan-500">{{ dueBundles.length }}</div>
-          <div class="stat-label">到期</div>
+          <div class="stat-value text-cyan-500">
+            {{ dueBundles.length }}
+          </div>
+          <div class="stat-label">
+            到期
+          </div>
         </div>
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value text-violet-500">{{ history.accuracy }}%</div>
-          <div class="stat-label">历史正确率</div>
+          <div class="stat-value text-violet-500">
+            {{ history.accuracy }}%
+          </div>
+          <div class="stat-label">
+            历史正确率
+          </div>
         </div>
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value text-amber-500">{{ history.sessions }}</div>
-          <div class="stat-label">累计轮次</div>
+          <div class="stat-value text-amber-500">
+            {{ history.sessions }}
+          </div>
+          <div class="stat-label">
+            累计轮次
+          </div>
         </div>
       </div>
 
-      <div v-if="hasEligibleBundles" class="grid xl:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.9fr)] gap-6">
+      <div
+        v-if="hasEligibleBundles"
+        class="grid xl:grid-cols-[minmax(0,1.35fr)_minmax(320px,0.9fr)] gap-6"
+      >
         <section :class="['content-card', isDark ? 'dark' : 'light']">
           <div class="section-heading">
             <div>
-              <h2 class="section-title">本次如何开练</h2>
-              <p class="section-description">建议先做 5 词短轮。</p>
+              <h2 class="section-title">
+                本次如何开练
+              </h2>
+              <p class="section-description">
+                建议先做 5 词短轮。
+              </p>
             </div>
           </div>
 
@@ -409,18 +520,20 @@
             <button
               v-for="option in sessionSizeOptions"
               :key="option.value"
-              @click="setSessionSize(option.value)"
               :class="[
                 'size-card',
                 sessionSize === option.value ? 'active' : '',
                 isDark ? 'dark' : 'light'
               ]"
+              @click="setSessionSize(option.value)"
             >
               <div class="size-card-head">
                 <span class="size-card-value">{{ option.value }}</span>
                 <span class="size-card-unit">词</span>
               </div>
-              <div class="size-card-label">{{ option.label }}</div>
+              <div class="size-card-label">
+                {{ option.label }}
+              </div>
             </button>
           </div>
 
@@ -434,7 +547,10 @@
                   先到期词，再高质量主题词。
                 </p>
               </div>
-              <button @click="startSession" class="btn-primary">
+              <button
+                class="btn-primary"
+                @click="startSession"
+              >
                 立即开始
               </button>
             </div>
@@ -475,13 +591,19 @@
         <section :class="['content-card', isDark ? 'dark' : 'light']">
           <div class="section-heading">
             <div>
-              <h2 class="section-title">学习状态</h2>
-              <p class="section-description">轻量看进展。</p>
+              <h2 class="section-title">
+                学习状态
+              </h2>
+              <p class="section-description">
+                轻量看进展。
+              </p>
             </div>
           </div>
 
           <div :class="['insight-panel', isDark ? 'dark' : 'light']">
-            <p :class="['text-sm font-semibold mb-3', isDark ? 'text-white' : 'text-slate-900']">这一轮怎么学</p>
+            <p :class="['text-sm font-semibold mb-3', isDark ? 'text-white' : 'text-slate-900']">
+              这一轮怎么学
+            </p>
             <div class="principle-row">
               <span :class="['principle-pill', isDark ? 'dark' : 'light']">先语境</span>
               <span :class="['principle-pill', isDark ? 'dark' : 'light']">再改写</span>
@@ -510,22 +632,43 @@
             </p>
             <div class="history-grid">
               <div>
-                <p class="history-value">{{ history.totalBundles }}</p>
-                <p class="history-label">完成词数</p>
+                <p class="history-value">
+                  {{ history.totalBundles }}
+                </p>
+                <p class="history-label">
+                  完成词数
+                </p>
               </div>
               <div>
-                <p class="history-value">{{ history.totalCorrect }}</p>
-                <p class="history-label">正确动作</p>
+                <p class="history-value">
+                  {{ history.totalCorrect }}
+                </p>
+                <p class="history-label">
+                  正确动作
+                </p>
               </div>
             </div>
           </div>
         </section>
       </div>
 
-      <section v-else :class="['empty-card', isDark ? 'dark' : 'light']">
+      <section
+        v-else
+        :class="['empty-card', isDark ? 'dark' : 'light']"
+      >
         <div class="empty-icon">
-          <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.168.477-4.5 1.253" />
+          <svg
+            class="w-10 h-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.8"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.168.477-4.5 1.253"
+            />
           </svg>
         </div>
         <h2 :class="['text-2xl font-bold', isDark ? 'text-white' : 'text-slate-900']">
@@ -535,15 +678,18 @@
           可以先去今日学习积累更多词，或者切换到已经完成 Context Bundle 改造的 IELTS Core 词库，再回来进行语境优先训练。
         </p>
         <div class="flex flex-wrap justify-center gap-3">
-          <button @click="$emit('navigate', 'today')" class="btn-primary">
+          <button
+            class="btn-primary"
+            @click="$emit('navigate', 'today')"
+          >
             去今日学习
           </button>
           <button
-            @click="$emit('navigate', 'quiz')"
             :class="[
               'btn-secondary',
               isDark ? 'dark' : 'light'
             ]"
+            @click="$emit('navigate', 'quiz')"
           >
             去测验页看看
           </button>

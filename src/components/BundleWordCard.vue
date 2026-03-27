@@ -40,12 +40,18 @@
 
       <div class="grid md:grid-cols-2 gap-4 mb-4">
         <section :class="panelClass">
-          <div class="section-title">Sense</div>
-          <p :class="textClass">{{ word?.sense || 'No sense available yet.' }}</p>
+          <div class="section-title">
+            Sense
+          </div>
+          <p :class="textClass">
+            {{ word?.sense || 'No sense available yet.' }}
+          </p>
         </section>
 
         <section :class="panelClass">
-          <div class="section-title">Paraphrases</div>
+          <div class="section-title">
+            Paraphrases
+          </div>
           <div class="flex flex-wrap gap-2">
             <span
               v-for="paraphrase in word?.paraphrases || []"
@@ -54,13 +60,18 @@
             >
               {{ paraphrase }}
             </span>
-            <span v-if="!(word?.paraphrases || []).length" class="text-sm text-gray-500">No paraphrases yet.</span>
+            <span
+              v-if="!(word?.paraphrases || []).length"
+              class="text-sm text-gray-500"
+            >No paraphrases yet.</span>
           </div>
         </section>
       </div>
 
       <section :class="[panelClass, 'mb-4']">
-        <div class="section-title">Collocations</div>
+        <div class="section-title">
+          Collocations
+        </div>
         <div class="flex flex-wrap gap-2">
           <span
             v-for="collocation in word?.collocations || []"
@@ -69,7 +80,10 @@
           >
             {{ collocation }}
           </span>
-          <span v-if="!(word?.collocations || []).length" class="text-sm text-gray-500">No collocations yet.</span>
+          <span
+            v-if="!(word?.collocations || []).length"
+            class="text-sm text-gray-500"
+          >No collocations yet.</span>
         </div>
       </section>
 
@@ -87,25 +101,54 @@
           </button>
         </div>
 
-        <div v-if="activeContexts.length" class="space-y-3">
+        <div
+          v-if="activeContexts.length"
+          class="space-y-3"
+        >
           <article
             v-for="(context, index) in activeContexts"
             :key="`${context.kind}-${index}`"
             :class="['rounded-2xl p-4 border', isDark ? 'bg-slate-900/50 border-white/5' : 'bg-gray-50 border-gray-200']"
           >
-            <div class="text-[11px] uppercase tracking-wider text-gray-500 mb-2">{{ context.purpose || 'context' }}</div>
-            <p :class="textClass">{{ context.text }}</p>
-            <p v-if="context.translation" class="mt-2 text-sm text-gray-500">{{ context.translation }}</p>
+            <div class="text-[11px] uppercase tracking-wider text-gray-500 mb-2">
+              {{ context.purpose || 'context' }}
+            </div>
+            <p :class="textClass">
+              {{ context.text }}
+            </p>
+            <p
+              v-if="context.translation"
+              class="mt-2 text-sm text-gray-500"
+            >
+              {{ context.translation }}
+            </p>
           </article>
         </div>
 
-        <p v-else class="text-sm text-gray-500">No contexts available.</p>
+        <p
+          v-else
+          class="text-sm text-gray-500"
+        >
+          No contexts available.
+        </p>
       </section>
 
       <section :class="panelClass">
-        <div class="section-title">Production Prompt</div>
-        <p v-if="word?.productionPrompt?.instruction" :class="textClass">{{ word.productionPrompt.instruction }}</p>
-        <p v-else class="text-sm text-gray-500">No production prompt yet.</p>
+        <div class="section-title">
+          Production Prompt
+        </div>
+        <p
+          v-if="word?.productionPrompt?.instruction"
+          :class="textClass"
+        >
+          {{ word.productionPrompt.instruction }}
+        </p>
+        <p
+          v-else
+          class="text-sm text-gray-500"
+        >
+          No production prompt yet.
+        </p>
       </section>
     </div>
   </div>

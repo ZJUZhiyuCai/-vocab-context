@@ -2,11 +2,16 @@
   <aside class="stats-panel w-72 flex flex-col gap-4">
     <!-- 今日统计卡片 -->
     <div class="stat-card">
-      <h3 class="text-sm font-medium text-gray-700 mb-3">今日统计</h3>
+      <h3 class="text-sm font-medium text-gray-700 mb-3">
+        今日统计
+      </h3>
       <div class="space-y-3">
         <div class="flex justify-between items-center">
           <span class="text-sm text-gray-600">新学单词</span>
-          <span class="text-lg font-bold" style="color: #5c6b5c">{{ todayStats.newWords }}</span>
+          <span
+            class="text-lg font-bold"
+            style="color: #5c6b5c"
+          >{{ todayStats.newWords }}</span>
         </div>
         <div class="flex justify-between items-center">
           <span class="text-sm text-gray-600">复习单词</span>
@@ -25,7 +30,9 @@
 
     <!-- 学习热力图 -->
     <div class="stat-card">
-      <h3 class="text-sm font-medium text-gray-700 mb-3">学习热力图</h3>
+      <h3 class="text-sm font-medium text-gray-700 mb-3">
+        学习热力图
+      </h3>
       <div class="grid grid-cols-7 gap-1">
         <div
           v-for="(day, index) in heatmap"
@@ -33,15 +40,27 @@
           class="aspect-square rounded"
           :class="getHeatmapColor(day.count)"
           :title="`${day.label}: ${day.count}个单词`"
-        ></div>
+        />
       </div>
       <div class="flex justify-between items-center mt-2 text-xs text-gray-500">
         <span>少</span>
         <div class="flex gap-1">
-          <div class="w-3 h-3 rounded" style="background-color: #f5f5f4"></div>
-          <div class="w-3 h-3 rounded" style="background-color: #d1d5db"></div>
-          <div class="w-3 h-3 rounded" style="background-color: #5c6b5c"></div>
-          <div class="w-3 h-3 rounded" style="background-color: #3d4a3d"></div>
+          <div
+            class="w-3 h-3 rounded"
+            style="background-color: #f5f5f4"
+          />
+          <div
+            class="w-3 h-3 rounded"
+            style="background-color: #d1d5db"
+          />
+          <div
+            class="w-3 h-3 rounded"
+            style="background-color: #5c6b5c"
+          />
+          <div
+            class="w-3 h-3 rounded"
+            style="background-color: #3d4a3d"
+          />
         </div>
         <span>多</span>
       </div>
@@ -52,7 +71,9 @@
 
     <!-- 成就徽章 -->
     <div class="stat-card">
-      <h3 class="text-sm font-medium text-gray-700 mb-3">成就</h3>
+      <h3 class="text-sm font-medium text-gray-700 mb-3">
+        成就
+      </h3>
       <div class="grid grid-cols-3 gap-2">
         <div
           v-for="achievement in achievements"
@@ -61,15 +82,21 @@
           :class="{ 'unlocked': achievement.unlocked }"
           :title="achievement.description"
         >
-          <div class="text-2xl">{{ achievement.icon }}</div>
-          <div class="text-xs mt-1">{{ achievement.name }}</div>
+          <div class="text-2xl">
+            {{ achievement.icon }}
+          </div>
+          <div class="text-xs mt-1">
+            {{ achievement.name }}
+          </div>
         </div>
       </div>
     </div>
 
     <!-- 学习提示 -->
     <div class="stat-card bg-gradient-to-br from-blue-50 to-sage-50">
-      <h3 class="text-sm font-medium text-gray-700 mb-2">学习提示</h3>
+      <h3 class="text-sm font-medium text-gray-700 mb-2">
+        学习提示
+      </h3>
       <p class="text-xs text-gray-600 leading-relaxed">
         {{ tip }}
       </p>
@@ -77,7 +104,9 @@
 
     <!-- 单词来源 -->
     <div class="stat-card">
-      <h3 class="text-sm font-medium text-gray-700 mb-3">单词来源</h3>
+      <h3 class="text-sm font-medium text-gray-700 mb-3">
+        单词来源
+      </h3>
       <div class="text-xs text-gray-600 space-y-1">
         <p>雅思高频词汇</p>
         <p>学术英语常用词</p>

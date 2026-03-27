@@ -2,8 +2,12 @@
   <aside class="sidebar w-60 bg-white border-r border-gray-200 flex flex-col">
     <!-- Logo区域 -->
     <div class="p-6 border-b border-gray-100">
-      <h1 class="text-xl font-bold text-sage-500">VocabMan</h1>
-      <p class="text-xs text-gray-500 mt-1">语境词汇学习</p>
+      <h1 class="text-xl font-bold text-sage-500">
+        VocabMan
+      </h1>
+      <p class="text-xs text-gray-500 mt-1">
+        语境词汇学习
+      </p>
     </div>
 
     <!-- 导航菜单 -->
@@ -12,9 +16,9 @@
         <li>
           <a
             href="#"
-            @click.prevent="$emit('navigate', 'today')"
             class="nav-item"
             :class="{ 'active': currentPage === 'today' }"
+            @click.prevent="$emit('navigate', 'today')"
           >
             <span class="text-xl">📖</span>
             <span>今日学习</span>
@@ -23,21 +27,24 @@
         <li>
           <a
             href="#"
-            @click.prevent="$emit('navigate', 'review')"
             class="nav-item"
             :class="{ 'active': currentPage === 'review' }"
+            @click.prevent="$emit('navigate', 'review')"
           >
             <span class="text-xl">🔄</span>
             <span>复习列表</span>
-            <span v-if="reviewCount > 0" class="badge">{{ reviewCount }}</span>
+            <span
+              v-if="reviewCount > 0"
+              class="badge"
+            >{{ reviewCount }}</span>
           </a>
         </li>
         <li>
           <a
             href="#"
-            @click.prevent="$emit('navigate', 'wordbook')"
             class="nav-item"
             :class="{ 'active': currentPage === 'wordbook' }"
+            @click.prevent="$emit('navigate', 'wordbook')"
           >
             <span class="text-xl">📓</span>
             <span>单词本</span>
@@ -46,9 +53,9 @@
         <li>
           <a
             href="#"
-            @click.prevent="$emit('navigate', 'quiz')"
             class="nav-item"
             :class="{ 'active': currentPage === 'quiz' }"
+            @click.prevent="$emit('navigate', 'quiz')"
           >
             <span class="text-xl">🎯</span>
             <span>测验</span>
@@ -57,9 +64,9 @@
         <li>
           <a
             href="#"
-            @click.prevent="$emit('navigate', 'achievements')"
             class="nav-item"
             :class="{ 'active': currentPage === 'achievements' }"
+            @click.prevent="$emit('navigate', 'achievements')"
           >
             <span class="text-xl">🏆</span>
             <span>成就</span>
@@ -68,9 +75,9 @@
         <li>
           <a
             href="#"
-            @click.prevent="$emit('navigate', 'speaking')"
             class="nav-item"
             :class="{ 'active': currentPage === 'speaking' }"
+            @click.prevent="$emit('navigate', 'speaking')"
           >
             <span class="text-xl">🗣️</span>
             <span>口语话题</span>
@@ -79,8 +86,8 @@
         <li>
           <a
             href="#"
-            @click.prevent="$emit('open-vocab-selector')"
             class="nav-item"
+            @click.prevent="$emit('open-vocab-selector')"
           >
             <span class="text-xl">📚</span>
             <span>选择词库</span>
@@ -89,8 +96,8 @@
         <li>
           <a
             href="#"
-            @click.prevent="$emit('open-settings')"
             class="nav-item"
+            @click.prevent="$emit('open-settings')"
           >
             <span class="text-xl">⚙️</span>
             <span>设置</span>
@@ -102,7 +109,9 @@
     <!-- 底部进度卡片 -->
     <div class="p-4 border-t border-gray-100">
       <div class="bg-gradient-to-br from-sage-50 to-beige-50 rounded-lg p-4">
-        <div class="text-xs text-gray-600 mb-2">今日学习</div>
+        <div class="text-xs text-gray-600 mb-2">
+          今日学习
+        </div>
         <div class="flex justify-between items-baseline mb-2">
           <span class="text-2xl font-bold text-sage-500">{{ todayLearned }}</span>
           <span class="text-xs text-gray-500">/ {{ todayTarget }}个</span>
@@ -111,7 +120,7 @@
           <div
             class="bg-sage-500 h-2 rounded-full transition-all duration-500"
             :style="{ width: todayProgress + '%' }"
-          ></div>
+          />
         </div>
         <p class="text-xs text-gray-500 mt-2">
           {{ todayProgress >= 100 ? '🎉 目标达成！' : '加油，继续学习！' }}
@@ -121,12 +130,20 @@
       <!-- 快速统计 -->
       <div class="mt-4 grid grid-cols-2 gap-2">
         <div class="text-center p-2 bg-beige-50 rounded">
-          <div class="text-lg font-bold text-sage-500">{{ totalLearned }}</div>
-          <div class="text-xs text-gray-500">已掌握</div>
+          <div class="text-lg font-bold text-sage-500">
+            {{ totalLearned }}
+          </div>
+          <div class="text-xs text-gray-500">
+            已掌握
+          </div>
         </div>
         <div class="text-center p-2 bg-beige-50 rounded">
-          <div class="text-lg font-bold text-blue-500">{{ accuracy }}%</div>
-          <div class="text-xs text-gray-500">正确率</div>
+          <div class="text-lg font-bold text-blue-500">
+            {{ accuracy }}%
+          </div>
+          <div class="text-xs text-gray-500">
+            正确率
+          </div>
         </div>
       </div>
     </div>

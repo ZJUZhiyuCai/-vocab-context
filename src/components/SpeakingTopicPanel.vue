@@ -11,19 +11,24 @@
     </div>
 
     <!-- Topic Selector -->
-    <div v-if="!selectedTopic" class="grid grid-cols-2 md:grid-cols-4 gap-3">
+    <div
+      v-if="!selectedTopic"
+      class="grid grid-cols-2 md:grid-cols-4 gap-3"
+    >
       <button
         v-for="topic in topics"
         :key="topic.id"
-        @click="selectTopic(topic)"
         :class="[
           'p-4 rounded-xl border transition-all hover:scale-[1.02]',
           isDark
             ? 'bg-slate-800/50 border-white/10 hover:border-white/20'
             : 'bg-white border-gray-200 hover:border-gray-300'
         ]"
+        @click="selectTopic(topic)"
       >
-        <div class="text-2xl mb-2">{{ topic.icon }}</div>
+        <div class="text-2xl mb-2">
+          {{ topic.icon }}
+        </div>
         <div :class="['text-sm font-medium', isDark ? 'text-white' : 'text-slate-900']">
           {{ topic.name.replace('IELTS Topic · ', '') }}
         </div>
@@ -37,14 +42,24 @@
     <div v-else>
       <!-- Back Button -->
       <button
-        @click="selectedTopic = null; wordCluster = []"
         :class="[
           'mb-4 flex items-center gap-2 text-sm transition-colors',
           isDark ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-slate-900'
         ]"
+        @click="selectedTopic = null; wordCluster = []"
       >
-        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 19l-7-7 7-7"
+          />
         </svg>
         返回话题选择
       </button>
@@ -75,12 +90,20 @@
       </div>
 
       <!-- Word Cards -->
-      <div v-if="loading" class="text-center py-8">
-        <div class="animate-spin w-8 h-8 border-2 border-emerald-500 border-t-transparent rounded-full mx-auto"></div>
-        <p :class="['text-sm mt-2', isDark ? 'text-gray-400' : 'text-gray-600']">加载中...</p>
+      <div
+        v-if="loading"
+        class="text-center py-8"
+      >
+        <div class="animate-spin w-8 h-8 border-2 border-emerald-500 border-t-transparent rounded-full mx-auto" />
+        <p :class="['text-sm mt-2', isDark ? 'text-gray-400' : 'text-gray-600']">
+          加载中...
+        </p>
       </div>
 
-      <div v-else class="space-y-3">
+      <div
+        v-else
+        class="space-y-3"
+      >
         <div
           v-for="word in wordCluster"
           :key="word.word"
@@ -104,7 +127,10 @@
               <p :class="['text-sm mt-1', isDark ? 'text-gray-300' : 'text-gray-700']">
                 {{ word.sense }}
               </p>
-              <div v-if="word.collocations.length > 0" class="mt-2 flex flex-wrap gap-1">
+              <div
+                v-if="word.collocations.length > 0"
+                class="mt-2 flex flex-wrap gap-1"
+              >
                 <span
                   v-for="col in word.collocations.slice(0, 3)"
                   :key="col"
@@ -115,11 +141,15 @@
               </div>
             </div>
             <button
-              @click="playWord(word.word)"
               :class="['p-2 rounded-lg transition-colors', isDark ? 'hover:bg-white/10' : 'hover:bg-gray-100']"
+              @click="playWord(word.word)"
             >
-              <svg class="w-5 h-5 text-emerald-500" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
+              <svg
+                class="w-5 h-5 text-emerald-500"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
               </svg>
             </button>
           </div>
@@ -132,7 +162,10 @@
           高分句型
         </h4>
         <div class="grid gap-2">
-          <div v-for="(phrase, key) in highScorePhrases" :key="key">
+          <div
+            v-for="(phrase, key) in highScorePhrases"
+            :key="key"
+          >
             <span :class="['text-xs font-medium', isDark ? 'text-gray-400' : 'text-gray-500']">
               {{ phraseLabels[key] }}:
             </span>

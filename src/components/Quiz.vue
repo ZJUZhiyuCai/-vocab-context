@@ -1,47 +1,103 @@
 <template>
   <div class="quiz-page animate-slide-right">
-    <div v-if="!currentMode" class="mode-selection">
+    <div
+      v-if="!currentMode"
+      class="mode-selection"
+    >
       <div class="stats-overview">
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value">{{ learnedCount }}</div>
-          <div class="stat-label">学习词数</div>
+          <div class="stat-value">
+            {{ learnedCount }}
+          </div>
+          <div class="stat-label">
+            学习词数
+          </div>
         </div>
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value">{{ reviewAccuracy }}%</div>
-          <div class="stat-label">复习正确率</div>
+          <div class="stat-value">
+            {{ reviewAccuracy }}%
+          </div>
+          <div class="stat-label">
+            复习正确率
+          </div>
         </div>
         <div :class="['stat-card', isDark ? 'dark' : 'light']">
-          <div class="stat-value">{{ totalReviewed }}</div>
-          <div class="stat-label">复习次数</div>
+          <div class="stat-value">
+            {{ totalReviewed }}
+          </div>
+          <div class="stat-label">
+            复习次数
+          </div>
         </div>
       </div>
 
       <div :class="['mode-section', isDark ? 'dark' : 'light']">
         <div class="flex items-center gap-2 mb-1">
-          <div class="w-1 h-5 rounded-full bg-emerald-500"></div>
-          <h2 class="section-title">学习模式</h2>
+          <div class="w-1 h-5 rounded-full bg-emerald-500" />
+          <h2 class="section-title">
+            学习模式
+          </h2>
         </div>
-        <p class="section-description">选择你想开始的练习方式</p>
+        <p class="section-description">
+          选择你想开始的练习方式
+        </p>
 
-        <div v-if="learnedCount > 0" class="mode-options">
-          <button @click="startSession('flashcard')" :class="['mode-card group', isDark ? 'dark' : 'light']">
+        <div
+          v-if="learnedCount > 0"
+          class="mode-options"
+        >
+          <button
+            :class="['mode-card group', isDark ? 'dark' : 'light']"
+            @click="startSession('flashcard')"
+          >
             <div class="mode-icon-wrapper group-hover:scale-110 transition-transform">
-              <svg class="w-10 h-10 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              <svg
+                class="w-10 h-10 text-emerald-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
+                />
               </svg>
             </div>
-            <h3 class="mode-title">闪卡学习</h3>
-            <p class="mode-desc">快速浏览已学单词，翻转查看词义和例句</p>
+            <h3 class="mode-title">
+              闪卡学习
+            </h3>
+            <p class="mode-desc">
+              快速浏览已学单词，翻转查看词义和例句
+            </p>
           </button>
 
-          <button @click="startSession('spelling')" :class="['mode-card group', isDark ? 'dark' : 'light']">
+          <button
+            :class="['mode-card group', isDark ? 'dark' : 'light']"
+            @click="startSession('spelling')"
+          >
             <div class="mode-icon-wrapper group-hover:scale-110 transition-transform">
-              <svg class="w-10 h-10 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+              <svg
+                class="w-10 h-10 text-cyan-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="1.5"
+                  d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                />
               </svg>
             </div>
-            <h3 class="mode-title">拼写练习</h3>
-            <p class="mode-desc">根据释义回忆单词拼写，强化输出与记忆</p>
+            <h3 class="mode-title">
+              拼写练习
+            </h3>
+            <p class="mode-desc">
+              根据释义回忆单词拼写，强化输出与记忆
+            </p>
           </button>
         </div>
 
@@ -52,20 +108,32 @@
           <div class="flex items-center justify-between gap-4 flex-wrap">
             <div class="flex items-center gap-4">
               <div :class="['w-12 h-12 rounded-xl flex items-center justify-center', isDark ? 'bg-violet-500/20' : 'bg-violet-100']">
-                <svg class="w-6 h-6 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                <svg
+                  class="w-6 h-6 text-violet-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
                 </svg>
               </div>
               <div>
-                <h3 :class="['font-bold', isDark ? 'text-white' : 'text-slate-900']">语境优先学习</h3>
+                <h3 :class="['font-bold', isDark ? 'text-white' : 'text-slate-900']">
+                  语境优先学习
+                </h3>
                 <p :class="['text-sm', isDark ? 'text-gray-400' : 'text-gray-600']">
                   先读语境，再判断词义、做改写和微输出，进入独立的 Context-first 练习页。
                 </p>
               </div>
             </div>
             <button
-              @click="startContextSession"
               class="px-6 py-2.5 rounded-xl bg-violet-600 text-white font-semibold shadow-lg shadow-violet-500/25 hover:shadow-violet-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
+              @click="startContextSession"
             >
               进入专区
             </button>
@@ -79,35 +147,69 @@
           <div class="flex items-center justify-between gap-4 flex-wrap">
             <div class="flex items-center gap-4">
               <div :class="['w-12 h-12 rounded-xl flex items-center justify-center', isDark ? 'bg-emerald-500/20' : 'bg-emerald-100']">
-                <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8L10 18l-5-5" />
+                <svg
+                  class="w-6 h-6 text-emerald-500"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 7h8m0 0v8m0-8L10 18l-5-5"
+                  />
                 </svg>
               </div>
               <div>
-                <h3 :class="['font-bold', isDark ? 'text-white' : 'text-slate-900']">{{ ieltsRecommendation.title }}</h3>
+                <h3 :class="['font-bold', isDark ? 'text-white' : 'text-slate-900']">
+                  {{ ieltsRecommendation.title }}
+                </h3>
                 <p :class="['text-sm', isDark ? 'text-gray-400' : 'text-gray-600']">
                   {{ ieltsRecommendation.description }}
                 </p>
               </div>
             </div>
             <button
-              @click="followIeltsRecommendation"
               class="px-6 py-2.5 rounded-xl bg-emerald-600 text-white font-semibold shadow-lg shadow-emerald-500/25 hover:shadow-emerald-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all"
+              @click="followIeltsRecommendation"
             >
               {{ ieltsRecommendation.ctaLabel }}
             </button>
           </div>
         </div>
 
-        <div v-else class="empty-state">
+        <div
+          v-else
+          class="empty-state"
+        >
           <div class="flex justify-center mb-6 text-slate-700/50">
-            <svg class="w-20 h-20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.168.477-4.5 1.253" />
+            <svg
+              class="w-20 h-20"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.168.477-4.5 1.253"
+              />
             </svg>
           </div>
-          <h3 class="empty-title text-xl font-bold text-slate-200">还没有学习过的单词</h3>
-          <p class="empty-desc text-slate-500 mb-8">先去今日学习页面学习一些新单词</p>
-          <button @click="$emit('navigate', 'today')" class="premium-btn px-8 py-3">开始学习</button>
+          <h3 class="empty-title text-xl font-bold text-slate-200">
+            还没有学习过的单词
+          </h3>
+          <p class="empty-desc text-slate-500 mb-8">
+            先去今日学习页面学习一些新单词
+          </p>
+          <button
+            class="premium-btn px-8 py-3"
+            @click="$emit('navigate', 'today')"
+          >
+            开始学习
+          </button>
         </div>
       </div>
 
@@ -115,15 +217,37 @@
         <div class="list-header">
           <div>
             <div class="flex items-center gap-2 mb-1">
-              <div class="w-1 h-5 rounded-full bg-cyan-500"></div>
-              <h2 class="section-title">单词列表</h2>
+              <div class="w-1 h-5 rounded-full bg-cyan-500" />
+              <h2 class="section-title">
+                单词列表
+              </h2>
             </div>
-            <p class="section-description">查看当前已经学过的单词</p>
+            <p class="section-description">
+              查看当前已经学过的单词
+            </p>
           </div>
-          <button @click="openWordList" class="btn-secondary flex items-center gap-2">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+          <button
+            class="btn-secondary flex items-center gap-2"
+            @click="openWordList"
+          >
+            <svg
+              class="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+              />
             </svg>
             查看列表
           </button>
@@ -131,7 +255,10 @@
       </div>
     </div>
 
-    <div v-if="currentMode === 'session'" :class="['session-container', isDark ? 'dark' : 'light']">
+    <div
+      v-if="currentMode === 'session'"
+      :class="['session-container', isDark ? 'dark' : 'light']"
+    >
       <ReviewSession
         :words="learnedWords"
         :mode="sessionMode"
@@ -141,13 +268,17 @@
       />
     </div>
 
-    <div v-if="showWordList" class="modal-overlay" @click.self="showWordList = false">
+    <div
+      v-if="showWordList"
+      class="modal-overlay"
+      @click.self="showWordList = false"
+    >
       <div :class="['modal-container', isDark ? 'dark' : 'light']">
         <ReviewQueuePreview
           :words="wordListData"
           @close="showWordList = false"
           @start="startSessionFromList"
-          @startFromIndex="startSessionFromIndex"
+          @start-from-index="startSessionFromIndex"
         />
       </div>
     </div>

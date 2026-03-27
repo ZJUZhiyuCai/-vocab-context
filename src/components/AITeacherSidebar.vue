@@ -4,56 +4,105 @@
     <Transition name="slide">
       <button
         v-if="!isOpen"
-        @click="toggleOpen"
         class="float-button"
         title="AI 学习老师"
+        @click="toggleOpen"
       >
         <span class="float-icon">🤖</span>
-        <span v-if="unreadCount > 0" class="unread-badge">{{ unreadCount }}</span>
+        <span
+          v-if="unreadCount > 0"
+          class="unread-badge"
+        >{{ unreadCount }}</span>
       </button>
     </Transition>
 
     <!-- 展开状态 - 侧边栏 -->
     <Transition name="slide">
-      <div v-if="isOpen" class="sidebar-panel">
+      <div
+        v-if="isOpen"
+        class="sidebar-panel"
+      >
         <!-- 头部 -->
         <div class="sidebar-header">
           <div class="header-info">
             <span class="header-icon">🤖</span>
             <div>
-              <h3 class="header-title">AI 学习老师</h3>
-              <p v-if="currentWord" class="header-subtitle">
+              <h3 class="header-title">
+                AI 学习老师
+              </h3>
+              <p
+                v-if="currentWord"
+                class="header-subtitle"
+              >
                 正在学习：{{ currentWord.word }}
               </p>
-              <p v-else class="header-subtitle">随时为你解答</p>
+              <p
+                v-else
+                class="header-subtitle"
+              >
+                随时为你解答
+              </p>
             </div>
           </div>
-          <button @click="toggleOpen" class="close-btn" title="收起">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+          <button
+            class="close-btn"
+            title="收起"
+            @click="toggleOpen"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
             </svg>
           </button>
         </div>
 
         <!-- API 警告 -->
-        <div v-if="!isAvailable" class="api-warning">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+        <div
+          v-if="!isAvailable"
+          class="api-warning"
+        >
+          <svg
+            class="w-4 h-4"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+              clip-rule="evenodd"
+            />
           </svg>
           <span>请先配置 API 密钥</span>
-          <button @click="$emit('openSettings')" class="text-btn">去设置</button>
+          <button
+            class="text-btn"
+            @click="$emit('openSettings')"
+          >
+            去设置
+          </button>
         </div>
 
         <!-- 快捷问题 -->
-        <div v-if="isAvailable && currentWord && !isLoading" class="quick-questions">
-          <p class="quick-label">你可以问：</p>
+        <div
+          v-if="isAvailable && currentWord && !isLoading"
+          class="quick-questions"
+        >
+          <p class="quick-label">
+            你可以问：
+          </p>
           <div class="quick-buttons">
             <button
               v-for="(question, idx) in quickQuestions"
               :key="idx"
-              @click="askQuestion(question)"
               class="quick-btn"
               :disabled="isSending"
+              @click="askQuestion(question)"
             >
               {{ question }}
             </button>
@@ -61,7 +110,10 @@
         </div>
 
         <!-- 对话历史 -->
-        <div ref="messagesContainer" class="messages-container">
+        <div
+          ref="messagesContainer"
+          class="messages-container"
+        >
           <div
             v-for="(message, index) in conversationHistory"
             :key="index"
@@ -71,27 +123,43 @@
               {{ message.role === 'user' ? '👤' : '🤖' }}
             </div>
             <div class="message-content">
-              <div class="message-text">{{ message.content }}</div>
-              <div class="message-time">{{ formatTime(message.timestamp) }}</div>
+              <div class="message-text">
+                {{ message.content }}
+              </div>
+              <div class="message-time">
+                {{ formatTime(message.timestamp) }}
+              </div>
             </div>
           </div>
 
           <!-- 加载中 -->
-          <div v-if="isLoading" class="message assistant">
-            <div class="message-avatar">🤖</div>
+          <div
+            v-if="isLoading"
+            class="message assistant"
+          >
+            <div class="message-avatar">
+              🤖
+            </div>
             <div class="message-content">
               <div class="typing-indicator">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span />
+                <span />
+                <span />
               </div>
             </div>
           </div>
 
           <!-- 欢迎消息 -->
-          <div v-if="conversationHistory.length === 0 && !isLoading" class="welcome-message">
-            <p class="welcome-text">👋 你好！我是你的 AI 学习老师</p>
-            <p class="welcome-hint">关于单词学习的问题，随时问我</p>
+          <div
+            v-if="conversationHistory.length === 0 && !isLoading"
+            class="welcome-message"
+          >
+            <p class="welcome-text">
+              👋 你好！我是你的 AI 学习老师
+            </p>
+            <p class="welcome-hint">
+              关于单词学习的问题，随时问我
+            </p>
           </div>
         </div>
 
@@ -99,25 +167,46 @@
         <div class="input-area">
           <textarea
             v-model="userInput"
-            @keydown.enter.exact.prevent="sendMessage"
-            @keydown.enter.shift.prevent="userInput += '\n'"
             placeholder="输入问题... (Enter 发送，Shift+Enter 换行)"
             class="message-input"
             rows="2"
             :disabled="isSending || !isAvailable"
-          ></textarea>
+            @keydown.enter.exact.prevent="sendMessage"
+            @keydown.enter.shift.prevent="userInput += '\n'"
+          />
           <button
-            @click="sendMessage"
             class="send-btn"
             :disabled="!userInput.trim() || isSending || !isAvailable"
             title="发送 (Enter)"
+            @click="sendMessage"
           >
-            <svg v-if="!isSending" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <svg
+              v-if="!isSending"
+              class="w-5 h-5"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
               <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
             </svg>
-            <svg v-else class="w-5 h-5 animate-spin" fill="none" viewBox="0 0 24 24">
-              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            <svg
+              v-else
+              class="w-5 h-5 animate-spin"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              />
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              />
             </svg>
           </button>
         </div>

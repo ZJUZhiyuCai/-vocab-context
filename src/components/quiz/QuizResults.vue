@@ -1,12 +1,18 @@
 <template>
   <div class="quiz-results">
-    <h2 class="text-3xl font-bold text-sage-600 mb-6">测验结果</h2>
+    <h2 class="text-3xl font-bold text-sage-600 mb-6">
+      测验结果
+    </h2>
 
     <!-- 分数概览 -->
     <div class="score-overview">
       <div class="score-circle">
-        <div class="score-percentage">{{ scorePercentage }}%</div>
-        <div class="score-label">正确率</div>
+        <div class="score-percentage">
+          {{ scorePercentage }}%
+        </div>
+        <div class="score-label">
+          正确率
+        </div>
       </div>
       <div class="score-details">
         <div class="score-item">
@@ -26,13 +32,22 @@
 
     <!-- 评价 -->
     <div class="result-message">
-      <div class="message-icon">{{ gradeIcon }}</div>
-      <div class="message-text">{{ gradeMessage }}</div>
+      <div class="message-icon">
+        {{ gradeIcon }}
+      </div>
+      <div class="message-text">
+        {{ gradeMessage }}
+      </div>
     </div>
 
     <!-- 错题回顾 -->
-    <div v-if="wrongAnswers.length > 0" class="wrong-answers-section">
-      <h3 class="text-xl font-bold text-sage-600 mb-4">错题回顾</h3>
+    <div
+      v-if="wrongAnswers.length > 0"
+      class="wrong-answers-section"
+    >
+      <h3 class="text-xl font-bold text-sage-600 mb-4">
+        错题回顾
+      </h3>
       <div class="wrong-answers-list">
         <div
           v-for="(item, index) in wrongAnswers"
@@ -41,7 +56,10 @@
         >
           <div class="wrong-word">
             <span class="word-text">{{ item.word.word }}</span>
-            <span class="word-phonetic" v-if="item.word.phonetic">
+            <span
+              v-if="item.word.phonetic"
+              class="word-phonetic"
+            >
               {{ item.word.phonetic }}
             </span>
           </div>
@@ -64,10 +82,16 @@
 
     <!-- 操作按钮 -->
     <div class="result-actions">
-      <button @click="$emit('restart')" class="action-button primary">
+      <button
+        class="action-button primary"
+        @click="$emit('restart')"
+      >
         🔄 再测一次
       </button>
-      <button @click="$emit('exit')" class="action-button secondary">
+      <button
+        class="action-button secondary"
+        @click="$emit('exit')"
+      >
         ✅ 完成测验
       </button>
     </div>

@@ -11,13 +11,17 @@
       ]"
       @click.stop
     >
-      <h2 :class="['text-xl font-bold mb-6', isDark ? 'text-white' : 'text-gray-800']">Settings</h2>
+      <h2 :class="['text-xl font-bold mb-6', isDark ? 'text-white' : 'text-gray-800']">
+        Settings
+      </h2>
 
       <!-- Study Plan -->
       <div :class="['mb-6 pb-6 border-b', isDark ? 'border-gray-700' : 'border-gray-200']">
         <div class="flex items-center gap-2 mb-4">
-          <div class="w-1 h-4 rounded-full bg-emerald-500"></div>
-          <h3 :class="['text-sm font-bold uppercase tracking-wider', isDark ? 'text-gray-400' : 'text-gray-600']">Study Plan</h3>
+          <div class="w-1 h-4 rounded-full bg-emerald-500" />
+          <h3 :class="['text-sm font-bold uppercase tracking-wider', isDark ? 'text-gray-400' : 'text-gray-600']">
+            Study Plan
+          </h3>
         </div>
 
         <!-- Daily Goal -->
@@ -25,8 +29,8 @@
           <label :class="['block text-sm font-medium mb-2', isDark ? 'text-gray-400' : 'text-gray-600']">Daily Goal</label>
           <div class="flex items-center gap-3">
             <input
-              type="range"
               v-model.number="localSettings.dailyGoal"
+              type="range"
               min="5"
               max="100"
               step="5"
@@ -44,20 +48,28 @@
           <label :class="['block text-sm font-medium mb-2', isDark ? 'text-gray-400' : 'text-gray-600']">Study Mode</label>
           <div class="grid grid-cols-2 gap-2">
             <button
-              @click="localSettings.studyMode = 'sequence'"
               class="p-3 text-sm rounded-xl border transition-all"
               :class="getModeButtonClass('sequence')"
+              @click="localSettings.studyMode = 'sequence'"
             >
-              <div class="font-bold mb-1">Sequential</div>
-              <div class="text-xs opacity-75">Learn in order</div>
+              <div class="font-bold mb-1">
+                Sequential
+              </div>
+              <div class="text-xs opacity-75">
+                Learn in order
+              </div>
             </button>
             <button
-              @click="localSettings.studyMode = 'random'"
               class="p-3 text-sm rounded-xl border transition-all"
               :class="getModeButtonClass('random')"
+              @click="localSettings.studyMode = 'random'"
             >
-              <div class="font-bold mb-1">Random</div>
-              <div class="text-xs opacity-75">Shuffle words</div>
+              <div class="font-bold mb-1">
+                Random
+              </div>
+              <div class="text-xs opacity-75">
+                Shuffle words
+              </div>
             </button>
           </div>
         </div>
@@ -69,12 +81,16 @@
             <button
               v-for="p in purposes"
               :key="p.value"
-              @click="localSettings.purpose = p.value"
               class="p-3 text-sm rounded-xl border transition-all"
               :class="getPurposeButtonClass(p.value)"
+              @click="localSettings.purpose = p.value"
             >
-              <div class="font-bold mb-1">{{ p.label }}</div>
-              <div class="text-xs opacity-75">{{ p.desc }}</div>
+              <div class="font-bold mb-1">
+                {{ p.label }}
+              </div>
+              <div class="text-xs opacity-75">
+                {{ p.desc }}
+              </div>
             </button>
           </div>
         </div>
@@ -83,39 +99,47 @@
       <!-- API Settings -->
       <div :class="['mb-6 pb-6 border-b', isDark ? 'border-gray-700' : 'border-gray-200']">
         <div class="flex items-center gap-2 mb-4">
-          <div class="w-1 h-4 rounded-full bg-cyan-500"></div>
-          <h3 :class="['text-sm font-bold uppercase tracking-wider', isDark ? 'text-gray-400' : 'text-gray-600']">AI Features</h3>
+          <div class="w-1 h-4 rounded-full bg-cyan-500" />
+          <h3 :class="['text-sm font-bold uppercase tracking-wider', isDark ? 'text-gray-400' : 'text-gray-600']">
+            AI Features
+          </h3>
         </div>
         <div class="mb-4">
           <label :class="['block text-sm font-medium mb-2', isDark ? 'text-gray-400' : 'text-gray-600']">{{ apiProviderLabel }} API Key</label>
           <input
-            type="password"
             v-model="localSettings.apiKey"
+            type="password"
             placeholder="sk-..."
             :class="[
               'w-full rounded-xl px-4 py-2 focus:ring-2 focus:ring-emerald-500 focus:outline-none',
               isDark ? 'bg-slate-800 border-gray-700 text-white' : 'bg-gray-50 border-gray-300 text-gray-800 border'
             ]"
           >
-          <p class="mt-2 text-xs leading-6 text-gray-500">{{ apiHelperText }}</p>
+          <p class="mt-2 text-xs leading-6 text-gray-500">
+            {{ apiHelperText }}
+          </p>
         </div>
       </div>
 
       <!-- Theme Settings -->
       <div :class="['mb-6 pb-6 border-b', isDark ? 'border-gray-700' : 'border-gray-200']">
         <div class="flex items-center gap-2 mb-4">
-          <div class="w-1 h-4 rounded-full bg-violet-500"></div>
-          <h3 :class="['text-sm font-bold uppercase tracking-wider', isDark ? 'text-gray-400' : 'text-gray-600']">Appearance</h3>
+          <div class="w-1 h-4 rounded-full bg-violet-500" />
+          <h3 :class="['text-sm font-bold uppercase tracking-wider', isDark ? 'text-gray-400' : 'text-gray-600']">
+            Appearance
+          </h3>
         </div>
         <div class="grid grid-cols-3 gap-2">
           <button
             v-for="t in themeOptions"
             :key="t.value"
-            @click="$emit('set-theme', t.value)"
             class="p-3 text-sm rounded-xl border transition-all"
             :class="getThemeButtonClass(t.value)"
+            @click="$emit('set-theme', t.value)"
           >
-            <div class="font-bold mb-1">{{ t.icon }} {{ t.label }}</div>
+            <div class="font-bold mb-1">
+              {{ t.icon }} {{ t.label }}
+            </div>
           </button>
         </div>
       </div>
@@ -123,17 +147,17 @@
       <!-- Actions -->
       <div class="flex gap-3 mt-6">
         <button
-          @click="saveSettings"
           class="flex-1 py-3 rounded-xl bg-emerald-600 text-white font-bold shadow-lg hover:shadow-emerald-500/20 active:scale-95 transition-all"
+          @click="saveSettings"
         >
           Save
         </button>
         <button
-          @click="$emit('close')"
           :class="[
             'flex-1 py-3 rounded-xl font-bold active:scale-95 transition-all',
             isDark ? 'bg-slate-800 text-gray-300 hover:bg-slate-700' : 'bg-gray-200 text-gray-700 hover:bg-gray-300'
           ]"
+          @click="$emit('close')"
         >
           Cancel
         </button>
