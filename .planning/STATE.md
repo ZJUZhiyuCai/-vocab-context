@@ -1,80 +1,94 @@
-# State — VocabMan 词汇质量提升
+# State — VocabMan CET4 词汇精简
 
-**Project:** VocabMan 词汇质量提升
+**Project:** VocabMan CET4 词汇精简
 **Started:** 2026-03-27
+**Completed:** 2026-03-28
 **Mode:** Collaborative (Claude 设计 + Codex 执行)
 
 ---
 
 ## Current Position
 
-**Phase:** 0 - 需求分析
-**Status:** 讨论中
-**Last Action:** 用户反馈非雅思词汇质量不如雅思词库
+**Phase:** 4 - 生成精简版与验证 ✅
+**Status:** 已完成
+**Last Action:** 生成 vocab-cet4-basic-pruned.json 并推送
 
 ---
 
-## Problem Statement
+## Final Results
 
-用户发现：**非雅思词汇（CET4/6、CEFR A2-C2）的质量比不过雅思词库的质量**
+| 指标 | 值 |
+|------|------|
+| 原始词数 | 4500 |
+| 删除词数 | 443 |
+| 精简后词数 | 4057 |
+| 删除比例 | 9.8% |
 
-**背景：**
-- 雅思词库（ielts-foundation, ielts-topic-*）经过精心设计，包含：
-  - 语境例句
-  - 词群关联
-  - IELTS Band 标签
-  - 高质量释义
-- 非雅思词库（CET4/6、CEFR）可能缺少这些优质属性
+### 删除分布
 
----
-
-## Current Vocabulary Status
-
-### IELTS 词汇（高质量）
-| 文件 | 状态 | 特点 |
-|------|------|------|
-| ielts-foundation.json | ✅ 743词 | 语境优先、高质量例句 |
-| ielts-topic-*.json | ✅ 8个主题包 | 话题词群、76-124词/包 |
-| ielts-core-500.json | ✅ 500词 | 核心词汇 |
-
-### 非IELTS 词汇（质量待提升）
-| 文件 | 状态 | 问题 |
-|------|------|------|
-| vocab-cet4*.json | ⚠️ 质量待评估 | 缺少语境例句？ |
-| vocab-cet6*.json | ⚠️ 质量待评估 | 缺少语境例句？ |
-| vocab-a2-basic.json | ⚠️ 质量待评估 | 缺少语境例句？ |
-| vocab-b1-intermediate.json | ⚠️ 质量待评估 | 缺少语境例句？ |
-| vocab-b2-upper-intermediate.json | ⚠️ 质量待评估 | 缺少语境例句？ |
-| vocab-c1-advanced.json | ⚠️ 质量待评估 | 缺少语境例句？ |
-| vocab-c2-proficiency.json | ⚠️ 质量待评估 | 缺少语境例句？ |
+| 类别 | 数量 |
+|------|------|
+| specialist-domain | 252 |
+| low-ielts-transfer | 63 |
+| archaic-slang | 32 |
+| proper-noun | 26 |
+| medical-term | 20 |
+| military-term | 13 |
+| abbreviation-noise | 13 |
+| named-entity | 10 |
+| religious-term | 10 |
+| inflected-form | 4 |
 
 ---
 
-## Key Questions
+## Completed Phases
 
-1. 非雅思词汇的具体质量问题是什么？
-   - 缺少语境例句？
-   - 缺少词群关联？
-   - 释义质量不够？
-   - 缺少发音/IPA？
+### Phase 1: 规则定义与保护名单 ✅
+- 生成保护名单 (1131 词: H1=743, H2=0, SF=388)
+- 定义删除理由码 (10个)
+- CET4 与保护名单重叠统计 (295词, 6.6%)
+- Commit: `5122915`
 
-2. 用户想要什么样的优质词汇？
-   - 类似雅思词库的语境例句？
-   - 特定考试（四六级）的高频词？
-   - 学术英语词汇？
+### Phase 2: 自动筛选与候选池生成 ✅
+- 生成候选池 (1597 词)
+- Codex 独立审核
+- 最终删除清单 (443 词)
+- Commit: `f09a74d`
 
-3. 优先级如何排序？
-   - 先处理哪些词库？
-   - 目标词汇量是多少？
+### Phase 4: 生成精简版 ✅
+- 生成 vocab-cet4-basic-pruned.json (4057 词)
+- 生成差异报告
+- Commit: `143c111`
+
+---
+
+## Output Files
+
+| 文件 | 说明 |
+|------|------|
+| `public/data/vocab-cet4-basic-pruned.json` | 精简版词库 |
+| `data/protection-list-final.json` | 保护名单 |
+| `data/final-delete-list.json` | 删除清单 |
+| `data/cet4-structure-report.json` | 结构检查报告 |
+| `data/prune-diff-report.json` | 差异报告 |
 
 ---
 
-## Next Actions
+## Remaining Work
 
-- [ ] 与 Codex 讨论词汇质量问题
-- [ ] 分析现有非雅思词库的数据结构
-- [ ] 确定质量提升方案
-- [ ] 更新 ROADMAP
+- [ ] 可选：继续审核剩余候选，扩展删除到 ~700 词
+- [ ] 可选：前端集成精简版词库
+- [ ] 可选：发布新版本
 
 ---
-*Last updated: 2026-03-27 20:00*
+
+## Key Decisions
+
+1. 采用"质量驱动"而非"固定删除数"策略
+2. 保护 AWL + IELTS Foundation/Core/Topic 词汇
+3. 删除专业术语、古词、缩写噪音、纯人名等
+4. 保留高迁移价值边界词 (sincerity, premature 等)
+
+---
+
+*Last updated: 2026-03-28*
