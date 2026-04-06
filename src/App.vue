@@ -471,6 +471,7 @@ import { buildIeltsQuickRecommendation, setPendingIeltsPathTarget } from './util
 import { shouldShowCardRecommendation, buildCardRecommendation, getRecommendationDelay } from './utils/cardRecommendation.js'
 import { getEnglishDefinition } from './utils/englishDefinitionService.js'
 import logger from './utils/logger.js'
+import { normalizeLearningPurpose } from './utils/learningPurpose.js'
 import { loadSettings, saveSettings as saveSettingsToStorage, loadWordbook, saveWordbook, loadUserProfile, saveUserProfile, shouldShowOnboarding } from './utils/storage.js'
 import { useConfetti } from './composables/useConfetti.js'
 import { useTheme } from './composables/useTheme.js'
@@ -1087,7 +1088,7 @@ watch(user, async (newUser, oldUser) => {
           ...userSettings.value,
           dailyGoal: cloudSettings.daily_goal ?? userSettings.value.dailyGoal,
           studyMode: cloudSettings.study_mode ?? userSettings.value.studyMode,
-          purpose: cloudSettings.purpose ?? userSettings.value.purpose
+          purpose: normalizeLearningPurpose(cloudSettings.purpose, userSettings.value.purpose || 'exam')
         };
 
         userSettings.value = mergedSettings;
@@ -1096,7 +1097,7 @@ watch(user, async (newUser, oldUser) => {
         if (cloudSettings.purpose) {
           userProfile.value = {
             ...userProfile.value,
-            purpose: cloudSettings.purpose
+            purpose: normalizeLearningPurpose(cloudSettings.purpose, userProfile.value.purpose || 'daily')
           };
           saveUserProfile(userProfile.value);
         }

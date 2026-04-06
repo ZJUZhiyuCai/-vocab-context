@@ -12,6 +12,7 @@ import { analyzeErrors, analyzeWordError, generateStudyPlan } from './aiErrorAna
 import { generateMemoryHooks, generateWordNetwork, generateScenarioExamples, generateLearningPath } from './aiMemoryHooks.js';
 import { createAIChatCompletion, resolveApiKey } from './aiClient.js';
 import logger from './logger.js';
+import { normalizeLearningPurpose } from './learningPurpose.js';
 
 // localStorage keys
 const CACHE_KEY_PREFIX = 'vocabcontext_ai_';
@@ -55,7 +56,7 @@ export async function generateAIExample({ apiKey, word, meaning, purpose }) {
  * @returns {string} 缓存键
  */
 function getCacheKey(word, purpose) {
-  return `${CACHE_KEY_PREFIX}${CACHE_VERSION}_${word}_${purpose || 'daily'}`;
+  return `${CACHE_KEY_PREFIX}${CACHE_VERSION}_${word}_${normalizeLearningPurpose(purpose)}`;
 }
 
 /**
@@ -211,6 +212,7 @@ ${purposeConfig.description}
  * @returns {Object} 配置对象
  */
 function getPurposeConfig(purpose) {
+  const normalizedPurpose = normalizeLearningPurpose(purpose);
   const configs = {
     exam: {
       description: '备考（雅思、托福、GRE等）',
@@ -220,7 +222,7 @@ function getPurposeConfig(purpose) {
       difficulty: '中高级，适合学术英语',
       keywords: '使用考试高频词汇和学术表达'
     },
-    career: {
+    work: {
       description: '职场提升（商务、技术等专业英语）',
       scene: '职场场景（会议、邮件、报告、客户沟通）',
       style: '专业化、实用化',
@@ -228,13 +230,13 @@ function getPurposeConfig(purpose) {
       difficulty: '中级，注重实用性',
       keywords: '使用职场专业术语和商务表达'
     },
-    hobby: {
-      description: '兴趣爱好（阅读、影视、旅行、文化）',
-      scene: '日常生活场景（旅行、娱乐、文化交流、社交活动）',
-      style: '自然化、口语化',
-      length: '12-20个单词',
-      difficulty: '中级，贴近实际生活',
-      keywords: '使用地道的生活化表达'
+    academic: {
+      description: '学术研究（论文、科研、课程与学术表达）',
+      scene: '学术场景（论文写作、课堂讨论、研究汇报、文献阅读）',
+      style: '严谨、清晰、学术化',
+      length: '15-28个单词',
+      difficulty: '中高级，适合学术英语与研究表达',
+      keywords: '使用论文、研究和学术沟通中的高频表达'
     },
     daily: {
       description: '日常交流（生活、社交、购物）',
@@ -246,7 +248,7 @@ function getPurposeConfig(purpose) {
     }
   };
 
-  return configs[purpose] || configs.daily;
+  return configs[normalizedPurpose] || configs.daily;
 }
 
 /**
@@ -393,7 +395,7 @@ const DEFAULT_SETTINGS = {
   aiUserLevel: 'B2',
   cacheEnabled: true,
   aiCacheEnabled: true,
-  learningPurpose: 'exam' // exam, career, hobby, daily
+  learningPurpose: 'exam' // exam, work, academic, daily
 };
 
 function normalizeAISettings(settings = {}) {
@@ -401,7 +403,10 @@ function normalizeAISettings(settings = {}) {
   const isLegacyProvider = hasSavedApiKey && settings.aiProvider !== DEFAULT_SETTINGS.aiProvider;
   const userLevel = settings.aiUserLevel || settings.userLevel || DEFAULT_SETTINGS.userLevel;
   const cacheEnabled = settings.aiCacheEnabled ?? settings.cacheEnabled ?? DEFAULT_SETTINGS.cacheEnabled;
-  const learningPurpose = settings.learningPurpose || settings.purpose || DEFAULT_SETTINGS.learningPurpose;
+  const learningPurpose = normalizeLearningPurpose(
+    settings.learningPurpose || settings.purpose,
+    DEFAULT_SETTINGS.learningPurpose
+  );
 
   return {
     ...DEFAULT_SETTINGS,

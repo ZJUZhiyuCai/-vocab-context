@@ -68,37 +68,46 @@ export const syncService = {
      */
     async fullSync() {
         if (!user.value || !supabase) return
+        const userId = user.value.id
+        if (!user.value || !supabase) return
+        const userId = user.value.id
 
         // 1. Fetch cloud settings
         const { data: cloudSettings } = await supabase
             .from('user_settings')
             .select('*')
-            .single()
+            .eq('user_id', userId)
+            .maybeSingle()
 
         // 2. Fetch cloud progress
         const { data: cloudProgress } = await supabase
             .from('vocabulary_progress')
             .select('*')
+            .eq('user_id', userId)
 
         // 3. Fetch cloud wordbook
         const { data: cloudWordbook } = await supabase
             .from('wordbook')
             .select('*')
+            .eq('user_id', userId)
 
         // 4. Fetch cloud SRS states
         const { data: cloudSRS } = await supabase
             .from('word_review_states')
             .select('*')
+            .eq('user_id', userId)
 
         // 5. Fetch cloud history
         const { data: cloudHistory } = await supabase
             .from('study_history')
             .select('*')
+            .eq('user_id', userId)
 
         // 6. Fetch cloud achievements
         const { data: cloudAchievements } = await supabase
             .from('achievements')
             .select('*')
+            .eq('user_id', userId)
 
         return {
             cloudSettings,

@@ -6,6 +6,7 @@
 
 import { syncService } from './syncService'
 import logger from './logger.js'
+import { normalizeLearningPurpose } from './learningPurpose'
 
 const SETTINGS_KEY = 'vocabcontext_settings';
 const USER_PROFILE_KEY = 'vocabcontext_user_profile';
@@ -18,7 +19,8 @@ function normalizeSettings(settings = {}) {
   return {
     ...settings,
     aiProvider: AI_PROVIDER,
-    apiKey: isLegacyProvider ? '' : (settings.apiKey || '')
+    apiKey: isLegacyProvider ? '' : (settings.apiKey || ''),
+    purpose: normalizeLearningPurpose(settings.purpose, 'exam')
   };
 }
 
@@ -126,7 +128,13 @@ export function clearSettings() {
 export function loadUserProfile() {
   try {
     const saved = localStorage.getItem(USER_PROFILE_KEY);
-    return saved ? JSON.parse(saved) : null;
+    if (!saved) return null;
+
+    const profile = JSON.parse(saved);
+    return {
+      ...profile,
+      purpose: normalizeLearningPurpose(profile.purpose, '')
+    };
   } catch (error) {
     logger.error('加载用户画像失败:', error);
     return null;
@@ -140,7 +148,10 @@ export function loadUserProfile() {
  */
 export function saveUserProfile(profile) {
   try {
-    localStorage.setItem(USER_PROFILE_KEY, JSON.stringify(profile));
+    localStorage.setItem(USER_PROFILE_KEY, JSON.stringify({
+      ...profile,
+      purpose: normalizeLearningPurpose(profile?.purpose, '')
+    }));
     return true;
   } catch (error) {
     logger.error('保存用户画像失败:', error);

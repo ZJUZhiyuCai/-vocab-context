@@ -177,7 +177,7 @@
 
               <div class="options-grid">
                 <button
-                  v-for="option in purposeOptions"
+                  v-for="option in displayPurposeOptions"
                   :key="option.value"
                   class="option-card"
                   :class="{ 'selected': userProfile.purpose === option.value }"
@@ -319,13 +319,13 @@ const purposeOptions = [
     desc: '雅思、托福、GRE、四六级、考研'
   },
   {
-    value: 'career',
+    value: 'work',
     icon: '💼',
     title: '职场提升',
     desc: '商务英语、技术英语、专业英语'
   },
   {
-    value: 'hobby',
+    value: 'academic',
     icon: '🎨',
     title: '兴趣爱好',
     desc: '阅读、影视、旅行、文化交流'
@@ -338,12 +338,25 @@ const purposeOptions = [
   }
 ]
 
+const displayPurposeOptions = purposeOptions.map(option => {
+  if (option.value === 'academic') {
+    return {
+      ...option,
+      icon: '🎓',
+      title: '学术研究',
+      desc: '论文阅读、课题研究、学术写作、课堂汇报'
+    }
+  }
+
+  return option
+})
+
 const selectPurpose = (value) => {
   userProfile.value.purpose = value
 }
 
 const getPurposeLabel = (value) => {
-  const option = purposeOptions.find(o => o.value === value)
+  const option = displayPurposeOptions.find(o => o.value === value)
   return option ? option.title : ''
 }
 
