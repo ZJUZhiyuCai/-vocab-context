@@ -69,8 +69,6 @@ export const syncService = {
     async fullSync() {
         if (!user.value || !supabase) return
         const userId = user.value.id
-        if (!user.value || !supabase) return
-        const userId = user.value.id
 
         // 1. Fetch cloud settings
         const { data: cloudSettings } = await supabase
