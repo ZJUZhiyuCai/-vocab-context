@@ -48,6 +48,22 @@ function siliconFlowDevProxy(env) {
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
+  const manualChunks = (id) => {
+    const normalizedId = id.replace(/\\/g, '/')
+
+    if (normalizedId.includes('/node_modules/vue/')) {
+      return 'vue-vendor'
+    }
+
+    if (
+      normalizedId.endsWith('/src/utils/aiService.js') ||
+      normalizedId.endsWith('/src/utils/storage.js')
+    ) {
+      return 'utils'
+    }
+
+    return undefined
+  }
 
   return {
   plugins: [vue(), siliconFlowDevProxy(env)],
@@ -63,7 +79,7 @@ export default defineConfig(({ mode }) => {
   },
   build: {
     // 生产环境构建目标
-    target: 'modules',
+    target: 'es2020',
     // 输出目录
     outDir: 'dist',
     // 生成源码映射
@@ -76,10 +92,7 @@ export default defineConfig(({ mode }) => {
     rollupOptions: {
       output: {
         // 分块策略
-        manualChunks: {
-          'vue-vendor': ['vue'],
-          'utils': ['./src/utils/aiService.js', './src/utils/storage.js']
-        },
+        manualChunks,
         // 资源文件命名
         assetFileNames: 'assets/[name].[hash].[ext]',
         // 分块文件命名
