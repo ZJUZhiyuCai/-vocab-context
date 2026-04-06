@@ -152,11 +152,12 @@
             </div>
               
             <div v-if="currentExample">
-              <!-- eslint-disable-next-line vue/no-v-html -->
+              <!-- eslint-disable vue/no-v-html -->
               <p
                 :class="['text-lg leading-relaxed', isDark ? 'text-amber-100/80' : 'text-amber-900']"
                 v-html="highlightedSentence"
               />
+              <!-- eslint-enable vue/no-v-html -->
               <p :class="['text-sm mt-2', isDark ? 'text-amber-300/50' : 'text-amber-700/70']">
                 {{ currentExample.translation }}
               </p>
